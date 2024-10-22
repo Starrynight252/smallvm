@@ -209,7 +209,7 @@ method updateLibraryButton MicroBlocksScripter {
 	libAddIcons = (array bm1 bm2)
   }
   if ((width (morph categorySelector)) > (+ (data libAddButton) (24 * scale))) {
-	drawLabelCostumes libAddButton (localized 'Add Library') nil (26 * scale) false true
+	drawLabelCostumes libAddButton (localized 'Add Library') nil (25 * scale) false true
   } else {
 	replaceCostumes libAddButton (at libAddIcons 1) (at libAddIcons 2) (at libAddIcons 2)
   }
@@ -217,14 +217,14 @@ method updateLibraryButton MicroBlocksScripter {
 
 method computeLibraryButtonSize MicroBlocksScripter {
 	costumes = (array (normalCostume libAddButton) (highlightCostume libAddButton))
-	drawLabelCostumes libAddButton (localized 'Add Library') nil (26 * (global 'scale')) false true
+	drawLabelCostumes libAddButton (localized 'Add Library') nil (25 * (global 'scale')) false true
 	setData libAddButton (width (morph libAddButton))
 	replaceCostumes libAddButton (at costumes 1) (at costumes 2) (at costumes 2)
 }
 
 method makeAddLibraryButton MicroBlocksScripter {
   scale = (global 'scale')
-  libAddButton = (pushButton (localized 'Add Library') (action 'importLibrary' this) nil (26 * scale) false true)
+  libAddButton = (pushButton (localized 'Add Library') (action 'importLibrary' this) nil (25 * scale) false true)
   setData libAddButton (width (morph libAddButton))
   addPart morph (morph libAddButton)
 }
