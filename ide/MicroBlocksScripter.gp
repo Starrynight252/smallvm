@@ -173,7 +173,7 @@ method makeLibraryHeader MicroBlocksScripter {
   if ('Linux' == (platform)) {
 	label = (newText (localized 'LIBRARIES') 'Liberation Sans' (11 * scale) (microBlocksColor 'blueGray' 300))
   }
-  setPosition (morph label) (24 * scale) (32 * scale)
+  setPosition (morph label) (24 * scale) (20 * scale)
   addPart (morph libHeader) (morph label)
 
   hLine = (newBox (newMorph) (microBlocksColor 'blueGray' 700) 0 0 false false)
@@ -226,7 +226,6 @@ method makeAddLibraryButton MicroBlocksScripter {
   scale = (global 'scale')
   libAddButton = (pushButton (localized 'Add Library') (action 'importLibrary' this) nil (26 * scale) false true)
   setData libAddButton (width (morph libAddButton))
-  setPosition (morph libAddButton) (24 * scale) ((bottom (morph libHeader)) + (36 * scale))
   addPart morph (morph libAddButton)
 }
 
@@ -347,7 +346,7 @@ method fixLayout MicroBlocksScripter {
   // resize parts
   totalHeight = (height morph)
   totalWidth = (width morph)
-  libHeaderHeight = (30 * scale)
+  libHeaderHeight = (45 * scale)
   setExtent (morph categorySelector) catWidth catHeight
   setExtent (morph libHeader) catWidth libHeaderHeight
   setExtent (morph libSelector) catWidth libSelectorHeight
@@ -361,8 +360,8 @@ method fixLayout MicroBlocksScripter {
   topEdge = (top morph)
   fastSetPosition (morph categorySelector) leftEdge (topEdge + (24 * scale))
   fastSetPosition (morph libHeader) leftEdge (bottom (morph categorySelector))
-  fastSetPosition (morph libAddButton) (24 * scale) ((bottom (morph libHeader)) + (36 * scale))
-  fastSetPosition (morph libSelector) leftEdge ((bottom (morph libAddButton)) + (6 * scale))
+  fastSetPosition (morph libAddButton) (24 * scale) ((bottom (morph libHeader)) + (8 * scale))
+  fastSetPosition (morph libSelector) leftEdge ((bottom (morph libAddButton)) + (8 * scale))
   fastSetPosition (morph libFrame) leftEdge (top (morph libSelector))
   fastSetPosition gradient leftEdge ((bottom (morph libFrame)) - (30 * scale))
   fastSetPosition (morph blocksFrame) (right (morph categorySelector)) topEdge
@@ -1391,7 +1390,7 @@ method updateLibraryList MicroBlocksScripter {
 	selectCategory this 'Control'
   }
   scale = (global 'scale')
-  fastSetPosition (morph libAddButton) (24 * scale) ((bottom (morph libHeader)) + (36 * scale))
+  fastSetPosition (morph libAddButton) (24 * scale) ((bottom (morph libHeader)) + (8 * scale))
 }
 
 method justGrabbedPart MicroBlocksScripter part {
