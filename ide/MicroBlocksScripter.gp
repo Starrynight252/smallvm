@@ -552,6 +552,11 @@ method addBlocksForLibrary MicroBlocksScripter libName {
 	if ('-' == op) {
 	  // add some vertical space
 	   nextY += (20 * (global 'scale'))
+	} (and ('advanced' == op) (devMode)) {
+	  addSectionLabel this (localized 'Advanced:')
+	} (and ('advanced' == op) (not (devMode))) {
+	  // stop here if next blocks are advanced and we're not in devMode
+	  return
 	} (or (showHiddenBlocksEnabled projectEditor) (not (beginsWith op '_'))) {
 	  spec = (specForOp (authoringSpecs) op)
 	  if (notNil spec) {
