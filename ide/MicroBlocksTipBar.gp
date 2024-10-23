@@ -189,19 +189,19 @@ method contentsFor MicroBlocksTipBar anElement {
 		return (array '' '')
 	}
 	if (isOneOf key 'Reporter' 'Command' 'Hat') {
- 		helpEntry = (helpEntry this (primName (expression block)))
- 		if (notNil helpEntry) {
- 			if (devMode) {
- 				// just show the help string
- 				fullDescription = (at helpEntry 3)
- 			} else {
- 				// show help string and gesture hints
+		helpEntry = (helpEntry this (primName (expression block)))
+		if (notNil helpEntry) {
+			if (devMode) {
+				// just show the help string
+				fullDescription = (at helpEntry 3)
+			} else {
+				// show help string and gesture hints
 				fullDescription = (join (localized (at helpEntry 3)) '    ' (localized (at content 2)))
- 			}
- 			content = (copy content)
- 			atPut content 2 fullDescription
- 		}
- 	}
+			}
+			content = (copy content)
+			atPut content 2 fullDescription
+		}
+	}
 	return content
 }
 

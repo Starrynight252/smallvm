@@ -243,7 +243,7 @@ method microBlocksSpecs SmallCompiler {
 		(array 'r' 'getArg'				'arg _' 'num' 0)
 		(array 'r' 'longMult'			'( _ * _ ) >> _' 'num num num' 1024 2048 10)
 		(array 'r' '[misc:sin]'			'fixed sine _' 'num' 9000)
-		(array 'r' '[misc:atan2]' 		'arctan x _ y _' 'num num' 1 1)
+		(array 'r' '[misc:atan2]'		'arctan x _ y _' 'num num' 1 1)
 
 		(array ' ' '[misc:broadcastToIDE]' 'broadcast _ to IDE only' 'str' '')
 
@@ -253,7 +253,7 @@ method microBlocksSpecs SmallCompiler {
 		(array 'r' '[misc:brightness]'	'brightness _' 'color')
 
 		(array 'r' '[misc:pressureToAltitude]' 'altitude diff for pressure change from _ to _' 'num num' 30 29)
-		(array 'r' '[misc:bme680GasResistance]' 'bme680 gas resistance adc _ range _ calibration range error  _' 'num num num' 500 0 0)
+		(array 'r' '[misc:bme680GasResistance]' 'bme680 gas resistance adc _ range _ calibration range error _' 'num num num' 500 0 0)
 
 		(array 'r' '[sensors:touchRead]' 'capacitive sensor _' 'num' 1)
 		(array 'r' '[sensors:readDHT]'	'read DHT data pin _' 'num' 1)
@@ -932,7 +932,7 @@ method instructionsForJump SmallCompiler jumpOp offset {
 		return (list (array jumpOp offset)) // non-zero offset that fits into 8 bits
 	}
 	// extended jump: signed offset in the next word
-	if (offset < 0) { offset += -1 }  // adjust negative offset to account for extra word
+	if (offset < 0) { offset += -1 }	// adjust negative offset to account for extra word
 	return (list
 		(array jumpOp offset)
 		(array 'placeholder' 0))
@@ -1150,7 +1150,7 @@ method appendDecompilerMetadata SmallCompiler aBlockOrFunction instructionList {
 
 	// create varNames string
 	if (not (isEmpty localVarAndArgNames)) {
-		 // replace any tabs in var names with spaces so we can safely use tab as a delimiter
+		// replace any tabs in var names with spaces so we can safely use tab as a delimiter
 		for i (count localVarAndArgNames) {
 			s = (copyReplacing (at localVarAndArgNames i) (string 9) ' ')
 			atPut localVarAndArgNames i s

@@ -73,12 +73,12 @@ method installFromData MicroBlocksFlasher serialPortID fileNameOrURL data {
  	if ((byteCount data) == 0) { return }
 
 	if (and ('Browser' == (platform)) (isNil serialPortID)) {
-        // must request a user gesture to open port in browser after long download
-        ok = (confirm (global 'page') nil (join (localized 'Open port?')))
-        if (not ok) { return }
+		// must request a user gesture to open port in browser after long download
+		ok = (confirm (global 'page') nil (join (localized 'Open port?')))
+		if (not ok) { return }
 
 		timeout = 20000 // ten seconds
-        openSerialPort 'webserial' 115200
+		openSerialPort 'webserial' 115200
 		start = (msecsSinceStart)
 		while (and (not (isOpenSerialPort 1)) (((msecsSinceStart) - start) < timeout)) {
 			// do UI cycles until serial port is opened or timeout
@@ -86,8 +86,8 @@ method installFromData MicroBlocksFlasher serialPortID fileNameOrURL data {
 			waitMSecs 10 // refresh screen
 		}
 
-        if (isOpenSerialPort 1) { serialPortID = 1 }
-    }
+		if (isOpenSerialPort 1) { serialPortID = 1 }
+	}
 
 	espTool = (newESPTool)
 	if (notNil serialPortID) {
@@ -117,10 +117,10 @@ method installFromData MicroBlocksFlasher serialPortID fileNameOrURL data {
 method downloadProgress MicroBlocksFlasher actionLabel {
 	percent = 0
 	if ('Browser' == (platform)) {
-	    bytesExpected = (fetchBytesExpected fetchID)
-	    if (bytesExpected > 0) {
-	        percent = (round ((100 * (fetchBytesReceived fetchID)) / bytesExpected))
-	    }
+		bytesExpected = (fetchBytesExpected fetchID)
+		if (bytesExpected > 0) {
+			percent = (round ((100 * (fetchBytesReceived fetchID)) / bytesExpected))
+		}
 	} else {
 		percent = downloadProgress
 	}
@@ -140,9 +140,9 @@ method downloadCompleted MicroBlocksFlasher {
 }
 
 method downloadURLInBrowser MicroBlocksFlasher url {
-    if (beginsWith url 'http:') {
-        url = (join 'https:' (substring url 6))
-    }
+	if (beginsWith url 'http:') {
+		url = (join 'https:' (substring url 6))
+	}
 
 	fetchID = (startFetch url)
 	if (isNil fetchID) { return }

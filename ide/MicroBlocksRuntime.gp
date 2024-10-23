@@ -42,9 +42,9 @@ method evalOnBoard SmallRuntime aBlock showBytes {
 		showError (morph aBlock) (localized 'Board not connected')
 		return
 	}
-    if (or (isNil vmVersion) (vmVersion < 300)) {
-        return (vmIncomptabibleWithIDE this)
-    }
+	if (or (isNil vmVersion) (vmVersion < 300)) {
+		return (vmIncomptabibleWithIDE this)
+	}
 	if (isNil (ownerThatIsA (morph aBlock) 'ScriptEditor')) {
 		// running a block from the palette, not included in saveAllChunks
 		saveChunk this aBlock
@@ -155,13 +155,13 @@ method showInstructions SmallRuntime aBlock {
 		} ('placeholder' == (first item)) {
 			addWithLineNum this result '<data>'
 		} else {
-	        if (isOneOf (first item) 'commandPrimitive' 'reporterPrimitive') {
-	            // re-order item to display argCount last
-	            item = (copy item)
-	            argCount = (at item 4)
-	            atPut item 4 (at item 5)
-	            atPut item 5 argCount
-	        }
+			if (isOneOf (first item) 'commandPrimitive' 'reporterPrimitive') {
+				// re-order item to display argCount last
+				item = (copy item)
+				argCount = (at item 4)
+				atPut item 4 (at item 5)
+				atPut item 5 argCount
+			}
 			// instruction (an array of form <cmd> <args...>)
 			instr = (join '[' (opcodeForInstr compiler (at item 1)) '] ')
 			for s item { instr = (join instr s ' ') }
@@ -184,9 +184,9 @@ method addWithLineNum SmallRuntime aList instruction items {
 			'pushLiteral' 'jmp' 'longJmp' 'jmpTrue' 'jmpFalse' 'jmpAnd' 'jmpOr' 'decrementAndJmp')) {
 		offset = (toInteger (last items))
 		if ('pushLiteral' != (first items)) {
-		    if (or (0 == offset) (offset < -128) (offset > 127) ('longJmp' == (first items))) {
-		        offset += 1
-		    }
+			if (or (0 == offset) (offset < -128) (offset > 127) ('longJmp' == (first items))) {
+				offset += 1
+			}
 		}
 		targetLine = (join ' (line ' (+ currentLine 1 offset) ')')
 	}
@@ -224,7 +224,7 @@ method showCallTree SmallRuntime aBlock {
 		funcName = (primName (expression aBlock))
 	}
 
-    globalVars = (allVariableNames (project scripter))
+	globalVars = (allVariableNames (project scripter))
 	allFunctions = (dictionary)
 	for f (allFunctions (project scripter)) { atPut allFunctions (functionName f) f }
 
@@ -283,14 +283,14 @@ method appendCallsForFunction SmallRuntime funcName result indent globalVars all
 // Decompiler tests
 
 method testDecompiler SmallRuntime aBlock {
-    if (isClass aBlock 'BlockDefinition') {
-        funcName = (functionNamed (project scripter) (op aBlock))
-        gpCode = (decompileBytecodes -1 (chunkTypeFor this funcName) (chunkBytesFor this funcName))
-    } else {
-        topBlock = (topBlock aBlock)
-        gpCode = (decompileBytecodes -1 (chunkTypeFor this topBlock) (chunkBytesFor this topBlock))
-    }
-     showCodeInHand this gpCode
+	if (isClass aBlock 'BlockDefinition') {
+		funcName = (functionNamed (project scripter) (op aBlock))
+		gpCode = (decompileBytecodes -1 (chunkTypeFor this funcName) (chunkBytesFor this funcName))
+	} else {
+		topBlock = (topBlock aBlock)
+		gpCode = (decompileBytecodes -1 (chunkTypeFor this topBlock) (chunkBytesFor this topBlock))
+	}
+	showCodeInHand this gpCode
 }
 
 method showCodeInHand SmallRuntime gpCode {
@@ -307,9 +307,9 @@ method showCodeInHand SmallRuntime gpCode {
 }
 
 method compileAndDecompile SmallRuntime aBlockOrFunction {
-    if (isClass aBlockOrFunction 'Function') {
-        chunkID = (first (at chunkIDs (functionName aBlockOrFunction)))
-    }
+	if (isClass aBlockOrFunction 'Function') {
+		chunkID = (first (at chunkIDs (functionName aBlockOrFunction)))
+	}
 	chunkType = (chunkTypeFor this aBlockOrFunction)
 	bytecodes1 = (chunkBytesFor this aBlockOrFunction)
 	gpCode = (decompileBytecodes chunkID chunkType bytecodes1)
@@ -330,7 +330,7 @@ method decompileAll SmallRuntime {
 }
 
 method decompileAllExamples SmallRuntime {
-    // decompileAllExamples (smallRuntime)
+//	decompileAllExamples (smallRuntime)
 
 	for fn (listEmbeddedFiles) {
 		if (beginsWith fn 'Examples') {
@@ -342,7 +342,7 @@ method decompileAllExamples SmallRuntime {
 }
 
 method decompileAllLibraries SmallRuntime {
-    // decompileAllLibraries (smallRuntime)
+//	decompileAllLibraries (smallRuntime)
 
 	for fn (listEmbeddedFiles) {
 		if (beginsWith fn 'Libraries') {
@@ -355,7 +355,7 @@ method decompileAllLibraries SmallRuntime {
 }
 
 method decompileAllInProject SmallRuntime {
-    // decompileAllInProject (smallRuntime)
+//	decompileAllInProject (smallRuntime)
 
 	assignFunctionIDs this
 	for aFunction (allFunctions (project scripter)) {
@@ -369,14 +369,14 @@ method decompileAllInProject SmallRuntime {
 }
 
 method analyzeAllExamples SmallRuntime {
-    grandTotal = 0
-    projectCount = 0
+	grandTotal = 0
+	projectCount = 0
 	for fn (listEmbeddedFiles) {
 		if (beginsWith fn 'Examples') {
 			print fn
 			openProjectFromFile (findMicroBlocksEditor) (join '//' fn)
 			grandTotal += (analyzeProject this)
-		    projectCount += 1
+			projectCount += 1
 		}
 	}
 	print 'Grand total:' grandTotal 'for' projectCount 'projects'
@@ -403,7 +403,7 @@ method analyzeProject SmallRuntime {
 }
 
 method metadataBytesInAllLibraries SmallRuntime {
-   // metadataBytesInAllProjects (smallRuntime)
+//	metadataBytesInAllProjects (smallRuntime)
 
 	for fn (listEmbeddedFiles) {
 		if (beginsWith fn 'Examples') {
@@ -437,16 +437,16 @@ method metadataBytesInAllLibraries SmallRuntime {
 }
 
 method metadataBytesInProject SmallRuntime {
-    // metadataBytesInProject (smallRuntime)
+	// metadataBytesInProject (smallRuntime)
 
-    byteCount = 0
+	byteCount = 0
 	assignFunctionIDs this
 	for aFunction (allFunctions (project scripter)) {
 		byteCount += (metadataBytesFor this aFunction)
 	}
 	for aBlock (sortedScripts (scriptEditor scripter)) {
 		if (not (isPrototypeHat aBlock)) { // functions are handled above
-		    byteCount += (metadataBytesFor this aBlock)
+			byteCount += (metadataBytesFor this aBlock)
 		}
 	}
 	return byteCount
@@ -460,7 +460,7 @@ method metadataBytesFor SmallRuntime aBlockOrFunction {
 	opcodes = (list)
 	appendDecompilerMetadata (initialize (new 'SmallCompiler')) aBlockOrFunction opcodes
 	metadata = (joinStrings (copyFromTo (last opcodes) 2) (string 9))
-    return (byteCount metadata)
+	return (byteCount metadata)
 }
 
 // Decompiling
@@ -543,12 +543,12 @@ method waitForPing SmallRuntime {
 	lastPingRecvMSecs = 0
 	iter = 0
 	while (0 == lastPingRecvMSecs) {
-	    now = (msecsSinceStart)
+		now = (msecsSinceStart)
 		if (now > endMSecs) { return } // no response within the timeout
 		if ((iter % 20) == 0) {
-		    // send a ping every 100 msecs
-		    sendMsg this 'pingMsg'
-		    pingSentMSecs = now
+			// send a ping every 100 msecs
+			sendMsg this 'pingMsg'
+			pingSentMSecs = now
 		}
 		processMessages this
 		iter += 1
@@ -742,7 +742,7 @@ method stopAndSyncScripts SmallRuntime alreadyStopped {
 	suspendCodeFileUpdates this
 	saveAllChunks this true
 	resumeCodeFileUpdates this
-    showDownloadProgress (findMicroBlocksEditor) 3 1
+	showDownloadProgress (findMicroBlocksEditor) 3 1
 }
 
 method softReset SmallRuntime {
@@ -778,16 +778,16 @@ method webSerialConnect SmallRuntime action {
 			return
 		}
 		if (beginsWith action 'connect (BLE)') {
-		    openSerialPort 'webBLE' 115200
+			openSerialPort 'webBLE' 115200
 		} else {
-		    openSerialPort 'webserial' 115200
+			openSerialPort 'webserial' 115200
 		}
 		disconnected = false
 		connectionStartTime = (msecsSinceStart)
 		portName = 'webserial'
 		port = 1
-	    lastPingRecvMSecs = 0
-	    sendMsg this 'pingMsg'
+		lastPingRecvMSecs = 0
+		sendMsg this 'pingMsg'
 	}
 }
 
@@ -797,9 +797,9 @@ method selectPort SmallRuntime {
 	if ('Browser' == (platform)) {
 		menu = (menu 'Connect' (action 'webSerialConnect' this) true)
 		if (and (isNil port) ('boardie' != portName)) {
-            addItem menu 'connect'
-            addItem menu 'connect (BLE)'
-            addLine menu
+			addItem menu 'connect'
+			addItem menu 'connect (BLE)'
+			addLine menu
 			addItem menu 'open Boardie'
 		} else {
 			addItem menu 'disconnect'
@@ -858,9 +858,10 @@ method portList SmallRuntime {
 	} else {
 		for fn (listFiles '/dev') {
 			if (or	(notNil (nextMatchIn 'usb' (toLowerCase fn) )) // MacOS
-					(notNil (nextMatchIn 'acm' (toLowerCase fn) ))) { // Linux
-			    if (isNil (nextMatchIn 'usbmon' (toLowerCase fn))) { // ignore 'usbmonX' devices
-				    add portList (join '/dev/' fn)
+					(notNil (nextMatchIn 'acm' (toLowerCase fn) ))
+			) { // Linux
+				if (isNil (nextMatchIn 'usbmon' (toLowerCase fn))) { // ignore 'usbmonX' devices
+					add portList (join '/dev/' fn)
 				}
 			}
 		}
@@ -1018,7 +1019,7 @@ method updateConnection SmallRuntime {
 		// ping timeout: close port to force reconnection
 		print 'Lost communication to the board'
 		clearRunningHighlights this
-        closePort this
+		closePort this
 		return 'not connected'
 	}
 }
@@ -1046,9 +1047,9 @@ method justConnected SmallRuntime {
 		} else {
 			print 'Incremental download' vmVersion boardType
 		}
-        showDownloadProgress (findMicroBlocksEditor) 2 0
-        stopAndSyncScripts this true
-        softReset this
+		showDownloadProgress (findMicroBlocksEditor) 2 0
+		stopAndSyncScripts this true
+		softReset this
 	}
 }
 
@@ -1066,11 +1067,11 @@ method tryToConnect SmallRuntime {
 		if (isOpenSerialPort 1) {
 			portName = 'webserial'
 			port = 1
-            if (lastPingRecvMSecs != 0) { // got a ping; we're connected!
-                justConnected this
-                return 'connected'
-            }
-            sendMsg this 'pingMsg' // send another ping
+			if (lastPingRecvMSecs != 0) { // got a ping; we're connected!
+				justConnected this
+				return 'connected'
+			}
+			sendMsg this 'pingMsg' // send another ping
 			return 'not connected' // don't make circle green until successful ping
 		} else {
 			portName = nil
@@ -1093,7 +1094,7 @@ method tryToConnect SmallRuntime {
 			justConnected this
 			return 'connected'
 		}
-        sendMsg this 'pingMsg' // send another ping
+		sendMsg this 'pingMsg' // send another ping
 		if (now < connectionStartTime) { connectionStartTime = now } // clock wrap
 		if ((now - connectionStartTime) < connectionAttemptTimeout) { return 'not connected' } // keep trying
 	}
@@ -1230,17 +1231,17 @@ method checkVmVersion SmallRuntime {
 	// prevent version check from running while the decompiler is working
 	if readFromBoard { return }
 	if ((latestVmVersion this) > vmVersion) {
-	    offerToUpdate = (not (isOneOf boardType
-	        'CircuitPlayground' 'CircuitPlayground Bluefruit' 'Clue' 'MakerPort'
-	        'RP2040' 'Pico W' 'Pico:ed' 'Wukong2040'))
-	    if (not offerToUpdate) {
-	        // Inform the user but don't offer to update these boards since updating
-	        // then requires the user to put the board into boot mode.
-		    inform (global 'page') (join
-			    (localized 'The MicroBlocks in your board is not current')
-			    ' (v' vmVersion ' vs. v' (latestVmVersion this) ').') 'Firmware version'
+		offerToUpdate = (not (isOneOf boardType
+			'CircuitPlayground' 'CircuitPlayground Bluefruit' 'Clue' 'MakerPort'
+			'RP2040' 'Pico W' 'Pico:ed' 'Wukong2040'))
+		if (not offerToUpdate) {
+			// Inform the user but don't offer to update these boards since updating
+			// then requires the user to put the board into boot mode.
+			inform (global 'page') (join
+				(localized 'The MicroBlocks in your board is not current')
+				' (v' vmVersion ' vs. v' (latestVmVersion this) ').') 'Firmware version'
 			return
-	    }
+		}
 		ok = (confirm (global 'page') nil (join
 			(localized 'The MicroBlocks in your board is not current')
 			' (v' vmVersion ' vs. v' (latestVmVersion this) ').' (newline)
@@ -1250,8 +1251,8 @@ method checkVmVersion SmallRuntime {
 }
 
 method vmIncomptabibleWithIDE SmallRuntime {
-    msg = (localized 'The firmware on the board is not compatible with this version of MicroBlocks.')
-     inform (global 'page') msg
+	msg = (localized 'The firmware on the board is not compatible with this version of MicroBlocks.')
+	inform (global 'page') msg
 }
 
 method installBoardSpecificBlocks SmallRuntime {
@@ -1260,12 +1261,12 @@ method installBoardSpecificBlocks SmallRuntime {
 	if (or readFromBoard (notNil decompiler)) { return } // don't load libraries while decompiling
 	if (hasUserCode (project scripter)) { return } // don't load libraries if project has user code
 	if (boardLibAutoLoadDisabled (findMicroBlocksEditor)) { return } // board lib autoload has been disabled by user
-    if (isNil boardType) { return } // can happen if VM was updated by versionReceived
+	if (isNil boardType) { return } // can happen if VM was updated by versionReceived
 
 	if ('Boardie' == boardType) {
 		importEmbeddedLibrary scripter 'LED Display'
 		importEmbeddedLibrary scripter 'Tone'
-    } ('Citilab ED1' == boardType) {
+	} ('Citilab ED1' == boardType) {
 		importEmbeddedLibrary scripter 'ED1 Buttons'
 		importEmbeddedLibrary scripter 'Tone'
 		importEmbeddedLibrary scripter 'Basic Sensors'
@@ -1313,23 +1314,23 @@ method installBoardSpecificBlocks SmallRuntime {
 // BLE Control
 
 method boardIsBLECapable SmallRuntime {
-    status = (updateConnection this)
-    if ('connected' != status) { return false }
+	status = (updateConnection this)
+	if ('connected' != status) { return false }
 	if (isNil boardType) { getVersion this }
-    if (isOneOf boardType
-        'Citilab ED1' 'Databot' 'M5Stack-Core' 'ESP32' 'Mbits' 'M5StickC+' 'M5StickC' 'M5Atom-Matrix') {
-        return true
-    }
-    return false
+	if (isOneOf boardType
+		'Citilab ED1' 'Databot' 'M5Stack-Core' 'ESP32' 'Mbits' 'M5StickC+' 'M5StickC' 'M5Atom-Matrix') {
+		return true
+	}
+	return false
 }
 
 method setBLEFlag SmallRuntime {
-    enableBLE = (confirm (global 'page') nil 'Allow the attached board to be connected via BLE?')
-    if enableBLE {
-        sendMsg this 'enableBLEMsg' 1
-    } else {
-        sendMsg this 'enableBLEMsg' 0
-    }
+	enableBLE = (confirm (global 'page') nil 'Allow the attached board to be connected via BLE?')
+	if enableBLE {
+		sendMsg this 'enableBLEMsg' 1
+	} else {
+		sendMsg this 'enableBLEMsg' 0
+	}
 }
 
 method clearBoardIfConnected SmallRuntime doReset {
@@ -1349,10 +1350,10 @@ method sendStopAll SmallRuntime {
 }
 
 method startAll SmallRuntime {
-    if (and (notNil vmVersion) (vmVersion < 300)) {
-        return (vmIncomptabibleWithIDE this)
-    }
-    sendStartAll this
+	if (and (notNil vmVersion) (vmVersion < 300)) {
+		return (vmIncomptabibleWithIDE this)
+	}
+	sendStartAll this
 }
 
 method sendStartAll SmallRuntime {
@@ -1410,7 +1411,7 @@ method saveAllChunksAfterLoad SmallRuntime {
 	suspendCodeFileUpdates this
 	saveAllChunks this true
 	resumeCodeFileUpdates this
-    showDownloadProgress (findMicroBlocksEditor) 3 1
+	showDownloadProgress (findMicroBlocksEditor) 3 1
 }
 
 method saveAllChunks SmallRuntime checkCRCs {
@@ -1418,7 +1419,7 @@ method saveAllChunks SmallRuntime checkCRCs {
 
 	if (isNil checkCRCs) { checkCRCs = true }
 	if (not (connectedToBoard this)) { return }
-    if (or (isNil vmVersion) (vmVersion < 300)) { return } // incompatible VM
+	if (or (isNil vmVersion) (vmVersion < 300)) { return } // incompatible VM
 
 	setCursor 'wait'
 
@@ -1453,9 +1454,9 @@ method saveAllChunks SmallRuntime checkCRCs {
 			}
 		}
 		if (not (connectedToBoard this)) { // connection closed
-		    print 'Lost communication to the board in saveAllChunks'
-		    setCursor 'default'
-		    return
+			print 'Lost communication to the board in saveAllChunks'
+			setCursor 'default'
+			return
 		}
 		processedScripts += 1
 	}
@@ -1470,11 +1471,11 @@ method saveAllChunks SmallRuntime checkCRCs {
 					showDownloadProgress editor 3 (processedScripts / totalScripts)
 				}
 			}
-            if (not (connectedToBoard this)) { // connection closed
-                print 'Lost communication to the board in saveAllChunks'
-                setCursor 'default'
-                return
-            }
+			if (not (connectedToBoard this)) { // connection closed
+				print 'Lost communication to the board in saveAllChunks'
+				setCursor 'default'
+				return
+			}
 		}
 		processedScripts += 1
 	}
@@ -1556,20 +1557,20 @@ method saveChunk SmallRuntime aBlockOrFunction skipHiddenFunctions {
 	chunkType = (chunkTypeFor this aBlockOrFunction)
 	chunkBytes = (chunkBytesFor this aBlockOrFunction)
 
-    while (((count chunkBytes) % 4) != 0) {
-        // pad with zeros to make chunk byte count be an even multiple of four
-        // this ensures 32-bit word chunk alignment in the code store
-        add chunkBytes 0
-    }
+	while (((count chunkBytes) % 4) != 0) {
+		// pad with zeros to make chunk byte count be an even multiple of four
+		// this ensures 32-bit word chunk alignment in the code store
+		add chunkBytes 0
+	}
 
 	data = (list chunkType)
 	addAll data chunkBytes
 	if ((count data) > 1000) {
 		if (isClass aBlockOrFunction 'Function') {
-            print (join (functionName aBlockOrFunction) (localized 'Script is too large to send to board.'))
-            // The following causes a recursive error because "inform" runs the step function
-            // which tries to save the script again. Workaround is to only print the error
-            // in the console.
+			print (join (functionName aBlockOrFunction) (localized 'Script is too large to send to board.'))
+			// The following causes a recursive error because "inform" runs the step function
+			// which tries to save the script again. Workaround is to only print the error
+			// in the console.
 // 			inform (global 'page') (join
 // 				(localized 'Function "') (functionName aBlockOrFunction)
 // 				(localized '" is too large to send to board.'))
@@ -1608,7 +1609,7 @@ method saveChunk SmallRuntime aBlockOrFunction skipHiddenFunctions {
 	if (storeChunkOnBoard this chunkID data chunkCRC) {
 		atPut entry 2 chunkCRC // remember the CRC of the code we just saved
 	} else {
-        print 'Failed to save chunk:' chunkID
+		print 'Failed to save chunk:' chunkID
 		atPut entry 2 nil // save failed; clear CRC
 	}
 
@@ -1758,9 +1759,10 @@ method boardHasSameProject SmallRuntime {
 	changedOrMissingCount = 0
 	for chunkID (keys ideChunks) {
 		if (or
-		    (not (contains crcDict chunkID))
-		    ((at crcDict chunkID) != (at crcForChunkID chunkID))) {
-			     changedOrMissingCount += 1
+			(not (contains crcDict chunkID))
+			((at crcDict chunkID) != (at crcForChunkID chunkID))
+		) {
+				changedOrMissingCount += 1
 		}
 	}
 
@@ -1876,7 +1878,7 @@ method saveVariableNames SmallRuntime {
 }
 
 method runChunk SmallRuntime chunkID {
-    if (or (isNil vmVersion) (vmVersion < 300)) { return } // incompatible VM
+	if (or (isNil vmVersion) (vmVersion < 300)) { return } // incompatible VM
 	sendMsg this 'startChunkMsg' chunkID
 }
 
@@ -2094,7 +2096,7 @@ method sendMsg SmallRuntime msgName chunkID byteList {
 		// Note: Adafruit USB-serial drivers on Mac OS locks up if >= 1024 bytes
 		// written in one call to writeSerialPort, so send smaller chunks
 		// Note: Maximum serial write in Chrome browser is only 64 bytes!
-        // Note: Receive buffer on micro:bit is only 63 bytes.
+		// Note: Receive buffer on micro:bit is only 63 bytes.
 		byteCount = (min 63 (byteCount dataToSend))
 		chunk = (copyFromTo dataToSend 1 byteCount)
 		bytesSent = (writeSerialPort port chunk)
@@ -2390,7 +2392,7 @@ method getFileFromBoard SmallRuntime {
 method getAndSaveFile SmallRuntime remoteFileName {
 	data = (readFileFromBoard this remoteFileName)
 	if ('Browser' == (platform)) {
-        (confirm (global 'page') nil 'Save file?')
+		(confirm (global 'page') nil 'Save file?')
 		browserWriteFile data remoteFileName 'fileFromBoard'
 	} else {
 		fName = (fileToWrite remoteFileName)
@@ -2769,7 +2771,7 @@ method showOutputStrings SmallRuntime {
 // Virtual Machine Installer
 
 method installVM SmallRuntime eraseFlashFlag downloadLatestFlag {
-    closeAllDialogs (findMicroBlocksEditor)
+	closeAllDialogs (findMicroBlocksEditor)
 	if ('Browser' == (platform)) {
 		installVMInBrowser this eraseFlashFlag downloadLatestFlag
 		return
@@ -3098,10 +3100,10 @@ method copyVMToBoardInBrowser SmallRuntime eraseFlashFlag downloadLatestFlag boa
 	}
 
 	browserWriteFile vmData vmFileName 'vmInstall'
-    waitMSecs 5000 // leave time for file to download before showing next prompt
+	waitMSecs 5000 // leave time for file to download before showing next prompt
 
-    inform (join (localized 'Drag the firmware file you just saved to the') ' ' driveName ' ' (localized 'drive') '.')
-    waitMSecs 1000 // leave time for file dialog box to appear before showing next prompt
+	inform (join (localized 'Drag the firmware file you just saved to the') ' ' driveName ' ' (localized 'drive') '.')
+	waitMSecs 1000 // leave time for file dialog box to appear before showing next prompt
 
 	if (endsWith vmFileName '.uf2') {
 		if (or ('MAKERBOOT' == driveName) ('RPI-RP2' == driveName)) {
@@ -3110,7 +3112,7 @@ method copyVMToBoardInBrowser SmallRuntime eraseFlashFlag downloadLatestFlag boa
 			adaFruitReconnectMessage this
 		}
 	} else {
-	    otherReconnectMessage this
+		otherReconnectMessage this
 	}
 }
 

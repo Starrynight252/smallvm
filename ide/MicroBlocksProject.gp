@@ -1144,9 +1144,10 @@ method equal MicroBlocksModule otherMod {
 		e1 = (at sortedScripts1 i)
 		e2 = (at sortedScripts2 i)
 		if (not (and ((at e1 1) == (at e2 1))
-					 ((at e1 2) == (at e2 2))
-					 ((at e1 3) == (at e2 3))
-					 )) {
+					((at e1 2) == (at e2 2))
+					((at e1 3) == (at e2 3))
+				)
+		) {
 			print 'script mismatch' e1 e2
 			return false
 		}

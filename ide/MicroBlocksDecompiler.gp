@@ -120,7 +120,7 @@ method addFunctionToProject MicroBlocksDecompiler aFunc chunkID project {
 	if (isNil (at (blockSpecs project) funcName)) {
 		// No blockspec for this function yet; create and add one
 		if ((count functionSpecInfo) >= 3) { // use function info, if available
-			 // create blockspec from function info
+			// create blockspec from function info
 			blockType = (at functionSpecInfo 1)
 			specString = (at functionSpecInfo 2)
 			typeString = (at functionSpecInfo 3)
@@ -413,8 +413,8 @@ method printSequence3 MicroBlocksDecompiler start end indent {
 				printSequence3 this (at ctrl 3) (at ctrl 4) (indent + 4)
 				print 'then:'
 				printSequence3 this (at ctrl 5) (at ctrl 6) (indent + 4)
- 			} else {
- 				print (join spaces op)
+			} else {
+				print (join spaces op)
 			}
 			atPut controlStructures i ctrl // restore ctrl to controlStructure
 			i = ((at ctrl 2) + 1)
@@ -930,7 +930,7 @@ method decodeNewANDorORreporter MicroBlocksDecompiler op i {
 
 
 method decodeConditionalExpression MicroBlocksDecompiler op i {
-	 // Note: The false case comes first in the compiled code.
+	// Note: The false case comes first in the compiled code.
 
 	start = (opcodeAfter this i)
 	endOfFalse = (i + (cmdArg this (at opcodes i))) // jump to end
