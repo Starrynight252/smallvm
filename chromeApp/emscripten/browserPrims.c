@@ -69,8 +69,8 @@ static OBJ primBrowserURL(int nargs, OBJ args[]) {
 	if (!isInBrowser()) return primFailed("Only works in a browser");
 
 	int len = EM_ASM_INT({
-        GP.urlBytes = (typeof window == 'undefined') ? [] : toUTF8Array(window.location.href);
-        return GP.urlBytes.length;
+		GP.urlBytes = (typeof window == 'undefined') ? [] : toUTF8Array(window.location.href);
+		return GP.urlBytes.length;
 	}, NULL);
 
 	if (!canAllocate(len / 4)) return nilObj;
@@ -218,9 +218,9 @@ static OBJ primBrowserSize(int nargs, OBJ args[]) {
 		return winH - document.getElementById('canvas').offsetTop;
 	}, NULL);
 
-    // hack: inset by 1 pixel to avoid scrollbars
-    w -= 1;
-    h -= 1;
+	// hack: inset by 1 pixel to avoid scrollbars
+	w -= 1;
+	h -= 1;
 
 	OBJ result = newObj(ArrayClass, 2, nilObj);
 	FIELD(result, 0) = int2obj(w);
@@ -476,12 +476,12 @@ static OBJ primBrowserWritePrefs(int nargs, OBJ args[]) {
 	char *jsonData = "";
 	if ((nargs > 0) && (IS_CLASS(args[0], StringClass))) jsonData = obj2str(args[0]);
 	EM_ASM_({
-	    if ((typeof chrome !== 'undefined') && (typeof chrome.storage !== 'undefined')) {
- 			chrome.storage.sync.set(
+		if ((typeof chrome !== 'undefined') && (typeof chrome.storage !== 'undefined')) {
+			chrome.storage.sync.set(
 				{ userPrefs: UTF8ToString($0) },
 				function() {});
-	    } else {
-		    localStorage.setItem('user-prefs', UTF8ToString($0));
+		} else {
+			localStorage.setItem('user-prefs', UTF8ToString($0));
 		}
 	}, jsonData);
 	return nilObj;
@@ -489,14 +489,14 @@ static OBJ primBrowserWritePrefs(int nargs, OBJ args[]) {
 
 static OBJ primBrowserReadPrefs(int nargs, OBJ args[]) {
 	int len = EM_ASM_INT({
-	    if ((typeof chrome !== 'undefined') && (typeof chrome.storage !== 'undefined')) {
-            chrome.storage.sync.get(
-                ['userPrefs'],
-                function(result) { GP.prefs = result.userPrefs; });
-	    } else {
-	        GP.prefs = localStorage.getItem('user-prefs');
-	    }
-	    if (!GP.prefs) return 0;
+		if ((typeof chrome !== 'undefined') && (typeof chrome.storage !== 'undefined')) {
+			chrome.storage.sync.get(
+				['userPrefs'],
+				function(result) { GP.prefs = result.userPrefs; });
+		} else {
+			GP.prefs = localStorage.getItem('user-prefs');
+		}
+		if (!GP.prefs) return 0;
 		return (new TextEncoder()).encode(GP.prefs).length;
 	});
 
@@ -537,7 +537,7 @@ static OBJ primBoardiePutFile(int nargs, OBJ args[]) {
 			var data = Module.HEAPU8.subarray($1, $1 + $2);
 			var dataString = "";
 			for (var i = 0; i < data.length; i++) {
-                dataString += String.fromCharCode(data[i]);
+				dataString += String.fromCharCode(data[i]);
 			}
 			window.localStorage[fileName] = dataString;
 		},
@@ -722,7 +722,7 @@ static void setClipRect(OBJ clipRectObj) {
 // ***** Canvas-based graphics primitives *****
 
 static OBJ primOpenWindow(int nargs, OBJ args[]) {
-    // Note: We always use retina mode the browser.
+	// Note: We always use retina mode the browser.
 
 	int w = intOrFloatArg(0, 500, nargs, args);
 	int h = intOrFloatArg(1, 500, nargs, args);
@@ -731,12 +731,12 @@ static OBJ primOpenWindow(int nargs, OBJ args[]) {
 		var w = $0;
 		var h = $1;
 
-        // make background gray to make any gaps less noticable
+		// make background gray to make any gaps less noticable
 		document.body.style.backgroundColor = "rgb(200,200,200)";
 
 		var winCnv = document.getElementById('canvas');
 		if (winCnv) {
-		    winCnv.style.setProperty('margin-top', -19 + 'px'); // avoid gray band in Chrome
+			winCnv.style.setProperty('margin-top', -19 + 'px'); // avoid gray band in Chrome
 			winCnv.style.setProperty('width', w + 'px');
 			winCnv.style.setProperty('height', h + 'px');
 			winCnv.width = 2 * w;
@@ -1457,35 +1457,35 @@ OBJ primSetCursor(int nargs, OBJ args[]) {
 
 static PrimEntry browserPrimList[] = {
 	{"-----", NULL, "Browser Support"},
-	{"browserURL",				primBrowserURL,			"Return the full URL of the current browser page."},
-	{"startFetch",				primStartFetch,			"Start downloading the contents of a URL. Return an id that can be used to get the result. Argument: urlString"},
-	{"fetchBytesReceived",		primFetchBytesReceived,	"Return the number number of bytes received by the fetch request so far. Argument: id"},
-	{"fetchBytesExpected",		primFetchBytesExpected,	"Return the number bytes expected by the fetch request or zero if not yet known.  Argument: id"},
-	{"fetchResult",				primFetchResult,		"Return the result of the fetch operation with the given id: a BinaryData object (success), false (failure), or nil if in progress. Argument: id"},
-	{"browserSize",				primBrowserSize,		"Return the inner width and height of the browser window."},
-	{"browserScreenSize",		primBrowserScreenSize,	"Return the width and height of the entire screen containing the browser."},
-	{"setFillBrowser",			primSetFillBrowser,		"Set 'fill browser' mode. If true, the GP canvas is resized to fill the entire browser window."},
-	{"browserFileImport",		primBrowserFileImport,	"Show a file input button that the user can click to import a file."},
+	{"browserURL",						primBrowserURL,							"Return the full URL of the current browser page."},
+	{"startFetch",						primStartFetch,							"Start downloading the contents of a URL. Return an id that can be used to get the result. Argument: urlString"},
+	{"fetchBytesReceived",		primFetchBytesReceived,			"Return the number number of bytes received by the fetch request so far. Argument: id"},
+	{"fetchBytesExpected",		primFetchBytesExpected,			"Return the number bytes expected by the fetch request or zero if not yet known. Argument: id"},
+	{"fetchResult",						primFetchResult,						"Return the result of the fetch operation with the given id: a BinaryData object (success), false (failure), or nil if in progress. Argument: id"},
+	{"browserSize",						primBrowserSize,						"Return the inner width and height of the browser window."},
+	{"browserScreenSize",			primBrowserScreenSize,			"Return the width and height of the entire screen containing the browser."},
+	{"setFillBrowser",				primSetFillBrowser,					"Set 'fill browser' mode. If true, the GP canvas is resized to fill the entire browser window."},
+	{"browserFileImport",			primBrowserFileImport,			"Show a file input button that the user can click to import a file."},
 	{"browserGetDroppedFile",	primBrowserGetDroppedFile,	"Get the next dropped file record array (fileName, binaryData), or nil if there isn't one."},
 	{"browserGetDroppedText",	primBrowserGetDroppedText,	"Get last dropped or pasted text, or nil if there isn't any."},
-	{"browserGetMessage",		primBrowserGetMessage,		"Get the next message from the browser, or nil if there isn't any."},
-	{"browserPostMessage",		primBrowserPostMessage,		"Post a message to the browser using the 'postMessage' function."},
-	{"browserIsMobile",			primBrowserIsMobile,		"Return true if running in a mobile browser."},
-	{"browserHasLanguage",		primBrowserHasLanguage,		"Return true the given language code is in navigator.languages. Argument: language code string (e.g. 'en')."},
-	{"browserIsChromeOS",		primBrowserIsChromeOS,		"Return true if running as a Chromebook app."},
-	{"browserHasWebSerial",		primBrowserHasWebSerial,	"Return true the browser supports the Web Serial API."},
-	{"browserReadFile",			primBrowserReadFile,		"Select and read a file in the browser. Args: [extension]"},
-	{"browserWriteFile",		primBrowserWriteFile,		"Select and write a file the browser. Args: data [suggestedFileName, id]"},
-	{"browserLastSaveName",		primBrowserLastSaveName,	"Return the name of the most recent file save."},
-	{"browserSetShadow",		primBrowserSetShadow,		"Set the Canvas shadow color, offset, and blur for following graphics operations. Args: color, offset, blur"},
-	{"browserClearShadow",		primBrowserClearShadow,		"Disable the Canvas shadow effect."},
-	{"browserReadPrefs",		primBrowserReadPrefs,		"Read user preferences from localStorage."},
-	{"browserWritePrefs",		primBrowserWritePrefs,		"Write user preferences to localStorage. Args: jsonString"},
-	{"browserOpenBoardie",      primBrowserOpenBoardie,		"Open boardie."},
-	{"browserCloseBoardie",     primBrowserCloseBoardie,	"Disconnect boardie."},
-	{"boardiePutFile",          primBoardiePutFile,         "Store a file in boardie's file system."},
-	{"boardieGetFile",          primBoardieGetFile,         "Read a file from boardie's file system."},
-	{"boardieFileList",         primBoardieListFiles,       "Get a list of files in boardie's file system."},
+	{"browserGetMessage",			primBrowserGetMessage,			"Get the next message from the browser, or nil if there isn't any."},
+	{"browserPostMessage",		primBrowserPostMessage,			"Post a message to the browser using the 'postMessage' function."},
+	{"browserIsMobile",				primBrowserIsMobile,				"Return true if running in a mobile browser."},
+	{"browserHasLanguage",		primBrowserHasLanguage,			"Return true the given language code is in navigator.languages. Argument: language code string (e.g. 'en')."},
+	{"browserIsChromeOS",			primBrowserIsChromeOS,			"Return true if running as a Chromebook app."},
+	{"browserHasWebSerial",		primBrowserHasWebSerial,		"Return true the browser supports the Web Serial API."},
+	{"browserReadFile",				primBrowserReadFile,				"Select and read a file in the browser. Args: [extension]"},
+	{"browserWriteFile",			primBrowserWriteFile,				"Select and write a file the browser. Args: data [suggestedFileName, id]"},
+	{"browserLastSaveName",		primBrowserLastSaveName,		"Return the name of the most recent file save."},
+	{"browserSetShadow",			primBrowserSetShadow,				"Set the Canvas shadow color, offset, and blur for following graphics operations. Args: color, offset, blur"},
+	{"browserClearShadow",		primBrowserClearShadow,			"Disable the Canvas shadow effect."},
+	{"browserReadPrefs",			primBrowserReadPrefs,				"Read user preferences from localStorage."},
+	{"browserWritePrefs",			primBrowserWritePrefs,			"Write user preferences to localStorage. Args: jsonString"},
+	{"browserOpenBoardie",		primBrowserOpenBoardie,			"Open boardie."},
+	{"browserCloseBoardie",		primBrowserCloseBoardie,		"Disconnect boardie."},
+	{"boardiePutFile",				primBoardiePutFile,					"Store a file in boardie's file system."},
+	{"boardieGetFile",				primBoardieGetFile,					"Read a file from boardie's file system."},
+	{"boardieFileList",				primBoardieListFiles,				"Get a list of files in boardie's file system."},
 };
 
 static PrimEntry graphicsPrimList[] = {
