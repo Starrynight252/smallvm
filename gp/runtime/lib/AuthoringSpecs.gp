@@ -1,4 +1,4 @@
-defineClass AuthoringSpecs specsList specsByOp opCategory language translationDictionary langNameDict
+defineClass AuthoringSpecs specsList specsByOp opCategory language translationDictionary langNameDict englishDictionary
 
 method allOpNames AuthoringSpecs {
   result = (toList (keys specsByOp))
@@ -17,6 +17,7 @@ method initialize AuthoringSpecs {
 
   clear this
   addSpecs this (initialSpecs this)
+  readEnglishDictionary this
   return this
 }
 
@@ -24,7 +25,7 @@ method clear AuthoringSpecs {
   specsList = (list)
   specsByOp = (dictionary)
   opCategory = (dictionary)
-  language = 'English'
+  language = 'en'
   translationDictionary = nil
   return this
 }
@@ -184,18 +185,18 @@ method blockColorForCategory AuthoringSpecs cat {
 	}
   }
   defaultColor = (colorHSV 205 0.83 0.87)
-  if ('Output' == cat) { return (colorHex '4852BF')
-  } ('Input' == cat) { return (colorHex '9F42A5')
-  } ('Pins' == cat) { return (colorHex '548799')
-  } ('Comm' == cat) { return (colorHex '1E997A')
-  } ('Control' == cat) { return (colorHex 'D18C25')
-  } ('Operators' == cat) { return (colorHex '479D1D')
-  } ('Variables' == cat) { return (colorHex 'D3732A')
-  } ('Data' == cat) { return (colorHex 'C44E6B')
-  } ('Advanced' == cat) { return (colorHSV 30 0.70 0.70)
-  } ('My Blocks' == cat) { return (colorHex '1A8CDD')
-  } ('Library' == cat) { return (colorHSV 165 0.80 0.60)
-  } ('Obsolete' == cat) { return (colorHSV 4.6 1.0 0.77)
+  if ('cat;Output' == cat) { return (colorHex '4852BF')
+  } ('cat;Input' == cat) { return (colorHex '9F42A5')
+  } ('cat;Pins' == cat) { return (colorHex '548799')
+  } ('cat;Comm' == cat) { return (colorHex '1E997A')
+  } ('cat;Control' == cat) { return (colorHex 'D18C25')
+  } ('cat;Operators' == cat) { return (colorHex '479D1D')
+  } ('cat;Variables' == cat) { return (colorHex 'D3732A')
+  } ('cat;Data' == cat) { return (colorHex 'C44E6B')
+  } ('cat;Advanced' == cat) { return (colorHSV 30 0.70 0.70)
+  } ('cat;My Blocks' == cat) { return (colorHex '1A8CDD')
+  } ('cat;Library' == cat) { return (colorHSV 165 0.80 0.60)
+  } ('cat;Obsolete' == cat) { return (colorHSV 4.6 1.0 0.77)
   }
   return defaultColor
 }
@@ -204,18 +205,18 @@ method oldMicroBlocksColor AuthoringSpecs cat {
   // old Comm color: (colorHSV 195 0.50 0.60)
   // old default color: (colorHSV 200 0.98 0.86)
   defaultColor = (colorHSV 205 0.83 0.87)
-  if ('Output' == cat) { return (colorHSV 235 0.62 0.75)
-  } ('Input' == cat) { return (colorHSV 296 0.60 0.65)
-  } ('Pins' == cat) { return (colorHSV 195 0.45 0.60)
-  } ('Comm' == cat) {  return (colorHSV 14 0.75 0.80)
-  } ('Control' == cat) { return (colorHSV 36 0.70 0.87)
-  } ('Operators' == cat) { return (colorHSV 100 0.75 0.65)
-  } ('Variables' == cat) { return (colorHSV 26 0.80 0.83)
-  } ('Data' == cat) { return (colorHSV 345 0.60 0.77)
-  } ('Advanced' == cat) { return (colorHSV 30 0.70 0.70)
-  } ('My Blocks' == cat) { return (colorHSV 205 0.83 0.90)
-  } ('Library' == cat) {  return (colorHSV 165 0.80 0.60)
-  } ('Obsolete' == cat) { return (colorHSV 4.6 1.0 0.77)
+  if ('cat;Output' == cat) { return (colorHSV 235 0.62 0.75)
+  } ('cat;Input' == cat) { return (colorHSV 296 0.60 0.65)
+  } ('cat;Pins' == cat) { return (colorHSV 195 0.45 0.60)
+  } ('cat;Comm' == cat) {  return (colorHSV 14 0.75 0.80)
+  } ('cat;Control' == cat) { return (colorHSV 36 0.70 0.87)
+  } ('cat;Operators' == cat) { return (colorHSV 100 0.75 0.65)
+  } ('cat;Variables' == cat) { return (colorHSV 26 0.80 0.83)
+  } ('cat;Data' == cat) { return (colorHSV 345 0.60 0.77)
+  } ('cat;Advanced' == cat) { return (colorHSV 30 0.70 0.70)
+  } ('cat;My Blocks' == cat) { return (colorHSV 205 0.83 0.90)
+  } ('cat;Library' == cat) {  return (colorHSV 165 0.80 0.60)
+  } ('cat;Obsolete' == cat) { return (colorHSV 4.6 1.0 0.77)
   }
   return defaultColor
 }
@@ -253,6 +254,18 @@ method gpBlockColorForCategory AuthoringSpecs cat {
 
 method language AuthoringSpecs { return language }
 method languageCode AuthoringSpecs { return (languageCodeForName this language) }
+
+method readEnglishDictionary AuthoringSpecs {
+	oldLang = language
+	setLanguage this 'en'
+	englishDictionary = (copy translationDictionary)
+	setLanguage this language
+}
+
+method englishDict AuthoringSpecs {
+	if (isNil englishDictionary) { readEnglishDictionary this }
+	return englishDictionary
+}
 
 method setLanguage AuthoringSpecs langCode {
   translationData = (readEmbeddedFile (join 'translations/' langCode '.txt'))
@@ -325,11 +338,20 @@ method installTranslation AuthoringSpecs translationData langName {
   if (notNil langName) { language = langName }
 }
 
+to inEnglish aString { 
+	enVersion = (at (englishDict (authoringSpecs)) aString)
+	if (or (isNil enVersion) (enVersion == '--MISSING--')) {
+		return aString
+	} else {
+		return enVersion
+	}
+}
+
 to localized aString {
   if (isEmpty aString) { return aString }
   localization = (localizedOrNil aString)
   if (or (isNil localization) (localization == '--MISSING--')) {
-	return aString
+  	return (inEnglish aString)
   } else {
 	return localization
   }

@@ -449,7 +449,7 @@ method developerModeChanged MicroBlocksScripter {
   setCollection catList (categories this)
   if (not (or (contains (collection catList) (selection catList))
   			  (notNil (selection libSelector)))) {
-    select catList 'Output'
+    select catList 'cat;Output'
   } else {
     updateBlocks this
   }
@@ -457,9 +457,9 @@ method developerModeChanged MicroBlocksScripter {
 
 method categories MicroBlocksScripter {
   initMicroBlocksSpecs (new 'SmallCompiler')
-  result = (list 'Output' 'Input' 'Pins' 'Comm' 'Control' 'Operators' 'Variables' 'Data' 'My Blocks')
+  result = (list 'cat;Output' 'cat;Input' 'cat;Pins' 'cat;Comm' 'cat;Control' 'cat;Operators' 'cat;Variables' 'cat;Data' 'cat;My Blocks')
   if (not (devMode)) {
-  	removeAll result (list 'Comm')
+  	removeAll result (list 'cat;Comm')
   }
   return result
 }

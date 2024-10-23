@@ -13,7 +13,7 @@ to startup {
 	langName = (last (commandLine))
 	setLanguage (authoringSpecs) langName
 
-        // Backup previous locale file before updating it
+	// Backup previous locale file before updating it
 	oldLocale = (readFile (join '../translations/' langName '.txt'))
 	if (notNil oldLocale) {
 		(writeFile (join (tmpPath) langName '.txt') oldLocale)
@@ -37,6 +37,15 @@ to startup {
 			updatedLocale = (join updatedLocale original (newline))
 		} else {
 			translation = (localizedOrNil original)
+			if (isNil translation) {
+				// Maybe this translation has now been prefixed?
+				prefixIdx = (findFirst original ';')
+				if (prefixIdx > 0) {
+					translation = (localizedOrNil
+						(substring original (prefixIdx + 1))
+					)
+				}
+			}
 			if (or (isNil translation) (isNil oldLocale)) {
 				translation = '--MISSING--'
 			}

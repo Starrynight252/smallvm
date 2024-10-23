@@ -1,11 +1,11 @@
 # MicroBlocks translation file
-# Last updated: March 14 2023
+# Last updated: October 03 2024
 
 #########################
 # Blocks and categories #
 #########################
 
-Output
+cat;Output
 Вывод
 
 set user LED _
@@ -17,7 +17,7 @@ say _
 graph _
 график
 
-Input
+cat;Input
 Ввод
 
 button A
@@ -41,10 +41,19 @@ milliseconds
 board type
 тип платы
 
+milliseconds since _
+--MISSING--
+
+end time _
+--MISSING--
+
+microseconds since _
+--MISSING--
+
 connected to IDE
 --MISSING--
 
-Pins
+cat;Pins
 Контакты
 
 read digital pin _
@@ -68,7 +77,7 @@ analog pins
 digital pins
 цифровые контакты
 
-Control
+cat;Control
 Контроль
 
 when started
@@ -167,7 +176,7 @@ parameter list
 with _
 с _
 
-Operators
+cat;Operators
 Операторы
 
 _ mod _
@@ -206,6 +215,9 @@ _ это _
 convert _ to _
 --MISSING--
 
+if _ then _ else _
+--MISSING--
+
 boolean
 булево
 
@@ -221,7 +233,7 @@ list
 byte array
 массив байт
 
-Advanced:
+cat;Advanced:
 Продвинутый:
 
 rescale _ from ( _ , _ ) to ( _ , _ )
@@ -230,7 +242,7 @@ rescale _ from ( _ , _ ) to ( _ , _ )
 hex _
 hex _
 
-Variables
+cat;Variables
 Переменные
 
 # Buttons on top of "Variables" category
@@ -255,7 +267,7 @@ change _ by _
 initialize local _ to _
 инициализировать локальный _ для _
 
-Data
+cat;Data
 Данные
 
 list
@@ -348,10 +360,10 @@ random
 split _ by _
 разбить _ по _
 
-My Blocks
+cat;My Blocks
 Мои Блоки
 
-Generic
+cat;Generic
 Общие
 
 # Buttons on top of "My Blocks" category
@@ -367,7 +379,7 @@ Add a reporter block
 Enter function name:
 Введите название функции:
 
-Comm
+cat;Comm
 Связь
 
 i2c get device _ register _
@@ -381,6 +393,9 @@ i2c устройство _ список чтения _
 
 i2c device _ write list _
 i2c device _ список записи _
+
+i2c device _ exists?
+--MISSING--
 
 spi send _
 отправка spi _
@@ -853,7 +868,10 @@ IR transmit device _ command _
 Keyboard and Mouse
 Клавиатура и мышь
 
-press key _ : while holding _
+press key _
+--MISSING--
+
+while holding _
 --MISSING--
 
 hold key _
@@ -877,7 +895,7 @@ Alt / ⌥
 Logo / ⌘
 --MISSING--
 
-AltGr 
+AltGr
 --MISSING--
 
 enter
@@ -998,6 +1016,9 @@ shuffle _
 sort _
 --MISSING--
 
+unique _
+--MISSING--
+
 shuffled _
 --MISSING--
 
@@ -1005,6 +1026,22 @@ reversed _
 --MISSING--
 
 sorted _
+--MISSING--
+
+uniqued _
+--MISSING--
+
+####
+# Pseudorandomness
+# Creates pseudorandom numbers and lists of numbers given a particular seed
+
+Pseudorandomness
+--MISSING--
+
+pseudorandom _ to _ with seed _
+--MISSING--
+
+_ pseudorandom numbers _ to _ with seed _
 --MISSING--
 
 ####
@@ -1072,6 +1109,9 @@ LED Display
 display _
 экран _
 
+display image _
+--MISSING--
+
 clear display
 очистить экран
 
@@ -1086,6 +1126,129 @@ unplot x _ y _
 
 display character _
 отображать символ _
+
+# Image names for the "display image" block
+
+heart
+--MISSING--
+
+small heart
+--MISSING--
+
+yes
+--MISSING--
+
+no
+--MISSING--
+
+happy
+--MISSING--
+
+sad
+--MISSING--
+
+confused
+--MISSING--
+
+angry
+--MISSING--
+
+asleep
+--MISSING--
+
+surprised
+--MISSING--
+
+silly
+--MISSING--
+
+fabulous
+--MISSING--
+
+meh
+--MISSING--
+
+t-shirt
+--MISSING--
+
+roller skate
+--MISSING--
+
+duck
+--MISSING--
+
+house
+--MISSING--
+
+tortoise
+--MISSING--
+
+butterfly
+--MISSING--
+
+stick figure
+--MISSING--
+
+ghost
+--MISSING--
+
+sword
+--MISSING--
+
+giraffe
+--MISSING--
+
+skull
+--MISSING--
+
+umbrella
+--MISSING--
+
+snake
+--MISSING--
+
+rabbit
+--MISSING--
+
+cow
+--MISSING--
+
+quarter note
+--MISSING--
+
+eight note
+--MISSING--
+
+pitchfork
+--MISSING--
+
+target
+--MISSING--
+
+triangle
+--MISSING--
+
+left triangle
+--MISSING--
+
+chess board
+--MISSING--
+
+diamond
+--MISSING--
+
+small diamond
+--MISSING--
+
+square
+--MISSING--
+
+small square
+--MISSING--
+
+scissors
+--MISSING--
+
 
 ####
 # OLED Graphics library
@@ -1144,6 +1307,9 @@ defer display updates
 ####
 # TFT display library
 
+clear TFT display 
+--MISSING--
+
 enable TFT _
 включить TFT _
 
@@ -1158,6 +1324,9 @@ set TFT pixel x _ y _ to _
 
 draw line on TFT from x _ y _ to x _ y _ color _
 нарисовать линию на TFT от x _ y _ до x _ y _ color _
+
+draw vector x _ y _ angle _ length _ color _
+--MISSING--
 
 draw rectangle on TFT at x _ y _ width _ height _ color _
 нарисовать прямоугольник на TFT при x _ y _ ширина _ высота _ цвет _
@@ -1183,6 +1352,24 @@ Hello World!
 scale _ wrap _
 масштаб _ перенести _
 
+draw text _ on TFT at x _ y _ color _
+--MISSING--
+
+scale _
+--MISSING--
+
+bg color _
+--MISSING--
+
+draw bitmap _ palette _ on TFT at x _ y _
+--MISSING--
+
+set TFT backlight _ (0-10)
+--MISSING--
+
+gray _ %
+--MISSING--
+
 ####
 # BMP library
 # Can display BMP image files on a TFT display
@@ -1194,13 +1381,49 @@ image.bmp
 image.bmp
 
 ####
-# HSV color library
+# Color library
 
-HSV Colors
-HSV Цвет
+Color Operators
+--MISSING--
 
-RGB of hue _ saturation _ brightness _ (0-100)
-RGB из hue _ saturation _ brightness _ (0-100)
+color r _ g _ b _ (0-255)
+цвета r _ g _ b _ (0-255)
+
+gray _ %
+--MISSING--
+
+random color
+случайный цвет
+
+red _
+--MISSING--
+
+green _
+--MISSING--
+
+blue _
+--MISSING--
+
+color hue _ (0-360) saturation _ % brightness _ %
+--MISSING--
+
+hue _
+--MISSING--
+
+saturation _
+--MISSING--
+
+brightness _
+--MISSING--
+
+_ with hue _ (0-360)
+--MISSING--
+
+_ with saturation _ %
+--MISSING--
+
+_ with brightness _ %
+--MISSING--
 
 ####
 # Fractions library
@@ -1358,19 +1581,22 @@ Rhythm
 set tempo to _ bpm at _ / _ signature
 --MISSING--
 
-start counting _ bars
---MISSING--
-
-stop counting
---MISSING--
-
-wait until next _
+set pattern to _ bars
 --MISSING--
 
 current beat
 --MISSING--
 
 current bar
+--MISSING--
+
+wait until next _ duration
+--MISSING--
+
+wait until beat _
+--MISSING--
+
+wait until bar _
 --MISSING--
 
 ####
@@ -1436,19 +1662,19 @@ Chinese Cymbal
 Ride Bell
 --MISSING--
 
-Tambourine 
+Tambourine
 --MISSING--
 
 Splash Cymbal
 --MISSING--
 
-Cowbell 
+Cowbell
 --MISSING--
 
 Crash Cymbal 2
 --MISSING--
 
-Vibraslap 
+Vibraslap
 --MISSING--
 
 Ride Cymbal 2
@@ -1484,7 +1710,7 @@ Low Agogo
 Cabasa
 --MISSING--
 
-Maracas 
+Maracas
 --MISSING--
 
 Short Whistle
@@ -1499,7 +1725,7 @@ Short Guiro
 Long Guiro
 --MISSING--
 
-Claves 
+Claves
 --MISSING--
 
 Hi Wood Block
@@ -1522,7 +1748,7 @@ Open Triangle
 
 # General MIDI instrument categories
 
-piano 
+piano
 --MISSING--
 
 chromatic percussion
@@ -1549,7 +1775,7 @@ brass
 reed
 --MISSING--
 
-pipe 
+pipe
 --MISSING--
 
 synth lead
@@ -1567,7 +1793,7 @@ ethnic
 percussive
 --MISSING--
 
-SFX 
+SFX
 --MISSING--
 
 # General MIDI drum sets
@@ -1581,7 +1807,7 @@ room
 power
 --MISSING--
 
-electronic 
+electronic
 --MISSING--
 
 TR-808
@@ -1596,7 +1822,7 @@ brush
 orchestra
 --MISSING--
 
-SFX 
+SFX
 --MISSING--
 
 CM-64/CM-32L
@@ -1610,7 +1836,7 @@ bank select 1
 bank select 2
 --MISSING--
 
-modulation 
+modulation
 --MISSING--
 
 portamento time
@@ -1637,7 +1863,7 @@ sostenuto
 soft
 --MISSING--
 
-resonance 
+resonance
 --MISSING--
 
 release time
@@ -1646,7 +1872,7 @@ release time
 attack time
 --MISSING--
 
-cutoff 
+cutoff
 --MISSING--
 
 decay time
@@ -1675,13 +1901,22 @@ effect 2
 play MIDI note _ for _ ms on channel _ volume _
 --MISSING--
 
+stop all notes on channel _
+--MISSING--
+
 set MIDI note _ to _ on channel _ volume _
 --MISSING--
 
 note _ octave _ to MIDI key
 --MISSING--
 
+select MIDI instrument _ number _ for channel _
+--MISSING--
+
 select MIDI instrument _ for channel _
+--MISSING--
+
+variation _
 --MISSING--
 
 instrument _ number _
@@ -1750,7 +1985,7 @@ locrian
 major
 --MISSING--
 
-minor 
+minor
 --MISSING--
 
 # chord types
@@ -1770,7 +2005,7 @@ major 7th
 minor 7th
 --MISSING--
 
-Maj7 
+Maj7
 --MISSING--
 
 # sound destinations for arpeggiate block
@@ -1778,7 +2013,7 @@ Maj7
 MIDI channel
 --MISSING--
 
-tone pin 
+tone pin
 --MISSING--
 
 # library blocks
@@ -1799,6 +2034,9 @@ _ chord for root _
 --MISSING--
 
 arpeggiate _ in order _ duration _ and volume _ on _ _
+--MISSING--
+
+improvised arpeggio over _ for _ bars with durations _
 --MISSING--
 
 improvise over _ for _ bars with durations _ on _ _ volume _
@@ -2400,6 +2638,129 @@ MiKe digital D8 to _
 --MISSING--
 
 ####
+# Shield:bit
+
+s꞉b LEDs off
+--MISSING--
+
+s꞉b LEDs to _
+--MISSING--
+
+s꞉b LED _ (1-4) to _
+--MISSING--
+
+s꞉b audio output to shield _
+--MISSING--
+
+s꞉b stop _
+--MISSING--
+
+s꞉b turn 180 servo S- _ (1-8) to angle _
+--MISSING--
+
+s꞉b turn 360 servo S- _ (1-8) _ at _ %
+--MISSING--
+
+s꞉b turn DC M- _ (1-4) motor _ at _ %
+--MISSING--
+
+s꞉b turn Stepper- _ (1-2) motor _ for _ _
+--MISSING--
+
+s꞉b set pin S- _ (1-8) to _ %
+--MISSING--
+
+sb_DC/Stepper_motors
+--MISSING--
+
+sb_servomotors
+--MISSING--
+
+sb_all_motors
+--MISSING--
+
+turns
+--MISSING--
+
+degrees
+--MISSING--
+
+####
+# micro:STEAMakers
+
+m꞉s display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _
+--MISSING--
+
+m꞉s display #BR# _ #BR# with color _
+--MISSING--
+
+m꞉s display image _ with color _
+--MISSING--
+
+m꞉s clear display
+--MISSING--
+
+m꞉s scale brightness to _ %
+--MISSING--
+
+m꞉s plot x _ y _ with _
+--MISSING--
+
+m꞉s unplot x _ y _
+--MISSING--
+
+m꞉s display character _ with _
+--MISSING--
+
+m꞉s scroll text _ with color _ 
+--MISSING--
+
+m꞉s stop scrolling
+--MISSING--
+
+start micro꞉STEAMakers audio
+--MISSING--
+
+m꞉s button _ ?
+--MISSING--
+
+m꞉s touching ?
+--MISSING--
+
+m꞉s light %
+--MISSING--
+
+m꞉s sound %
+--MISSING--
+
+m꞉s temperature ºC
+--MISSING--
+
+m꞉s humidity %
+--MISSING--
+
+m꞉s inclination towards _ º
+--MISSING--
+
+m꞉s energy _
+--MISSING--
+
+m꞉s _ energy meter
+--MISSING--
+
+m꞉s energy consumption (µWh)
+--MISSING--
+
+start
+--MISSING--
+
+reset
+--MISSING--
+
+down
+--MISSING--
+
+####
 # DrawBot Library
 # A CoreXY plotter library that supports turtle geometry
 
@@ -2566,6 +2927,132 @@ at _ % speed
 --MISSING--
 
 3dBot line on _ ?
+--MISSING--
+
+####
+# ESP32 Smart Farm
+
+voltage (V)
+--MISSING--
+
+current (mA)
+--MISSING--
+
+power (mW)
+--MISSING--
+
+open
+--MISSING--
+
+close
+--MISSING--
+
+on
+--MISSING--
+
+off
+--MISSING--
+
+Farm fan _
+--MISSING--
+
+start
+--MISSING--
+
+Farm display _ in line _
+--MISSING--
+
+Farm _ the trapdoor
+--MISSING--
+
+Farm play _ octave _ for _ ms
+--MISSING--
+
+Farm set light _
+--MISSING--
+
+Farm water pump _
+--MISSING--
+
+Farm temperature ºC
+--MISSING--
+
+Farm humidity
+--MISSING--
+
+Farm movement detected?
+--MISSING--
+
+Farm button pressed?
+--MISSING--
+
+Farm distance (cm)
+--MISSING--
+
+Farm light level
+--MISSING--
+
+Farm water level
+--MISSING--
+
+Farm soil moisture
+--MISSING--
+
+Farm steam level
+--MISSING--
+
+Farm electric consumption _
+--MISSING--
+
+####
+# ESP32 Smart Home
+
+Home fan _
+--MISSING--
+
+Home display _ in line _
+--MISSING--
+
+Home _ the window
+--MISSING--
+
+Home activate the door
+--MISSING--
+
+Home play _ octave _ for _ ms
+--MISSING--
+
+Home set light _
+--MISSING--
+
+Home temperature ºC
+--MISSING--
+
+Home humidity
+--MISSING--
+
+Home steam level
+--MISSING--
+
+Home read RFID card
+--MISSING--
+
+Home movement detected?
+--MISSING--
+
+Home _ button pressed?
+--MISSING--
+
+Home gas detected?
+--MISSING--
+
+Home set NeoPixels _ _ _ _
+--MISSING--
+
+Home clear leds
+--MISSING--
+
+Home electric consumption _
 --MISSING--
 
 ####
@@ -2898,13 +3385,19 @@ Octopus OLED fill circle x _ y _ radius _
 ####
 # OctoStudio
 
-Octo start
---MISSING--
-
 Octo beam to phones _
 --MISSING--
 
 duration _ ms
+--MISSING--
+
+Octo beam received?
+--MISSING--
+
+Octo last beam
+--MISSING--
+
+Octo set group _ (0-99)
 --MISSING--
 
 Octo receive beam
@@ -3036,6 +3529,9 @@ MicroBlocks на вашей плате устаревшая
 Try to update MicroBlocks on the board?
 Попробуйте обновить MicroBlocks на плате?
 
+The firmware on the board is not compatible with this version of MicroBlocks.
+--MISSING--
+
 MicroBlocks
 --MISSING--
 
@@ -3158,14 +3654,11 @@ disable autoloading board libraries
 compact code store
 --MISSING--
 
-enable autoloading board libraries
-включить автозагрузку библиотек платы
+autoload board libraries
+--MISSING--
 
-enable PlugShare when project empty
-включить PlugShare когда проект пуст
-
-disable PlugShare when project empty
-Выключить PlugShare когда проект пуст
+PlugShare when project empty
+--MISSING--
 
 hide implementation blocks
 --MISSING--
@@ -3179,10 +3672,10 @@ show implementation blocks
 show blocks and variables that are internal to libraries (i.e. those whose name begins with underscore)
 --MISSING--
 
-when plugging a board, do not automatically read its contents into the IDE even if the current project is empty
+when plugging a board, automatically read its contents into the IDE if the current project is empty
 --MISSING--
 
-when plugging a board, automatically read its contents into the IDE if the current project is empty
+make the IDE darker
 --MISSING--
 
 erase flash and update firmware on ESP board
@@ -3216,6 +3709,15 @@ as the destination drive, then click Save.
 --MISSING--
 
 If your micro:bit shows a sad face, save the firmware.hex file to your disk then drop it onto the MICROBIT drive.
+--MISSING--
+
+Save the firmware file when prompted.
+--MISSING--
+
+Drag the firmware file you just saved to the
+--MISSING--
+
+drive
 --MISSING--
 
 Installing firmware...
@@ -3496,6 +3998,9 @@ Confirm
 
 # Library folders
 
+LIBRARIES
+--MISSING--
+
 Libraries
 Библиотеки
 
@@ -3746,6 +4251,9 @@ Report the milliseconds since the timer was last reset.
 Reset the timer.
 --MISSING--
 
+Report the seconds since power up.
+--MISSING--
+
 Report the milliseconds since power up.
 --MISSING--
 
@@ -3753,6 +4261,24 @@ Report the microseconds since power up.
 --MISSING--
 
 Report the board type.
+--MISSING--
+
+Reports firmware version loaded on the board.
+--MISSING--
+
+Reports the three-letter BLE ID of the board if it supports BLE.
+--MISSING--
+
+Reports (-o) if a BLE client is connected.
+--MISSING--
+
+Report the milliseconds since the given start milliseconds. Handles clock wrap.
+--MISSING--
+
+Report the microseconds since the given start microseconds. Handles clock wrap.
+--MISSING--
+
+Reports (-o) if the board is connected to IDE.
 --MISSING--
 
 Report the electrical logic level on a digital pin ( (-o) or (o-) ).
@@ -3791,7 +4317,7 @@ Send a byte (0-255) to an SPI device.
 Read a byte from an SPI device while sending a zero byte. Report the byte received.
 --MISSING--
 
-Set the SPI clock speed and mode.
+Set the SPI clock speed, mode, channel (Raspberry Pi only), and bit order.
 --MISSING--
 
 Send a byte array via SPI, replacing its contents with the bytes received.
@@ -3807,6 +4333,12 @@ Report data received from the serial port (a byte array).
 --MISSING--
 
 Send a byte array to the serial port.
+--MISSING--
+
+Send a byte array to the serial port, starting at the given byte.
+--MISSING--
+
+Write a byte to the pin at the specified baud rate.
 --MISSING--
 
 Run when the board powers up or when the IDE start button is clicked.
@@ -3836,13 +4368,16 @@ Wait until the condition becomes (-o) .
 Return (report) the given value from a function or script.
 --MISSING--
 
-Run when the given message is broadcast.
+Run when the given message is received as a broadcast.
 --MISSING--
 
 Broadcast the given message.
 --MISSING--
 
 Do nothing. Used to add notes and documentation.
+--MISSING--
+
+Report a list containing the given range of numbers (with optional increment). Useful in "for" loops.
 --MISSING--
 
 Repeat the enclosed blocks with the variable set to the current iteration number or item.
@@ -3861,6 +4396,9 @@ Wait the given number of microseconds.
 --MISSING--
 
 Report the last broadcast message received.
+--MISSING--
+
+Report the given argument or defaultValue if the argument was not supplied by the caller.
 --MISSING--
 
 Call the function with the given name and optional parameter list.
@@ -3927,6 +4465,18 @@ Report (-o) if either value is (-o)
 --MISSING--
 
 Report (-o) if first input is a value of the given data type.
+--MISSING--
+
+Convert a value to the given data type.
+--MISSING--
+
+If the condition is (-o) report the first alternative otherwise report the second alternative.
+--MISSING--
+
+Map a value in the "from" range to the corresponding value in the "to" range.
+--MISSING--
+
+sqrt _
 --MISSING--
 
 Report the numerical value of a hexadecimal string (range: -0x1FFFFFFF to 0x1FFFFFFF)

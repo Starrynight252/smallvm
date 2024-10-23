@@ -5,7 +5,7 @@
 # Blocks and categories #
 #########################
 
-Output
+cat;Output
 Output
 
 set user LED _
@@ -17,7 +17,7 @@ zeg _
 graph _
 grafiek _
 
-Input
+cat;Input
 Input
 
 button A
@@ -41,10 +41,19 @@ milliseconden
 board type
 board type
 
+milliseconds since _
+--MISSING--
+
+end time _
+--MISSING--
+
+microseconds since _
+--MISSING--
+
 connected to IDE
 --MISSING--
 
-Pins
+cat;Pins
 Pinnen
 
 read digital pin _
@@ -68,7 +77,7 @@ analoge pinnen
 digital pins
 digitale pinnen
 
-Control
+cat;Control
 Besturen
 
 when started
@@ -167,7 +176,7 @@ parameterlijst
 with _
 met _
 
-Operators
+cat;Operators
 Functies
 
 _ mod _
@@ -224,7 +233,7 @@ lijst
 byte array
 byte array
 
-Advanced:
+cat;Advanced:
 Gevorderd
 
 rescale _ from ( _ , _ ) to ( _ , _ )
@@ -233,7 +242,7 @@ herschaal _ van ( _ , _ ) naar ( _ , _ )
 hex _
 hex _
 
-Variables
+cat;Variables
 Variabelen
 
 # Buttons on top of "Variables" category
@@ -258,7 +267,7 @@ verander _ met _
 initialize local _ to _
 initialiseer lokaal _ naar _
 
-Data
+cat;Data
 Data
 
 list
@@ -351,10 +360,10 @@ willekeurig
 split _ by _
 splits _ door _
 
-My Blocks
+cat;My Blocks
 Mijn blokken
 
-Generic
+cat;Generic
 Algemeen
 
 # Buttons on top of "My Blocks" category
@@ -370,7 +379,7 @@ Voeg een reporter blok toe
 Enter function name:
 Geef functie naam:
 
-Comm
+cat;Comm
 Comm
 
 i2c get device _ register _
@@ -384,6 +393,9 @@ i2c device _ lees lijst _
 
 i2c device _ write list _
 i2c device _ schrijf lijst _
+
+i2c device _ exists?
+--MISSING--
 
 spi send _
 spi zend _
@@ -1295,6 +1307,9 @@ defer display updates
 ####
 # TFT display library
 
+clear TFT display 
+--MISSING--
+
 enable TFT _
 activeer TFT _
 
@@ -1309,6 +1324,9 @@ maak TFT pixel x _ y _ op _
 
 draw line on TFT from x _ y _ to x _ y _ color _
 teken lijn op TFT van x _ y _ naar x _ y _ kleur _
+
+draw vector x _ y _ angle _ length _ color _
+--MISSING--
 
 draw rectangle on TFT at x _ y _ width _ height _ color _
 teken rechthoek op TFT op x _ y _ breed _ hoog _ kleur _
@@ -1334,6 +1352,24 @@ Hallo Wereld!
 scale _ wrap _
 schaal _ wrap _
 
+draw text _ on TFT at x _ y _ color _
+--MISSING--
+
+scale _
+--MISSING--
+
+bg color _
+--MISSING--
+
+draw bitmap _ palette _ on TFT at x _ y _
+--MISSING--
+
+set TFT backlight _ (0-10)
+--MISSING--
+
+gray _ %
+--MISSING--
+
 ####
 # BMP library
 # Can display BMP image files on a TFT display
@@ -1345,13 +1381,49 @@ image.bmp
 afbeelding.bmp
 
 ####
-# HSV color library
+# Color library
 
-HSV Colors
-HSV kleuren
+Color Operators
+--MISSING--
 
-RGB of hue _ saturation _ brightness _ (0-100)
-RGB van tint _ verzadiging _ helderheid _ (0-100)
+color r _ g _ b _ (0-255)
+kleur r _ g _ b _ (0-255)
+
+gray _ %
+--MISSING--
+
+random color
+willekeurige kleur
+
+red _
+--MISSING--
+
+green _
+--MISSING--
+
+blue _
+--MISSING--
+
+color hue _ (0-360) saturation _ % brightness _ %
+--MISSING--
+
+hue _
+--MISSING--
+
+saturation _
+--MISSING--
+
+brightness _
+--MISSING--
+
+_ with hue _ (0-360)
+--MISSING--
+
+_ with saturation _ %
+--MISSING--
+
+_ with brightness _ %
+--MISSING--
 
 ####
 # Fractions library
@@ -3457,6 +3529,9 @@ De MicroBlocks op je board is niet actueel.
 Try to update MicroBlocks on the board?
 Proberen om MicroBlocks op het board te updaten?
 
+The firmware on the board is not compatible with this version of MicroBlocks.
+--MISSING--
+
 MicroBlocks
 MicroBlocks
 
@@ -3579,14 +3654,11 @@ schakel autoloading board bibliotheken uit
 compact code store
 --MISSING--
 
-enable autoloading board libraries
-schakel autoloading board bibliotheken in
+autoload board libraries
+--MISSING--
 
-enable PlugShare when project empty
-PlugShare inschakelen als project leeg is
-
-disable PlugShare when project empty
-PlugShare uitschakelen als project leeg is
+PlugShare when project empty
+--MISSING--
 
 hide implementation blocks
 --MISSING--
@@ -3600,11 +3672,11 @@ show implementation blocks
 show blocks and variables that are internal to libraries (i.e. those whose name begins with underscore)
 --MISSING--
 
-when plugging a board, do not automatically read its contents into the IDE even if the current project is empty
-wanneer je een board verbindt, zet dan niet automatisch de inhoud in de IDE, zelfs als het huidige project leeg is
-
 when plugging a board, automatically read its contents into the IDE if the current project is empty
 wanneer je een board verbindt, zet dan automatisch de inhoud in de IDE als het huidige project leeg is
+
+make the IDE darker
+--MISSING--
 
 erase flash and update firmware on ESP board
 flash wissen en firmware op ESP-bord updaten
@@ -4179,6 +4251,9 @@ Laat de milliseconden zien vanaf de laatste keer dat de timer was gereset.
 Reset the timer.
 Reset de timer.
 
+Report the seconds since power up.
+--MISSING--
+
 Report the milliseconds since power up.
 Laat het aantal milliseconden zien sinds het opstarten.
 
@@ -4187,6 +4262,24 @@ Geef het aantal microseconden sinds het opstarten.
 
 Report the board type.
 Geef het board type.
+
+Reports firmware version loaded on the board.
+--MISSING--
+
+Reports the three-letter BLE ID of the board if it supports BLE.
+--MISSING--
+
+Reports (-o) if a BLE client is connected.
+--MISSING--
+
+Report the milliseconds since the given start milliseconds. Handles clock wrap.
+--MISSING--
+
+Report the microseconds since the given start microseconds. Handles clock wrap.
+--MISSING--
+
+Reports (-o) if the board is connected to IDE.
+--MISSING--
 
 Report the electrical logic level on a digital pin ( (-o) or (o-) ).
 Geef het elektrische logische niveau op een digitale pin ( (-o) of (o-) ).
@@ -4224,8 +4317,8 @@ Stuur een byte (0-255) naar een SPI apparaat.
 Read a byte from an SPI device while sending a zero byte. Report the byte received.
 Lees een byte van een SPI apparaat terwijl je een nul byte verstuurt. Geef de ontvangen byte.
 
-Set the SPI clock speed and mode.
-Stel de SPI kloksnelheid en modus in.
+Set the SPI clock speed, mode, channel (Raspberry Pi only), and bit order.
+--MISSING--
 
 Send a byte array via SPI, replacing its contents with the bytes received.
 Zend een byte-array via SPI, waarbij de inhoud wordt vervangen door de ontvangen bytes.
@@ -4241,6 +4334,12 @@ Geef de gegevens ontvangen van de seriële poort  (een byte-array).
 
 Send a byte array to the serial port.
 Zend een byte-array naar de seriële poort.
+
+Send a byte array to the serial port, starting at the given byte.
+--MISSING--
+
+Write a byte to the pin at the specified baud rate.
+--MISSING--
 
 Run when the board powers up or when the IDE start button is clicked.
 Uitvoeren wanneer het bord wordt ingeschakeld of wanneer op de IDE-startknop wordt geklikt.
@@ -4269,14 +4368,17 @@ Wacht totdat de conditie (-o) wordt.
 Return (report) the given value from a function or script.
 Meld de gegeven waarde uit een functie of script.
 
-Run when the given message is broadcast.
-Uitvoeren als het opgegeven bericht is verstuurd.
+Run when the given message is received as a broadcast.
+--MISSING--
 
 Broadcast the given message.
 Verstuur het opgegeven bericht.
 
 Do nothing. Used to add notes and documentation.
 Doe niks. Wordt gebruikt om opmerkingen en documentatie toe te voegen.
+
+Report a list containing the given range of numbers (with optional increment). Useful in "for" loops.
+--MISSING--
 
 Repeat the enclosed blocks with the variable set to the current iteration number or item.
 Herhaal de ingesloten blokken met de variabele ingesteld op het huidige iteratienummer of item.
@@ -4295,6 +4397,9 @@ Wacht het opgegeven aantal microseconden.
 
 Report the last broadcast message received.
 Geef het laatst ontvangen bericht.
+
+Report the given argument or defaultValue if the argument was not supplied by the caller.
+--MISSING--
 
 Call the function with the given name and optional parameter list.
 Roep de functie aan met de gegeven naam en optionele parameterlijst.
@@ -4361,6 +4466,18 @@ Geef (-o) als een van de waardes (-o) is
 
 Report (-o) if first input is a value of the given data type.
 Geef (-o) als de eerste invoer een waarde is van het gegevenstype.
+
+Convert a value to the given data type.
+--MISSING--
+
+If the condition is (-o) report the first alternative otherwise report the second alternative.
+--MISSING--
+
+Map a value in the "from" range to the corresponding value in the "to" range.
+--MISSING--
+
+sqrt _
+--MISSING--
 
 Report the numerical value of a hexadecimal string (range: -0x1FFFFFFF to 0x1FFFFFFF)
 Geef de numerieke waarde van een hexadecimale string (bereik: -0x1FFFFFFF tot 0x1FFFFFFF)

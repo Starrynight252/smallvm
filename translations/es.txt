@@ -5,7 +5,7 @@
 # Blocks and categories #
 #########################
 
-Output
+cat;Output
 Salida
 
 set user LED _
@@ -17,7 +17,7 @@ di _
 graph _
 añade al gráfico _
 
-Input
+cat;Input
 Entrada
 
 button A
@@ -41,10 +41,19 @@ milisegundos
 board type
 tipo de placa
 
+milliseconds since _
+--MISSING--
+
+end time _
+--MISSING--
+
+microseconds since _
+--MISSING--
+
 connected to IDE
 conectado a la IDE
 
-Pins
+cat;Pins
 Pines
 
 read digital pin _
@@ -68,7 +77,7 @@ pines analógicos
 digital pins
 pines digitales
 
-Control
+cat;Control
 Control
 
 when started
@@ -167,7 +176,7 @@ lista de parámetros
 with _
 con parámetro(s) _
 
-Operators
+cat;Operators
 Operadores
 
 _ mod _
@@ -224,7 +233,7 @@ lista
 byte array
 lista de bytes
 
-Advanced:
+cat;Advanced:
 Avanzado:
 
 rescale _ from ( _ , _ ) to ( _ , _ )
@@ -233,7 +242,7 @@ reescalar _ de ( _ , _ ) a ( _ , _ )
 hex _
 hexadecimal _
 
-Variables
+cat;Variables
 Variables
 
 # Buttons on top of "Variables" category
@@ -258,7 +267,7 @@ aumenta _ en _
 initialize local _ to _
 inicializa variable local _ a _
 
-Data
+cat;Data
 Datos
 
 list
@@ -351,10 +360,10 @@ cualquiera
 split _ by _
 divide _ por _
 
-My Blocks
+cat;My Blocks
 Mis bloques
 
-Generic
+cat;Generic
 Genérico
 
 # Buttons on top of "My Blocks" category
@@ -370,7 +379,7 @@ Crea un bloque reportador
 Enter function name:
 Nombre de la función:
 
-Comm
+cat;Comm
 Comunicaciones
 
 i2c get device _ register _
@@ -384,6 +393,9 @@ lee el dispositivo i2c _ a la lista
 
 i2c device _ write list _
 escribe al dispositivo i2c _ el contenido de la lista _
+
+i2c device _ exists?
+--MISSING--
 
 spi send _
 spi envía _
@@ -1295,6 +1307,9 @@ posponer las actualizaciones de la pantalla
 ####
 # TFT display library
 
+clear TFT display 
+--MISSING--
+
 enable TFT _
 activa TFT _
 
@@ -1309,6 +1324,9 @@ pinta el píxel x _ y _ de color _
 
 draw line on TFT from x _ y _ to x _ y _ color _
 dibuja línea de x _ y _ a x _ y _ color _
+
+draw vector x _ y _ angle _ length _ color _
+--MISSING--
 
 draw rectangle on TFT at x _ y _ width _ height _ color _
 dibuja rectángulo en x _ y _ ancho _ alto _ color _
@@ -1334,6 +1352,24 @@ Hello World!
 scale _ wrap _
 escala _ con saltos de línea _
 
+draw text _ on TFT at x _ y _ color _
+--MISSING--
+
+scale _
+--MISSING--
+
+bg color _
+--MISSING--
+
+draw bitmap _ palette _ on TFT at x _ y _
+--MISSING--
+
+set TFT backlight _ (0-10)
+--MISSING--
+
+gray _ %
+--MISSING--
+
 ####
 # BMP library
 # Can display BMP image files on a TFT display
@@ -1345,13 +1381,49 @@ image.bmp
 imagen.bmp
 
 ####
-# HSV color library
+# Color library
 
-HSV Colors
-Colores HSV
+Color Operators
+--MISSING--
 
-RGB of hue _ saturation _ brightness _ (0-100)
-RGB del tono _ saturación _ brillo _ (0-100)
+color r _ g _ b _ (0-255)
+color r _ v _ a _ (0-255)
+
+gray _ %
+--MISSING--
+
+random color
+color al azar
+
+red _
+--MISSING--
+
+green _
+--MISSING--
+
+blue _
+--MISSING--
+
+color hue _ (0-360) saturation _ % brightness _ %
+--MISSING--
+
+hue _
+--MISSING--
+
+saturation _
+--MISSING--
+
+brightness _
+--MISSING--
+
+_ with hue _ (0-360)
+--MISSING--
+
+_ with saturation _ %
+--MISSING--
+
+_ with brightness _ %
+--MISSING--
 
 ####
 # Fractions library
@@ -1828,9 +1900,6 @@ efecto 2
 
 play MIDI note _ for _ ms on channel _ volume _
 toca nota MIDI _ durante _ ms en el canal _ #BR# volumen _
-
-stop all notes on channel _
-detén todas las notas en el canal _
 
 stop all notes on channel _
 detén todas las notas en el canal _
@@ -2643,8 +2712,8 @@ m꞉s apaga x _ y _
 m꞉s display character _ with _
 m꞉s muestra el carácter _ con _
 
-m꞉s scroll text _ with color _
-m꞉s anima el texto _ con el color _
+m꞉s scroll text _ with color _ 
+--MISSING--
 
 m꞉s stop scrolling
 m꞉s detén la animación
@@ -3460,6 +3529,9 @@ El MicroBlocks instalado en tu placa no está actualizado
 Try to update MicroBlocks on the board?
 ¿Quieres intentar actualizarlo?
 
+The firmware on the board is not compatible with this version of MicroBlocks.
+--MISSING--
+
 MicroBlocks
 MicroBlocks
 
@@ -3582,14 +3654,11 @@ desactivar autocarga de librerías de placa
 compact code store
 compacta el código almacenado
 
-enable autoloading board libraries
-activar autocarga de librerías de placa
+autoload board libraries
+--MISSING--
 
-enable PlugShare when project empty
-activar PlugShare en proyecto en blanco
-
-disable PlugShare when project empty
-desactivar PlugShare en proyecto en blanco
+PlugShare when project empty
+--MISSING--
 
 hide implementation blocks
 ocultar los bloques de implementación
@@ -3603,11 +3672,11 @@ mostrar los bloques de implementación
 show blocks and variables that are internal to libraries (i.e. those whose name begins with underscore)
 mostrar los bloques y variables internos de las librerias (aquellos cuyo nombre comienza con guión bajo)
 
-when plugging a board, do not automatically read its contents into the IDE even if the current project is empty
-al conectar una placa, no leas automáticamente sus contenidos aunque el proyecto actual esté en blanco
-
 when plugging a board, automatically read its contents into the IDE if the current project is empty
 al conectar una placa, lee automáticamente sus contenidos si el proyecto actual está en blanco
+
+make the IDE darker
+--MISSING--
 
 erase flash and update firmware on ESP board
 borra y reparticiona el firmware en placa ESP
@@ -4182,6 +4251,9 @@ Reporta los milisegundos des de la última inicialización del temporizador.
 Reset the timer.
 Reinicializa el temporizador.
 
+Report the seconds since power up.
+--MISSING--
+
 Report the milliseconds since power up.
 Reporta los milisegundos des de que se encendió la placa.
 
@@ -4190,6 +4262,24 @@ Reporta los microsegundos des de que se encendió la placa.
 
 Report the board type.
 Reporta el tipo de placa.
+
+Reports firmware version loaded on the board.
+--MISSING--
+
+Reports the three-letter BLE ID of the board if it supports BLE.
+--MISSING--
+
+Reports (-o) if a BLE client is connected.
+--MISSING--
+
+Report the milliseconds since the given start milliseconds. Handles clock wrap.
+--MISSING--
+
+Report the microseconds since the given start microseconds. Handles clock wrap.
+--MISSING--
+
+Reports (-o) if the board is connected to IDE.
+--MISSING--
 
 Report the electrical logic level on a digital pin ( (-o) or (o-) ).
 Reporta el nivel lógico eléctrico en un pin digital ( (-o) o (o-) ).
@@ -4227,8 +4317,8 @@ Envía un byte (0-255) a un dispositivo SPI.
 Read a byte from an SPI device while sending a zero byte. Report the byte received.
 Lee un byte de un dispositivo SPI, y envía un byte cero. Reporta el byte recibido.
 
-Set the SPI clock speed and mode.
-Fija la velocidad del reloj y el modo del SPI.
+Set the SPI clock speed, mode, channel (Raspberry Pi only), and bit order.
+--MISSING--
 
 Send a byte array via SPI, replacing its contents with the bytes received.
 Envía una lista de bytes por SPI, sustituyendo sus contenidos por los bytes recibidos.
@@ -4244,6 +4334,12 @@ Reporta los datos recibidos por el puerto serie (una lista de bytes).
 
 Send a byte array to the serial port.
 Envía una lista de bytes por el puerto serie.
+
+Send a byte array to the serial port, starting at the given byte.
+--MISSING--
+
+Write a byte to the pin at the specified baud rate.
+--MISSING--
 
 Run when the board powers up or when the IDE start button is clicked.
 Ejecuta cuando la placa se encienda o al hacer click sobre el botón de inicio.
@@ -4272,14 +4368,17 @@ Espera hasta que la condición sea (-o) .
 Return (report) the given value from a function or script.
 Retorna (reporta) el valor especificado des de una función o programa.
 
-Run when the given message is broadcast.
-Ejecuta cuando se emita el mensaje especificado.
+Run when the given message is received as a broadcast.
+--MISSING--
 
 Broadcast the given message.
 Emite el mensaje especificado.
 
 Do nothing. Used to add notes and documentation.
 No hagas nada. Se usa para añadir notas y documentación.
+
+Report a list containing the given range of numbers (with optional increment). Useful in "for" loops.
+--MISSING--
 
 Repeat the enclosed blocks with the variable set to the current iteration number or item.
 Repite la ejecución de los bloques que contiene, fijando la variable al elemento o número del intervalo correspondiente a cada iteración.
@@ -4298,6 +4397,9 @@ Espera el numero de microsegundos especificado.
 
 Report the last broadcast message received.
 Reporta el último mensaje emitido y recibido.
+
+Report the given argument or defaultValue if the argument was not supplied by the caller.
+--MISSING--
 
 Call the function with the given name and optional parameter list.
 Ejecuta la función con el nombre especificado con la lista de parámetros opcional proporcionada.
@@ -4364,6 +4466,18 @@ Reporta (-o) si alguno de los valores es (-o).
 
 Report (-o) if first input is a value of the given data type.
 Reporta (-o) si la primera casilla tiene un valor del tipo especificado.
+
+Convert a value to the given data type.
+--MISSING--
+
+If the condition is (-o) report the first alternative otherwise report the second alternative.
+--MISSING--
+
+Map a value in the "from" range to the corresponding value in the "to" range.
+--MISSING--
+
+sqrt _
+--MISSING--
 
 Report the numerical value of a hexadecimal string (range: -0x1FFFFFFF to 0x1FFFFFFF)
 Reporta el valor numérico decimal de una cadena de texto hexadecimal (rango: -0x1FFFFFFF a 0x1FFFFFFF)

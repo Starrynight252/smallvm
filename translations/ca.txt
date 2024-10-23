@@ -1,17 +1,11 @@
 # MicroBlocks translation file
 # Last updated: October 03 2024
 
-LangCode
-CA
-
-LangName
-Català
-
 #########################
 # Blocks and categories #
 #########################
 
-Output
+cat;Output
 Sortida
 
 set user LED _
@@ -23,7 +17,7 @@ digues _
 graph _
 afegeix a la gràfica _
 
-Input
+cat;Input
 Entrada
 
 button A
@@ -59,7 +53,7 @@ microsegons des de _
 connected to IDE
 connectat a la IDE
 
-Pins
+cat;Pins
 Pins
 
 read digital pin _
@@ -83,7 +77,7 @@ pins analògics
 digital pins
 pins digitals
 
-Control
+cat;Control
 Control
 
 when started
@@ -182,7 +176,7 @@ llista de paràmetres
 with _
 amb paràmetre(s) _
 
-Operators
+cat;Operators
 Operadors
 
 _ mod _
@@ -239,7 +233,7 @@ llista
 byte array
 llista de bytes
 
-Advanced:
+cat;Advanced:
 Avançat:
 
 rescale _ from ( _ , _ ) to ( _ , _ )
@@ -248,7 +242,7 @@ reescala _ de ( _ , _ ) a ( _ , _ )
 hex _
 hexadecimal _
 
-Variables
+cat;Variables
 Variables
 
 # Buttons on top of "Variables" category
@@ -273,7 +267,7 @@ augmenta _ en _
 initialize local _ to _
 inicialitza variable local _ a _
 
-Data
+cat;Data
 Dades
 
 list
@@ -366,10 +360,10 @@ qualsevol
 split _ by _
 divideix _ per _
 
-My Blocks
+cat;My Blocks
 Els meus blocs
 
-Generic
+cat;Generic
 Genèric
 
 # Buttons on top of "My Blocks" category
@@ -385,7 +379,7 @@ Crea un bloc reportador
 Enter function name:
 Nom de la funció:
 
-Comm
+cat;Comm
 Comunicacions
 
 i2c get device _ register _

@@ -38,11 +38,11 @@ method dumpTranslationTemplate SmallCompiler {
 
 method microBlocksSpecs SmallCompiler {
 	return (array
-	'Output'
+	'cat;Output'
 		(array ' ' 'setUserLED'			'set user LED _' 'bool' true)
 		(array ' ' 'sayIt'				'say _ : _ : ...' 'auto auto auto auto auto auto auto auto auto auto' 123 '' '')
 		(array ' ' 'graphIt'			'graph _ : _ : ...' 'auto auto auto auto auto auto auto auto auto auto' 100)
-	'Input'
+	'cat;Input'
 		(array 'r' 'buttonA'			'button A')
 		(array 'r' 'buttonB'			'button B')
 		'-'
@@ -58,12 +58,12 @@ method microBlocksSpecs SmallCompiler {
 		'-'
 		(array 'r' '[misc:bleID]'		'BLE id')
 		(array 'r' '[ble:bleConnected]' 'BLE connected')
-	'Input-Advanced'
+	'cat;Input-Advanced'
 		(array 'r' 'millisSince'		'milliseconds since _ : end time _' 'num auto' 0 'now')
 		(array 'r' 'microsSince'		'microseconds since _ : end time _' 'num auto' 0 'now')
 		'-'
 		(array 'r' '[misc:connectedToIDE]'	'connected to IDE')
-	'Pins'
+	'cat;Pins'
 		(array 'r' 'digitalReadOp'		'read digital pin _ : pull _' 'num menu.pullMenu' 1 'none')
 		(array 'r' 'analogReadOp'		'read analog pin _ : pull _' 'num menu.pullMenu' 1 'none')
 		'-'
@@ -72,7 +72,7 @@ method microBlocksSpecs SmallCompiler {
 		'-'
 		(array 'r' 'analogPins'			'analog pins')
 		(array 'r' 'digitalPins'		'digital pins')
-	'Comm'
+	'cat;Comm'
 		(array 'r' 'i2cGet'				'i2c get device _ register _' 'num num')
 		(array ' ' 'i2cSet'				'i2c set device _ register _ to _' 'num num num')
 		'-'
@@ -93,7 +93,7 @@ method microBlocksSpecs SmallCompiler {
 		(array 'r' '[serial:writeBytes]'	'serial write _ starting at _' 'auto num' 'aStringListOrByteArray' 1)
 		'-'
 		(array ' ' '[io:softWriteByte]'		'soft serial write byte _ pin _ baud _' 'num num num' '85' 2 9600)
-	'Control'
+	'cat;Control'
 		(array 'h' 'whenStarted'		'when started')
 		(array 'h' 'whenButtonPressed'	'when button _ pressed' 'menu.buttonMenu' 'A')
 		(array ' ' 'forever'			'forever _' 'cmd')
@@ -117,7 +117,7 @@ method microBlocksSpecs SmallCompiler {
 		'-'
 		(array ' ' 'stopTask'			'stop this task')
 		(array ' ' 'stopAll'			'stop other tasks')
-	'Control-Advanced'
+	'cat;Control-Advanced'
 		(array ' ' 'waitMicros'			'wait _ microsecs' 'num' 1000)
 		'-'
 		(array 'r' 'getLastBroadcast'	'last message')
@@ -125,7 +125,7 @@ method microBlocksSpecs SmallCompiler {
 		'-'
 		(array ' ' 'callCustomCommand'	'call _ : with _' 'str.functionNameMenu str' 'function name' 'parameter list')
 		(array 'r' 'callCustomReporter'	'call _ : with _' 'str.functionNameMenu str' 'function name' 'parameter list')
-	'Operators'
+	'cat;Operators'
 		(array 'r' '+'					'_ + _' 'num num' 10 2)
 		(array 'r' '-'					'_ − _' 'num num' 10 2)
 		(array 'r' '*'					'_ × _' 'num num' 10 2)
@@ -151,7 +151,7 @@ method microBlocksSpecs SmallCompiler {
 		'-'
 		(array 'r' 'isType'				'_ is a _' 'auto menu.typesMenu' 123 'number')
 		(array 'r' '[data:convertType]'	'convert _ to _' 'auto menu.typesMenu' 123 'number')
-	'Operators-Advanced'
+	'cat;Operators-Advanced'
 		(array 'r' 'ifExpression'		'if _ then _ else _' 'bool auto auto' true 1 0)
 		'-'
 		(array 'r' '[misc:rescale]'		'rescale _ from ( _ , _ ) to ( _ , _ )' 'num num num num num' 3 0 10 0 100)
@@ -164,12 +164,12 @@ method microBlocksSpecs SmallCompiler {
 		(array 'r' '~'					'~ _' 'num' 1 3)
 		(array 'r' '<<'					'_ << _' 'num num' 3 2)
 		(array 'r' '>>'					'_ >> _' 'num num' -100 2)
-	'Variables'
+	'cat;Variables'
 		(array 'r' 'v'					'_' 'menu.allVarsMenu' 'n')
 		(array ' ' '='					'set _ to _' 'menu.allVarsMenu auto' 'n' 0)
 		(array ' ' '+='					'change _ by _' 'menu.allVarsMenu num' 'n' 1)
 		(array ' ' 'local'				'initialize local _ to _' 'var auto' 'var' 0)
-	'Data'
+	'cat;Data'
 		(array 'r' 'at'					'item _ of _' 'auto.itemOfMenu str' 1 'Rosa')
 		(array 'r' 'size'				'length of _' 'str' 'Rosa')
 		(array 'r' '[data:join]'		'join _ _ : _ : ...' 'str str str' 'micro' 'blocks')
@@ -185,7 +185,7 @@ method microBlocksSpecs SmallCompiler {
 		'-'
 		(array 'r' '[data:split]'		'split _ by _' 'str str' 'A,B,C' ',')
 		(array 'r' '[data:joinStrings]'	'join items of list _ : separator _' 'auto str' 'a list of strings' ' ')
-	'Data-Advanced'
+	'cat;Data-Advanced'
 		(array 'r' 'newList'				'new list length _ : with all _' 'num auto' 10 0)
 		(array 'r' '[data:newByteArray]'	'new byte array _ : with all _' 'num num' 5 0)
 		'-'
@@ -376,7 +376,7 @@ method microBlocksSpecs SmallCompiler {
 
 method initMicroBlocksSpecs SmallCompiler {
 	authoringSpecs = (authoringSpecs)
-	if (isEmpty (specsFor authoringSpecs 'Output')) {
+	if (isEmpty (specsFor authoringSpecs 'cat;Output')) {
 		clear authoringSpecs
 		addSpecs authoringSpecs (microBlocksSpecs this)
 	}

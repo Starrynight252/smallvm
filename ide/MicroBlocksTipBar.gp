@@ -176,7 +176,7 @@ method contentsFor MicroBlocksTipBar anElement {
 	if (isClass anElement 'CategorySelector') {
 		category = (categoryUnderHand anElement)
 		items = (collection anElement)
-		if (and (notEmpty items) ('Output' == (first items))) {
+		if (and (notEmpty items) ('cat;Output' == (first items))) {
 			key = 'BlockCategory'
 		} else {
 			key = 'Library'

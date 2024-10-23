@@ -1,15 +1,11 @@
 # MicroBlocks translation file
 # Last updated: October 03 2024
 
-LangName
-
-LangCode
-
 #########################
 # Blocks and categories #
 #########################
 
-Output
+cat;Output
 
 set user LED _
 
@@ -17,7 +13,7 @@ say _
 
 graph _
 
-Input
+cat;Input
 
 button A
 
@@ -41,7 +37,7 @@ microseconds since _
 
 connected to IDE
 
-Pins
+cat;Pins
 
 read digital pin _
 
@@ -57,7 +53,7 @@ analog pins
 
 digital pins
 
-Control
+cat;Control
 
 when started
 
@@ -123,7 +119,7 @@ parameter list
 
 with _
 
-Operators
+cat;Operators
 
 _ mod _
 
@@ -161,13 +157,13 @@ list
 
 byte array
 
-Advanced:
+cat;Advanced:
 
 rescale _ from ( _ , _ ) to ( _ , _ )
 
 hex _
 
-Variables
+cat;Variables
 
 # Buttons on top of "Variables" category
 
@@ -185,7 +181,7 @@ change _ by _
 
 initialize local _ to _
 
-Data
+cat;Data
 
 list
 
@@ -247,9 +243,9 @@ random
 
 split _ by _
 
-My Blocks
+cat;My Blocks
 
-Generic
+cat;Generic
 
 # Buttons on top of "My Blocks" category
 
@@ -261,7 +257,7 @@ Add a reporter block
 
 Enter function name:
 
-Comm
+cat;Comm
 
 i2c get device _ register _
 

@@ -5,7 +5,7 @@
 # Blocks and categories #
 #########################
 
-Output
+cat;Output
 Ausgabe
 
 set user LED _
@@ -17,7 +17,7 @@ sage _
 graph _
 Diagramm _
 
-Input
+cat;Input
 Eingabe
 
 button A
@@ -41,10 +41,19 @@ Millisekunden
 board type
 Board-Typ
 
+milliseconds since _
+--MISSING--
+
+end time _
+--MISSING--
+
+microseconds since _
+--MISSING--
+
 connected to IDE
 mit IDE verbunden
 
-Pins
+cat;Pins
 Pins
 
 read digital pin _
@@ -68,7 +77,7 @@ analoge Pins
 digital pins
 digitale Pins
 
-Control
+cat;Control
 Steuerung
 
 when started
@@ -167,7 +176,7 @@ Parameterliste
 with _
 mit _
 
-Operators
+cat;Operators
 Operatoren
 
 _ mod _
@@ -224,7 +233,7 @@ Liste
 byte array
 Byte-Array
 
-Advanced:
+cat;Advanced:
 Fortgeschrittene Blöcke:
 
 rescale _ from ( _ , _ ) to ( _ , _ )
@@ -233,7 +242,7 @@ verteile _ von ( _ , _ ) auf ( _ , _ )
 hex _
 hex _
 
-Variables
+cat;Variables
 Variablen
 
 # Buttons on top of "Variables" category
@@ -258,7 +267,7 @@ change _ by _
 initialize local _ to _
 initialisiere lokale _ mit _
 
-Data
+cat;Data
 Daten
 
 list
@@ -351,10 +360,10 @@ zufälliges
 split _ by _
 trenne _ nach _
 
-My Blocks
+cat;My Blocks
 Meine Blöcke
 
-Generic
+cat;Generic
 Allgemein
 
 # Buttons on top of "My Blocks" category
@@ -370,7 +379,7 @@ Füge Rückgabeblock hinzu
 Enter function name:
 Gib der Funktion einen Namen:
 
-Comm
+cat;Comm
 Kommunikation
 
 i2c get device _ register _
@@ -384,6 +393,9 @@ i2c Gerät _ lies Liste _
 
 i2c device _ write list _
 i2c Gerät _ schreibe Liste _
+
+i2c device _ exists?
+--MISSING--
 
 spi send _
 spi sende _
@@ -1295,6 +1307,9 @@ defer display updates
 ####
 # TFT display library
 
+clear TFT display 
+--MISSING--
+
 enable TFT _
 aktiviere TFT
 
@@ -1309,6 +1324,9 @@ setze TFT-Pixel x _ y _ auf _
 
 draw line on TFT from x _ y _ to x _ y _ color _
 zeichne Linie auf TFT von x _ y _ nach x _ y _ Farbe _
+
+draw vector x _ y _ angle _ length _ color _
+--MISSING--
 
 draw rectangle on TFT at x _ y _ width _ height _ color _
 zeichne Rechteck auf TFT bei x _ y _ Breite _ Höhe _ Farbe _
@@ -1334,6 +1352,24 @@ Hello Welt!
 scale _ wrap _
 Größe _ Zeilenumbruch _
 
+draw text _ on TFT at x _ y _ color _
+--MISSING--
+
+scale _
+--MISSING--
+
+bg color _
+--MISSING--
+
+draw bitmap _ palette _ on TFT at x _ y _
+--MISSING--
+
+set TFT backlight _ (0-10)
+--MISSING--
+
+gray _ %
+--MISSING--
+
 ####
 # BMP library
 # Can display BMP image files on a TFT display
@@ -1345,13 +1381,49 @@ image.bmp
 bild.bmp
 
 ####
-# HSV color library
+# Color library
 
-HSV Colors
-HSV-Farben
+Color Operators
+--MISSING--
 
-RGB of hue _ saturation _ brightness _ (0-100)
-RGB of Farbton _ Sättigung _ Helligkeit _ (0-100)
+color r _ g _ b _ (0-255)
+Farbe R _ G _ B _ (0-255)
+
+gray _ %
+--MISSING--
+
+random color
+zufällige Farbe
+
+red _
+--MISSING--
+
+green _
+--MISSING--
+
+blue _
+--MISSING--
+
+color hue _ (0-360) saturation _ % brightness _ %
+--MISSING--
+
+hue _
+--MISSING--
+
+saturation _
+--MISSING--
+
+brightness _
+--MISSING--
+
+_ with hue _ (0-360)
+--MISSING--
+
+_ with saturation _ %
+--MISSING--
+
+_ with brightness _ %
+--MISSING--
 
 ####
 # Fractions library
@@ -3457,6 +3529,9 @@ Die MicroBlocks-Version auf deinem Board ist nicht aktuell
 Try to update MicroBlocks on the board?
 MicroBlocks auf dem Board aktualisieren?
 
+The firmware on the board is not compatible with this version of MicroBlocks.
+--MISSING--
+
 MicroBlocks
 MicroBlocks
 
@@ -3579,14 +3654,11 @@ deaktiviere automatisches Laden von Board-Modulen
 compact code store
 --MISSING--
 
-enable autoloading board libraries
-aktiviere automatisches Laden von Board-Modulen
+autoload board libraries
+--MISSING--
 
-enable PlugShare when project empty
-aktiviere PlugShare, falls Projekt leer ist
-
-disable PlugShare when project empty
-deaktiviere PlugShare, falls Projekt leer ist
+PlugShare when project empty
+--MISSING--
 
 hide implementation blocks
 verstecke Implementationsblöcke
@@ -3600,11 +3672,11 @@ zeige Implementationsblöcke
 show blocks and variables that are internal to libraries (i.e. those whose name begins with underscore)
 zeige Blöcke und Variablen aus internen Bibliotheken an (d. h. solche, deren Name mit einem Unterstrich beginnt)
 
-when plugging a board, do not automatically read its contents into the IDE even if the current project is empty
-Inhalt des Boards nach Anschließen nicht automatisch in die IDE einlesen, auch wenn das aktuelle Projekt leer ist
-
 when plugging a board, automatically read its contents into the IDE if the current project is empty
 Wenn das aktuelle Projekt leer ist den Inhalt des Boards nach Anschließen automatisch in die IDE einlesen. 
+
+make the IDE darker
+--MISSING--
 
 erase flash and update firmware on ESP board
 lösche Flash und aktualisiere Firmware auf ESP-Board
@@ -4179,6 +4251,9 @@ Gibt die Zeit in ms seit dem Zurücksetzen des Zeitgebers zurück.
 Reset the timer.
 Setzt den Zeitgeber zurück.
 
+Report the seconds since power up.
+--MISSING--
+
 Report the milliseconds since power up.
 Gibt die Zeit in ms seit dem Einschalten zurück.
 
@@ -4187,6 +4262,24 @@ Gibt die Zeit in µs seit dem Einschalten zurück.
 
 Report the board type.
 Gibt den Typ des Boards zurück.
+
+Reports firmware version loaded on the board.
+--MISSING--
+
+Reports the three-letter BLE ID of the board if it supports BLE.
+--MISSING--
+
+Reports (-o) if a BLE client is connected.
+--MISSING--
+
+Report the milliseconds since the given start milliseconds. Handles clock wrap.
+--MISSING--
+
+Report the microseconds since the given start microseconds. Handles clock wrap.
+--MISSING--
+
+Reports (-o) if the board is connected to IDE.
+--MISSING--
 
 Report the electrical logic level on a digital pin ( (-o) or (o-) ).
 Gibt den Logikpegel eines digitalen Pins zurück ( (-o) or (o-) ).
@@ -4224,8 +4317,8 @@ Sendet ein Byte (0-255) an ein SPI-Gerät.
 Read a byte from an SPI device while sending a zero byte. Report the byte received.
 Liest ein Byte von einem SPI-Gerät während es ein Null-Byte sendet. Gibt das Byte zurück.
 
-Set the SPI clock speed and mode.
-Setzt die SPI-Taktgeschwindigkeit und den Modus.
+Set the SPI clock speed, mode, channel (Raspberry Pi only), and bit order.
+--MISSING--
 
 Send a byte array via SPI, replacing its contents with the bytes received.
 Sendet ein Byte-Array über SPI und ersetzt den Inhalt mit den empfangenen Bytes.
@@ -4241,6 +4334,12 @@ Gibt die empfangenen Daten vom seriellen Anschluss (als Byte-Array) an.
 
 Send a byte array to the serial port.
 Sendet ein Byte-Array zum seriellen Anschluss.
+
+Send a byte array to the serial port, starting at the given byte.
+--MISSING--
+
+Write a byte to the pin at the specified baud rate.
+--MISSING--
 
 Run when the board powers up or when the IDE start button is clicked.
 Wird ausgeführt, falls das Board an die Stromversorgung angeschlossen oder der IDE-Start-Knopf gedrückt wird.
@@ -4269,14 +4368,17 @@ Wartet bis die Bedingung (-o) wird.
 Return (report) the given value from a function or script.
 Gibt den angegebenen Wert einer Funktion oder eines Skripts zurück.
 
-Run when the given message is broadcast.
-Wird ausgeführt, wenn die angegebene Nachricht empfangen wurde.
+Run when the given message is received as a broadcast.
+--MISSING--
 
 Broadcast the given message.
 Sendet die angegebene Nachricht.
 
 Do nothing. Used to add notes and documentation.
 Macht nichts. Wird zum Kommentieren und Dokumentieren genutzt.
+
+Report a list containing the given range of numbers (with optional increment). Useful in "for" loops.
+--MISSING--
 
 Repeat the enclosed blocks with the variable set to the current iteration number or item.
 Wiederholt die umschlossenen Blöcke unter Verwendung einer Laufvariable, die auf die aktuelle Iterationsnummer oder das aktuelle Element gesetzt ist.
@@ -4295,6 +4397,9 @@ Wartet die in Mikrosekunden angegebene Zeit.
 
 Report the last broadcast message received.
 Gibt die zuletzt empfangene Nachricht zurück.
+
+Report the given argument or defaultValue if the argument was not supplied by the caller.
+--MISSING--
 
 Call the function with the given name and optional parameter list.
 Ruft die Funktion mit dem angegebenen Namen und den optionalen Parametern auf.
@@ -4361,6 +4466,18 @@ Gibt (-o) zurück, falls mindestens einer der beiden Werte (-o) ist.
 
 Report (-o) if first input is a value of the given data type.
 Gibt (-o) zurück, falls die Eingabe ein Wert des angegebenen Datentyps ist.
+
+Convert a value to the given data type.
+--MISSING--
+
+If the condition is (-o) report the first alternative otherwise report the second alternative.
+--MISSING--
+
+Map a value in the "from" range to the corresponding value in the "to" range.
+--MISSING--
+
+sqrt _
+--MISSING--
 
 Report the numerical value of a hexadecimal string (range: -0x1FFFFFFF to 0x1FFFFFFF)
 Gibt den numerischen Wert einer hexadezimalen Zeichenfolge zurück (Bereich: -0x1FFFFFFF bis 0x1FFFFFFF).
