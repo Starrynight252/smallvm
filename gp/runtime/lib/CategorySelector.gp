@@ -27,9 +27,9 @@ method updateMorphContents CategorySelector {
 }
 
 method setFont CategorySelector fName fSize {
-  if (notNil fName) { fontName = fName }
-  if (notNil fSize) { fontSize = ((global 'scale') * fSize) }
-  changed morph
+	if (notNil fName) { fontName = fName }
+	if (notNil fSize) { fontSize = ((global 'scale') * fSize) }
+	changed morph
 }
 
 method collection CategorySelector { return items }
@@ -42,7 +42,7 @@ method setCollection CategorySelector itemNames {
 }
 
 method heightForItems CategorySelector {
-  return ((count items) * ((itemHeight this) + (5 * (global 'scale'))))
+	return ((count items) * ((itemHeight this) + (5 * (global 'scale'))))
 }
 
 method drawOn CategorySelector ctx {
