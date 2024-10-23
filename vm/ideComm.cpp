@@ -390,10 +390,10 @@ void setAdvertisingInterval(int minInterval, int maxInterval) {
 	if (minInterval < 32) minInterval = 32;
 	if (maxInterval < 32) minInterval = 32;
 
-    uint8_t adv_type = 0;
-    bd_addr_t null_addr;
-    memset(null_addr, 0, 6);
-    gap_advertisements_set_params(minInterval, maxInterval, adv_type, 0, null_addr, 0x07, 0x00);
+	uint8_t adv_type = 0;
+	bd_addr_t null_addr;
+	memset(null_addr, 0, 6);
+	gap_advertisements_set_params(minInterval, maxInterval, adv_type, 0, null_addr, 0x07, 0x00);
 }
 
 // Stop and resume advertising (for use by Octo primitives)

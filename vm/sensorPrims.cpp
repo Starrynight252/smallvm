@@ -172,8 +172,8 @@ static OBJ primI2cExists(int argCount, OBJ *args) {
 	if (!wireStarted) return falseObj;
 
 	Wire.beginTransmission(i2cAddress);
-    int error = Wire.endTransmission();
-    return error ? falseObj : trueObj;
+	int error = Wire.endTransmission();
+	return error ? falseObj : trueObj;
 }
 
 static OBJ primI2cRead(int argCount, OBJ *args) {
@@ -332,24 +332,24 @@ static OBJ primI2cSetPins(int argCount, OBJ *args) {
 // SPI prims
 
 #if defined(PICO_ED)
-  #define SPI SPI1
-  #define PIN_SPI_MISO (8u)
-  #define PIN_SPI_SS   (9u)
-  #define PIN_SPI_SCK  (10u)
-  #define PIN_SPI_MOSI (11u)
+	#define SPI SPI1
+	#define PIN_SPI_MISO (8u)
+	#define PIN_SPI_SS   (9u)
+	#define PIN_SPI_SCK  (10u)
+	#define PIN_SPI_MOSI (11u)
 #elif defined(WUKONG2040)
-  #define PIN_SPI_MISO (4u)
-  #define PIN_SPI_SS   (5u)
-  #define PIN_SPI_SCK  (2u)
-  #define PIN_SPI_MOSI (3u)
+	#define PIN_SPI_MISO (4u)
+	#define PIN_SPI_SS   (5u)
+	#define PIN_SPI_SCK  (2u)
+	#define PIN_SPI_MOSI (3u)
 #elif defined(ARDUINO_ARCH_RP2040) && !defined(PIN_SPI_MISO)
-  #define PIN_SPI_MISO PIN_SPI0_MISO
-  #define PIN_SPI_MOSI PIN_SPI0_MOSI
-  #define PIN_SPI_SCK  PIN_SPI0_SCK
+	#define PIN_SPI_MISO PIN_SPI0_MISO
+	#define PIN_SPI_MOSI PIN_SPI0_MOSI
+	#define PIN_SPI_SCK  PIN_SPI0_SCK
 #endif
 
 #if defined(ESP8266) || defined(ESP32) || defined(ARDUINO_TEENSY40) || defined(ARDUINO_TEENSY41)
-  #define BitOrder int
+	#define BitOrder int
 #endif
 
 static int spiSpeed = 1000000;
@@ -707,10 +707,10 @@ static void setAccelRange(int range) {
 #define LIS3DH_ID 25
 
 #if defined(MAKERPORT_ACCEL)
-  // use Wire on MakerPort_v2/v3
-  #define Wire1 Wire
-  #undef LIS3DH_ID
-  #define LIS3DH_ID 24
+	// use Wire on MakerPort_v2/v3
+	#define Wire1 Wire
+	#undef LIS3DH_ID
+	#define LIS3DH_ID 24
 #endif
 
 static void setAccelRange(int range); // forward reference
@@ -801,9 +801,9 @@ static int readTemperature() {
 #elif defined(ARDUINO_NRF52840_CLUE) || defined(XRP)
 
 #if defined(XRP)
-  #define LSM6DS 107
+	#define LSM6DS 107
 #else
-  #define LSM6DS 106
+	#define LSM6DS 106
 #endif
 
 static void startAccelerometer() {
@@ -1530,7 +1530,7 @@ OBJ primMBTiltZ(int argCount, OBJ *args) { return int2obj(readAcceleration(5)); 
 // Magnetometer
 
 #ifdef ARDUINO_ARCH_ESP32
-  #include "driver/adc.h"
+	#include "driver/adc.h"
 #endif
 
 // accelerometer addresses for ID testing:
@@ -1705,8 +1705,8 @@ static OBJ primTouchRead(int argCount, OBJ *args) { return zeroObj; }
 static uint8_t dhtData[5];
 
 #if !defined(ARDUINO_ARCH_RP2040)
-  // this macro does nothing on non-RP2040 boards
-  #define __not_in_flash_func(f) (f)
+	// this macro does nothing on non-RP2040 boards
+	#define __not_in_flash_func(f) (f)
 #endif
 
 static int __not_in_flash_func(readDHTData)(int pin) {

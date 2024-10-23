@@ -33,8 +33,8 @@
 void delay(unsigned long); // Arduino delay function
 
 #if defined(ARDUINO_ARCH_ESP32)
-  // use Flash codestore on all ESP32 variants
-  #define ESP32_FLASH_CODESTORE true
+	// use Flash codestore on all ESP32 variants
+	#define ESP32_FLASH_CODESTORE true
 #endif
 
 // flash operations for supported platforms

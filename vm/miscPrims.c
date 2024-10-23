@@ -99,7 +99,7 @@ static void extractHSV(int rgb, float *hue, float *sat, float *bri) {
 	*hue = fmod(60.0 * (i - (((float) f) / (max - min))), 360.0);
 	*sat = 0.0;
 	if (max > 0) *sat = ((float) (max - min)) / max;
-  	*bri = max / 255.0;
+	*bri = max / 255.0;
 }
 
 OBJ primHSVColor(int argCount, OBJ *args) {

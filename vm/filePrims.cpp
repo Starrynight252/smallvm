@@ -352,7 +352,7 @@ static void nextFileName(char *fileName) {
 			if (file) strncat(fileName, file.name(), 31);
 		}
 	#else
- 		if (rootDir.next()) strncat(fileName, rootDir.fileName().c_str(), 31);
+		if (rootDir.next()) strncat(fileName, rootDir.fileName().c_str(), 31);
 	#endif
 }
 

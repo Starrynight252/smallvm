@@ -217,8 +217,9 @@ static int isOctoName(const uint8_t *sixteenBytes) {
 	for (int i = 0; i < 16; i++) {
 		int ch = sixteenBytes[i];
 		if (!((('0' <= ch) && (ch <= '9')) ||
-			  (('A' <= ch) && (ch <= 'F')))) {
-			 	return false;
+			(('A' <= ch) && (ch <= 'F')))
+		) {
+			return false;
 		}
 	}
 	return true;

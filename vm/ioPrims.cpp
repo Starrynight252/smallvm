@@ -19,9 +19,9 @@
 #include "interp.h"
 
 #if !defined(ARDUINO_API_VERSION)
-  // typedef PinMode as int for use on platforms that do not use the Arduino Core API
-  typedef int PinMode;
-  typedef int PinStatus;
+	// typedef PinMode as int for use on platforms that do not use the Arduino Core API
+	typedef int PinMode;
+	typedef int PinStatus;
 #endif
 
 #if defined(ARDUINO_SAMD_ATMEL_SAMW25_XPRO)
@@ -45,13 +45,13 @@ static void stopRF(); // forward reference
 // MicroBlocks only supports BLE on the nRF52, we use TIMER1 on nRF52.
 // Use TIMER0 on the nRF51, since that is the only 32-bit timer on the nRF51.
 #if defined(NRF52)
-  #define MB_TIMER NRF_TIMER1
-  #define MB_TIMER_IRQn TIMER1_IRQn
-  #define MB_TIMER_IRQHandler TIMER1_IRQHandler
+	#define MB_TIMER NRF_TIMER1
+	#define MB_TIMER_IRQn TIMER1_IRQn
+	#define MB_TIMER_IRQHandler TIMER1_IRQHandler
 #else
-  #define MB_TIMER NRF_TIMER0
-  #define MB_TIMER_IRQn TIMER0_IRQn
-  #define MB_TIMER_IRQHandler TIMER0_IRQHandler
+	#define MB_TIMER NRF_TIMER0
+	#define MB_TIMER_IRQn TIMER0_IRQn
+	#define MB_TIMER_IRQHandler TIMER0_IRQHandler
 #endif
 
 static void initClock_NRF5x() {
@@ -994,7 +994,7 @@ static void initPins(void) {
 }
 
 #if !defined(ARDUINO_SAM_DUE) && !defined(ESP8266)
-  #define HAS_INPUT_PULLDOWN true
+	#define HAS_INPUT_PULLDOWN true
 #endif
 
 void turnOffPins() {
@@ -1018,7 +1018,7 @@ int mapDigitalPinNum(int pinNum) {
 			return ed1DigitalPinMap[pinNum - 1];
 		}
 	#endif
-	#if defined(ARDUINO_SAMD_ATMEL_SAMW25_XPRO) || defined(ARDUINO_ARCH_ESP32) ||  defined(ARDUINO_ARCH_RP2040)
+	#if defined(ARDUINO_SAMD_ATMEL_SAMW25_XPRO) || defined(ARDUINO_ARCH_ESP32) || defined(ARDUINO_ARCH_RP2040)
 		if (RESERVED(pinNum)) return -1;
 	#endif
 	if ((pinNum < 0) || (pinNum >= TOTAL_PINS)) return -1; // out of range
@@ -1550,8 +1550,8 @@ static void startServoToneTimer() {
 	NVIC_EnableIRQ(MB_TIMER_IRQn);
 
 	// get current timer value
- 	MB_TIMER->TASKS_CAPTURE[0] = true;
- 	uint32_t wakeTime = MB_TIMER->CC[0];
+	MB_TIMER->TASKS_CAPTURE[0] = true;
+	uint32_t wakeTime = MB_TIMER->CC[0];
 
 	// set initial wake times a few (at least 2) usecs in the future to kick things off
 	MB_TIMER->CC[2] = wakeTime + 5;
@@ -2144,7 +2144,7 @@ OBJ primDACWrite(int argCount, OBJ *args) {
 // Software serial (output only)
 
 #if !defined(__not_in_flash_func)
-  #define __not_in_flash_func(funcName) funcName
+	#define __not_in_flash_func(funcName) funcName
 #endif
 
 static OBJ __not_in_flash_func(primSoftwareSerialWriteByte)(int argCount, OBJ *args) {
@@ -2231,8 +2231,8 @@ static int startRF(int pin, int frequency) {
 		NRF_PPI->CHENCLR = PPI_CHENSET_CH0_Msk; // pause RF output
 		return true;
 	}
- 	int count = ((80000000 / frequency) + 5) / 10; // rounded
- 	if (count > 65535) count = 65535;
+	int count = ((80000000 / frequency) + 5) / 10; // rounded
+	if (count > 65535) count = 65535;
 
 	int nRFPin = g_ADigitalPinMap[pin]; // get internal pin number
 
@@ -2339,15 +2339,15 @@ static int startRF(int pin, int freq) {
 	pwm_config_set_clkdiv(&c, (float) clock_get_hz(clk_sys) / (freq * analogScale));
 	pwm_config_set_wrap(&c, analogScale - 1);
 	pwm_init(pwm_gpio_to_slice_num(rfPin), &c, true);
-    gpio_set_function(rfPin, GPIO_FUNC_PWM);
-    pwm_set_gpio_level(rfPin, analogScale / 2);
-    return true;
+	gpio_set_function(rfPin, GPIO_FUNC_PWM);
+	pwm_set_gpio_level(rfPin, analogScale / 2);
+	return true;
 }
 
 static void stopRF() {
 	if (rfPin >= 0) {
 		pwm_set_enabled(pwm_gpio_to_slice_num(rfPin), false);
-    	gpio_set_function(rfPin, GPIO_FUNC_SIO);
+		gpio_set_function(rfPin, GPIO_FUNC_SIO);
 		SET_MODE(rfPin, INPUT);
 	}
 	rfPin = -1;
@@ -2404,7 +2404,7 @@ static PrimEntry entries[] = {
 	{"dacInit", primDACInit},
 	{"dacWrite", primDACWrite},
 	{"softWriteByte", primSoftwareSerialWriteByte},
-    {"squareWave", primSquareWave},
+	{"squareWave", primSquareWave},
 	{"setUserLED", primSetUserLED2},
 	{"analogRead", primAnalogRead},
 	{"analogWrite", primAnalogWrite2},
