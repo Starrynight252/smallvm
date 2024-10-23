@@ -819,6 +819,7 @@ method selectPort SmallRuntime {
 		}
 	}
 	if (and (devMode) ('Browser' != (platform))) {
+		addLine menu
 		addItem menu 'other...'
 	}
 	if (notNil port) {

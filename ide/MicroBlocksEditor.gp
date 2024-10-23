@@ -1160,54 +1160,39 @@ method gearMenu MicroBlocksEditor {
   addItem menu 'about...' (action 'showAboutBox' (smallRuntime))
   addLine menu
   addItem menu 'update firmware on board' (action 'installVM' (smallRuntime) false false) // do not wipe flash, do not download VM from server
-
-if (contains (commandLine) '--allowMorphMenu') { // xxx testing (used by John)
-// addItem menu 'decompile all' (action 'decompileAll' (smallRuntime))
-// addLine menu
-// addItem menu 'dump persistent memory' (action 'sendMsg' (smallRuntime) 'systemResetMsg' 1 nil)
-// addItem menu 'compact persistent memory' (action 'sendMsg' (smallRuntime) 'systemResetMsg' 2 nil)
-// addLine menu
-}
-
-  if (boardIsBLECapable (smallRuntime)) {
-    addItem menu 'enable or disable BLE' (action 'setBLEFlag' (smallRuntime))
-  }
-
   addLine menu
+  addItem menu 'dark mode' (action 'toggleDarkMode' this false) 'make the IDE darker' (newCheckmark this (darkModeEnabled this))
   addItem menu 'show advanced blocks' 'toggleAdvancedBlocks' nil (newCheckmark this (devMode))
 
   if (devMode) {
 	addLine menu
 	addItem menu 'show implementation blocks' (action 'toggleShowHiddenBlocks' this) 'show blocks and variables that are internal to libraries (i.e. those whose name begins with underscore)' (newCheckmark this (showHiddenBlocksEnabled this))
+    addItem menu 'autoload board libraries' (action 'toggleBoardLibAutoLoad' this) nil (newCheckmark this (not (boardLibAutoLoadDisabled this)))
+// Does anyone ever enable 'PlugShare when project empty'?
+    addItem menu 'PlugShare when project empty' (action 'toggleAutoDecompile' this) 'when plugging a board, automatically read its contents into the IDE even if the current project is empty' (newCheckmark this (autoDecompileEnabled this))
 	addLine menu
-	addItem menu 'firmware version' (action 'getVersion' (smallRuntime))
-	addLine menu
-// Commented out for now since all precompiled VM's are already included in IDE
-//	addItem menu 'download and install latest VM' (action 'installVM' (smallRuntime) false true) // do not wipe flash, download latest VM from server
-	addItem menu 'erase flash and update firmware on ESP board' (action 'installVM' (smallRuntime) true false) // wipe flash first, do not download VM from server
 	addItem menu 'install ESP firmware from URL' (action 'installESPFirmwareFromURL' (smallRuntime)) // wipe flash first, do not download VM from server
-
-	if ('Browser' != (platform)) {
-	  addLine menu
-	  if (not (isRunning httpServer)) {
-		addItem menu 'start HTTP server' 'startHTTPServer'
-	  } else {
-		addItem menu 'stop HTTP server' 'stopHTTPServer'
-	  }
-	}
+	addItem menu 'erase flash and update firmware on ESP board' (action 'installVM' (smallRuntime) true false) // wipe flash first, do not download VM from server
+	addLine menu
 	addItem menu 'compact code store' (action 'sendMsg' (smallRuntime) 'systemResetMsg' 2 nil)
-	addLine menu
-	addItem menu 'autoload board libraries' (action 'toggleBoardLibAutoLoad' this) nil (newCheckmark this (not (boardLibAutoLoadDisabled this)))
-	addItem menu 'PlugShare when project empty' (action 'toggleAutoDecompile' this) 'when plugging a board, automatically read its contents into the IDE even if the current project is empty' (newCheckmark this (autoDecompileEnabled this))
 
-// xxx for testing blend in browser...
-// addItem menu 'time redraw' (action 'timeRedraw' this)
-// addLine menu
-// addItem menu 'cursorTest' cursorTest
-// addItem menu 'benchmark' (action 'runBenchmarks' (global 'page'))
+    if (boardIsBLECapable (smallRuntime)) {
+	  addLine menu
+      addItem menu 'enable or disable BLE' (action 'setBLEFlag' (smallRuntime))
+    }
 
-	addLine menu
-	addItem menu 'dark mode' (action 'toggleDarkMode' this false) 'make the IDE darker' (newCheckmark this (darkModeEnabled this))
+// Let's deprecate the HTTP server since it doesn't work in browser?
+// Don't think anyone is using it now that we have so many other ways to communicate.
+// And we might not want to -- or be able to -- implement it when we rewrite MicroBlocks.
+// 	if ('Browser' != (platform)) {
+// 	  addLine menu
+// 	  if (not (isRunning httpServer)) {
+// 		addItem menu 'start HTTP server' 'startHTTPServer'
+// 	  } else {
+// 		addItem menu 'stop HTTP server' 'stopHTTPServer'
+// 	  }
+// 	}
+
   }
   return menu
 }
