@@ -1172,7 +1172,7 @@ method showAboutBox SmallRuntime {
 	}
 	(inform (global 'page') (join
 		'MicroBlocks v' (ideVersion this) vmVersionReport (newline)
-		(localized 'by') ' John Maloney, Bernat Romagosa, & Jens Mönig.' (newline)
+		(localized 'about;by') ' John Maloney, Bernat Romagosa, & Jens Mönig.' (newline)
 		(localized 'Created with GP') ' (gpblocks.org)' (newline) (newline)
 		(localized 'More info at http://microblocks.fun')) 'About MicroBlocks')
 }

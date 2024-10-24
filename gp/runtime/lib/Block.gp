@@ -1131,7 +1131,7 @@ method gpContextMenu Block {
 	}
 	if (not isInPalette) {
 		addLine menu
-		addItem menu 'delete' 'delete'
+		addItem menu 'script;delete' 'delete'
 	}
 	return menu
 }

@@ -503,15 +503,15 @@ Hummingbird _ _
 
 Hummingbird Battery (mV)
 
-Light
+humm;Light
 
-Distance (cm)
+humm;Distance (cm)
 
-Dial
+humm;Dial
 
-Sound
+humm;Sound
 
-Other
+humm;Other
 
 Finch Beak Red _ Green _ Blue _
 
@@ -604,55 +604,55 @@ release key _
 
 release all keys
 
-Shift
+kbd;Shift
 
-Control
+kbd;Control
 
-Alt / ⌥
+kbd;Alt / ⌥
 
-Logo / ⌘
+kbd;Logo / ⌘
 
-AltGr
+kbd;AltGr
 
-enter
+kbd;enter
 
-return
+kbd;return
 
-tab
+kbd;tab
 
-backspace
+kbd;backspace
 
-delete
+kbd;delete
 
-insert
+kbd;insert
 
-home
+kbd;home
 
-end
+kbd;end
 
-PgUp
+kbd;PgUp
 
-PgDown
+kbd;PgDown
 
-CapsLock
+kbd;CapsLock
 
-NumLock
+kbd;NumLock
 
-ScrollLock
+kbd;ScrollLock
 
-PrintScreen
+kbd;PrintScreen
 
-ESC
+kbd;ESC
 
 _ mouse click
 
-left
+mouse;left
 
-right
+mouse;right
 
-middle
+mouse;middle
 
-both
+mouse;both
 
 move mouse pointer by _ , _
 
@@ -1236,7 +1236,7 @@ ethnic
 
 percussive
 
-SFX
+gm;SFX
 
 # General MIDI drum sets
 
@@ -1256,7 +1256,7 @@ brush
 
 orchestra
 
-SFX
+drumkit;SFX
 
 CM-64/CM-32L
 
@@ -1449,7 +1449,7 @@ set digital chord pins _ _ _
 
 Turtle
 
-home
+trtl;home
 
 move _
 
@@ -1906,11 +1906,11 @@ m꞉s _ energy meter
 
 m꞉s energy consumption (µWh)
 
-start
+ms;start
 
-reset
+ms;reset
 
-down
+ms;down
 
 ####
 # DrawBot Library
@@ -2211,11 +2211,98 @@ Cutebot sees line on left _ right _
 
 Cutebot distance (cm)
 
-left
+cutebotlight;left
 
-right
+cutebotlight;right
 
-both
+cutebotlight;both
+
+cutebotside;left
+
+cutebotside;right
+
+####
+# Cutebot Pro
+
+cutebotwheel;left
+
+cutebotwheel;right
+
+cutebotwheel;both
+
+cutebotlight;left
+
+cutebotlight;right
+
+cutebotlight;both
+
+cutebotwheel;left
+
+cutebotwheel;right
+
+45 degrees
+
+90 degrees
+
+135 degrees
+
+180 degrees
+
+cutebot;forward
+
+cutebot;backward
+
+180 degree
+
+270 degree
+
+360 degree
+
+cutebotturn;left
+
+cutebotturn;right
+
+cutebotturn;left-in-place
+
+cutebotturn;right-in-place
+
+CBPro set wheel speed left _ right _ (-60 to 60 cm/s)
+
+CBPro speed of _ wheel (cm/s)
+
+CBPro stop wheel _
+
+CBPro stop all
+
+CBPro move _ (-255 to 255 cm)
+
+CBPro turn _ degrees
+
+CBPro set headlight _ to _
+
+CBPro set NeoPixel _ to _
+
+CBPro distance (cm)
+
+CBPro tracking state is (L - - R) _ _ _ _
+
+CBPro tracking state
+
+CBPro tracking offset
+
+CBPro IR code received?
+
+CBPro IR code
+
+CBPro set _ servo _ angle to _ deg
+
+CBPro servo _ speed to _ (-100 to 100)
+
+CBPro set external motor power to _ (-100 to 100)
+
+CBPro stop external motor
+
+CBPro version
 
 # Wukong
 
@@ -2414,7 +2501,7 @@ Select board:
 
 Could not read:
 
-by
+about;by
 
 Created with GP
 
@@ -2514,10 +2601,6 @@ set serial delay
 
 firmware version
 
-start WebThing server
-
-stop WebThing server
-
 HTTP Server
 
 MicroBlocks HTTP Server listening on port 6473
@@ -2571,8 +2654,6 @@ Drag the firmware file you just saved to the
 drive
 
 Installing firmware...
-
-Plug in the board.
 
 Board not connected
 
@@ -2696,7 +2777,9 @@ save a picture of these blocks and their result as a PNG file
 
 copy script
 
-delete
+script;delete
+
+blockdef;delete
 
 Input type:
 
@@ -2758,25 +2841,29 @@ Confirm
 
 LIBRARIES
 
-Libraries
+libfolder;Libraries
 
-AI
+libfolder;AI
 
-Graphics and Displays
+libfolder;Graphics and Displays
 
-Kits and Boards
+libfolder;Kits and Boards
 
-Network
+libfolder;Network
 
-Other
+libfolder;Motors
 
-Robots
+libfolder;Other
 
-Sensing
+libfolder;Robots
 
-Sound
+libfolder;Sensing
 
-System
+libfolder;Sound
+
+libfolder;System
+
+libfolder;WorkInProgress
 
 # File picker and library dialogs
 
@@ -2808,7 +2895,7 @@ File name:
 
 New Folder
 
-by
+libdata;by
 
 Depends:
 

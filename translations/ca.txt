@@ -736,19 +736,19 @@ Hummingbird _ _
 Hummingbird Battery (mV)
 Hummingbird Bateria (mV)
 
-Light
+humm;Light
 Llum
 
-Distance (cm)
+humm;Distance (cm)
 Distància (cm)
 
-Dial
+humm;Dial
 Rodeta
 
-Sound
+humm;Sound
 So
 
-Other
+humm;Other
 Altres
 
 Finch Beak Red _ Green _ Blue _
@@ -866,7 +866,7 @@ envia al dispositiu IR _ la comanda _
 # Keyboard and Mouse library
 
 Keyboard and Mouse
-Teclat i Ratolí
+Teclat i ratolí
 
 press key _
 prem tecla _
@@ -883,79 +883,79 @@ deixa anar la tecla _
 release all keys
 deixa anar totes les tecles
 
-Shift
+kbd;Shift
 Majúscules
 
+kbd;Control
 Control
-Control
 
+kbd;Alt / ⌥
 Alt / ⌥
-Alt / ⌥
 
+kbd;Logo / ⌘
 Logo / ⌘
-Logo / ⌘
 
-AltGr
+kbd;AltGr
 AltGr
 
-enter
+kbd;enter
 intro
 
-return
+kbd;return
 retorn
 
-tab
-tab
+kbd;tab
+tabulador
 
-backspace
+kbd;backspace
 retrocés
 
-delete
-elimina
+kbd;delete
+eliminar
 
-insert
+kbd;insert
 inserir
 
-home
-torna a casa
+kbd;home
+inici
 
-end
+kbd;end
 fi
 
-PgUp
+kbd;PgUp
 RePg
 
-PgDown
+kbd;PgDown
 AvPg
 
-CapsLock
+kbd;CapsLock
 Bloqueig de majúscules
 
-NumLock
+kbd;NumLock
 Bloqueig numèric
 
-ScrollLock
+kbd;ScrollLock
 Bloqueig de desplaçament
 
-PrintScreen
+kbd;PrintScreen
 ImprPant
 
-ESC
+kbd;ESC
 ESC
 
 _ mouse click
 clic _ del ratolí
 
-left
-esquerra
+mouse;left
+esquerre
 
-right
+mouse;right
 dret
 
-middle
+mouse;middle
 mig
 
-both
+mouse;both
 ambdós
 
 move mouse pointer by _ , _
@@ -1496,40 +1496,40 @@ stop tone
 atura el so
 
 c
-do
+--MISSING--
 
 c#
-do#
+--MISSING--
 
 d
-re
+--MISSING--
 
 d#
-re#
+--MISSING--
 
 e
-mi
+--MISSING--
 
 f
-fa
+--MISSING--
 
 f#
-fa#
+--MISSING--
 
 g
-sol
+--MISSING--
 
 g#
-sol#
+--MISSING--
 
 a
-la
+--MISSING--
 
 a#
-la#
+--MISSING--
 
 b
-si
+--MISSING--
 
 ####
 # Ringtone library
@@ -1793,7 +1793,7 @@ ethnic
 percussive
 percussió
 
-SFX
+gm;SFX
 efectes especials
 
 # General MIDI drum sets
@@ -1822,7 +1822,7 @@ escombretes
 orchestra
 orquèstra
 
-SFX
+drumkit;SFX
 efectes especials
 
 CM-64/CM-32L
@@ -2098,7 +2098,7 @@ establir pins digitals _ _ _ per a acord
 Turtle
 Tortuga
 
-home
+trtl;home
 torna a casa
 
 move _
@@ -2751,13 +2751,13 @@ m꞉s _ la mesura d'energia
 m꞉s energy consumption (µWh)
 m꞉s consum energètic (µWh)
 
-start
+ms;start
 encén
 
-reset
+ms;reset
 reseteja
 
-down
+ms;down
 baix
 
 ####
@@ -3196,14 +3196,143 @@ El Cutebot veu la línia a l'esquerra _ i la dreta _
 Cutebot distance (cm)
 Distància frontal (cm)
 
-left
+cutebotlight;left
 esquerra
 
-right
+cutebotlight;right
 dret
 
-both
+cutebotlight;both
 ambdós
+
+cutebotside;left
+esquerra
+
+cutebotside;right
+dret
+
+####
+# Cutebot Pro
+
+cutebotwheel;left
+esquerra
+
+cutebotwheel;right
+dret
+
+cutebotwheel;both
+ambdós
+
+cutebotlight;left
+esquerra
+
+cutebotlight;right
+dret
+
+cutebotlight;both
+ambdós
+
+cutebotwheel;left
+esquerra
+
+cutebotwheel;right
+dret
+
+45 degrees
+--MISSING--
+
+90 degrees
+--MISSING--
+
+135 degrees
+--MISSING--
+
+180 degrees
+--MISSING--
+
+cutebot;forward
+endavant
+
+cutebot;backward
+enrera
+
+180 degree
+--MISSING--
+
+270 degree
+--MISSING--
+
+360 degree
+--MISSING--
+
+cutebotturn;left
+esquerra
+
+cutebotturn;right
+dret
+
+cutebotturn;left-in-place
+--MISSING--
+
+cutebotturn;right-in-place
+--MISSING--
+
+CBPro set wheel speed left _ right _ (-60 to 60 cm/s)
+--MISSING--
+
+CBPro speed of _ wheel (cm/s)
+--MISSING--
+
+CBPro stop wheel _
+--MISSING--
+
+CBPro stop all
+--MISSING--
+
+CBPro move _ (-255 to 255 cm)
+--MISSING--
+
+CBPro turn _ degrees
+--MISSING--
+
+CBPro set headlight _ to _
+--MISSING--
+
+CBPro set NeoPixel _ to _
+--MISSING--
+
+CBPro distance (cm)
+--MISSING--
+
+CBPro tracking state is (L - - R) _ _ _ _
+--MISSING--
+
+CBPro tracking state
+--MISSING--
+
+CBPro tracking offset
+--MISSING--
+
+CBPro IR code received?
+--MISSING--
+
+CBPro IR code
+--MISSING--
+
+CBPro set _ servo _ angle to _ deg
+--MISSING--
+
+CBPro servo _ speed to _ (-100 to 100)
+--MISSING--
+
+CBPro set external motor power to _ (-100 to 100)
+--MISSING--
+
+CBPro stop external motor
+--MISSING--
+
+CBPro version
+--MISSING--
 
 # Wukong
 
@@ -3487,7 +3616,7 @@ Selecciona la placa:
 Could not read:
 No s'ha pogut llegir:
 
-by
+about;by
 per
 
 Created with GP
@@ -3636,12 +3765,6 @@ ajusta la latència del port sèrie
 firmware version
 versió del firmware
 
-start WebThing server
-inicia el servidor de WebThings
-
-stop WebThing server
-atura el servidor de WebThings
-
 HTTP Server
 Servidor HTTP
 
@@ -3722,9 +3845,6 @@ drive
 
 Installing firmware...
 Instal·lant firmware...
-
-Plug in the board.
-Connecta la placa.
 
 Board not connected
 Placa no connectada
@@ -3909,7 +4029,10 @@ desa una imatge d'aquests blocs i el seu resultat en format PNG
 copy script
 copia el programa
 
-delete
+script;delete
+elimina
+
+blockdef;delete
 elimina
 
 Input type:
@@ -4001,35 +4124,41 @@ Confirmació
 LIBRARIES
 LLIBRERIES
 
-Libraries
+libfolder;Libraries
 Llibreries
 
-AI
+libfolder;AI
 Intel·ligència artificial
 
-Graphics and Displays
+libfolder;Graphics and Displays
 Gràfics i pantalles
 
-Kits and Boards
+libfolder;Kits and Boards
 Kits i plaques
 
-Network
+libfolder;Network
 Xarxa
 
-Other
+libfolder;Motors
+--MISSING--
+
+libfolder;Other
 Altres
 
-Robots
+libfolder;Robots
 Robots
 
-Sensing
+libfolder;Sensing
 Sensors
 
-Sound
+libfolder;Sound
 So
 
-System
+libfolder;System
 Sistema
+
+libfolder;WorkInProgress
+--MISSING--
 
 # File picker and library dialogs
 
@@ -4075,8 +4204,8 @@ Nom d'arxiu:
 New Folder
 Nou directori
 
-by
-per
+libdata;by
+autor:
 
 Depends:
 Depèn de:

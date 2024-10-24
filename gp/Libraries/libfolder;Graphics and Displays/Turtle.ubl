@@ -12,7 +12,7 @@ Default direction is to the right. Positive turn and direction angles are clockw
 '
 variables _turtleX _turtleY _turtleHeading _turtlePenIsDown _turtleColor 
 
-  spec ' ' 'home' 'home'
+  spec ' ' 'home' 'trtl;home'
   spec ' ' 'move' 'move _' 'auto' '10'
   spec ' ' 'turnBy' 'turn _ degrees' 'auto' 90
   spec ' ' 'turnFraction' 'turn _ / _ of circle' 'auto auto' 1 4

@@ -581,7 +581,7 @@ method updateFields MicroBlocksLibraryPropertiesFrame {
 	setContents depsViewer (dependencies library)
 	setText versionText (join
 		'v' (toString (at (version library) 1)) '.' (toString (at (version library) 2)))
-	setText authorText (join (localized 'by') ' ' (author library))
+	setText authorText (join (localized 'libdata;by') ' ' (author library))
 }
 
 method fixLayout MicroBlocksLibraryPropertiesFrame {

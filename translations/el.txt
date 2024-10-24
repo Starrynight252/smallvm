@@ -736,19 +736,19 @@ Hummingbird _ _
 Hummingbird Battery (mV)
 Hummingbird μπαταρία (mV)
 
-Light
+humm;Light
 Φως
 
-Distance (cm)
+humm;Distance (cm)
 Απόσταση (εκ)
 
-Dial
+humm;Dial
 --MISSING--
 
-Sound
+humm;Sound
 Ήχος
 
-Other
+humm;Other
 Άλλα
 
 Finch Beak Red _ Green _ Blue _
@@ -883,79 +883,79 @@ release key _
 release all keys
 --MISSING--
 
-Shift
+kbd;Shift
 --MISSING--
 
-Control
+kbd;Control
 Έλεγχος Ροής
 
-Alt / ⌥
+kbd;Alt / ⌥
 --MISSING--
 
-Logo / ⌘
+kbd;Logo / ⌘
 --MISSING--
 
-AltGr
+kbd;AltGr
 --MISSING--
 
-enter
+kbd;enter
 --MISSING--
 
-return
+kbd;return
 --MISSING--
 
-tab
+kbd;tab
 --MISSING--
 
-backspace
+kbd;backspace
 --MISSING--
 
-delete
+kbd;delete
 διαγραφή
 
-insert
+kbd;insert
 --MISSING--
 
-home
+kbd;home
 Σπίτι
 
-end
+kbd;end
 --MISSING--
 
-PgUp
+kbd;PgUp
 --MISSING--
 
-PgDown
+kbd;PgDown
 --MISSING--
 
-CapsLock
+kbd;CapsLock
 --MISSING--
 
-NumLock
+kbd;NumLock
 --MISSING--
 
-ScrollLock
+kbd;ScrollLock
 --MISSING--
 
-PrintScreen
+kbd;PrintScreen
 --MISSING--
 
-ESC
+kbd;ESC
 --MISSING--
 
 _ mouse click
 --MISSING--
 
-left
+mouse;left
 --MISSING--
 
-right
+mouse;right
 --MISSING--
 
-middle
+mouse;middle
 --MISSING--
 
-both
+mouse;both
 --MISSING--
 
 move mouse pointer by _ , _
@@ -1793,7 +1793,7 @@ ethnic
 percussive
 --MISSING--
 
-SFX
+gm;SFX
 --MISSING--
 
 # General MIDI drum sets
@@ -1822,7 +1822,7 @@ brush
 orchestra
 --MISSING--
 
-SFX
+drumkit;SFX
 --MISSING--
 
 CM-64/CM-32L
@@ -2098,7 +2098,7 @@ set digital chord pins _ _ _
 Turtle
 Χελώνα 
 
-home
+trtl;home
 Σπίτι
 
 move _
@@ -2751,13 +2751,13 @@ m꞉s _ energy meter
 m꞉s energy consumption (µWh)
 --MISSING--
 
-start
+ms;start
 --MISSING--
 
-reset
+ms;reset
 --MISSING--
 
-down
+ms;down
 --MISSING--
 
 ####
@@ -3196,13 +3196,142 @@ Cutebot sees line on left _ right _
 Cutebot distance (cm)
 --MISSING--
 
-left
+cutebotlight;left
 --MISSING--
 
-right
+cutebotlight;right
 --MISSING--
 
-both
+cutebotlight;both
+--MISSING--
+
+cutebotside;left
+--MISSING--
+
+cutebotside;right
+--MISSING--
+
+####
+# Cutebot Pro
+
+cutebotwheel;left
+--MISSING--
+
+cutebotwheel;right
+--MISSING--
+
+cutebotwheel;both
+--MISSING--
+
+cutebotlight;left
+--MISSING--
+
+cutebotlight;right
+--MISSING--
+
+cutebotlight;both
+--MISSING--
+
+cutebotwheel;left
+--MISSING--
+
+cutebotwheel;right
+--MISSING--
+
+45 degrees
+--MISSING--
+
+90 degrees
+--MISSING--
+
+135 degrees
+--MISSING--
+
+180 degrees
+--MISSING--
+
+cutebot;forward
+--MISSING--
+
+cutebot;backward
+--MISSING--
+
+180 degree
+--MISSING--
+
+270 degree
+--MISSING--
+
+360 degree
+--MISSING--
+
+cutebotturn;left
+--MISSING--
+
+cutebotturn;right
+--MISSING--
+
+cutebotturn;left-in-place
+--MISSING--
+
+cutebotturn;right-in-place
+--MISSING--
+
+CBPro set wheel speed left _ right _ (-60 to 60 cm/s)
+--MISSING--
+
+CBPro speed of _ wheel (cm/s)
+--MISSING--
+
+CBPro stop wheel _
+--MISSING--
+
+CBPro stop all
+--MISSING--
+
+CBPro move _ (-255 to 255 cm)
+--MISSING--
+
+CBPro turn _ degrees
+--MISSING--
+
+CBPro set headlight _ to _
+--MISSING--
+
+CBPro set NeoPixel _ to _
+--MISSING--
+
+CBPro distance (cm)
+--MISSING--
+
+CBPro tracking state is (L - - R) _ _ _ _
+--MISSING--
+
+CBPro tracking state
+--MISSING--
+
+CBPro tracking offset
+--MISSING--
+
+CBPro IR code received?
+--MISSING--
+
+CBPro IR code
+--MISSING--
+
+CBPro set _ servo _ angle to _ deg
+--MISSING--
+
+CBPro servo _ speed to _ (-100 to 100)
+--MISSING--
+
+CBPro set external motor power to _ (-100 to 100)
+--MISSING--
+
+CBPro stop external motor
+--MISSING--
+
+CBPro version
 --MISSING--
 
 # Wukong
@@ -3487,7 +3616,7 @@ Select board:
 Could not read:
 Δεν μπορεί να διαβάσει:
 
-by
+about;by
 από
 
 Created with GP
@@ -3636,12 +3765,6 @@ set serial delay
 firmware version
 έκδοση firmware
 
-start WebThing server
-ξεκίνα εξυπηρετητή WebThing
-
-stop WebThing server
-σταμάτα εξυπηρετητή WebThing
-
 HTTP Server
 HTTP εξυπηρετητής
 
@@ -3722,9 +3845,6 @@ drive
 
 Installing firmware...
 --MISSING--
-
-Plug in the board.
-Σύνδεσε την κάρτα 
 
 Board not connected
 --MISSING--
@@ -3909,7 +4029,10 @@ save a picture of these blocks and their result as a PNG file
 copy script
 αντιγραφή κειμένου
 
-delete
+script;delete
+διαγραφή
+
+blockdef;delete
 διαγραφή
 
 Input type:
@@ -4001,34 +4124,40 @@ Confirm
 LIBRARIES
 --MISSING--
 
-Libraries
+libfolder;Libraries
 Βιβλιοθήκες
 
-AI
+libfolder;AI
 --MISSING--
 
-Graphics and Displays
+libfolder;Graphics and Displays
 --MISSING--
 
-Kits and Boards
+libfolder;Kits and Boards
 --MISSING--
 
-Network
+libfolder;Network
 --MISSING--
 
-Other
+libfolder;Motors
+--MISSING--
+
+libfolder;Other
 Άλλα
 
-Robots
+libfolder;Robots
 --MISSING--
 
-Sensing
+libfolder;Sensing
 --MISSING--
 
-Sound
+libfolder;Sound
 Ήχος
 
-System
+libfolder;System
+--MISSING--
+
+libfolder;WorkInProgress
 --MISSING--
 
 # File picker and library dialogs
@@ -4075,7 +4204,7 @@ File name:
 New Folder
 Νέος Φάκελος
 
-by
+libdata;by
 από
 
 Depends:

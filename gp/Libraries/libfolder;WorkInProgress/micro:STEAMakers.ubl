@@ -7,7 +7,7 @@ choices inclination down x y
 choices led_imageMenu heart 'small heart' yes no happy sad confused angry asleep surprised silly fabulous meh 't-shirt' 'roller skate' duck house tortoise butterfly 'stick figure' ghost sword giraffe skull umbrella snake rabbit cow 'quarter note' 'eight note' pitchfork target triangle 'left triangle' 'chess board' diamond 'small diamond' square 'small square' scissors 
 choices buttons A B 
 choices accel x y z 
-choices energyMeter start stop reset 
+choices energyMeter 'ms;start' 'ms;stop' 'ms;reset'
 choices energy mA mV mW 
 description 'Provides custom blocks for the micro:STEAMakers. It is an ESP32 board with WiFi, BLE, 5x5 RGB LED matrix, 2 buttons, touching area, light, sound, temperature and humidity sensors, six-axis acc/gyroscope, energy control and io pins and i2c extensions'
 variables _ms_neoPixels _ms_neoPixels_on _sb_neoPixels_on _MiKe_circlePixels _ms_noePixels_scale _ms_scrolling_stopped _tonePin _toneInitalized _ms_energyReading _ms_energySum _ms_aht20_on _ms_aht20_reading _ms_aht20_data _ms_MPU6050_on _ms_MPU6050_add 
@@ -37,7 +37,7 @@ variables _ms_neoPixels _ms_neoPixels_on _sb_neoPixels_on _MiKe_circlePixels _ms
   spec 'r' 'ms_inclination' 'm꞉s inclination towards _ º' 'menu.inclination' 'down'
   space
   spec 'r' 'ms_energy' 'm꞉s energy _' 'menu.energy' 'mW'
-  spec ' ' 'ms_energyMeter' 'm꞉s _ energy meter' 'menu.energyMeter' 'start'
+  spec ' ' 'ms_energyMeter' 'm꞉s _ energy meter' 'menu.energyMeter' 'ms;start'
   spec 'r' 'ms_energyConsumption' 'm꞉s energy consumption (µWh)'
   space
   spec ' ' '_ms_neoPixels_setup' '_ms_neoPixels_setup'
@@ -249,7 +249,7 @@ to ms_energyConsumption {
 }
 
 to ms_energyMeter op {
-  if (op == 'start') {
+  if (op == 'ms;start') {
     _ms_energyReading = (booleanConstant true)
     sendBroadcast '_ms_energy_read_loop'
   } (op == 'stop') {

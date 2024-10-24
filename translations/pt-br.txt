@@ -736,19 +736,19 @@ Hummingbird _ _
 Hummingbird Battery (mV)
 Hummingbird Bateria (mV)
 
-Light
+humm;Light
 Luz
 
-Distance (cm)
+humm;Distance (cm)
 Distância (cm)
 
-Dial
+humm;Dial
 Dial
 
-Sound
+humm;Sound
 Som
 
-Other
+humm;Other
 Outro
 
 Finch Beak Red _ Green _ Blue _
@@ -883,79 +883,79 @@ release key _
 release all keys
 --MISSING--
 
-Shift
+kbd;Shift
 --MISSING--
 
-Control
+kbd;Control
 Controle
 
-Alt / ⌥
+kbd;Alt / ⌥
 --MISSING--
 
-Logo / ⌘
+kbd;Logo / ⌘
 --MISSING--
 
-AltGr
+kbd;AltGr
 --MISSING--
 
-enter
+kbd;enter
 --MISSING--
 
-return
+kbd;return
 --MISSING--
 
-tab
+kbd;tab
 --MISSING--
 
-backspace
+kbd;backspace
 --MISSING--
 
-delete
+kbd;delete
 apaga
 
-insert
+kbd;insert
 --MISSING--
 
-home
+kbd;home
 volte para casa
 
-end
+kbd;end
 --MISSING--
 
-PgUp
+kbd;PgUp
 --MISSING--
 
-PgDown
+kbd;PgDown
 --MISSING--
 
-CapsLock
+kbd;CapsLock
 --MISSING--
 
-NumLock
+kbd;NumLock
 --MISSING--
 
-ScrollLock
+kbd;ScrollLock
 --MISSING--
 
-PrintScreen
+kbd;PrintScreen
 --MISSING--
 
-ESC
+kbd;ESC
 --MISSING--
 
 _ mouse click
 --MISSING--
 
-left
+mouse;left
 --MISSING--
 
-right
+mouse;right
 --MISSING--
 
-middle
+mouse;middle
 --MISSING--
 
-both
+mouse;both
 --MISSING--
 
 move mouse pointer by _ , _
@@ -1793,7 +1793,7 @@ ethnic
 percussive
 --MISSING--
 
-SFX
+gm;SFX
 --MISSING--
 
 # General MIDI drum sets
@@ -1822,7 +1822,7 @@ brush
 orchestra
 --MISSING--
 
-SFX
+drumkit;SFX
 --MISSING--
 
 CM-64/CM-32L
@@ -2098,7 +2098,7 @@ set digital chord pins _ _ _
 Turtle
 Tartaruga
 
-home
+trtl;home
 volte para casa
 
 move _
@@ -2751,13 +2751,13 @@ m꞉s _ energy meter
 m꞉s energy consumption (µWh)
 --MISSING--
 
-start
+ms;start
 --MISSING--
 
-reset
+ms;reset
 --MISSING--
 
-down
+ms;down
 --MISSING--
 
 ####
@@ -3196,13 +3196,142 @@ Cutebot sees line on left _ right _
 Cutebot distance (cm)
 --MISSING--
 
-left
+cutebotlight;left
 --MISSING--
 
-right
+cutebotlight;right
 --MISSING--
 
-both
+cutebotlight;both
+--MISSING--
+
+cutebotside;left
+--MISSING--
+
+cutebotside;right
+--MISSING--
+
+####
+# Cutebot Pro
+
+cutebotwheel;left
+--MISSING--
+
+cutebotwheel;right
+--MISSING--
+
+cutebotwheel;both
+--MISSING--
+
+cutebotlight;left
+--MISSING--
+
+cutebotlight;right
+--MISSING--
+
+cutebotlight;both
+--MISSING--
+
+cutebotwheel;left
+--MISSING--
+
+cutebotwheel;right
+--MISSING--
+
+45 degrees
+--MISSING--
+
+90 degrees
+--MISSING--
+
+135 degrees
+--MISSING--
+
+180 degrees
+--MISSING--
+
+cutebot;forward
+--MISSING--
+
+cutebot;backward
+--MISSING--
+
+180 degree
+--MISSING--
+
+270 degree
+--MISSING--
+
+360 degree
+--MISSING--
+
+cutebotturn;left
+--MISSING--
+
+cutebotturn;right
+--MISSING--
+
+cutebotturn;left-in-place
+--MISSING--
+
+cutebotturn;right-in-place
+--MISSING--
+
+CBPro set wheel speed left _ right _ (-60 to 60 cm/s)
+--MISSING--
+
+CBPro speed of _ wheel (cm/s)
+--MISSING--
+
+CBPro stop wheel _
+--MISSING--
+
+CBPro stop all
+--MISSING--
+
+CBPro move _ (-255 to 255 cm)
+--MISSING--
+
+CBPro turn _ degrees
+--MISSING--
+
+CBPro set headlight _ to _
+--MISSING--
+
+CBPro set NeoPixel _ to _
+--MISSING--
+
+CBPro distance (cm)
+--MISSING--
+
+CBPro tracking state is (L - - R) _ _ _ _
+--MISSING--
+
+CBPro tracking state
+--MISSING--
+
+CBPro tracking offset
+--MISSING--
+
+CBPro IR code received?
+--MISSING--
+
+CBPro IR code
+--MISSING--
+
+CBPro set _ servo _ angle to _ deg
+--MISSING--
+
+CBPro servo _ speed to _ (-100 to 100)
+--MISSING--
+
+CBPro set external motor power to _ (-100 to 100)
+--MISSING--
+
+CBPro stop external motor
+--MISSING--
+
+CBPro version
 --MISSING--
 
 # Wukong
@@ -3487,7 +3616,7 @@ Seleciona a placa:
 Could not read:
 Não é possível ler:
 
-by
+about;by
 por
 
 Created with GP
@@ -3636,12 +3765,6 @@ ajusta a latência da porta serial
 firmware version
 versão de firmware
 
-start WebThing server
-inicia o servidor WebThings
-
-stop WebThing server
-para o servidor WebThings
-
 HTTP Server
 Servidor HTTP
 
@@ -3722,9 +3845,6 @@ drive
 
 Installing firmware...
 --MISSING--
-
-Plug in the board.
-Conecta a placa. 
 
 Board not connected
 --MISSING--
@@ -3909,7 +4029,10 @@ save a picture of these blocks and their result as a PNG file
 copy script
 copia o programa
 
-delete
+script;delete
+apaga
+
+blockdef;delete
 apaga
 
 Input type:
@@ -4001,34 +4124,40 @@ Confirmação
 LIBRARIES
 --MISSING--
 
-Libraries
+libfolder;Libraries
 Bibliotecas
 
-AI
+libfolder;AI
 --MISSING--
 
-Graphics and Displays
+libfolder;Graphics and Displays
 --MISSING--
 
-Kits and Boards
+libfolder;Kits and Boards
 --MISSING--
 
-Network
+libfolder;Network
 --MISSING--
 
-Other
+libfolder;Motors
+--MISSING--
+
+libfolder;Other
 Outro
 
-Robots
+libfolder;Robots
 --MISSING--
 
-Sensing
+libfolder;Sensing
 --MISSING--
 
-Sound
+libfolder;Sound
 Som
 
-System
+libfolder;System
+--MISSING--
+
+libfolder;WorkInProgress
 --MISSING--
 
 # File picker and library dialogs
@@ -4075,7 +4204,7 @@ Nome do arquivo:
 New Folder
 Nova Pasta
 
-by
+libdata;by
 por
 
 Depends:

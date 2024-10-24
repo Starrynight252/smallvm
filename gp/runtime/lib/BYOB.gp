@@ -238,7 +238,7 @@ method gpContextMenu BlockDefinition {
 	addItem menu 'export as image' 'exportAsImage'
 	addItem menu 'hide definition' 'hideDefinition'
 	addLine menu
-	addItem menu 'delete' 'deleteDefinition'
+	addItem menu 'blockdef;delete' 'deleteDefinition'
 	popUp menu (global 'page') (left morph) (bottom morph)
 }
 
