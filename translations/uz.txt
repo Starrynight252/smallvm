@@ -3616,8 +3616,8 @@ Kengashni tanlang:
 Could not read:
 O‘qib bo‘lmadi:
 
-about;by
-tomonidan
+about;by %1, %2 & %3.
+tomonidan %1, %2 & %3.
 
 Created with GP
 GP bilan yaratilgan

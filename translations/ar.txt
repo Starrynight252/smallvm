@@ -3619,8 +3619,8 @@ Select board:
 Could not read:
 --MISSING--
 
-about;by
-من قبل
+about;by %1, %2 & %3.
+من قبل %3 & %2, %1.
 
 Created with GP
 --MISSING--

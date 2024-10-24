@@ -3616,8 +3616,8 @@ Select board:
 Could not read:
 Δεν μπορεί να διαβάσει:
 
-about;by
-από
+about;by %1, %2 & %3.
+από %1, %2 & %3.
 
 Created with GP
 Δημιουργήθηκε με GP

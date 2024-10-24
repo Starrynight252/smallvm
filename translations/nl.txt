@@ -3616,8 +3616,8 @@ Selecteer board:
 Could not read:
 Kon niet lezen:
 
-about;by
-door
+about;by %1, %2 & %3.
+door %1, %2 & %3.
 
 Created with GP
 Gemaakt met GP

@@ -2501,7 +2501,7 @@ Select board:
 
 Could not read:
 
-about;by
+about;by %1, %2 & %3.
 
 Created with GP
 

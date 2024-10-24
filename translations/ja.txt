@@ -3616,8 +3616,8 @@ Select board:
 Could not read:
 読めなかった:
 
-about;by
-まで
+about;by %1, %2 & %3.
+まで %1, %2 & %3.
 
 Created with GP
 GPによって作成

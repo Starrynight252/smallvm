@@ -3616,8 +3616,8 @@ Kart seç:
 Could not read:
 Okuyamadık:
 
-about;by
-tarafından
+about;by %1, %2 & %3.
+tarafından %1, %2 & %3.
 
 Created with GP
 GP ile yaratıldı

@@ -339,34 +339,75 @@ method installTranslation AuthoringSpecs translationData langName {
 	if (notNil langName) { language = langName }
 }
 
-to inEnglish aString { 
+to inEnglish aString params {
 		enVersion = (at (englishDict (authoringSpecs)) aString)
 		if (or (isNil enVersion) (enVersion == '--MISSING--')) {
-			return aString
+			return (replaceLocaleParams aString params)
 		} else {
-			return enVersion
+			return (replaceLocaleParams enVersion params)
 		}
 }
 
-to localized aString {
+to localized aString params {
 	if (isEmpty aString) { return aString }
-	localization = (localizedOrNil aString)
+	localization = (localizedOrNil aString params)
 	if (or (isNil localization) (localization == '--MISSING--')) {
-		return (inEnglish aString)
+		return (inEnglish aString params)
 	} else {
 		return localization
 	}
 }
 
-to localizedOrNil aString {
+to localizedOrNil aString params {
 	if (isNil aString) { return nil }
 	dict = (getField (authoringSpecs) 'translationDictionary')
 	if (isNil dict) {
-		return aString
+		return (replaceLocaleParams aString params)
 	} else {
-		return (at dict aString)
+		return (replaceLocaleParams (at dict aString) params)
 	}
 }
+
+to replaceLocaleParams aString params {
+	// Replace parameter placeholders in a string with its corresponding params,
+	// where the order of params doesn't need to match the order of placeholders.
+	// Only supports 9 params at the moment. Should be enough?
+	//
+	// Example:
+	// aString = 'Save file %1 in folder %2 of drive %3'
+	// params = (array 'firmware.hex' 'vms' 'C')
+
+	if (isNil aString) { return }
+	if (isNil params) { return aString }
+
+	newString = ''
+	length = (count aString)
+	skipNext = false
+
+	// we can't use a simpler way consisting of findSubstring because in many
+	// languages 1 char weighs more than 1 byte
+
+	for i length {
+		if (not skipNext) {
+			if (and
+				((at aString i) == '%')
+				((i + 1) <= length)
+				((toNumber (at aString (i + 1))) > 0)
+			) {
+				paramIdx = (toNumber (at aString (i + 1)))
+				newString = (join newString (at params paramIdx))
+				skipNext = true // Next char is part of the placeholder. Do not copy.
+			} else {
+				newString = (join newString (at aString i))
+			}
+		} else {
+			skipNext = false
+		}
+	}
+	return newString
+}
+
+
 
 // country codes
 

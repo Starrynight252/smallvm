@@ -3616,8 +3616,8 @@ Board auswählen:
 Could not read:
 Lesen nicht möglich:
 
-about;by
-von
+about;by %1, %2 & %3.
+von %1, %2 und %3.
 
 Created with GP
 Mit GP erstellt

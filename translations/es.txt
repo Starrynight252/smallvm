@@ -3616,8 +3616,8 @@ Selecciona la placa:
 Could not read:
 No se ha podido leer:
 
-about;by
-por
+about;by %1, %2 & %3.
+por %1, %2 y %3.
 
 Created with GP
 Creado con GP

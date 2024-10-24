@@ -3616,8 +3616,8 @@ Select board:
 Could not read:
 Could not read:
 
-about;by
-by
+about;by %1, %2 & %3.
+by %1, %2 & %3.
 
 Created with GP
 Created with GP

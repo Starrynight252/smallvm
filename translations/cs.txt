@@ -3616,8 +3616,8 @@ Vybrat desku mikropočítače:
 Could not read:
 Nelze přečíst:
 
-about;by
-od
+about;by %1, %2 & %3.
+od %1, %2 & 3.
 
 Created with GP
 Vytvořeno s použitím GP
