@@ -1,336 +1,272 @@
-#. "Output" blocks category label
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-25 13:07+0200\n"
+"PO-Revision-Date: 2024-10-25 12:40+0000\n"
+"Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
+"Language-Team: Catalan <https://hosted.weblate.org/projects/microblocks/ide/"
+"ca/>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.8.2-dev\n"
+
+# MicroBlocks translation file
+# Last updated: October 03 2024
+#########################
+# Blocks and categories #
+#########################
 msgid "cat;Output"
 msgstr "Sortida"
 
-#. Block in Output category
 msgid "set user LED _"
 msgstr "encén LED integrat _"
 
-#. Block in Output category
 msgid "say _"
 msgstr "digues _"
 
-#. Block in Output category
 msgid "graph _"
 msgstr "afegeix a la gràfica _"
 
-#. "Input" blocks category label
 msgid "cat;Input"
 msgstr "Entrada"
 
-#. Block in Input category
 msgid "button A"
 msgstr "botó A"
 
-#. Block in Input category
 msgid "button B"
 msgstr "botó B"
 
-#. Block in Input category
 msgid "timer"
 msgstr "cronòmetre"
 
-#. Block in Input category
 msgid "reset timer"
 msgstr "reinicia el cronòmetre"
 
-#. Block in Input category
 msgid "microseconds"
 msgstr "microsegons"
 
-#. Block in Input category
 msgid "milliseconds"
 msgstr "mil·lisegons"
 
-#. Block in Input category
 msgid "board type"
 msgstr "tipus de placa"
 
-#. Block in Input category
 msgid "milliseconds since _"
 msgstr "mil·lisegons des de _"
 
-#. Block in Input category
 msgid "end time _"
 msgstr "fins a _"
 
-#. Block in Input category
 msgid "microseconds since _"
 msgstr "microsegons des de _"
 
-#. Block in Input category
 msgid "connected to IDE"
 msgstr "connectat a la IDE"
 
-#. "Pins" blocks category label
 msgid "cat;Pins"
 msgstr "Pins"
 
-#. Block in Pins category
 msgid "read digital pin _"
 msgstr "lectura digital _"
 
-#. Block in Pins category
 msgid "read analog pin _"
 msgstr "lectura analògica _"
 
-#. Block in Pins category
 msgid "pullup _"
 msgstr "amb resistència interna _"
 
-#. Block in Pins category
 msgid "set digital pin _ to _"
 msgstr "posa el pin digital _ a _"
 
-#. Block in Pins category
 msgid "set pin _ to _"
 msgstr "posa el pin _ a _"
 
-#. Block in Pins category
 msgid "analog pins"
 msgstr "pins analògics"
 
-#. Block in Pins category
 msgid "digital pins"
 msgstr "pins digitals"
 
-#. "Control" blocks category label
 msgid "cat;Control"
 msgstr "Control"
 
-#. Block in Control category
 msgid "when started"
 msgstr "en començar"
 
-#. Block in Control category
 msgid "when button _ pressed"
 msgstr "quan es premi el botó _"
 
-#. Block in Control category
 msgid "forever _"
 msgstr "per sempre _"
 
-#. Block in Control category
 msgid "repeat _ _"
 msgstr "repeteix _ vegades _"
 
-#. Block in Control category
 msgid "wait _ millisecs"
 msgstr "espera _ mil·lisegons"
 
-#. Block in Control category
 msgid "if _ _"
 msgstr "si _ _"
 
-#. Block in Control category
 msgid "if _ _ else _"
 msgstr "si _ _ si no _"
 
-#. Block in Control category
 msgid "else if _ _"
 msgstr "si no, si _ _"
 
-#. Block in Control category
 msgid "else"
 msgstr "si no"
 
-#. Block in Control category
 msgid "when _"
 msgstr "quan _"
 
-#. Block in Control category
 msgid "wait until _"
 msgstr "espera fins que _"
 
-#. Block in Control category
 msgid "wait _ microsecs"
 msgstr "espera _ microsegons"
 
-#. Block in Control category
 msgid "return _"
 msgstr "retorna _"
 
-#. Block in Control category
 msgid "when _ received"
 msgstr "quan rebi _"
 
-#. Block in Control category
 msgid "go!"
 msgstr "endavant!"
 
-#. Block in Control category
 msgid "broadcast _"
 msgstr "envia _"
 
-#. Block in Control category
 msgid "comment _"
 msgstr "comentari _"
 
-#. Block in Control category
 msgid "How this works..."
 msgstr "Així funciona..."
 
-#. Block in Control category
 msgid "range _ to _"
 msgstr "nombres de _ a _"
 
-#. Block in Control category
 msgid "by _"
 msgstr "en increments de _"
 
-#. Block in Control category
 msgid "for _ in _ _"
 msgstr "per cada _ en _ _"
 
-#. Block in Control category
 msgid "repeat until _ _"
 msgstr "repeteix fins que _ _"
 
-#. Block in Control category
 msgid "stop this task"
 msgstr "atura aquesta tasca"
 
-#. Block in Control category
 msgid "stop other tasks"
 msgstr "atura les altres tasques"
 
-#. Block in Control category
 msgid "stop all"
 msgstr "atura-ho tot"
 
-#. Block in Control category
 msgid "last message"
 msgstr "últim missatge"
 
-#. Block in Control category
 msgid "arg _ default _"
 msgstr "argument _ amb valor per defecte _"
 
-#. Block in Control category
 msgid "default"
 msgstr "defecte"
 
-#. Block in Control category
 msgid "call _"
 msgstr "crida _"
 
-#. Block in Control category
 msgid "function name"
 msgstr "nom de la funció"
 
-#. Block in Control category
 msgid "parameter list"
 msgstr "llista de paràmetres"
 
-#. Block in Control category
 msgid "with _"
 msgstr "amb paràmetre(s) _"
 
-#. "Operators" blocks category label
 msgid "cat;Operators"
 msgstr "Operadors"
 
-#. Block in Operators category
 msgid "_ mod _"
 msgstr "_ mòdul _"
 
-#. Block in Operators category
 msgid "abs _"
 msgstr "valor absolut de _"
 
-#. Block in Operators category
 msgid "min _ _"
 msgstr "mínim entre _ i _"
 
-#. Block in Operators category
 msgid "max _ _"
 msgstr "màxim entre _ i _"
 
-#. Block in Operators category
 msgid "random _ to _"
 msgstr "nombre a l'atzar entre _ i _"
 
-#. Block in Operators category
 msgid "not _"
 msgstr "no _"
 
-#. Block in Operators category
 msgid "_ and _"
 msgstr "_ i _"
 
-#. Block in Operators category
 msgid "and _"
 msgstr "i _"
 
-#. Block in Operators category
 msgid "_ or _"
 msgstr "_ o _"
 
-#. Block in Operators category
 msgid "or _"
 msgstr "o _"
 
-#. Block in Operators category
 msgid "_ is a _"
 msgstr "_ és un _"
 
-#. Block in Operators category
 msgid "convert _ to _"
 msgstr "_ convertit en _"
 
-#. Block in Operators category
 msgid "if _ then _ else _"
 msgstr "si _ llavors _ si no _"
 
-#. Block in Operators category
 msgid "boolean"
 msgstr "booleà"
 
-#. Block in Operators category
 msgid "number"
 msgstr "nombre"
 
-#. Block in Operators category
 msgid "string"
 msgstr "text"
 
-#. Block in Operators category
-msgid "list"
-msgstr "llista"
-
-#. Block in Operators category
 msgid "byte array"
 msgstr "llista de bytes"
 
-#. Block in Operators category
 msgid "cat;Advanced:"
 msgstr "Avançat:"
 
-#. Block in Operators category
 msgid "rescale _ from ( _ , _ ) to ( _ , _ )"
 msgstr "reescala _ de ( _ , _ ) a ( _ , _ )"
 
-#. Block in Operators category
 msgid "hex _"
 msgstr "hexadecimal _"
 
-#. Block in Operators category
 msgid "sqrt _"
 msgstr "arrel quadrada de _"
 
-#. "Variables" blocks category label
 msgid "cat;Variables"
 msgstr "Variables"
 
-#. Buttons on top of "Variables" category
+# Buttons on top of "Variables" category
 msgid "Add a variable"
 msgstr "Crea una variable"
 
-#. Buttons on top of "Variables" category
 msgid "Delete a variable"
 msgstr "Elimina una variable"
 
-#. New variable dialog
+# New variable dialog
 msgid "New variable name?"
 msgstr "Nom de la variable?"
 
@@ -343,7 +279,6 @@ msgstr "augmenta _ en _"
 msgid "initialize local _ to _"
 msgstr "inicialitza variable local _ a _"
 
-#. "Data" blocks category label
 msgid "cat;Data"
 msgstr "Dades"
 
@@ -392,9 +327,6 @@ msgstr "fins a _"
 msgid "find _ in _"
 msgstr "busca _ en _"
 
-msgid "starting at _"
-msgstr "començant des de _"
-
 msgid "join items of list _"
 msgstr "uneix elements de la llista _"
 
@@ -437,27 +369,23 @@ msgstr "qualsevol"
 msgid "split _ by _"
 msgstr "divideix _ per _"
 
-#. "My Blocks" blocks category label
 msgid "cat;My Blocks"
 msgstr "Els meus blocs"
 
-#. "Generic" blocks category label
 msgid "cat;Generic"
 msgstr "Genèric"
 
-#. Buttons on top of "My Blocks" category
+# Buttons on top of "My Blocks" category
 msgid "Add a command block"
 msgstr "Crea un bloc comanda"
 
-#. Buttons on top of "My Blocks" category
 msgid "Add a reporter block"
 msgstr "Crea un bloc reportador"
 
-#. Make a block dialog
+# Make a block dialog
 msgid "Enter function name:"
 msgstr "Nom de la funció:"
 
-#. "Comm" blocks category label
 msgid "cat;Comm"
 msgstr "Comunicacions"
 
@@ -530,111 +458,88 @@ msgstr "no op"
 msgid "ignore"
 msgstr "ignora"
 
-#. Primitive block. Mostly hidden from end users.
+##############
+# Primitives #
+##############
+# These are all mostly hidden from end users
 msgid "draw shape _ at x _ y _"
 msgstr "dibuixa forma _ a x _ y _"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "shape for letter _"
 msgstr "forma de la lletra _"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "send NeoPixel rgb _"
 msgstr "envia RGB _ al NeoPíxel"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "has tone support"
 msgstr "té suport per a tons"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "play tone pin _ frequency _"
 msgstr "toca un to al pin _ de freqüència _"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "has WiFi support"
 msgstr "té suport per a WiFi"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "start WiFi _ password _"
 msgstr "inicia WiFi _ amb contrasenya _"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "stop WiFi"
 msgstr "atura WiFi"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "WiFi status"
 msgstr "estat de la WiFi"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "my IP address"
 msgstr "la meva adreça IP"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "radio send number _"
 msgstr "envia nombre _ per ràdio"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "radio send string _"
 msgstr "envia text _ per ràdio"
 
-#. Primitive block. Mostly hidden from end users.
-msgid "Hello!"
-msgstr "Hola!"
-
-#. Primitive block. Mostly hidden from end users.
 msgid "radio send pair _ = _"
 msgstr "envia associació _ = _ per ràdio"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "light"
 msgstr "llum"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "radio message received?"
 msgstr "missatge de ràdio rebut?"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "radio last number"
 msgstr "últim nombre rebut per ràdio"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "radio last string"
 msgstr "últim text rebut per ràdio"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "radio last message type"
 msgstr "tipus de l'últim missatge rebut per ràdio"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "radio set group _ (0-255)"
 msgstr "fixa el grup de ràdio a _ (0-255)"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "radio set channel (0-83) _"
 msgstr "fixa el canal de ràdio a (0-83) _"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "radio set power (0-7) _"
 msgstr "fixa potència de ràdio a (0-7) _"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "radio last signal strength"
 msgstr "intensitat de l'última senyal de ràdio"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "radio receive packet _"
 msgstr "rep paquet per ràdio _"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "radio send packet _"
 msgstr "envia paquet per ràdio _"
 
-#. Primitive block. Mostly hidden from end users.
 msgid "disable radio"
 msgstr "inhabilita ràdio"
 
-#. "Basic Sensors" library label.
+#############
+# Libraries #
+#############
 msgid "Basic Sensors"
 msgstr "Sensors bàsics"
 
@@ -664,7 +569,6 @@ msgstr "fixa l'escala d'acceleració en _ g = 100"
 
 ####
 # NeoPixel library
-
 msgid "NeoPixel"
 msgstr "NeoPíxels"
 
@@ -689,12 +593,6 @@ msgstr "il·luminar NeoPíxel _ en _"
 msgid "brighten all NeoPixels by _"
 msgstr "il·luminar tots els NeoPíxels en _"
 
-msgid "color r _ g _ b _ (0-255)"
-msgstr "color vermell _ verd _ blau _ (0-255)"
-
-msgid "random color"
-msgstr "color a l'atzar"
-
 msgid "attach _ LED NeoPixel strip to pin _"
 msgstr "inicialitza tira de _ NeoPíxels al pin _"
 
@@ -709,7 +607,6 @@ msgstr "Moviment detectat pel PIR al pin _"
 
 ####
 # NeoPanel library
-
 msgid "NeoPanel"
 msgstr "NeoPanell"
 
@@ -736,7 +633,6 @@ msgstr "mostra imagen BMP _ x _ y _ al NeoPanell"
 
 ####
 # Microphone library
-
 msgid "Microphone"
 msgstr "Micròfon"
 
@@ -760,7 +656,6 @@ msgstr "detecta el llindar d'aplaudiment"
 
 ####
 # Citilab ED1 board libraries
-
 msgid "ED1 Stepper Motor"
 msgstr "Motors ED1"
 
@@ -814,7 +709,6 @@ msgstr "fixa llindar capacitiu a _"
 
 ####
 # BirdBrain Technologies libraries
-
 msgid "Hummingbird LED _ _ %"
 msgstr "Hummingbird LED _ _ %"
 
@@ -934,13 +828,11 @@ msgstr "potència"
 
 ####
 # Ultrasound distance library
-
 msgid "distance (cm) trigger _ echo _"
 msgstr "distància (cm) trigger _ echo _"
 
 ####
 # Infrared remote library
-
 msgid "IR Remote"
 msgstr "Infraroigs"
 
@@ -961,7 +853,6 @@ msgstr "envia al dispositiu IR _ la comanda _"
 
 ####
 # Keyboard and Mouse library
-
 msgid "Keyboard and Mouse"
 msgstr "Teclat i ratolí"
 
@@ -1070,7 +961,6 @@ msgstr "deixa anar els botons del ratolí"
 ####
 # Lists library
 # Extra utilities for list manipulation and access
-
 msgid "Lists"
 msgstr "Llistes"
 
@@ -1131,7 +1021,6 @@ msgstr "_ sense duplicats"
 ####
 # Pseudorandomness
 # Creates pseudorandom numbers and lists of numbers given a particular seed
-
 msgid "Pseudorandomness"
 msgstr "Pseudo-aleatorietat"
 
@@ -1143,7 +1032,6 @@ msgstr "_ nombres pseudo-aleatoris entre _ i _ amb llavor _"
 
 ####
 # BLE Keyboard library
-
 msgid "BLE Keyboard"
 msgstr "Teclat BLE"
 
@@ -1154,14 +1042,12 @@ msgstr "inicia teclat BLE"
 # Radio comm library
 # Allows micro:bit boards to exchange messages
 # All of its blocks are primitive (see "Primitives" section)
-
 msgid "Radio"
 msgstr "Ràdio"
 
 ####
 # Text scrolling library
 # Scrolls text on 5x5 LED displays and simulated ones
-
 msgid "Scrolling"
 msgstr "Text animat"
 
@@ -1182,7 +1068,6 @@ msgstr "atura l'animació"
 
 ####
 # Servo motor library
-
 msgid "Servo"
 msgstr "Servomotors"
 
@@ -1199,7 +1084,6 @@ msgstr "atura servo _"
 # 5x5 LED display library
 # Supports the micro:bit display, but also simulated 5x5 displays on boards
 # with differently sized LED arrays, NeoPixel arrays or TFT displays
-
 msgid "LED Display"
 msgstr "Pantalla LED"
 
@@ -1225,7 +1109,6 @@ msgid "display character _"
 msgstr "mostra caràcter _"
 
 # Image names for the "display image" block
-
 msgid "heart"
 msgstr "cor"
 
@@ -1348,7 +1231,6 @@ msgstr "tisores"
 
 ####
 # OLED Graphics library
-
 msgid "initialize i2c _ address(hex) _ reset pin# _ flip _"
 msgstr "inicialitzar i2c _ adreça(hex) _ reset pin# _ girar _"
 
@@ -1402,7 +1284,7 @@ msgstr "ajornar les actualitzacions de la pantalla"
 
 ####
 # TFT display library
-
+#, fuzzy
 msgid "clear TFT display "
 msgstr "esborra pantalla TFT"
 
@@ -1463,13 +1345,9 @@ msgstr "dibuixa bitmap _ amb paleta _ a x _ y _"
 msgid "set TFT backlight _ (0-10)"
 msgstr "fixa la llum de fons a _ (0-10)"
 
-msgid "gray _ %"
-msgstr "gris _ %"
-
 ####
 # BMP library
 # Can display BMP image files on a TFT display
-
 msgid "display BMP file _ at x _ y _"
 msgstr "mostra imatge BMP _ a x _ y _"
 
@@ -1478,7 +1356,6 @@ msgstr "imatge.bmp"
 
 ####
 # Color library
-
 msgid "Color Operators"
 msgstr "Colors"
 
@@ -1523,7 +1400,6 @@ msgstr "_ amb brillantor _ %"
 
 ####
 # Fractions library
-
 msgid "Fractions"
 msgstr "Fraccions"
 
@@ -1569,7 +1445,6 @@ msgstr "mcm de _ i _"
 ####
 # Tone library
 # Generates music tones on buzzers
-
 msgid "Tone"
 msgstr "Tons"
 
@@ -1630,7 +1505,6 @@ msgstr ""
 ####
 # Ringtone library
 # Can play Nokring-formatted music. Also known as RTTTL.
-
 msgid "Ringtone"
 msgstr "Politons"
 
@@ -1643,7 +1517,6 @@ msgstr "títol de la cançó actual"
 ####
 # Pluck
 # Generate music with plucked-string resembling sounds
-
 msgid "Pluck"
 msgstr "Guitarra"
 
@@ -1659,7 +1532,6 @@ msgstr "fixa el pin de puntejat a _"
 ####
 # WAV
 # Play WAV sound files
-
 msgid "play WAV file _"
 msgstr "reprodueix arxiu WAV _"
 
@@ -1670,7 +1542,6 @@ msgstr "nom d'arxiu"
 # Rhythm
 # Send broadcasts -and call functions- according to a tempo and time signature.
 # Useful to create musical patterns
-
 msgid "Rhythm"
 msgstr "Ritme"
 
@@ -1698,9 +1569,7 @@ msgstr "espera fins al compàs _"
 ####
 # MIDI
 # Control MIDI devices from MicroBlocks
-
 # General MIDI drum instrument names
-
 msgid "Acoustic Bass Drum"
 msgstr "Bombo acústic"
 
@@ -1843,7 +1712,6 @@ msgid "Open Triangle"
 msgstr "Triangle obert"
 
 # General MIDI instrument categories
-
 msgid "piano"
 msgstr "piano"
 
@@ -1893,7 +1761,6 @@ msgid "gm;SFX"
 msgstr "efectes especials"
 
 # General MIDI drum sets
-
 msgid "standard"
 msgstr "estàndard"
 
@@ -1925,7 +1792,6 @@ msgid "CM-64/CM-32L"
 msgstr "CM-64/CM-32L"
 
 # General MIDI control changes
-
 msgid "bank select 1"
 msgstr "selecció de banc 1"
 
@@ -1993,7 +1859,6 @@ msgid "effect 2"
 msgstr "efecte 2"
 
 # library blocks
-
 msgid "play MIDI note _ for _ ms on channel _ volume _"
 msgstr "toca nota MIDI _ durant _ ms al canal _ volum _"
 
@@ -2051,12 +1916,10 @@ msgstr "configura MIDI al pin _"
 ####
 # Scales & Chords
 # Abstractions for musical theory
-
 msgid "Scales & Chords"
 msgstr "Escales i acords"
 
 # scale names
-
 msgid "ionian"
 msgstr "jònica"
 
@@ -2078,14 +1941,7 @@ msgstr "eòlica"
 msgid "locrian"
 msgstr "lòcria"
 
-msgid "major"
-msgstr "major"
-
-msgid "minor"
-msgstr "menor"
-
 # chord types
-
 msgid "major"
 msgstr "major"
 
@@ -2105,7 +1961,6 @@ msgid "Maj7"
 msgstr "Maj7"
 
 # sound destinations for arpeggiate block
-
 msgid "MIDI channel"
 msgstr "canal MIDI"
 
@@ -2113,7 +1968,6 @@ msgid "tone pin"
 msgstr "pin de brunzidor"
 
 # library blocks
-
 msgid "_ scale root _"
 msgstr "escala _ amb arrel _"
 
@@ -2153,7 +2007,6 @@ msgstr "rotació _ del cercle de quintes _ M _ m _ º"
 ####
 # Chiptune
 # Old-school sound generation on digital pins and DACs
-
 msgid "kick for _ ms on pin _"
 msgstr ""
 
@@ -2178,7 +2031,6 @@ msgstr ""
 ####
 # Square Wave Chords
 # Play chords on 3 digital pins
-
 msgid "Square Wave Chords"
 msgstr "Acords d'onda quadrada"
 
@@ -2190,7 +2042,6 @@ msgstr "establir pins digitals _ _ _ per a acord"
 
 ####
 # Turtle geometry library
-
 msgid "Turtle"
 msgstr "Tortuga"
 
@@ -2229,7 +2080,6 @@ msgstr "apunta en direcció _"
 
 ####
 # File system library
-
 msgid "Files"
 msgstr "Arxius"
 
@@ -2281,7 +2131,6 @@ msgstr "dades del sistema de fitxers"
 ####
 # Strings
 # string (text) processing functions
-
 msgid "Strings"
 msgstr "Text"
 
@@ -2353,7 +2202,6 @@ msgstr "text _ a nombre"
 
 ####
 # WiFi library
-
 msgid "WiFi"
 msgstr "WiFi"
 
@@ -2381,7 +2229,6 @@ msgstr "adreça MAC"
 ####
 # Motion library
 # Counts steps and detects motion via the internal accelerometer
-
 msgid "Motion"
 msgstr "Moviment"
 
@@ -2402,7 +2249,6 @@ msgstr "fixa el llindar de les passes a _ (0-50)"
 
 ####
 # Button Events library
-
 msgid "Button Events"
 msgstr "Esdeveniments de botó"
 
@@ -2417,7 +2263,6 @@ msgstr "toc curt al botó _"
 
 ####
 # Calliope board library
-
 msgid "Calliope set LED red _ green _ blue _"
 msgstr "posa el LED de la Calliope a vermell _ verd _ blau _"
 
@@ -2429,7 +2274,6 @@ msgstr "nivell de soroll de la Calliope"
 
 ####
 # Circuit Playground Express board library
-
 msgid "Circuit Playground set speaker _"
 msgstr "posa l'altaveu de la Circuit Playground a _"
 
@@ -2438,7 +2282,6 @@ msgstr "interruptor de la Circuit Playground"
 
 ####
 # DotStar LED library
-
 msgid "attach _ DotStar LEDs to data pin _ clock pin _"
 msgstr "inicialitza tira de _ LEDs DotStar al pin de dades _ i pin de rellotge _"
 
@@ -2453,7 +2296,6 @@ msgstr "fixa la brillantor dels DotStar a _"
 
 ####
 # BME280 environmental sensor
-
 msgid "bme280 connected"
 msgstr "bme280 connectat"
 
@@ -2480,7 +2322,6 @@ msgstr "bmx280 altitud (peus)"
 
 ####
 # TCS34725 color sensor
-
 msgid "TCS34725 connected"
 msgstr "TCS34725 connectat"
 
@@ -2492,7 +2333,6 @@ msgstr "nom del color _"
 
 ####
 # DHT11 environmental sensor
-
 msgid "temperature (Celsius) DHT11 pin _"
 msgstr "temperatura (°C) del DHT11 al pin _"
 
@@ -2507,7 +2347,6 @@ msgstr "humitat del DHT22 al pin _"
 
 ####
 # PN532 RFID reader
-
 msgid "read PN532 RFID"
 msgstr "llegeix RFID PN532"
 
@@ -2519,7 +2358,6 @@ msgstr "versió del firmware del PN532"
 
 ####
 # Touch Screen
-
 msgid "Touch Screen"
 msgstr "Pantalla tàctil"
 
@@ -2537,7 +2375,6 @@ msgstr "pressió del toc a la TFT"
 
 ####
 # HTTP Client
-
 msgid "HTTP client"
 msgstr "Client HTTP"
 
@@ -2552,7 +2389,6 @@ msgstr "port _"
 
 ####
 # HTTP Server
-
 msgid "HTTP server"
 msgstr "Servidor HTTP"
 
@@ -2591,7 +2427,6 @@ msgstr "mida del contingut de la sol·licitud _"
 
 ####
 # WebSocket server
-
 msgid "WebSocket server"
 msgstr "Servidor de WebSocket"
 
@@ -2618,7 +2453,6 @@ msgstr "Hola, client!"
 
 ####
 # Web Things library
-
 msgid "Web Thing"
 msgstr "Web Thing"
 
@@ -2666,7 +2500,6 @@ msgstr "JSON dels esdeveniments"
 
 ####
 # Citilab Fantàstic Robot
-
 msgid "turn fantàstic _ degrees"
 msgstr "gira el fantàstic _ graus"
 
@@ -2675,7 +2508,6 @@ msgstr "mou el fantàstic _ mm"
 
 ####
 # MiKe Robot library
-
 msgid "MiKe front obstacle (cm)"
 msgstr "MiKe obstacle frontal (cm)"
 
@@ -2735,7 +2567,6 @@ msgstr "Mike fixa l'actuador D8 a _"
 
 ####
 # Shield:bit
-
 msgid "s꞉b LEDs off"
 msgstr "s꞉b apaga els LED"
 
@@ -2783,7 +2614,6 @@ msgstr "graus"
 
 ####
 # micro:STEAMakers
-
 msgid "m꞉s display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
 msgstr "m꞉s mostra #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
 
@@ -2859,7 +2689,6 @@ msgstr "baix"
 ####
 # DrawBot Library
 # A CoreXY plotter library that supports turtle geometry
-
 msgid "plotter move X _ Y _"
 msgstr "mou plotter en X _ i Y _"
 
@@ -2889,7 +2718,6 @@ msgstr "fixa velocitat del plotter a _ %"
 
 ####
 # Innova Didactic libraries
-
 msgid "red"
 msgstr "vermell"
 
@@ -3027,7 +2855,6 @@ msgstr "3dBot _ en la línia?"
 
 ####
 # ESP32 Smart Farm
-
 msgid "voltage (V)"
 msgstr "voltatge (V)"
 
@@ -3102,7 +2929,6 @@ msgstr "Farm consum elèctric _"
 
 ####
 # ESP32 Smart Home
-
 msgid "Home fan _"
 msgstr "Home _ el ventilador"
 
@@ -3153,7 +2979,6 @@ msgstr "Home consum elèctric _"
 
 ####
 # MQTT
-
 msgid "MQTT connect to broker _"
 msgstr "connecta al broker HTTP _"
 
@@ -3213,7 +3038,6 @@ msgstr ""
 
 ####
 # UDP
-
 msgid "UDP start port _"
 msgstr "inicia UDP al port _"
 
@@ -3237,7 +3061,6 @@ msgstr "port remot UDP"
 
 ####
 # WiFi Radio
-
 msgid "wifi send number _"
 msgstr "wifi envia numero _"
 
@@ -3261,7 +3084,6 @@ msgstr "wifi establir el grup _ (0-255)"
 
 ####
 # Cutebot
-
 msgid "Cutebot"
 msgstr "Cutebot"
 
@@ -3292,28 +3114,10 @@ msgstr "El Cutebot veu la línia a l'esquerra _ i la dreta _"
 msgid "Cutebot distance (cm)"
 msgstr "Distància frontal (cm)"
 
-msgid "cutebotlight;left"
-msgstr "esquerra"
-
-msgid "cutebotlight;right"
-msgstr "dret"
-
-msgid "cutebotlight;both"
-msgstr "ambdós"
-
 msgid "cutebotside;left"
 msgstr "esquerra"
 
 msgid "cutebotside;right"
-msgstr "dret"
-
-####
-# Cutebot Pro
-
-msgid "cutebotwheel;left"
-msgstr "esquerra"
-
-msgid "cutebotwheel;right"
 msgstr "dret"
 
 msgid "cutebotwheel;both"
@@ -3431,7 +3235,6 @@ msgid "CBPro version"
 msgstr ""
 
 # Wukong
-
 msgid "Wukong"
 msgstr "Wukong"
 
@@ -3458,7 +3261,6 @@ msgstr "Fixa la brillantor del LED a _"
 
 ####
 # Sphero-RVR
-
 msgid "wake"
 msgstr "desperta't"
 
@@ -3485,7 +3287,6 @@ msgstr "posa tots els LEDs RGB _ a vermell _ verd _ blau _"
 
 ####
 # Joystick:bit
-
 msgid "button _ is pressed"
 msgstr "botó _ premut"
 
@@ -3497,7 +3298,6 @@ msgstr "fes vibrar el motor durant _ ms"
 
 ####
 # NeZha
-
 msgid "NeZha"
 msgstr "NeZha"
 
@@ -3518,7 +3318,6 @@ msgstr "posa el servo de rotació contínua _ a velocitat _ %"
 
 ####
 # WuKong2040
-
 msgid "WuKong2040"
 msgstr ""
 
@@ -3545,7 +3344,6 @@ msgstr ""
 
 ####
 # Octopus
-
 msgid "Octopus"
 msgstr ""
 
@@ -3608,7 +3406,6 @@ msgstr "Octopus OLED dibbuixa un cercle sòlid x _ y _ radi _"
 
 ####
 # OctoStudio
-
 msgid "Octo beam to phones _"
 msgstr "envia _ a telèfons via Octo"
 
@@ -3633,9 +3430,7 @@ msgstr "atura Octo"
 ##################
 # MicroBlocks UI #
 ##################
-
 # buttons, error & info messages, dialog boxes, etc
-
 msgid "New"
 msgstr "Nou"
 
@@ -3768,7 +3563,6 @@ msgid "Discard current project?"
 msgstr "Vols descartar el projecte actual?"
 
 # Scripting area right-click context menu
-
 msgid "set block size..."
 msgstr "mida dels blocs..."
 
@@ -4203,7 +3997,6 @@ msgid "Confirm"
 msgstr "Confirmació"
 
 # Library folders
-
 msgid "LIBRARIES"
 msgstr "LLIBRERIES"
 
@@ -4244,7 +4037,6 @@ msgid "libfolder;WorkInProgress"
 msgstr ""
 
 # File picker and library dialogs
-
 msgid "New library name?"
 msgstr "Nom de la nova llibreria?"
 
@@ -4288,7 +4080,7 @@ msgid "New Folder"
 msgstr "Nou directori"
 
 msgid "libdata;by"
-msgstr "autor:"
+msgstr "per"
 
 msgid "Depends:"
 msgstr "Depèn de:"
@@ -4356,7 +4148,6 @@ msgstr "Augmenta mida dels blocs"
 ############
 # Tips Bar #
 ############
-
 msgid "Button"
 msgstr "Botó"
 
@@ -4386,9 +4177,6 @@ msgstr "[l] sobre la fletxa que apunta a la dreta per mostrar caselles opcionals
 
 msgid "Command Block"
 msgstr "Bloc comanda"
-
-msgid "[l] to run, or drag to build scripts. [r] menu."
-msgstr "[l] per execuitar-lo, o arrosega'l per construir programes. [r] menú."
 
 msgid "Hat Block"
 msgstr "Bloc de barret"
@@ -4441,7 +4229,6 @@ msgstr "Col·loca-hi blocs per construir programes. [r] menú."
 #################################
 # Block Descriptions for TipBar #
 #################################
-
 msgid "Turn the user LED on or off."
 msgstr "Encén o apaga del LED d'usuari."
 
@@ -4671,10 +4458,10 @@ msgid "Report the logical inverse of a Boolean ( (-o) or (o-) ) value."
 msgstr "Reporta la inversa d'un valor booleà ( (-o) o (o-) )."
 
 msgid "Report (-o) if both values are (-o)"
-msgstr "Reporta (-o) si els dos valors són (-o)."
+msgstr "Reporta (-o) si els dos valors són (-o)"
 
 msgid "Report (-o) if either value is (-o)"
-msgstr "Reporta (-o) si algun dels dos valors és (-o)."
+msgstr "Reporta (-o) si algun dels dos valors és (-o)"
 
 msgid "Report (-o) if first input is a value of the given data type."
 msgstr "Reporta (-o) si la primera casella té un valor del tipus especificat."
@@ -4768,4 +4555,3 @@ msgstr "Reporta una llista de bytes que contingui els bytes UTF-8 de la cadena d
 
 msgid "Report the number of words of memory available. Stop button frees up memory."
 msgstr "Reporta el número de paraules (grups de 32 bits, o 4 bytes) de memòria disponibles."
-
