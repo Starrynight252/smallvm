@@ -1,0 +1,4679 @@
+# MicroBlocks translation file
+# Last updated: October 03 2024
+
+#########################
+# Blocks and categories #
+#########################
+
+msgid "cat;Output"
+msgstr "Εξόδοι"
+
+msgid "set user LED _"
+msgstr "όρισε το LED χρήστη _"
+
+msgid "say _"
+msgstr "πες _"
+
+msgid "graph _"
+msgstr "σχεδίασε _"
+
+msgid "cat;Input"
+msgstr "Εισόδοι"
+
+msgid "button A"
+msgstr "κουμπί Α"
+
+msgid "button B"
+msgstr "κουμπί Β"
+
+msgid "timer"
+msgstr ""
+
+msgid "reset timer"
+msgstr ""
+
+msgid "microseconds"
+msgstr "εκατομμυριοστά δευτερολέπτου"
+
+msgid "milliseconds"
+msgstr "χιλιοστά δευτερολέπτου"
+
+msgid "board type"
+msgstr "είδος κάρτας"
+
+msgid "milliseconds since _"
+msgstr ""
+
+msgid "end time _"
+msgstr ""
+
+msgid "microseconds since _"
+msgstr ""
+
+msgid "connected to IDE"
+msgstr ""
+
+msgid "cat;Pins"
+msgstr "Ακροδέκτες"
+
+msgid "read digital pin _"
+msgstr "διάβασε το ψηφιακό ακροδέκτη _"
+
+msgid "read analog pin _"
+msgstr "διάβασε τον αναλογικό ακροδέκτη _"
+
+msgid "pullup _"
+msgstr ""
+
+msgid "set digital pin _ to _"
+msgstr "όρισε το ψηφιακό ακροδέκτη _ σε _"
+
+msgid "set pin _ to _"
+msgstr "όρισε τον ακροδέκτη _ σε _"
+
+msgid "analog pins"
+msgstr "αναλογικοί ακροδέκτες"
+
+msgid "digital pins"
+msgstr "ψηφιακοί ακροδέκτες "
+
+msgid "cat;Control"
+msgstr "Έλεγχος Ροής"
+
+msgid "when started"
+msgstr "όταν ξεκινά"
+
+msgid "when button _ pressed"
+msgstr "όταν το κουμπί _ πατηθεί"
+
+msgid "forever _"
+msgstr "Για πάντα επανάλαβε _"
+
+msgid "repeat _ _"
+msgstr "επανάλαβε _ _"
+
+msgid "wait _ millisecs"
+msgstr "περίμενε, _ χιλιοστά δευτερολέπτου"
+
+msgid "if _ _"
+msgstr "Αν _ _"
+
+msgid "if _ _ else _"
+msgstr "αν _ _ διαφορετικά _"
+
+msgid "else if _ _"
+msgstr "διαφορετικά αν _ _"
+
+msgid "else"
+msgstr "διαφορετικά"
+
+msgid "when _"
+msgstr "όταν _"
+
+msgid "wait until _"
+msgstr "περίμενε μέχρι _"
+
+msgid "wait _ microsecs"
+msgstr "περίμενε _ εκατομμυριοστά δευτερολέπτου"
+
+msgid "return _"
+msgstr "επιστροφή _"
+
+msgid "when _ received"
+msgstr "όταν _ ληφθεί"
+
+msgid "go!"
+msgstr ""
+
+msgid "broadcast _"
+msgstr "μετάδωσε _"
+
+msgid "comment _"
+msgstr "σχόλιο _"
+
+msgid "How this works..."
+msgstr ""
+
+msgid "range _ to _"
+msgstr ""
+
+msgid "by _"
+msgstr ""
+
+msgid "for _ in _ _"
+msgstr "για _ μέσα σε _ _"
+
+msgid "repeat until _ _"
+msgstr "επανάλαβε μέχρι _ _"
+
+msgid "stop this task"
+msgstr "σταμάτα αυτό το σενάριο"
+
+msgid "stop other tasks"
+msgstr "σταμάτα τα άλλα σενάρια"
+
+msgid "stop all"
+msgstr "σταμάτα όλα τα σενάρια"
+
+msgid "last message"
+msgstr "τελευταίο μήνυμα"
+
+msgid "arg _ default _"
+msgstr ""
+
+msgid "default"
+msgstr ""
+
+msgid "call _"
+msgstr ""
+
+msgid "function name"
+msgstr ""
+
+msgid "parameter list"
+msgstr ""
+
+msgid "with _"
+msgstr ""
+
+msgid "cat;Operators"
+msgstr "Τελεστές"
+
+msgid "_ mod _"
+msgstr "_ ακέραιο υπόλοιπο _"
+
+msgid "abs _"
+msgstr "απόλυτο _"
+
+msgid "min _ _"
+msgstr ""
+
+msgid "max _ _"
+msgstr ""
+
+msgid "random _ to _"
+msgstr "τυχαίο _ ως _"
+
+msgid "not _"
+msgstr "αντίθετο _"
+
+msgid "_ and _"
+msgstr "_ και _"
+
+msgid "and _"
+msgstr "και _"
+
+msgid "_ or _"
+msgstr "_ ή _"
+
+msgid "or _"
+msgstr "ή _"
+
+msgid "_ is a _"
+msgstr "_ είναι ένα _"
+
+msgid "convert _ to _"
+msgstr ""
+
+msgid "if _ then _ else _"
+msgstr ""
+
+msgid "boolean"
+msgstr "boolean"
+
+msgid "number"
+msgstr "αριθμός"
+
+msgid "string"
+msgstr "συμβολοσειρά"
+
+msgid "list"
+msgstr "λίστα"
+
+msgid "byte array"
+msgstr ""
+
+msgid "cat;Advanced:"
+msgstr "Προχωρημένα:"
+
+msgid "rescale _ from ( _ , _ ) to ( _ , _ )"
+msgstr ""
+
+msgid "hex _"
+msgstr "δεκαεξαδικό _"
+
+msgid "sqrt _"
+msgstr ""
+
+msgid "cat;Variables"
+msgstr "Μεταβλητές"
+
+# Buttons on top of "Variables" category
+
+msgid "Add a variable"
+msgstr "Πρόσθεσε μια μεταβλητή"
+
+msgid "Delete a variable"
+msgstr "Διάγραψε μια μεταβλητή"
+
+# New variable dialog
+
+msgid "New variable name?"
+msgstr "Όνομα νέας μεταβλητής?"
+
+msgid "set _ to _"
+msgstr "όρισε _ σε _"
+
+msgid "change _ by _"
+msgstr "άλλαξε _ ανά _"
+
+msgid "initialize local _ to _"
+msgstr "αρχική τιμή τοπικής μεταβλητής _ σε _"
+
+msgid "cat;Data"
+msgstr "Δεδομένα"
+
+msgid "list"
+msgstr "λίστα"
+
+msgid "cat"
+msgstr ""
+
+msgid "dog"
+msgstr ""
+
+msgid "bird"
+msgstr ""
+
+msgid "fish"
+msgstr ""
+
+msgid "length of _"
+msgstr "μήκος του _"
+
+msgid "item _ of _"
+msgstr "στοιχείο _ του _"
+
+msgid "replace item _ of list _ with _"
+msgstr "αντικατέστησε στοιχείο _ της λίστας _ με _"
+
+msgid "delete item _ of list _"
+msgstr "διάγραψε το στοιχείο _ της λίστας _"
+
+msgid "add _ to list _"
+msgstr "πρόσθεσε _ στην λίστα _"
+
+msgid "join _ _"
+msgstr "ένωσε _ _"
+
+msgid "copy _ from _"
+msgstr "αντίγραψε _ από _"
+
+msgid "smiles"
+msgstr ""
+
+msgid "to _"
+msgstr "προς _"
+
+msgid "find _ in _"
+msgstr "βρες _ μέσα _"
+
+msgid "starting at _"
+msgstr "ξεκινά από _"
+
+msgid "join items of list _"
+msgstr "ένωσε τα στοιχεία της λίστας _"
+
+msgid "separator _"
+msgstr "διαχωριστικό _"
+
+msgid "unicode _ of _"
+msgstr "unicode _ του _"
+
+msgid "string from unicode _"
+msgstr "συμβολοσείρα από unicode _"
+
+msgid "new list length _"
+msgstr "μήκος νέου καταλόγου _"
+
+msgid "new byte array _"
+msgstr "νέος byte πίνακας _"
+
+msgid "as byte array _"
+msgstr ""
+
+msgid "aByteListOrString"
+msgstr ""
+
+msgid "with all _"
+msgstr ""
+
+msgid "free memory"
+msgstr "ελευθέρωσε μνήμη"
+
+msgid "all"
+msgstr ""
+
+msgid "last"
+msgstr ""
+
+msgid "random"
+msgstr ""
+
+msgid "split _ by _"
+msgstr ""
+
+msgid "cat;My Blocks"
+msgstr "Τα Mπλοκ μου"
+
+msgid "cat;Generic"
+msgstr ""
+
+# Buttons on top of "My Blocks" category
+
+msgid "Add a command block"
+msgstr "Πρόσθεσε μπλοκ εντολής"
+
+msgid "Add a reporter block"
+msgstr "Πρόσθεσε μπλοκ αναφοράς"
+
+# Make a block dialog
+
+msgid "Enter function name:"
+msgstr "Συμπλήρωσε το όνομα της λειτουργίας:"
+
+msgid "cat;Comm"
+msgstr "Επικοινωνία "
+
+msgid "i2c get device _ register _"
+msgstr "i2c πάρε από συσκευή _ καταχωρητή _"
+
+msgid "i2c set device _ register _ to _"
+msgstr "i2c όρισε στην συσκευή _ καταχωρητή _ σε _"
+
+msgid "i2c device _ read list _"
+msgstr "i2c συσκευή _ διάβασε λίστα _"
+
+msgid "i2c device _ write list _"
+msgstr "i2c συσκευή _ γράψε λίστα _"
+
+msgid "i2c device _ exists?"
+msgstr ""
+
+msgid "spi send _"
+msgstr "spi στείλε _"
+
+msgid "spi receive"
+msgstr "spi λάβε"
+
+msgid "spi setup speed _"
+msgstr ""
+
+msgid "mode _"
+msgstr ""
+
+msgid "rpi channel _"
+msgstr ""
+
+msgid "spi exchange bytes _"
+msgstr ""
+
+msgid "aByteArray"
+msgstr ""
+
+msgid "serial open _ baud"
+msgstr ""
+
+msgid "serial close"
+msgstr ""
+
+msgid "serial read"
+msgstr ""
+
+msgid "serial write _"
+msgstr ""
+
+msgid "anIntegerStringListOrByteArray"
+msgstr ""
+
+msgid "serial write _ starting at _"
+msgstr ""
+
+msgid "aStringListOrByteArray"
+msgstr ""
+
+msgid "soft serial write byte _ pin _ baud _"
+msgstr ""
+
+msgid "print _"
+msgstr "τύπωσε _"
+
+msgid "no op"
+msgstr "καμμία εντολή"
+
+msgid "ignore"
+msgstr "αγνόησε "
+
+##############
+# Primitives #
+##############
+
+# These are all mostly hidden from end users
+
+msgid "draw shape _ at x _ y _"
+msgstr "σχεδίασε σχήμα _ στο x _ y _"
+
+msgid "shape for letter _"
+msgstr "σχήμα για γράμμα _"
+
+msgid "send NeoPixel rgb _"
+msgstr "στείλε στο NeoPixel κπμ _"
+
+msgid "has tone support"
+msgstr "έχει τονική υποστήριξη"
+
+msgid "play tone pin _ frequency _"
+msgstr "παίξε τόνο στον ακροδέκτη _ συχνότητα _"
+
+msgid "has WiFi support"
+msgstr "διαθέτει υποστήριξη WIFI"
+
+msgid "start WiFi _ password _"
+msgstr "ξεκίνα WIFI _ με κωδικό _"
+
+msgid "stop WiFi"
+msgstr "σταμάτα WIFI"
+
+msgid "WiFi status"
+msgstr "WIFI κατάσταση"
+
+msgid "my IP address"
+msgstr "η IP διεύθυνση μου "
+
+msgid "radio send number _"
+msgstr "ράδιο στείλε αριθμό _ "
+
+msgid "radio send string _"
+msgstr "ράδιο στείλε σειρά χαρακτήρων"
+
+msgid "Hello!"
+msgstr ""
+
+msgid "radio send pair _ = _"
+msgstr "ράδιο στείλε ζευγάρι _ =_"
+
+msgid "light"
+msgstr ""
+
+msgid "radio message received?"
+msgstr "παραλήφθηκε το μήνυμα ραδίου"
+
+msgid "radio last number"
+msgstr "ράδιο τελευταίος αριθμός"
+
+msgid "radio last string"
+msgstr "ράδιο τελευταία σειρά χαρακτήρων"
+
+msgid "radio last message type"
+msgstr "ράδιο τύπος τελευταίου μηνύματος"
+
+msgid "radio set group _ (0-255)"
+msgstr ""
+
+msgid "radio set channel (0-83) _"
+msgstr "ράδιο όρισε κανάλι σε (0-83) _"
+
+msgid "radio set power (0-7) _"
+msgstr "ράδιο όρισε ισχύ σε (0-7) _"
+
+msgid "radio last signal strength"
+msgstr "ράδιο δύναμη τελευταίου σήματος"
+
+msgid "radio receive packet _"
+msgstr "ράδιο λήψη πακέτου _ "
+
+msgid "radio send packet _"
+msgstr "ράδιο αποστολή πακέτου _ "
+
+msgid "disable radio"
+msgstr "Απενεργοποίηση ραδίου"
+
+#############
+# Libraries #
+#############
+
+msgid "Basic Sensors"
+msgstr "Βασικοί Αισθητήρες"
+
+msgid "tilt x"
+msgstr "κλίση x"
+
+msgid "tilt y"
+msgstr "κλίση y"
+
+msgid "tilt z"
+msgstr "κλίση z"
+
+msgid "acceleration"
+msgstr "επιτάχυνση"
+
+msgid "light level"
+msgstr "Μέτρηση φωτός"
+
+msgid "temperature (°C)"
+msgstr "Θερμοκρασία (°C)"
+
+msgid "magnetic field"
+msgstr ""
+
+msgid "set acceleration range _ g = 100"
+msgstr ""
+
+####
+# NeoPixel library
+
+msgid "NeoPixel"
+msgstr ""
+
+msgid "set NeoPixels _ _ _ _ _ _ _ _ _ _"
+msgstr "όρισε NeoPixels _ _ _ _ _ _ _ _ _ _"
+
+msgid "clear NeoPixels"
+msgstr "καθάρισε NeoPixels"
+
+msgid "set NeoPixel _ color _"
+msgstr "όρισε NeoPixel _ χρώμα _"
+
+msgid "set all NeoPixels color _"
+msgstr "όρισε όλα τα NeoPixels σε χρώμα _"
+
+msgid "rotate NeoPixels by _"
+msgstr "στρίψε τα NeoPixels κατά _"
+
+msgid "brighten NeoPixel _ by _"
+msgstr ""
+
+msgid "brighten all NeoPixels by _"
+msgstr ""
+
+msgid "color r _ g _ b _ (0-255)"
+msgstr "χρώμα κ _ π _ μ _ (0-255)"
+
+msgid "random color"
+msgstr "τυχαίο χρώμα"
+
+msgid "attach _ LED NeoPixel strip to pin _"
+msgstr "σύνδεσε _ LED NeoPixel strip στον ακροδέκτη _"
+
+msgid "has white _"
+msgstr "έχει άσπρο _"
+
+msgid "PIR"
+msgstr "PIR"
+
+msgid "PIR at pin _ detected movement"
+msgstr "PIR στον ακροδέκτη _ ανίχνευσε κίνηση"
+
+####
+# NeoPanel library
+
+msgid "NeoPanel"
+msgstr ""
+
+msgid "attach NeoPixel panel width _ height _ at pin _"
+msgstr ""
+
+msgid "NeoPanel set x _ y _ color _"
+msgstr ""
+
+msgid "NeoPanel fill column _ color _"
+msgstr ""
+
+msgid "NeoPanel fill row _ color _"
+msgstr ""
+
+msgid "NeoPanel fill rectangle x _ y _ width _ height _ color _"
+msgstr ""
+
+msgid "NeoPanel draw text _ at x _ y _ color _"
+msgstr ""
+
+msgid "NeoPanel draw BMP file _ at x _ y _"
+msgstr ""
+
+####
+# Microphone library
+
+msgid "Microphone"
+msgstr ""
+
+msgid "microphone"
+msgstr ""
+
+msgid "turn on microphone"
+msgstr ""
+
+msgid "loudness"
+msgstr ""
+
+msgid "clap count"
+msgstr ""
+
+msgid "set clap threshold _"
+msgstr ""
+
+msgid "estimate clap threshold"
+msgstr ""
+
+####
+# Citilab ED1 board libraries
+
+msgid "ED1 Stepper Motor"
+msgstr "ED1 Μότερ Βήμάτος"
+
+msgid "move motor _ _ steps _"
+msgstr "μοτερ  _ _ βήματα _"
+
+msgid "move motor 1 _ and motor 2 _ _ steps"
+msgstr "μοτερ 1 κινήθου _ και μοτερ 2 κινήθου _ _ βήματα"
+
+msgid "move motor _ angle _ °"
+msgstr "μοτέρ _ στρίψε γωνία _ °"
+
+msgid "move motor _ _ complete turns"
+msgstr "μοτέρ στρίψε _ _ στροφές"
+
+msgid "stop steppers"
+msgstr "σταμάτα τα βηματικά μοτέρ "
+
+msgid "clockwise"
+msgstr "δεξιόστροφα"
+
+msgid "counter-clockwise"
+msgstr "αριστερόστροφα"
+
+msgid "ED1 Buttons"
+msgstr "ED1 Κομβία"
+
+msgid "button OK"
+msgstr " κουμπί OK"
+
+msgid "button X"
+msgstr " κουμπί X"
+
+msgid "button up"
+msgstr " κουμπί πάνω"
+
+msgid "button down"
+msgstr " κουμπί κάτω"
+
+msgid "button left"
+msgstr " κουμπί αριστερά"
+
+msgid "button right"
+msgstr " κουμπί δεξιά"
+
+msgid "capacitive sensor _"
+msgstr "χωρητικός αισθητήρας _"
+
+msgid "set capacitive threshold to _"
+msgstr "ορίσε όριο του χωρητικού σε_"
+
+####
+# BirdBrain Technologies libraries
+
+msgid "Hummingbird LED _ _ %"
+msgstr ""
+
+msgid "Hummingbird Tri-LED _ R _ % G _ % B _ %"
+msgstr ""
+
+msgid "Hummingbird Position Servo _ _ °"
+msgstr "Hummingbird θέση Servo _ _ °"
+
+msgid "Hummingbird Rotation Servo _ _ %"
+msgstr "Hummingbird Περιστροφή Servo _ _ %"
+
+msgid "Hummingbird _ _"
+msgstr ""
+
+msgid "Hummingbird Battery (mV)"
+msgstr "Hummingbird μπαταρία (mV)"
+
+msgid "humm;Light"
+msgstr "Φως"
+
+msgid "humm;Distance (cm)"
+msgstr "Απόσταση (εκ)"
+
+msgid "humm;Dial"
+msgstr ""
+
+msgid "humm;Sound"
+msgstr "Ήχος"
+
+msgid "humm;Other"
+msgstr "Άλλα"
+
+msgid "Finch Beak Red _ Green _ Blue _"
+msgstr ""
+
+msgid "Finch Tail _ Red _ Green _ Blue _"
+msgstr "Finch Ουρά Κόκκινο _ Πράσινο _ Μπλέ _"
+
+msgid "Finch Move _ _ cm at _ %"
+msgstr "Finch Προχώρα _ _ εκ  με  _ %"
+
+msgid "Finch Turn _ _ ° at _ %"
+msgstr "Finch Στρίψε _ _ ° με _ %"
+
+msgid "Finch Wheels L _ % R _ %"
+msgstr "Finch Τροχοί Α _ % Δ _ %"
+
+msgid "Finch Stop"
+msgstr "Finch Σταμάτα"
+
+msgid "Finch Distance (cm)"
+msgstr "Finch Απόσταση (εκ)"
+
+msgid "Finch _ Light"
+msgstr "Finch _ Φως"
+
+msgid "Finch _ Line"
+msgstr "Finch _ Απόσταση"
+
+msgid "Finch Reset Encoders"
+msgstr "Finch Μηδένισε  Encoders"
+
+msgid "Finch _ Encoder"
+msgstr ""
+
+msgid "Finch Accelerometer _"
+msgstr "Finch Επιταχυνσιόμετρο _"
+
+msgid "Finch Battery"
+msgstr "Finch Μπαταρία"
+
+msgid "All"
+msgstr "Όλα"
+
+msgid "Forward"
+msgstr "Μπροστά"
+
+msgid "Backward"
+msgstr "Πίσω"
+
+msgid "Right"
+msgstr "Δεξιά"
+
+msgid "Left"
+msgstr "Αριστερά"
+
+msgid "Beak Up"
+msgstr "Ράμφος Πάνω"
+
+msgid "Beak Down"
+msgstr "Ράμφος Κάτω"
+
+msgid "Tilt Left"
+msgstr "Κλίνε Αριστερά"
+
+msgid "Tilt Right"
+msgstr "Κλίνε Δεξιά"
+
+msgid "Level"
+msgstr "Ίσιωσε"
+
+msgid "Upside Down"
+msgstr "Ανάποδα"
+
+msgid "x"
+msgstr ""
+
+msgid "y"
+msgstr ""
+
+msgid "z"
+msgstr ""
+
+msgid "strength"
+msgstr "δύναμη"
+
+####
+# Ultrasound distance library
+
+msgid "distance (cm) trigger _ echo _"
+msgstr "απόσταση (εκ) ενεργοποίηση _ ηχώ _"
+
+####
+# Infrared remote library
+
+msgid "IR Remote"
+msgstr "IR Τηλεχειριστήριο"
+
+msgid "receive IR code"
+msgstr "λήψη κωδικού IR"
+
+msgid "receive IR code from device _"
+msgstr "λήψη κωδικού IR από τη συσκευή _"
+
+msgid "test IR"
+msgstr "δοκιμή IR"
+
+msgid "attach IR receiver to pin _"
+msgstr "επισυνάψτε δέκτη IR στον ακροδέκτη _"
+
+msgid "IR transmit device _ command _"
+msgstr ""
+
+####
+# Keyboard and Mouse library
+
+msgid "Keyboard and Mouse"
+msgstr ""
+
+msgid "press key _"
+msgstr ""
+
+msgid "while holding _"
+msgstr ""
+
+msgid "hold key _"
+msgstr ""
+
+msgid "release key _"
+msgstr ""
+
+msgid "release all keys"
+msgstr ""
+
+msgid "kbd;Shift"
+msgstr ""
+
+msgid "kbd;Control"
+msgstr "Έλεγχος Ροής"
+
+msgid "kbd;Alt / ⌥"
+msgstr ""
+
+msgid "kbd;Logo / ⌘"
+msgstr ""
+
+msgid "kbd;AltGr"
+msgstr ""
+
+msgid "kbd;enter"
+msgstr ""
+
+msgid "kbd;return"
+msgstr ""
+
+msgid "kbd;tab"
+msgstr ""
+
+msgid "kbd;backspace"
+msgstr ""
+
+msgid "kbd;delete"
+msgstr "διαγραφή"
+
+msgid "kbd;insert"
+msgstr ""
+
+msgid "kbd;home"
+msgstr "Σπίτι"
+
+msgid "kbd;end"
+msgstr ""
+
+msgid "kbd;PgUp"
+msgstr ""
+
+msgid "kbd;PgDown"
+msgstr ""
+
+msgid "kbd;CapsLock"
+msgstr ""
+
+msgid "kbd;NumLock"
+msgstr ""
+
+msgid "kbd;ScrollLock"
+msgstr ""
+
+msgid "kbd;PrintScreen"
+msgstr ""
+
+msgid "kbd;ESC"
+msgstr ""
+
+msgid "_ mouse click"
+msgstr ""
+
+msgid "mouse;left"
+msgstr ""
+
+msgid "mouse;right"
+msgstr ""
+
+msgid "mouse;middle"
+msgstr ""
+
+msgid "mouse;both"
+msgstr ""
+
+msgid "move mouse pointer by _ , _"
+msgstr ""
+
+msgid "scroll mouse by _"
+msgstr ""
+
+msgid "hold _ mouse button"
+msgstr ""
+
+msgid "release mouse buttons"
+msgstr ""
+
+####
+# Lists library
+# Extra utilities for list manipulation and access
+
+msgid "Lists"
+msgstr ""
+
+msgid "list _ contains _"
+msgstr ""
+
+msgid "circular item _ of _"
+msgstr ""
+
+msgid "aListOrString"
+msgstr ""
+
+msgid "map _ over _"
+msgstr ""
+
+msgid "aFunction"
+msgstr ""
+
+msgid "filter _ with _"
+msgstr ""
+
+msgid "pick _ from _"
+msgstr ""
+
+msgid "a few"
+msgstr ""
+
+msgid "some"
+msgstr ""
+
+msgid "most"
+msgstr ""
+
+msgid "reverse _"
+msgstr ""
+
+msgid "shuffle _"
+msgstr ""
+
+msgid "sort _"
+msgstr ""
+
+msgid "unique _"
+msgstr ""
+
+msgid "shuffled _"
+msgstr ""
+
+msgid "reversed _"
+msgstr ""
+
+msgid "sorted _"
+msgstr ""
+
+msgid "uniqued _"
+msgstr ""
+
+####
+# Pseudorandomness
+# Creates pseudorandom numbers and lists of numbers given a particular seed
+
+msgid "Pseudorandomness"
+msgstr ""
+
+msgid "pseudorandom _ to _ with seed _"
+msgstr ""
+
+msgid "_ pseudorandom numbers _ to _ with seed _"
+msgstr ""
+
+####
+# BLE Keyboard library
+
+msgid "BLE Keyboard"
+msgstr ""
+
+msgid "start BLE Keyboard"
+msgstr ""
+
+####
+# Radio comm library
+# Allows micro:bit boards to exchange messages
+# All of its blocks are primitive (see "Primitives" section)
+
+msgid "Radio"
+msgstr ""
+
+####
+# Text scrolling library
+# Scrolls text on 5x5 LED displays and simulated ones
+
+msgid "Scrolling"
+msgstr "κύλιση"
+
+msgid "scroll text _"
+msgstr "κύλιση κειμένου _"
+
+msgid "HELLO ROSA!"
+msgstr ""
+
+msgid "scroll number _"
+msgstr "κύλιση αριθμού _ "
+
+msgid "pausing _ ms"
+msgstr "παύση _ χιλιοστά δευτερολέπτου"
+
+msgid "stop scrolling"
+msgstr "σταμάτημα κύλισης"
+
+####
+# Servo motor library
+
+msgid "Servo"
+msgstr "Σέρβο μοτέρ"
+
+msgid "set servo _ to _ degrees (-90 to 90)"
+msgstr "ορίσε servo από _ έως _ μοίρες (-90 έως 90)"
+
+msgid "set servo _ to speed _ (-100 to 100)"
+msgstr "ορίσε servo _ στην ταχύτητα _ (-100 έως 100)"
+
+msgid "stop servo _"
+msgstr "σταμάτησε το σέρβο _"
+
+####
+# 5x5 LED display library
+# Supports the micro:bit display, but also simulated 5x5 displays on boards
+# with differently sized LED arrays, NeoPixel arrays or TFT displays
+
+msgid "LED Display"
+msgstr "Οθόνη LED"
+
+msgid "display _"
+msgstr "οθόνη _"
+
+msgid "display image _"
+msgstr ""
+
+msgid "clear display"
+msgstr "καθάρισμα Οθόνης"
+
+msgid "set display color _"
+msgstr ""
+
+msgid "plot x _ y _"
+msgstr "σχεδιάσε x _ y _"
+
+msgid "unplot x _ y _"
+msgstr "καθάρισε x _ y _"
+
+msgid "display character _"
+msgstr "εμφάνισε χαρακτήρα _"
+
+# Image names for the "display image" block
+
+msgid "heart"
+msgstr ""
+
+msgid "small heart"
+msgstr ""
+
+msgid "yes"
+msgstr ""
+
+msgid "no"
+msgstr ""
+
+msgid "happy"
+msgstr ""
+
+msgid "sad"
+msgstr ""
+
+msgid "confused"
+msgstr ""
+
+msgid "angry"
+msgstr ""
+
+msgid "asleep"
+msgstr ""
+
+msgid "surprised"
+msgstr ""
+
+msgid "silly"
+msgstr ""
+
+msgid "fabulous"
+msgstr ""
+
+msgid "meh"
+msgstr ""
+
+msgid "t-shirt"
+msgstr ""
+
+msgid "roller skate"
+msgstr ""
+
+msgid "duck"
+msgstr ""
+
+msgid "house"
+msgstr ""
+
+msgid "tortoise"
+msgstr ""
+
+msgid "butterfly"
+msgstr ""
+
+msgid "stick figure"
+msgstr ""
+
+msgid "ghost"
+msgstr ""
+
+msgid "sword"
+msgstr ""
+
+msgid "giraffe"
+msgstr ""
+
+msgid "skull"
+msgstr ""
+
+msgid "umbrella"
+msgstr ""
+
+msgid "snake"
+msgstr ""
+
+msgid "rabbit"
+msgstr ""
+
+msgid "cow"
+msgstr ""
+
+msgid "quarter note"
+msgstr ""
+
+msgid "eight note"
+msgstr ""
+
+msgid "pitchfork"
+msgstr ""
+
+msgid "target"
+msgstr ""
+
+msgid "triangle"
+msgstr ""
+
+msgid "left triangle"
+msgstr ""
+
+msgid "chess board"
+msgstr ""
+
+msgid "diamond"
+msgstr ""
+
+msgid "small diamond"
+msgstr ""
+
+msgid "square"
+msgstr ""
+
+msgid "small square"
+msgstr ""
+
+msgid "scissors"
+msgstr ""
+
+####
+# OLED Graphics library
+
+msgid "initialize i2c _ address(hex) _ reset pin# _ flip _"
+msgstr ""
+
+msgid "initialize spi _ d/c pin# _ reset pin# _ flip _"
+msgstr ""
+
+msgid "write _ at x _ y _ inverse _"
+msgstr ""
+
+msgid "show display buffer"
+msgstr ""
+
+msgid "clear"
+msgstr ""
+
+msgid "set contrast (1-4) _"
+msgstr ""
+
+msgid "draw circle at x _ y _ radius _ erase _"
+msgstr ""
+
+msgid "draw image _ at x _ y _"
+msgstr ""
+
+msgid "draw line from x _ y _ to x _ y _ erase _"
+msgstr ""
+
+msgid "draw rectangle x _ y _ w _ h _ erase _ rounding(3-15) _"
+msgstr ""
+
+msgid "fill rectangle x _ y _ w _ h _ erase _"
+msgstr ""
+
+msgid "_flip display top _"
+msgstr ""
+
+msgid "make image _"
+msgstr ""
+
+msgid "set pixel x _ y _ erase _"
+msgstr ""
+
+msgid "set video _"
+msgstr ""
+
+msgid "cursor location"
+msgstr ""
+
+msgid "defer display updates"
+msgstr ""
+
+####
+# TFT display library
+
+msgid "clear TFT display "
+msgstr ""
+
+msgid "enable TFT _"
+msgstr "ενεργοποίησε TFT _"
+
+msgid "TFT width"
+msgstr "TFT πλάτος"
+
+msgid "TFT height"
+msgstr "TFT ύψος"
+
+msgid "set TFT pixel x _ y _ to _"
+msgstr "Όρισε TFT εικονοκύταρο x _ y _ σε _"
+
+msgid "draw line on TFT from x _ y _ to x _ y _ color _"
+msgstr "σχεδιάσε γραμμή  στο TFT από x _ y _ στο x _ y _ χρώμα _"
+
+msgid "draw vector x _ y _ angle _ length _ color _"
+msgstr ""
+
+msgid "draw rectangle on TFT at x _ y _ width _ height _ color _"
+msgstr "σχεδίασε τετράγωνο στο TFT στο x _ y _ πλάτος _ ύψος _ χρώμα _"
+
+msgid "draw rounded rectangle on TFT at x _ y _ width _ height _ radius _ color _"
+msgstr "σχεδίασε στρογγυλεμένο τετράγωνο στο TFT στο x _ y _ πλάτος _ ύψος _  ακτίνα _ χρώμα _"
+
+msgid "draw circle on TFT at x _ y _ radius _ color _"
+msgstr "σχεδιάσε κύκλο στο  TFT στο x _ y _ ακτίνα _ χρώμα _"
+
+msgid "draw triangle on TFT at x _ y _ , x _ y _ , x _ y _ color _"
+msgstr "σχεδιάσε τρίγωνο στο TFT στο x _ y _ , x _ y _ , x _ y _ χρώμα _"
+
+msgid "filled _"
+msgstr "Γέμιση _"
+
+msgid "write _ on TFT at x _ y _ color _"
+msgstr "γράψε _ στο TFT στο x _ y _ χρώμα _"
+
+msgid "Hello World!"
+msgstr ""
+
+msgid "scale _ wrap _"
+msgstr "κλίμακα _ αναδίπλωση _"
+
+msgid "draw text _ on TFT at x _ y _ color _"
+msgstr ""
+
+msgid "scale _"
+msgstr ""
+
+msgid "bg color _"
+msgstr ""
+
+msgid "draw bitmap _ palette _ on TFT at x _ y _"
+msgstr ""
+
+msgid "set TFT backlight _ (0-10)"
+msgstr ""
+
+msgid "gray _ %"
+msgstr ""
+
+####
+# BMP library
+# Can display BMP image files on a TFT display
+
+msgid "display BMP file _ at x _ y _"
+msgstr ""
+
+msgid "image.bmp"
+msgstr ""
+
+####
+# Color library
+
+msgid "Color Operators"
+msgstr ""
+
+msgid "color r _ g _ b _ (0-255)"
+msgstr "χρώμα κ _ π _ μ _ (0-255)"
+
+msgid "gray _ %"
+msgstr ""
+
+msgid "random color"
+msgstr "τυχαίο χρώμα"
+
+msgid "red _"
+msgstr ""
+
+msgid "green _"
+msgstr ""
+
+msgid "blue _"
+msgstr ""
+
+msgid "color hue _ (0-360) saturation _ % brightness _ %"
+msgstr ""
+
+msgid "hue _"
+msgstr ""
+
+msgid "saturation _"
+msgstr ""
+
+msgid "brightness _"
+msgstr ""
+
+msgid "_ with hue _ (0-360)"
+msgstr ""
+
+msgid "_ with saturation _ %"
+msgstr ""
+
+msgid "_ with brightness _ %"
+msgstr ""
+
+####
+# Fractions library
+
+msgid "Fractions"
+msgstr ""
+
+msgid "fract _ / _"
+msgstr ""
+
+msgid "fract _ + _"
+msgstr ""
+
+msgid "fract _ - _"
+msgstr ""
+
+msgid "fract _ × _"
+msgstr ""
+
+msgid "fract _ = _"
+msgstr ""
+
+msgid "fract _ < _"
+msgstr ""
+
+msgid "fract _ > _"
+msgstr ""
+
+msgid "simplify fraction _"
+msgstr ""
+
+msgid "integer part of fraction _"
+msgstr ""
+
+msgid "numerator of fraction _"
+msgstr ""
+
+msgid "denominator of fraction _"
+msgstr ""
+
+msgid "gcd _ _"
+msgstr ""
+
+msgid "lcm _ _"
+msgstr ""
+
+####
+# Tone library
+# Generates music tones on buzzers
+
+msgid "Tone"
+msgstr "Τόνος"
+
+msgid "attach buzzer to pin _"
+msgstr "επισυνάψε το βομβητή στον ακροδέκτη _"
+
+msgid "play note _ octave _ for _ ms"
+msgstr "παίξε νότα _ οκτάβα _ για _ χδ"
+
+msgid "play frequency _ for _ ms"
+msgstr "παίξε συχνότητα _ για _ χδ"
+
+msgid "play midi key _ for _ ms"
+msgstr "παίξε πλήκτρο midi _ για _ ms"
+
+msgid "start tone _ Hz"
+msgstr ""
+
+msgid "stop tone"
+msgstr ""
+
+msgid "c"
+msgstr ""
+
+msgid "c#"
+msgstr ""
+
+msgid "d"
+msgstr ""
+
+msgid "d#"
+msgstr ""
+
+msgid "e"
+msgstr ""
+
+msgid "f"
+msgstr ""
+
+msgid "f#"
+msgstr ""
+
+msgid "g"
+msgstr ""
+
+msgid "g#"
+msgstr ""
+
+msgid "a"
+msgstr ""
+
+msgid "a#"
+msgstr ""
+
+msgid "b"
+msgstr ""
+
+####
+# Ringtone library
+# Can play Nokring-formatted music. Also known as RTTTL.
+
+msgid "Ringtone"
+msgstr ""
+
+msgid "play ringtone _"
+msgstr ""
+
+msgid "current song name"
+msgstr ""
+
+####
+# Pluck
+# Generate music with plucked-string resembling sounds
+
+msgid "Pluck"
+msgstr ""
+
+msgid "pluck note _ octave _ for _ ms"
+msgstr ""
+
+msgid "pluck MIDI key _ for _ msecs"
+msgstr ""
+
+msgid "set pluck pin _"
+msgstr ""
+
+####
+# WAV
+# Play WAV sound files
+
+msgid "play WAV file _"
+msgstr ""
+
+msgid "filename"
+msgstr ""
+
+####
+# Rhythm
+# Send broadcasts -and call functions- according to a tempo and time signature.
+# Useful to create musical patterns
+
+msgid "Rhythm"
+msgstr ""
+
+msgid "set tempo to _ bpm at _ / _ signature"
+msgstr ""
+
+msgid "set pattern to _ bars"
+msgstr ""
+
+msgid "current beat"
+msgstr ""
+
+msgid "current bar"
+msgstr ""
+
+msgid "wait until next _ duration"
+msgstr ""
+
+msgid "wait until beat _"
+msgstr ""
+
+msgid "wait until bar _"
+msgstr ""
+
+####
+# MIDI
+# Control MIDI devices from MicroBlocks
+
+# General MIDI drum instrument names
+
+msgid "Acoustic Bass Drum"
+msgstr ""
+
+msgid "Bass Drum 1"
+msgstr ""
+
+msgid "Side Stick"
+msgstr ""
+
+msgid "Acoustic Snare"
+msgstr ""
+
+msgid "Hand Clap"
+msgstr ""
+
+msgid "Electric Snare"
+msgstr ""
+
+msgid "Low Floor Tom"
+msgstr ""
+
+msgid "Closed Hi-Hat"
+msgstr ""
+
+msgid "High Floor Tom"
+msgstr ""
+
+msgid "Pedal Hi-Hat"
+msgstr ""
+
+msgid "Low Tom"
+msgstr ""
+
+msgid "Open Hi-Hat"
+msgstr ""
+
+msgid "Low-Mid Tom"
+msgstr ""
+
+msgid "Hi-Mid Tom"
+msgstr ""
+
+msgid "Crash Cymbal 1"
+msgstr ""
+
+msgid "High Tom"
+msgstr ""
+
+msgid "Ride Cymbal 1"
+msgstr ""
+
+msgid "Chinese Cymbal"
+msgstr ""
+
+msgid "Ride Bell"
+msgstr ""
+
+msgid "Tambourine"
+msgstr ""
+
+msgid "Splash Cymbal"
+msgstr ""
+
+msgid "Cowbell"
+msgstr ""
+
+msgid "Crash Cymbal 2"
+msgstr ""
+
+msgid "Vibraslap"
+msgstr ""
+
+msgid "Ride Cymbal 2"
+msgstr ""
+
+msgid "Hi Bongo"
+msgstr ""
+
+msgid "Low Bongo"
+msgstr ""
+
+msgid "Mute Hi Conga"
+msgstr ""
+
+msgid "Open Hi Conga"
+msgstr ""
+
+msgid "Low Conga"
+msgstr ""
+
+msgid "High Timbale"
+msgstr ""
+
+msgid "Low Timbale"
+msgstr ""
+
+msgid "High Agogo"
+msgstr ""
+
+msgid "Low Agogo"
+msgstr ""
+
+msgid "Cabasa"
+msgstr ""
+
+msgid "Maracas"
+msgstr ""
+
+msgid "Short Whistle"
+msgstr ""
+
+msgid "Long Whistle"
+msgstr ""
+
+msgid "Short Guiro"
+msgstr ""
+
+msgid "Long Guiro"
+msgstr ""
+
+msgid "Claves"
+msgstr ""
+
+msgid "Hi Wood Block"
+msgstr ""
+
+msgid "Low Wood Block"
+msgstr ""
+
+msgid "Mute Cuica"
+msgstr ""
+
+msgid "Open Cuica"
+msgstr ""
+
+msgid "Mute Triangle"
+msgstr ""
+
+msgid "Open Triangle"
+msgstr ""
+
+# General MIDI instrument categories
+
+msgid "piano"
+msgstr ""
+
+msgid "chromatic percussion"
+msgstr ""
+
+msgid "organ"
+msgstr ""
+
+msgid "guitar"
+msgstr ""
+
+msgid "bass"
+msgstr ""
+
+msgid "strings"
+msgstr ""
+
+msgid "ensemble"
+msgstr ""
+
+msgid "brass"
+msgstr ""
+
+msgid "reed"
+msgstr ""
+
+msgid "pipe"
+msgstr ""
+
+msgid "synth lead"
+msgstr ""
+
+msgid "synth pad"
+msgstr ""
+
+msgid "synth SFX"
+msgstr ""
+
+msgid "ethnic"
+msgstr ""
+
+msgid "percussive"
+msgstr ""
+
+msgid "gm;SFX"
+msgstr ""
+
+# General MIDI drum sets
+
+msgid "standard"
+msgstr ""
+
+msgid "room"
+msgstr ""
+
+msgid "power"
+msgstr ""
+
+msgid "electronic"
+msgstr ""
+
+msgid "TR-808"
+msgstr ""
+
+msgid "jazz"
+msgstr ""
+
+msgid "brush"
+msgstr ""
+
+msgid "orchestra"
+msgstr ""
+
+msgid "drumkit;SFX"
+msgstr ""
+
+msgid "CM-64/CM-32L"
+msgstr ""
+
+# General MIDI control changes
+
+msgid "bank select 1"
+msgstr ""
+
+msgid "bank select 2"
+msgstr ""
+
+msgid "modulation"
+msgstr ""
+
+msgid "portamento time"
+msgstr ""
+
+msgid "volume"
+msgstr ""
+
+msgid "pan"
+msgstr ""
+
+msgid "expression"
+msgstr ""
+
+msgid "hold"
+msgstr ""
+
+msgid "portamento"
+msgstr ""
+
+msgid "sostenuto"
+msgstr ""
+
+msgid "soft"
+msgstr ""
+
+msgid "resonance"
+msgstr ""
+
+msgid "release time"
+msgstr ""
+
+msgid "attack time"
+msgstr ""
+
+msgid "cutoff"
+msgstr ""
+
+msgid "decay time"
+msgstr ""
+
+msgid "vibrato rate"
+msgstr ""
+
+msgid "vibrato depth"
+msgstr ""
+
+msgid "vibrato delay"
+msgstr ""
+
+msgid "portamento control"
+msgstr ""
+
+msgid "effect 1"
+msgstr ""
+
+msgid "effect 2"
+msgstr ""
+
+# library blocks
+
+msgid "play MIDI note _ for _ ms on channel _ volume _"
+msgstr ""
+
+msgid "stop all notes on channel _"
+msgstr ""
+
+msgid "set MIDI note _ to _ on channel _ volume _"
+msgstr ""
+
+msgid "note _ octave _ to MIDI key"
+msgstr ""
+
+msgid "select MIDI instrument _ number _ for channel _"
+msgstr ""
+
+msgid "select MIDI instrument _ for channel _"
+msgstr ""
+
+msgid "variation _"
+msgstr ""
+
+msgid "instrument _ number _"
+msgstr ""
+
+msgid "select MIDI drum kit _"
+msgstr ""
+
+msgid "play MIDI drum _ for _ ms volume _"
+msgstr ""
+
+msgid "drum _"
+msgstr ""
+
+msgid "change MIDI control _ on channel _ to _"
+msgstr ""
+
+msgid "pitch bend MIDI channel _ to _ %"
+msgstr ""
+
+msgid "send MIDI reset"
+msgstr ""
+
+msgid "send MIDI start playing"
+msgstr ""
+
+msgid "send MIDI stop playing"
+msgstr ""
+
+msgid "send MIDI continue playing"
+msgstr ""
+
+msgid "set MIDI signal to pin _"
+msgstr ""
+
+####
+# Scales & Chords
+# Abstractions for musical theory
+
+msgid "Scales & Chords"
+msgstr ""
+
+# scale names
+
+msgid "ionian"
+msgstr ""
+
+msgid "dorian"
+msgstr ""
+
+msgid "phrygian"
+msgstr ""
+
+msgid "lydian"
+msgstr ""
+
+msgid "mixolydian"
+msgstr ""
+
+msgid "aeolian"
+msgstr ""
+
+msgid "locrian"
+msgstr ""
+
+msgid "major"
+msgstr ""
+
+msgid "minor"
+msgstr ""
+
+# chord types
+
+msgid "major"
+msgstr ""
+
+msgid "minor"
+msgstr ""
+
+msgid "diminished"
+msgstr ""
+
+msgid "major 7th"
+msgstr ""
+
+msgid "minor 7th"
+msgstr ""
+
+msgid "Maj7"
+msgstr ""
+
+# sound destinations for arpeggiate block
+
+msgid "MIDI channel"
+msgstr ""
+
+msgid "tone pin"
+msgstr ""
+
+# library blocks
+
+msgid "_ scale root _"
+msgstr ""
+
+msgid "steps _"
+msgstr ""
+
+msgid "pentatonic _ scale root _"
+msgstr ""
+
+msgid "_ chord root _"
+msgstr ""
+
+msgid "_ chord for root _"
+msgstr ""
+
+msgid "arpeggiate _ in order _ duration _ and volume _ on _ _"
+msgstr ""
+
+msgid "improvised arpeggio over _ for _ bars with durations _"
+msgstr ""
+
+msgid "improvise over _ for _ bars with durations _ on _ _ volume _"
+msgstr ""
+
+msgid "_ transposed _ semitones"
+msgstr ""
+
+msgid "chord progression _ with root _"
+msgstr ""
+
+msgid "and _ steps per chord"
+msgstr ""
+
+msgid "rotation _ of circle of 5ths _ M _ m _ º"
+msgstr ""
+
+####
+# Chiptune
+# Old-school sound generation on digital pins and DACs
+
+msgid "kick for _ ms on pin _"
+msgstr ""
+
+msgid "tom for _ ms pitch shifted by _ on pin _"
+msgstr ""
+
+msgid "laser for _ ms with frequency _ speed _ on pin _"
+msgstr ""
+
+msgid "noise for _ ms pitch shifted by _ on pin _"
+msgstr ""
+
+msgid "fade noise for _ ms pitch shifted by _ on DAC pin _"
+msgstr ""
+
+msgid "snare for _ ms on DAC pin _"
+msgstr ""
+
+msgid "hihat for _ ms on DAC pin _"
+msgstr ""
+
+####
+# Square Wave Chords
+# Play chords on 3 digital pins
+
+msgid "Square Wave Chords"
+msgstr ""
+
+msgid "play chord _ for _ ms"
+msgstr ""
+
+msgid "set digital chord pins _ _ _"
+msgstr ""
+
+####
+# Turtle geometry library
+
+msgid "Turtle"
+msgstr "Χελώνα "
+
+msgid "trtl;home"
+msgstr "Σπίτι"
+
+msgid "move _"
+msgstr "προχώρα _"
+
+msgid "turn _ degrees"
+msgstr "στρίψε _ μοίρες"
+
+msgid "turn _ / _ of circle"
+msgstr "στρίψε _ / _ του κύκλου"
+
+msgid "pen down"
+msgstr "πέννα κάτω"
+
+msgid "pen up"
+msgstr "πέννα πάνω"
+
+msgid "set pen color to _"
+msgstr "όρισε την πέννα στο χρώμα _"
+
+msgid "set pen to random color"
+msgstr "όρισε την πέννα σε τυχαίο χρώμα"
+
+msgid "fill display with _"
+msgstr "γέμισε την οθόνη με _"
+
+msgid "go to x _ y _"
+msgstr "προχώρα στο x _ y _"
+
+msgid "point in direction _"
+msgstr "σημείο στην κατεύθυνση _"
+
+####
+# File system library
+
+msgid "Files"
+msgstr "Αρχεία"
+
+msgid "open file _"
+msgstr "άνοιξε αρχείο _"
+
+msgid "close file _"
+msgstr "κλείσε αρχείο _"
+
+msgid "delete file _"
+msgstr "διάγραψε αρχείο _"
+
+msgid "append line _ to file _"
+msgstr "πρόσθεσε γραμμή _ στο αρχείο _"
+
+msgid "append bytes _ to file _"
+msgstr "πρόσθεσε bytes _ στο αρχείο _"
+
+msgid "end of file _"
+msgstr "τέλος του αρχείου _"
+
+msgid "next line of file _"
+msgstr "επόμενη γραμμή του αρχείου _"
+
+msgid "next _ bytes of file _"
+msgstr "επόμενα _ bytes του αρχείου _"
+
+msgid "read into _ from file _"
+msgstr ""
+
+msgid "a ByteArray"
+msgstr ""
+
+msgid "starting at _"
+msgstr "ξεκινά από _"
+
+msgid "file names"
+msgstr "όνομα αρχείων"
+
+msgid "in directory _"
+msgstr ""
+
+msgid "size of file _"
+msgstr "μέγεθος του αρχείου _"
+
+msgid "file system info"
+msgstr "πληροφορίες για αρχεία συστήματος"
+
+####
+# Strings
+# string (text) processing functions
+
+msgid "Strings"
+msgstr ""
+
+msgid "_ is a digit"
+msgstr ""
+
+msgid "_ is lowercase"
+msgstr ""
+
+msgid "_ is uppercase"
+msgstr ""
+
+msgid "_ begins with _"
+msgstr ""
+
+msgid "prefix"
+msgstr ""
+
+msgid "pre"
+msgstr ""
+
+msgid "_ ends with _"
+msgstr ""
+
+msgid "suffix"
+msgstr ""
+
+msgid "fix"
+msgstr ""
+
+msgid "_ contains _"
+msgstr ""
+
+msgid "lowercase _"
+msgstr ""
+
+msgid "THIS is a String! :)"
+msgstr ""
+
+msgid "uppercase _"
+msgstr ""
+
+msgid "Hello, world!"
+msgstr ""
+
+msgid "_ without white space"
+msgstr ""
+
+msgid "join string list _ separator _"
+msgstr ""
+
+msgid "unicodes _"
+msgstr ""
+
+msgid "aString"
+msgstr ""
+
+msgid "string from unicodes _"
+msgstr ""
+
+msgid "aList"
+msgstr ""
+
+msgid "num2str _"
+msgstr ""
+
+msgid "str2num _"
+msgstr ""
+
+####
+# WiFi library
+
+msgid "WiFi"
+msgstr ""
+
+msgid "wifi connect to _ password _"
+msgstr ""
+
+msgid "Network_Name"
+msgstr ""
+
+msgid "IP _ gateway _ subnet _"
+msgstr ""
+
+msgid "wifi create hotspot _ password _"
+msgstr "wifi δημιούργησε hotspot _ κωδικός _"
+
+msgid "Network_Password"
+msgstr ""
+
+msgid "IP address"
+msgstr "IP διεύθυνση"
+
+msgid "MAC address"
+msgstr ""
+
+####
+# Motion library
+# Counts steps and detects motion via the internal accelerometer
+
+msgid "Motion"
+msgstr "Κίνηση"
+
+msgid "motion"
+msgstr "κίνηση"
+
+msgid "start step counter"
+msgstr "ξεκίνα μετρητή βημάτων"
+
+msgid "step count"
+msgstr "μέτρησε βήματα"
+
+msgid "clear step count"
+msgstr "Μηδένισε των μετρητή βημάτων"
+
+msgid "set step threshold _ (0-50)"
+msgstr "όρισε κατώφλι βημάτων _ (0-50)"
+
+####
+# Button Events library
+
+msgid "Button Events"
+msgstr "κουμπί Συμβάντα"
+
+msgid "button _ double pressed"
+msgstr "κουμπί _ διπλό πάτημα"
+
+msgid "button _ long pressed"
+msgstr "κουμπί _ μακρύ πάτημα"
+
+msgid "button _ pressed"
+msgstr "κουμπί _ πατήθηκε"
+
+####
+# Calliope board library
+
+msgid "Calliope set LED red _ green _ blue _"
+msgstr ""
+
+msgid "Calliope set speaker _"
+msgstr ""
+
+msgid "Calliope loudness"
+msgstr ""
+
+####
+# Circuit Playground Express board library
+
+msgid "Circuit Playground set speaker _"
+msgstr "Circuit Playground όρισε το μεγάφωνο _"
+
+msgid "Circuit Playground slide switch"
+msgstr "Circuit Playground κουμπί κύλισης "
+
+####
+# DotStar LED library
+
+msgid "attach _ DotStar LEDs to data pin _ clock pin _"
+msgstr ""
+
+msgid "set all DotStar LEDs to r _ g _ b _"
+msgstr ""
+
+msgid "set DotStar LED _ to r _ g _ b _"
+msgstr ""
+
+msgid "set DotStar brightness _"
+msgstr ""
+
+####
+# BME280 environmental sensor
+
+msgid "bme280 connected"
+msgstr "bme280 ενώθηκε"
+
+msgid "bmp280 connected"
+msgstr "-bmp280 ενώθηκε"
+
+msgid "bmx280 temperature"
+msgstr "bmx280 θερμοκρασία"
+
+msgid "bmx280 pressure"
+msgstr "bmx280 πίεση"
+
+msgid "bme280 humidity"
+msgstr "bme280 υγρασία"
+
+msgid "bmx280 set base altitude _ meters"
+msgstr ""
+
+msgid "bmx280 altitude (cm)"
+msgstr ""
+
+msgid "bmx280 altitude (feet)"
+msgstr ""
+
+####
+# TCS34725 color sensor
+
+msgid "TCS34725 connected"
+msgstr "TCS34725 συνδέθηκε"
+
+msgid "TCS34725 rgb"
+msgstr "TCS34725 κπμ"
+
+msgid "color _ name"
+msgstr "χρώμα _ όνομα"
+
+####
+# DHT11 environmental sensor
+
+msgid "temperature (Celsius) DHT11 pin _"
+msgstr "θερμοκρασία (Κελσίου) DHT11 ακροδέκτης _"
+
+msgid "humidity DHT11 pin _"
+msgstr "υγρασία DHT11 ακροδέκτης _ "
+
+msgid "temperature (Celsius) DHT22 pin _"
+msgstr "θερμοκρασία (Κελσίου) DHT22 ακροδέκτης _"
+
+msgid "humidity DHT22 pin _"
+msgstr "υγρασία DHT22 ακροδέκτης _ "
+
+####
+# PN532 RFID reader
+
+msgid "read PN532 RFID"
+msgstr "διάβασε PN532 RFID"
+
+msgid "RFID _ = _"
+msgstr ""
+
+msgid "get PN532 firmware version"
+msgstr "διάβασε PN532 έκδοση firmware"
+
+####
+# Touch Screen
+
+msgid "Touch Screen"
+msgstr ""
+
+msgid "TFT touched"
+msgstr ""
+
+msgid "TFT touch X position"
+msgstr ""
+
+msgid "TFT touch Y position"
+msgstr ""
+
+msgid "TFT touch pressure"
+msgstr ""
+
+####
+# HTTP Client
+
+msgid "HTTP client"
+msgstr "HTTP πελάτης"
+
+msgid "_ data _ to http #SVG#colon-double-slash _"
+msgstr ""
+
+msgid "MicroBlocks is fun"
+msgstr ""
+
+msgid "port _"
+msgstr ""
+
+####
+# HTTP Server
+
+msgid "HTTP server"
+msgstr "HTTP εξυπηρετητής"
+
+msgid "start HTTP server"
+msgstr "ξεκίνα τον HTTP εξυπηρετητή"
+
+msgid "HTTP server request"
+msgstr "HTTP εξυπηρετητή αίτηση"
+
+msgid "respond _ to HTTP request"
+msgstr "απάντηση _ σε HTTP αίτηση"
+
+msgid "with body _"
+msgstr "με σώμα _"
+
+msgid "Welcome to the MicroBlocks HTTP server"
+msgstr ""
+
+msgid "and headers _"
+msgstr "και επικεφαλίδες _"
+
+msgid "body of request _"
+msgstr "σώμα της αίτησης"
+
+msgid "path of request _"
+msgstr "διαδρομή αίτησης _"
+
+msgid "headers of request _"
+msgstr ""
+
+msgid "method of request _"
+msgstr "μέθοδος της αίτησης _"
+
+msgid "content length of request _"
+msgstr ""
+
+####
+# WebSocket server
+
+msgid "WebSocket server"
+msgstr ""
+
+msgid "start WebSocket server"
+msgstr ""
+
+msgid "last WebSocket event"
+msgstr ""
+
+msgid "client ID for WebSocket event _"
+msgstr ""
+
+msgid "payload for WebSocket event _"
+msgstr ""
+
+msgid "type of WebSocket event _"
+msgstr ""
+
+msgid "send _ to WebSocket client _"
+msgstr ""
+
+msgid "Hello, Client!"
+msgstr ""
+
+####
+# Web Things library
+
+msgid "Web Thing"
+msgstr "Αντικείμενο Δικτύου"
+
+msgid "set thing name to _"
+msgstr "όρισε το όνομα του αντικειμένου σε _"
+
+msgid "set thing capability to _"
+msgstr "όρισε την ικανότητα του αντικειμένου σε _"
+
+msgid "set boolean property _ title _ @Type _"
+msgstr "όρισε δυαδική ιδιότητα _ τίτλος _ @Τύπος"
+
+msgid "set string property _ title _ @Type _"
+msgstr "όρισε κειμένου ιδιότητα _ τίτλος _ @Τύπος _"
+
+msgid "set number property _ title _ @Type _"
+msgstr "όρισε αριθμητική ιδιότητα _ τίτλος _ @Τύπος _"
+
+msgid "set number property _ title _ min _ max _ @Type _"
+msgstr "όρισε αριθμητική ιδιότητα _ τίτλος _ ελάχιστο _ μέγιστο _ @Τύπος _"
+
+msgid "read only _"
+msgstr "διάβασε μόνο _"
+
+msgid "register event _ type _"
+msgstr "καταχώρησε γεγονός _ τύπος _"
+
+msgid "start WebThing server"
+msgstr "ξεκίνα εξυπηρετητή WebThing"
+
+msgid "trigger event _"
+msgstr "ενεργοποίηση γεγονότος _"
+
+msgid "thing description JSON"
+msgstr "περιγραφή αντικειμένου JSON"
+
+msgid "properties JSON"
+msgstr "ιδιότητες JSON"
+
+msgid "event definitions JSON"
+msgstr "ορισμοί γεγονότων JSON"
+
+msgid "events JSON"
+msgstr "γεγονότα JSON"
+
+####
+# Citilab Fantàstic Robot
+
+msgid "turn fantàstic _ degrees"
+msgstr ""
+
+msgid "move fantàstic _ mm"
+msgstr ""
+
+####
+# MiKe Robot library
+
+msgid "MiKe front obstacle (cm)"
+msgstr ""
+
+msgid "MiKe _ obstacle ?"
+msgstr ""
+
+msgid "MiKe black line on _ ?"
+msgstr ""
+
+msgid "MiKe back light"
+msgstr ""
+
+msgid "MiKe IR"
+msgstr ""
+
+msgid "MiKe digital D8 sensor"
+msgstr ""
+
+msgid "MiKe stop motors"
+msgstr ""
+
+msgid "MiKe Robot go _ at _ %"
+msgstr ""
+
+msgid "MiKe Robot speed _ %"
+msgstr ""
+
+msgid "MiKe Robot direction _"
+msgstr ""
+
+msgid "MiKe turn _ motor _"
+msgstr ""
+
+msgid "MiKe speed _ motor at _ %"
+msgstr ""
+
+msgid "MiKe front lights off"
+msgstr ""
+
+msgid "MiKe front lights to _"
+msgstr ""
+
+msgid "MiKe circle lights off"
+msgstr ""
+
+msgid "MiKe circle ligths to _"
+msgstr ""
+
+msgid "MiKe circle light _ (1-18) to _"
+msgstr ""
+
+msgid "MiKe rotate lights by _"
+msgstr ""
+
+msgid "MiKe digital D8 to _"
+msgstr ""
+
+####
+# Shield:bit
+
+msgid "s꞉b LEDs off"
+msgstr ""
+
+msgid "s꞉b LEDs to _"
+msgstr ""
+
+msgid "s꞉b LED _ (1-4) to _"
+msgstr ""
+
+msgid "s꞉b audio output to shield _"
+msgstr ""
+
+msgid "s꞉b stop _"
+msgstr ""
+
+msgid "s꞉b turn 180 servo S- _ (1-8) to angle _"
+msgstr ""
+
+msgid "s꞉b turn 360 servo S- _ (1-8) _ at _ %"
+msgstr ""
+
+msgid "s꞉b turn DC M- _ (1-4) motor _ at _ %"
+msgstr ""
+
+msgid "s꞉b turn Stepper- _ (1-2) motor _ for _ _"
+msgstr ""
+
+msgid "s꞉b set pin S- _ (1-8) to _ %"
+msgstr ""
+
+msgid "sb;DC/Stepper_motors"
+msgstr ""
+
+msgid "sb;servomotors"
+msgstr ""
+
+msgid "sb;all_motors"
+msgstr ""
+
+msgid "turns"
+msgstr ""
+
+msgid "degrees"
+msgstr ""
+
+####
+# micro:STEAMakers
+
+msgid "m꞉s display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
+msgstr ""
+
+msgid "m꞉s display #BR# _ #BR# with color _"
+msgstr ""
+
+msgid "m꞉s display image _ with color _"
+msgstr ""
+
+msgid "m꞉s clear display"
+msgstr ""
+
+msgid "m꞉s scale brightness to _ %"
+msgstr ""
+
+msgid "m꞉s plot x _ y _ with _"
+msgstr ""
+
+msgid "m꞉s unplot x _ y _"
+msgstr ""
+
+msgid "m꞉s display character _ with _"
+msgstr ""
+
+msgid "m꞉s scroll text _ with color _ "
+msgstr ""
+
+msgid "m꞉s stop scrolling"
+msgstr ""
+
+msgid "start micro꞉STEAMakers audio"
+msgstr ""
+
+msgid "m꞉s button _ ?"
+msgstr ""
+
+msgid "m꞉s touching ?"
+msgstr ""
+
+msgid "m꞉s light %"
+msgstr ""
+
+msgid "m꞉s sound %"
+msgstr ""
+
+msgid "m꞉s temperature ºC"
+msgstr ""
+
+msgid "m꞉s humidity %"
+msgstr ""
+
+msgid "m꞉s inclination towards _ º"
+msgstr ""
+
+msgid "m꞉s energy _"
+msgstr ""
+
+msgid "m꞉s _ energy meter"
+msgstr ""
+
+msgid "m꞉s energy consumption (µWh)"
+msgstr ""
+
+msgid "ms;start"
+msgstr ""
+
+msgid "ms;reset"
+msgstr ""
+
+msgid "ms;down"
+msgstr ""
+
+####
+# DrawBot Library
+# A CoreXY plotter library that supports turtle geometry
+
+msgid "plotter move X _ Y _"
+msgstr ""
+
+msgid "plotter move _ steps"
+msgstr ""
+
+msgid "plotter turn _ degrees"
+msgstr ""
+
+msgid "plotter turn _ / _ of circle"
+msgstr ""
+
+msgid "plotter point in direction _"
+msgstr ""
+
+msgid "plotter pen down"
+msgstr ""
+
+msgid "plotter pen up"
+msgstr ""
+
+msgid "plotter stop"
+msgstr ""
+
+msgid "set plotter speed to _ %"
+msgstr ""
+
+####
+# Innova Didactic libraries
+
+msgid "red"
+msgstr ""
+
+msgid "yellow"
+msgstr ""
+
+msgid "green"
+msgstr ""
+
+msgid "forward"
+msgstr ""
+
+msgid "backward"
+msgstr ""
+
+msgid "turn right"
+msgstr ""
+
+msgid "turn left"
+msgstr ""
+
+msgid "stop"
+msgstr ""
+
+msgid "right sensor"
+msgstr ""
+
+msgid "left sensor"
+msgstr ""
+
+msgid "both sensors"
+msgstr ""
+
+msgid "TdR test buzzer"
+msgstr ""
+
+msgid "TdR set blue LED _"
+msgstr ""
+
+msgid "TdR set red LED _"
+msgstr ""
+
+msgid "TdR set RGB LED _"
+msgstr ""
+
+msgid "TdR clear RGB LED"
+msgstr ""
+
+msgid "TdR LM35 temperature ºC"
+msgstr ""
+
+msgid "TdR DHT11 temperature ºC"
+msgstr ""
+
+msgid "TdR DHT11 humidity"
+msgstr ""
+
+msgid "TdR rotation"
+msgstr ""
+
+msgid "TdR light level"
+msgstr ""
+
+msgid "TdR button 1"
+msgstr ""
+
+msgid "TdR button 2"
+msgstr ""
+
+msgid "TdR receive IR code"
+msgstr ""
+
+msgid "Imagina set _ led to _"
+msgstr ""
+
+msgid "Imagina play _ octave _ for _ ms"
+msgstr ""
+
+msgid "Imagina temperature (°C)"
+msgstr ""
+
+msgid "Imagina light"
+msgstr ""
+
+msgid "Imagina distance (cm)"
+msgstr ""
+
+msgid "Imagina button (D2) pressed?"
+msgstr ""
+
+msgid "Imagina digital reading _"
+msgstr ""
+
+msgid "Imagina analog reading A1"
+msgstr ""
+
+msgid "Imagina set digital pin _ to _"
+msgstr ""
+
+msgid "Imagina stop servo _"
+msgstr ""
+
+msgid "Imagina set servo _ to _ degrees (-90 to 90)"
+msgstr ""
+
+msgid "Imagina set servo _ to speed _ (-100 to 100)"
+msgstr ""
+
+msgid "Imagina set _ speed to _ %"
+msgstr ""
+
+msgid "Imagina set _ to _"
+msgstr ""
+
+msgid "Imagina IR reading"
+msgstr ""
+
+msgid "Imagina IR transmit device _ command _"
+msgstr ""
+
+msgid "_ steps"
+msgstr ""
+
+msgid "at _ % speed"
+msgstr ""
+
+msgid "3dBot set speed at _ %"
+msgstr ""
+
+msgid "3dBot obstacle < _ cm?"
+msgstr ""
+
+msgid "3dBot line on _ ?"
+msgstr ""
+
+####
+# ESP32 Smart Farm
+
+msgid "voltage (V)"
+msgstr ""
+
+msgid "current (mA)"
+msgstr ""
+
+msgid "power (mW)"
+msgstr ""
+
+msgid "open"
+msgstr ""
+
+msgid "close"
+msgstr ""
+
+msgid "on"
+msgstr ""
+
+msgid "off"
+msgstr ""
+
+msgid "Farm fan _"
+msgstr ""
+
+msgid "start"
+msgstr ""
+
+msgid "Farm display _ in line _"
+msgstr ""
+
+msgid "Farm _ the trapdoor"
+msgstr ""
+
+msgid "Farm play _ octave _ for _ ms"
+msgstr ""
+
+msgid "Farm set light _"
+msgstr ""
+
+msgid "Farm water pump _"
+msgstr ""
+
+msgid "Farm temperature ºC"
+msgstr ""
+
+msgid "Farm humidity"
+msgstr ""
+
+msgid "Farm movement detected?"
+msgstr ""
+
+msgid "Farm button pressed?"
+msgstr ""
+
+msgid "Farm distance (cm)"
+msgstr ""
+
+msgid "Farm light level"
+msgstr ""
+
+msgid "Farm water level"
+msgstr ""
+
+msgid "Farm soil moisture"
+msgstr ""
+
+msgid "Farm steam level"
+msgstr ""
+
+msgid "Farm electric consumption _"
+msgstr ""
+
+####
+# ESP32 Smart Home
+
+msgid "Home fan _"
+msgstr ""
+
+msgid "Home display _ in line _"
+msgstr ""
+
+msgid "Home _ the window"
+msgstr ""
+
+msgid "Home activate the door"
+msgstr ""
+
+msgid "Home play _ octave _ for _ ms"
+msgstr ""
+
+msgid "Home set light _"
+msgstr ""
+
+msgid "Home temperature ºC"
+msgstr ""
+
+msgid "Home humidity"
+msgstr ""
+
+msgid "Home steam level"
+msgstr ""
+
+msgid "Home read RFID card"
+msgstr ""
+
+msgid "Home movement detected?"
+msgstr ""
+
+msgid "Home _ button pressed?"
+msgstr ""
+
+msgid "Home gas detected?"
+msgstr ""
+
+msgid "Home set NeoPixels _ _ _ _"
+msgstr ""
+
+msgid "Home clear leds"
+msgstr ""
+
+msgid "Home electric consumption _"
+msgstr ""
+
+####
+# MQTT
+
+msgid "MQTT connect to broker _"
+msgstr ""
+
+msgid "buffer sizes _ client id _"
+msgstr ""
+
+msgid "username _ password _"
+msgstr ""
+
+msgid "MQTT connected"
+msgstr ""
+
+msgid "MQTT disconnect"
+msgstr ""
+
+msgid "MQTT sub _"
+msgstr ""
+
+msgid "testTopic"
+msgstr ""
+
+msgid "MQTT unsub _"
+msgstr ""
+
+msgid "MQTT pub topic _ payload _"
+msgstr ""
+
+msgid "Hello!"
+msgstr ""
+
+msgid "retain _ QoS _"
+msgstr ""
+
+msgid "MQTT event"
+msgstr ""
+
+msgid "binary _"
+msgstr ""
+
+msgid "topic for MQTT event _"
+msgstr ""
+
+msgid "payload for MQTT event _"
+msgstr ""
+
+msgid "MQTT set will topic _ payload _"
+msgstr ""
+
+msgid "testWill"
+msgstr ""
+
+msgid "Last will!"
+msgstr ""
+
+msgid "buffer sizes _"
+msgstr ""
+
+####
+# UDP
+
+msgid "UDP start port _"
+msgstr ""
+
+msgid "UDP stop"
+msgstr ""
+
+msgid "UDP send packet _ to ip _ port _"
+msgstr ""
+
+msgid "UDP receive packet"
+msgstr ""
+
+msgid "binary data _"
+msgstr ""
+
+msgid "UDP remote IP address"
+msgstr ""
+
+msgid "UDP remote port"
+msgstr ""
+
+####
+# WiFi Radio
+
+msgid "wifi send number _"
+msgstr ""
+
+msgid "wifi send string _"
+msgstr ""
+
+msgid "wifi send pair _ = _"
+msgstr ""
+
+msgid "wifi message received?"
+msgstr ""
+
+msgid "wifi last number"
+msgstr ""
+
+msgid "wifi last string"
+msgstr ""
+
+msgid "wifi set group _ (0-255)"
+msgstr ""
+
+####
+# Cutebot
+
+msgid "Cutebot"
+msgstr ""
+
+msgid "Cutebot set wheel left _ right _ (-100 to 100)"
+msgstr ""
+
+msgid "Cutebot stop wheels"
+msgstr ""
+
+msgid "Cutebot set servo _ to _ degrees (-90 to 90)"
+msgstr ""
+
+msgid "Cutebot set servo _ to speed _ (-100 to 100)"
+msgstr ""
+
+msgid "Cutebot set headlight _ to _"
+msgstr ""
+
+msgid "Cutebot set NeoPixel _ to _"
+msgstr ""
+
+msgid "Cutebot _ line sensor"
+msgstr ""
+
+msgid "Cutebot sees line on left _ right _"
+msgstr ""
+
+msgid "Cutebot distance (cm)"
+msgstr ""
+
+msgid "cutebotlight;left"
+msgstr ""
+
+msgid "cutebotlight;right"
+msgstr ""
+
+msgid "cutebotlight;both"
+msgstr ""
+
+msgid "cutebotside;left"
+msgstr ""
+
+msgid "cutebotside;right"
+msgstr ""
+
+####
+# Cutebot Pro
+
+msgid "cutebotwheel;left"
+msgstr ""
+
+msgid "cutebotwheel;right"
+msgstr ""
+
+msgid "cutebotwheel;both"
+msgstr ""
+
+msgid "cutebotlight;left"
+msgstr ""
+
+msgid "cutebotlight;right"
+msgstr ""
+
+msgid "cutebotlight;both"
+msgstr ""
+
+msgid "cutebotwheel;left"
+msgstr ""
+
+msgid "cutebotwheel;right"
+msgstr ""
+
+msgid "45 degrees"
+msgstr ""
+
+msgid "90 degrees"
+msgstr ""
+
+msgid "135 degrees"
+msgstr ""
+
+msgid "180 degrees"
+msgstr ""
+
+msgid "cutebot;forward"
+msgstr ""
+
+msgid "cutebot;backward"
+msgstr ""
+
+msgid "180 degree"
+msgstr ""
+
+msgid "270 degree"
+msgstr ""
+
+msgid "360 degree"
+msgstr ""
+
+msgid "cutebotturn;left"
+msgstr ""
+
+msgid "cutebotturn;right"
+msgstr ""
+
+msgid "cutebotturn;left-in-place"
+msgstr ""
+
+msgid "cutebotturn;right-in-place"
+msgstr ""
+
+msgid "CBPro set wheel speed left _ right _ (-60 to 60 cm/s)"
+msgstr ""
+
+msgid "CBPro speed of _ wheel (cm/s)"
+msgstr ""
+
+msgid "CBPro stop wheel _"
+msgstr ""
+
+msgid "CBPro stop all"
+msgstr ""
+
+msgid "CBPro move _ (-255 to 255 cm)"
+msgstr ""
+
+msgid "CBPro turn _ degrees"
+msgstr ""
+
+msgid "CBPro set headlight _ to _"
+msgstr ""
+
+msgid "CBPro set NeoPixel _ to _"
+msgstr ""
+
+msgid "CBPro distance (cm)"
+msgstr ""
+
+msgid "CBPro tracking state is (L - - R) _ _ _ _"
+msgstr ""
+
+msgid "CBPro tracking state"
+msgstr ""
+
+msgid "CBPro tracking offset"
+msgstr ""
+
+msgid "CBPro IR code received?"
+msgstr ""
+
+msgid "CBPro IR code"
+msgstr ""
+
+msgid "CBPro set _ servo _ angle to _ deg"
+msgstr ""
+
+msgid "CBPro servo _ speed to _ (-100 to 100)"
+msgstr ""
+
+msgid "CBPro set external motor power to _ (-100 to 100)"
+msgstr ""
+
+msgid "CBPro stop external motor"
+msgstr ""
+
+msgid "CBPro version"
+msgstr ""
+
+# Wukong
+
+msgid "Wukong"
+msgstr ""
+
+msgid "Wukong set motor _ to _ (-100 to 100)"
+msgstr ""
+
+msgid "Wukong stop motor _"
+msgstr ""
+
+msgid "Wukong stop all"
+msgstr ""
+
+msgid "Wukong set servo _ to _ degrees (-90 to 90)"
+msgstr ""
+
+msgid "Wukong set servo _ to speed _ (-100 to 100)"
+msgstr ""
+
+msgid "Wukong set NeoPixels _ _ _ _"
+msgstr ""
+
+msgid "Wukong set LED brightness to _"
+msgstr ""
+
+####
+# Sphero-RVR
+
+msgid "wake"
+msgstr ""
+
+msgid "sleep"
+msgstr ""
+
+msgid "reset the yaw"
+msgstr ""
+
+msgid "drive with speed _ and heading _"
+msgstr ""
+
+msgid "set raw motors with left mode _ left speed _ right mode _ right speed _"
+msgstr ""
+
+msgid "stop with heading _"
+msgstr ""
+
+msgid "set RGB LED _ to red _ green _ blue _"
+msgstr ""
+
+msgid "set all LEDs to red _ green _ blue _"
+msgstr ""
+
+####
+# Joystick:bit
+
+msgid "button _ is pressed"
+msgstr ""
+
+msgid "rocker value of _"
+msgstr ""
+
+msgid "motor vibrate for _ ms"
+msgstr ""
+
+####
+# NeZha
+
+msgid "NeZha"
+msgstr ""
+
+msgid "NeZha set motor _ speed to _ %"
+msgstr ""
+
+msgid "NeZha stop motor _"
+msgstr ""
+
+msgid "NeZha stop all motors"
+msgstr ""
+
+msgid "NeZha set _ servo _ angle to _"
+msgstr ""
+
+msgid "NeZha set continuous rotation servo _ speed to _ %"
+msgstr ""
+
+####
+# WuKong2040
+
+msgid "WuKong2040"
+msgstr ""
+
+msgid "WuKong2040 rainbowLED _ color to _"
+msgstr ""
+
+msgid "WuKong2040 rainbowLED _ R _ G _ B _ (0~255)"
+msgstr ""
+
+msgid "WuKong2040 clear all rainbowLED"
+msgstr ""
+
+msgid "WuKong2040 motor _ speed to _ (-100~100)"
+msgstr ""
+
+msgid "WuKong2040 stop motor _"
+msgstr ""
+
+msgid "WuKong2040 stop all motors"
+msgstr ""
+
+msgid "WuKong2040 buzzer beep _ ms"
+msgstr ""
+
+####
+# Octopus
+
+msgid "Octopus"
+msgstr ""
+
+msgid "Octopus LED pin _ toggle to _"
+msgstr ""
+
+msgid "Octopus LED pin _ brightness _ %"
+msgstr ""
+
+msgid "Octopus motor fan pin _ speed to _ %"
+msgstr ""
+
+msgid "Octopus 180° servo pin _ angle to _ ° (0~180)"
+msgstr ""
+
+msgid "Octopus sonar trig _ echo _ distance (cm)"
+msgstr ""
+
+msgid "Octopus value of light intensity (Lux) at pin _"
+msgstr ""
+
+msgid "Octopus value of DHT11 temperature (°C) at pin _"
+msgstr ""
+
+msgid "Octopus value of DHT11 humidity (0~100) at pin _"
+msgstr ""
+
+msgid "Octopus value of water level (0~40mm) at pin _"
+msgstr ""
+
+msgid "Octopus value of trimpot (0~1023) at pin _"
+msgstr ""
+
+msgid "Octopus value of noise (dB) at pin _"
+msgstr ""
+
+msgid "Octopus OLED show _ at x _ y _"
+msgstr ""
+
+msgid "Octopus OLED clear"
+msgstr ""
+
+msgid "Octopus OLED draw pixel x _ y _"
+msgstr ""
+
+msgid "Octopus OLED draw line from x _ y _ to x _ y _"
+msgstr ""
+
+msgid "Octopus OLED draw rectangle x _ y _ w _ h _ rounding _ (3~15)"
+msgstr ""
+
+msgid "Octopus OLED fill rectangle x _ y _ w _ h _"
+msgstr ""
+
+msgid "Octopus OLED draw circle x _ y _ radius _"
+msgstr ""
+
+msgid "Octopus OLED fill circle x _ y _ radius _"
+msgstr ""
+
+####
+# OctoStudio
+
+msgid "Octo beam to phones _"
+msgstr ""
+
+msgid "duration _ ms"
+msgstr ""
+
+msgid "Octo beam received?"
+msgstr ""
+
+msgid "Octo last beam"
+msgstr ""
+
+msgid "Octo set group _ (0-99)"
+msgstr ""
+
+msgid "Octo receive beam"
+msgstr ""
+
+msgid "Octo stop"
+msgstr ""
+
+##################
+# MicroBlocks UI #
+##################
+
+# buttons, error & info messages, dialog boxes, etc
+
+msgid "New"
+msgstr "Νέο"
+
+msgid "Open"
+msgstr "Άνοιξε"
+
+msgid "Open from board"
+msgstr "Άνοιξε από την κάρτα"
+
+msgid "Copy project URL to clipboard"
+msgstr ""
+
+msgid "Information"
+msgstr "Πληροφορία"
+
+msgid "Plug in the board."
+msgstr "Σύνδεσε την κάρτα "
+
+msgid "Plug in the board and click the USB icon to connect."
+msgstr ""
+
+msgid "Reading project from board..."
+msgstr "Διαβάζει το έργο από την κάρτα …"
+
+msgid "Loading project..."
+msgstr "Φορτώνει το έργο…"
+
+# %1 holds the name of the library
+msgid "Found a newer version of %1."
+msgstr "Βρέθηκε πιο νέα έκδοση από %1."
+
+msgid "Do you want me to update the one in the project?"
+msgstr "Επιθυμείς να ανανεώσω αυτό του έργου;"
+
+msgid "Save"
+msgstr "Αποθήκευσε"
+
+msgid "Connect"
+msgstr "Συνδέσου"
+
+msgid "connect"
+msgstr ""
+
+msgid "connect (BLE)"
+msgstr ""
+
+msgid "open Boardie"
+msgstr ""
+
+msgid "disconnect"
+msgstr "Αποσυνδέσου"
+
+msgid "Serial port:"
+msgstr "Σειριακή θύρα:"
+
+msgid "Connect board and try again"
+msgstr ""
+
+msgid "other..."
+msgstr "άλλα…"
+
+msgid "none"
+msgstr "κανένα"
+
+msgid "Port name?"
+msgstr "Όνομα θύρας;"
+
+msgid "Board type:"
+msgstr "Τύπος κάρτας:"
+
+msgid "Select board:"
+msgstr "Επιλογή κάρτας:"
+
+# %1 holds the firmware file name
+msgid "Could not read %1."
+msgstr "Δεν μπορεί να διαβάσει %1."
+
+msgid "about;by %1, %2 & %3."
+msgstr "από %1, %2 & %3."
+
+msgid "Created with GP"
+msgstr "Δημιουργήθηκε με GP"
+
+msgid "More info at http://microblocks.fun"
+msgstr "Περισσότερες πληροφορίες στο http://microblocks.fun"
+
+msgid "Script is too large to send to board."
+msgstr "Το κείμενο είναι πολύ μεγάλο για να σταλεί στην κάρτα"
+
+msgid "Use \"Connect\" button to connect to a MicroBlocks device."
+msgstr "Χρησιμοποίησε “Συνδέσου” για να συνδεθείς στη συσκευή MicroBlocks."
+
+msgid "No boards found; is your board plugged in?"
+msgstr "Δεν βρέθηκαν κάρτες, είναι συνδεδεμένη η κάρτα σου;"
+
+msgid "For AdaFruit boards, double-click reset button and try again."
+msgstr "Για τις κάρτες Adafruit, διπλό κλίκ στο κουμπί επαναφοράς (reset)και δοκίμασε ξανά."
+
+msgid "Only recent Chrome and Edge browsers support WebSerial."
+msgstr ""
+
+msgid "The board is not responding."
+msgstr "Η κάρτα δεν ανταποκρίνεται."
+
+msgid "Try to Install MicroBlocks on the board?"
+msgstr "Δοκίμασες να εγκαταστήσεις το Microblocks στην κάρτα;"
+
+msgid "The MicroBlocks in your board is not current"
+msgstr "Το Microblocks στην κάρτα σου δεν είναι το τελευταίο"
+
+msgid "Try to update MicroBlocks on the board?"
+msgstr "Προσπάθησες να εγκαταστήσεις το Microblocks στην κάρτα;"
+
+msgid "The firmware on the board is not compatible with this version of MicroBlocks."
+msgstr ""
+
+msgid "MicroBlocks"
+msgstr ""
+
+msgid "Stop"
+msgstr "Σταμάτα"
+
+msgid "Start"
+msgstr "Ξεκίνα"
+
+msgid "Quit MicroBlocks?"
+msgstr "Να σταματήσω το MicroBlocks;"
+
+msgid "Discard current project?"
+msgstr "Να μην αποθηκεύσω το τρέχων έργο;"
+
+# Scripting area right-click context menu
+
+msgid "set block size..."
+msgstr ""
+
+msgid "make blocks bigger or smaller"
+msgstr ""
+
+msgid "clean up"
+msgstr "καθαρισμός"
+
+msgid "arrange scripts"
+msgstr "Συγήρισε τα κείμενα"
+
+msgid "undrop (ctrl-Z)"
+msgstr ""
+
+msgid "undo the last block drop"
+msgstr ""
+
+msgid "copy all scripts to clipboard"
+msgstr "Αντίγραψε όλα τα κείμενα στο πρόχειρο"
+
+msgid "copy all scripts to clipboard as URL"
+msgstr ""
+
+msgid "paste all scripts"
+msgstr "Επικόλησε όλα τα κείμενα"
+
+msgid "paste script"
+msgstr "Επικόλησε κείμενο"
+
+msgid "paste script from clipboard"
+msgstr ""
+
+msgid "save a picture of all visible scripts"
+msgstr ""
+
+msgid "set exported script scale"
+msgstr ""
+
+msgid "small (50%)"
+msgstr ""
+
+msgid "normal (65%)"
+msgstr ""
+
+msgid "large (100%)"
+msgstr ""
+
+msgid "printable (200%)"
+msgstr ""
+
+msgid "duplicate selection"
+msgstr ""
+
+msgid "drag selection"
+msgstr ""
+
+msgid "delete selection"
+msgstr ""
+
+msgid "about..."
+msgstr "σχετικά…"
+
+msgid "About MicroBlocks"
+msgstr ""
+
+msgid "virtual machine version"
+msgstr "εικονική μηχανή έκδοση "
+
+msgid "update firmware on board"
+msgstr "επικαιροποίησε το firmware στην κάρτα"
+
+msgid "enable or disable BLE"
+msgstr ""
+
+msgid "Allow the attached board to be connected via BLE?"
+msgstr ""
+
+msgid "show data graph"
+msgstr "εμφάνισε την γραφική παράσταση"
+
+msgid "set serial delay"
+msgstr "όρισε την σειριακή καθυστέρηση"
+
+msgid "firmware version"
+msgstr "έκδοση firmware"
+
+msgid "HTTP Server"
+msgstr "HTTP εξυπηρετητής"
+
+msgid "MicroBlocks HTTP Server listening on port 6473"
+msgstr "MicroBlocks HTTP εξυπηρετητής ακούει στην θύρα 6473"
+
+msgid "disable autoloading board libraries"
+msgstr "απενεργοποίηση αυτόματης φόρτωσης των βιβλιοθηκών της κάρτας"
+
+msgid "compact code store"
+msgstr ""
+
+msgid "autoload board libraries"
+msgstr ""
+
+msgid "PlugShare when project empty"
+msgstr ""
+
+msgid "hide implementation blocks"
+msgstr ""
+
+msgid "do not show blocks and variables that are internal to libraries (i.e. those whose name begins with underscore)"
+msgstr ""
+
+msgid "show implementation blocks"
+msgstr ""
+
+msgid "show blocks and variables that are internal to libraries (i.e. those whose name begins with underscore)"
+msgstr ""
+
+msgid "when plugging a board, automatically read its contents into the IDE if the current project is empty"
+msgstr ""
+
+msgid "make the IDE darker"
+msgstr ""
+
+msgid "erase flash and update firmware on ESP board"
+msgstr ""
+
+msgid "install ESP firmware from URL"
+msgstr ""
+
+msgid "Use board type"
+msgstr "Χρησιμοποίηση κάρτας τύπου"
+
+msgid "Firmware Install"
+msgstr ""
+
+msgid "Firmware Installed"
+msgstr ""
+
+msgid "Reconnect to the board by clicking the \"Connect\" button (USB icon)."
+msgstr ""
+
+msgid "Connect USB cable while holding down the white BOOTSEL button before proceeding."
+msgstr ""
+
+msgid "You will be asked to save the firmware file."
+msgstr ""
+
+msgid "If your micro:bit shows a sad face, save the firmware.hex file to your disk then drop it onto the MICROBIT drive."
+msgstr ""
+
+msgid "Save the firmware file when prompted."
+msgstr ""
+
+# %1 holds the drive name
+msgid "Drag the firmware file you just saved to the %1 drive."
+msgstr ""
+
+msgid "Installing firmware..."
+msgstr ""
+
+msgid "Board not connected"
+msgstr ""
+
+msgid "Wiping board..."
+msgstr "Διαγράφει την κάρτα…"
+
+msgid "(press ESC to cancel)"
+msgstr ""
+
+msgid "Done!"
+msgstr "Έγινε!"
+
+msgid "download and install latest VM"
+msgstr "κατέβασε και εγκατάστησε το τελευταίο VM"
+
+msgid "Select board type:"
+msgstr "Επιλογή τύπου κάρτας:"
+
+msgid "Uploading MicroBlocks to board..."
+msgstr "Φορτώνει MicroBlocks στην κάρτα…"
+
+msgid "copy data to clipboard"
+msgstr "αντίγραψε δεδομένα στο πρόχειρο"
+
+msgid "clear data"
+msgstr "καθάρισε δεδομένα"
+
+msgid "clear memory and variables"
+msgstr "καθάρισε την μνήμη και τις μεταβλητές"
+
+msgid "show advanced blocks"
+msgstr "δείξε προχωρημένα blocks"
+
+msgid "export functions as library"
+msgstr "εξαγωγή λειτουργιών σαν βιβλιοθήκη"
+
+msgid "hide advanced blocks"
+msgstr "κρύψε προχωρημένα blocks"
+
+msgid "put file on board"
+msgstr ""
+
+msgid "get file from board"
+msgstr ""
+
+msgid "uploaded"
+msgstr ""
+
+msgid "downloaded"
+msgstr ""
+
+msgid "Data Graph"
+msgstr "Γραφική Παράσταση"
+
+msgid "Graph"
+msgstr ""
+
+msgid "clear graph"
+msgstr ""
+
+msgid "zero at bottom"
+msgstr ""
+
+msgid "zero in middle"
+msgstr ""
+
+msgid "export data to CSV file"
+msgstr ""
+
+msgid "import data from CSV file"
+msgstr ""
+
+msgid "copy graph data to clipboard"
+msgstr ""
+
+msgid "show instructions"
+msgstr "δείξε εντολές"
+
+msgid "show compiled bytes"
+msgstr ""
+
+msgid "expand"
+msgstr "επέκτεινε"
+
+msgid "collapse"
+msgstr "κατάρρευσε"
+
+msgid "rename..."
+msgstr "μετονομασία"
+
+msgid "find variable accessors"
+msgstr ""
+
+msgid "find scripts or block definitions where this variable is being read"
+msgstr ""
+
+msgid "find variable modifiers"
+msgstr ""
+
+msgid "find scripts or block definitions where this variable is being set or changed"
+msgstr ""
+
+msgid "find uses of this block"
+msgstr ""
+
+msgid "find scripts or block definitions using this block"
+msgstr ""
+
+msgid "show block definition..."
+msgstr "δείξε τον ορισμό του μπλοκ"
+
+msgid "show the definition of this block"
+msgstr "δείξε τον ορισμό αυτού του μπλοκ"
+
+msgid "delete block definition..."
+msgstr "διαγραφή ορισμού μπλοκ"
+
+msgid "delete the definition of this block"
+msgstr "διαγραφή του ορισμού αυτού του μπλοκ"
+
+msgid "duplicate"
+msgstr "αντίγραψε"
+
+msgid "help"
+msgstr ""
+
+msgid "duplicate this block"
+msgstr "αντίγραψε αυτό το μπλοκ"
+
+msgid "delete block"
+msgstr "διάγραψε το μπλοκ"
+
+msgid "delete this block"
+msgstr "διάγραψε αυτό το μπλοκ"
+
+msgid "just this one block"
+msgstr "μόνο αυτό το μπλοκ"
+
+msgid "copy to clipboard"
+msgstr "αντίγραψε στο πρόχειρο"
+
+msgid "copy to clipboard as URL"
+msgstr ""
+
+msgid "copy these blocks to the clipboard as a URL"
+msgstr ""
+
+msgid "copy these blocks to the clipboard"
+msgstr "αντίγραψε αυτά τα μπλοκ στο πρόχειρο"
+
+msgid "duplicate all"
+msgstr "αντιγραφή όλων"
+
+msgid "duplicate these blocks"
+msgstr "αντίγραψε αυτά τα μπλοκ"
+
+msgid "extract block"
+msgstr ""
+
+msgid "pull out this block"
+msgstr "τράβηξε έξω αυτό το μπλοκ"
+
+msgid "show help for this block in a browser"
+msgstr ""
+
+msgid "save picture of script"
+msgstr "αποθήκευσε φωτογραφία του κειμένου"
+
+msgid "save picture of script with result"
+msgstr ""
+
+msgid "save a picture of this block definition as a PNG file"
+msgstr "αποθήκευσε τον ορισμό αυτού του μπλοκ σε φωτογραφία σαν PNG  αρχείο"
+
+msgid "save a picture of these blocks as a PNG file"
+msgstr "αποθήκευσε φωτογραφία αυτών των μπλοκ σαν PNG  αρχείο"
+
+msgid "save a picture of these blocks and their result as a PNG file"
+msgstr ""
+
+msgid "copy script"
+msgstr "αντιγραφή κειμένου"
+
+msgid "script;delete"
+msgstr "διαγραφή"
+
+msgid "blockdef;delete"
+msgstr "διαγραφή"
+
+msgid "Input type:"
+msgstr "Τύπος Εισόδου:"
+
+msgid "string only"
+msgstr "μόνο συμβολοσειρά"
+
+msgid "string or number"
+msgstr "συμβολοσειρά ή αριθμός"
+
+msgid "number only"
+msgstr "αριθμός μόνο"
+
+msgid "stop editing"
+msgstr ""
+
+msgid "cut"
+msgstr ""
+
+msgid "copy"
+msgstr ""
+
+msgid "paste"
+msgstr ""
+
+msgid "accept"
+msgstr ""
+
+msgid "revert"
+msgstr ""
+
+msgid "select all"
+msgstr ""
+
+msgid "define"
+msgstr "όρισε"
+
+msgid "number/string"
+msgstr "αριθμός/συμβολοσειρά"
+
+msgid "editable number or string"
+msgstr "επεξεργάσιμος αριθμός ή συμβολοσειρά"
+
+msgid "label"
+msgstr "ετικέτα"
+
+msgid "input"
+msgstr "είσοδος"
+
+msgid "hide block definition"
+msgstr "κρύψε τον ορισμό μπλοκ"
+
+msgid "Are you sure you want to remove this block definition?"
+msgstr "Είσαι σίγουρος ότι επιθυμείς να αφαιρέσεις τον ορισμό του μπλοκ;"
+
+msgid "Language"
+msgstr "Γλώσσα"
+
+msgid "Custom..."
+msgstr "Προσαρμοσμένο…"
+
+msgid "Obsolete"
+msgstr "Ξεπερασμένο"
+
+msgid "OK"
+msgstr ""
+
+msgid "Ok"
+msgstr ""
+
+msgid "Yes"
+msgstr "Ναι"
+
+msgid "No"
+msgstr "Όχι"
+
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+msgid "Okay"
+msgstr ""
+
+msgid "Confirm"
+msgstr "Επιβεβαίωση"
+
+# Library folders
+
+msgid "LIBRARIES"
+msgstr ""
+
+msgid "libfolder;Libraries"
+msgstr "Βιβλιοθήκες"
+
+msgid "libfolder;AI"
+msgstr ""
+
+msgid "libfolder;Graphics and Displays"
+msgstr ""
+
+msgid "libfolder;Kits and Boards"
+msgstr ""
+
+msgid "libfolder;Network"
+msgstr ""
+
+msgid "libfolder;Motors"
+msgstr ""
+
+msgid "libfolder;Other"
+msgstr "Άλλα"
+
+msgid "libfolder;Robots"
+msgstr ""
+
+msgid "libfolder;Sensing"
+msgstr ""
+
+msgid "libfolder;Sound"
+msgstr "Ήχος"
+
+msgid "libfolder;System"
+msgstr ""
+
+msgid "libfolder;WorkInProgress"
+msgstr ""
+
+# File picker and library dialogs
+
+msgid "New library name?"
+msgstr ""
+
+msgid "show all block definitions"
+msgstr ""
+
+msgid "hide all block definitions"
+msgstr ""
+
+msgid "export this library"
+msgstr ""
+
+msgid "delete library"
+msgstr ""
+
+msgid "Examples"
+msgstr "Παραδείγματα"
+
+msgid "Desktop"
+msgstr "Οθόνη"
+
+msgid "Computer"
+msgstr "Υπολογιστής"
+
+msgid "Cloud"
+msgstr "Νέφος"
+
+msgid "File"
+msgstr "Αρχείο"
+
+msgid "File Open"
+msgstr "Αρχείο Ανοιγμα"
+
+msgid "File Save"
+msgstr "Αρχείο Αποθήκευση"
+
+msgid "File name:"
+msgstr "Αρχείο όνομα:"
+
+msgid "New Folder"
+msgstr "Νέος Φάκελος"
+
+msgid "libdata;by"
+msgstr "από"
+
+msgid "Depends:"
+msgstr "Εξαρτάται:"
+
+msgid "Tags:"
+msgstr "Ετικέτες:"
+
+msgid "Path, name or URL for library?"
+msgstr "Μονοπάτι, όνομα ή URL για βιβλιοθήκη;"
+
+msgid "Invalid URL"
+msgstr "‘Aκυρο URL"
+
+msgid "Could not fetch library."
+msgstr "Δεν μπόρεσε να φορτώσει την βιβλιοθήκη."
+
+msgid "Host does not exist or is currently down."
+msgstr "Οικοδεσπότης δεν υπάρχει ή δεν λειτουργεί"
+
+msgid "File not found in server."
+msgstr "Το αρχείο δεν βρέθηκε στον εξυπηρετητή."
+
+msgid "Server expects HTTPS, and MicroBlocks doesn't currently support it."
+msgstr "Εξυπηρετητής  αναμένει HTTPS,  αλλά  δεν υποστηρίζεται από το MicroBlocks"
+
+msgid "library information"
+msgstr "πληροφορία για την βιβλιοθήκη"
+
+msgid "built-in library"
+msgstr "ενσωματωμένη βιβλιοθήκη"
+
+msgid "Dependency path, name or URL?"
+msgstr "Εξαρτωμένη διαδρομή, όνομα ή URL;"
+
+msgid "If you are adding a library that's built into MicroBlocks, you can just enter its name."
+msgstr ""
+
+msgid "If your library is in the Libraries folder in your local MicroBlocks project folder, you need to prefix it with a slash (/)."
+msgstr ""
+
+msgid "If the library is hosted online, please input its full URL."
+msgstr ""
+
+msgid "Tag name?"
+msgstr "Όνομα Ετικέτας;"
+
+msgid "user library"
+msgstr ""
+
+msgid "Add Library"
+msgstr ""
+
+msgid "%1 seconds remaining"
+msgstr ""
+
+msgid "Decrease block size"
+msgstr ""
+
+msgid "Restore block size to 100%"
+msgstr ""
+
+msgid "Increase block size"
+msgstr ""
+
+############
+# Tips Bar #
+############
+
+msgid "Button"
+msgstr ""
+
+msgid "Boolean Input"
+msgstr ""
+
+msgid "[l] toggle value, or drop a reporter into it."
+msgstr ""
+
+msgid "Color Input"
+msgstr ""
+
+msgid "[l] change the color, or drop a reporter into it."
+msgstr ""
+
+msgid "Input"
+msgstr "Εισόδοι"
+
+msgid "[l] edit its value, or drop a reporter into it."
+msgstr ""
+
+msgid "Block Extension"
+msgstr ""
+
+msgid "[l] right arrow to show optional inputs, left arrow to hide."
+msgstr ""
+
+msgid "Command Block"
+msgstr ""
+
+msgid "[l] to run, or drag to build scripts. [r] menu."
+msgstr ""
+
+msgid "Hat Block"
+msgstr ""
+
+msgid "[l] to run, or drag to build scripts. [r] menu."
+msgstr ""
+
+msgid "Reporter Block"
+msgstr ""
+
+msgid "[l] to see value, or drop into an input slot. [r] menu."
+msgstr ""
+
+msgid "Script"
+msgstr ""
+
+msgid "[l] to run. [r] menu."
+msgstr ""
+
+msgid "Pane Divider"
+msgstr ""
+
+msgid "Drag to change pane width."
+msgstr ""
+
+msgid "Library"
+msgstr ""
+
+msgid "[l] to show the blocks in this library. [r] menu."
+msgstr ""
+
+msgid "Block Category"
+msgstr ""
+
+msgid "[l] to show the blocks in this category."
+msgstr ""
+
+msgid "Palette"
+msgstr ""
+
+msgid "Drag blocks from here to build scripts. Drop scripts here to delete them."
+msgstr ""
+
+msgid "Scripts Pane"
+msgstr ""
+
+msgid "Drag blocks here to build scripts. [r] menu."
+msgstr ""
+
+#################################
+# Block Descriptions for TipBar #
+#################################
+
+msgid "Turn the user LED on or off."
+msgstr ""
+
+msgid "Display a bubble showing the value."
+msgstr ""
+
+msgid "Graph the value."
+msgstr ""
+
+msgid "Report the state of button A ( (-o) or (o-) )."
+msgstr ""
+
+msgid "Report the state of button B ( (-o) or (o-) )."
+msgstr ""
+
+msgid "Report the milliseconds since the timer was last reset."
+msgstr ""
+
+msgid "Reset the timer."
+msgstr ""
+
+msgid "Report the seconds since power up."
+msgstr ""
+
+msgid "Report the milliseconds since power up."
+msgstr ""
+
+msgid "Report the microseconds since power up."
+msgstr ""
+
+msgid "Report the board type."
+msgstr ""
+
+msgid "Reports firmware version loaded on the board."
+msgstr ""
+
+msgid "Reports the three-letter BLE ID of the board if it supports BLE."
+msgstr ""
+
+msgid "Reports (-o) if a BLE client is connected."
+msgstr ""
+
+msgid "Report the milliseconds since the given start milliseconds. Handles clock wrap."
+msgstr ""
+
+msgid "Report the microseconds since the given start microseconds. Handles clock wrap."
+msgstr ""
+
+msgid "Reports (-o) if the board is connected to IDE."
+msgstr ""
+
+msgid "Report the electrical logic level on a digital pin ( (-o) or (o-) )."
+msgstr ""
+
+msgid "Report a number proportional to the voltage on an analog pin (0 = ground, 1023 = supply voltage)."
+msgstr ""
+
+msgid "Turn a pin on or off ( (-o) or (o-) )."
+msgstr ""
+
+msgid "Pulse width modulate (PWM) a pin with the given duty cycle (0 - 1023)."
+msgstr ""
+
+msgid "Report number of analog pins on this device."
+msgstr ""
+
+msgid "Report number of digital pins on this device."
+msgstr ""
+
+msgid "Report the value of a register (0-255) of an I2C device (0-127)."
+msgstr ""
+
+msgid "Set an I2C device and register to given value (0-255)."
+msgstr ""
+
+msgid "Receive multiple bytes from an I2C device."
+msgstr ""
+
+msgid "Send multiple bytes to an I2C device."
+msgstr ""
+
+msgid "Send a byte (0-255) to an SPI device."
+msgstr ""
+
+msgid "Read a byte from an SPI device while sending a zero byte. Report the byte received."
+msgstr ""
+
+msgid "Set the SPI clock speed, mode, channel (Raspberry Pi only), and bit order."
+msgstr ""
+
+msgid "Send a byte array via SPI, replacing its contents with the bytes received."
+msgstr ""
+
+msgid "Open the serial port at the given baud rate."
+msgstr ""
+
+msgid "Close the serial port."
+msgstr ""
+
+msgid "Report data received from the serial port (a byte array)."
+msgstr ""
+
+msgid "Send a byte array to the serial port."
+msgstr ""
+
+msgid "Send a byte array to the serial port, starting at the given byte."
+msgstr ""
+
+msgid "Write a byte to the pin at the specified baud rate."
+msgstr ""
+
+msgid "Run when the board powers up or when the IDE start button is clicked."
+msgstr ""
+
+msgid "Run when buttons A, B, or A+B are pressed."
+msgstr ""
+
+msgid "Repeat the enclosed blocks indefinitely."
+msgstr ""
+
+msgid "Repeat the enclosed blocks the given number of times."
+msgstr ""
+
+msgid "Wait the given number of milliseconds."
+msgstr ""
+
+msgid "Run the first set of blocks whose test condition is (-o) ."
+msgstr ""
+
+msgid "Run when the condition becomes (-o) ."
+msgstr ""
+
+msgid "Wait until the condition becomes (-o) ."
+msgstr ""
+
+msgid "Return (report) the given value from a function or script."
+msgstr ""
+
+msgid "Run when the given message is received as a broadcast."
+msgstr ""
+
+msgid "Broadcast the given message."
+msgstr ""
+
+msgid "Do nothing. Used to add notes and documentation."
+msgstr ""
+
+msgid "Report a list containing the given range of numbers (with optional increment). Useful in \"for\" loops."
+msgstr ""
+
+msgid "Repeat the enclosed blocks with the variable set to the current iteration number or item."
+msgstr ""
+
+msgid "Repeat the enclosed blocks until the condition becomes (-o) ."
+msgstr ""
+
+msgid "Stop this task."
+msgstr ""
+
+msgid "Stop all tasks except this one."
+msgstr ""
+
+msgid "Wait the given number of microseconds."
+msgstr ""
+
+msgid "Report the last broadcast message received."
+msgstr ""
+
+msgid "Report the given argument or defaultValue if the argument was not supplied by the caller."
+msgstr ""
+
+msgid "Call the function with the given name and optional parameter list."
+msgstr ""
+
+msgid "Call the function with the given name and optional parameter list and report its return value."
+msgstr ""
+
+msgid "Report the sum of the given numbers."
+msgstr ""
+
+msgid "Report the first number minus the second."
+msgstr ""
+
+msgid "Report the product of the given numbers."
+msgstr ""
+
+msgid "Report the first number divided by the second."
+msgstr ""
+
+msgid "Report the remainder of dividing the first number by the second."
+msgstr ""
+
+msgid "Report the absolute value of the given number (always >= 0)."
+msgstr ""
+
+msgid "Report the minimum of the values."
+msgstr ""
+
+msgid "Report the maximum of the values."
+msgstr ""
+
+msgid "Report a randomly chosen number in the given range."
+msgstr ""
+
+msgid "Report (-o) if the first value is less than the second one."
+msgstr ""
+
+msgid "Report (-o) if the first value is less than or equal to the second one."
+msgstr ""
+
+msgid "Report (-o) if the two values are equal."
+msgstr ""
+
+msgid "Report (-o) if the two values are not equal."
+msgstr ""
+
+msgid "Report (-o) if the first value is greater than or equal to the second one."
+msgstr ""
+
+msgid "Report (-o) if the first value is greater than the second one."
+msgstr ""
+
+msgid "Boolean constant ( (-o) or (o-) )."
+msgstr ""
+
+msgid "Report the logical inverse of a Boolean ( (-o) or (o-) ) value."
+msgstr ""
+
+msgid "Report (-o) if both values are (-o)"
+msgstr ""
+
+msgid "Report (-o) if either value is (-o)"
+msgstr ""
+
+msgid "Report (-o) if first input is a value of the given data type."
+msgstr ""
+
+msgid "Convert a value to the given data type."
+msgstr ""
+
+msgid "If the condition is (-o) report the first alternative otherwise report the second alternative."
+msgstr ""
+
+msgid "Map a value in the \"from\" range to the corresponding value in the \"to\" range."
+msgstr ""
+
+msgid "Report the numerical value of a hexadecimal string (range: -0x1FFFFFFF to 0x1FFFFFFF)"
+msgstr ""
+
+msgid "Report bitwise AND of two numbers."
+msgstr ""
+
+msgid "Report bitwise OR of two numbers."
+msgstr ""
+
+msgid "Report bitwise XOR (exclusive OR) of two numbers."
+msgstr ""
+
+msgid "Report bitwise inverse of the given number."
+msgstr ""
+
+msgid "Report the given number shifted left by the given number of bits."
+msgstr ""
+
+msgid "Report the given number shifted right by the given number of bits (arithmetic shift; sign is maintained)."
+msgstr ""
+
+msgid "Set a variable to the given value."
+msgstr ""
+
+msgid "Change a variable by the given amount."
+msgstr ""
+
+msgid "Create a variable local to the containing script with the given initial value."
+msgstr ""
+
+msgid "Report the Nth item of a list, string, or byte array."
+msgstr ""
+
+msgid "Report the number of items in a list, string, or byte array."
+msgstr ""
+
+msgid "Join (concatenate) the given lists, strings, or byte arrays and report the result."
+msgstr ""
+
+msgid "Create and report a short list containing the given items. Length limited by available stack space."
+msgstr ""
+
+msgid "Add an item to the end of a list."
+msgstr ""
+
+msgid "Replace the Nth item (or all items) of a list or byte array with the given value."
+msgstr ""
+
+msgid "Delete the Nth item (or all items) of a list."
+msgstr ""
+
+msgid "Find and report the index of an item in a list or a substring within a string. Report -1 if not found."
+msgstr ""
+
+msgid "Report a copy from the given index through the end (or optional stop index) of the given list, string, or byte array."
+msgstr ""
+
+msgid "Split the given string with the given delimiter and report the result (a list of strings)."
+msgstr ""
+
+msgid "Combine the items of a list into a string, optionally separated by a delimiter (e.g. comma)."
+msgstr ""
+
+msgid "Report the Unicode value (\"code point\") of the Nth character of the given string."
+msgstr ""
+
+msgid "Report a string containing the given Unicode value (\"code point\") or list of values."
+msgstr ""
+
+msgid "Report a new list of the given length filled with zero or the optional value."
+msgstr ""
+
+msgid "Report a new byte array of the given length filled with zero or the optional value."
+msgstr ""
+
+msgid "Report a byte array containing the UTF-8 bytes of the given string."
+msgstr ""
+
+msgid "Report the number of words of memory available. Stop button frees up memory."
+msgstr ""
+
+

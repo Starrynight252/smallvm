@@ -163,6 +163,8 @@ rescale _ from ( _ , _ ) to ( _ , _ )
 
 hex _
 
+sqrt _
+
 cat;Variables
 
 # Buttons on top of "Variables" category
@@ -416,7 +418,8 @@ PIR
 
 PIR at pin _ detected movement
 
-#### NeoPanel library
+####
+# NeoPanel library
 
 NeoPanel
 
@@ -857,7 +860,6 @@ square
 small square
 
 scissors
-
 
 ####
 # OLED Graphics library
@@ -1851,11 +1853,11 @@ s꞉b turn Stepper- _ (1-2) motor _ for _ _
 
 s꞉b set pin S- _ (1-8) to _ %
 
-sb_DC/Stepper_motors
+sb;DC/Stepper_motors
 
-sb_servomotors
+sb;servomotors
 
-sb_all_motors
+sb;all_motors
 
 turns
 
@@ -2427,7 +2429,6 @@ Octopus OLED draw circle x _ y _ radius _
 
 Octopus OLED fill circle x _ y _ radius _
 
-
 ####
 # OctoStudio
 
@@ -2469,7 +2470,8 @@ Reading project from board...
 
 Loading project...
 
-Found a newer version of
+# %1 holds the name of the library
+Found a newer version of %1.
 
 Do you want me to update the one in the project?
 
@@ -2499,17 +2501,14 @@ Board type:
 
 Select board:
 
-Could not read:
+# %1 holds the firmware file name
+Could not read %1.
 
 about;by %1, %2 & %3.
 
 Created with GP
 
 More info at http://microblocks.fun
-
-Function "
-
-" is too large to send to board.
 
 Script is too large to send to board.
 
@@ -2641,17 +2640,12 @@ Connect USB cable while holding down the white BOOTSEL button before proceeding.
 
 You will be asked to save the firmware file.
 
-Select
-
-as the destination drive, then click Save.
-
 If your micro:bit shows a sad face, save the firmware.hex file to your disk then drop it onto the MICROBIT drive.
 
 Save the firmware file when prompted.
 
-Drag the firmware file you just saved to the
-
-drive
+# %1 holds the drive name
+Drag the firmware file you just saved to the %1 drive.
 
 Installing firmware...
 
@@ -2931,7 +2925,7 @@ user library
 
 Add Library
 
-seconds remaining
+%1 seconds remaining
 
 Decrease block size
 
@@ -3164,8 +3158,6 @@ Convert a value to the given data type.
 If the condition is (-o) report the first alternative otherwise report the second alternative.
 
 Map a value in the "from" range to the corresponding value in the "to" range.
-
-sqrt _
 
 Report the numerical value of a hexadecimal string (range: -0x1FFFFFFF to 0x1FFFFFFF)
 

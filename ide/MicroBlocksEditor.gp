@@ -1376,7 +1376,7 @@ method setLanguage MicroBlocksEditor langCode {
 }
 
 method readCustomTranslationFile MicroBlocksEditor {
-	pickFileToOpen (action 'readCustomTranslation' this) nil (array '.txt')
+	pickFileToOpen (action 'readCustomTranslation' this) nil (array '.po')
 }
 
 method readCustomTranslation MicroBlocksEditor fName {

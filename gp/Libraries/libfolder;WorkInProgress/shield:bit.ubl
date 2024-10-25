@@ -5,7 +5,7 @@ tags keyestudio micro:bit
 description 'Provides custom blocks for the shield:bit. It has control for 4 DC motors, 2 Steppers, 1 Buzzer/Audio_out, 1 potenciometer and 4 neopixel LEDs'
 variables _sb_neoPixels _sb_neoPixels_on _ms_neoPixels_on _MiKe_circlePixels _tonePin _toneInitalized _pca9685_on _pca9685_prescale _pca9685_st_steps
 choices motorDirections clockwise 'counter-clockwise'
-choices motorTypes 'sb_all_motors' 'sb_servomotors' 'sb_DC/Stepper_motors'
+choices motorTypes 'sb;all_motors' 'sb;servomotors' 'sb;DC/Stepper_motors'
 choices stepperSteps turns degrees
 depends Color
 
@@ -15,7 +15,7 @@ depends Color
 	space
 	spec ' ' 'sb change audio output to shield' 's꞉b audio output to shield _' 'bool' true
 	space
-	spec ' ' 'sb stop motors' 's꞉b stop _' 'menu.motorTypes' 'sb_all_motors'
+	spec ' ' 'sb stop motors' 's꞉b stop _' 'menu.motorTypes' 'sb;all_motors'
 	space
 	spec ' ' 'sb turn 180 servo' 's꞉b turn 180 servo S- _ (1-8) to angle _' 'num num' 1 90
 	spec ' ' 'sb turn 360 servo' 's꞉b turn 360 servo S- _ (1-8) _ at _ %' 'num menu.motorDirections num' 1 'clockwise' 50
@@ -80,12 +80,12 @@ to 'sb change audio output to shield' on {
 
 to 'sb stop motors' type {
   if (not _pca9685_on) {'_pca9685_setup'}
-  if (or (type == 'DC/Steppers') (type == 'all')) {
+  if (or (type == 'sb;DC/Steppers') (type == 'sb;all_motors')) {
     for i 8 {
       '_pca9685_pwm' (i - 1) 0 0
     }
   }
-  if (or (type == 'servos') (type == 'all')) {
+  if (or (type == 'sb;servomotors') (type == 'sb;all_motors')) {
     for i 8 {
       '_pca9685_pwm' (i + 7) 0 0
     }

@@ -1,0 +1,4679 @@
+# MicroBlocks translation file
+# Last updated: October 03 2024
+
+#########################
+# Blocks and categories #
+#########################
+
+msgid "cat;Output"
+msgstr "Output"
+
+msgid "set user LED _"
+msgstr "set user LED _"
+
+msgid "say _"
+msgstr "say _"
+
+msgid "graph _"
+msgstr "graph _"
+
+msgid "cat;Input"
+msgstr "Input"
+
+msgid "button A"
+msgstr "button A"
+
+msgid "button B"
+msgstr "button B"
+
+msgid "timer"
+msgstr "timer"
+
+msgid "reset timer"
+msgstr "reset timer"
+
+msgid "microseconds"
+msgstr "microseconds"
+
+msgid "milliseconds"
+msgstr "milliseconds"
+
+msgid "board type"
+msgstr "board type"
+
+msgid "milliseconds since _"
+msgstr "milliseconds since _"
+
+msgid "end time _"
+msgstr "end time _"
+
+msgid "microseconds since _"
+msgstr "microseconds since _"
+
+msgid "connected to IDE"
+msgstr "connected to IDE"
+
+msgid "cat;Pins"
+msgstr "Pins"
+
+msgid "read digital pin _"
+msgstr "read digital pin _"
+
+msgid "read analog pin _"
+msgstr "read analog pin _"
+
+msgid "pullup _"
+msgstr "pullup _"
+
+msgid "set digital pin _ to _"
+msgstr "set digital pin _ to _"
+
+msgid "set pin _ to _"
+msgstr "set pin _ to _"
+
+msgid "analog pins"
+msgstr "analog pins"
+
+msgid "digital pins"
+msgstr "digital pins"
+
+msgid "cat;Control"
+msgstr "Control"
+
+msgid "when started"
+msgstr "when started"
+
+msgid "when button _ pressed"
+msgstr "when button _ pressed"
+
+msgid "forever _"
+msgstr "forever _"
+
+msgid "repeat _ _"
+msgstr "repeat _ _"
+
+msgid "wait _ millisecs"
+msgstr "wait _ millisecs"
+
+msgid "if _ _"
+msgstr "if _ _"
+
+msgid "if _ _ else _"
+msgstr "if _ _ else _"
+
+msgid "else if _ _"
+msgstr "else if _ _"
+
+msgid "else"
+msgstr "else"
+
+msgid "when _"
+msgstr "when _"
+
+msgid "wait until _"
+msgstr "wait until _"
+
+msgid "wait _ microsecs"
+msgstr "wait _ microsecs"
+
+msgid "return _"
+msgstr "return _"
+
+msgid "when _ received"
+msgstr "when _ received"
+
+msgid "go!"
+msgstr "go!"
+
+msgid "broadcast _"
+msgstr "broadcast _"
+
+msgid "comment _"
+msgstr "comment _"
+
+msgid "How this works..."
+msgstr "How this works..."
+
+msgid "range _ to _"
+msgstr "range _ to _"
+
+msgid "by _"
+msgstr "by _"
+
+msgid "for _ in _ _"
+msgstr "for _ in _ _"
+
+msgid "repeat until _ _"
+msgstr "repeat until _ _"
+
+msgid "stop this task"
+msgstr "stop this task"
+
+msgid "stop other tasks"
+msgstr "stop other tasks"
+
+msgid "stop all"
+msgstr "stop all"
+
+msgid "last message"
+msgstr "last message"
+
+msgid "arg _ default _"
+msgstr "arg _ default _"
+
+msgid "default"
+msgstr "default"
+
+msgid "call _"
+msgstr "call _"
+
+msgid "function name"
+msgstr "function name"
+
+msgid "parameter list"
+msgstr "parameter list"
+
+msgid "with _"
+msgstr "with _"
+
+msgid "cat;Operators"
+msgstr "Operators"
+
+msgid "_ mod _"
+msgstr "_ mod _"
+
+msgid "abs _"
+msgstr "abs _"
+
+msgid "min _ _"
+msgstr "min _ _"
+
+msgid "max _ _"
+msgstr "max _ _"
+
+msgid "random _ to _"
+msgstr "random _ to _"
+
+msgid "not _"
+msgstr "not _"
+
+msgid "_ and _"
+msgstr "_ and _"
+
+msgid "and _"
+msgstr "and _"
+
+msgid "_ or _"
+msgstr "_ or _"
+
+msgid "or _"
+msgstr "or _"
+
+msgid "_ is a _"
+msgstr "_ is a _"
+
+msgid "convert _ to _"
+msgstr "convert _ to _"
+
+msgid "if _ then _ else _"
+msgstr "if _ then _ else _"
+
+msgid "boolean"
+msgstr "boolean"
+
+msgid "number"
+msgstr "number"
+
+msgid "string"
+msgstr "string"
+
+msgid "list"
+msgstr "list"
+
+msgid "byte array"
+msgstr "byte array"
+
+msgid "cat;Advanced:"
+msgstr "Advanced:"
+
+msgid "rescale _ from ( _ , _ ) to ( _ , _ )"
+msgstr "rescale _ from ( _ , _ ) to ( _ , _ )"
+
+msgid "hex _"
+msgstr "hex _"
+
+msgid "sqrt _"
+msgstr "sqrt _"
+
+msgid "cat;Variables"
+msgstr "Variables"
+
+# Buttons on top of "Variables" category
+
+msgid "Add a variable"
+msgstr "Add a variable"
+
+msgid "Delete a variable"
+msgstr "Delete a variable"
+
+# New variable dialog
+
+msgid "New variable name?"
+msgstr "New variable name?"
+
+msgid "set _ to _"
+msgstr "set _ to _"
+
+msgid "change _ by _"
+msgstr "change _ by _"
+
+msgid "initialize local _ to _"
+msgstr "initialize local _ to _"
+
+msgid "cat;Data"
+msgstr "Data"
+
+msgid "list"
+msgstr "list"
+
+msgid "cat"
+msgstr "cat"
+
+msgid "dog"
+msgstr "dog"
+
+msgid "bird"
+msgstr "bird"
+
+msgid "fish"
+msgstr "fish"
+
+msgid "length of _"
+msgstr "length of _"
+
+msgid "item _ of _"
+msgstr "item _ of _"
+
+msgid "replace item _ of list _ with _"
+msgstr "replace item _ of list _ with _"
+
+msgid "delete item _ of list _"
+msgstr "delete item _ of list _"
+
+msgid "add _ to list _"
+msgstr "add _ to list _"
+
+msgid "join _ _"
+msgstr "join _ _"
+
+msgid "copy _ from _"
+msgstr "copy _ from _"
+
+msgid "smiles"
+msgstr "smiles"
+
+msgid "to _"
+msgstr "to _"
+
+msgid "find _ in _"
+msgstr "find _ in _"
+
+msgid "starting at _"
+msgstr "starting at _"
+
+msgid "join items of list _"
+msgstr "join items of list _"
+
+msgid "separator _"
+msgstr "separator _"
+
+msgid "unicode _ of _"
+msgstr "unicode _ of _"
+
+msgid "string from unicode _"
+msgstr "string from unicode _"
+
+msgid "new list length _"
+msgstr "new list length _"
+
+msgid "new byte array _"
+msgstr "new byte array _"
+
+msgid "as byte array _"
+msgstr "as byte array _"
+
+msgid "aByteListOrString"
+msgstr "aByteListOrString"
+
+msgid "with all _"
+msgstr "with all _"
+
+msgid "free memory"
+msgstr "free memory"
+
+msgid "all"
+msgstr "all"
+
+msgid "last"
+msgstr "last"
+
+msgid "random"
+msgstr "random"
+
+msgid "split _ by _"
+msgstr "split _ by _"
+
+msgid "cat;My Blocks"
+msgstr "My Blocks"
+
+msgid "cat;Generic"
+msgstr "Generic"
+
+# Buttons on top of "My Blocks" category
+
+msgid "Add a command block"
+msgstr "Add a command block"
+
+msgid "Add a reporter block"
+msgstr "Add a reporter block"
+
+# Make a block dialog
+
+msgid "Enter function name:"
+msgstr "Enter function name:"
+
+msgid "cat;Comm"
+msgstr "Comm"
+
+msgid "i2c get device _ register _"
+msgstr "i2c get device _ register _"
+
+msgid "i2c set device _ register _ to _"
+msgstr "i2c set device _ register _ to _"
+
+msgid "i2c device _ read list _"
+msgstr "i2c device _ read list _"
+
+msgid "i2c device _ write list _"
+msgstr "i2c device _ write list _"
+
+msgid "i2c device _ exists?"
+msgstr "i2c device _ exists?"
+
+msgid "spi send _"
+msgstr "spi send _"
+
+msgid "spi receive"
+msgstr "spi receive"
+
+msgid "spi setup speed _"
+msgstr "spi setup speed _"
+
+msgid "mode _"
+msgstr "mode _"
+
+msgid "rpi channel _"
+msgstr "rpi channel _"
+
+msgid "spi exchange bytes _"
+msgstr "spi exchange bytes _"
+
+msgid "aByteArray"
+msgstr "aByteArray"
+
+msgid "serial open _ baud"
+msgstr "serial open _ baud"
+
+msgid "serial close"
+msgstr "serial close"
+
+msgid "serial read"
+msgstr "serial read"
+
+msgid "serial write _"
+msgstr "serial write _"
+
+msgid "anIntegerStringListOrByteArray"
+msgstr "anIntegerStringListOrByteArray"
+
+msgid "serial write _ starting at _"
+msgstr "serial write _ starting at _"
+
+msgid "aStringListOrByteArray"
+msgstr "aStringListOrByteArray"
+
+msgid "soft serial write byte _ pin _ baud _"
+msgstr "soft serial write byte _ pin _ baud _"
+
+msgid "print _"
+msgstr "print _"
+
+msgid "no op"
+msgstr "no op"
+
+msgid "ignore"
+msgstr "ignore"
+
+##############
+# Primitives #
+##############
+
+# These are all mostly hidden from end users
+
+msgid "draw shape _ at x _ y _"
+msgstr "draw shape _ at x _ y _"
+
+msgid "shape for letter _"
+msgstr "shape for letter _"
+
+msgid "send NeoPixel rgb _"
+msgstr "send NeoPixel rgb _"
+
+msgid "has tone support"
+msgstr "has tone support"
+
+msgid "play tone pin _ frequency _"
+msgstr "play tone pin _ frequency _"
+
+msgid "has WiFi support"
+msgstr "has WiFi support"
+
+msgid "start WiFi _ password _"
+msgstr "start WiFi _ password _"
+
+msgid "stop WiFi"
+msgstr "stop WiFi"
+
+msgid "WiFi status"
+msgstr "WiFi status"
+
+msgid "my IP address"
+msgstr "my IP address"
+
+msgid "radio send number _"
+msgstr "radio send number _"
+
+msgid "radio send string _"
+msgstr "radio send string _"
+
+msgid "Hello!"
+msgstr "Hello!"
+
+msgid "radio send pair _ = _"
+msgstr "radio send pair _ = _"
+
+msgid "light"
+msgstr "light"
+
+msgid "radio message received?"
+msgstr "radio message received?"
+
+msgid "radio last number"
+msgstr "radio last number"
+
+msgid "radio last string"
+msgstr "radio last string"
+
+msgid "radio last message type"
+msgstr "radio last message type"
+
+msgid "radio set group _ (0-255)"
+msgstr "radio set group _ (0-255)"
+
+msgid "radio set channel (0-83) _"
+msgstr "radio set channel (0-83) _"
+
+msgid "radio set power (0-7) _"
+msgstr "radio set power (0-7) _"
+
+msgid "radio last signal strength"
+msgstr "radio last signal strength"
+
+msgid "radio receive packet _"
+msgstr "radio receive packet _"
+
+msgid "radio send packet _"
+msgstr "radio send packet _"
+
+msgid "disable radio"
+msgstr "disable radio"
+
+#############
+# Libraries #
+#############
+
+msgid "Basic Sensors"
+msgstr "Basic Sensors"
+
+msgid "tilt x"
+msgstr "tilt x"
+
+msgid "tilt y"
+msgstr "tilt y"
+
+msgid "tilt z"
+msgstr "tilt z"
+
+msgid "acceleration"
+msgstr "acceleration"
+
+msgid "light level"
+msgstr "light level"
+
+msgid "temperature (°C)"
+msgstr "temperature (°C)"
+
+msgid "magnetic field"
+msgstr "magnetic field"
+
+msgid "set acceleration range _ g = 100"
+msgstr "set acceleration range _ g = 100"
+
+####
+# NeoPixel library
+
+msgid "NeoPixel"
+msgstr "NeoPixel"
+
+msgid "set NeoPixels _ _ _ _ _ _ _ _ _ _"
+msgstr "set NeoPixels _ _ _ _ _ _ _ _ _ _"
+
+msgid "clear NeoPixels"
+msgstr "clear NeoPixels"
+
+msgid "set NeoPixel _ color _"
+msgstr "set NeoPixel _ color _"
+
+msgid "set all NeoPixels color _"
+msgstr "set all NeoPixels color _"
+
+msgid "rotate NeoPixels by _"
+msgstr "rotate NeoPixels by _"
+
+msgid "brighten NeoPixel _ by _"
+msgstr "brighten NeoPixel _ by _"
+
+msgid "brighten all NeoPixels by _"
+msgstr "brighten all NeoPixels by _"
+
+msgid "color r _ g _ b _ (0-255)"
+msgstr "color r _ g _ b _ (0-255)"
+
+msgid "random color"
+msgstr "random color"
+
+msgid "attach _ LED NeoPixel strip to pin _"
+msgstr "attach _ LED NeoPixel strip to pin _"
+
+msgid "has white _"
+msgstr "has white _"
+
+msgid "PIR"
+msgstr "PIR"
+
+msgid "PIR at pin _ detected movement"
+msgstr "PIR at pin _ detected movement"
+
+####
+# NeoPanel library
+
+msgid "NeoPanel"
+msgstr "NeoPanel"
+
+msgid "attach NeoPixel panel width _ height _ at pin _"
+msgstr "attach NeoPixel panel width _ height _ at pin _"
+
+msgid "NeoPanel set x _ y _ color _"
+msgstr "NeoPanel set x _ y _ color _"
+
+msgid "NeoPanel fill column _ color _"
+msgstr "NeoPanel fill column _ color _"
+
+msgid "NeoPanel fill row _ color _"
+msgstr "NeoPanel fill row _ color _"
+
+msgid "NeoPanel fill rectangle x _ y _ width _ height _ color _"
+msgstr "NeoPanel fill rectangle x _ y _ width _ height _ color _"
+
+msgid "NeoPanel draw text _ at x _ y _ color _"
+msgstr "NeoPanel draw text _ at x _ y _ color _"
+
+msgid "NeoPanel draw BMP file _ at x _ y _"
+msgstr "NeoPanel draw BMP file _ at x _ y _"
+
+####
+# Microphone library
+
+msgid "Microphone"
+msgstr "Microphone"
+
+msgid "microphone"
+msgstr "microphone"
+
+msgid "turn on microphone"
+msgstr "turn on microphone"
+
+msgid "loudness"
+msgstr "loudness"
+
+msgid "clap count"
+msgstr "clap count"
+
+msgid "set clap threshold _"
+msgstr "set clap threshold _"
+
+msgid "estimate clap threshold"
+msgstr "estimate clap threshold"
+
+####
+# Citilab ED1 board libraries
+
+msgid "ED1 Stepper Motor"
+msgstr "ED1 Stepper Motor"
+
+msgid "move motor _ _ steps _"
+msgstr "move motor _ _ steps _"
+
+msgid "move motor 1 _ and motor 2 _ _ steps"
+msgstr "move motor 1 _ and motor 2 _ _ steps"
+
+msgid "move motor _ angle _ °"
+msgstr "move motor _ angle _ °"
+
+msgid "move motor _ _ complete turns"
+msgstr "move motor _ _ complete turns"
+
+msgid "stop steppers"
+msgstr "stop steppers"
+
+msgid "clockwise"
+msgstr "clockwise"
+
+msgid "counter-clockwise"
+msgstr "counter-clockwise"
+
+msgid "ED1 Buttons"
+msgstr "ED1 Buttons"
+
+msgid "button OK"
+msgstr "button OK"
+
+msgid "button X"
+msgstr "button X"
+
+msgid "button up"
+msgstr "button up"
+
+msgid "button down"
+msgstr "button down"
+
+msgid "button left"
+msgstr "button left"
+
+msgid "button right"
+msgstr "button right"
+
+msgid "capacitive sensor _"
+msgstr "capacitive sensor _"
+
+msgid "set capacitive threshold to _"
+msgstr "set capacitive threshold to _"
+
+####
+# BirdBrain Technologies libraries
+
+msgid "Hummingbird LED _ _ %"
+msgstr "Hummingbird LED _ _ %"
+
+msgid "Hummingbird Tri-LED _ R _ % G _ % B _ %"
+msgstr "Hummingbird Tri-LED _ R _ % G _ % B _ %"
+
+msgid "Hummingbird Position Servo _ _ °"
+msgstr "Hummingbird Position Servo _ _ °"
+
+msgid "Hummingbird Rotation Servo _ _ %"
+msgstr "Hummingbird Rotation Servo _ _ %"
+
+msgid "Hummingbird _ _"
+msgstr "Hummingbird _ _"
+
+msgid "Hummingbird Battery (mV)"
+msgstr "Hummingbird Battery (mV)"
+
+msgid "humm;Light"
+msgstr "Light"
+
+msgid "humm;Distance (cm)"
+msgstr "Distance (cm)"
+
+msgid "humm;Dial"
+msgstr "Dial"
+
+msgid "humm;Sound"
+msgstr "Sound"
+
+msgid "humm;Other"
+msgstr "Other"
+
+msgid "Finch Beak Red _ Green _ Blue _"
+msgstr "Finch Beak Red _ Green _ Blue _"
+
+msgid "Finch Tail _ Red _ Green _ Blue _"
+msgstr "Finch Tail _ Red _ Green _ Blue _"
+
+msgid "Finch Move _ _ cm at _ %"
+msgstr "Finch Move _ _ cm at _ %"
+
+msgid "Finch Turn _ _ ° at _ %"
+msgstr "Finch Turn _ _ ° at _ %"
+
+msgid "Finch Wheels L _ % R _ %"
+msgstr "Finch Wheels L _ % R _ %"
+
+msgid "Finch Stop"
+msgstr "Finch Stop"
+
+msgid "Finch Distance (cm)"
+msgstr "Finch Distance (cm)"
+
+msgid "Finch _ Light"
+msgstr "Finch _ Light"
+
+msgid "Finch _ Line"
+msgstr "Finch _ Line"
+
+msgid "Finch Reset Encoders"
+msgstr "Finch Reset Encoders"
+
+msgid "Finch _ Encoder"
+msgstr "Finch _ Encoder"
+
+msgid "Finch Accelerometer _"
+msgstr "Finch Accelerometer _"
+
+msgid "Finch Battery"
+msgstr "Finch Battery"
+
+msgid "All"
+msgstr "All"
+
+msgid "Forward"
+msgstr "Forward"
+
+msgid "Backward"
+msgstr "Backward"
+
+msgid "Right"
+msgstr "Right"
+
+msgid "Left"
+msgstr "Left"
+
+msgid "Beak Up"
+msgstr "Beak Up"
+
+msgid "Beak Down"
+msgstr "Beak Down"
+
+msgid "Tilt Left"
+msgstr "Tilt Left"
+
+msgid "Tilt Right"
+msgstr "Tilt Right"
+
+msgid "Level"
+msgstr "Level"
+
+msgid "Upside Down"
+msgstr "Upside Down"
+
+msgid "x"
+msgstr "x"
+
+msgid "y"
+msgstr "y"
+
+msgid "z"
+msgstr "z"
+
+msgid "strength"
+msgstr "strength"
+
+####
+# Ultrasound distance library
+
+msgid "distance (cm) trigger _ echo _"
+msgstr "distance (cm) trigger _ echo _"
+
+####
+# Infrared remote library
+
+msgid "IR Remote"
+msgstr "IR Remote"
+
+msgid "receive IR code"
+msgstr "receive IR code"
+
+msgid "receive IR code from device _"
+msgstr "receive IR code from device _"
+
+msgid "test IR"
+msgstr "test IR"
+
+msgid "attach IR receiver to pin _"
+msgstr "attach IR receiver to pin _"
+
+msgid "IR transmit device _ command _"
+msgstr "IR transmit device _ command _"
+
+####
+# Keyboard and Mouse library
+
+msgid "Keyboard and Mouse"
+msgstr "Keyboard and Mouse"
+
+msgid "press key _"
+msgstr "press key _"
+
+msgid "while holding _"
+msgstr "while holding _"
+
+msgid "hold key _"
+msgstr "hold key _"
+
+msgid "release key _"
+msgstr "release key _"
+
+msgid "release all keys"
+msgstr "release all keys"
+
+msgid "kbd;Shift"
+msgstr "Shift"
+
+msgid "kbd;Control"
+msgstr "Control"
+
+msgid "kbd;Alt / ⌥"
+msgstr "Alt / ⌥"
+
+msgid "kbd;Logo / ⌘"
+msgstr "Logo / ⌘"
+
+msgid "kbd;AltGr"
+msgstr "AltGr"
+
+msgid "kbd;enter"
+msgstr "enter"
+
+msgid "kbd;return"
+msgstr "return"
+
+msgid "kbd;tab"
+msgstr "tab"
+
+msgid "kbd;backspace"
+msgstr "backspace"
+
+msgid "kbd;delete"
+msgstr "delete"
+
+msgid "kbd;insert"
+msgstr "insert"
+
+msgid "kbd;home"
+msgstr "home"
+
+msgid "kbd;end"
+msgstr "end"
+
+msgid "kbd;PgUp"
+msgstr "PgUp"
+
+msgid "kbd;PgDown"
+msgstr "PgDown"
+
+msgid "kbd;CapsLock"
+msgstr "CapsLock"
+
+msgid "kbd;NumLock"
+msgstr "NumLock"
+
+msgid "kbd;ScrollLock"
+msgstr "ScrollLock"
+
+msgid "kbd;PrintScreen"
+msgstr "PrintScreen"
+
+msgid "kbd;ESC"
+msgstr "ESC"
+
+msgid "_ mouse click"
+msgstr "_ mouse click"
+
+msgid "mouse;left"
+msgstr "left"
+
+msgid "mouse;right"
+msgstr "right"
+
+msgid "mouse;middle"
+msgstr "middle"
+
+msgid "mouse;both"
+msgstr "both"
+
+msgid "move mouse pointer by _ , _"
+msgstr "move mouse pointer by _ , _"
+
+msgid "scroll mouse by _"
+msgstr "scroll mouse by _"
+
+msgid "hold _ mouse button"
+msgstr "hold _ mouse button"
+
+msgid "release mouse buttons"
+msgstr "release mouse buttons"
+
+####
+# Lists library
+# Extra utilities for list manipulation and access
+
+msgid "Lists"
+msgstr "Lists"
+
+msgid "list _ contains _"
+msgstr "list _ contains _"
+
+msgid "circular item _ of _"
+msgstr "circular item _ of _"
+
+msgid "aListOrString"
+msgstr "aListOrString"
+
+msgid "map _ over _"
+msgstr "map _ over _"
+
+msgid "aFunction"
+msgstr "aFunction"
+
+msgid "filter _ with _"
+msgstr "filter _ with _"
+
+msgid "pick _ from _"
+msgstr "pick _ from _"
+
+msgid "a few"
+msgstr "a few"
+
+msgid "some"
+msgstr "some"
+
+msgid "most"
+msgstr "most"
+
+msgid "reverse _"
+msgstr "reverse _"
+
+msgid "shuffle _"
+msgstr "shuffle _"
+
+msgid "sort _"
+msgstr "sort _"
+
+msgid "unique _"
+msgstr "unique _"
+
+msgid "shuffled _"
+msgstr "shuffled _"
+
+msgid "reversed _"
+msgstr "reversed _"
+
+msgid "sorted _"
+msgstr "sorted _"
+
+msgid "uniqued _"
+msgstr "uniqued _"
+
+####
+# Pseudorandomness
+# Creates pseudorandom numbers and lists of numbers given a particular seed
+
+msgid "Pseudorandomness"
+msgstr "Pseudorandomness"
+
+msgid "pseudorandom _ to _ with seed _"
+msgstr "pseudorandom _ to _ with seed _"
+
+msgid "_ pseudorandom numbers _ to _ with seed _"
+msgstr "_ pseudorandom numbers _ to _ with seed _"
+
+####
+# BLE Keyboard library
+
+msgid "BLE Keyboard"
+msgstr "BLE Keyboard"
+
+msgid "start BLE Keyboard"
+msgstr "start BLE Keyboard"
+
+####
+# Radio comm library
+# Allows micro:bit boards to exchange messages
+# All of its blocks are primitive (see "Primitives" section)
+
+msgid "Radio"
+msgstr "Radio"
+
+####
+# Text scrolling library
+# Scrolls text on 5x5 LED displays and simulated ones
+
+msgid "Scrolling"
+msgstr "Scrolling"
+
+msgid "scroll text _"
+msgstr "scroll text _"
+
+msgid "HELLO ROSA!"
+msgstr "HELLO ROSA!"
+
+msgid "scroll number _"
+msgstr "scroll number _"
+
+msgid "pausing _ ms"
+msgstr "pausing _ ms"
+
+msgid "stop scrolling"
+msgstr "stop scrolling"
+
+####
+# Servo motor library
+
+msgid "Servo"
+msgstr "Servo"
+
+msgid "set servo _ to _ degrees (-90 to 90)"
+msgstr "set servo _ to _ degrees (-90 to 90)"
+
+msgid "set servo _ to speed _ (-100 to 100)"
+msgstr "set servo _ to speed _ (-100 to 100)"
+
+msgid "stop servo _"
+msgstr "stop servo _"
+
+####
+# 5x5 LED display library
+# Supports the micro:bit display, but also simulated 5x5 displays on boards
+# with differently sized LED arrays, NeoPixel arrays or TFT displays
+
+msgid "LED Display"
+msgstr "LED Display"
+
+msgid "display _"
+msgstr "display _"
+
+msgid "display image _"
+msgstr "display image _"
+
+msgid "clear display"
+msgstr "clear display"
+
+msgid "set display color _"
+msgstr "set display color _"
+
+msgid "plot x _ y _"
+msgstr "plot x _ y _"
+
+msgid "unplot x _ y _"
+msgstr "unplot x _ y _"
+
+msgid "display character _"
+msgstr "display character _"
+
+# Image names for the "display image" block
+
+msgid "heart"
+msgstr "heart"
+
+msgid "small heart"
+msgstr "small heart"
+
+msgid "yes"
+msgstr "yes"
+
+msgid "no"
+msgstr "no"
+
+msgid "happy"
+msgstr "happy"
+
+msgid "sad"
+msgstr "sad"
+
+msgid "confused"
+msgstr "confused"
+
+msgid "angry"
+msgstr "angry"
+
+msgid "asleep"
+msgstr "asleep"
+
+msgid "surprised"
+msgstr "surprised"
+
+msgid "silly"
+msgstr "silly"
+
+msgid "fabulous"
+msgstr "fabulous"
+
+msgid "meh"
+msgstr "meh"
+
+msgid "t-shirt"
+msgstr "t-shirt"
+
+msgid "roller skate"
+msgstr "roller skate"
+
+msgid "duck"
+msgstr "duck"
+
+msgid "house"
+msgstr "house"
+
+msgid "tortoise"
+msgstr "tortoise"
+
+msgid "butterfly"
+msgstr "butterfly"
+
+msgid "stick figure"
+msgstr "stick figure"
+
+msgid "ghost"
+msgstr "ghost"
+
+msgid "sword"
+msgstr "sword"
+
+msgid "giraffe"
+msgstr "giraffe"
+
+msgid "skull"
+msgstr "skull"
+
+msgid "umbrella"
+msgstr "umbrella"
+
+msgid "snake"
+msgstr "snake"
+
+msgid "rabbit"
+msgstr "rabbit"
+
+msgid "cow"
+msgstr "cow"
+
+msgid "quarter note"
+msgstr "quarter note"
+
+msgid "eight note"
+msgstr "eight note"
+
+msgid "pitchfork"
+msgstr "pitchfork"
+
+msgid "target"
+msgstr "target"
+
+msgid "triangle"
+msgstr "triangle"
+
+msgid "left triangle"
+msgstr "left triangle"
+
+msgid "chess board"
+msgstr "chess board"
+
+msgid "diamond"
+msgstr "diamond"
+
+msgid "small diamond"
+msgstr "small diamond"
+
+msgid "square"
+msgstr "square"
+
+msgid "small square"
+msgstr "small square"
+
+msgid "scissors"
+msgstr "scissors"
+
+####
+# OLED Graphics library
+
+msgid "initialize i2c _ address(hex) _ reset pin# _ flip _"
+msgstr "initialize i2c _ address(hex) _ reset pin# _ flip _"
+
+msgid "initialize spi _ d/c pin# _ reset pin# _ flip _"
+msgstr "initialize spi _ d/c pin# _ reset pin# _ flip _"
+
+msgid "write _ at x _ y _ inverse _"
+msgstr "write _ at x _ y _ inverse _"
+
+msgid "show display buffer"
+msgstr "show display buffer"
+
+msgid "clear"
+msgstr "clear"
+
+msgid "set contrast (1-4) _"
+msgstr "set contrast (1-4) _"
+
+msgid "draw circle at x _ y _ radius _ erase _"
+msgstr "draw circle at x _ y _ radius _ erase _"
+
+msgid "draw image _ at x _ y _"
+msgstr "draw image _ at x _ y _"
+
+msgid "draw line from x _ y _ to x _ y _ erase _"
+msgstr "draw line from x _ y _ to x _ y _ erase _"
+
+msgid "draw rectangle x _ y _ w _ h _ erase _ rounding(3-15) _"
+msgstr "draw rectangle x _ y _ w _ h _ erase _ rounding(3-15) _"
+
+msgid "fill rectangle x _ y _ w _ h _ erase _"
+msgstr "fill rectangle x _ y _ w _ h _ erase _"
+
+msgid "_flip display top _"
+msgstr "_flip display top _"
+
+msgid "make image _"
+msgstr "make image _"
+
+msgid "set pixel x _ y _ erase _"
+msgstr "set pixel x _ y _ erase _"
+
+msgid "set video _"
+msgstr "set video _"
+
+msgid "cursor location"
+msgstr "cursor location"
+
+msgid "defer display updates"
+msgstr "defer display updates"
+
+####
+# TFT display library
+
+msgid "clear TFT display "
+msgstr "clear TFT display "
+
+msgid "enable TFT _"
+msgstr "enable TFT _"
+
+msgid "TFT width"
+msgstr "TFT width"
+
+msgid "TFT height"
+msgstr "TFT height"
+
+msgid "set TFT pixel x _ y _ to _"
+msgstr "set TFT pixel x _ y _ to _"
+
+msgid "draw line on TFT from x _ y _ to x _ y _ color _"
+msgstr "draw line on TFT from x _ y _ to x _ y _ color _"
+
+msgid "draw vector x _ y _ angle _ length _ color _"
+msgstr "draw vector x _ y _ angle _ length _ color _"
+
+msgid "draw rectangle on TFT at x _ y _ width _ height _ color _"
+msgstr "draw rectangle on TFT at x _ y _ width _ height _ color _"
+
+msgid "draw rounded rectangle on TFT at x _ y _ width _ height _ radius _ color _"
+msgstr "draw rounded rectangle on TFT at x _ y _ width _ height _ radius _ color _"
+
+msgid "draw circle on TFT at x _ y _ radius _ color _"
+msgstr "draw circle on TFT at x _ y _ radius _ color _"
+
+msgid "draw triangle on TFT at x _ y _ , x _ y _ , x _ y _ color _"
+msgstr "draw triangle on TFT at x _ y _ , x _ y _ , x _ y _ color _"
+
+msgid "filled _"
+msgstr "filled _"
+
+msgid "write _ on TFT at x _ y _ color _"
+msgstr "write _ on TFT at x _ y _ color _"
+
+msgid "Hello World!"
+msgstr "Hello World!"
+
+msgid "scale _ wrap _"
+msgstr "scale _ wrap _"
+
+msgid "draw text _ on TFT at x _ y _ color _"
+msgstr "draw text _ on TFT at x _ y _ color _"
+
+msgid "scale _"
+msgstr "scale _"
+
+msgid "bg color _"
+msgstr "bg color _"
+
+msgid "draw bitmap _ palette _ on TFT at x _ y _"
+msgstr "draw bitmap _ palette _ on TFT at x _ y _"
+
+msgid "set TFT backlight _ (0-10)"
+msgstr "set TFT backlight _ (0-10)"
+
+msgid "gray _ %"
+msgstr "gray _ %"
+
+####
+# BMP library
+# Can display BMP image files on a TFT display
+
+msgid "display BMP file _ at x _ y _"
+msgstr "display BMP file _ at x _ y _"
+
+msgid "image.bmp"
+msgstr "image.bmp"
+
+####
+# Color library
+
+msgid "Color Operators"
+msgstr "Color Operators"
+
+msgid "color r _ g _ b _ (0-255)"
+msgstr "color r _ g _ b _ (0-255)"
+
+msgid "gray _ %"
+msgstr "gray _ %"
+
+msgid "random color"
+msgstr "random color"
+
+msgid "red _"
+msgstr "red _"
+
+msgid "green _"
+msgstr "green _"
+
+msgid "blue _"
+msgstr "blue _"
+
+msgid "color hue _ (0-360) saturation _ % brightness _ %"
+msgstr "color hue _ (0-360) saturation _ % brightness _ %"
+
+msgid "hue _"
+msgstr "hue _"
+
+msgid "saturation _"
+msgstr "saturation _"
+
+msgid "brightness _"
+msgstr "brightness _"
+
+msgid "_ with hue _ (0-360)"
+msgstr "_ with hue _ (0-360)"
+
+msgid "_ with saturation _ %"
+msgstr "_ with saturation _ %"
+
+msgid "_ with brightness _ %"
+msgstr "_ with brightness _ %"
+
+####
+# Fractions library
+
+msgid "Fractions"
+msgstr "Fractions"
+
+msgid "fract _ / _"
+msgstr "fract _ / _"
+
+msgid "fract _ + _"
+msgstr "fract _ + _"
+
+msgid "fract _ - _"
+msgstr "fract _ - _"
+
+msgid "fract _ × _"
+msgstr "fract _ × _"
+
+msgid "fract _ = _"
+msgstr "fract _ = _"
+
+msgid "fract _ < _"
+msgstr "fract _ < _"
+
+msgid "fract _ > _"
+msgstr "fract _ > _"
+
+msgid "simplify fraction _"
+msgstr "simplify fraction _"
+
+msgid "integer part of fraction _"
+msgstr "integer part of fraction _"
+
+msgid "numerator of fraction _"
+msgstr "numerator of fraction _"
+
+msgid "denominator of fraction _"
+msgstr "denominator of fraction _"
+
+msgid "gcd _ _"
+msgstr "gcd _ _"
+
+msgid "lcm _ _"
+msgstr "lcm _ _"
+
+####
+# Tone library
+# Generates music tones on buzzers
+
+msgid "Tone"
+msgstr "Tone"
+
+msgid "attach buzzer to pin _"
+msgstr "attach buzzer to pin _"
+
+msgid "play note _ octave _ for _ ms"
+msgstr "play note _ octave _ for _ ms"
+
+msgid "play frequency _ for _ ms"
+msgstr "play frequency _ for _ ms"
+
+msgid "play midi key _ for _ ms"
+msgstr "play midi key _ for _ ms"
+
+msgid "start tone _ Hz"
+msgstr "start tone _ Hz"
+
+msgid "stop tone"
+msgstr "stop tone"
+
+msgid "c"
+msgstr "c"
+
+msgid "c#"
+msgstr "c#"
+
+msgid "d"
+msgstr "d"
+
+msgid "d#"
+msgstr "d#"
+
+msgid "e"
+msgstr "e"
+
+msgid "f"
+msgstr "f"
+
+msgid "f#"
+msgstr "f#"
+
+msgid "g"
+msgstr "g"
+
+msgid "g#"
+msgstr "g#"
+
+msgid "a"
+msgstr "a"
+
+msgid "a#"
+msgstr "a#"
+
+msgid "b"
+msgstr "b"
+
+####
+# Ringtone library
+# Can play Nokring-formatted music. Also known as RTTTL.
+
+msgid "Ringtone"
+msgstr "Ringtone"
+
+msgid "play ringtone _"
+msgstr "play ringtone _"
+
+msgid "current song name"
+msgstr "current song name"
+
+####
+# Pluck
+# Generate music with plucked-string resembling sounds
+
+msgid "Pluck"
+msgstr "Pluck"
+
+msgid "pluck note _ octave _ for _ ms"
+msgstr "pluck note _ octave _ for _ ms"
+
+msgid "pluck MIDI key _ for _ msecs"
+msgstr "pluck MIDI key _ for _ msecs"
+
+msgid "set pluck pin _"
+msgstr "set pluck pin _"
+
+####
+# WAV
+# Play WAV sound files
+
+msgid "play WAV file _"
+msgstr "play WAV file _"
+
+msgid "filename"
+msgstr "filename"
+
+####
+# Rhythm
+# Send broadcasts -and call functions- according to a tempo and time signature.
+# Useful to create musical patterns
+
+msgid "Rhythm"
+msgstr "Rhythm"
+
+msgid "set tempo to _ bpm at _ / _ signature"
+msgstr "set tempo to _ bpm at _ / _ signature"
+
+msgid "set pattern to _ bars"
+msgstr "set pattern to _ bars"
+
+msgid "current beat"
+msgstr "current beat"
+
+msgid "current bar"
+msgstr "current bar"
+
+msgid "wait until next _ duration"
+msgstr "wait until next _ duration"
+
+msgid "wait until beat _"
+msgstr "wait until beat _"
+
+msgid "wait until bar _"
+msgstr "wait until bar _"
+
+####
+# MIDI
+# Control MIDI devices from MicroBlocks
+
+# General MIDI drum instrument names
+
+msgid "Acoustic Bass Drum"
+msgstr "Acoustic Bass Drum"
+
+msgid "Bass Drum 1"
+msgstr "Bass Drum 1"
+
+msgid "Side Stick"
+msgstr "Side Stick"
+
+msgid "Acoustic Snare"
+msgstr "Acoustic Snare"
+
+msgid "Hand Clap"
+msgstr "Hand Clap"
+
+msgid "Electric Snare"
+msgstr "Electric Snare"
+
+msgid "Low Floor Tom"
+msgstr "Low Floor Tom"
+
+msgid "Closed Hi-Hat"
+msgstr "Closed Hi-Hat"
+
+msgid "High Floor Tom"
+msgstr "High Floor Tom"
+
+msgid "Pedal Hi-Hat"
+msgstr "Pedal Hi-Hat"
+
+msgid "Low Tom"
+msgstr "Low Tom"
+
+msgid "Open Hi-Hat"
+msgstr "Open Hi-Hat"
+
+msgid "Low-Mid Tom"
+msgstr "Low-Mid Tom"
+
+msgid "Hi-Mid Tom"
+msgstr "Hi-Mid Tom"
+
+msgid "Crash Cymbal 1"
+msgstr "Crash Cymbal 1"
+
+msgid "High Tom"
+msgstr "High Tom"
+
+msgid "Ride Cymbal 1"
+msgstr "Ride Cymbal 1"
+
+msgid "Chinese Cymbal"
+msgstr "Chinese Cymbal"
+
+msgid "Ride Bell"
+msgstr "Ride Bell"
+
+msgid "Tambourine"
+msgstr "Tambourine"
+
+msgid "Splash Cymbal"
+msgstr "Splash Cymbal"
+
+msgid "Cowbell"
+msgstr "Cowbell"
+
+msgid "Crash Cymbal 2"
+msgstr "Crash Cymbal 2"
+
+msgid "Vibraslap"
+msgstr "Vibraslap"
+
+msgid "Ride Cymbal 2"
+msgstr "Ride Cymbal 2"
+
+msgid "Hi Bongo"
+msgstr "Hi Bongo"
+
+msgid "Low Bongo"
+msgstr "Low Bongo"
+
+msgid "Mute Hi Conga"
+msgstr "Mute Hi Conga"
+
+msgid "Open Hi Conga"
+msgstr "Open Hi Conga"
+
+msgid "Low Conga"
+msgstr "Low Conga"
+
+msgid "High Timbale"
+msgstr "High Timbale"
+
+msgid "Low Timbale"
+msgstr "Low Timbale"
+
+msgid "High Agogo"
+msgstr "High Agogo"
+
+msgid "Low Agogo"
+msgstr "Low Agogo"
+
+msgid "Cabasa"
+msgstr "Cabasa"
+
+msgid "Maracas"
+msgstr "Maracas"
+
+msgid "Short Whistle"
+msgstr "Short Whistle"
+
+msgid "Long Whistle"
+msgstr "Long Whistle"
+
+msgid "Short Guiro"
+msgstr "Short Guiro"
+
+msgid "Long Guiro"
+msgstr "Long Guiro"
+
+msgid "Claves"
+msgstr "Claves"
+
+msgid "Hi Wood Block"
+msgstr "Hi Wood Block"
+
+msgid "Low Wood Block"
+msgstr "Low Wood Block"
+
+msgid "Mute Cuica"
+msgstr "Mute Cuica"
+
+msgid "Open Cuica"
+msgstr "Open Cuica"
+
+msgid "Mute Triangle"
+msgstr "Mute Triangle"
+
+msgid "Open Triangle"
+msgstr "Open Triangle"
+
+# General MIDI instrument categories
+
+msgid "piano"
+msgstr "piano"
+
+msgid "chromatic percussion"
+msgstr "chromatic percussion"
+
+msgid "organ"
+msgstr "organ"
+
+msgid "guitar"
+msgstr "guitar"
+
+msgid "bass"
+msgstr "bass"
+
+msgid "strings"
+msgstr "strings"
+
+msgid "ensemble"
+msgstr "ensemble"
+
+msgid "brass"
+msgstr "brass"
+
+msgid "reed"
+msgstr "reed"
+
+msgid "pipe"
+msgstr "pipe"
+
+msgid "synth lead"
+msgstr "synth lead"
+
+msgid "synth pad"
+msgstr "synth pad"
+
+msgid "synth SFX"
+msgstr "synth SFX"
+
+msgid "ethnic"
+msgstr "ethnic"
+
+msgid "percussive"
+msgstr "percussive"
+
+msgid "gm;SFX"
+msgstr "SFX"
+
+# General MIDI drum sets
+
+msgid "standard"
+msgstr "standard"
+
+msgid "room"
+msgstr "room"
+
+msgid "power"
+msgstr "power"
+
+msgid "electronic"
+msgstr "electronic"
+
+msgid "TR-808"
+msgstr "TR-808"
+
+msgid "jazz"
+msgstr "jazz"
+
+msgid "brush"
+msgstr "brush"
+
+msgid "orchestra"
+msgstr "orchestra"
+
+msgid "drumkit;SFX"
+msgstr "SFX"
+
+msgid "CM-64/CM-32L"
+msgstr "CM-64/CM-32L"
+
+# General MIDI control changes
+
+msgid "bank select 1"
+msgstr "bank select 1"
+
+msgid "bank select 2"
+msgstr "bank select 2"
+
+msgid "modulation"
+msgstr "modulation"
+
+msgid "portamento time"
+msgstr "portamento time"
+
+msgid "volume"
+msgstr "volume"
+
+msgid "pan"
+msgstr "pan"
+
+msgid "expression"
+msgstr "expression"
+
+msgid "hold"
+msgstr "hold"
+
+msgid "portamento"
+msgstr "portamento"
+
+msgid "sostenuto"
+msgstr "sostenuto"
+
+msgid "soft"
+msgstr "soft"
+
+msgid "resonance"
+msgstr "resonance"
+
+msgid "release time"
+msgstr "release time"
+
+msgid "attack time"
+msgstr "attack time"
+
+msgid "cutoff"
+msgstr "cutoff"
+
+msgid "decay time"
+msgstr "decay time"
+
+msgid "vibrato rate"
+msgstr "vibrato rate"
+
+msgid "vibrato depth"
+msgstr "vibrato depth"
+
+msgid "vibrato delay"
+msgstr "vibrato delay"
+
+msgid "portamento control"
+msgstr "portamento control"
+
+msgid "effect 1"
+msgstr "effect 1"
+
+msgid "effect 2"
+msgstr "effect 2"
+
+# library blocks
+
+msgid "play MIDI note _ for _ ms on channel _ volume _"
+msgstr "play MIDI note _ for _ ms on channel _ volume _"
+
+msgid "stop all notes on channel _"
+msgstr "stop all notes on channel _"
+
+msgid "set MIDI note _ to _ on channel _ volume _"
+msgstr "set MIDI note _ to _ on channel _ volume _"
+
+msgid "note _ octave _ to MIDI key"
+msgstr "note _ octave _ to MIDI key"
+
+msgid "select MIDI instrument _ number _ for channel _"
+msgstr "select MIDI instrument _ number _ for channel _"
+
+msgid "select MIDI instrument _ for channel _"
+msgstr "select MIDI instrument _ for channel _"
+
+msgid "variation _"
+msgstr "variation _"
+
+msgid "instrument _ number _"
+msgstr "instrument _ number _"
+
+msgid "select MIDI drum kit _"
+msgstr "select MIDI drum kit _"
+
+msgid "play MIDI drum _ for _ ms volume _"
+msgstr "play MIDI drum _ for _ ms volume _"
+
+msgid "drum _"
+msgstr "drum _"
+
+msgid "change MIDI control _ on channel _ to _"
+msgstr "change MIDI control _ on channel _ to _"
+
+msgid "pitch bend MIDI channel _ to _ %"
+msgstr "pitch bend MIDI channel _ to _ %"
+
+msgid "send MIDI reset"
+msgstr "send MIDI reset"
+
+msgid "send MIDI start playing"
+msgstr "send MIDI start playing"
+
+msgid "send MIDI stop playing"
+msgstr "send MIDI stop playing"
+
+msgid "send MIDI continue playing"
+msgstr "send MIDI continue playing"
+
+msgid "set MIDI signal to pin _"
+msgstr "set MIDI signal to pin _"
+
+####
+# Scales & Chords
+# Abstractions for musical theory
+
+msgid "Scales & Chords"
+msgstr "Scales & Chords"
+
+# scale names
+
+msgid "ionian"
+msgstr "ionian"
+
+msgid "dorian"
+msgstr "dorian"
+
+msgid "phrygian"
+msgstr "phrygian"
+
+msgid "lydian"
+msgstr "lydian"
+
+msgid "mixolydian"
+msgstr "mixolydian"
+
+msgid "aeolian"
+msgstr "aeolian"
+
+msgid "locrian"
+msgstr "locrian"
+
+msgid "major"
+msgstr "major"
+
+msgid "minor"
+msgstr "minor"
+
+# chord types
+
+msgid "major"
+msgstr "major"
+
+msgid "minor"
+msgstr "minor"
+
+msgid "diminished"
+msgstr "diminished"
+
+msgid "major 7th"
+msgstr "major 7th"
+
+msgid "minor 7th"
+msgstr "minor 7th"
+
+msgid "Maj7"
+msgstr "Maj7"
+
+# sound destinations for arpeggiate block
+
+msgid "MIDI channel"
+msgstr "MIDI channel"
+
+msgid "tone pin"
+msgstr "tone pin"
+
+# library blocks
+
+msgid "_ scale root _"
+msgstr "_ scale root _"
+
+msgid "steps _"
+msgstr "steps _"
+
+msgid "pentatonic _ scale root _"
+msgstr "pentatonic _ scale root _"
+
+msgid "_ chord root _"
+msgstr "_ chord root _"
+
+msgid "_ chord for root _"
+msgstr "_ chord for root _"
+
+msgid "arpeggiate _ in order _ duration _ and volume _ on _ _"
+msgstr "arpeggiate _ in order _ duration _ and volume _ on _ _"
+
+msgid "improvised arpeggio over _ for _ bars with durations _"
+msgstr "improvised arpeggio over _ for _ bars with durations _"
+
+msgid "improvise over _ for _ bars with durations _ on _ _ volume _"
+msgstr "improvise over _ for _ bars with durations _ on _ _ volume _"
+
+msgid "_ transposed _ semitones"
+msgstr "_ transposed _ semitones"
+
+msgid "chord progression _ with root _"
+msgstr "chord progression _ with root _"
+
+msgid "and _ steps per chord"
+msgstr "and _ steps per chord"
+
+msgid "rotation _ of circle of 5ths _ M _ m _ º"
+msgstr "rotation _ of circle of 5ths _ M _ m _ º"
+
+####
+# Chiptune
+# Old-school sound generation on digital pins and DACs
+
+msgid "kick for _ ms on pin _"
+msgstr "kick for _ ms on pin _"
+
+msgid "tom for _ ms pitch shifted by _ on pin _"
+msgstr "tom for _ ms pitch shifted by _ on pin _"
+
+msgid "laser for _ ms with frequency _ speed _ on pin _"
+msgstr "laser for _ ms with frequency _ speed _ on pin _"
+
+msgid "noise for _ ms pitch shifted by _ on pin _"
+msgstr "noise for _ ms pitch shifted by _ on pin _"
+
+msgid "fade noise for _ ms pitch shifted by _ on DAC pin _"
+msgstr "fade noise for _ ms pitch shifted by _ on DAC pin _"
+
+msgid "snare for _ ms on DAC pin _"
+msgstr "snare for _ ms on DAC pin _"
+
+msgid "hihat for _ ms on DAC pin _"
+msgstr "hihat for _ ms on DAC pin _"
+
+####
+# Square Wave Chords
+# Play chords on 3 digital pins
+
+msgid "Square Wave Chords"
+msgstr "Square Wave Chords"
+
+msgid "play chord _ for _ ms"
+msgstr "play chord _ for _ ms"
+
+msgid "set digital chord pins _ _ _"
+msgstr "set digital chord pins _ _ _"
+
+####
+# Turtle geometry library
+
+msgid "Turtle"
+msgstr "Turtle"
+
+msgid "trtl;home"
+msgstr "home"
+
+msgid "move _"
+msgstr "move _"
+
+msgid "turn _ degrees"
+msgstr "turn _ degrees"
+
+msgid "turn _ / _ of circle"
+msgstr "turn _ / _ of circle"
+
+msgid "pen down"
+msgstr "pen down"
+
+msgid "pen up"
+msgstr "pen up"
+
+msgid "set pen color to _"
+msgstr "set pen color to _"
+
+msgid "set pen to random color"
+msgstr "set pen to random color"
+
+msgid "fill display with _"
+msgstr "fill display with _"
+
+msgid "go to x _ y _"
+msgstr "go to x _ y _"
+
+msgid "point in direction _"
+msgstr "point in direction _"
+
+####
+# File system library
+
+msgid "Files"
+msgstr "Files"
+
+msgid "open file _"
+msgstr "open file _"
+
+msgid "close file _"
+msgstr "close file _"
+
+msgid "delete file _"
+msgstr "delete file _"
+
+msgid "append line _ to file _"
+msgstr "append line _ to file _"
+
+msgid "append bytes _ to file _"
+msgstr "append bytes _ to file _"
+
+msgid "end of file _"
+msgstr "end of file _"
+
+msgid "next line of file _"
+msgstr "next line of file _"
+
+msgid "next _ bytes of file _"
+msgstr "next _ bytes of file _"
+
+msgid "read into _ from file _"
+msgstr "read into _ from file _"
+
+msgid "a ByteArray"
+msgstr "a ByteArray"
+
+msgid "starting at _"
+msgstr "starting at _"
+
+msgid "file names"
+msgstr "file names"
+
+msgid "in directory _"
+msgstr "in directory _"
+
+msgid "size of file _"
+msgstr "size of file _"
+
+msgid "file system info"
+msgstr "file system info"
+
+####
+# Strings
+# string (text) processing functions
+
+msgid "Strings"
+msgstr "Strings"
+
+msgid "_ is a digit"
+msgstr "_ is a digit"
+
+msgid "_ is lowercase"
+msgstr "_ is lowercase"
+
+msgid "_ is uppercase"
+msgstr "_ is uppercase"
+
+msgid "_ begins with _"
+msgstr "_ begins with _"
+
+msgid "prefix"
+msgstr "prefix"
+
+msgid "pre"
+msgstr "pre"
+
+msgid "_ ends with _"
+msgstr "_ ends with _"
+
+msgid "suffix"
+msgstr "suffix"
+
+msgid "fix"
+msgstr "fix"
+
+msgid "_ contains _"
+msgstr "_ contains _"
+
+msgid "lowercase _"
+msgstr "lowercase _"
+
+msgid "THIS is a String! :)"
+msgstr "THIS is a String! :)"
+
+msgid "uppercase _"
+msgstr "uppercase _"
+
+msgid "Hello, world!"
+msgstr "Hello, world!"
+
+msgid "_ without white space"
+msgstr "_ without white space"
+
+msgid "join string list _ separator _"
+msgstr "join string list _ separator _"
+
+msgid "unicodes _"
+msgstr "unicodes _"
+
+msgid "aString"
+msgstr "aString"
+
+msgid "string from unicodes _"
+msgstr "string from unicodes _"
+
+msgid "aList"
+msgstr "aList"
+
+msgid "num2str _"
+msgstr "num2str _"
+
+msgid "str2num _"
+msgstr "str2num _"
+
+####
+# WiFi library
+
+msgid "WiFi"
+msgstr "WiFi"
+
+msgid "wifi connect to _ password _"
+msgstr "wifi connect to _ password _"
+
+msgid "Network_Name"
+msgstr "Network_Name"
+
+msgid "IP _ gateway _ subnet _"
+msgstr "IP _ gateway _ subnet _"
+
+msgid "wifi create hotspot _ password _"
+msgstr "wifi create hotspot _ password _"
+
+msgid "Network_Password"
+msgstr "Network_Password"
+
+msgid "IP address"
+msgstr "IP address"
+
+msgid "MAC address"
+msgstr "MAC address"
+
+####
+# Motion library
+# Counts steps and detects motion via the internal accelerometer
+
+msgid "Motion"
+msgstr "Motion"
+
+msgid "motion"
+msgstr "motion"
+
+msgid "start step counter"
+msgstr "start step counter"
+
+msgid "step count"
+msgstr "step count"
+
+msgid "clear step count"
+msgstr "clear step count"
+
+msgid "set step threshold _ (0-50)"
+msgstr "set step threshold _ (0-50)"
+
+####
+# Button Events library
+
+msgid "Button Events"
+msgstr "Button Events"
+
+msgid "button _ double pressed"
+msgstr "button _ double pressed"
+
+msgid "button _ long pressed"
+msgstr "button _ long pressed"
+
+msgid "button _ pressed"
+msgstr "button _ pressed"
+
+####
+# Calliope board library
+
+msgid "Calliope set LED red _ green _ blue _"
+msgstr "Calliope set LED red _ green _ blue _"
+
+msgid "Calliope set speaker _"
+msgstr "Calliope set speaker _"
+
+msgid "Calliope loudness"
+msgstr "Calliope loudness"
+
+####
+# Circuit Playground Express board library
+
+msgid "Circuit Playground set speaker _"
+msgstr "Circuit Playground set speaker _"
+
+msgid "Circuit Playground slide switch"
+msgstr "Circuit Playground slide switch"
+
+####
+# DotStar LED library
+
+msgid "attach _ DotStar LEDs to data pin _ clock pin _"
+msgstr "attach _ DotStar LEDs to data pin _ clock pin _"
+
+msgid "set all DotStar LEDs to r _ g _ b _"
+msgstr "set all DotStar LEDs to r _ g _ b _"
+
+msgid "set DotStar LED _ to r _ g _ b _"
+msgstr "set DotStar LED _ to r _ g _ b _"
+
+msgid "set DotStar brightness _"
+msgstr "set DotStar brightness _"
+
+####
+# BME280 environmental sensor
+
+msgid "bme280 connected"
+msgstr "bme280 connected"
+
+msgid "bmp280 connected"
+msgstr "bmp280 connected"
+
+msgid "bmx280 temperature"
+msgstr "bmx280 temperature"
+
+msgid "bmx280 pressure"
+msgstr "bmx280 pressure"
+
+msgid "bme280 humidity"
+msgstr "bme280 humidity"
+
+msgid "bmx280 set base altitude _ meters"
+msgstr "bmx280 set base altitude _ meters"
+
+msgid "bmx280 altitude (cm)"
+msgstr "bmx280 altitude (cm)"
+
+msgid "bmx280 altitude (feet)"
+msgstr "bmx280 altitude (feet)"
+
+####
+# TCS34725 color sensor
+
+msgid "TCS34725 connected"
+msgstr "TCS34725 connected"
+
+msgid "TCS34725 rgb"
+msgstr "TCS34725 rgb"
+
+msgid "color _ name"
+msgstr "color _ name"
+
+####
+# DHT11 environmental sensor
+
+msgid "temperature (Celsius) DHT11 pin _"
+msgstr "temperature (Celsius) DHT11 pin _"
+
+msgid "humidity DHT11 pin _"
+msgstr "humidity DHT11 pin _"
+
+msgid "temperature (Celsius) DHT22 pin _"
+msgstr "temperature (Celsius) DHT22 pin _"
+
+msgid "humidity DHT22 pin _"
+msgstr "humidity DHT22 pin _"
+
+####
+# PN532 RFID reader
+
+msgid "read PN532 RFID"
+msgstr "read PN532 RFID"
+
+msgid "RFID _ = _"
+msgstr "RFID _ = _"
+
+msgid "get PN532 firmware version"
+msgstr "get PN532 firmware version"
+
+####
+# Touch Screen
+
+msgid "Touch Screen"
+msgstr "Touch Screen"
+
+msgid "TFT touched"
+msgstr "TFT touched"
+
+msgid "TFT touch X position"
+msgstr "TFT touch X position"
+
+msgid "TFT touch Y position"
+msgstr "TFT touch Y position"
+
+msgid "TFT touch pressure"
+msgstr "TFT touch pressure"
+
+####
+# HTTP Client
+
+msgid "HTTP client"
+msgstr "HTTP client"
+
+msgid "_ data _ to http #SVG#colon-double-slash _"
+msgstr "_ data _ to http #SVG#colon-double-slash _"
+
+msgid "MicroBlocks is fun"
+msgstr "MicroBlocks is fun"
+
+msgid "port _"
+msgstr "port _"
+
+####
+# HTTP Server
+
+msgid "HTTP server"
+msgstr "HTTP server"
+
+msgid "start HTTP server"
+msgstr "start HTTP server"
+
+msgid "HTTP server request"
+msgstr "HTTP server request"
+
+msgid "respond _ to HTTP request"
+msgstr "respond _ to HTTP request"
+
+msgid "with body _"
+msgstr "with body _"
+
+msgid "Welcome to the MicroBlocks HTTP server"
+msgstr "Welcome to the MicroBlocks HTTP server"
+
+msgid "and headers _"
+msgstr "and headers _"
+
+msgid "body of request _"
+msgstr "body of request _"
+
+msgid "path of request _"
+msgstr "path of request _"
+
+msgid "headers of request _"
+msgstr "headers of request _"
+
+msgid "method of request _"
+msgstr "method of request _"
+
+msgid "content length of request _"
+msgstr "content length of request _"
+
+####
+# WebSocket server
+
+msgid "WebSocket server"
+msgstr "WebSocket server"
+
+msgid "start WebSocket server"
+msgstr "start WebSocket server"
+
+msgid "last WebSocket event"
+msgstr "last WebSocket event"
+
+msgid "client ID for WebSocket event _"
+msgstr "client ID for WebSocket event _"
+
+msgid "payload for WebSocket event _"
+msgstr "payload for WebSocket event _"
+
+msgid "type of WebSocket event _"
+msgstr "type of WebSocket event _"
+
+msgid "send _ to WebSocket client _"
+msgstr "send _ to WebSocket client _"
+
+msgid "Hello, Client!"
+msgstr "Hello, Client!"
+
+####
+# Web Things library
+
+msgid "Web Thing"
+msgstr "Web Thing"
+
+msgid "set thing name to _"
+msgstr "set thing name to _"
+
+msgid "set thing capability to _"
+msgstr "set thing capability to _"
+
+msgid "set boolean property _ title _ @Type _"
+msgstr "set boolean property _ title _ @Type _"
+
+msgid "set string property _ title _ @Type _"
+msgstr "set string property _ title _ @Type _"
+
+msgid "set number property _ title _ @Type _"
+msgstr "set number property _ title _ @Type _"
+
+msgid "set number property _ title _ min _ max _ @Type _"
+msgstr "set number property _ title _ min _ max _ @Type _"
+
+msgid "read only _"
+msgstr "read only _"
+
+msgid "register event _ type _"
+msgstr "register event _ type _"
+
+msgid "start WebThing server"
+msgstr "start WebThing server"
+
+msgid "trigger event _"
+msgstr "trigger event _"
+
+msgid "thing description JSON"
+msgstr "thing description JSON"
+
+msgid "properties JSON"
+msgstr "properties JSON"
+
+msgid "event definitions JSON"
+msgstr "event definitions JSON"
+
+msgid "events JSON"
+msgstr "events JSON"
+
+####
+# Citilab Fantàstic Robot
+
+msgid "turn fantàstic _ degrees"
+msgstr "turn fantàstic _ degrees"
+
+msgid "move fantàstic _ mm"
+msgstr "move fantàstic _ mm"
+
+####
+# MiKe Robot library
+
+msgid "MiKe front obstacle (cm)"
+msgstr "MiKe front obstacle (cm)"
+
+msgid "MiKe _ obstacle ?"
+msgstr "MiKe _ obstacle ?"
+
+msgid "MiKe black line on _ ?"
+msgstr "MiKe black line on _ ?"
+
+msgid "MiKe back light"
+msgstr "MiKe back light"
+
+msgid "MiKe IR"
+msgstr "MiKe IR"
+
+msgid "MiKe digital D8 sensor"
+msgstr "MiKe digital D8 sensor"
+
+msgid "MiKe stop motors"
+msgstr "MiKe stop motors"
+
+msgid "MiKe Robot go _ at _ %"
+msgstr "MiKe Robot go _ at _ %"
+
+msgid "MiKe Robot speed _ %"
+msgstr "MiKe Robot speed _ %"
+
+msgid "MiKe Robot direction _"
+msgstr "MiKe Robot direction _"
+
+msgid "MiKe turn _ motor _"
+msgstr "MiKe turn _ motor _"
+
+msgid "MiKe speed _ motor at _ %"
+msgstr "MiKe speed _ motor at _ %"
+
+msgid "MiKe front lights off"
+msgstr "MiKe front lights off"
+
+msgid "MiKe front lights to _"
+msgstr "MiKe front lights to _"
+
+msgid "MiKe circle lights off"
+msgstr "MiKe circle lights off"
+
+msgid "MiKe circle ligths to _"
+msgstr "MiKe circle ligths to _"
+
+msgid "MiKe circle light _ (1-18) to _"
+msgstr "MiKe circle light _ (1-18) to _"
+
+msgid "MiKe rotate lights by _"
+msgstr "MiKe rotate lights by _"
+
+msgid "MiKe digital D8 to _"
+msgstr "MiKe digital D8 to _"
+
+####
+# Shield:bit
+
+msgid "s꞉b LEDs off"
+msgstr "s꞉b LEDs off"
+
+msgid "s꞉b LEDs to _"
+msgstr "s꞉b LEDs to _"
+
+msgid "s꞉b LED _ (1-4) to _"
+msgstr "s꞉b LED _ (1-4) to _"
+
+msgid "s꞉b audio output to shield _"
+msgstr "s꞉b audio output to shield _"
+
+msgid "s꞉b stop _"
+msgstr "s꞉b stop _"
+
+msgid "s꞉b turn 180 servo S- _ (1-8) to angle _"
+msgstr "s꞉b turn 180 servo S- _ (1-8) to angle _"
+
+msgid "s꞉b turn 360 servo S- _ (1-8) _ at _ %"
+msgstr "s꞉b turn 360 servo S- _ (1-8) _ at _ %"
+
+msgid "s꞉b turn DC M- _ (1-4) motor _ at _ %"
+msgstr "s꞉b turn DC M- _ (1-4) motor _ at _ %"
+
+msgid "s꞉b turn Stepper- _ (1-2) motor _ for _ _"
+msgstr "s꞉b turn Stepper- _ (1-2) motor _ for _ _"
+
+msgid "s꞉b set pin S- _ (1-8) to _ %"
+msgstr "s꞉b set pin S- _ (1-8) to _ %"
+
+msgid "sb;DC/Stepper_motors"
+msgstr "DC/Stepper motors"
+
+msgid "sb;servomotors"
+msgstr "servo motors"
+
+msgid "sb;all_motors"
+msgstr "all motors"
+
+msgid "turns"
+msgstr "turns"
+
+msgid "degrees"
+msgstr "degrees"
+
+####
+# micro:STEAMakers
+
+msgid "m꞉s display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
+msgstr "m꞉s display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
+
+msgid "m꞉s display #BR# _ #BR# with color _"
+msgstr "m꞉s display #BR# _ #BR# with color _"
+
+msgid "m꞉s display image _ with color _"
+msgstr "m꞉s display image _ with color _"
+
+msgid "m꞉s clear display"
+msgstr "m꞉s clear display"
+
+msgid "m꞉s scale brightness to _ %"
+msgstr "m꞉s scale brightness to _ %"
+
+msgid "m꞉s plot x _ y _ with _"
+msgstr "m꞉s plot x _ y _ with _"
+
+msgid "m꞉s unplot x _ y _"
+msgstr "m꞉s unplot x _ y _"
+
+msgid "m꞉s display character _ with _"
+msgstr "m꞉s display character _ with _"
+
+msgid "m꞉s scroll text _ with color _ "
+msgstr "m꞉s scroll text _ with color _ "
+
+msgid "m꞉s stop scrolling"
+msgstr "m꞉s stop scrolling"
+
+msgid "start micro꞉STEAMakers audio"
+msgstr "start micro꞉STEAMakers audio"
+
+msgid "m꞉s button _ ?"
+msgstr "m꞉s button _ ?"
+
+msgid "m꞉s touching ?"
+msgstr "m꞉s touching ?"
+
+msgid "m꞉s light %"
+msgstr "m꞉s light %"
+
+msgid "m꞉s sound %"
+msgstr "m꞉s sound %"
+
+msgid "m꞉s temperature ºC"
+msgstr "m꞉s temperature ºC"
+
+msgid "m꞉s humidity %"
+msgstr "m꞉s humidity %"
+
+msgid "m꞉s inclination towards _ º"
+msgstr "m꞉s inclination towards _ º"
+
+msgid "m꞉s energy _"
+msgstr "m꞉s energy _"
+
+msgid "m꞉s _ energy meter"
+msgstr "m꞉s _ energy meter"
+
+msgid "m꞉s energy consumption (µWh)"
+msgstr "m꞉s energy consumption (µWh)"
+
+msgid "ms;start"
+msgstr "start"
+
+msgid "ms;reset"
+msgstr "reset"
+
+msgid "ms;down"
+msgstr "down"
+
+####
+# DrawBot Library
+# A CoreXY plotter library that supports turtle geometry
+
+msgid "plotter move X _ Y _"
+msgstr "plotter move X _ Y _"
+
+msgid "plotter move _ steps"
+msgstr "plotter move _ steps"
+
+msgid "plotter turn _ degrees"
+msgstr "plotter turn _ degrees"
+
+msgid "plotter turn _ / _ of circle"
+msgstr "plotter turn _ / _ of circle"
+
+msgid "plotter point in direction _"
+msgstr "plotter point in direction _"
+
+msgid "plotter pen down"
+msgstr "plotter pen down"
+
+msgid "plotter pen up"
+msgstr "plotter pen up"
+
+msgid "plotter stop"
+msgstr "plotter stop"
+
+msgid "set plotter speed to _ %"
+msgstr "set plotter speed to _ %"
+
+####
+# Innova Didactic libraries
+
+msgid "red"
+msgstr "red"
+
+msgid "yellow"
+msgstr "yellow"
+
+msgid "green"
+msgstr "green"
+
+msgid "forward"
+msgstr "forward"
+
+msgid "backward"
+msgstr "backward"
+
+msgid "turn right"
+msgstr "turn right"
+
+msgid "turn left"
+msgstr "turn left"
+
+msgid "stop"
+msgstr "stop"
+
+msgid "right sensor"
+msgstr "right sensor"
+
+msgid "left sensor"
+msgstr "left sensor"
+
+msgid "both sensors"
+msgstr "both sensors"
+
+msgid "TdR test buzzer"
+msgstr "TdR test buzzer"
+
+msgid "TdR set blue LED _"
+msgstr "TdR set blue LED _"
+
+msgid "TdR set red LED _"
+msgstr "TdR set red LED _"
+
+msgid "TdR set RGB LED _"
+msgstr "TdR set RGB LED _"
+
+msgid "TdR clear RGB LED"
+msgstr "TdR clear RGB LED"
+
+msgid "TdR LM35 temperature ºC"
+msgstr "TdR LM35 temperature ºC"
+
+msgid "TdR DHT11 temperature ºC"
+msgstr "TdR DHT11 temperature ºC"
+
+msgid "TdR DHT11 humidity"
+msgstr "TdR DHT11 humidity"
+
+msgid "TdR rotation"
+msgstr "TdR rotation"
+
+msgid "TdR light level"
+msgstr "TdR light level"
+
+msgid "TdR button 1"
+msgstr "TdR button 1"
+
+msgid "TdR button 2"
+msgstr "TdR button 2"
+
+msgid "TdR receive IR code"
+msgstr "TdR receive IR code"
+
+msgid "Imagina set _ led to _"
+msgstr "Imagina set _ led to _"
+
+msgid "Imagina play _ octave _ for _ ms"
+msgstr "Imagina play _ octave _ for _ ms"
+
+msgid "Imagina temperature (°C)"
+msgstr "Imagina temperature (°C)"
+
+msgid "Imagina light"
+msgstr "Imagina light"
+
+msgid "Imagina distance (cm)"
+msgstr "Imagina distance (cm)"
+
+msgid "Imagina button (D2) pressed?"
+msgstr "Imagina button (D2) pressed?"
+
+msgid "Imagina digital reading _"
+msgstr "Imagina digital reading _"
+
+msgid "Imagina analog reading A1"
+msgstr "Imagina analog reading A1"
+
+msgid "Imagina set digital pin _ to _"
+msgstr "Imagina set digital pin _ to _"
+
+msgid "Imagina stop servo _"
+msgstr "Imagina stop servo _"
+
+msgid "Imagina set servo _ to _ degrees (-90 to 90)"
+msgstr "Imagina set servo _ to _ degrees (-90 to 90)"
+
+msgid "Imagina set servo _ to speed _ (-100 to 100)"
+msgstr "Imagina set servo _ to speed _ (-100 to 100)"
+
+msgid "Imagina set _ speed to _ %"
+msgstr "Imagina set _ speed to _ %"
+
+msgid "Imagina set _ to _"
+msgstr "Imagina set _ to _"
+
+msgid "Imagina IR reading"
+msgstr "Imagina IR reading"
+
+msgid "Imagina IR transmit device _ command _"
+msgstr "Imagina IR transmit device _ command _"
+
+msgid "_ steps"
+msgstr "_ steps"
+
+msgid "at _ % speed"
+msgstr "at _ % speed"
+
+msgid "3dBot set speed at _ %"
+msgstr "3dBot set speed at _ %"
+
+msgid "3dBot obstacle < _ cm?"
+msgstr "3dBot obstacle < _ cm?"
+
+msgid "3dBot line on _ ?"
+msgstr "3dBot line on _ ?"
+
+####
+# ESP32 Smart Farm
+
+msgid "voltage (V)"
+msgstr "voltage (V)"
+
+msgid "current (mA)"
+msgstr "current (mA)"
+
+msgid "power (mW)"
+msgstr "power (mW)"
+
+msgid "open"
+msgstr "open"
+
+msgid "close"
+msgstr "close"
+
+msgid "on"
+msgstr "on"
+
+msgid "off"
+msgstr "off"
+
+msgid "Farm fan _"
+msgstr "Farm fan _"
+
+msgid "start"
+msgstr "start"
+
+msgid "Farm display _ in line _"
+msgstr "Farm display _ in line _"
+
+msgid "Farm _ the trapdoor"
+msgstr "Farm _ the trapdoor"
+
+msgid "Farm play _ octave _ for _ ms"
+msgstr "Farm play _ octave _ for _ ms"
+
+msgid "Farm set light _"
+msgstr "Farm set light _"
+
+msgid "Farm water pump _"
+msgstr "Farm water pump _"
+
+msgid "Farm temperature ºC"
+msgstr "Farm temperature ºC"
+
+msgid "Farm humidity"
+msgstr "Farm humidity"
+
+msgid "Farm movement detected?"
+msgstr "Farm movement detected?"
+
+msgid "Farm button pressed?"
+msgstr "Farm button pressed?"
+
+msgid "Farm distance (cm)"
+msgstr "Farm distance (cm)"
+
+msgid "Farm light level"
+msgstr "Farm light level"
+
+msgid "Farm water level"
+msgstr "Farm water level"
+
+msgid "Farm soil moisture"
+msgstr "Farm soil moisture"
+
+msgid "Farm steam level"
+msgstr "Farm steam level"
+
+msgid "Farm electric consumption _"
+msgstr "Farm electric consumption _"
+
+####
+# ESP32 Smart Home
+
+msgid "Home fan _"
+msgstr "Home fan _"
+
+msgid "Home display _ in line _"
+msgstr "Home display _ in line _"
+
+msgid "Home _ the window"
+msgstr "Home _ the window"
+
+msgid "Home activate the door"
+msgstr "Home activate the door"
+
+msgid "Home play _ octave _ for _ ms"
+msgstr "Home play _ octave _ for _ ms"
+
+msgid "Home set light _"
+msgstr "Home set light _"
+
+msgid "Home temperature ºC"
+msgstr "Home temperature ºC"
+
+msgid "Home humidity"
+msgstr "Home humidity"
+
+msgid "Home steam level"
+msgstr "Home steam level"
+
+msgid "Home read RFID card"
+msgstr "Home read RFID card"
+
+msgid "Home movement detected?"
+msgstr "Home movement detected?"
+
+msgid "Home _ button pressed?"
+msgstr "Home _ button pressed?"
+
+msgid "Home gas detected?"
+msgstr "Home gas detected?"
+
+msgid "Home set NeoPixels _ _ _ _"
+msgstr "Home set NeoPixels _ _ _ _"
+
+msgid "Home clear leds"
+msgstr "Home clear leds"
+
+msgid "Home electric consumption _"
+msgstr "Home electric consumption _"
+
+####
+# MQTT
+
+msgid "MQTT connect to broker _"
+msgstr "MQTT connect to broker _"
+
+msgid "buffer sizes _ client id _"
+msgstr "buffer sizes _ client id _"
+
+msgid "username _ password _"
+msgstr "username _ password _"
+
+msgid "MQTT connected"
+msgstr "MQTT connected"
+
+msgid "MQTT disconnect"
+msgstr "MQTT disconnect"
+
+msgid "MQTT sub _"
+msgstr "MQTT sub _"
+
+msgid "testTopic"
+msgstr "testTopic"
+
+msgid "MQTT unsub _"
+msgstr "MQTT unsub _"
+
+msgid "MQTT pub topic _ payload _"
+msgstr "MQTT pub topic _ payload _"
+
+msgid "Hello!"
+msgstr "Hello!"
+
+msgid "retain _ QoS _"
+msgstr "retain _ QoS _"
+
+msgid "MQTT event"
+msgstr "MQTT event"
+
+msgid "binary _"
+msgstr "binary _"
+
+msgid "topic for MQTT event _"
+msgstr "topic for MQTT event _"
+
+msgid "payload for MQTT event _"
+msgstr "payload for MQTT event _"
+
+msgid "MQTT set will topic _ payload _"
+msgstr "MQTT set will topic _ payload _"
+
+msgid "testWill"
+msgstr "testWill"
+
+msgid "Last will!"
+msgstr "Last will!"
+
+msgid "buffer sizes _"
+msgstr "buffer sizes _"
+
+####
+# UDP
+
+msgid "UDP start port _"
+msgstr "UDP start port _"
+
+msgid "UDP stop"
+msgstr "UDP stop"
+
+msgid "UDP send packet _ to ip _ port _"
+msgstr "UDP send packet _ to ip _ port _"
+
+msgid "UDP receive packet"
+msgstr "UDP receive packet"
+
+msgid "binary data _"
+msgstr "binary data _"
+
+msgid "UDP remote IP address"
+msgstr "UDP remote IP address"
+
+msgid "UDP remote port"
+msgstr "UDP remote port"
+
+####
+# WiFi Radio
+
+msgid "wifi send number _"
+msgstr "wifi send number _"
+
+msgid "wifi send string _"
+msgstr "wifi send string _"
+
+msgid "wifi send pair _ = _"
+msgstr "wifi send pair _ = _"
+
+msgid "wifi message received?"
+msgstr "wifi message received?"
+
+msgid "wifi last number"
+msgstr "wifi last number"
+
+msgid "wifi last string"
+msgstr "wifi last string"
+
+msgid "wifi set group _ (0-255)"
+msgstr "wifi set group _ (0-255)"
+
+####
+# Cutebot
+
+msgid "Cutebot"
+msgstr "Cutebot"
+
+msgid "Cutebot set wheel left _ right _ (-100 to 100)"
+msgstr "Cutebot set wheel left _ right _ (-100 to 100)"
+
+msgid "Cutebot stop wheels"
+msgstr "Cutebot stop wheels"
+
+msgid "Cutebot set servo _ to _ degrees (-90 to 90)"
+msgstr "Cutebot set servo _ to _ degrees (-90 to 90)"
+
+msgid "Cutebot set servo _ to speed _ (-100 to 100)"
+msgstr "Cutebot set servo _ to speed _ (-100 to 100)"
+
+msgid "Cutebot set headlight _ to _"
+msgstr "Cutebot set headlight _ to _"
+
+msgid "Cutebot set NeoPixel _ to _"
+msgstr "Cutebot set NeoPixel _ to _"
+
+msgid "Cutebot _ line sensor"
+msgstr "Cutebot _ line sensor"
+
+msgid "Cutebot sees line on left _ right _"
+msgstr "Cutebot sees line on left _ right _"
+
+msgid "Cutebot distance (cm)"
+msgstr "Cutebot distance (cm)"
+
+msgid "cutebotlight;left"
+msgstr "left"
+
+msgid "cutebotlight;right"
+msgstr "right"
+
+msgid "cutebotlight;both"
+msgstr "both"
+
+msgid "cutebotside;left"
+msgstr "left"
+
+msgid "cutebotside;right"
+msgstr "right"
+
+####
+# Cutebot Pro
+
+msgid "cutebotwheel;left"
+msgstr "left"
+
+msgid "cutebotwheel;right"
+msgstr "right"
+
+msgid "cutebotwheel;both"
+msgstr "both"
+
+msgid "cutebotlight;left"
+msgstr "left"
+
+msgid "cutebotlight;right"
+msgstr "right"
+
+msgid "cutebotlight;both"
+msgstr "both"
+
+msgid "cutebotwheel;left"
+msgstr "left"
+
+msgid "cutebotwheel;right"
+msgstr "right"
+
+msgid "45 degrees"
+msgstr "45 degrees"
+
+msgid "90 degrees"
+msgstr "90 degrees"
+
+msgid "135 degrees"
+msgstr "135 degrees"
+
+msgid "180 degrees"
+msgstr "180 degrees"
+
+msgid "cutebot;forward"
+msgstr "forward"
+
+msgid "cutebot;backward"
+msgstr "backward"
+
+msgid "180 degree"
+msgstr "180 degree"
+
+msgid "270 degree"
+msgstr "270 degree"
+
+msgid "360 degree"
+msgstr "360 degree"
+
+msgid "cutebotturn;left"
+msgstr "left"
+
+msgid "cutebotturn;right"
+msgstr "right"
+
+msgid "cutebotturn;left-in-place"
+msgstr "left-in-place"
+
+msgid "cutebotturn;right-in-place"
+msgstr "right-in-place"
+
+msgid "CBPro set wheel speed left _ right _ (-60 to 60 cm/s)"
+msgstr "CBPro set wheel speed left _ right _ (-60 to 60 cm/s)"
+
+msgid "CBPro speed of _ wheel (cm/s)"
+msgstr "CBPro speed of _ wheel (cm/s)"
+
+msgid "CBPro stop wheel _"
+msgstr "CBPro stop wheel _"
+
+msgid "CBPro stop all"
+msgstr "CBPro stop all"
+
+msgid "CBPro move _ (-255 to 255 cm)"
+msgstr "CBPro move _ (-255 to 255 cm)"
+
+msgid "CBPro turn _ degrees"
+msgstr "CBPro turn _ degrees"
+
+msgid "CBPro set headlight _ to _"
+msgstr "CBPro set headlight _ to _"
+
+msgid "CBPro set NeoPixel _ to _"
+msgstr "CBPro set NeoPixel _ to _"
+
+msgid "CBPro distance (cm)"
+msgstr "CBPro distance (cm)"
+
+msgid "CBPro tracking state is (L - - R) _ _ _ _"
+msgstr "CBPro tracking state is (L - - R) _ _ _ _"
+
+msgid "CBPro tracking state"
+msgstr "CBPro tracking state"
+
+msgid "CBPro tracking offset"
+msgstr "CBPro tracking offset"
+
+msgid "CBPro IR code received?"
+msgstr "CBPro IR code received?"
+
+msgid "CBPro IR code"
+msgstr "CBPro IR code"
+
+msgid "CBPro set _ servo _ angle to _ deg"
+msgstr "CBPro set _ servo _ angle to _ deg"
+
+msgid "CBPro servo _ speed to _ (-100 to 100)"
+msgstr "CBPro servo _ speed to _ (-100 to 100)"
+
+msgid "CBPro set external motor power to _ (-100 to 100)"
+msgstr "CBPro set external motor power to _ (-100 to 100)"
+
+msgid "CBPro stop external motor"
+msgstr "CBPro stop external motor"
+
+msgid "CBPro version"
+msgstr "CBPro version"
+
+# Wukong
+
+msgid "Wukong"
+msgstr "Wukong"
+
+msgid "Wukong set motor _ to _ (-100 to 100)"
+msgstr "Wukong set motor _ to _ (-100 to 100)"
+
+msgid "Wukong stop motor _"
+msgstr "Wukong stop motor _"
+
+msgid "Wukong stop all"
+msgstr "Wukong stop all"
+
+msgid "Wukong set servo _ to _ degrees (-90 to 90)"
+msgstr "Wukong set servo _ to _ degrees (-90 to 90)"
+
+msgid "Wukong set servo _ to speed _ (-100 to 100)"
+msgstr "Wukong set servo _ to speed _ (-100 to 100)"
+
+msgid "Wukong set NeoPixels _ _ _ _"
+msgstr "Wukong set NeoPixels _ _ _ _"
+
+msgid "Wukong set LED brightness to _"
+msgstr "Wukong set LED brightness to _"
+
+####
+# Sphero-RVR
+
+msgid "wake"
+msgstr "wake"
+
+msgid "sleep"
+msgstr "sleep"
+
+msgid "reset the yaw"
+msgstr "reset the yaw"
+
+msgid "drive with speed _ and heading _"
+msgstr "drive with speed _ and heading _"
+
+msgid "set raw motors with left mode _ left speed _ right mode _ right speed _"
+msgstr "set raw motors with left mode _ left speed _ right mode _ right speed _"
+
+msgid "stop with heading _"
+msgstr "stop with heading _"
+
+msgid "set RGB LED _ to red _ green _ blue _"
+msgstr "set RGB LED _ to red _ green _ blue _"
+
+msgid "set all LEDs to red _ green _ blue _"
+msgstr "set all LEDs to red _ green _ blue _"
+
+####
+# Joystick:bit
+
+msgid "button _ is pressed"
+msgstr "button _ is pressed"
+
+msgid "rocker value of _"
+msgstr "rocker value of _"
+
+msgid "motor vibrate for _ ms"
+msgstr "motor vibrate for _ ms"
+
+####
+# NeZha
+
+msgid "NeZha"
+msgstr "NeZha"
+
+msgid "NeZha set motor _ speed to _ %"
+msgstr "NeZha set motor _ speed to _ %"
+
+msgid "NeZha stop motor _"
+msgstr "NeZha stop motor _"
+
+msgid "NeZha stop all motors"
+msgstr "NeZha stop all motors"
+
+msgid "NeZha set _ servo _ angle to _"
+msgstr "NeZha set _ servo _ angle to _"
+
+msgid "NeZha set continuous rotation servo _ speed to _ %"
+msgstr "NeZha set continuous rotation servo _ speed to _ %"
+
+####
+# WuKong2040
+
+msgid "WuKong2040"
+msgstr "WuKong2040"
+
+msgid "WuKong2040 rainbowLED _ color to _"
+msgstr "WuKong2040 rainbowLED _ color to _"
+
+msgid "WuKong2040 rainbowLED _ R _ G _ B _ (0~255)"
+msgstr "WuKong2040 rainbowLED _ R _ G _ B _ (0~255)"
+
+msgid "WuKong2040 clear all rainbowLED"
+msgstr "WuKong2040 clear all rainbowLED"
+
+msgid "WuKong2040 motor _ speed to _ (-100~100)"
+msgstr "WuKong2040 motor _ speed to _ (-100~100)"
+
+msgid "WuKong2040 stop motor _"
+msgstr "WuKong2040 stop motor _"
+
+msgid "WuKong2040 stop all motors"
+msgstr "WuKong2040 stop all motors"
+
+msgid "WuKong2040 buzzer beep _ ms"
+msgstr "WuKong2040 buzzer beep _ ms"
+
+####
+# Octopus
+
+msgid "Octopus"
+msgstr "Octopus"
+
+msgid "Octopus LED pin _ toggle to _"
+msgstr "Octopus LED pin _ toggle to _"
+
+msgid "Octopus LED pin _ brightness _ %"
+msgstr "Octopus LED pin _ brightness _ %"
+
+msgid "Octopus motor fan pin _ speed to _ %"
+msgstr "Octopus motor fan pin _ speed to _ %"
+
+msgid "Octopus 180° servo pin _ angle to _ ° (0~180)"
+msgstr "Octopus 180° servo pin _ angle to _ ° (0~180)"
+
+msgid "Octopus sonar trig _ echo _ distance (cm)"
+msgstr "Octopus sonar trig _ echo _ distance (cm)"
+
+msgid "Octopus value of light intensity (Lux) at pin _"
+msgstr "Octopus value of light intensity (Lux) at pin _"
+
+msgid "Octopus value of DHT11 temperature (°C) at pin _"
+msgstr "Octopus value of DHT11 temperature (°C) at pin _"
+
+msgid "Octopus value of DHT11 humidity (0~100) at pin _"
+msgstr "Octopus value of DHT11 humidity (0~100) at pin _"
+
+msgid "Octopus value of water level (0~40mm) at pin _"
+msgstr "Octopus value of water level (0~40mm) at pin _"
+
+msgid "Octopus value of trimpot (0~1023) at pin _"
+msgstr "Octopus value of trimpot (0~1023) at pin _"
+
+msgid "Octopus value of noise (dB) at pin _"
+msgstr "Octopus value of noise (dB) at pin _"
+
+msgid "Octopus OLED show _ at x _ y _"
+msgstr "Octopus OLED show _ at x _ y _"
+
+msgid "Octopus OLED clear"
+msgstr "Octopus OLED clear"
+
+msgid "Octopus OLED draw pixel x _ y _"
+msgstr "Octopus OLED draw pixel x _ y _"
+
+msgid "Octopus OLED draw line from x _ y _ to x _ y _"
+msgstr "Octopus OLED draw line from x _ y _ to x _ y _"
+
+msgid "Octopus OLED draw rectangle x _ y _ w _ h _ rounding _ (3~15)"
+msgstr "Octopus OLED draw rectangle x _ y _ w _ h _ rounding _ (3~15)"
+
+msgid "Octopus OLED fill rectangle x _ y _ w _ h _"
+msgstr "Octopus OLED fill rectangle x _ y _ w _ h _"
+
+msgid "Octopus OLED draw circle x _ y _ radius _"
+msgstr "Octopus OLED draw circle x _ y _ radius _"
+
+msgid "Octopus OLED fill circle x _ y _ radius _"
+msgstr "Octopus OLED fill circle x _ y _ radius _"
+
+####
+# OctoStudio
+
+msgid "Octo beam to phones _"
+msgstr "Octo beam to phones _"
+
+msgid "duration _ ms"
+msgstr "duration _ ms"
+
+msgid "Octo beam received?"
+msgstr "Octo beam received?"
+
+msgid "Octo last beam"
+msgstr "Octo last beam"
+
+msgid "Octo set group _ (0-99)"
+msgstr "Octo set group _ (0-99)"
+
+msgid "Octo receive beam"
+msgstr "Octo receive beam"
+
+msgid "Octo stop"
+msgstr "Octo stop"
+
+##################
+# MicroBlocks UI #
+##################
+
+# buttons, error & info messages, dialog boxes, etc
+
+msgid "New"
+msgstr "New"
+
+msgid "Open"
+msgstr "Open"
+
+msgid "Open from board"
+msgstr "Open from board"
+
+msgid "Copy project URL to clipboard"
+msgstr "Copy project URL to clipboard"
+
+msgid "Information"
+msgstr "Information"
+
+msgid "Plug in the board."
+msgstr "Plug in the board."
+
+msgid "Plug in the board and click the USB icon to connect."
+msgstr "Plug in the board and click the USB icon to connect."
+
+msgid "Reading project from board..."
+msgstr "Reading project from board..."
+
+msgid "Loading project..."
+msgstr "Loading project..."
+
+# %1 holds the name of the library
+msgid "Found a newer version of %1."
+msgstr "Found a newer version of %1."
+
+msgid "Do you want me to update the one in the project?"
+msgstr "Do you want me to update the one in the project?"
+
+msgid "Save"
+msgstr "Save"
+
+msgid "Connect"
+msgstr "Connect"
+
+msgid "connect"
+msgstr "connect"
+
+msgid "connect (BLE)"
+msgstr "connect (BLE)"
+
+msgid "open Boardie"
+msgstr "open Boardie"
+
+msgid "disconnect"
+msgstr "disconnect"
+
+msgid "Serial port:"
+msgstr "Serial port:"
+
+msgid "Connect board and try again"
+msgstr "Connect board and try again"
+
+msgid "other..."
+msgstr "other..."
+
+msgid "none"
+msgstr "none"
+
+msgid "Port name?"
+msgstr "Port name?"
+
+msgid "Board type:"
+msgstr "Board type:"
+
+msgid "Select board:"
+msgstr "Select board:"
+
+# %1 holds the firmware file name
+msgid "Could not read %1."
+msgstr "Could not read %1."
+
+msgid "about;by %1, %2 & %3."
+msgstr "by %1, %2 & %3."
+
+msgid "Created with GP"
+msgstr "Created with GP"
+
+msgid "More info at http://microblocks.fun"
+msgstr "More info at http://microblocks.fun"
+
+msgid "Script is too large to send to board."
+msgstr "Script is too large to send to board."
+
+msgid "Use \"Connect\" button to connect to a MicroBlocks device."
+msgstr "Use \"Connect\" button to connect to a MicroBlocks device."
+
+msgid "No boards found; is your board plugged in?"
+msgstr "No boards found; is your board plugged in?"
+
+msgid "For AdaFruit boards, double-click reset button and try again."
+msgstr "For AdaFruit boards, double-click reset button and try again."
+
+msgid "Only recent Chrome and Edge browsers support WebSerial."
+msgstr "Only recent Chrome and Edge browsers support WebSerial."
+
+msgid "The board is not responding."
+msgstr "The board is not responding."
+
+msgid "Try to Install MicroBlocks on the board?"
+msgstr "Try to Install MicroBlocks on the board?"
+
+msgid "The MicroBlocks in your board is not current"
+msgstr "The MicroBlocks in your board is not current"
+
+msgid "Try to update MicroBlocks on the board?"
+msgstr "Try to update MicroBlocks on the board?"
+
+msgid "The firmware on the board is not compatible with this version of MicroBlocks."
+msgstr "The firmware on the board is not compatible with this version of MicroBlocks."
+
+msgid "MicroBlocks"
+msgstr "MicroBlocks"
+
+msgid "Stop"
+msgstr "Stop"
+
+msgid "Start"
+msgstr "Start"
+
+msgid "Quit MicroBlocks?"
+msgstr "Quit MicroBlocks?"
+
+msgid "Discard current project?"
+msgstr "Discard current project?"
+
+# Scripting area right-click context menu
+
+msgid "set block size..."
+msgstr "set block size..."
+
+msgid "make blocks bigger or smaller"
+msgstr "make blocks bigger or smaller"
+
+msgid "clean up"
+msgstr "clean up"
+
+msgid "arrange scripts"
+msgstr "arrange scripts"
+
+msgid "undrop (ctrl-Z)"
+msgstr "undrop (ctrl-Z)"
+
+msgid "undo the last block drop"
+msgstr "undo the last block drop"
+
+msgid "copy all scripts to clipboard"
+msgstr "copy all scripts to clipboard"
+
+msgid "copy all scripts to clipboard as URL"
+msgstr "copy all scripts to clipboard as URL"
+
+msgid "paste all scripts"
+msgstr "paste all scripts"
+
+msgid "paste script"
+msgstr "paste script"
+
+msgid "paste script from clipboard"
+msgstr "paste script from clipboard"
+
+msgid "save a picture of all visible scripts"
+msgstr "save a picture of all visible scripts"
+
+msgid "set exported script scale"
+msgstr "set exported script scale"
+
+msgid "small (50%)"
+msgstr "small (50%)"
+
+msgid "normal (65%)"
+msgstr "normal (65%)"
+
+msgid "large (100%)"
+msgstr "large (100%)"
+
+msgid "printable (200%)"
+msgstr "printable (200%)"
+
+msgid "duplicate selection"
+msgstr "duplicate selection"
+
+msgid "drag selection"
+msgstr "drag selection"
+
+msgid "delete selection"
+msgstr "delete selection"
+
+msgid "about..."
+msgstr "about..."
+
+msgid "About MicroBlocks"
+msgstr "About MicroBlocks"
+
+msgid "virtual machine version"
+msgstr "virtual machine version"
+
+msgid "update firmware on board"
+msgstr "update firmware on board"
+
+msgid "enable or disable BLE"
+msgstr "enable or disable BLE"
+
+msgid "Allow the attached board to be connected via BLE?"
+msgstr "Allow the attached board to be connected via BLE?"
+
+msgid "show data graph"
+msgstr "show data graph"
+
+msgid "set serial delay"
+msgstr "set serial delay"
+
+msgid "firmware version"
+msgstr "firmware version"
+
+msgid "HTTP Server"
+msgstr "HTTP Server"
+
+msgid "MicroBlocks HTTP Server listening on port 6473"
+msgstr "MicroBlocks HTTP Server listening on port 6473"
+
+msgid "disable autoloading board libraries"
+msgstr "disable autoloading board libraries"
+
+msgid "compact code store"
+msgstr "compact code store"
+
+msgid "autoload board libraries"
+msgstr "autoload board libraries"
+
+msgid "PlugShare when project empty"
+msgstr "PlugShare when project empty"
+
+msgid "hide implementation blocks"
+msgstr "hide implementation blocks"
+
+msgid "do not show blocks and variables that are internal to libraries (i.e. those whose name begins with underscore)"
+msgstr "do not show blocks and variables that are internal to libraries (i.e. those whose name begins with underscore)"
+
+msgid "show implementation blocks"
+msgstr "show implementation blocks"
+
+msgid "show blocks and variables that are internal to libraries (i.e. those whose name begins with underscore)"
+msgstr "show blocks and variables that are internal to libraries (i.e. those whose name begins with underscore)"
+
+msgid "when plugging a board, automatically read its contents into the IDE if the current project is empty"
+msgstr "when plugging a board, automatically read its contents into the IDE if the current project is empty"
+
+msgid "make the IDE darker"
+msgstr "make the IDE darker"
+
+msgid "erase flash and update firmware on ESP board"
+msgstr "erase flash and update firmware on ESP board"
+
+msgid "install ESP firmware from URL"
+msgstr "install ESP firmware from URL"
+
+msgid "Use board type"
+msgstr "Use board type"
+
+msgid "Firmware Install"
+msgstr "Firmware Install"
+
+msgid "Firmware Installed"
+msgstr "Firmware Installed"
+
+msgid "Reconnect to the board by clicking the \"Connect\" button (USB icon)."
+msgstr "Reconnect to the board by clicking the \"Connect\" button (USB icon)."
+
+msgid "Connect USB cable while holding down the white BOOTSEL button before proceeding."
+msgstr "Connect USB cable while holding down the white BOOTSEL button before proceeding."
+
+msgid "You will be asked to save the firmware file."
+msgstr "You will be asked to save the firmware file."
+
+msgid "If your micro:bit shows a sad face, save the firmware.hex file to your disk then drop it onto the MICROBIT drive."
+msgstr "If your micro:bit shows a sad face, save the firmware.hex file to your disk then drop it onto the MICROBIT drive."
+
+msgid "Save the firmware file when prompted."
+msgstr "Save the firmware file when prompted."
+
+# %1 holds the drive name
+msgid "Drag the firmware file you just saved to the %1 drive."
+msgstr "Drag the firmware file you just saved to the %1 drive."
+
+msgid "Installing firmware..."
+msgstr "Installing firmware..."
+
+msgid "Board not connected"
+msgstr "Board not connected"
+
+msgid "Wiping board..."
+msgstr "Wiping board..."
+
+msgid "(press ESC to cancel)"
+msgstr "(press ESC to cancel)"
+
+msgid "Done!"
+msgstr "Done!"
+
+msgid "download and install latest VM"
+msgstr "download and install latest VM"
+
+msgid "Select board type:"
+msgstr "Select board type:"
+
+msgid "Uploading MicroBlocks to board..."
+msgstr "Uploading MicroBlocks to board..."
+
+msgid "copy data to clipboard"
+msgstr "copy data to clipboard"
+
+msgid "clear data"
+msgstr "clear data"
+
+msgid "clear memory and variables"
+msgstr "clear memory and variables"
+
+msgid "show advanced blocks"
+msgstr "show advanced blocks"
+
+msgid "export functions as library"
+msgstr "export functions as library"
+
+msgid "hide advanced blocks"
+msgstr "hide advanced blocks"
+
+msgid "put file on board"
+msgstr "put file on board"
+
+msgid "get file from board"
+msgstr "get file from board"
+
+msgid "uploaded"
+msgstr "uploaded"
+
+msgid "downloaded"
+msgstr "downloaded"
+
+msgid "Data Graph"
+msgstr "Data Graph"
+
+msgid "Graph"
+msgstr "Graph"
+
+msgid "clear graph"
+msgstr "clear graph"
+
+msgid "zero at bottom"
+msgstr "zero at bottom"
+
+msgid "zero in middle"
+msgstr "zero in middle"
+
+msgid "export data to CSV file"
+msgstr "export data to CSV file"
+
+msgid "import data from CSV file"
+msgstr "import data from CSV file"
+
+msgid "copy graph data to clipboard"
+msgstr "copy graph data to clipboard"
+
+msgid "show instructions"
+msgstr "show instructions"
+
+msgid "show compiled bytes"
+msgstr "show compiled bytes"
+
+msgid "expand"
+msgstr "expand"
+
+msgid "collapse"
+msgstr "collapse"
+
+msgid "rename..."
+msgstr "rename..."
+
+msgid "find variable accessors"
+msgstr "find variable accessors"
+
+msgid "find scripts or block definitions where this variable is being read"
+msgstr "find scripts or block definitions where this variable is being read"
+
+msgid "find variable modifiers"
+msgstr "find variable modifiers"
+
+msgid "find scripts or block definitions where this variable is being set or changed"
+msgstr "find scripts or block definitions where this variable is being set or changed"
+
+msgid "find uses of this block"
+msgstr "find uses of this block"
+
+msgid "find scripts or block definitions using this block"
+msgstr "find scripts or block definitions using this block"
+
+msgid "show block definition..."
+msgstr "show block definition..."
+
+msgid "show the definition of this block"
+msgstr "show the definition of this block"
+
+msgid "delete block definition..."
+msgstr "delete block definition..."
+
+msgid "delete the definition of this block"
+msgstr "delete the definition of this block"
+
+msgid "duplicate"
+msgstr "duplicate"
+
+msgid "help"
+msgstr "help"
+
+msgid "duplicate this block"
+msgstr "duplicate this block"
+
+msgid "delete block"
+msgstr "delete block"
+
+msgid "delete this block"
+msgstr "delete this block"
+
+msgid "just this one block"
+msgstr "just this one block"
+
+msgid "copy to clipboard"
+msgstr "copy to clipboard"
+
+msgid "copy to clipboard as URL"
+msgstr "copy to clipboard as URL"
+
+msgid "copy these blocks to the clipboard as a URL"
+msgstr "copy these blocks to the clipboard as a URL"
+
+msgid "copy these blocks to the clipboard"
+msgstr "copy these blocks to the clipboard"
+
+msgid "duplicate all"
+msgstr "duplicate all"
+
+msgid "duplicate these blocks"
+msgstr "duplicate these blocks"
+
+msgid "extract block"
+msgstr "extract block"
+
+msgid "pull out this block"
+msgstr "pull out this block"
+
+msgid "show help for this block in a browser"
+msgstr "show help for this block in a browser"
+
+msgid "save picture of script"
+msgstr "save picture of script"
+
+msgid "save picture of script with result"
+msgstr "save picture of script with result"
+
+msgid "save a picture of this block definition as a PNG file"
+msgstr "save a picture of this block definition as a PNG file"
+
+msgid "save a picture of these blocks as a PNG file"
+msgstr "save a picture of these blocks as a PNG file"
+
+msgid "save a picture of these blocks and their result as a PNG file"
+msgstr "save a picture of these blocks and their result as a PNG file"
+
+msgid "copy script"
+msgstr "copy script"
+
+msgid "script;delete"
+msgstr "delete"
+
+msgid "blockdef;delete"
+msgstr "delete"
+
+msgid "Input type:"
+msgstr "Input type:"
+
+msgid "string only"
+msgstr "string only"
+
+msgid "string or number"
+msgstr "string or number"
+
+msgid "number only"
+msgstr "number only"
+
+msgid "stop editing"
+msgstr "stop editing"
+
+msgid "cut"
+msgstr "cut"
+
+msgid "copy"
+msgstr "copy"
+
+msgid "paste"
+msgstr "paste"
+
+msgid "accept"
+msgstr "accept"
+
+msgid "revert"
+msgstr "revert"
+
+msgid "select all"
+msgstr "select all"
+
+msgid "define"
+msgstr "define"
+
+msgid "number/string"
+msgstr "number/string"
+
+msgid "editable number or string"
+msgstr "editable number or string"
+
+msgid "label"
+msgstr "label"
+
+msgid "input"
+msgstr "input"
+
+msgid "hide block definition"
+msgstr "hide block definition"
+
+msgid "Are you sure you want to remove this block definition?"
+msgstr "Are you sure you want to remove this block definition?"
+
+msgid "Language"
+msgstr "Language"
+
+msgid "Custom..."
+msgstr "Custom..."
+
+msgid "Obsolete"
+msgstr "Obsolete"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Ok"
+msgstr "Ok"
+
+msgid "Yes"
+msgstr "Yes"
+
+msgid "No"
+msgstr "No"
+
+msgid "Cancel"
+msgstr "Cancel"
+
+msgid "Okay"
+msgstr "Okay"
+
+msgid "Confirm"
+msgstr "Confirm"
+
+# Library folders
+
+msgid "LIBRARIES"
+msgstr "LIBRARIES"
+
+msgid "libfolder;Libraries"
+msgstr "Libraries"
+
+msgid "libfolder;AI"
+msgstr "AI"
+
+msgid "libfolder;Graphics and Displays"
+msgstr "Graphics and Displays"
+
+msgid "libfolder;Kits and Boards"
+msgstr "Kits and Boards"
+
+msgid "libfolder;Network"
+msgstr "Network"
+
+msgid "libfolder;Motors"
+msgstr "Motors"
+
+msgid "libfolder;Other"
+msgstr "Other"
+
+msgid "libfolder;Robots"
+msgstr "Robots"
+
+msgid "libfolder;Sensing"
+msgstr "Sensing"
+
+msgid "libfolder;Sound"
+msgstr "Sound"
+
+msgid "libfolder;System"
+msgstr "System"
+
+msgid "libfolder;WorkInProgress"
+msgstr "Work in Progress"
+
+# File picker and library dialogs
+
+msgid "New library name?"
+msgstr "New library name?"
+
+msgid "show all block definitions"
+msgstr "show all block definitions"
+
+msgid "hide all block definitions"
+msgstr "hide all block definitions"
+
+msgid "export this library"
+msgstr "export this library"
+
+msgid "delete library"
+msgstr "delete library"
+
+msgid "Examples"
+msgstr "Examples"
+
+msgid "Desktop"
+msgstr "Desktop"
+
+msgid "Computer"
+msgstr "Computer"
+
+msgid "Cloud"
+msgstr "Cloud"
+
+msgid "File"
+msgstr "File"
+
+msgid "File Open"
+msgstr "File Open"
+
+msgid "File Save"
+msgstr "File Save"
+
+msgid "File name:"
+msgstr "File name:"
+
+msgid "New Folder"
+msgstr "New Folder"
+
+msgid "libdata;by"
+msgstr "by"
+
+msgid "Depends:"
+msgstr "Depends:"
+
+msgid "Tags:"
+msgstr "Tags:"
+
+msgid "Path, name or URL for library?"
+msgstr "Path, name or URL for library?"
+
+msgid "Invalid URL"
+msgstr "Invalid URL"
+
+msgid "Could not fetch library."
+msgstr "Could not fetch library."
+
+msgid "Host does not exist or is currently down."
+msgstr "Host does not exist or is currently down."
+
+msgid "File not found in server."
+msgstr "File not found in server."
+
+msgid "Server expects HTTPS, and MicroBlocks doesn't currently support it."
+msgstr "Server expects HTTPS, and MicroBlocks doesn't currently support it."
+
+msgid "library information"
+msgstr "library information"
+
+msgid "built-in library"
+msgstr "built-in library"
+
+msgid "Dependency path, name or URL?"
+msgstr "Dependency path, name or URL?"
+
+msgid "If you are adding a library that's built into MicroBlocks, you can just enter its name."
+msgstr "If you are adding a library that's built into MicroBlocks, you can just enter its name."
+
+msgid "If your library is in the Libraries folder in your local MicroBlocks project folder, you need to prefix it with a slash (/)."
+msgstr "If your library is in the Libraries folder in your local MicroBlocks project folder, you need to prefix it with a slash (/)."
+
+msgid "If the library is hosted online, please input its full URL."
+msgstr "If the library is hosted online, please input its full URL."
+
+msgid "Tag name?"
+msgstr "Tag name?"
+
+msgid "user library"
+msgstr "user library"
+
+msgid "Add Library"
+msgstr "Add Library"
+
+msgid "%1 seconds remaining"
+msgstr "%1 seconds remaining"
+
+msgid "Decrease block size"
+msgstr "Decrease block size"
+
+msgid "Restore block size to 100%"
+msgstr "Restore block size to 100%"
+
+msgid "Increase block size"
+msgstr "Increase block size"
+
+############
+# Tips Bar #
+############
+
+msgid "Button"
+msgstr "Button"
+
+msgid "Boolean Input"
+msgstr "Boolean Input"
+
+msgid "[l] toggle value, or drop a reporter into it."
+msgstr "[l] toggle value, or drop a reporter into it."
+
+msgid "Color Input"
+msgstr "Color Input"
+
+msgid "[l] change the color, or drop a reporter into it."
+msgstr "[l] change the color, or drop a reporter into it."
+
+msgid "Input"
+msgstr "Input"
+
+msgid "[l] edit its value, or drop a reporter into it."
+msgstr "[l] edit its value, or drop a reporter into it."
+
+msgid "Block Extension"
+msgstr "Block Extension"
+
+msgid "[l] right arrow to show optional inputs, left arrow to hide."
+msgstr "[l] right arrow to show optional inputs, left arrow to hide."
+
+msgid "Command Block"
+msgstr "Command Block"
+
+msgid "[l] to run, or drag to build scripts. [r] menu."
+msgstr "[l] to run, or drag to build scripts. [r] menu."
+
+msgid "Hat Block"
+msgstr "Hat Block"
+
+msgid "[l] to run, or drag to build scripts. [r] menu."
+msgstr "[l] to run, or drag to build scripts. [r] menu."
+
+msgid "Reporter Block"
+msgstr "Reporter Block"
+
+msgid "[l] to see value, or drop into an input slot. [r] menu."
+msgstr "[l] to see value, or drop into an input slot. [r] menu."
+
+msgid "Script"
+msgstr "Script"
+
+msgid "[l] to run. [r] menu."
+msgstr "[l] to run. [r] menu."
+
+msgid "Pane Divider"
+msgstr "Pane Divider"
+
+msgid "Drag to change pane width."
+msgstr "Drag to change pane width."
+
+msgid "Library"
+msgstr "Library"
+
+msgid "[l] to show the blocks in this library. [r] menu."
+msgstr "[l] to show the blocks in this library. [r] menu."
+
+msgid "Block Category"
+msgstr "Block Category"
+
+msgid "[l] to show the blocks in this category."
+msgstr "[l] to show the blocks in this category."
+
+msgid "Palette"
+msgstr "Palette"
+
+msgid "Drag blocks from here to build scripts. Drop scripts here to delete them."
+msgstr "Drag blocks from here to build scripts. Drop scripts here to delete them."
+
+msgid "Scripts Pane"
+msgstr "Scripts Pane"
+
+msgid "Drag blocks here to build scripts. [r] menu."
+msgstr "Drag blocks here to build scripts. [r] menu."
+
+#################################
+# Block Descriptions for TipBar #
+#################################
+
+msgid "Turn the user LED on or off."
+msgstr "Turn the user LED on or off."
+
+msgid "Display a bubble showing the value."
+msgstr "Display a bubble showing the value."
+
+msgid "Graph the value."
+msgstr "Graph the value."
+
+msgid "Report the state of button A ( (-o) or (o-) )."
+msgstr "Report the state of button A ( (-o) or (o-) )."
+
+msgid "Report the state of button B ( (-o) or (o-) )."
+msgstr "Report the state of button B ( (-o) or (o-) )."
+
+msgid "Report the milliseconds since the timer was last reset."
+msgstr "Report the milliseconds since the timer was last reset."
+
+msgid "Reset the timer."
+msgstr "Reset the timer."
+
+msgid "Report the seconds since power up."
+msgstr "Report the seconds since power up."
+
+msgid "Report the milliseconds since power up."
+msgstr "Report the milliseconds since power up."
+
+msgid "Report the microseconds since power up."
+msgstr "Report the microseconds since power up."
+
+msgid "Report the board type."
+msgstr "Report the board type."
+
+msgid "Reports firmware version loaded on the board."
+msgstr "Reports firmware version loaded on the board."
+
+msgid "Reports the three-letter BLE ID of the board if it supports BLE."
+msgstr "Reports the three-letter BLE ID of the board if it supports BLE."
+
+msgid "Reports (-o) if a BLE client is connected."
+msgstr "Reports (-o) if a BLE client is connected."
+
+msgid "Report the milliseconds since the given start milliseconds. Handles clock wrap."
+msgstr "Report the milliseconds since the given start milliseconds. Handles clock wrap."
+
+msgid "Report the microseconds since the given start microseconds. Handles clock wrap."
+msgstr "Report the microseconds since the given start microseconds. Handles clock wrap."
+
+msgid "Reports (-o) if the board is connected to IDE."
+msgstr "Reports (-o) if the board is connected to IDE."
+
+msgid "Report the electrical logic level on a digital pin ( (-o) or (o-) )."
+msgstr "Report the electrical logic level on a digital pin ( (-o) or (o-) )."
+
+msgid "Report a number proportional to the voltage on an analog pin (0 = ground, 1023 = supply voltage)."
+msgstr "Report a number proportional to the voltage on an analog pin (0 = ground, 1023 = supply voltage)."
+
+msgid "Turn a pin on or off ( (-o) or (o-) )."
+msgstr "Turn a pin on or off ( (-o) or (o-) )."
+
+msgid "Pulse width modulate (PWM) a pin with the given duty cycle (0 - 1023)."
+msgstr "Pulse width modulate (PWM) a pin with the given duty cycle (0 - 1023)."
+
+msgid "Report number of analog pins on this device."
+msgstr "Report number of analog pins on this device."
+
+msgid "Report number of digital pins on this device."
+msgstr "Report number of digital pins on this device."
+
+msgid "Report the value of a register (0-255) of an I2C device (0-127)."
+msgstr "Report the value of a register (0-255) of an I2C device (0-127)."
+
+msgid "Set an I2C device and register to given value (0-255)."
+msgstr "Set an I2C device and register to given value (0-255)."
+
+msgid "Receive multiple bytes from an I2C device."
+msgstr "Receive multiple bytes from an I2C device."
+
+msgid "Send multiple bytes to an I2C device."
+msgstr "Send multiple bytes to an I2C device."
+
+msgid "Send a byte (0-255) to an SPI device."
+msgstr "Send a byte (0-255) to an SPI device."
+
+msgid "Read a byte from an SPI device while sending a zero byte. Report the byte received."
+msgstr "Read a byte from an SPI device while sending a zero byte. Report the byte received."
+
+msgid "Set the SPI clock speed, mode, channel (Raspberry Pi only), and bit order."
+msgstr "Set the SPI clock speed, mode, channel (Raspberry Pi only), and bit order."
+
+msgid "Send a byte array via SPI, replacing its contents with the bytes received."
+msgstr "Send a byte array via SPI, replacing its contents with the bytes received."
+
+msgid "Open the serial port at the given baud rate."
+msgstr "Open the serial port at the given baud rate."
+
+msgid "Close the serial port."
+msgstr "Close the serial port."
+
+msgid "Report data received from the serial port (a byte array)."
+msgstr "Report data received from the serial port (a byte array)."
+
+msgid "Send a byte array to the serial port."
+msgstr "Send a byte array to the serial port."
+
+msgid "Send a byte array to the serial port, starting at the given byte."
+msgstr "Send a byte array to the serial port, starting at the given byte."
+
+msgid "Write a byte to the pin at the specified baud rate."
+msgstr "Write a byte to the pin at the specified baud rate."
+
+msgid "Run when the board powers up or when the IDE start button is clicked."
+msgstr "Run when the board powers up or when the IDE start button is clicked."
+
+msgid "Run when buttons A, B, or A+B are pressed."
+msgstr "Run when buttons A, B, or A+B are pressed."
+
+msgid "Repeat the enclosed blocks indefinitely."
+msgstr "Repeat the enclosed blocks indefinitely."
+
+msgid "Repeat the enclosed blocks the given number of times."
+msgstr "Repeat the enclosed blocks the given number of times."
+
+msgid "Wait the given number of milliseconds."
+msgstr "Wait the given number of milliseconds."
+
+msgid "Run the first set of blocks whose test condition is (-o) ."
+msgstr "Run the first set of blocks whose test condition is (-o) ."
+
+msgid "Run when the condition becomes (-o) ."
+msgstr "Run when the condition becomes (-o) ."
+
+msgid "Wait until the condition becomes (-o) ."
+msgstr "Wait until the condition becomes (-o) ."
+
+msgid "Return (report) the given value from a function or script."
+msgstr "Return (report) the given value from a function or script."
+
+msgid "Run when the given message is received as a broadcast."
+msgstr "Run when the given message is received as a broadcast."
+
+msgid "Broadcast the given message."
+msgstr "Broadcast the given message."
+
+msgid "Do nothing. Used to add notes and documentation."
+msgstr "Do nothing. Used to add notes and documentation."
+
+msgid "Report a list containing the given range of numbers (with optional increment). Useful in \"for\" loops."
+msgstr "Report a list containing the given range of numbers (with optional increment). Useful in \"for\" loops."
+
+msgid "Repeat the enclosed blocks with the variable set to the current iteration number or item."
+msgstr "Repeat the enclosed blocks with the variable set to the current iteration number or item."
+
+msgid "Repeat the enclosed blocks until the condition becomes (-o) ."
+msgstr "Repeat the enclosed blocks until the condition becomes (-o) ."
+
+msgid "Stop this task."
+msgstr "Stop this task."
+
+msgid "Stop all tasks except this one."
+msgstr "Stop all tasks except this one."
+
+msgid "Wait the given number of microseconds."
+msgstr "Wait the given number of microseconds."
+
+msgid "Report the last broadcast message received."
+msgstr "Report the last broadcast message received."
+
+msgid "Report the given argument or defaultValue if the argument was not supplied by the caller."
+msgstr "Report the given argument or defaultValue if the argument was not supplied by the caller."
+
+msgid "Call the function with the given name and optional parameter list."
+msgstr "Call the function with the given name and optional parameter list."
+
+msgid "Call the function with the given name and optional parameter list and report its return value."
+msgstr "Call the function with the given name and optional parameter list and report its return value."
+
+msgid "Report the sum of the given numbers."
+msgstr "Report the sum of the given numbers."
+
+msgid "Report the first number minus the second."
+msgstr "Report the first number minus the second."
+
+msgid "Report the product of the given numbers."
+msgstr "Report the product of the given numbers."
+
+msgid "Report the first number divided by the second."
+msgstr "Report the first number divided by the second."
+
+msgid "Report the remainder of dividing the first number by the second."
+msgstr "Report the remainder of dividing the first number by the second."
+
+msgid "Report the absolute value of the given number (always >= 0)."
+msgstr "Report the absolute value of the given number (always >= 0)."
+
+msgid "Report the minimum of the values."
+msgstr "Report the minimum of the values."
+
+msgid "Report the maximum of the values."
+msgstr "Report the maximum of the values."
+
+msgid "Report a randomly chosen number in the given range."
+msgstr "Report a randomly chosen number in the given range."
+
+msgid "Report (-o) if the first value is less than the second one."
+msgstr "Report (-o) if the first value is less than the second one."
+
+msgid "Report (-o) if the first value is less than or equal to the second one."
+msgstr "Report (-o) if the first value is less than or equal to the second one."
+
+msgid "Report (-o) if the two values are equal."
+msgstr "Report (-o) if the two values are equal."
+
+msgid "Report (-o) if the two values are not equal."
+msgstr "Report (-o) if the two values are not equal."
+
+msgid "Report (-o) if the first value is greater than or equal to the second one."
+msgstr "Report (-o) if the first value is greater than or equal to the second one."
+
+msgid "Report (-o) if the first value is greater than the second one."
+msgstr "Report (-o) if the first value is greater than the second one."
+
+msgid "Boolean constant ( (-o) or (o-) )."
+msgstr "Boolean constant ( (-o) or (o-) )."
+
+msgid "Report the logical inverse of a Boolean ( (-o) or (o-) ) value."
+msgstr "Report the logical inverse of a Boolean ( (-o) or (o-) ) value."
+
+msgid "Report (-o) if both values are (-o)"
+msgstr "Report (-o) if both values are (-o)"
+
+msgid "Report (-o) if either value is (-o)"
+msgstr "Report (-o) if either value is (-o)"
+
+msgid "Report (-o) if first input is a value of the given data type."
+msgstr "Report (-o) if first input is a value of the given data type."
+
+msgid "Convert a value to the given data type."
+msgstr "Convert a value to the given data type."
+
+msgid "If the condition is (-o) report the first alternative otherwise report the second alternative."
+msgstr "If the condition is (-o) report the first alternative otherwise report the second alternative."
+
+msgid "Map a value in the \"from\" range to the corresponding value in the \"to\" range."
+msgstr "Map a value in the \"from\" range to the corresponding value in the \"to\" range."
+
+msgid "Report the numerical value of a hexadecimal string (range: -0x1FFFFFFF to 0x1FFFFFFF)"
+msgstr "Report the numerical value of a hexadecimal string (range: -0x1FFFFFFF to 0x1FFFFFFF)"
+
+msgid "Report bitwise AND of two numbers."
+msgstr "Report bitwise AND of two numbers."
+
+msgid "Report bitwise OR of two numbers."
+msgstr "Report bitwise OR of two numbers."
+
+msgid "Report bitwise XOR (exclusive OR) of two numbers."
+msgstr "Report bitwise XOR (exclusive OR) of two numbers."
+
+msgid "Report bitwise inverse of the given number."
+msgstr "Report bitwise inverse of the given number."
+
+msgid "Report the given number shifted left by the given number of bits."
+msgstr "Report the given number shifted left by the given number of bits."
+
+msgid "Report the given number shifted right by the given number of bits (arithmetic shift; sign is maintained)."
+msgstr "Report the given number shifted right by the given number of bits (arithmetic shift; sign is maintained)."
+
+msgid "Set a variable to the given value."
+msgstr "Set a variable to the given value."
+
+msgid "Change a variable by the given amount."
+msgstr "Change a variable by the given amount."
+
+msgid "Create a variable local to the containing script with the given initial value."
+msgstr "Create a variable local to the containing script with the given initial value."
+
+msgid "Report the Nth item of a list, string, or byte array."
+msgstr "Report the Nth item of a list, string, or byte array."
+
+msgid "Report the number of items in a list, string, or byte array."
+msgstr "Report the number of items in a list, string, or byte array."
+
+msgid "Join (concatenate) the given lists, strings, or byte arrays and report the result."
+msgstr "Join (concatenate) the given lists, strings, or byte arrays and report the result."
+
+msgid "Create and report a short list containing the given items. Length limited by available stack space."
+msgstr "Create and report a short list containing the given items. Length limited by available stack space."
+
+msgid "Add an item to the end of a list."
+msgstr "Add an item to the end of a list."
+
+msgid "Replace the Nth item (or all items) of a list or byte array with the given value."
+msgstr "Replace the Nth item (or all items) of a list or byte array with the given value."
+
+msgid "Delete the Nth item (or all items) of a list."
+msgstr "Delete the Nth item (or all items) of a list."
+
+msgid "Find and report the index of an item in a list or a substring within a string. Report -1 if not found."
+msgstr "Find and report the index of an item in a list or a substring within a string. Report -1 if not found."
+
+msgid "Report a copy from the given index through the end (or optional stop index) of the given list, string, or byte array."
+msgstr "Report a copy from the given index through the end (or optional stop index) of the given list, string, or byte array."
+
+msgid "Split the given string with the given delimiter and report the result (a list of strings)."
+msgstr "Split the given string with the given delimiter and report the result (a list of strings)."
+
+msgid "Combine the items of a list into a string, optionally separated by a delimiter (e.g. comma)."
+msgstr "Combine the items of a list into a string, optionally separated by a delimiter (e.g. comma)."
+
+msgid "Report the Unicode value (\"code point\") of the Nth character of the given string."
+msgstr "Report the Unicode value (\"code point\") of the Nth character of the given string."
+
+msgid "Report a string containing the given Unicode value (\"code point\") or list of values."
+msgstr "Report a string containing the given Unicode value (\"code point\") or list of values."
+
+msgid "Report a new list of the given length filled with zero or the optional value."
+msgstr "Report a new list of the given length filled with zero or the optional value."
+
+msgid "Report a new byte array of the given length filled with zero or the optional value."
+msgstr "Report a new byte array of the given length filled with zero or the optional value."
+
+msgid "Report a byte array containing the UTF-8 bytes of the given string."
+msgstr "Report a byte array containing the UTF-8 bytes of the given string."
+
+msgid "Report the number of words of memory available. Stop button frees up memory."
+msgstr "Report the number of words of memory available. Stop button frees up memory."
+
+

@@ -76,9 +76,9 @@ if test -n "$locale"; then
         echo "Updating locale file for $locale..."
         (cd gp; ./$gp runtime/lib/* loadIDE.gp updateLocale.gp -- $locale)
         echo "Done."
-        echo "Please edit the updated locale file at translations/$locale.txt"
-        missing=`grep "^--MISSING--" translations/$locale.txt | wc -l`
-        echo "A total of $missing missing strings have been marked with the \"--MISSING--\" tag."
+        echo "Please edit the updated locale file at translations/$locale.po"
+        missing=`grep "^msgstr \"\"" translations/$locale.po | wc -l`
+        echo "A total of $missing missing strings have been found."
     fi
     exit 0
 fi

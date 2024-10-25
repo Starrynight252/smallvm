@@ -268,14 +268,14 @@ method englishDict AuthoringSpecs {
 }
 
 method setLanguage AuthoringSpecs langCode {
-	translationData = (readEmbeddedFile (join 'translations/' langCode '.txt'))
+	translationData = (readEmbeddedFile (join 'translations/' langCode '.po'))
 	if (isNil translationData) {
 		// if not embedded file, try reading external file
-		translationData = (readFile (join 'translations/' langCode '.txt'))
+		translationData = (readFile (join 'translations/' langCode '.po'))
 	}
 	if (isNil translationData) {
 		// if still nil, we may be in the wrong dir
-		translationData = (readFile (join '../translations/' langCode '.txt'))
+		translationData = (readFile (join '../translations/' langCode '.po'))
 	}
 	if (isNil translationData) {
 		language = 'English'
@@ -305,7 +305,7 @@ method needsTranslation AuthoringSpecs spec {
 	if (isNil translationDictionary) { return false }
 	for s (specs spec) {
 		localization = (localizedOrNil s)
-		if (and (notNil localization) (localization != '--MISSING--')) {
+		if (and (notNil localization) (notEmpty localization)) {
 			return true
 		}
 	}
@@ -313,9 +313,9 @@ method needsTranslation AuthoringSpecs spec {
 }
 
 method installTranslation AuthoringSpecs translationData langName {
-	// Translations data is string consisting of three-line entries:
-	//	original string
-	//	translated string
+	// Translation data is string consisting of three-line entries:
+	//	msgid "original string"
+	//	msgstr "translated string"
 	//	<blank line>
 	//	...
 	// Lines starting with # are treated as comments
@@ -327,21 +327,47 @@ method installTranslation AuthoringSpecs translationData langName {
 		// ignore comments and blank lines
 		while (and
 				((count lines) >= 2)
-				(or (beginsWith from '#') (from == ''))
+				(or (beginsWith from '#') (isEmpty from))
 		) {
 			from = (removeFirst lines)
 		}
 		if ((count lines) >= 1) {
 			to = (removeFirst lines)
-			atPut translationDictionary from to
+			atPut translationDictionary (parseGetText this from true) (parseGetText this to false)
 		}
 	}
 	if (notNil langName) { language = langName }
 }
 
+method parseGetText AuthoringSpecs aString isSource {
+	if isSource {
+		startIndex = 8 // length of 'msgid "' + 1
+	} else {
+		startIndex = 9 // length of 'msgstr "' + 1
+	}
+	return (quoteUnescaped this (substring aString startIndex ((count aString) - 1)))
+}
+
+method quoteUnescaped AuthoringSpecs aString {
+	unescaped = ''
+	length = (count aString)
+	for i length {
+		char = (at aString i)
+		if (and
+			(char == '\')
+			(i < length)
+			((at aString (i + 1)) == '"') //" make highlighter happy
+		) {
+			char = ''
+		}
+		unescaped = (join unescaped char)
+	}
+	return unescaped
+}
+
 to inEnglish aString params {
 		enVersion = (at (englishDict (authoringSpecs)) aString)
-		if (or (isNil enVersion) (enVersion == '--MISSING--')) {
+		if (or (isNil enVersion) (isEmpty enVersion)) {
 			return (replaceLocaleParams aString params)
 		} else {
 			return (replaceLocaleParams enVersion params)
@@ -351,7 +377,7 @@ to inEnglish aString params {
 to localized aString params {
 	if (isEmpty aString) { return aString }
 	localization = (localizedOrNil aString params)
-	if (or (isNil localization) (localization == '--MISSING--')) {
+	if (or (isNil localization) (isEmpty localization)) {
 		return (inEnglish aString params)
 	} else {
 		return localization
@@ -379,6 +405,9 @@ to replaceLocaleParams aString params {
 
 	if (isNil aString) { return }
 	if (isNil params) { return aString }
+	if (not (or (isClass params 'Array') (isClass params 'List'))) {
+		params = (array params)
+	}
 
 	newString = ''
 	length = (count aString)

@@ -1,0 +1,4679 @@
+# MicroBlocks translation file
+# Last updated: October 03 2024
+
+#########################
+# Blocks and categories #
+#########################
+
+msgid "cat;Output"
+msgstr "输出"
+
+msgid "set user LED _"
+msgstr "设置用户 LED _"
+
+msgid "say _"
+msgstr "说 _"
+
+msgid "graph _"
+msgstr "绘图 _"
+
+msgid "cat;Input"
+msgstr "输入"
+
+msgid "button A"
+msgstr "按键 A"
+
+msgid "button B"
+msgstr "按键 B"
+
+msgid "timer"
+msgstr "计时器"
+
+msgid "reset timer"
+msgstr "计时器归零"
+
+msgid "microseconds"
+msgstr "微秒"
+
+msgid "milliseconds"
+msgstr "毫秒"
+
+msgid "board type"
+msgstr "主板类型"
+
+msgid "milliseconds since _"
+msgstr "自 _ 以来的毫秒数"
+
+msgid "end time _"
+msgstr "结束时间 _"
+
+msgid "microseconds since _"
+msgstr "自 _ 以来的微秒数"
+
+msgid "connected to IDE"
+msgstr "已连接到 IDE?"
+
+msgid "cat;Pins"
+msgstr "引脚"
+
+msgid "read digital pin _"
+msgstr "读取数字引脚 _"
+
+msgid "read analog pin _"
+msgstr "读取模拟引脚 _"
+
+msgid "pullup _"
+msgstr "上拉 _"
+
+msgid "set digital pin _ to _"
+msgstr "设置数字引脚 _ 为 _"
+
+msgid "set pin _ to _"
+msgstr "设置引脚 _ 为 _"
+
+msgid "analog pins"
+msgstr "模拟引脚"
+
+msgid "digital pins"
+msgstr "数字引脚"
+
+msgid "cat;Control"
+msgstr "控制"
+
+msgid "when started"
+msgstr "当启动时"
+
+msgid "when button _ pressed"
+msgstr "当按键 _ 被按下"
+
+msgid "forever _"
+msgstr "重复执行 _"
+
+msgid "repeat _ _"
+msgstr "重复 _ 次 _"
+
+msgid "wait _ millisecs"
+msgstr "等待 _ 毫秒"
+
+msgid "if _ _"
+msgstr "如果 _ _"
+
+msgid "if _ _ else _"
+msgstr "如果 _ _ 否则 _"
+
+msgid "else if _ _"
+msgstr "否则,如果 _ _"
+
+msgid "else"
+msgstr "否则"
+
+msgid "when _"
+msgstr "当 _"
+
+msgid "wait until _"
+msgstr "直到 _ 前都等待"
+
+msgid "wait _ microsecs"
+msgstr "等待 _ 微秒"
+
+msgid "return _"
+msgstr "返回 _"
+
+msgid "when _ received"
+msgstr "当接收到 _"
+
+msgid "go!"
+msgstr ""
+
+msgid "broadcast _"
+msgstr "广播 _"
+
+msgid "comment _"
+msgstr "注释 _"
+
+msgid "How this works..."
+msgstr "..."
+
+msgid "range _ to _"
+msgstr "从 _ 到 _ 的数字列表 "
+
+msgid "by _"
+msgstr "间隔 _"
+
+msgid "for _ in _ _"
+msgstr "重复执行 变化因子 _ 范围 _ _"
+
+msgid "repeat until _ _"
+msgstr "重复执行 直到 _ _"
+
+msgid "stop this task"
+msgstr "停止当前任务"
+
+msgid "stop other tasks"
+msgstr "停止其他任务"
+
+msgid "stop all"
+msgstr "停止全部"
+
+msgid "last message"
+msgstr "最后消息"
+
+msgid "arg _ default _"
+msgstr "参数 _ 默认 _"
+
+msgid "default"
+msgstr "默认"
+
+msgid "call _"
+msgstr "调用 _"
+
+msgid "function name"
+msgstr "方法名称"
+
+msgid "parameter list"
+msgstr "参数列表"
+
+msgid "with _"
+msgstr "参数 _"
+
+msgid "cat;Operators"
+msgstr "运算"
+
+msgid "_ mod _"
+msgstr "_ 除以 _ 的余数"
+
+msgid "abs _"
+msgstr "绝对值 _"
+
+msgid "min _ _"
+msgstr "最小值 _ _"
+
+msgid "max _ _"
+msgstr "最大值 _ _"
+
+msgid "random _ to _"
+msgstr "在 _ 到 _ 之间选取随机数"
+
+msgid "not _"
+msgstr "_ 不成立"
+
+msgid "_ and _"
+msgstr "_ 且 _"
+
+msgid "and _"
+msgstr "且 _"
+
+msgid "_ or _"
+msgstr "_ 或 _"
+
+msgid "or _"
+msgstr "或 _"
+
+msgid "_ is a _"
+msgstr "_ 的类型是 _"
+
+msgid "convert _ to _"
+msgstr "把 _ 转化为 _"
+
+msgid "if _ then _ else _"
+msgstr "如果 _ 返回 _ 否则 _"
+
+msgid "boolean"
+msgstr "布尔"
+
+msgid "number"
+msgstr "数字"
+
+msgid "string"
+msgstr "字符串"
+
+msgid "list"
+msgstr "列表"
+
+msgid "byte array"
+msgstr "字节数组"
+
+msgid "cat;Advanced:"
+msgstr "高级"
+
+msgid "rescale _ from ( _ , _ ) to ( _ , _ )"
+msgstr "映射 _ 从 ( _ , _ ) 到 ( _ , _ )"
+
+msgid "hex _"
+msgstr "十六进制 _"
+
+msgid "sqrt _"
+msgstr "平方根 _"
+
+msgid "cat;Variables"
+msgstr "变量"
+
+# Buttons on top of "Variables" category
+
+msgid "Add a variable"
+msgstr "新建一个变量"
+
+msgid "Delete a variable"
+msgstr "删除一个变量"
+
+# New variable dialog
+
+msgid "New variable name?"
+msgstr "新变量的名字是？"
+
+msgid "set _ to _"
+msgstr "把 _ 设为 _"
+
+msgid "change _ by _"
+msgstr "把 _ 增加 _"
+
+msgid "initialize local _ to _"
+msgstr "将局部变量 _ 初始化为 _"
+
+msgid "cat;Data"
+msgstr "数据"
+
+msgid "list"
+msgstr "列表"
+
+msgid "cat"
+msgstr ""
+
+msgid "dog"
+msgstr ""
+
+msgid "bird"
+msgstr ""
+
+msgid "fish"
+msgstr ""
+
+msgid "length of _"
+msgstr "_ 的长度"
+
+msgid "item _ of _"
+msgstr "第 _ 项 _"
+
+msgid "replace item _ of list _ with _"
+msgstr "把第 _ 项 _ 替换为 _"
+
+msgid "delete item _ of list _"
+msgstr "删除第 _ 项 _"
+
+msgid "add _ to list _"
+msgstr "添加 _ 至列表 _"
+
+msgid "join _ _"
+msgstr "连接 _ _"
+
+msgid "copy _ from _"
+msgstr "复制 _ 从 _"
+
+msgid "smiles"
+msgstr ""
+
+msgid "to _"
+msgstr "到 _"
+
+msgid "find _ in _"
+msgstr "查找 _ 在 _ 中"
+
+msgid "starting at _"
+msgstr "开始于 _"
+
+msgid "join items of list _"
+msgstr "连接列表中的项目 _"
+
+msgid "separator _"
+msgstr "分隔符 _"
+
+msgid "unicode _ of _"
+msgstr "Unicode 第 _ 个字符来自 _"
+
+msgid "string from unicode _"
+msgstr "unicode为 _ 的字符"
+
+msgid "new list length _"
+msgstr "新建长度为 _ 的列表"
+
+msgid "new byte array _"
+msgstr "新建字节数组 _"
+
+msgid "as byte array _"
+msgstr "作为字节数组 _"
+
+msgid "aByteListOrString"
+msgstr ""
+
+msgid "with all _"
+msgstr "填充 _"
+
+msgid "free memory"
+msgstr "闲置内存"
+
+msgid "all"
+msgstr "所有"
+
+msgid "last"
+msgstr "最后"
+
+msgid "random"
+msgstr "随机"
+
+msgid "split _ by _"
+msgstr "分割 _ 通过 _"
+
+msgid "cat;My Blocks"
+msgstr "我的积木"
+
+msgid "cat;Generic"
+msgstr "通用"
+
+# Buttons on top of "My Blocks" category
+
+msgid "Add a command block"
+msgstr "新建命令积木"
+
+msgid "Add a reporter block"
+msgstr "新建报告积木"
+
+# Make a block dialog
+
+msgid "Enter function name:"
+msgstr "输入积木名称:"
+
+msgid "cat;Comm"
+msgstr "通信"
+
+msgid "i2c get device _ register _"
+msgstr "i2c 读取设备 _ 寄存器 _"
+
+msgid "i2c set device _ register _ to _"
+msgstr "i2c 设置设备 _ 寄存器 _ 为 _"
+
+msgid "i2c device _ read list _"
+msgstr "i2c 设备 _ 读取列表 _"
+
+msgid "i2c device _ write list _"
+msgstr "i2c 设备 _ 写入列表 _"
+
+msgid "i2c device _ exists?"
+msgstr "i2c 设备 _ 存在?"
+
+msgid "spi send _"
+msgstr "spi 发送 _"
+
+msgid "spi receive"
+msgstr "spi 接收"
+
+msgid "spi setup speed _"
+msgstr "spi 设置速率 _"
+
+msgid "mode _"
+msgstr "模式 _"
+
+msgid "rpi channel _"
+msgstr "rpi 通道 _"
+
+msgid "spi exchange bytes _"
+msgstr "spi 交换 字节 _"
+
+msgid "aByteArray"
+msgstr ""
+
+msgid "serial open _ baud"
+msgstr "串口打开 _ 波特率"
+
+msgid "serial close"
+msgstr "串口关闭"
+
+msgid "serial read"
+msgstr "串口读取"
+
+msgid "serial write _"
+msgstr "串口写入 _"
+
+msgid "anIntegerStringListOrByteArray"
+msgstr ""
+
+msgid "serial write _ starting at _"
+msgstr "串口写入 _ 开始于 _"
+
+msgid "aStringListOrByteArray"
+msgstr ""
+
+msgid "soft serial write byte _ pin _ baud _"
+msgstr "软串口写入 字节 _ 引脚 _ 速率 _"
+
+msgid "print _"
+msgstr "打印 _"
+
+msgid "no op"
+msgstr "no op"
+
+msgid "ignore"
+msgstr "忽略"
+
+##############
+# Primitives #
+##############
+
+# These are all mostly hidden from end users
+
+msgid "draw shape _ at x _ y _"
+msgstr "绘制形状 _ 于 x _ y _"
+
+msgid "shape for letter _"
+msgstr "字母 _ 的形状"
+
+msgid "send NeoPixel rgb _"
+msgstr "向 NeoPixel 发送 RGB _"
+
+msgid "has tone support"
+msgstr "具有音调支持"
+
+msgid "play tone pin _ frequency _"
+msgstr "播放音调于引脚 _ 频率 _"
+
+msgid "has WiFi support"
+msgstr "具有 WiFi 支持"
+
+msgid "start WiFi _ password _"
+msgstr "开启 WiFi _ 密码 _"
+
+msgid "stop WiFi"
+msgstr "停止 WiFi"
+
+msgid "WiFi status"
+msgstr "WiFi 状态"
+
+msgid "my IP address"
+msgstr "我的 IP 地址"
+
+msgid "radio send number _"
+msgstr "广播发送数字 _"
+
+msgid "radio send string _"
+msgstr "广播发送字符串 _"
+
+msgid "Hello!"
+msgstr "Hello!"
+
+msgid "radio send pair _ = _"
+msgstr "广播发送配对信息 _ = _"
+
+msgid "light"
+msgstr ""
+
+msgid "radio message received?"
+msgstr "广播消息已收到?"
+
+msgid "radio last number"
+msgstr "最后广播的数字"
+
+msgid "radio last string"
+msgstr "最后广播的字符串"
+
+msgid "radio last message type"
+msgstr "最后广播的消息类型"
+
+msgid "radio set group _ (0-255)"
+msgstr "设置广播分组 _ (0-255)"
+
+msgid "radio set channel (0-83) _"
+msgstr "设置广播信道 (0-83) _"
+
+msgid "radio set power (0-7) _"
+msgstr "设置广播信号强度 (0-7) _"
+
+msgid "radio last signal strength"
+msgstr "最后广播的信号强度"
+
+msgid "radio receive packet _"
+msgstr "广播收到包 _"
+
+msgid "radio send packet _"
+msgstr "广播发送包 _"
+
+msgid "disable radio"
+msgstr "禁止广播"
+
+#############
+# Libraries #
+#############
+
+msgid "Basic Sensors"
+msgstr "基础传感器"
+
+msgid "tilt x"
+msgstr "倾角 x"
+
+msgid "tilt y"
+msgstr "倾角 y"
+
+msgid "tilt z"
+msgstr "倾角 z"
+
+msgid "acceleration"
+msgstr "加速度"
+
+msgid "light level"
+msgstr "光线强度"
+
+msgid "temperature (°C)"
+msgstr "温度 (°C)"
+
+msgid "magnetic field"
+msgstr "磁场"
+
+msgid "set acceleration range _ g = 100"
+msgstr "设置加速度范围 _ g = 100"
+
+####
+# NeoPixel library
+
+msgid "NeoPixel"
+msgstr "NeoPixel"
+
+msgid "set NeoPixels _ _ _ _ _ _ _ _ _ _"
+msgstr "设置 NeoPixels _ _ _ _ _ _ _ _ _ _"
+
+msgid "clear NeoPixels"
+msgstr "关闭 NeoPixels"
+
+msgid "set NeoPixel _ color _"
+msgstr "设置 NeoPixel _ 颜色 _"
+
+msgid "set all NeoPixels color _"
+msgstr "设置所有 NeoPixels 的颜色为 _"
+
+msgid "rotate NeoPixels by _"
+msgstr "轮转 NeoPixel 间距 _"
+
+msgid "brighten NeoPixel _ by _"
+msgstr "NeoPixel _ 亮度增加 _"
+
+msgid "brighten all NeoPixels by _"
+msgstr "所有 NeoPixels 亮度增加 _"
+
+msgid "color r _ g _ b _ (0-255)"
+msgstr "颜色 R _ G _ B _ (0-255)"
+
+msgid "random color"
+msgstr "随机颜色"
+
+msgid "attach _ LED NeoPixel strip to pin _"
+msgstr "将 _ 个 LED NeoPixel 灯带 连接到引脚 _"
+
+msgid "has white _"
+msgstr "具有白光 _"
+
+msgid "PIR"
+msgstr "人体红外传感器"
+
+msgid "PIR at pin _ detected movement"
+msgstr "位于引脚 _ 的人体红外传感器探测到运动"
+
+####
+# NeoPanel library
+
+msgid "NeoPanel"
+msgstr "像素屏"
+
+msgid "attach NeoPixel panel width _ height _ at pin _"
+msgstr "将宽度 _ 高度 _ 的像素屏连接到引脚 _"
+
+msgid "NeoPanel set x _ y _ color _"
+msgstr "像素屏设置 x _ y _ 颜色 _"
+
+msgid "NeoPanel fill column _ color _"
+msgstr "像素屏绘制 列 _ 颜色 _"
+
+msgid "NeoPanel fill row _ color _"
+msgstr "像素屏绘制 行 _ 颜色 _"
+
+msgid "NeoPanel fill rectangle x _ y _ width _ height _ color _"
+msgstr "像素屏绘制长方形 x _ y _ 宽度 _ 高度 _ 颜色 _"
+
+msgid "NeoPanel draw text _ at x _ y _ color _"
+msgstr "像素屏绘制文本 _ 于 x _ y _ 颜色 _"
+
+msgid "NeoPanel draw BMP file _ at x _ y _"
+msgstr "像素屏绘制BMP图片 _ 于 x _ y _"
+
+####
+# Microphone library
+
+msgid "Microphone"
+msgstr "麦克风"
+
+msgid "microphone"
+msgstr "麦克风"
+
+msgid "turn on microphone"
+msgstr "打开麦克风"
+
+msgid "loudness"
+msgstr "音量大小"
+
+msgid "clap count"
+msgstr "拍手次数"
+
+msgid "set clap threshold _"
+msgstr "设置拍手阈值 _"
+
+msgid "estimate clap threshold"
+msgstr "估计拍手阈值"
+
+####
+# Citilab ED1 board libraries
+
+msgid "ED1 Stepper Motor"
+msgstr "ED1 步进电机"
+
+msgid "move motor _ _ steps _"
+msgstr "马达运动 _ _ 步 _"
+
+msgid "move motor 1 _ and motor 2 _ _ steps"
+msgstr "马达1运动 _ 步,同时马达2运动 _ _ 步"
+
+msgid "move motor _ angle _ °"
+msgstr "转动马达 _ 角度 _ °"
+
+msgid "move motor _ _ complete turns"
+msgstr "转动马达_ _ 整圈"
+
+msgid "stop steppers"
+msgstr "停止步进电机"
+
+msgid "clockwise"
+msgstr "顺时针"
+
+msgid "counter-clockwise"
+msgstr "逆时针"
+
+msgid "ED1 Buttons"
+msgstr "ED1按键"
+
+msgid "button OK"
+msgstr "OK按键"
+
+msgid "button X"
+msgstr "X按键"
+
+msgid "button up"
+msgstr "向上键"
+
+msgid "button down"
+msgstr "向下键"
+
+msgid "button left"
+msgstr "向左键"
+
+msgid "button right"
+msgstr "向右键"
+
+msgid "capacitive sensor _"
+msgstr "电容式传感器 _"
+
+msgid "set capacitive threshold to _"
+msgstr "将电容门限值设为 _"
+
+####
+# BirdBrain Technologies libraries
+
+msgid "Hummingbird LED _ _ %"
+msgstr "Hummingbird LED _ _ %"
+
+msgid "Hummingbird Tri-LED _ R _ % G _ % B _ %"
+msgstr "Hummingbird 彩色LED _ R _ % G _ % B _ %"
+
+msgid "Hummingbird Position Servo _ _ °"
+msgstr "Hummingbird 位置伺服 _ _ °"
+
+msgid "Hummingbird Rotation Servo _ _ %"
+msgstr "Hummingbird 旋转伺服 _ _ %"
+
+msgid "Hummingbird _ _"
+msgstr "Hummingbird _ _"
+
+msgid "Hummingbird Battery (mV)"
+msgstr "Hummingbird 电池 (mV)"
+
+msgid "humm;Light"
+msgstr "亮度"
+
+msgid "humm;Distance (cm)"
+msgstr "距离 (cm)"
+
+msgid "humm;Dial"
+msgstr "Dial"
+
+msgid "humm;Sound"
+msgstr "声音"
+
+msgid "humm;Other"
+msgstr "其他"
+
+msgid "Finch Beak Red _ Green _ Blue _"
+msgstr "Finch 喙部 红 _ 绿 _ 蓝 _"
+
+msgid "Finch Tail _ Red _ Green _ Blue _"
+msgstr "Finch 尾部 红 _ 绿 _ 蓝 _"
+
+msgid "Finch Move _ _ cm at _ %"
+msgstr "Finch 移动 _ _ 厘米 位于 _ %"
+
+msgid "Finch Turn _ _ ° at _ %"
+msgstr "Finch 旋转 _ _ ° 位于 _ %"
+
+msgid "Finch Wheels L _ % R _ %"
+msgstr "Finch 轮子 左 _ % 右 _ %"
+
+msgid "Finch Stop"
+msgstr "停止 Finch"
+
+msgid "Finch Distance (cm)"
+msgstr "Finch 距离 (厘米)"
+
+msgid "Finch _ Light"
+msgstr "Finch _ 光线"
+
+msgid "Finch _ Line"
+msgstr "Finch _ 画线"
+
+msgid "Finch Reset Encoders"
+msgstr "Finch 重置编码器"
+
+msgid "Finch _ Encoder"
+msgstr "Finch _ 编码器"
+
+msgid "Finch Accelerometer _"
+msgstr "Finch 加速度 _"
+
+msgid "Finch Battery"
+msgstr "Finch 电池量"
+
+msgid "All"
+msgstr "全部"
+
+msgid "Forward"
+msgstr "前进"
+
+msgid "Backward"
+msgstr "后退"
+
+msgid "Right"
+msgstr "右转"
+
+msgid "Left"
+msgstr "左转"
+
+msgid "Beak Up"
+msgstr "喙部上方"
+
+msgid "Beak Down"
+msgstr "喙部下方"
+
+msgid "Tilt Left"
+msgstr "左侧倾角"
+
+msgid "Tilt Right"
+msgstr "右侧倾角"
+
+msgid "Level"
+msgstr "级别"
+
+msgid "Upside Down"
+msgstr "颠倒"
+
+msgid "x"
+msgstr "x"
+
+msgid "y"
+msgstr "y"
+
+msgid "z"
+msgstr "z"
+
+msgid "strength"
+msgstr "强度"
+
+####
+# Ultrasound distance library
+
+msgid "distance (cm) trigger _ echo _"
+msgstr "距离 (cm) 触发 _ 回声 _"
+
+####
+# Infrared remote library
+
+msgid "IR Remote"
+msgstr "红外线"
+
+msgid "receive IR code"
+msgstr "接收红外编码"
+
+msgid "receive IR code from device _"
+msgstr "从设备 _ 接收红外编码"
+
+msgid "test IR"
+msgstr "测试红外"
+
+msgid "attach IR receiver to pin _"
+msgstr "连接红外接收器至引脚 _"
+
+msgid "IR transmit device _ command _"
+msgstr "红外发射 设备 _ 指令 _"
+
+####
+# Keyboard and Mouse library
+
+msgid "Keyboard and Mouse"
+msgstr "键盘与鼠标"
+
+msgid "press key _"
+msgstr "按下 _ 键"
+
+msgid "while holding _"
+msgstr "同时按住 _ 键"
+
+msgid "hold key _"
+msgstr "持续按住 _ 键"
+
+msgid "release key _"
+msgstr "松开 _ 键"
+
+msgid "release all keys"
+msgstr "松开所有按键"
+
+msgid "kbd;Shift"
+msgstr "Shift"
+
+msgid "kbd;Control"
+msgstr "控制"
+
+msgid "kbd;Alt / ⌥"
+msgstr "Alt / ⌥"
+
+msgid "kbd;Logo / ⌘"
+msgstr "Logo / ⌘"
+
+msgid "kbd;AltGr"
+msgstr ""
+
+msgid "kbd;enter"
+msgstr "enter"
+
+msgid "kbd;return"
+msgstr "return"
+
+msgid "kbd;tab"
+msgstr "tab"
+
+msgid "kbd;backspace"
+msgstr "backspace"
+
+msgid "kbd;delete"
+msgstr "删除"
+
+msgid "kbd;insert"
+msgstr "insert"
+
+msgid "kbd;home"
+msgstr "回到起点"
+
+msgid "kbd;end"
+msgstr "end"
+
+msgid "kbd;PgUp"
+msgstr "PgUp"
+
+msgid "kbd;PgDown"
+msgstr "PgDown"
+
+msgid "kbd;CapsLock"
+msgstr "CapsLock"
+
+msgid "kbd;NumLock"
+msgstr "NumLock"
+
+msgid "kbd;ScrollLock"
+msgstr "ScrollLock"
+
+msgid "kbd;PrintScreen"
+msgstr "PrintScreen"
+
+msgid "kbd;ESC"
+msgstr "ESC"
+
+msgid "_ mouse click"
+msgstr "点击鼠标 _ 键"
+
+msgid "mouse;left"
+msgstr "左"
+
+msgid "mouse;right"
+msgstr "右"
+
+msgid "mouse;middle"
+msgstr "中键"
+
+msgid "mouse;both"
+msgstr "全部"
+
+msgid "move mouse pointer by _ , _"
+msgstr "移动鼠标箭头 变化量 _ , _"
+
+msgid "scroll mouse by _"
+msgstr "滚动鼠标 变化量 _"
+
+msgid "hold _ mouse button"
+msgstr "持续按住鼠标 _ 键"
+
+msgid "release mouse buttons"
+msgstr "松开鼠标按键"
+
+####
+# Lists library
+# Extra utilities for list manipulation and access
+
+msgid "Lists"
+msgstr "列表"
+
+msgid "list _ contains _"
+msgstr "列表 _ 包含 _"
+
+msgid "circular item _ of _"
+msgstr "列表项 _ 属于 _"
+
+msgid "aListOrString"
+msgstr ""
+
+msgid "map _ over _"
+msgstr "映射 _ 与 _"
+
+msgid "aFunction"
+msgstr "aFunction"
+
+msgid "filter _ with _"
+msgstr "过滤 _ 用 _"
+
+msgid "pick _ from _"
+msgstr "选择 _ 从 _"
+
+msgid "a few"
+msgstr "a few"
+
+msgid "some"
+msgstr "some"
+
+msgid "most"
+msgstr "most"
+
+msgid "reverse _"
+msgstr "颠倒 _"
+
+msgid "shuffle _"
+msgstr "打乱 _"
+
+msgid "sort _"
+msgstr "排序 _"
+
+msgid "unique _"
+msgstr ""
+
+msgid "shuffled _"
+msgstr "已打乱的 _"
+
+msgid "reversed _"
+msgstr "已颠倒的 _"
+
+msgid "sorted _"
+msgstr "已排序的 _"
+
+msgid "uniqued _"
+msgstr ""
+
+####
+# Pseudorandomness
+# Creates pseudorandom numbers and lists of numbers given a particular seed
+
+msgid "Pseudorandomness"
+msgstr ""
+
+msgid "pseudorandom _ to _ with seed _"
+msgstr ""
+
+msgid "_ pseudorandom numbers _ to _ with seed _"
+msgstr ""
+
+####
+# BLE Keyboard library
+
+msgid "BLE Keyboard"
+msgstr "蓝牙键盘"
+
+msgid "start BLE Keyboard"
+msgstr "启动蓝牙键盘"
+
+####
+# Radio comm library
+# Allows micro:bit boards to exchange messages
+# All of its blocks are primitive (see "Primitives" section)
+
+msgid "Radio"
+msgstr "广播"
+
+####
+# Text scrolling library
+# Scrolls text on 5x5 LED displays and simulated ones
+
+msgid "Scrolling"
+msgstr "滚动显示"
+
+msgid "scroll text _"
+msgstr "滚动显示文字 _"
+
+msgid "HELLO ROSA!"
+msgstr ""
+
+msgid "scroll number _"
+msgstr "滚动显示数字 _"
+
+msgid "pausing _ ms"
+msgstr "暂停 _ 毫秒"
+
+msgid "stop scrolling"
+msgstr "停止滚动"
+
+####
+# Servo motor library
+
+msgid "Servo"
+msgstr "舵机"
+
+msgid "set servo _ to _ degrees (-90 to 90)"
+msgstr "设置舵机 _ 的角度为 _ 度 (-90 到 90)"
+
+msgid "set servo _ to speed _ (-100 to 100)"
+msgstr "设置360度舵机 _ 的速度为 _ (-100 到 100)"
+
+msgid "stop servo _"
+msgstr "停止舵机 _"
+
+####
+# 5x5 LED display library
+# Supports the micro:bit display, but also simulated 5x5 displays on boards
+# with differently sized LED arrays, NeoPixel arrays or TFT displays
+
+msgid "LED Display"
+msgstr "LED 显示"
+
+msgid "display _"
+msgstr "显示 _"
+
+msgid "display image _"
+msgstr "显示图像 _"
+
+msgid "clear display"
+msgstr "清除显示"
+
+msgid "set display color _"
+msgstr "设置显示颜色 _"
+
+msgid "plot x _ y _"
+msgstr "点亮 x _ y _"
+
+msgid "unplot x _ y _"
+msgstr "熄灭 x _ y _"
+
+msgid "display character _"
+msgstr "显示字符 _"
+
+# Image names for the "display image" block
+
+msgid "heart"
+msgstr "心"
+
+msgid "small heart"
+msgstr "小心脏"
+
+msgid "yes"
+msgstr ""
+
+msgid "no"
+msgstr "不"
+
+msgid "happy"
+msgstr "快乐"
+
+msgid "sad"
+msgstr "悲伤"
+
+msgid "confused"
+msgstr "困惑"
+
+msgid "angry"
+msgstr "愤怒"
+
+msgid "asleep"
+msgstr "睡着了"
+
+msgid "surprised"
+msgstr "惊讶"
+
+msgid "silly"
+msgstr "愚蠢"
+
+msgid "fabulous"
+msgstr "美妙 "
+
+msgid "meh"
+msgstr "嗯"
+
+msgid "t-shirt"
+msgstr "T恤衫"
+
+msgid "roller skate"
+msgstr "旱冰鞋"
+
+msgid "duck"
+msgstr "鸭子"
+
+msgid "house"
+msgstr "房子"
+
+msgid "tortoise"
+msgstr "乌龟"
+
+msgid "butterfly"
+msgstr "蝴蝶"
+
+msgid "stick figure"
+msgstr "棍子"
+
+msgid "ghost"
+msgstr "鬼 "
+
+msgid "sword"
+msgstr "剑"
+
+msgid "giraffe"
+msgstr "长颈鹿"
+
+msgid "skull"
+msgstr "头骨"
+
+msgid "umbrella"
+msgstr "伞"
+
+msgid "snake"
+msgstr "蛇"
+
+msgid "rabbit"
+msgstr "兔子"
+
+msgid "cow"
+msgstr "牛"
+
+msgid "quarter note"
+msgstr "四分音符"
+
+msgid "eight note"
+msgstr "八分音符"
+
+msgid "pitchfork"
+msgstr "干草叉"
+
+msgid "target"
+msgstr "目标"
+
+msgid "triangle"
+msgstr "三角形"
+
+msgid "left triangle"
+msgstr "左三角铁"
+
+msgid "chess board"
+msgstr "棋盘"
+
+msgid "diamond"
+msgstr "钻石"
+
+msgid "small diamond"
+msgstr "小钻石"
+
+msgid "square"
+msgstr "正方形"
+
+msgid "small square"
+msgstr "小正方形"
+
+msgid "scissors"
+msgstr "剪刀"
+
+####
+# OLED Graphics library
+
+msgid "initialize i2c _ address(hex) _ reset pin# _ flip _"
+msgstr "初始化 i2c _ 地址(hex) _ 重置引脚# _ 翻转 _"
+
+msgid "initialize spi _ d/c pin# _ reset pin# _ flip _"
+msgstr "初始化 spi _ d/c 引脚# _ 重置引脚# _ 翻转 _"
+
+msgid "write _ at x _ y _ inverse _"
+msgstr "输入字符 _ 在 x _ y _ 反色 _"
+
+msgid "show display buffer"
+msgstr "刷新显示缓存"
+
+msgid "clear"
+msgstr "清除显示"
+
+msgid "set contrast (1-4) _"
+msgstr "对比度 (1-4) _"
+
+msgid "draw circle at x _ y _ radius _ erase _"
+msgstr "绘制圆形在 x _ y _ 处，半径为 _ 擦除 _"
+
+msgid "draw image _ at x _ y _"
+msgstr "绘制 _ 图，在 x _ y _"
+
+msgid "draw line from x _ y _ to x _ y _ erase _"
+msgstr "画线 从 x _ y _ 到 x _ y _ 擦除 _"
+
+msgid "draw rectangle x _ y _ w _ h _ erase _ rounding(3-15) _"
+msgstr "绘制矩形 x _ y _ 宽 _ 高 _ 擦除 _ 圆角(3-15) _"
+
+msgid "fill rectangle x _ y _ w _ h _ erase _"
+msgstr "填充矩形 x _ y _ 宽 _ 高 _ 擦除 _"
+
+msgid "_flip display top _"
+msgstr "反转显示 上 _"
+
+msgid "make image _"
+msgstr "做 _ 图"
+
+msgid "set pixel x _ y _ erase _"
+msgstr "绘制像素点 x _ y _ 擦除 _"
+
+msgid "set video _"
+msgstr "图像设置 _"
+
+msgid "cursor location"
+msgstr "光标位置"
+
+msgid "defer display updates"
+msgstr "推迟显示更新"
+
+####
+# TFT display library
+
+msgid "clear TFT display "
+msgstr ""
+
+msgid "enable TFT _"
+msgstr "启用 TFT _"
+
+msgid "TFT width"
+msgstr "TFT宽度"
+
+msgid "TFT height"
+msgstr "TFT高度"
+
+msgid "set TFT pixel x _ y _ to _"
+msgstr "设置 TFT-像素 x _ y _ 为 _"
+
+msgid "draw line on TFT from x _ y _ to x _ y _ color _"
+msgstr "在TFT上绘制直线从 x _ y _ 至 x _ y _ 颜色 _"
+
+msgid "draw vector x _ y _ angle _ length _ color _"
+msgstr "在TFT上绘制矢量, x _ y _ 角度 _ 长度 _ 颜色 _"
+
+msgid "draw rectangle on TFT at x _ y _ width _ height _ color _"
+msgstr "在TFT上绘制长方形,位置 x _ y _ 宽度 _ 高度 _ 颜色 _"
+
+msgid "draw rounded rectangle on TFT at x _ y _ width _ height _ radius _ color _"
+msgstr "在TFT上绘制圆角长方形, 位置 x _ y _ 宽度 _ 高度 _ 半径 _ 颜色 _"
+
+msgid "draw circle on TFT at x _ y _ radius _ color _"
+msgstr "在TFT上绘制圆形, 位置 x _ y _ 半径 _ 颜色 _"
+
+msgid "draw triangle on TFT at x _ y _ , x _ y _ , x _ y _ color _"
+msgstr "在TFT上绘制三角形, 位置 x _ y _ , x _ y _ , x _ y _ 颜色 _"
+
+msgid "filled _"
+msgstr "填充 _"
+
+msgid "write _ on TFT at x _ y _ color _"
+msgstr "在TFT上写 _ 位置 x _ y _ 颜色 _"
+
+msgid "Hello World!"
+msgstr ""
+
+msgid "scale _ wrap _"
+msgstr "缩放 _ 包裹 _"
+
+msgid "draw text _ on TFT at x _ y _ color _"
+msgstr "在TFT上绘制文本 _ 位置 x _ y _ 颜色 _"
+
+msgid "scale _"
+msgstr "缩放 _"
+
+msgid "bg color _"
+msgstr "背景颜色 _"
+
+msgid "draw bitmap _ palette _ on TFT at x _ y _"
+msgstr "在TFT上制位图 _  调色板 _ 位置 x _ y _"
+
+msgid "set TFT backlight _ (0-10)"
+msgstr "设置TFT背光 _ (0-10)"
+
+msgid "gray _ %"
+msgstr "灰色 _ %"
+
+####
+# BMP library
+# Can display BMP image files on a TFT display
+
+msgid "display BMP file _ at x _ y _"
+msgstr "显示 BMP 文件 _ 在 x _ y _"
+
+msgid "image.bmp"
+msgstr "image.bmp"
+
+####
+# Color library
+
+msgid "Color Operators"
+msgstr ""
+
+msgid "color r _ g _ b _ (0-255)"
+msgstr "颜色 R _ G _ B _ (0-255)"
+
+msgid "gray _ %"
+msgstr "灰色 _ %"
+
+msgid "random color"
+msgstr "随机颜色"
+
+msgid "red _"
+msgstr ""
+
+msgid "green _"
+msgstr ""
+
+msgid "blue _"
+msgstr ""
+
+msgid "color hue _ (0-360) saturation _ % brightness _ %"
+msgstr ""
+
+msgid "hue _"
+msgstr ""
+
+msgid "saturation _"
+msgstr ""
+
+msgid "brightness _"
+msgstr ""
+
+msgid "_ with hue _ (0-360)"
+msgstr ""
+
+msgid "_ with saturation _ %"
+msgstr ""
+
+msgid "_ with brightness _ %"
+msgstr ""
+
+####
+# Fractions library
+
+msgid "Fractions"
+msgstr "分数"
+
+msgid "fract _ / _"
+msgstr "分数 _ / _"
+
+msgid "fract _ + _"
+msgstr "分数 _ + _"
+
+msgid "fract _ - _"
+msgstr "分数 _ - _"
+
+msgid "fract _ × _"
+msgstr "分数 _ × _"
+
+msgid "fract _ = _"
+msgstr "分数 _ = _"
+
+msgid "fract _ < _"
+msgstr "分数 _ < _"
+
+msgid "fract _ > _"
+msgstr "分数 _ > _"
+
+msgid "simplify fraction _"
+msgstr "简化分数 _"
+
+msgid "integer part of fraction _"
+msgstr "分数的整数部分 _"
+
+msgid "numerator of fraction _"
+msgstr "分数的分子 _"
+
+msgid "denominator of fraction _"
+msgstr "分数的分母 _"
+
+msgid "gcd _ _"
+msgstr "最大公约数 _ _"
+
+msgid "lcm _ _"
+msgstr "最小公倍数 _ _"
+
+####
+# Tone library
+# Generates music tones on buzzers
+
+msgid "Tone"
+msgstr "音调"
+
+msgid "attach buzzer to pin _"
+msgstr "连接蜂鸣器至引脚 _"
+
+msgid "play note _ octave _ for _ ms"
+msgstr "弹奏音符 _ 音阶 _ 持续 _ 毫秒"
+
+msgid "play frequency _ for _ ms"
+msgstr "弹奏频率 _ 持续 _ 毫秒"
+
+msgid "play midi key _ for _ ms"
+msgstr "弹奏midi键 _ 持续 _ 毫秒"
+
+msgid "start tone _ Hz"
+msgstr "弹奏音调 _ 赫兹"
+
+msgid "stop tone"
+msgstr "停止音调"
+
+msgid "c"
+msgstr ""
+
+msgid "c#"
+msgstr ""
+
+msgid "d"
+msgstr ""
+
+msgid "d#"
+msgstr ""
+
+msgid "e"
+msgstr ""
+
+msgid "f"
+msgstr ""
+
+msgid "f#"
+msgstr ""
+
+msgid "g"
+msgstr ""
+
+msgid "g#"
+msgstr ""
+
+msgid "a"
+msgstr ""
+
+msgid "a#"
+msgstr ""
+
+msgid "b"
+msgstr ""
+
+####
+# Ringtone library
+# Can play Nokring-formatted music. Also known as RTTTL.
+
+msgid "Ringtone"
+msgstr "铃声"
+
+msgid "play ringtone _"
+msgstr "播放铃声 _"
+
+msgid "current song name"
+msgstr "当前歌曲名"
+
+####
+# Pluck
+# Generate music with plucked-string resembling sounds
+
+msgid "Pluck"
+msgstr "Pluck"
+
+msgid "pluck note _ octave _ for _ ms"
+msgstr "pluck note _ octave _ for _ ms"
+
+msgid "pluck MIDI key _ for _ msecs"
+msgstr "pluck MIDI key _ for _ msecs"
+
+msgid "set pluck pin _"
+msgstr "set pluck pin _"
+
+####
+# WAV
+# Play WAV sound files
+
+msgid "play WAV file _"
+msgstr "播放 WAV 文件 _"
+
+msgid "filename"
+msgstr "文件名称"
+
+####
+# Rhythm
+# Send broadcasts -and call functions- according to a tempo and time signature.
+# Useful to create musical patterns
+
+msgid "Rhythm"
+msgstr "节奏"
+
+msgid "set tempo to _ bpm at _ / _ signature"
+msgstr "设置节拍 _ bpm 以 _ / _ 拍"
+
+msgid "set pattern to _ bars"
+msgstr ""
+
+msgid "current beat"
+msgstr "当前节拍"
+
+msgid "current bar"
+msgstr "当前小节"
+
+msgid "wait until next _ duration"
+msgstr ""
+
+msgid "wait until beat _"
+msgstr ""
+
+msgid "wait until bar _"
+msgstr ""
+
+####
+# MIDI
+# Control MIDI devices from MicroBlocks
+
+# General MIDI drum instrument names
+
+msgid "Acoustic Bass Drum"
+msgstr "原声低音鼓"
+
+msgid "Bass Drum 1"
+msgstr "低音鼓 1"
+
+msgid "Side Stick"
+msgstr "小鼓边击"
+
+msgid "Acoustic Snare"
+msgstr "小鼓"
+
+msgid "Hand Clap"
+msgstr "拍手"
+
+msgid "Electric Snare"
+msgstr "电动军鼓"
+
+msgid "Low Floor Tom"
+msgstr "低音落地嗵鼓"
+
+msgid "Closed Hi-Hat"
+msgstr "封闭高音鼓"
+
+msgid "High Floor Tom"
+msgstr "高音落地嗵鼓"
+
+msgid "Pedal Hi-Hat"
+msgstr "踏板高音鼓"
+
+msgid "Low Tom"
+msgstr "低音嗵鼓"
+
+msgid "Open Hi-Hat"
+msgstr "开放高音鼓"
+
+msgid "Low-Mid Tom"
+msgstr "中低嗵鼓"
+
+msgid "Hi-Mid Tom"
+msgstr "中高嗵鼓"
+
+msgid "Crash Cymbal 1"
+msgstr ""
+
+msgid "High Tom"
+msgstr "高音嗵鼓"
+
+msgid "Ride Cymbal 1"
+msgstr "打击镲 1"
+
+msgid "Chinese Cymbal"
+msgstr "中国镲"
+
+msgid "Ride Bell"
+msgstr "马铃"
+
+msgid "Tambourine"
+msgstr ""
+
+msgid "Splash Cymbal"
+msgstr "飞溅钹"
+
+msgid "Cowbell"
+msgstr ""
+
+msgid "Crash Cymbal 2"
+msgstr "撞镲 2"
+
+msgid "Vibraslap"
+msgstr ""
+
+msgid "Ride Cymbal 2"
+msgstr "打击镲 2"
+
+msgid "Hi Bongo"
+msgstr "高邦戈"
+
+msgid "Low Bongo"
+msgstr "低邦戈"
+
+msgid "Mute Hi Conga"
+msgstr "Mute Hi Conga"
+
+msgid "Open Hi Conga"
+msgstr "低音康加"
+
+msgid "Low Conga"
+msgstr "低音康加"
+
+msgid "High Timbale"
+msgstr ""
+
+msgid "Low Timbale"
+msgstr ""
+
+msgid "High Agogo"
+msgstr ""
+
+msgid "Low Agogo"
+msgstr ""
+
+msgid "Cabasa"
+msgstr ""
+
+msgid "Maracas"
+msgstr ""
+
+msgid "Short Whistle"
+msgstr ""
+
+msgid "Long Whistle"
+msgstr ""
+
+msgid "Short Guiro"
+msgstr ""
+
+msgid "Long Guiro"
+msgstr ""
+
+msgid "Claves"
+msgstr ""
+
+msgid "Hi Wood Block"
+msgstr ""
+
+msgid "Low Wood Block"
+msgstr ""
+
+msgid "Mute Cuica"
+msgstr ""
+
+msgid "Open Cuica"
+msgstr ""
+
+msgid "Mute Triangle"
+msgstr ""
+
+msgid "Open Triangle"
+msgstr ""
+
+# General MIDI instrument categories
+
+msgid "piano"
+msgstr ""
+
+msgid "chromatic percussion"
+msgstr ""
+
+msgid "organ"
+msgstr ""
+
+msgid "guitar"
+msgstr ""
+
+msgid "bass"
+msgstr ""
+
+msgid "strings"
+msgstr ""
+
+msgid "ensemble"
+msgstr ""
+
+msgid "brass"
+msgstr ""
+
+msgid "reed"
+msgstr ""
+
+msgid "pipe"
+msgstr ""
+
+msgid "synth lead"
+msgstr ""
+
+msgid "synth pad"
+msgstr ""
+
+msgid "synth SFX"
+msgstr ""
+
+msgid "ethnic"
+msgstr ""
+
+msgid "percussive"
+msgstr ""
+
+msgid "gm;SFX"
+msgstr ""
+
+# General MIDI drum sets
+
+msgid "standard"
+msgstr ""
+
+msgid "room"
+msgstr ""
+
+msgid "power"
+msgstr ""
+
+msgid "electronic"
+msgstr ""
+
+msgid "TR-808"
+msgstr ""
+
+msgid "jazz"
+msgstr ""
+
+msgid "brush"
+msgstr ""
+
+msgid "orchestra"
+msgstr ""
+
+msgid "drumkit;SFX"
+msgstr ""
+
+msgid "CM-64/CM-32L"
+msgstr ""
+
+# General MIDI control changes
+
+msgid "bank select 1"
+msgstr ""
+
+msgid "bank select 2"
+msgstr ""
+
+msgid "modulation"
+msgstr ""
+
+msgid "portamento time"
+msgstr ""
+
+msgid "volume"
+msgstr ""
+
+msgid "pan"
+msgstr ""
+
+msgid "expression"
+msgstr ""
+
+msgid "hold"
+msgstr ""
+
+msgid "portamento"
+msgstr ""
+
+msgid "sostenuto"
+msgstr ""
+
+msgid "soft"
+msgstr ""
+
+msgid "resonance"
+msgstr ""
+
+msgid "release time"
+msgstr ""
+
+msgid "attack time"
+msgstr ""
+
+msgid "cutoff"
+msgstr ""
+
+msgid "decay time"
+msgstr ""
+
+msgid "vibrato rate"
+msgstr ""
+
+msgid "vibrato depth"
+msgstr ""
+
+msgid "vibrato delay"
+msgstr ""
+
+msgid "portamento control"
+msgstr ""
+
+msgid "effect 1"
+msgstr "效果 1"
+
+msgid "effect 2"
+msgstr "效果 2"
+
+# library blocks
+
+msgid "play MIDI note _ for _ ms on channel _ volume _"
+msgstr ""
+
+msgid "stop all notes on channel _"
+msgstr ""
+
+msgid "set MIDI note _ to _ on channel _ volume _"
+msgstr ""
+
+msgid "note _ octave _ to MIDI key"
+msgstr ""
+
+msgid "select MIDI instrument _ number _ for channel _"
+msgstr ""
+
+msgid "select MIDI instrument _ for channel _"
+msgstr ""
+
+msgid "variation _"
+msgstr ""
+
+msgid "instrument _ number _"
+msgstr ""
+
+msgid "select MIDI drum kit _"
+msgstr ""
+
+msgid "play MIDI drum _ for _ ms volume _"
+msgstr ""
+
+msgid "drum _"
+msgstr ""
+
+msgid "change MIDI control _ on channel _ to _"
+msgstr ""
+
+msgid "pitch bend MIDI channel _ to _ %"
+msgstr ""
+
+msgid "send MIDI reset"
+msgstr ""
+
+msgid "send MIDI start playing"
+msgstr ""
+
+msgid "send MIDI stop playing"
+msgstr ""
+
+msgid "send MIDI continue playing"
+msgstr ""
+
+msgid "set MIDI signal to pin _"
+msgstr ""
+
+####
+# Scales & Chords
+# Abstractions for musical theory
+
+msgid "Scales & Chords"
+msgstr ""
+
+# scale names
+
+msgid "ionian"
+msgstr ""
+
+msgid "dorian"
+msgstr ""
+
+msgid "phrygian"
+msgstr ""
+
+msgid "lydian"
+msgstr ""
+
+msgid "mixolydian"
+msgstr ""
+
+msgid "aeolian"
+msgstr ""
+
+msgid "locrian"
+msgstr ""
+
+msgid "major"
+msgstr ""
+
+msgid "minor"
+msgstr ""
+
+# chord types
+
+msgid "major"
+msgstr ""
+
+msgid "minor"
+msgstr ""
+
+msgid "diminished"
+msgstr ""
+
+msgid "major 7th"
+msgstr ""
+
+msgid "minor 7th"
+msgstr ""
+
+msgid "Maj7"
+msgstr ""
+
+# sound destinations for arpeggiate block
+
+msgid "MIDI channel"
+msgstr ""
+
+msgid "tone pin"
+msgstr ""
+
+# library blocks
+
+msgid "_ scale root _"
+msgstr ""
+
+msgid "steps _"
+msgstr ""
+
+msgid "pentatonic _ scale root _"
+msgstr ""
+
+msgid "_ chord root _"
+msgstr ""
+
+msgid "_ chord for root _"
+msgstr ""
+
+msgid "arpeggiate _ in order _ duration _ and volume _ on _ _"
+msgstr ""
+
+msgid "improvised arpeggio over _ for _ bars with durations _"
+msgstr ""
+
+msgid "improvise over _ for _ bars with durations _ on _ _ volume _"
+msgstr ""
+
+msgid "_ transposed _ semitones"
+msgstr ""
+
+msgid "chord progression _ with root _"
+msgstr ""
+
+msgid "and _ steps per chord"
+msgstr ""
+
+msgid "rotation _ of circle of 5ths _ M _ m _ º"
+msgstr ""
+
+####
+# Chiptune
+# Old-school sound generation on digital pins and DACs
+
+msgid "kick for _ ms on pin _"
+msgstr ""
+
+msgid "tom for _ ms pitch shifted by _ on pin _"
+msgstr ""
+
+msgid "laser for _ ms with frequency _ speed _ on pin _"
+msgstr ""
+
+msgid "noise for _ ms pitch shifted by _ on pin _"
+msgstr ""
+
+msgid "fade noise for _ ms pitch shifted by _ on DAC pin _"
+msgstr ""
+
+msgid "snare for _ ms on DAC pin _"
+msgstr ""
+
+msgid "hihat for _ ms on DAC pin _"
+msgstr ""
+
+####
+# Square Wave Chords
+# Play chords on 3 digital pins
+
+msgid "Square Wave Chords"
+msgstr ""
+
+msgid "play chord _ for _ ms"
+msgstr ""
+
+msgid "set digital chord pins _ _ _"
+msgstr ""
+
+####
+# Turtle geometry library
+
+msgid "Turtle"
+msgstr "海龟"
+
+msgid "trtl;home"
+msgstr "回到起点"
+
+msgid "move _"
+msgstr "前进 _"
+
+msgid "turn _ degrees"
+msgstr "旋转 _ 度"
+
+msgid "turn _ / _ of circle"
+msgstr "旋转 _ / _ 个圈"
+
+msgid "pen down"
+msgstr "落笔"
+
+msgid "pen up"
+msgstr "抬笔"
+
+msgid "set pen color to _"
+msgstr "将画笔颜色设置为 _"
+
+msgid "set pen to random color"
+msgstr "将画笔设置为随机颜色"
+
+msgid "fill display with _"
+msgstr "用 _ 填充视区"
+
+msgid "go to x _ y _"
+msgstr "移动到 x _ y _"
+
+msgid "point in direction _"
+msgstr "面向 _"
+
+####
+# File system library
+
+msgid "Files"
+msgstr "文件"
+
+msgid "open file _"
+msgstr "打开文件 _"
+
+msgid "close file _"
+msgstr "关闭文件 _"
+
+msgid "delete file _"
+msgstr "删除文件 _"
+
+msgid "append line _ to file _"
+msgstr "将行 _ 添加至文件 _"
+
+msgid "append bytes _ to file _"
+msgstr "将字节 _ 添加至文件 _"
+
+msgid "end of file _"
+msgstr "文件 _ 结束"
+
+msgid "next line of file _"
+msgstr "文件 _ 的下一行"
+
+msgid "next _ bytes of file _"
+msgstr "接下来的 _ 字节 从文件 _"
+
+msgid "read into _ from file _"
+msgstr "读入到 _ 从文件 _"
+
+msgid "a ByteArray"
+msgstr "a ByteArray"
+
+msgid "starting at _"
+msgstr "开始于 _"
+
+msgid "file names"
+msgstr "文件名"
+
+msgid "in directory _"
+msgstr "在字典 _"
+
+msgid "size of file _"
+msgstr "文件 _ 的大小"
+
+msgid "file system info"
+msgstr "文件系统信息"
+
+####
+# Strings
+# string (text) processing functions
+
+msgid "Strings"
+msgstr "字符串"
+
+msgid "_ is a digit"
+msgstr "_ 是数字"
+
+msgid "_ is lowercase"
+msgstr "_ 是小写字母"
+
+msgid "_ is uppercase"
+msgstr "_ 是大写字母"
+
+msgid "_ begins with _"
+msgstr "_ 以 _ 开头"
+
+msgid "prefix"
+msgstr "prefix"
+
+msgid "pre"
+msgstr "pre"
+
+msgid "_ ends with _"
+msgstr "_ 以 _ 结尾"
+
+msgid "suffix"
+msgstr "suffix"
+
+msgid "fix"
+msgstr "fix"
+
+msgid "_ contains _"
+msgstr "_ 包含 _"
+
+msgid "lowercase _"
+msgstr "小写 _"
+
+msgid "THIS is a String! :)"
+msgstr "THIS is a String! :)"
+
+msgid "uppercase _"
+msgstr "大写 _"
+
+msgid "Hello, world!"
+msgstr "Hello, world!"
+
+msgid "_ without white space"
+msgstr "_ 移除空格"
+
+msgid "join string list _ separator _"
+msgstr "连接成字符串 列表 _ 分隔符 _"
+
+msgid "unicodes _"
+msgstr "unicodes _"
+
+msgid "aString"
+msgstr "aString"
+
+msgid "string from unicodes _"
+msgstr "将 unicodes _ 转为字符串"
+
+msgid "aList"
+msgstr "aList"
+
+msgid "num2str _"
+msgstr "数字 _ 转为字符串"
+
+msgid "str2num _"
+msgstr "字符串 _ 转为数字"
+
+####
+# WiFi library
+
+msgid "WiFi"
+msgstr "WiFi"
+
+msgid "wifi connect to _ password _"
+msgstr "连接 wifi 至 _ 密码 _"
+
+msgid "Network_Name"
+msgstr "网络名称"
+
+msgid "IP _ gateway _ subnet _"
+msgstr "IP 地址 _ 网关 _ 子网掩码 _"
+
+msgid "wifi create hotspot _ password _"
+msgstr "创建 wifi 热点 _ 密码 _"
+
+msgid "Network_Password"
+msgstr "网络密码"
+
+msgid "IP address"
+msgstr "IP 地址"
+
+msgid "MAC address"
+msgstr "MAC 地址"
+
+####
+# Motion library
+# Counts steps and detects motion via the internal accelerometer
+
+msgid "Motion"
+msgstr "运动"
+
+msgid "motion"
+msgstr "运动"
+
+msgid "start step counter"
+msgstr "启动计步器"
+
+msgid "step count"
+msgstr "步数"
+
+msgid "clear step count"
+msgstr "清除步数"
+
+msgid "set step threshold _ (0-50)"
+msgstr "设置计步阈值 _ (0-50)"
+
+####
+# Button Events library
+
+msgid "Button Events"
+msgstr "按键事件"
+
+msgid "button _ double pressed"
+msgstr "按键 _ 被双击"
+
+msgid "button _ long pressed"
+msgstr "按键 _ 被长按"
+
+msgid "button _ pressed"
+msgstr "按键 _ 被点击"
+
+####
+# Calliope board library
+
+msgid "Calliope set LED red _ green _ blue _"
+msgstr "Calliope 设置 LED 红 _ 绿 _ 蓝 _"
+
+msgid "Calliope set speaker _"
+msgstr "Calliope 设置扬声器 _"
+
+msgid "Calliope loudness"
+msgstr "Calliope 响度"
+
+####
+# Circuit Playground Express board library
+
+msgid "Circuit Playground set speaker _"
+msgstr "Circuit Playground 设置扬声器 _"
+
+msgid "Circuit Playground slide switch"
+msgstr "Circuit Playground 滑动开关"
+
+####
+# DotStar LED library
+
+msgid "attach _ DotStar LEDs to data pin _ clock pin _"
+msgstr "连接 _ DotStar LEDs 至数据引脚 _ 时钟引脚 _"
+
+msgid "set all DotStar LEDs to r _ g _ b _"
+msgstr "设置所有 DotStar LEDs 为 r _ g _ b _"
+
+msgid "set DotStar LED _ to r _ g _ b _"
+msgstr "设置 DotStar LED _ 为 r _ g _ b _"
+
+msgid "set DotStar brightness _"
+msgstr "设置 DotStar 亮度 _"
+
+####
+# BME280 environmental sensor
+
+msgid "bme280 connected"
+msgstr "bme280 已连接"
+
+msgid "bmp280 connected"
+msgstr "bmp280 已连接"
+
+msgid "bmx280 temperature"
+msgstr "bmx280 温度"
+
+msgid "bmx280 pressure"
+msgstr "bmx280 压力"
+
+msgid "bme280 humidity"
+msgstr "bme280 湿度"
+
+msgid "bmx280 set base altitude _ meters"
+msgstr "bmx280 设置基准高度 _ 米"
+
+msgid "bmx280 altitude (cm)"
+msgstr "BMX280 高度（厘米）"
+
+msgid "bmx280 altitude (feet)"
+msgstr "BMX280 高度（英尺）"
+
+####
+# TCS34725 color sensor
+
+msgid "TCS34725 connected"
+msgstr "TCS34725 已连接"
+
+msgid "TCS34725 rgb"
+msgstr "TCS34725 RGB"
+
+msgid "color _ name"
+msgstr "颜色 _ 名字"
+
+####
+# DHT11 environmental sensor
+
+msgid "temperature (Celsius) DHT11 pin _"
+msgstr "温度 (Celsius) DHT11 引脚 _"
+
+msgid "humidity DHT11 pin _"
+msgstr "湿度 DHT11 引脚 _"
+
+msgid "temperature (Celsius) DHT22 pin _"
+msgstr "温度 (Celsius) DHT22 引脚 _"
+
+msgid "humidity DHT22 pin _"
+msgstr "湿度 DHT22 引脚 _"
+
+####
+# PN532 RFID reader
+
+msgid "read PN532 RFID"
+msgstr "读取 PN532 RFID"
+
+msgid "RFID _ = _"
+msgstr "RFID _ = _"
+
+msgid "get PN532 firmware version"
+msgstr "PN532 固件版本"
+
+####
+# Touch Screen
+
+msgid "Touch Screen"
+msgstr "触摸屏"
+
+msgid "TFT touched"
+msgstr "TFT被点击"
+
+msgid "TFT touch X position"
+msgstr "TFT点击 X 坐标"
+
+msgid "TFT touch Y position"
+msgstr "TFT点击 Y 坐标"
+
+msgid "TFT touch pressure"
+msgstr "TFT 点击力度"
+
+####
+# HTTP Client
+
+msgid "HTTP client"
+msgstr "HTTP 客户端"
+
+msgid "_ data _ to http #SVG#colon-double-slash _"
+msgstr "_ 数据 _ 到 http #SVG#colon-double-slash _"
+
+msgid "MicroBlocks is fun"
+msgstr ""
+
+msgid "port _"
+msgstr "端口 _"
+
+####
+# HTTP Server
+
+msgid "HTTP server"
+msgstr "HTTP 服务器"
+
+msgid "start HTTP server"
+msgstr "启动 HTTP 服务器"
+
+msgid "HTTP server request"
+msgstr "HTTP 服务器请求"
+
+msgid "respond _ to HTTP request"
+msgstr "回应 _ 至HTTP请求"
+
+msgid "with body _"
+msgstr "with body _"
+
+msgid "Welcome to the MicroBlocks HTTP server"
+msgstr "欢迎使用 MicroBlocks HTTP 服务器"
+
+msgid "and headers _"
+msgstr "and headers _"
+
+msgid "body of request _"
+msgstr "请求体 _"
+
+msgid "path of request _"
+msgstr "请求路径 _"
+
+msgid "headers of request _"
+msgstr "请求头 _"
+
+msgid "method of request _"
+msgstr "请求方法 _"
+
+msgid "content length of request _"
+msgstr "请求内容长度 _"
+
+####
+# WebSocket server
+
+msgid "WebSocket server"
+msgstr "WebSocket 服务器"
+
+msgid "start WebSocket server"
+msgstr "启动 WebSocket 服务器"
+
+msgid "last WebSocket event"
+msgstr "最后的 WebSocket 事件"
+
+msgid "client ID for WebSocket event _"
+msgstr "WebSocket 事件 _ 的客户端 ID"
+
+msgid "payload for WebSocket event _"
+msgstr "WebSocket 事件 _ 的载荷"
+
+msgid "type of WebSocket event _"
+msgstr "WebSocket 事件 _ 的类型"
+
+msgid "send _ to WebSocket client _"
+msgstr "发送 _ 到 WebSocket 客户端 _"
+
+msgid "Hello, Client!"
+msgstr "Hello, Client!"
+
+####
+# Web Things library
+
+msgid "Web Thing"
+msgstr "Web Thing"
+
+msgid "set thing name to _"
+msgstr "设置 Thing 的名字为 _"
+
+msgid "set thing capability to _"
+msgstr "设置 thing 的能力为 _"
+
+msgid "set boolean property _ title _ @Type _"
+msgstr "设置逻辑属性 _ 名字 _ @类型 _"
+
+msgid "set string property _ title _ @Type _"
+msgstr "设置字符串属性 _ 名字 _ @类型 _"
+
+msgid "set number property _ title _ @Type _"
+msgstr "设置数字属性 _ 名字 _ @类型 _"
+
+msgid "set number property _ title _ min _ max _ @Type _"
+msgstr "设置数字属性 _ 名字 _ 最小 _ 最大 _ @类型 _"
+
+msgid "read only _"
+msgstr "只读 _"
+
+msgid "register event _ type _"
+msgstr "注册事件 _ 类型 _"
+
+msgid "start WebThing server"
+msgstr "启动WebThing服务器"
+
+msgid "trigger event _"
+msgstr "触发事件 _"
+
+msgid "thing description JSON"
+msgstr "Thing 的 JSON 描述"
+
+msgid "properties JSON"
+msgstr "属性 JSON"
+
+msgid "event definitions JSON"
+msgstr "事件定义 JSON"
+
+msgid "events JSON"
+msgstr "事件 JSON"
+
+####
+# Citilab Fantàstic Robot
+
+msgid "turn fantàstic _ degrees"
+msgstr ""
+
+msgid "move fantàstic _ mm"
+msgstr ""
+
+####
+# MiKe Robot library
+
+msgid "MiKe front obstacle (cm)"
+msgstr ""
+
+msgid "MiKe _ obstacle ?"
+msgstr ""
+
+msgid "MiKe black line on _ ?"
+msgstr ""
+
+msgid "MiKe back light"
+msgstr ""
+
+msgid "MiKe IR"
+msgstr ""
+
+msgid "MiKe digital D8 sensor"
+msgstr ""
+
+msgid "MiKe stop motors"
+msgstr ""
+
+msgid "MiKe Robot go _ at _ %"
+msgstr ""
+
+msgid "MiKe Robot speed _ %"
+msgstr ""
+
+msgid "MiKe Robot direction _"
+msgstr ""
+
+msgid "MiKe turn _ motor _"
+msgstr ""
+
+msgid "MiKe speed _ motor at _ %"
+msgstr ""
+
+msgid "MiKe front lights off"
+msgstr ""
+
+msgid "MiKe front lights to _"
+msgstr ""
+
+msgid "MiKe circle lights off"
+msgstr ""
+
+msgid "MiKe circle ligths to _"
+msgstr ""
+
+msgid "MiKe circle light _ (1-18) to _"
+msgstr ""
+
+msgid "MiKe rotate lights by _"
+msgstr ""
+
+msgid "MiKe digital D8 to _"
+msgstr ""
+
+####
+# Shield:bit
+
+msgid "s꞉b LEDs off"
+msgstr ""
+
+msgid "s꞉b LEDs to _"
+msgstr ""
+
+msgid "s꞉b LED _ (1-4) to _"
+msgstr ""
+
+msgid "s꞉b audio output to shield _"
+msgstr ""
+
+msgid "s꞉b stop _"
+msgstr ""
+
+msgid "s꞉b turn 180 servo S- _ (1-8) to angle _"
+msgstr ""
+
+msgid "s꞉b turn 360 servo S- _ (1-8) _ at _ %"
+msgstr ""
+
+msgid "s꞉b turn DC M- _ (1-4) motor _ at _ %"
+msgstr ""
+
+msgid "s꞉b turn Stepper- _ (1-2) motor _ for _ _"
+msgstr ""
+
+msgid "s꞉b set pin S- _ (1-8) to _ %"
+msgstr ""
+
+msgid "sb;DC/Stepper_motors"
+msgstr ""
+
+msgid "sb;servomotors"
+msgstr ""
+
+msgid "sb;all_motors"
+msgstr ""
+
+msgid "turns"
+msgstr ""
+
+msgid "degrees"
+msgstr ""
+
+####
+# micro:STEAMakers
+
+msgid "m꞉s display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
+msgstr ""
+
+msgid "m꞉s display #BR# _ #BR# with color _"
+msgstr ""
+
+msgid "m꞉s display image _ with color _"
+msgstr ""
+
+msgid "m꞉s clear display"
+msgstr ""
+
+msgid "m꞉s scale brightness to _ %"
+msgstr ""
+
+msgid "m꞉s plot x _ y _ with _"
+msgstr ""
+
+msgid "m꞉s unplot x _ y _"
+msgstr ""
+
+msgid "m꞉s display character _ with _"
+msgstr ""
+
+msgid "m꞉s scroll text _ with color _ "
+msgstr ""
+
+msgid "m꞉s stop scrolling"
+msgstr ""
+
+msgid "start micro꞉STEAMakers audio"
+msgstr ""
+
+msgid "m꞉s button _ ?"
+msgstr ""
+
+msgid "m꞉s touching ?"
+msgstr ""
+
+msgid "m꞉s light %"
+msgstr ""
+
+msgid "m꞉s sound %"
+msgstr ""
+
+msgid "m꞉s temperature ºC"
+msgstr ""
+
+msgid "m꞉s humidity %"
+msgstr ""
+
+msgid "m꞉s inclination towards _ º"
+msgstr ""
+
+msgid "m꞉s energy _"
+msgstr ""
+
+msgid "m꞉s _ energy meter"
+msgstr ""
+
+msgid "m꞉s energy consumption (µWh)"
+msgstr ""
+
+msgid "ms;start"
+msgstr ""
+
+msgid "ms;reset"
+msgstr ""
+
+msgid "ms;down"
+msgstr ""
+
+####
+# DrawBot Library
+# A CoreXY plotter library that supports turtle geometry
+
+msgid "plotter move X _ Y _"
+msgstr ""
+
+msgid "plotter move _ steps"
+msgstr ""
+
+msgid "plotter turn _ degrees"
+msgstr ""
+
+msgid "plotter turn _ / _ of circle"
+msgstr ""
+
+msgid "plotter point in direction _"
+msgstr ""
+
+msgid "plotter pen down"
+msgstr ""
+
+msgid "plotter pen up"
+msgstr ""
+
+msgid "plotter stop"
+msgstr ""
+
+msgid "set plotter speed to _ %"
+msgstr ""
+
+####
+# Innova Didactic libraries
+
+msgid "red"
+msgstr ""
+
+msgid "yellow"
+msgstr ""
+
+msgid "green"
+msgstr ""
+
+msgid "forward"
+msgstr ""
+
+msgid "backward"
+msgstr ""
+
+msgid "turn right"
+msgstr ""
+
+msgid "turn left"
+msgstr ""
+
+msgid "stop"
+msgstr ""
+
+msgid "right sensor"
+msgstr ""
+
+msgid "left sensor"
+msgstr ""
+
+msgid "both sensors"
+msgstr ""
+
+msgid "TdR test buzzer"
+msgstr ""
+
+msgid "TdR set blue LED _"
+msgstr ""
+
+msgid "TdR set red LED _"
+msgstr ""
+
+msgid "TdR set RGB LED _"
+msgstr ""
+
+msgid "TdR clear RGB LED"
+msgstr ""
+
+msgid "TdR LM35 temperature ºC"
+msgstr ""
+
+msgid "TdR DHT11 temperature ºC"
+msgstr ""
+
+msgid "TdR DHT11 humidity"
+msgstr ""
+
+msgid "TdR rotation"
+msgstr ""
+
+msgid "TdR light level"
+msgstr ""
+
+msgid "TdR button 1"
+msgstr ""
+
+msgid "TdR button 2"
+msgstr ""
+
+msgid "TdR receive IR code"
+msgstr ""
+
+msgid "Imagina set _ led to _"
+msgstr ""
+
+msgid "Imagina play _ octave _ for _ ms"
+msgstr ""
+
+msgid "Imagina temperature (°C)"
+msgstr ""
+
+msgid "Imagina light"
+msgstr ""
+
+msgid "Imagina distance (cm)"
+msgstr ""
+
+msgid "Imagina button (D2) pressed?"
+msgstr ""
+
+msgid "Imagina digital reading _"
+msgstr ""
+
+msgid "Imagina analog reading A1"
+msgstr ""
+
+msgid "Imagina set digital pin _ to _"
+msgstr ""
+
+msgid "Imagina stop servo _"
+msgstr ""
+
+msgid "Imagina set servo _ to _ degrees (-90 to 90)"
+msgstr ""
+
+msgid "Imagina set servo _ to speed _ (-100 to 100)"
+msgstr ""
+
+msgid "Imagina set _ speed to _ %"
+msgstr ""
+
+msgid "Imagina set _ to _"
+msgstr ""
+
+msgid "Imagina IR reading"
+msgstr ""
+
+msgid "Imagina IR transmit device _ command _"
+msgstr ""
+
+msgid "_ steps"
+msgstr ""
+
+msgid "at _ % speed"
+msgstr ""
+
+msgid "3dBot set speed at _ %"
+msgstr ""
+
+msgid "3dBot obstacle < _ cm?"
+msgstr ""
+
+msgid "3dBot line on _ ?"
+msgstr ""
+
+####
+# ESP32 Smart Farm
+
+msgid "voltage (V)"
+msgstr ""
+
+msgid "current (mA)"
+msgstr ""
+
+msgid "power (mW)"
+msgstr ""
+
+msgid "open"
+msgstr ""
+
+msgid "close"
+msgstr ""
+
+msgid "on"
+msgstr ""
+
+msgid "off"
+msgstr ""
+
+msgid "Farm fan _"
+msgstr ""
+
+msgid "start"
+msgstr ""
+
+msgid "Farm display _ in line _"
+msgstr ""
+
+msgid "Farm _ the trapdoor"
+msgstr ""
+
+msgid "Farm play _ octave _ for _ ms"
+msgstr ""
+
+msgid "Farm set light _"
+msgstr ""
+
+msgid "Farm water pump _"
+msgstr ""
+
+msgid "Farm temperature ºC"
+msgstr ""
+
+msgid "Farm humidity"
+msgstr ""
+
+msgid "Farm movement detected?"
+msgstr ""
+
+msgid "Farm button pressed?"
+msgstr ""
+
+msgid "Farm distance (cm)"
+msgstr ""
+
+msgid "Farm light level"
+msgstr ""
+
+msgid "Farm water level"
+msgstr ""
+
+msgid "Farm soil moisture"
+msgstr ""
+
+msgid "Farm steam level"
+msgstr ""
+
+msgid "Farm electric consumption _"
+msgstr ""
+
+####
+# ESP32 Smart Home
+
+msgid "Home fan _"
+msgstr ""
+
+msgid "Home display _ in line _"
+msgstr ""
+
+msgid "Home _ the window"
+msgstr ""
+
+msgid "Home activate the door"
+msgstr ""
+
+msgid "Home play _ octave _ for _ ms"
+msgstr ""
+
+msgid "Home set light _"
+msgstr ""
+
+msgid "Home temperature ºC"
+msgstr ""
+
+msgid "Home humidity"
+msgstr ""
+
+msgid "Home steam level"
+msgstr ""
+
+msgid "Home read RFID card"
+msgstr ""
+
+msgid "Home movement detected?"
+msgstr ""
+
+msgid "Home _ button pressed?"
+msgstr ""
+
+msgid "Home gas detected?"
+msgstr ""
+
+msgid "Home set NeoPixels _ _ _ _"
+msgstr ""
+
+msgid "Home clear leds"
+msgstr ""
+
+msgid "Home electric consumption _"
+msgstr ""
+
+####
+# MQTT
+
+msgid "MQTT connect to broker _"
+msgstr "连接到 MQTT 服务器 _"
+
+msgid "buffer sizes _ client id _"
+msgstr "缓存大小 _ 客户端 id _"
+
+msgid "username _ password _"
+msgstr "用户名 _ 密码 _"
+
+msgid "MQTT connected"
+msgstr "MQTT 服务器已连接"
+
+msgid "MQTT disconnect"
+msgstr "断开 MQTT 服务器连接"
+
+msgid "MQTT sub _"
+msgstr "订阅主题 _"
+
+msgid "testTopic"
+msgstr "testTopic"
+
+msgid "MQTT unsub _"
+msgstr "取消订阅主题 _"
+
+msgid "MQTT pub topic _ payload _"
+msgstr "向主题 _ 发布载荷 _"
+
+msgid "Hello!"
+msgstr "Hello!"
+
+msgid "retain _ QoS _"
+msgstr "保留 _ QoS _"
+
+msgid "MQTT event"
+msgstr "MQTT 事件"
+
+msgid "binary _"
+msgstr "二进制 _"
+
+msgid "topic for MQTT event _"
+msgstr "MQTT 事件的主题 _"
+
+msgid "payload for MQTT event _"
+msgstr "MQTT 事件的载荷 _"
+
+msgid "MQTT set will topic _ payload _"
+msgstr "MQTT 设置遗嘱 主题 _ 载荷 _"
+
+msgid "testWill"
+msgstr "testWill"
+
+msgid "Last will!"
+msgstr "Last will!"
+
+msgid "buffer sizes _"
+msgstr "缓存大小 _"
+
+####
+# UDP
+
+msgid "UDP start port _"
+msgstr "UDP 启动服务器 端口 _ "
+
+msgid "UDP stop"
+msgstr "UDP 停止服务器"
+
+msgid "UDP send packet _ to ip _ port _"
+msgstr "UDP 发送数据包 _ 到 ip _ 端口 _"
+
+msgid "UDP receive packet"
+msgstr "UDP 接收数据包 "
+
+msgid "binary data _"
+msgstr "二进制数据 _"
+
+msgid "UDP remote IP address"
+msgstr "UDP 远程 IP 地址"
+
+msgid "UDP remote port"
+msgstr "UDP 远程端口"
+
+####
+# WiFi Radio
+
+msgid "wifi send number _"
+msgstr "wifi 广播发送数字 _"
+
+msgid "wifi send string _"
+msgstr "wifi 广播发送字符串 _"
+
+msgid "wifi send pair _ = _"
+msgstr "wifi 广播发送配对信息 _ = _"
+
+msgid "wifi message received?"
+msgstr "wifi 广播消息已收到?"
+
+msgid "wifi last number"
+msgstr "wifi 最后广播的数字"
+
+msgid "wifi last string"
+msgstr "wifi 最后广播的字符串"
+
+msgid "wifi set group _ (0-255)"
+msgstr "wifi 设置广播分组 _ (0-255)"
+
+####
+# Cutebot
+
+msgid "Cutebot"
+msgstr "酷比特小车"
+
+msgid "Cutebot set wheel left _ right _ (-100 to 100)"
+msgstr "酷比特 设置左轮速度为 _ 右轮速度为 _ (-100 ... 100)"
+
+msgid "Cutebot stop wheels"
+msgstr "酷比特 停车"
+
+msgid "Cutebot set servo _ to _ degrees (-90 to 90)"
+msgstr "酷比特 设置舵机 _ 的角度为 _ (-90 ... 90)"
+
+msgid "Cutebot set servo _ to speed _ (-100 to 100)"
+msgstr "酷比特 设置舵机 _ 的速度为 _ (-100 to 100)"
+
+msgid "Cutebot set headlight _ to _"
+msgstr "酷比特 将 _ LED 车头灯 设为 _"
+
+msgid "Cutebot set NeoPixel _ to _"
+msgstr "酷比特 设置 NeoPixel _ 颜色 _"
+
+msgid "Cutebot _ line sensor"
+msgstr "酷比特 _ 巡线传感器 状态为"
+
+msgid "Cutebot sees line on left _ right _"
+msgstr "酷比特 巡线传感器状态为 _ _"
+
+msgid "Cutebot distance (cm)"
+msgstr "酷比特 超声波返回距离值"
+
+msgid "cutebotlight;left"
+msgstr "左"
+
+msgid "cutebotlight;right"
+msgstr "右"
+
+msgid "cutebotlight;both"
+msgstr "全部"
+
+msgid "cutebotside;left"
+msgstr "左"
+
+msgid "cutebotside;right"
+msgstr "右"
+
+####
+# Cutebot Pro
+
+msgid "cutebotwheel;left"
+msgstr "左"
+
+msgid "cutebotwheel;right"
+msgstr "右"
+
+msgid "cutebotwheel;both"
+msgstr "全部"
+
+msgid "cutebotlight;left"
+msgstr "左"
+
+msgid "cutebotlight;right"
+msgstr "右"
+
+msgid "cutebotlight;both"
+msgstr "全部"
+
+msgid "cutebotwheel;left"
+msgstr "左"
+
+msgid "cutebotwheel;right"
+msgstr "右"
+
+msgid "45 degrees"
+msgstr ""
+
+msgid "90 degrees"
+msgstr ""
+
+msgid "135 degrees"
+msgstr ""
+
+msgid "180 degrees"
+msgstr ""
+
+msgid "cutebot;forward"
+msgstr ""
+
+msgid "cutebot;backward"
+msgstr ""
+
+msgid "180 degree"
+msgstr ""
+
+msgid "270 degree"
+msgstr ""
+
+msgid "360 degree"
+msgstr ""
+
+msgid "cutebotturn;left"
+msgstr "左"
+
+msgid "cutebotturn;right"
+msgstr "右"
+
+msgid "cutebotturn;left-in-place"
+msgstr ""
+
+msgid "cutebotturn;right-in-place"
+msgstr ""
+
+msgid "CBPro set wheel speed left _ right _ (-60 to 60 cm/s)"
+msgstr ""
+
+msgid "CBPro speed of _ wheel (cm/s)"
+msgstr ""
+
+msgid "CBPro stop wheel _"
+msgstr ""
+
+msgid "CBPro stop all"
+msgstr ""
+
+msgid "CBPro move _ (-255 to 255 cm)"
+msgstr ""
+
+msgid "CBPro turn _ degrees"
+msgstr ""
+
+msgid "CBPro set headlight _ to _"
+msgstr ""
+
+msgid "CBPro set NeoPixel _ to _"
+msgstr ""
+
+msgid "CBPro distance (cm)"
+msgstr ""
+
+msgid "CBPro tracking state is (L - - R) _ _ _ _"
+msgstr ""
+
+msgid "CBPro tracking state"
+msgstr ""
+
+msgid "CBPro tracking offset"
+msgstr ""
+
+msgid "CBPro IR code received?"
+msgstr ""
+
+msgid "CBPro IR code"
+msgstr ""
+
+msgid "CBPro set _ servo _ angle to _ deg"
+msgstr ""
+
+msgid "CBPro servo _ speed to _ (-100 to 100)"
+msgstr ""
+
+msgid "CBPro set external motor power to _ (-100 to 100)"
+msgstr ""
+
+msgid "CBPro stop external motor"
+msgstr ""
+
+msgid "CBPro version"
+msgstr ""
+
+# Wukong
+
+msgid "Wukong"
+msgstr "悟空扩展板"
+
+msgid "Wukong set motor _ to _ (-100 to 100)"
+msgstr "悟空 设置电机 _ 速度为 _ (-100 ... 100)"
+
+msgid "Wukong stop motor _"
+msgstr "悟空 停止电机 _ "
+
+msgid "Wukong stop all"
+msgstr "悟空 停止所有电机"
+
+msgid "Wukong set servo _ to _ degrees (-90 to 90)"
+msgstr "悟空 设置 舵机 _ 角度为 _ (-90 ... 90)"
+
+msgid "Wukong set servo _ to speed _ (-100 to 100)"
+msgstr "悟空 设置 舵机 _ 速度为 _ (-100 ... 100)"
+
+msgid "Wukong set NeoPixels _ _ _ _"
+msgstr "悟空 设置 NeoPixel _ _ _ _"
+
+msgid "Wukong set LED brightness to _"
+msgstr "悟空 设置氛围灯亮度为 _"
+
+####
+# Sphero-RVR
+
+msgid "wake"
+msgstr "唤醒"
+
+msgid "sleep"
+msgstr "休眠"
+
+msgid "reset the yaw"
+msgstr "重置偏航"
+
+msgid "drive with speed _ and heading _"
+msgstr "以速度 _ 和朝向 _ 行驶"
+
+msgid "set raw motors with left mode _ left speed _ right mode _ right speed _"
+msgstr "使用 左模式 _ 左速度 _ 右模式 _ 右速度 _ 设置原始电机"
+
+msgid "stop with heading _"
+msgstr "以朝向 _ 停止"
+
+msgid "set RGB LED _ to red _ green _ blue _"
+msgstr "将 RGB LED _ 设置为 红色 _ 绿色 _ 蓝色 _"
+
+msgid "set all LEDs to red _ green _ blue _"
+msgstr "将所有 LED 设为 红色 _ 绿色 _ 蓝色 _"
+
+####
+# Joystick:bit
+
+msgid "button _ is pressed"
+msgstr "按键 _ 被按下"
+
+msgid "rocker value of _"
+msgstr "摇杆 _ 的数值"
+
+msgid "motor vibrate for _ ms"
+msgstr "震动 _ 毫秒"
+
+####
+# NeZha
+
+msgid "NeZha"
+msgstr "哪吒扩展板"
+
+msgid "NeZha set motor _ speed to _ %"
+msgstr "哪吒 设置电机 _ 速度为 _ %"
+
+msgid "NeZha stop motor _"
+msgstr "哪吒 停止电机 _"
+
+msgid "NeZha stop all motors"
+msgstr "哪吒 停止所有电机"
+
+msgid "NeZha set _ servo _ angle to _"
+msgstr "哪吒 设置 _ 舵机 _ 角度为 _"
+
+msgid "NeZha set continuous rotation servo _ speed to _ %"
+msgstr "哪吒 设置 连续转动舵机 _ 速度为 _ %"
+
+####
+# WuKong2040
+
+msgid "WuKong2040"
+msgstr "悟空2040"
+
+msgid "WuKong2040 rainbowLED _ color to _"
+msgstr "悟空2040 彩虹灯 _ 颜色 _"
+
+msgid "WuKong2040 rainbowLED _ R _ G _ B _ (0~255)"
+msgstr "悟空2040 彩虹灯 _ R _ G _ B _ (0~255)"
+
+msgid "WuKong2040 clear all rainbowLED"
+msgstr "悟空2040 关闭所有彩虹灯"
+
+msgid "WuKong2040 motor _ speed to _ (-100~100)"
+msgstr "悟空2040 设置电机 _ 速度为 _ (-100~100)"
+
+msgid "WuKong2040 stop motor _"
+msgstr "悟空2040 停止电机 _"
+
+msgid "WuKong2040 stop all motors"
+msgstr "悟空2040 停止所有电机"
+
+msgid "WuKong2040 buzzer beep _ ms"
+msgstr "悟空2040 蜂鸣器鸣叫 _ 毫秒"
+
+####
+# Octopus
+
+msgid "Octopus"
+msgstr "八爪鱼系列传感器"
+
+msgid "Octopus LED pin _ toggle to _"
+msgstr "八爪鱼 LED引脚 _ 切换为 _"
+
+msgid "Octopus LED pin _ brightness _ %"
+msgstr "八爪鱼 LED引脚 _ 设置亮度 _ %"
+
+msgid "Octopus motor fan pin _ speed to _ %"
+msgstr "八爪鱼 电机风扇引脚 _ 设置速度 _ %"
+
+msgid "Octopus 180° servo pin _ angle to _ ° (0~180)"
+msgstr "八爪鱼 180°舵机引脚 _ 设置角度 _ ° (0~180)"
+
+msgid "Octopus sonar trig _ echo _ distance (cm)"
+msgstr "八爪鱼 超声波测距(厘米) 触发 _ 回声 _"
+
+msgid "Octopus value of light intensity (Lux) at pin _"
+msgstr "八爪鱼 光照强度值（Lux）引脚 _"
+
+msgid "Octopus value of DHT11 temperature (°C) at pin _"
+msgstr "八爪鱼 DHT11 温度(°C) 引脚 _"
+
+msgid "Octopus value of DHT11 humidity (0~100) at pin _"
+msgstr "八爪鱼 DHT11 湿度(0~100) 引脚 _"
+
+msgid "Octopus value of water level (0~40mm) at pin _"
+msgstr "八爪鱼 水位值(0~40mm) 引脚 _"
+
+msgid "Octopus value of trimpot (0~1023) at pin _"
+msgstr "八爪鱼 电位器数值(0~1023) 引脚 _"
+
+msgid "Octopus value of noise (dB) at pin _"
+msgstr "八爪鱼 噪声值(分贝) 引脚 _"
+
+msgid "Octopus OLED show _ at x _ y _"
+msgstr "八爪鱼 OLED 显示 _ 于 x _ y _"
+
+msgid "Octopus OLED clear"
+msgstr "八爪鱼 OLED 清除屏幕"
+
+msgid "Octopus OLED draw pixel x _ y _"
+msgstr "八爪鱼 OLED 绘制像素 x _ y _"
+
+msgid "Octopus OLED draw line from x _ y _ to x _ y _"
+msgstr "八爪鱼 OLED 绘制直线 从 x _ y _ 到 x _ y _"
+
+msgid "Octopus OLED draw rectangle x _ y _ w _ h _ rounding _ (3~15)"
+msgstr "八爪鱼 OLED 绘制长方形 x _ y _ w _ h _  圆角 _ (3~15)"
+
+msgid "Octopus OLED fill rectangle x _ y _ w _ h _"
+msgstr "八爪鱼 OLED 填充长方形 x _ y _ w _ h _"
+
+msgid "Octopus OLED draw circle x _ y _ radius _"
+msgstr "八爪鱼 OLED 绘制圆形 x _ y _ 半径 _"
+
+msgid "Octopus OLED fill circle x _ y _ radius _"
+msgstr "八爪鱼 OLED 填充圆形 x _ y _ 半径 _"
+
+####
+# OctoStudio
+
+msgid "Octo beam to phones _"
+msgstr "Octo 给手机发信号 _"
+
+msgid "duration _ ms"
+msgstr "持续 _ 毫秒"
+
+msgid "Octo beam received?"
+msgstr "Octo 信号已收到?"
+
+msgid "Octo last beam"
+msgstr "Octo 最后信号"
+
+msgid "Octo set group _ (0-99)"
+msgstr "Octo 设置分组 _ (0-99)"
+
+msgid "Octo receive beam"
+msgstr "Octo 收到的信号"
+
+msgid "Octo stop"
+msgstr ""
+
+##################
+# MicroBlocks UI #
+##################
+
+# buttons, error & info messages, dialog boxes, etc
+
+msgid "New"
+msgstr "新建"
+
+msgid "Open"
+msgstr "打开"
+
+msgid "Open from board"
+msgstr "从主板上打开"
+
+msgid "Copy project URL to clipboard"
+msgstr "复制项目 URL 到剪贴板"
+
+msgid "Information"
+msgstr "信息"
+
+msgid "Plug in the board."
+msgstr "插上主板。"
+
+msgid "Plug in the board and click the USB icon to connect."
+msgstr "接上主板并单击 USB 图标进行连接。"
+
+msgid "Reading project from board..."
+msgstr "从主板读取项目..."
+
+msgid "Loading project..."
+msgstr "加载项目"
+
+# %1 holds the name of the library
+msgid "Found a newer version of %1."
+msgstr "发现新版本 %1."
+
+msgid "Do you want me to update the one in the project?"
+msgstr "你希望在项目中进行升级吗？"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Connect"
+msgstr "连接"
+
+msgid "connect"
+msgstr "连接主板"
+
+msgid "connect (BLE)"
+msgstr "无线连接 (BLE)"
+
+msgid "open Boardie"
+msgstr "连接模拟器"
+
+msgid "disconnect"
+msgstr "断开连接"
+
+msgid "Serial port:"
+msgstr "串口:"
+
+msgid "Connect board and try again"
+msgstr "连接板子并重试"
+
+msgid "other..."
+msgstr "其他..."
+
+msgid "none"
+msgstr "无"
+
+msgid "Port name?"
+msgstr "端口名?"
+
+msgid "Board type:"
+msgstr "主板类型:"
+
+msgid "Select board:"
+msgstr "选择主板:"
+
+# %1 holds the firmware file name
+msgid "Could not read %1."
+msgstr "无法读取 %1."
+
+msgid "about;by %1, %2 & %3."
+msgstr "作者 %1, %2 & %3."
+
+msgid "Created with GP"
+msgstr "使用GP开发"
+
+msgid "More info at http://microblocks.fun"
+msgstr "访问 http://microblocks.fun 获取更多信息"
+
+msgid "Script is too large to send to board."
+msgstr "脚本太大，无法发送至主板."
+
+msgid "Use \"Connect\" button to connect to a MicroBlocks device."
+msgstr "使用\"连接\"按钮连接至一个 MicroBlocks 设备."
+
+msgid "No boards found; is your board plugged in?"
+msgstr "无法找到主板，您的主板已经连接好了么?"
+
+msgid "For AdaFruit boards, double-click reset button and try again."
+msgstr "如果是AdaFruit主板，双击reset键并再次尝试."
+
+msgid "Only recent Chrome and Edge browsers support WebSerial."
+msgstr "请使用支持 WebSerial 的浏览器(Chrome 和 Edge 浏览器)"
+
+msgid "The board is not responding."
+msgstr "主板未响应."
+
+msgid "Try to Install MicroBlocks on the board?"
+msgstr "将 MicroBlocks 安装到这块主板上么?"
+
+msgid "The MicroBlocks in your board is not current"
+msgstr "主板中的 MicroBlocks 不是最新版本"
+
+msgid "Try to update MicroBlocks on the board?"
+msgstr "是否升级主板上的 MicroBlocks?"
+
+msgid "The firmware on the board is not compatible with this version of MicroBlocks."
+msgstr "主板上的固件与此版本的 MicroBlocks 不兼容"
+
+msgid "MicroBlocks"
+msgstr "设置"
+
+msgid "Stop"
+msgstr "停止"
+
+msgid "Start"
+msgstr "开始"
+
+msgid "Quit MicroBlocks?"
+msgstr "退出 MicroBlocks?"
+
+msgid "Discard current project?"
+msgstr "放弃当前项目?"
+
+# Scripting area right-click context menu
+
+msgid "set block size..."
+msgstr "设置积木块大小"
+
+msgid "make blocks bigger or smaller"
+msgstr "将积木块变大或变小"
+
+msgid "clean up"
+msgstr "整理积木"
+
+msgid "arrange scripts"
+msgstr "排列脚本"
+
+msgid "undrop (ctrl-Z)"
+msgstr "撤销 (ctrl-Z)"
+
+msgid "undo the last block drop"
+msgstr "撤销上次拖拽"
+
+msgid "copy all scripts to clipboard"
+msgstr "将所有脚本复制到剪贴板"
+
+msgid "copy all scripts to clipboard as URL"
+msgstr "将所有脚本作为 URL 复制到剪贴板"
+
+msgid "paste all scripts"
+msgstr "粘贴所有脚本"
+
+msgid "paste script"
+msgstr "粘贴脚本"
+
+msgid "paste script from clipboard"
+msgstr "从剪贴板粘贴脚本"
+
+msgid "save a picture of all visible scripts"
+msgstr "将所有可见脚本保存为图片"
+
+msgid "set exported script scale"
+msgstr "设置导出脚本的比例"
+
+msgid "small (50%)"
+msgstr "小 (50%)"
+
+msgid "normal (65%)"
+msgstr "正常 (65%)"
+
+msgid "large (100%)"
+msgstr "大 (100%)"
+
+msgid "printable (200%)"
+msgstr "可打印 (200%)"
+
+msgid "duplicate selection"
+msgstr "复制选择的积木"
+
+msgid "drag selection"
+msgstr "拖拽选择的积木"
+
+msgid "delete selection"
+msgstr "删除选择的积木"
+
+msgid "about..."
+msgstr "关于..."
+
+msgid "About MicroBlocks"
+msgstr "关于 MicroBlocks"
+
+msgid "virtual machine version"
+msgstr "虚拟机版本"
+
+msgid "update firmware on board"
+msgstr "升级主板固件"
+
+msgid "enable or disable BLE"
+msgstr "打开或关闭 BLE"
+
+msgid "Allow the attached board to be connected via BLE?"
+msgstr "允许通过 BLE 对板子进行无线编程?"
+
+msgid "show data graph"
+msgstr "显示数据图表"
+
+msgid "set serial delay"
+msgstr "设置串口延迟"
+
+msgid "firmware version"
+msgstr "固件版本"
+
+msgid "HTTP Server"
+msgstr "HTTP 服务器"
+
+msgid "MicroBlocks HTTP Server listening on port 6473"
+msgstr "MicroBlocks HTTP 服务器正在监听端口 6473"
+
+msgid "disable autoloading board libraries"
+msgstr "禁止自动加载和主板相关的积木库"
+
+msgid "compact code store"
+msgstr "紧凑代码存储"
+
+msgid "autoload board libraries"
+msgstr "自动加载和主板相关的积木库"
+
+msgid "PlugShare when project empty"
+msgstr "项目为空时从主板里获取代码"
+
+msgid "hide implementation blocks"
+msgstr "隐藏实现块"
+
+msgid "do not show blocks and variables that are internal to libraries (i.e. those whose name begins with underscore)"
+msgstr "不显示积木库私有的积木块和变量（即那些名称以下划线开头的变量）"
+
+msgid "show implementation blocks"
+msgstr "显示实现块"
+
+msgid "show blocks and variables that are internal to libraries (i.e. those whose name begins with underscore)"
+msgstr "显示积木库私有的积木块和变量（即那些名称以下划线开头的变量）"
+
+msgid "when plugging a board, automatically read its contents into the IDE if the current project is empty"
+msgstr ""
+
+msgid "make the IDE darker"
+msgstr "让 IDE 变得更暗"
+
+msgid "erase flash and update firmware on ESP board"
+msgstr "擦除信息并升级 ESP 固件"
+
+msgid "install ESP firmware from URL"
+msgstr "从 URL 安装 ESP 固件"
+
+msgid "Use board type"
+msgstr "使用主板类型信息"
+
+msgid "Firmware Install"
+msgstr "安装固件"
+
+msgid "Firmware Installed"
+msgstr "完成固件安装"
+
+msgid "Reconnect to the board by clicking the \"Connect\" button (USB icon)."
+msgstr "点击 '连接' 按钮 (USB 图标) 重新连接主板。"
+
+msgid "Connect USB cable while holding down the white BOOTSEL button before proceeding."
+msgstr "按住白色 BOOTSEL 按钮的同时连接 USB 线。"
+
+msgid "You will be asked to save the firmware file."
+msgstr "请安装固件文件。"
+
+msgid "If your micro:bit shows a sad face, save the firmware.hex file to your disk then drop it onto the MICROBIT drive."
+msgstr "如果 micro:bit 显示一个悲伤的表情，请先将 firmware.hex 文件保存到电脑上，然后再将它拖放到 MICROBIT 驱动器上。"
+
+msgid "Save the firmware file when prompted."
+msgstr ""
+
+# %1 holds the drive name
+msgid "Drag the firmware file you just saved to the %1 drive."
+msgstr ""
+
+msgid "Installing firmware..."
+msgstr "正在安装固件..."
+
+msgid "Board not connected"
+msgstr "未连接主板"
+
+msgid "Wiping board..."
+msgstr "擦除主板..."
+
+msgid "(press ESC to cancel)"
+msgstr "(按下ESC键取消)"
+
+msgid "Done!"
+msgstr "完成!"
+
+msgid "download and install latest VM"
+msgstr "下载并且安装最新版的 VM"
+
+msgid "Select board type:"
+msgstr "选择主板类型:"
+
+msgid "Uploading MicroBlocks to board..."
+msgstr "将 MicroBlocks 上传至主板..."
+
+msgid "copy data to clipboard"
+msgstr "将数据复制至剪贴板"
+
+msgid "clear data"
+msgstr "清除数据"
+
+msgid "clear memory and variables"
+msgstr "清除内存和变量"
+
+msgid "show advanced blocks"
+msgstr "显示高级积木"
+
+msgid "export functions as library"
+msgstr "将积木导出为库"
+
+msgid "hide advanced blocks"
+msgstr "隐藏高级积木"
+
+msgid "put file on board"
+msgstr "把文件上传到主板"
+
+msgid "get file from board"
+msgstr "从主板获取文件"
+
+msgid "uploaded"
+msgstr "已上传"
+
+msgid "downloaded"
+msgstr "已下载"
+
+msgid "Data Graph"
+msgstr "数据图表"
+
+msgid "Graph"
+msgstr "图表"
+
+msgid "clear graph"
+msgstr "清除图表"
+
+msgid "zero at bottom"
+msgstr "底部为零"
+
+msgid "zero in middle"
+msgstr "中部为零"
+
+msgid "export data to CSV file"
+msgstr "将数据导出到 CSV 文件"
+
+msgid "import data from CSV file"
+msgstr "从 CSV 文件导入数据"
+
+msgid "copy graph data to clipboard"
+msgstr "将图形数据复制到剪贴板"
+
+msgid "show instructions"
+msgstr "显示指令"
+
+msgid "show compiled bytes"
+msgstr "显示字节代码"
+
+msgid "expand"
+msgstr "扩展"
+
+msgid "collapse"
+msgstr "折叠"
+
+msgid "rename..."
+msgstr "重命名..."
+
+msgid "find variable accessors"
+msgstr "查找变量访问器"
+
+msgid "find scripts or block definitions where this variable is being read"
+msgstr "查找到正在读取该变量的脚本或积木定义"
+
+msgid "find variable modifiers"
+msgstr "查找变量修改器"
+
+msgid "find scripts or block definitions where this variable is being set or changed"
+msgstr "查找正在设置或修改该变量的脚本或积木定义"
+
+msgid "find uses of this block"
+msgstr "寻找当前积木在哪里被使用"
+
+msgid "find scripts or block definitions using this block"
+msgstr "寻找使用当前积木的脚本或积木定义"
+
+msgid "show block definition..."
+msgstr "显示积木定义..."
+
+msgid "show the definition of this block"
+msgstr "显示积木定义"
+
+msgid "delete block definition..."
+msgstr "删除积木定义..."
+
+msgid "delete the definition of this block"
+msgstr "删除对这块积木的定义"
+
+msgid "duplicate"
+msgstr "复制"
+
+msgid "help"
+msgstr "帮助"
+
+msgid "duplicate this block"
+msgstr "复制这块积木"
+
+msgid "delete block"
+msgstr "删除积木"
+
+msgid "delete this block"
+msgstr "删除这块积木"
+
+msgid "just this one block"
+msgstr "仅这块积木"
+
+msgid "copy to clipboard"
+msgstr "复制至剪贴板"
+
+msgid "copy to clipboard as URL"
+msgstr "作为 URL 复制到剪贴板"
+
+msgid "copy these blocks to the clipboard as a URL"
+msgstr "将这些积木作为 URL 复制到剪贴板"
+
+msgid "copy these blocks to the clipboard"
+msgstr "将这些积木复制至剪贴板"
+
+msgid "duplicate all"
+msgstr "复制全部"
+
+msgid "duplicate these blocks"
+msgstr "复制这些积木"
+
+msgid "extract block"
+msgstr "取出积木"
+
+msgid "pull out this block"
+msgstr "撤出积木"
+
+msgid "show help for this block in a browser"
+msgstr "在浏览器中显示积木的帮助信息"
+
+msgid "save picture of script"
+msgstr "保存脚本图片"
+
+msgid "save picture of script with result"
+msgstr "保存带结果的脚本图片"
+
+msgid "save a picture of this block definition as a PNG file"
+msgstr "将这块积木的定义保存为一个 PNG 文件"
+
+msgid "save a picture of these blocks as a PNG file"
+msgstr "将这些积木的图片保存为一个 PNG 文件"
+
+msgid "save a picture of these blocks and their result as a PNG file"
+msgstr "将这些积木的图片和他们的结果保存为一个 PNG 文件"
+
+msgid "copy script"
+msgstr "复制脚本"
+
+msgid "script;delete"
+msgstr "删除"
+
+msgid "blockdef;delete"
+msgstr "删除"
+
+msgid "Input type:"
+msgstr "输入类型:"
+
+msgid "string only"
+msgstr "仅字符串"
+
+msgid "string or number"
+msgstr "字符串或数字"
+
+msgid "number only"
+msgstr "仅数字"
+
+msgid "stop editing"
+msgstr "停止编辑"
+
+msgid "cut"
+msgstr "剪切"
+
+msgid "copy"
+msgstr "复制"
+
+msgid "paste"
+msgstr "粘贴"
+
+msgid "accept"
+msgstr "接受"
+
+msgid "revert"
+msgstr "还原"
+
+msgid "select all"
+msgstr "选择全部"
+
+msgid "define"
+msgstr "定义"
+
+msgid "number/string"
+msgstr "数字/字符串"
+
+msgid "editable number or string"
+msgstr "可编辑的数字或字符串"
+
+msgid "label"
+msgstr "标签"
+
+msgid "input"
+msgstr "输入"
+
+msgid "hide block definition"
+msgstr "隐藏积木定义"
+
+msgid "Are you sure you want to remove this block definition?"
+msgstr "您确定要删除这个积木定义么?"
+
+msgid "Language"
+msgstr "语言"
+
+msgid "Custom..."
+msgstr "定制..."
+
+msgid "Obsolete"
+msgstr "废弃"
+
+msgid "OK"
+msgstr "确定"
+
+msgid "Ok"
+msgstr "确定"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "No"
+msgstr "否"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Okay"
+msgstr "确定"
+
+msgid "Confirm"
+msgstr "确认"
+
+# Library folders
+
+msgid "LIBRARIES"
+msgstr "积木库"
+
+msgid "libfolder;Libraries"
+msgstr "积木库"
+
+msgid "libfolder;AI"
+msgstr "人工智能"
+
+msgid "libfolder;Graphics and Displays"
+msgstr "图形与显示"
+
+msgid "libfolder;Kits and Boards"
+msgstr "套件与扩展板"
+
+msgid "libfolder;Network"
+msgstr "网络"
+
+msgid "libfolder;Motors"
+msgstr ""
+
+msgid "libfolder;Other"
+msgstr "其他"
+
+msgid "libfolder;Robots"
+msgstr "机器人"
+
+msgid "libfolder;Sensing"
+msgstr "侦测"
+
+msgid "libfolder;Sound"
+msgstr "声音"
+
+msgid "libfolder;System"
+msgstr "系统"
+
+msgid "libfolder;WorkInProgress"
+msgstr ""
+
+# File picker and library dialogs
+
+msgid "New library name?"
+msgstr "积木库的名字?"
+
+msgid "show all block definitions"
+msgstr "显示所有积木定义"
+
+msgid "hide all block definitions"
+msgstr "隐藏所有积木定义"
+
+msgid "export this library"
+msgstr "导出这个库"
+
+msgid "delete library"
+msgstr "删除这个库"
+
+msgid "Examples"
+msgstr "示例"
+
+msgid "Desktop"
+msgstr "桌面"
+
+msgid "Computer"
+msgstr "计算机"
+
+msgid "Cloud"
+msgstr "云"
+
+msgid "File"
+msgstr "文件"
+
+msgid "File Open"
+msgstr "文件 打开"
+
+msgid "File Save"
+msgstr "文件 保存"
+
+msgid "File name:"
+msgstr "文件名称:"
+
+msgid "New Folder"
+msgstr "新建文件夹"
+
+msgid "libdata;by"
+msgstr "作者"
+
+msgid "Depends:"
+msgstr "依赖于:"
+
+msgid "Tags:"
+msgstr "标签:"
+
+msgid "Path, name or URL for library?"
+msgstr "积木库的路径,名称或URL地址?"
+
+msgid "Invalid URL"
+msgstr "无效的链接地址"
+
+msgid "Could not fetch library."
+msgstr "无法读取积木库."
+
+msgid "Host does not exist or is currently down."
+msgstr "主机不存在或处于关闭状态."
+
+msgid "File not found in server."
+msgstr "无法在服务器上找到该文件."
+
+msgid "Server expects HTTPS, and MicroBlocks doesn't currently support it."
+msgstr "服务器请求 HTTPS 协议，但 MicroBlocks 目前还不支持."
+
+msgid "library information"
+msgstr "积木库信息"
+
+msgid "built-in library"
+msgstr "内置积木库"
+
+msgid "Dependency path, name or URL?"
+msgstr "依赖的路径,名字或 URL?"
+
+msgid "If you are adding a library that's built into MicroBlocks, you can just enter its name."
+msgstr "如果要添加的库，已经内置在 MicroBlocks，只需输入它的名称(英文)即可，如 NeoPixel 。"
+
+msgid "If your library is in the Libraries folder in your local MicroBlocks project folder, you need to prefix it with a slash (/)."
+msgstr "如果要添加的库，位于积木库文件夹中，需要在其前面加上斜杠 (/)，如 Network/MQTT 。"
+
+msgid "If the library is hosted online, please input its full URL."
+msgstr "如果要添加的库是在线托管的，请输入完整 URL。"
+
+msgid "Tag name?"
+msgstr "标签名称?"
+
+msgid "user library"
+msgstr "用户库"
+
+msgid "Add Library"
+msgstr "添加积木库"
+
+msgid "%1 seconds remaining"
+msgstr "%1剩余秒数"
+
+msgid "Decrease block size"
+msgstr "缩小积木"
+
+msgid "Restore block size to 100%"
+msgstr "将积木大小恢复到100%"
+
+msgid "Increase block size"
+msgstr "放大积木"
+
+############
+# Tips Bar #
+############
+
+msgid "Button"
+msgstr "按键"
+
+msgid "Boolean Input"
+msgstr "布尔值输入"
+
+msgid "[l] toggle value, or drop a reporter into it."
+msgstr "[l] 切换布尔值，或嵌入报告类积木"
+
+msgid "Color Input"
+msgstr "颜色输入"
+
+msgid "[l] change the color, or drop a reporter into it."
+msgstr "[l] 改变颜色，或嵌入报告类积木"
+
+msgid "Input"
+msgstr "输入"
+
+msgid "[l] edit its value, or drop a reporter into it."
+msgstr "[l] 修改数值，或嵌入报告类积木"
+
+msgid "Block Extension"
+msgstr "积木扩展"
+
+msgid "[l] right arrow to show optional inputs, left arrow to hide."
+msgstr "[l] 点击右箭头添加额外的输入框，点击左箭头删除"
+
+msgid "Command Block"
+msgstr "指令类积木"
+
+msgid "[l] to run, or drag to build scripts. [r] menu."
+msgstr "[l] 点击运行，或用鼠标拖拽出来搭建脚本。 [r] 打开菜单"
+
+msgid "Hat Block"
+msgstr "帽子类积木"
+
+msgid "[l] to run, or drag to build scripts. [r] menu."
+msgstr "[l] 点击运行，或用鼠标拖拽出来搭建脚本。 [r] 打开菜单"
+
+msgid "Reporter Block"
+msgstr "报告类积木"
+
+msgid "[l] to see value, or drop into an input slot. [r] menu."
+msgstr "[l] 点击查看数值，或用鼠标拖拽出来嵌入输出框内。 [r] 打开菜单"
+
+msgid "Script"
+msgstr "脚本"
+
+msgid "[l] to run. [r] menu."
+msgstr "[l] 运行。 [r] 打开菜单"
+
+msgid "Pane Divider"
+msgstr "窗格分割线"
+
+msgid "Drag to change pane width."
+msgstr "拖拽可修改窗格宽度"
+
+msgid "Library"
+msgstr "积木库"
+
+msgid "[l] to show the blocks in this library. [r] menu."
+msgstr "[l] 显示此积木库中的积木代码。 [r] 打开菜单"
+
+msgid "Block Category"
+msgstr "积木分类"
+
+msgid "[l] to show the blocks in this category."
+msgstr "[l] 显示此分类中的积木"
+
+msgid "Palette"
+msgstr "积木区"
+
+msgid "Drag blocks from here to build scripts. Drop scripts here to delete them."
+msgstr "从此处拖出积木搭建脚本。将积木拖拽到此处可删除。"
+
+msgid "Scripts Pane"
+msgstr "脚本区"
+
+msgid "Drag blocks here to build scripts. [r] menu."
+msgstr "将积木拖拽到此处搭建脚本。 [r] 打开菜单"
+
+#################################
+# Block Descriptions for TipBar #
+#################################
+
+msgid "Turn the user LED on or off."
+msgstr "打开或关闭 LED 灯"
+
+msgid "Display a bubble showing the value."
+msgstr "用气泡对话框显示值"
+
+msgid "Graph the value."
+msgstr "为数值绘制图表"
+
+msgid "Report the state of button A ( (-o) or (o-) )."
+msgstr "报告按键 A 的状态（ (-o) 或 (o-) ）"
+
+msgid "Report the state of button B ( (-o) or (o-) )."
+msgstr "报告按键 B 的状态（ (-o) 或 (o-) ）"
+
+msgid "Report the milliseconds since the timer was last reset."
+msgstr "报告上一次计时器归零后的毫秒时长"
+
+msgid "Reset the timer."
+msgstr "重置计时器"
+
+msgid "Report the seconds since power up."
+msgstr "报告通电后的秒数"
+
+msgid "Report the milliseconds since power up."
+msgstr "报告通电后的毫秒数"
+
+msgid "Report the microseconds since power up."
+msgstr "报告通电后的微秒数"
+
+msgid "Report the board type."
+msgstr "报告当前主板类型"
+
+msgid "Reports firmware version loaded on the board."
+msgstr "报告主板上的固件版本。"
+
+msgid "Reports the three-letter BLE ID of the board if it supports BLE."
+msgstr "如果主板支持 BLE，则报告三个字母的 BLE ID"
+
+msgid "Reports (-o) if a BLE client is connected."
+msgstr "报告 (-o) BLE 客户端是否已连接"
+
+msgid "Report the milliseconds since the given start milliseconds. Handles clock wrap."
+msgstr "报告自给定的开始毫秒以来的毫秒数。处理时钟换行"
+
+msgid "Report the microseconds since the given start microseconds. Handles clock wrap."
+msgstr "报告自给定的开始微秒以来的微秒数。处理时钟换行"
+
+msgid "Reports (-o) if the board is connected to IDE."
+msgstr "报告 (-o) 主板是否连上 IDE"
+
+msgid "Report the electrical logic level on a digital pin ( (-o) or (o-) )."
+msgstr "报告一个数字引脚的电气逻辑电平（ (-o) 或 (o-) ）"
+
+msgid "Report a number proportional to the voltage on an analog pin (0 = ground, 1023 = supply voltage)."
+msgstr "报告一个与模拟引脚上的电压成比例的数字（0=接地，1023=电源电压）"
+
+msgid "Turn a pin on or off ( (-o) or (o-) )."
+msgstr "打开 (-o) 或关闭 (o-) 引脚"
+
+msgid "Pulse width modulate (PWM) a pin with the given duty cycle (0 - 1023)."
+msgstr "以输入的占空比（0-1023）对一个引脚进行脉冲宽度调制（PWM)"
+
+msgid "Report number of analog pins on this device."
+msgstr "报告当前设备上的模拟引脚数量"
+
+msgid "Report number of digital pins on this device."
+msgstr "报告当前设备上的数字引脚数量"
+
+msgid "Report the value of a register (0-255) of an I2C device (0-127)."
+msgstr "报告一个 I2C 设备（0-127）上的寄存器（0-255）数值"
+
+msgid "Set an I2C device and register to given value (0-255)."
+msgstr "设置一个 I2C 设备上的寄存器（0-255）数值"
+
+msgid "Receive multiple bytes from an I2C device."
+msgstr "从一个 I2C 设备上读取多个字节"
+
+msgid "Send multiple bytes to an I2C device."
+msgstr "向一个 I2C 设备发送多个字节"
+
+msgid "Send a byte (0-255) to an SPI device."
+msgstr "向一个 SPI 设备发送一个字节（0-255）"
+
+msgid "Read a byte from an SPI device while sending a zero byte. Report the byte received."
+msgstr "从一个 SPI 设备上读取字节的同时发送 0 字节。报告读取到的字节"
+
+msgid "Set the SPI clock speed, mode, channel (Raspberry Pi only), and bit order."
+msgstr "设置 SPI 的时钟速度、模式、通道（仅限树莓派）和位顺序"
+
+msgid "Send a byte array via SPI, replacing its contents with the bytes received."
+msgstr "通过 SPI 发送一个字节数组，将其内容替换为读取到的字节"
+
+msgid "Open the serial port at the given baud rate."
+msgstr "以输入的波特率打开串行端口"
+
+msgid "Close the serial port."
+msgstr "关闭串行端口"
+
+msgid "Report data received from the serial port (a byte array)."
+msgstr "报告串行端口上读取到的数据（一个字节数组）"
+
+msgid "Send a byte array to the serial port."
+msgstr "向串行端口发送一个字节数组"
+
+msgid "Send a byte array to the serial port, starting at the given byte."
+msgstr "从给定的字节开始，将字节数组发送到串行端口"
+
+msgid "Write a byte to the pin at the specified baud rate."
+msgstr "以指定的波特率向引脚写入一个字节"
+
+msgid "Run when the board powers up or when the IDE start button is clicked."
+msgstr "当主板通电后或者按下 IDE 开始按钮时运行"
+
+msgid "Run when buttons A, B, or A+B are pressed."
+msgstr "当按键 A，B 或 A+B 被按下时运行"
+
+msgid "Repeat the enclosed blocks indefinitely."
+msgstr "重复执行内嵌的积木代码"
+
+msgid "Repeat the enclosed blocks the given number of times."
+msgstr "以输入的次数来重复执行内嵌的积木代码"
+
+msgid "Wait the given number of milliseconds."
+msgstr "等待输入的毫秒时长"
+
+msgid "Run the first set of blocks whose test condition is (-o) ."
+msgstr "当条件满足时 (-o) 运行第一行积木代码"
+
+msgid "Run when the condition becomes (-o) ."
+msgstr "当条件满足时 (-o) 运行"
+
+msgid "Wait until the condition becomes (-o) ."
+msgstr "一直等待直到到条件满足 (-o)"
+
+msgid "Return (report) the given value from a function or script."
+msgstr "报告一个函数或脚本的数值"
+
+msgid "Run when the given message is received as a broadcast."
+msgstr "当接收到输入的广播信息时运行"
+
+msgid "Broadcast the given message."
+msgstr "广播输入的信息"
+
+msgid "Do nothing. Used to add notes and documentation."
+msgstr "没有实际功能，可用来添加注释和文字说明"
+
+msgid "Report a list containing the given range of numbers (with optional increment). Useful in \"for\" loops."
+msgstr "报告包含给定范围数字的列表（可选增量）。在 \"for\" 循环中很有用"
+
+msgid "Repeat the enclosed blocks with the variable set to the current iteration number or item."
+msgstr "以当前迭代次数或元素的变量来重复执行内嵌的积木"
+
+msgid "Repeat the enclosed blocks until the condition becomes (-o) ."
+msgstr "重复执行内嵌积木代码直到条件满足 (-o)"
+
+msgid "Stop this task."
+msgstr "停止当前脚本"
+
+msgid "Stop all tasks except this one."
+msgstr "停止其他脚本"
+
+msgid "Wait the given number of microseconds."
+msgstr "等待输入的微秒时长"
+
+msgid "Report the last broadcast message received."
+msgstr "报告接受到的最后广播消息"
+
+msgid "Report the given argument or defaultValue if the argument was not supplied by the caller."
+msgstr "报告给定的参数，如果调用者未提供参数，则报告默认值"
+
+msgid "Call the function with the given name and optional parameter list."
+msgstr "调用输入的函数或可选列表中的函数"
+
+msgid "Call the function with the given name and optional parameter list and report its return value."
+msgstr "调用输入的函数或可选列表中的函数，并报告其数值"
+
+msgid "Report the sum of the given numbers."
+msgstr "报告输入的数字总和"
+
+msgid "Report the first number minus the second."
+msgstr "报告第一个数字减去第二个数字的值"
+
+msgid "Report the product of the given numbers."
+msgstr "报告输入的数字的乘积"
+
+msgid "Report the first number divided by the second."
+msgstr "报告第一个数字除以第二个数字的值"
+
+msgid "Report the remainder of dividing the first number by the second."
+msgstr "报告第一个数字除以第二个数字的余数"
+
+msgid "Report the absolute value of the given number (always >= 0)."
+msgstr "报告输入数字的绝对值（永远大于或等于0）"
+
+msgid "Report the minimum of the values."
+msgstr "报告输入数字中的最小值"
+
+msgid "Report the maximum of the values."
+msgstr "报告输入数字中的最大值"
+
+msgid "Report a randomly chosen number in the given range."
+msgstr "报告输入的数字范围中的一个任意随机数"
+
+msgid "Report (-o) if the first value is less than the second one."
+msgstr "报告第一个数值是否小于第二个数值 (-o)"
+
+msgid "Report (-o) if the first value is less than or equal to the second one."
+msgstr "报告第一个数值是否小于或等于第二个数值 (-o)"
+
+msgid "Report (-o) if the two values are equal."
+msgstr "报告两个数值是否相等 (-o)"
+
+msgid "Report (-o) if the two values are not equal."
+msgstr "报告两个数值是否不相等 (-o)"
+
+msgid "Report (-o) if the first value is greater than or equal to the second one."
+msgstr "报告第一个数值是否大于或等于第二个数值 (-o)"
+
+msgid "Report (-o) if the first value is greater than the second one."
+msgstr "报告第一个数值是否大于第二个数值 (-o)"
+
+msgid "Boolean constant ( (-o) or (o-) )."
+msgstr "布尔值常量（ (-o) 或 (o-) ）"
+
+msgid "Report the logical inverse of a Boolean ( (-o) or (o-) ) value."
+msgstr "报告一个布尔值（ (-o) 或 (o-) ）的逻辑非数值"
+
+msgid "Report (-o) if both values are (-o)"
+msgstr "报告两个布尔值是否都为真 (-o)"
+
+msgid "Report (-o) if either value is (-o)"
+msgstr "报告两个布尔值中是否有一个为真 (-o)"
+
+msgid "Report (-o) if first input is a value of the given data type."
+msgstr "报告输入的内容是否属于选中的数据类型 (-o)"
+
+msgid "Convert a value to the given data type."
+msgstr "将值转换为给定的数据类型"
+
+msgid "If the condition is (-o) report the first alternative otherwise report the second alternative."
+msgstr "如果条件为 (-o)，则报告第一个选项，否则报告第二个选项"
+
+msgid "Map a value in the \"from\" range to the corresponding value in the \"to\" range."
+msgstr "将一个值从 \"源\" 范围映射到 \"目标\" 范围中的对应值"
+
+msgid "Report the numerical value of a hexadecimal string (range: -0x1FFFFFFF to 0x1FFFFFFF)"
+msgstr "报告一个十六进制数的十进制数值（可输入范围：-0x1FFFFFFF ~ 0x1FFFFFFF）"
+
+msgid "Report bitwise AND of two numbers."
+msgstr "报告两个数字的按位与运算结果"
+
+msgid "Report bitwise OR of two numbers."
+msgstr "报告两个数字的按位或运算结果"
+
+msgid "Report bitwise XOR (exclusive OR) of two numbers."
+msgstr "报告两个数字的按位异或运算结果"
+
+msgid "Report bitwise inverse of the given number."
+msgstr "报告输入数字的按位取反运算结果"
+
+msgid "Report the given number shifted left by the given number of bits."
+msgstr "报告输入数字向左平移若干位后的结果"
+
+msgid "Report the given number shifted right by the given number of bits (arithmetic shift; sign is maintained)."
+msgstr "报告输入数字向右平移若干位后的结果（算术位移；符号保持不变）"
+
+msgid "Set a variable to the given value."
+msgstr "将变量设为输入的数值"
+
+msgid "Change a variable by the given amount."
+msgstr "将输入的数字与变量相加"
+
+msgid "Create a variable local to the containing script with the given initial value."
+msgstr "以输入的初始值创建一个包含脚本的局部变量"
+
+msgid "Report the Nth item of a list, string, or byte array."
+msgstr "报告列表、字符或字节数组中的第 N 项元素"
+
+msgid "Report the number of items in a list, string, or byte array."
+msgstr "报告列表、字符或字节数字中的元素的数量"
+
+msgid "Join (concatenate) the given lists, strings, or byte arrays and report the result."
+msgstr "将输入的列表、字符或字节数组组合起来并报告结果"
+
+msgid "Create and report a short list containing the given items. Length limited by available stack space."
+msgstr "创建并报告一个包含输入元素的短列表。长度受限于可用的堆栈空间"
+
+msgid "Add an item to the end of a list."
+msgstr "在列表的末尾添加一项元素"
+
+msgid "Replace the Nth item (or all items) of a list or byte array with the given value."
+msgstr "用输入的数值替换列表或字节数组中的第 N 项元素（或所有元素）"
+
+msgid "Delete the Nth item (or all items) of a list."
+msgstr "删除列表中的第 N 项元素（或所有元素）"
+
+msgid "Find and report the index of an item in a list or a substring within a string. Report -1 if not found."
+msgstr "查找并报告列表中某一元素或字符串中某一子串的索引。如果没有找到则报告 -1"
+
+msgid "Report a copy from the given index through the end (or optional stop index) of the given list, string, or byte array."
+msgstr "报告从输入的索引在输入的列表、字符串或字节数组中（或可选的停止索引）的拷贝"
+
+msgid "Split the given string with the given delimiter and report the result (a list of strings)."
+msgstr "用输入的分隔符分割输入的字符串，并报告结果（一个字符串的列表）"
+
+msgid "Combine the items of a list into a string, optionally separated by a delimiter (e.g. comma)."
+msgstr "将一个列表中的元素合并成一个字符串，可选择用分界符（如逗号）分隔"
+
+msgid "Report the Unicode value (\"code point\") of the Nth character of the given string."
+msgstr "报告输入字符串的第 N 个字符的 Unicode 值（代码点）"
+
+msgid "Report a string containing the given Unicode value (\"code point\") or list of values."
+msgstr "报告一个包含输入的 Unicode 值（代码点）或值列表的字符串"
+
+msgid "Report a new list of the given length filled with zero or the optional value."
+msgstr "报告一个新的列表，其长度为输入值，列表元素为 0 或可选数值"
+
+msgid "Report a new byte array of the given length filled with zero or the optional value."
+msgstr "报告一个新的字节数组，其长度为输入值，数组元素为 0 或可选数值"
+
+msgid "Report a byte array containing the UTF-8 bytes of the given string."
+msgstr "报告一个字节数组，该数组包含输入字符串的 UTF-8 字节"
+
+msgid "Report the number of words of memory available. Stop button frees up memory."
+msgstr "报告可用内存的字数。停止按钮释放内存"
+
+

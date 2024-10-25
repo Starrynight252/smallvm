@@ -2930,7 +2930,7 @@ method copyVMToBoard SmallRuntime driveName boardPath {
 	}
 	vmData = (readEmbeddedFile (join 'precompiled/' vmFileName) true)
 	if (isNil vmData) {
-		error (join (localized 'Could not read: ') (join 'precompiled/' vmFileName))
+		error (localized 'Could not read %1.' (join 'precompiled/' vmFileName))
 	}
 	writeFile (join boardPath vmFileName) vmData
 	vmVersion = nil
@@ -3102,7 +3102,7 @@ method copyVMToBoardInBrowser SmallRuntime eraseFlashFlag downloadLatestFlag boa
 	browserWriteFile vmData vmFileName 'vmInstall'
 	waitMSecs 5000 // leave time for file to download before showing next prompt
 
-	inform (join (localized 'Drag the firmware file you just saved to the') ' ' driveName ' ' (localized 'drive') '.')
+	inform (localized 'Drag the firmware file you just saved to the %1 drive.' driveName)
 	waitMSecs 1000 // leave time for file dialog box to appear before showing next prompt
 
 	if (endsWith vmFileName '.uf2') {
@@ -3171,7 +3171,7 @@ method firmwareInstallSecsRemaining SmallRuntime {
 
 method firmwareInstallStatus SmallRuntime {
 	if (isNil firmwareInstallTimer) { return 'Installing firmware...' }
-	return (join '' (firmwareInstallSecsRemaining this) ' ' (localized 'seconds remaining') '.')
+	return (localized '%1 seconds remaining.' (firmwareInstallSecsRemaining this))
 }
 
 method firmwareInstallDone SmallRuntime {
