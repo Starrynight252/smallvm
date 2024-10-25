@@ -1,263 +1,336 @@
-# MicroBlocks translation file
-# Last updated: October 03 2024
-
-#########################
-# Blocks and categories #
-#########################
-
+#. "Output" blocks category label
 msgid "cat;Output"
 msgstr "Sortida"
 
+#. Block in Output category
 msgid "set user LED _"
 msgstr "encén LED integrat _"
 
+#. Block in Output category
 msgid "say _"
 msgstr "digues _"
 
+#. Block in Output category
 msgid "graph _"
 msgstr "afegeix a la gràfica _"
 
+#. "Input" blocks category label
 msgid "cat;Input"
 msgstr "Entrada"
 
+#. Block in Input category
 msgid "button A"
 msgstr "botó A"
 
+#. Block in Input category
 msgid "button B"
 msgstr "botó B"
 
+#. Block in Input category
 msgid "timer"
 msgstr "cronòmetre"
 
+#. Block in Input category
 msgid "reset timer"
 msgstr "reinicia el cronòmetre"
 
+#. Block in Input category
 msgid "microseconds"
 msgstr "microsegons"
 
+#. Block in Input category
 msgid "milliseconds"
 msgstr "mil·lisegons"
 
+#. Block in Input category
 msgid "board type"
 msgstr "tipus de placa"
 
+#. Block in Input category
 msgid "milliseconds since _"
 msgstr "mil·lisegons des de _"
 
+#. Block in Input category
 msgid "end time _"
 msgstr "fins a _"
 
+#. Block in Input category
 msgid "microseconds since _"
 msgstr "microsegons des de _"
 
+#. Block in Input category
 msgid "connected to IDE"
 msgstr "connectat a la IDE"
 
+#. "Pins" blocks category label
 msgid "cat;Pins"
 msgstr "Pins"
 
+#. Block in Pins category
 msgid "read digital pin _"
 msgstr "lectura digital _"
 
+#. Block in Pins category
 msgid "read analog pin _"
 msgstr "lectura analògica _"
 
+#. Block in Pins category
 msgid "pullup _"
 msgstr "amb resistència interna _"
 
+#. Block in Pins category
 msgid "set digital pin _ to _"
 msgstr "posa el pin digital _ a _"
 
+#. Block in Pins category
 msgid "set pin _ to _"
 msgstr "posa el pin _ a _"
 
+#. Block in Pins category
 msgid "analog pins"
 msgstr "pins analògics"
 
+#. Block in Pins category
 msgid "digital pins"
 msgstr "pins digitals"
 
+#. "Control" blocks category label
 msgid "cat;Control"
 msgstr "Control"
 
+#. Block in Control category
 msgid "when started"
 msgstr "en començar"
 
+#. Block in Control category
 msgid "when button _ pressed"
 msgstr "quan es premi el botó _"
 
+#. Block in Control category
 msgid "forever _"
 msgstr "per sempre _"
 
+#. Block in Control category
 msgid "repeat _ _"
 msgstr "repeteix _ vegades _"
 
+#. Block in Control category
 msgid "wait _ millisecs"
 msgstr "espera _ mil·lisegons"
 
+#. Block in Control category
 msgid "if _ _"
 msgstr "si _ _"
 
+#. Block in Control category
 msgid "if _ _ else _"
 msgstr "si _ _ si no _"
 
+#. Block in Control category
 msgid "else if _ _"
 msgstr "si no, si _ _"
 
+#. Block in Control category
 msgid "else"
 msgstr "si no"
 
+#. Block in Control category
 msgid "when _"
 msgstr "quan _"
 
+#. Block in Control category
 msgid "wait until _"
 msgstr "espera fins que _"
 
+#. Block in Control category
 msgid "wait _ microsecs"
 msgstr "espera _ microsegons"
 
+#. Block in Control category
 msgid "return _"
 msgstr "retorna _"
 
+#. Block in Control category
 msgid "when _ received"
 msgstr "quan rebi _"
 
+#. Block in Control category
 msgid "go!"
 msgstr "endavant!"
 
+#. Block in Control category
 msgid "broadcast _"
 msgstr "envia _"
 
+#. Block in Control category
 msgid "comment _"
 msgstr "comentari _"
 
+#. Block in Control category
 msgid "How this works..."
 msgstr "Així funciona..."
 
+#. Block in Control category
 msgid "range _ to _"
 msgstr "nombres de _ a _"
 
+#. Block in Control category
 msgid "by _"
 msgstr "en increments de _"
 
+#. Block in Control category
 msgid "for _ in _ _"
 msgstr "per cada _ en _ _"
 
+#. Block in Control category
 msgid "repeat until _ _"
 msgstr "repeteix fins que _ _"
 
+#. Block in Control category
 msgid "stop this task"
 msgstr "atura aquesta tasca"
 
+#. Block in Control category
 msgid "stop other tasks"
 msgstr "atura les altres tasques"
 
+#. Block in Control category
 msgid "stop all"
 msgstr "atura-ho tot"
 
+#. Block in Control category
 msgid "last message"
 msgstr "últim missatge"
 
+#. Block in Control category
 msgid "arg _ default _"
 msgstr "argument _ amb valor per defecte _"
 
+#. Block in Control category
 msgid "default"
 msgstr "defecte"
 
+#. Block in Control category
 msgid "call _"
 msgstr "crida _"
 
+#. Block in Control category
 msgid "function name"
 msgstr "nom de la funció"
 
+#. Block in Control category
 msgid "parameter list"
 msgstr "llista de paràmetres"
 
+#. Block in Control category
 msgid "with _"
 msgstr "amb paràmetre(s) _"
 
+#. "Operators" blocks category label
 msgid "cat;Operators"
 msgstr "Operadors"
 
+#. Block in Operators category
 msgid "_ mod _"
 msgstr "_ mòdul _"
 
+#. Block in Operators category
 msgid "abs _"
 msgstr "valor absolut de _"
 
+#. Block in Operators category
 msgid "min _ _"
 msgstr "mínim entre _ i _"
 
+#. Block in Operators category
 msgid "max _ _"
 msgstr "màxim entre _ i _"
 
+#. Block in Operators category
 msgid "random _ to _"
 msgstr "nombre a l'atzar entre _ i _"
 
+#. Block in Operators category
 msgid "not _"
 msgstr "no _"
 
+#. Block in Operators category
 msgid "_ and _"
 msgstr "_ i _"
 
+#. Block in Operators category
 msgid "and _"
 msgstr "i _"
 
+#. Block in Operators category
 msgid "_ or _"
 msgstr "_ o _"
 
+#. Block in Operators category
 msgid "or _"
 msgstr "o _"
 
+#. Block in Operators category
 msgid "_ is a _"
 msgstr "_ és un _"
 
+#. Block in Operators category
 msgid "convert _ to _"
 msgstr "_ convertit en _"
 
+#. Block in Operators category
 msgid "if _ then _ else _"
 msgstr "si _ llavors _ si no _"
 
+#. Block in Operators category
 msgid "boolean"
 msgstr "booleà"
 
+#. Block in Operators category
 msgid "number"
 msgstr "nombre"
 
+#. Block in Operators category
 msgid "string"
 msgstr "text"
 
+#. Block in Operators category
 msgid "list"
 msgstr "llista"
 
+#. Block in Operators category
 msgid "byte array"
 msgstr "llista de bytes"
 
+#. Block in Operators category
 msgid "cat;Advanced:"
 msgstr "Avançat:"
 
+#. Block in Operators category
 msgid "rescale _ from ( _ , _ ) to ( _ , _ )"
 msgstr "reescala _ de ( _ , _ ) a ( _ , _ )"
 
+#. Block in Operators category
 msgid "hex _"
 msgstr "hexadecimal _"
 
+#. Block in Operators category
 msgid "sqrt _"
 msgstr "arrel quadrada de _"
 
+#. "Variables" blocks category label
 msgid "cat;Variables"
 msgstr "Variables"
 
-# Buttons on top of "Variables" category
-
+#. Buttons on top of "Variables" category
 msgid "Add a variable"
 msgstr "Crea una variable"
 
+#. Buttons on top of "Variables" category
 msgid "Delete a variable"
 msgstr "Elimina una variable"
 
-# New variable dialog
-
+#. New variable dialog
 msgid "New variable name?"
 msgstr "Nom de la variable?"
 
@@ -270,6 +343,7 @@ msgstr "augmenta _ en _"
 msgid "initialize local _ to _"
 msgstr "inicialitza variable local _ a _"
 
+#. "Data" blocks category label
 msgid "cat;Data"
 msgstr "Dades"
 
@@ -363,25 +437,27 @@ msgstr "qualsevol"
 msgid "split _ by _"
 msgstr "divideix _ per _"
 
+#. "My Blocks" blocks category label
 msgid "cat;My Blocks"
 msgstr "Els meus blocs"
 
+#. "Generic" blocks category label
 msgid "cat;Generic"
 msgstr "Genèric"
 
-# Buttons on top of "My Blocks" category
-
+#. Buttons on top of "My Blocks" category
 msgid "Add a command block"
 msgstr "Crea un bloc comanda"
 
+#. Buttons on top of "My Blocks" category
 msgid "Add a reporter block"
 msgstr "Crea un bloc reportador"
 
-# Make a block dialog
-
+#. Make a block dialog
 msgid "Enter function name:"
 msgstr "Nom de la funció:"
 
+#. "Comm" blocks category label
 msgid "cat;Comm"
 msgstr "Comunicacions"
 
@@ -454,94 +530,111 @@ msgstr "no op"
 msgid "ignore"
 msgstr "ignora"
 
-##############
-# Primitives #
-##############
-
-# These are all mostly hidden from end users
-
+#. Primitive block. Mostly hidden from end users.
 msgid "draw shape _ at x _ y _"
 msgstr "dibuixa forma _ a x _ y _"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "shape for letter _"
 msgstr "forma de la lletra _"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "send NeoPixel rgb _"
 msgstr "envia RGB _ al NeoPíxel"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "has tone support"
 msgstr "té suport per a tons"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "play tone pin _ frequency _"
 msgstr "toca un to al pin _ de freqüència _"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "has WiFi support"
 msgstr "té suport per a WiFi"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "start WiFi _ password _"
 msgstr "inicia WiFi _ amb contrasenya _"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "stop WiFi"
 msgstr "atura WiFi"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "WiFi status"
 msgstr "estat de la WiFi"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "my IP address"
 msgstr "la meva adreça IP"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio send number _"
 msgstr "envia nombre _ per ràdio"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio send string _"
 msgstr "envia text _ per ràdio"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "Hello!"
 msgstr "Hola!"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio send pair _ = _"
 msgstr "envia associació _ = _ per ràdio"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "light"
 msgstr "llum"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio message received?"
 msgstr "missatge de ràdio rebut?"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio last number"
 msgstr "últim nombre rebut per ràdio"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio last string"
 msgstr "últim text rebut per ràdio"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio last message type"
 msgstr "tipus de l'últim missatge rebut per ràdio"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio set group _ (0-255)"
 msgstr "fixa el grup de ràdio a _ (0-255)"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio set channel (0-83) _"
 msgstr "fixa el canal de ràdio a (0-83) _"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio set power (0-7) _"
 msgstr "fixa potència de ràdio a (0-7) _"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio last signal strength"
 msgstr "intensitat de l'última senyal de ràdio"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio receive packet _"
 msgstr "rep paquet per ràdio _"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio send packet _"
 msgstr "envia paquet per ràdio _"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "disable radio"
 msgstr "inhabilita ràdio"
 
-#############
-# Libraries #
-#############
-
+#. "Basic Sensors" library label.
 msgid "Basic Sensors"
 msgstr "Sensors bàsics"
 
@@ -1296,7 +1389,7 @@ msgid "make image _"
 msgstr "construeix imatge _"
 
 msgid "set pixel x _ y _ erase _"
-msgstr ""
+msgstr "posa píxel x _ y _ esborrat _"
 
 msgid "set video _"
 msgstr "configurar el vídeo _"
@@ -4675,5 +4768,4 @@ msgstr "Reporta una llista de bytes que contingui els bytes UTF-8 de la cadena d
 
 msgid "Report the number of words of memory available. Stop button frees up memory."
 msgstr "Reporta el número de paraules (grups de 32 bits, o 4 bytes) de memòria disponibles."
-
 

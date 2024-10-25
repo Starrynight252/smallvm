@@ -10,8 +10,9 @@
 // Update missing strings in locale files
 
 to startup {
+	specs = (authoringSpecs)
 	langName = (last (commandLine))
-	setLanguage (authoringSpecs) langName
+	setLanguage specs langName
 
 	// Backup previous locale file before updating it
 	oldLocale = (readFile (join '../translations/' langName '.po'))
@@ -20,7 +21,7 @@ to startup {
 	}
 
 	updatedLocale = ''
-	allLocales = (readFile '../Locales.txt')
+	allLocales = (readFile '../translations/template.pot')
 
 	// Check whether it's an RTL language, and keep the tag if so
 	if ((localized 'RTL') == 'true') {
@@ -40,15 +41,14 @@ to startup {
 			// Copy comments. We should be smarter about it and get
 			// them from the original file somehow.
 			updatedLocale = (join updatedLocale original (newline))
-		} else {
+		} (beginsWith original 'msgid') {
+			original = (parseGetText specs original true)
 			translation = (localizedOrNil original)
 			if (isNil translation) {
 				// Maybe this translation has now been prefixed?
 				prefixIdx = (findFirst original ';')
 				if (prefixIdx > 0) {
-					translation = (localizedOrNil
-						(substring original (prefixIdx + 1))
-					)
+					translation = (localizedOrNil (substring original (prefixIdx + 1)))
 				}
 			}
 			if (or (isNil translation) (isNil oldLocale)) {

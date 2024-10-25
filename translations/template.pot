@@ -1,263 +1,336 @@
-# MicroBlocks translation file
-# Last updated: October 03 2024
-
-#########################
-# Blocks and categories #
-#########################
-
+#. "Output" blocks category label
 msgid "cat;Output"
 msgstr ""
 
+#. Block in Output category
 msgid "set user LED _"
 msgstr ""
 
+#. Block in Output category
 msgid "say _"
 msgstr ""
 
+#. Block in Output category
 msgid "graph _"
 msgstr ""
 
+#. "Input" blocks category label
 msgid "cat;Input"
 msgstr ""
 
+#. Block in Input category
 msgid "button A"
 msgstr ""
 
+#. Block in Input category
 msgid "button B"
 msgstr ""
 
+#. Block in Input category
 msgid "timer"
 msgstr ""
 
+#. Block in Input category
 msgid "reset timer"
 msgstr ""
 
+#. Block in Input category
 msgid "microseconds"
 msgstr ""
 
+#. Block in Input category
 msgid "milliseconds"
 msgstr ""
 
+#. Block in Input category
 msgid "board type"
 msgstr ""
 
+#. Block in Input category
 msgid "milliseconds since _"
 msgstr ""
 
+#. Block in Input category
 msgid "end time _"
 msgstr ""
 
+#. Block in Input category
 msgid "microseconds since _"
 msgstr ""
 
+#. Block in Input category
 msgid "connected to IDE"
 msgstr ""
 
+#. "Pins" blocks category label
 msgid "cat;Pins"
 msgstr ""
 
+#. Block in Pins category
 msgid "read digital pin _"
 msgstr ""
 
+#. Block in Pins category
 msgid "read analog pin _"
 msgstr ""
 
+#. Block in Pins category
 msgid "pullup _"
 msgstr ""
 
+#. Block in Pins category
 msgid "set digital pin _ to _"
 msgstr ""
 
+#. Block in Pins category
 msgid "set pin _ to _"
 msgstr ""
 
+#. Block in Pins category
 msgid "analog pins"
 msgstr ""
 
+#. Block in Pins category
 msgid "digital pins"
 msgstr ""
 
+#. "Control" blocks category label
 msgid "cat;Control"
 msgstr ""
 
+#. Block in Control category
 msgid "when started"
 msgstr ""
 
+#. Block in Control category
 msgid "when button _ pressed"
 msgstr ""
 
+#. Block in Control category
 msgid "forever _"
 msgstr ""
 
+#. Block in Control category
 msgid "repeat _ _"
 msgstr ""
 
+#. Block in Control category
 msgid "wait _ millisecs"
 msgstr ""
 
+#. Block in Control category
 msgid "if _ _"
 msgstr ""
 
+#. Block in Control category
 msgid "if _ _ else _"
 msgstr ""
 
+#. Block in Control category
 msgid "else if _ _"
 msgstr ""
 
+#. Block in Control category
 msgid "else"
 msgstr ""
 
+#. Block in Control category
 msgid "when _"
 msgstr ""
 
+#. Block in Control category
 msgid "wait until _"
 msgstr ""
 
+#. Block in Control category
 msgid "wait _ microsecs"
 msgstr ""
 
+#. Block in Control category
 msgid "return _"
 msgstr ""
 
+#. Block in Control category
 msgid "when _ received"
 msgstr ""
 
+#. Block in Control category
 msgid "go!"
 msgstr ""
 
+#. Block in Control category
 msgid "broadcast _"
 msgstr ""
 
+#. Block in Control category
 msgid "comment _"
 msgstr ""
 
+#. Block in Control category
 msgid "How this works..."
 msgstr ""
 
+#. Block in Control category
 msgid "range _ to _"
 msgstr ""
 
+#. Block in Control category
 msgid "by _"
 msgstr ""
 
+#. Block in Control category
 msgid "for _ in _ _"
 msgstr ""
 
+#. Block in Control category
 msgid "repeat until _ _"
 msgstr ""
 
+#. Block in Control category
 msgid "stop this task"
 msgstr ""
 
+#. Block in Control category
 msgid "stop other tasks"
 msgstr ""
 
+#. Block in Control category
 msgid "stop all"
 msgstr ""
 
+#. Block in Control category
 msgid "last message"
 msgstr ""
 
+#. Block in Control category
 msgid "arg _ default _"
 msgstr ""
 
+#. Block in Control category
 msgid "default"
 msgstr ""
 
+#. Block in Control category
 msgid "call _"
 msgstr ""
 
+#. Block in Control category
 msgid "function name"
 msgstr ""
 
+#. Block in Control category
 msgid "parameter list"
 msgstr ""
 
+#. Block in Control category
 msgid "with _"
 msgstr ""
 
+#. "Operators" blocks category label
 msgid "cat;Operators"
 msgstr ""
 
+#. Block in Operators category
 msgid "_ mod _"
 msgstr ""
 
+#. Block in Operators category
 msgid "abs _"
 msgstr ""
 
+#. Block in Operators category
 msgid "min _ _"
 msgstr ""
 
+#. Block in Operators category
 msgid "max _ _"
 msgstr ""
 
+#. Block in Operators category
 msgid "random _ to _"
 msgstr ""
 
+#. Block in Operators category
 msgid "not _"
 msgstr ""
 
+#. Block in Operators category
 msgid "_ and _"
 msgstr ""
 
+#. Block in Operators category
 msgid "and _"
 msgstr ""
 
+#. Block in Operators category
 msgid "_ or _"
 msgstr ""
 
+#. Block in Operators category
 msgid "or _"
 msgstr ""
 
+#. Block in Operators category
 msgid "_ is a _"
 msgstr ""
 
+#. Block in Operators category
 msgid "convert _ to _"
 msgstr ""
 
+#. Block in Operators category
 msgid "if _ then _ else _"
 msgstr ""
 
+#. Block in Operators category
 msgid "boolean"
 msgstr ""
 
+#. Block in Operators category
 msgid "number"
 msgstr ""
 
+#. Block in Operators category
 msgid "string"
 msgstr ""
 
+#. Block in Operators category
 msgid "list"
 msgstr ""
 
+#. Block in Operators category
 msgid "byte array"
 msgstr ""
 
+#. Block in Operators category
 msgid "cat;Advanced:"
 msgstr ""
 
+#. Block in Operators category
 msgid "rescale _ from ( _ , _ ) to ( _ , _ )"
 msgstr ""
 
+#. Block in Operators category
 msgid "hex _"
 msgstr ""
 
+#. Block in Operators category
 msgid "sqrt _"
 msgstr ""
 
+#. "Variables" blocks category label
 msgid "cat;Variables"
 msgstr ""
 
-# Buttons on top of "Variables" category
-
+#. Buttons on top of "Variables" category
 msgid "Add a variable"
 msgstr ""
 
+#. Buttons on top of "Variables" category
 msgid "Delete a variable"
 msgstr ""
 
-# New variable dialog
-
+#. New variable dialog
 msgid "New variable name?"
 msgstr ""
 
@@ -270,6 +343,7 @@ msgstr ""
 msgid "initialize local _ to _"
 msgstr ""
 
+#. "Data" blocks category label
 msgid "cat;Data"
 msgstr ""
 
@@ -363,25 +437,27 @@ msgstr ""
 msgid "split _ by _"
 msgstr ""
 
+#. "My Blocks" blocks category label
 msgid "cat;My Blocks"
 msgstr ""
 
+#. "Generic" blocks category label
 msgid "cat;Generic"
 msgstr ""
 
-# Buttons on top of "My Blocks" category
-
+#. Buttons on top of "My Blocks" category
 msgid "Add a command block"
 msgstr ""
 
+#. Buttons on top of "My Blocks" category
 msgid "Add a reporter block"
 msgstr ""
 
-# Make a block dialog
-
+#. Make a block dialog
 msgid "Enter function name:"
 msgstr ""
 
+#. "Comm" blocks category label
 msgid "cat;Comm"
 msgstr ""
 
@@ -454,94 +530,111 @@ msgstr ""
 msgid "ignore"
 msgstr ""
 
-##############
-# Primitives #
-##############
-
-# These are all mostly hidden from end users
-
+#. Primitive block. Mostly hidden from end users.
 msgid "draw shape _ at x _ y _"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "shape for letter _"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "send NeoPixel rgb _"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "has tone support"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "play tone pin _ frequency _"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "has WiFi support"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "start WiFi _ password _"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "stop WiFi"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "WiFi status"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "my IP address"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio send number _"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio send string _"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "Hello!"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio send pair _ = _"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "light"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio message received?"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio last number"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio last string"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio last message type"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio set group _ (0-255)"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio set channel (0-83) _"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio set power (0-7) _"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio last signal strength"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio receive packet _"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio send packet _"
 msgstr ""
 
+#. Primitive block. Mostly hidden from end users.
 msgid "disable radio"
 msgstr ""
 
-#############
-# Libraries #
-#############
-
+#. "Basic Sensors" library label.
 msgid "Basic Sensors"
 msgstr ""
 
@@ -4675,5 +4768,3 @@ msgstr ""
 
 msgid "Report the number of words of memory available. Stop button frees up memory."
 msgstr ""
-
-
