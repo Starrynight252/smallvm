@@ -61,14 +61,14 @@ if test -n "$locale"; then
     if [ $locale == '--locale' ]; then
         echo "Currently available locales:"
         echo
-        for lang in translations/*; do
+        for lang in translations/*.po; do
             echo $lang | cut -c14- | cut -f1 -d.
         done
         echo
     elif [ $locale == 'all' ]; then
         echo "Updating all available locales:"
         echo
-        for lang in translations/*; do
+        for lang in translations/*.po; do
             ./build.sh --locale=`echo $lang | cut -c14- | cut -f1 -d.`
         done
         echo
