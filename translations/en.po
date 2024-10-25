@@ -1,273 +1,336 @@
-#, fuzzy
-msgid ""
-msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-25 14:40+0200\n"
-"PO-Revision-Date: 2024-10-25 12:40+0000\n"
-"Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
-"Language-Team: English <https://hosted.weblate.org/projects/microblocks/ide/"
-"en/>\n"
-"Language: en\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: ENCODING\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8.2-dev\n"
-
-# MicroBlocks translation file
-# Last updated: October 03 2024
-#########################
-# Blocks and categories #
-#########################
+#. "Output" blocks category label
 msgid "cat;Output"
 msgstr "Output"
 
+#. Block in Output category
 msgid "set user LED _"
 msgstr "set user LED _"
 
+#. Block in Output category
 msgid "say _"
 msgstr "say _"
 
+#. Block in Output category
 msgid "graph _"
 msgstr "graph _"
 
+#. "Input" blocks category label
 msgid "cat;Input"
 msgstr "Input"
 
+#. Block in Input category
 msgid "button A"
 msgstr "button A"
 
+#. Block in Input category
 msgid "button B"
 msgstr "button B"
 
+#. Block in Input category
 msgid "timer"
 msgstr "timer"
 
+#. Block in Input category
 msgid "reset timer"
 msgstr "reset timer"
 
+#. Block in Input category
 msgid "microseconds"
 msgstr "microseconds"
 
+#. Block in Input category
 msgid "milliseconds"
 msgstr "milliseconds"
 
+#. Block in Input category
 msgid "board type"
 msgstr "board type"
 
+#. Block in Input category
 msgid "milliseconds since _"
 msgstr "milliseconds since _"
 
+#. Block in Input category
 msgid "end time _"
 msgstr "end time _"
 
+#. Block in Input category
 msgid "microseconds since _"
 msgstr "microseconds since _"
 
+#. Block in Input category
 msgid "connected to IDE"
 msgstr "connected to IDE"
 
+#. "Pins" blocks category label
 msgid "cat;Pins"
 msgstr "Pins"
 
+#. Block in Pins category
 msgid "read digital pin _"
 msgstr "read digital pin _"
 
+#. Block in Pins category
 msgid "read analog pin _"
 msgstr "read analog pin _"
 
+#. Block in Pins category
 msgid "pullup _"
 msgstr "pullup _"
 
+#. Block in Pins category
 msgid "set digital pin _ to _"
 msgstr "set digital pin _ to _"
 
+#. Block in Pins category
 msgid "set pin _ to _"
 msgstr "set pin _ to _"
 
+#. Block in Pins category
 msgid "analog pins"
 msgstr "analog pins"
 
+#. Block in Pins category
 msgid "digital pins"
 msgstr "digital pins"
 
+#. "Control" blocks category label
 msgid "cat;Control"
 msgstr "Control"
 
+#. Block in Control category
 msgid "when started"
 msgstr "when started"
 
+#. Block in Control category
 msgid "when button _ pressed"
 msgstr "when button _ pressed"
 
+#. Block in Control category
 msgid "forever _"
 msgstr "forever _"
 
+#. Block in Control category
 msgid "repeat _ _"
 msgstr "repeat _ _"
 
+#. Block in Control category
 msgid "wait _ millisecs"
 msgstr "wait _ millisecs"
 
+#. Block in Control category
 msgid "if _ _"
 msgstr "if _ _"
 
+#. Block in Control category
 msgid "if _ _ else _"
 msgstr "if _ _ else _"
 
+#. Block in Control category
 msgid "else if _ _"
 msgstr "else if _ _"
 
+#. Block in Control category
 msgid "else"
 msgstr "else"
 
+#. Block in Control category
 msgid "when _"
 msgstr "when _"
 
+#. Block in Control category
 msgid "wait until _"
 msgstr "wait until _"
 
+#. Block in Control category
 msgid "wait _ microsecs"
 msgstr "wait _ microsecs"
 
+#. Block in Control category
 msgid "return _"
 msgstr "return _"
 
+#. Block in Control category
 msgid "when _ received"
 msgstr "when _ received"
 
+#. Block in Control category
 msgid "go!"
 msgstr "go!"
 
+#. Block in Control category
 msgid "broadcast _"
 msgstr "broadcast _"
 
+#. Block in Control category
 msgid "comment _"
 msgstr "comment _"
 
+#. Block in Control category
 msgid "How this works..."
 msgstr "How this works..."
 
+#. Block in Control category
 msgid "range _ to _"
 msgstr "range _ to _"
 
+#. Block in Control category
 msgid "by _"
 msgstr "by _"
 
+#. Block in Control category
 msgid "for _ in _ _"
 msgstr "for _ in _ _"
 
+#. Block in Control category
 msgid "repeat until _ _"
 msgstr "repeat until _ _"
 
+#. Block in Control category
 msgid "stop this task"
 msgstr "stop this task"
 
+#. Block in Control category
 msgid "stop other tasks"
 msgstr "stop other tasks"
 
+#. Block in Control category
 msgid "stop all"
 msgstr "stop all"
 
+#. Block in Control category
 msgid "last message"
 msgstr "last message"
 
+#. Block in Control category
 msgid "arg _ default _"
 msgstr "arg _ default _"
 
+#. Block in Control category
 msgid "default"
 msgstr "default"
 
+#. Block in Control category
 msgid "call _"
 msgstr "call _"
 
+#. Block in Control category
 msgid "function name"
 msgstr "function name"
 
+#. Block in Control category
 msgid "parameter list"
 msgstr "parameter list"
 
+#. Block in Control category
 msgid "with _"
 msgstr "with _"
 
+#. "Operators" blocks category label
 msgid "cat;Operators"
 msgstr "Operators"
 
+#. Block in Operators category
 msgid "_ mod _"
 msgstr "_ mod _"
 
+#. Block in Operators category
 msgid "abs _"
 msgstr "abs _"
 
+#. Block in Operators category
 msgid "min _ _"
 msgstr "min _ _"
 
+#. Block in Operators category
 msgid "max _ _"
 msgstr "max _ _"
 
+#. Block in Operators category
 msgid "random _ to _"
 msgstr "random _ to _"
 
+#. Block in Operators category
 msgid "not _"
 msgstr "not _"
 
+#. Block in Operators category
 msgid "_ and _"
 msgstr "_ and _"
 
+#. Block in Operators category
 msgid "and _"
 msgstr "and _"
 
+#. Block in Operators category
 msgid "_ or _"
 msgstr "_ or _"
 
+#. Block in Operators category
 msgid "or _"
 msgstr "or _"
 
+#. Block in Operators category
 msgid "_ is a _"
 msgstr "_ is a _"
 
+#. Block in Operators category
 msgid "convert _ to _"
 msgstr "convert _ to _"
 
+#. Block in Operators category
 msgid "if _ then _ else _"
 msgstr "if _ then _ else _"
 
+#. Block in Operators category
 msgid "boolean"
 msgstr "boolean"
 
+#. Block in Operators category
 msgid "number"
 msgstr "number"
 
+#. Block in Operators category
 msgid "string"
 msgstr "string"
 
+#. Block in Operators category
+msgid "list"
+msgstr "list"
+
+#. Block in Operators category
 msgid "byte array"
 msgstr "byte array"
 
+#. Block in Operators category
 msgid "cat;Advanced:"
 msgstr "Advanced:"
 
+#. Block in Operators category
 msgid "rescale _ from ( _ , _ ) to ( _ , _ )"
 msgstr "rescale _ from ( _ , _ ) to ( _ , _ )"
 
+#. Block in Operators category
 msgid "hex _"
 msgstr "hex _"
 
+#. Block in Operators category
 msgid "sqrt _"
 msgstr "sqrt _"
 
+#. "Variables" blocks category label
 msgid "cat;Variables"
 msgstr "Variables"
 
-# Buttons on top of "Variables" category
+#. Buttons on top of "Variables" category
 msgid "Add a variable"
 msgstr "Add a variable"
 
+#. Buttons on top of "Variables" category
 msgid "Delete a variable"
 msgstr "Delete a variable"
 
-# New variable dialog
+#. New variable dialog
 msgid "New variable name?"
 msgstr "New variable name?"
 
@@ -280,6 +343,7 @@ msgstr "change _ by _"
 msgid "initialize local _ to _"
 msgstr "initialize local _ to _"
 
+#. "Data" blocks category label
 msgid "cat;Data"
 msgstr "Data"
 
@@ -328,6 +392,9 @@ msgstr "to _"
 msgid "find _ in _"
 msgstr "find _ in _"
 
+msgid "starting at _"
+msgstr "starting at _"
+
 msgid "join items of list _"
 msgstr "join items of list _"
 
@@ -370,23 +437,27 @@ msgstr "random"
 msgid "split _ by _"
 msgstr "split _ by _"
 
+#. "My Blocks" blocks category label
 msgid "cat;My Blocks"
 msgstr "My Blocks"
 
+#. "Generic" blocks category label
 msgid "cat;Generic"
 msgstr "Generic"
 
-# Buttons on top of "My Blocks" category
+#. Buttons on top of "My Blocks" category
 msgid "Add a command block"
 msgstr "Add a command block"
 
+#. Buttons on top of "My Blocks" category
 msgid "Add a reporter block"
 msgstr "Add a reporter block"
 
-# Make a block dialog
+#. Make a block dialog
 msgid "Enter function name:"
 msgstr "Enter function name:"
 
+#. "Comm" blocks category label
 msgid "cat;Comm"
 msgstr "Comm"
 
@@ -459,88 +530,111 @@ msgstr "no op"
 msgid "ignore"
 msgstr "ignore"
 
-##############
-# Primitives #
-##############
-# These are all mostly hidden from end users
+#. Primitive block. Mostly hidden from end users.
 msgid "draw shape _ at x _ y _"
 msgstr "draw shape _ at x _ y _"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "shape for letter _"
 msgstr "shape for letter _"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "send NeoPixel rgb _"
 msgstr "send NeoPixel rgb _"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "has tone support"
 msgstr "has tone support"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "play tone pin _ frequency _"
 msgstr "play tone pin _ frequency _"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "has WiFi support"
 msgstr "has WiFi support"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "start WiFi _ password _"
 msgstr "start WiFi _ password _"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "stop WiFi"
 msgstr "stop WiFi"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "WiFi status"
 msgstr "WiFi status"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "my IP address"
 msgstr "my IP address"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio send number _"
 msgstr "radio send number _"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio send string _"
 msgstr "radio send string _"
 
+#. Primitive block. Mostly hidden from end users.
+msgid "Hello!"
+msgstr "Hello!"
+
+#. Primitive block. Mostly hidden from end users.
 msgid "radio send pair _ = _"
 msgstr "radio send pair _ = _"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "light"
 msgstr "light"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio message received?"
 msgstr "radio message received?"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio last number"
 msgstr "radio last number"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio last string"
 msgstr "radio last string"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio last message type"
 msgstr "radio last message type"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio set group _ (0-255)"
 msgstr "radio set group _ (0-255)"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio set channel (0-83) _"
 msgstr "radio set channel (0-83) _"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio set power (0-7) _"
 msgstr "radio set power (0-7) _"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio last signal strength"
 msgstr "radio last signal strength"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio receive packet _"
 msgstr "radio receive packet _"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "radio send packet _"
 msgstr "radio send packet _"
 
+#. Primitive block. Mostly hidden from end users.
 msgid "disable radio"
 msgstr "disable radio"
 
-#############
-# Libraries #
-#############
+#. "Basic Sensors" library label.
 msgid "Basic Sensors"
 msgstr "Basic Sensors"
 
@@ -570,6 +664,7 @@ msgstr "set acceleration range _ g = 100"
 
 ####
 # NeoPixel library
+
 msgid "NeoPixel"
 msgstr "NeoPixel"
 
@@ -594,6 +689,12 @@ msgstr "brighten NeoPixel _ by _"
 msgid "brighten all NeoPixels by _"
 msgstr "brighten all NeoPixels by _"
 
+msgid "color r _ g _ b _ (0-255)"
+msgstr "color r _ g _ b _ (0-255)"
+
+msgid "random color"
+msgstr "random color"
+
 msgid "attach _ LED NeoPixel strip to pin _"
 msgstr "attach _ LED NeoPixel strip to pin _"
 
@@ -608,6 +709,7 @@ msgstr "PIR at pin _ detected movement"
 
 ####
 # NeoPanel library
+
 msgid "NeoPanel"
 msgstr "NeoPanel"
 
@@ -634,6 +736,7 @@ msgstr "NeoPanel draw BMP file _ at x _ y _"
 
 ####
 # Microphone library
+
 msgid "Microphone"
 msgstr "Microphone"
 
@@ -657,6 +760,7 @@ msgstr "estimate clap threshold"
 
 ####
 # Citilab ED1 board libraries
+
 msgid "ED1 Stepper Motor"
 msgstr "ED1 Stepper Motor"
 
@@ -710,6 +814,7 @@ msgstr "set capacitive threshold to _"
 
 ####
 # BirdBrain Technologies libraries
+
 msgid "Hummingbird LED _ _ %"
 msgstr "Hummingbird LED _ _ %"
 
@@ -829,11 +934,13 @@ msgstr "strength"
 
 ####
 # Ultrasound distance library
+
 msgid "distance (cm) trigger _ echo _"
 msgstr "distance (cm) trigger _ echo _"
 
 ####
 # Infrared remote library
+
 msgid "IR Remote"
 msgstr "IR Remote"
 
@@ -854,6 +961,7 @@ msgstr "IR transmit device _ command _"
 
 ####
 # Keyboard and Mouse library
+
 msgid "Keyboard and Mouse"
 msgstr "Keyboard and Mouse"
 
@@ -962,6 +1070,7 @@ msgstr "release mouse buttons"
 ####
 # Lists library
 # Extra utilities for list manipulation and access
+
 msgid "Lists"
 msgstr "Lists"
 
@@ -1022,6 +1131,7 @@ msgstr "uniqued _"
 ####
 # Pseudorandomness
 # Creates pseudorandom numbers and lists of numbers given a particular seed
+
 msgid "Pseudorandomness"
 msgstr "Pseudorandomness"
 
@@ -1033,6 +1143,7 @@ msgstr "_ pseudorandom numbers _ to _ with seed _"
 
 ####
 # BLE Keyboard library
+
 msgid "BLE Keyboard"
 msgstr "BLE Keyboard"
 
@@ -1043,12 +1154,14 @@ msgstr "start BLE Keyboard"
 # Radio comm library
 # Allows micro:bit boards to exchange messages
 # All of its blocks are primitive (see "Primitives" section)
+
 msgid "Radio"
 msgstr "Radio"
 
 ####
 # Text scrolling library
 # Scrolls text on 5x5 LED displays and simulated ones
+
 msgid "Scrolling"
 msgstr "Scrolling"
 
@@ -1069,6 +1182,7 @@ msgstr "stop scrolling"
 
 ####
 # Servo motor library
+
 msgid "Servo"
 msgstr "Servo"
 
@@ -1085,6 +1199,7 @@ msgstr "stop servo _"
 # 5x5 LED display library
 # Supports the micro:bit display, but also simulated 5x5 displays on boards
 # with differently sized LED arrays, NeoPixel arrays or TFT displays
+
 msgid "LED Display"
 msgstr "LED Display"
 
@@ -1110,6 +1225,7 @@ msgid "display character _"
 msgstr "display character _"
 
 # Image names for the "display image" block
+
 msgid "heart"
 msgstr "heart"
 
@@ -1232,6 +1348,7 @@ msgstr "scissors"
 
 ####
 # OLED Graphics library
+
 msgid "initialize i2c _ address(hex) _ reset pin# _ flip _"
 msgstr "initialize i2c _ address(hex) _ reset pin# _ flip _"
 
@@ -1285,6 +1402,7 @@ msgstr "defer display updates"
 
 ####
 # TFT display library
+
 msgid "clear TFT display "
 msgstr "clear TFT display"
 
@@ -1345,9 +1463,13 @@ msgstr "draw bitmap _ palette _ on TFT at x _ y _"
 msgid "set TFT backlight _ (0-10)"
 msgstr "set TFT backlight _ (0-10)"
 
+msgid "gray _ %"
+msgstr "gray _ %"
+
 ####
 # BMP library
 # Can display BMP image files on a TFT display
+
 msgid "display BMP file _ at x _ y _"
 msgstr "display BMP file _ at x _ y _"
 
@@ -1356,6 +1478,7 @@ msgstr "image.bmp"
 
 ####
 # Color library
+
 msgid "Color Operators"
 msgstr "Color Operators"
 
@@ -1400,6 +1523,7 @@ msgstr "_ with brightness _ %"
 
 ####
 # Fractions library
+
 msgid "Fractions"
 msgstr "Fractions"
 
@@ -1445,6 +1569,7 @@ msgstr "lcm _ _"
 ####
 # Tone library
 # Generates music tones on buzzers
+
 msgid "Tone"
 msgstr "Tone"
 
@@ -1505,6 +1630,7 @@ msgstr "b"
 ####
 # Ringtone library
 # Can play Nokring-formatted music. Also known as RTTTL.
+
 msgid "Ringtone"
 msgstr "Ringtone"
 
@@ -1517,6 +1643,7 @@ msgstr "current song name"
 ####
 # Pluck
 # Generate music with plucked-string resembling sounds
+
 msgid "Pluck"
 msgstr "Pluck"
 
@@ -1532,6 +1659,7 @@ msgstr "set pluck pin _"
 ####
 # WAV
 # Play WAV sound files
+
 msgid "play WAV file _"
 msgstr "play WAV file _"
 
@@ -1542,6 +1670,7 @@ msgstr "filename"
 # Rhythm
 # Send broadcasts -and call functions- according to a tempo and time signature.
 # Useful to create musical patterns
+
 msgid "Rhythm"
 msgstr "Rhythm"
 
@@ -1569,7 +1698,9 @@ msgstr "wait until bar _"
 ####
 # MIDI
 # Control MIDI devices from MicroBlocks
+
 # General MIDI drum instrument names
+
 msgid "Acoustic Bass Drum"
 msgstr "Acoustic Bass Drum"
 
@@ -1712,6 +1843,7 @@ msgid "Open Triangle"
 msgstr "Open Triangle"
 
 # General MIDI instrument categories
+
 msgid "piano"
 msgstr "piano"
 
@@ -1761,6 +1893,7 @@ msgid "gm;SFX"
 msgstr "SFX"
 
 # General MIDI drum sets
+
 msgid "standard"
 msgstr "standard"
 
@@ -1792,6 +1925,7 @@ msgid "CM-64/CM-32L"
 msgstr "CM-64/CM-32L"
 
 # General MIDI control changes
+
 msgid "bank select 1"
 msgstr "bank select 1"
 
@@ -1859,6 +1993,7 @@ msgid "effect 2"
 msgstr "effect 2"
 
 # library blocks
+
 msgid "play MIDI note _ for _ ms on channel _ volume _"
 msgstr "play MIDI note _ for _ ms on channel _ volume _"
 
@@ -1916,10 +2051,12 @@ msgstr "set MIDI signal to pin _"
 ####
 # Scales & Chords
 # Abstractions for musical theory
+
 msgid "Scales & Chords"
 msgstr "Scales & Chords"
 
 # scale names
+
 msgid "ionian"
 msgstr "ionian"
 
@@ -1941,7 +2078,14 @@ msgstr "aeolian"
 msgid "locrian"
 msgstr "locrian"
 
+msgid "major"
+msgstr "major"
+
+msgid "minor"
+msgstr "minor"
+
 # chord types
+
 msgid "major"
 msgstr "major"
 
@@ -1961,6 +2105,7 @@ msgid "Maj7"
 msgstr "Maj7"
 
 # sound destinations for arpeggiate block
+
 msgid "MIDI channel"
 msgstr "MIDI channel"
 
@@ -1968,6 +2113,7 @@ msgid "tone pin"
 msgstr "tone pin"
 
 # library blocks
+
 msgid "_ scale root _"
 msgstr "_ scale root _"
 
@@ -2007,6 +2153,7 @@ msgstr "rotation _ of circle of 5ths _ M _ m _ º"
 ####
 # Chiptune
 # Old-school sound generation on digital pins and DACs
+
 msgid "kick for _ ms on pin _"
 msgstr "kick for _ ms on pin _"
 
@@ -2031,6 +2178,7 @@ msgstr "hihat for _ ms on DAC pin _"
 ####
 # Square Wave Chords
 # Play chords on 3 digital pins
+
 msgid "Square Wave Chords"
 msgstr "Square Wave Chords"
 
@@ -2042,6 +2190,7 @@ msgstr "set digital chord pins _ _ _"
 
 ####
 # Turtle geometry library
+
 msgid "Turtle"
 msgstr "Turtle"
 
@@ -2080,6 +2229,7 @@ msgstr "point in direction _"
 
 ####
 # File system library
+
 msgid "Files"
 msgstr "Files"
 
@@ -2131,6 +2281,7 @@ msgstr "file system info"
 ####
 # Strings
 # string (text) processing functions
+
 msgid "Strings"
 msgstr "Strings"
 
@@ -2202,6 +2353,7 @@ msgstr "str2num _"
 
 ####
 # WiFi library
+
 msgid "WiFi"
 msgstr "WiFi"
 
@@ -2229,6 +2381,7 @@ msgstr "MAC address"
 ####
 # Motion library
 # Counts steps and detects motion via the internal accelerometer
+
 msgid "Motion"
 msgstr "Motion"
 
@@ -2249,6 +2402,7 @@ msgstr "set step threshold _ (0-50)"
 
 ####
 # Button Events library
+
 msgid "Button Events"
 msgstr "Button Events"
 
@@ -2263,6 +2417,7 @@ msgstr "button _ pressed"
 
 ####
 # Calliope board library
+
 msgid "Calliope set LED red _ green _ blue _"
 msgstr "Calliope set LED red _ green _ blue _"
 
@@ -2274,6 +2429,7 @@ msgstr "Calliope loudness"
 
 ####
 # Circuit Playground Express board library
+
 msgid "Circuit Playground set speaker _"
 msgstr "Circuit Playground set speaker _"
 
@@ -2282,6 +2438,7 @@ msgstr "Circuit Playground slide switch"
 
 ####
 # DotStar LED library
+
 msgid "attach _ DotStar LEDs to data pin _ clock pin _"
 msgstr "attach _ DotStar LEDs to data pin _ clock pin _"
 
@@ -2296,6 +2453,7 @@ msgstr "set DotStar brightness _"
 
 ####
 # BME280 environmental sensor
+
 msgid "bme280 connected"
 msgstr "bme280 connected"
 
@@ -2322,6 +2480,7 @@ msgstr "bmx280 altitude (feet)"
 
 ####
 # TCS34725 color sensor
+
 msgid "TCS34725 connected"
 msgstr "TCS34725 connected"
 
@@ -2333,6 +2492,7 @@ msgstr "color _ name"
 
 ####
 # DHT11 environmental sensor
+
 msgid "temperature (Celsius) DHT11 pin _"
 msgstr "temperature (Celsius) DHT11 pin _"
 
@@ -2347,6 +2507,7 @@ msgstr "humidity DHT22 pin _"
 
 ####
 # PN532 RFID reader
+
 msgid "read PN532 RFID"
 msgstr "read PN532 RFID"
 
@@ -2358,6 +2519,7 @@ msgstr "get PN532 firmware version"
 
 ####
 # Touch Screen
+
 msgid "Touch Screen"
 msgstr "Touch Screen"
 
@@ -2375,6 +2537,7 @@ msgstr "TFT touch pressure"
 
 ####
 # HTTP Client
+
 msgid "HTTP client"
 msgstr "HTTP client"
 
@@ -2389,6 +2552,7 @@ msgstr "port _"
 
 ####
 # HTTP Server
+
 msgid "HTTP server"
 msgstr "HTTP server"
 
@@ -2427,6 +2591,7 @@ msgstr "content length of request _"
 
 ####
 # WebSocket server
+
 msgid "WebSocket server"
 msgstr "WebSocket server"
 
@@ -2453,6 +2618,7 @@ msgstr "Hello, Client!"
 
 ####
 # Web Things library
+
 msgid "Web Thing"
 msgstr "Web Thing"
 
@@ -2500,6 +2666,7 @@ msgstr "events JSON"
 
 ####
 # Citilab Fantàstic Robot
+
 msgid "turn fantàstic _ degrees"
 msgstr "turn fantàstic _ degrees"
 
@@ -2508,6 +2675,7 @@ msgstr "move fantàstic _ mm"
 
 ####
 # MiKe Robot library
+
 msgid "MiKe front obstacle (cm)"
 msgstr "MiKe front obstacle (cm)"
 
@@ -2567,6 +2735,7 @@ msgstr "MiKe digital D8 to _"
 
 ####
 # Shield:bit
+
 msgid "s꞉b LEDs off"
 msgstr "s꞉b LEDs off"
 
@@ -2614,6 +2783,7 @@ msgstr "degrees"
 
 ####
 # micro:STEAMakers
+
 msgid "m꞉s display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
 msgstr "m꞉s display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
 
@@ -2689,6 +2859,7 @@ msgstr "down"
 ####
 # DrawBot Library
 # A CoreXY plotter library that supports turtle geometry
+
 msgid "plotter move X _ Y _"
 msgstr "plotter move X _ Y _"
 
@@ -2718,6 +2889,7 @@ msgstr "set plotter speed to _ %"
 
 ####
 # Innova Didactic libraries
+
 msgid "red"
 msgstr "red"
 
@@ -2855,6 +3027,7 @@ msgstr "3dBot line on _ ?"
 
 ####
 # ESP32 Smart Farm
+
 msgid "voltage (V)"
 msgstr "voltage (V)"
 
@@ -2929,6 +3102,7 @@ msgstr "Farm electric consumption _"
 
 ####
 # ESP32 Smart Home
+
 msgid "Home fan _"
 msgstr "Home fan _"
 
@@ -2979,6 +3153,7 @@ msgstr "Home electric consumption _"
 
 ####
 # MQTT
+
 msgid "MQTT connect to broker _"
 msgstr "MQTT connect to broker _"
 
@@ -3038,6 +3213,7 @@ msgstr "buffer sizes _"
 
 ####
 # UDP
+
 msgid "UDP start port _"
 msgstr "UDP start port _"
 
@@ -3061,6 +3237,7 @@ msgstr "UDP remote port"
 
 ####
 # WiFi Radio
+
 msgid "wifi send number _"
 msgstr "wifi send number _"
 
@@ -3084,6 +3261,7 @@ msgstr "wifi set group _ (0-255)"
 
 ####
 # Cutebot
+
 msgid "Cutebot"
 msgstr "Cutebot"
 
@@ -3114,10 +3292,28 @@ msgstr "Cutebot sees line on left _ right _"
 msgid "Cutebot distance (cm)"
 msgstr "Cutebot distance (cm)"
 
+msgid "cutebotlight;left"
+msgstr "left"
+
+msgid "cutebotlight;right"
+msgstr "right"
+
+msgid "cutebotlight;both"
+msgstr "both"
+
 msgid "cutebotside;left"
 msgstr "left"
 
 msgid "cutebotside;right"
+msgstr "right"
+
+####
+# Cutebot Pro
+
+msgid "cutebotwheel;left"
+msgstr "left"
+
+msgid "cutebotwheel;right"
 msgstr "right"
 
 msgid "cutebotwheel;both"
@@ -3235,6 +3431,7 @@ msgid "CBPro version"
 msgstr "CBPro version"
 
 # Wukong
+
 msgid "Wukong"
 msgstr "Wukong"
 
@@ -3261,6 +3458,7 @@ msgstr "Wukong set LED brightness to _"
 
 ####
 # Sphero-RVR
+
 msgid "wake"
 msgstr "wake"
 
@@ -3287,6 +3485,7 @@ msgstr "set all LEDs to red _ green _ blue _"
 
 ####
 # Joystick:bit
+
 msgid "button _ is pressed"
 msgstr "button _ is pressed"
 
@@ -3298,6 +3497,7 @@ msgstr "motor vibrate for _ ms"
 
 ####
 # NeZha
+
 msgid "NeZha"
 msgstr "NeZha"
 
@@ -3318,6 +3518,7 @@ msgstr "NeZha set continuous rotation servo _ speed to _ %"
 
 ####
 # WuKong2040
+
 msgid "WuKong2040"
 msgstr "WuKong2040"
 
@@ -3344,6 +3545,7 @@ msgstr "WuKong2040 buzzer beep _ ms"
 
 ####
 # Octopus
+
 msgid "Octopus"
 msgstr "Octopus"
 
@@ -3406,6 +3608,7 @@ msgstr "Octopus OLED fill circle x _ y _ radius _"
 
 ####
 # OctoStudio
+
 msgid "Octo beam to phones _"
 msgstr "Octo beam to phones _"
 
@@ -3430,7 +3633,9 @@ msgstr "Octo stop"
 ##################
 # MicroBlocks UI #
 ##################
+
 # buttons, error & info messages, dialog boxes, etc
+
 msgid "New"
 msgstr "New"
 
@@ -3563,6 +3768,7 @@ msgid "Discard current project?"
 msgstr "Discard current project?"
 
 # Scripting area right-click context menu
+
 msgid "set block size..."
 msgstr "set block size..."
 
@@ -3997,6 +4203,7 @@ msgid "Confirm"
 msgstr "Confirm"
 
 # Library folders
+
 msgid "LIBRARIES"
 msgstr "LIBRARIES"
 
@@ -4037,6 +4244,7 @@ msgid "libfolder;WorkInProgress"
 msgstr "Work in Progress"
 
 # File picker and library dialogs
+
 msgid "New library name?"
 msgstr "New library name?"
 
@@ -4148,6 +4356,7 @@ msgstr "Increase block size"
 ############
 # Tips Bar #
 ############
+
 msgid "Button"
 msgstr "Button"
 
@@ -4177,6 +4386,9 @@ msgstr "[l] right arrow to show optional inputs, left arrow to hide."
 
 msgid "Command Block"
 msgstr "Command Block"
+
+msgid "[l] to run, or drag to build scripts. [r] menu."
+msgstr "[l] to run, or drag to build scripts. [r] menu."
 
 msgid "Hat Block"
 msgstr "Hat Block"
@@ -4229,6 +4441,7 @@ msgstr "Drag blocks here to build scripts. [r] menu."
 #################################
 # Block Descriptions for TipBar #
 #################################
+
 msgid "Turn the user LED on or off."
 msgstr "Turn the user LED on or off."
 
@@ -4556,5 +4769,3 @@ msgstr "Report a byte array containing the UTF-8 bytes of the given string."
 msgid "Report the number of words of memory available. Stop button frees up memory."
 msgstr "Report the number of words of memory available. Stop button frees up memory."
 
-msgid "shift NeoPixel _ color by _"
-msgstr "shift NeoPixel _ color by _"
