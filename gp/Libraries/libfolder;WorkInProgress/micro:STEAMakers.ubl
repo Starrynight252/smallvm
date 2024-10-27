@@ -1,44 +1,44 @@
 module 'micro:STEAMakers'
 author 'Joan Guillén'
-version 1 1 
-depends Tone Color 
-tags keyestudio steam 
-choices inclination down x y 
-choices led_imageMenu heart 'small heart' yes no happy sad confused angry asleep surprised silly fabulous meh 't-shirt' 'roller skate' duck house tortoise butterfly 'stick figure' ghost sword giraffe skull umbrella snake rabbit cow 'quarter note' 'eight note' pitchfork target triangle 'left triangle' 'chess board' diamond 'small diamond' square 'small square' scissors 
-choices buttons A B 
-choices accel x y z 
-choices energyMeter 'ms;start' 'ms;stop' 'ms;reset'
-choices energy mA mV mW 
+version 1 2
+depends Tone Color
+tags keyestudio steam
+choices ms_inclination down x y
+choices ms_led_imageMenu heart 'small heart' yes no happy sad confused angry asleep surprised silly fabulous meh 't-shirt' 'roller skate' duck house tortoise butterfly 'stick figure' ghost sword giraffe skull umbrella snake rabbit cow 'quarter note' 'eight note' pitchfork target triangle 'left triangle' 'chess board' diamond 'small diamond' square 'small square' scissors
+choices ms_buttons A B
+choices ms_accel x y z
+choices ms_energyMeter 'ms;start' 'ms;stop' 'ms;reset'
+choices ms_energy mA mV mW
 description 'Provides custom blocks for the micro:STEAMakers. It is an ESP32 board with WiFi, BLE, 5x5 RGB LED matrix, 2 buttons, touching area, light, sound, temperature and humidity sensors, six-axis acc/gyroscope, energy control and io pins and i2c extensions'
-variables _ms_neoPixels _ms_neoPixels_on _sb_neoPixels_on _MiKe_circlePixels _ms_noePixels_scale _ms_scrolling_stopped _tonePin _toneInitalized _ms_energyReading _ms_energySum _ms_aht20_on _ms_aht20_reading _ms_aht20_data _ms_MPU6050_on _ms_MPU6050_add 
+variables _ms_neoPixels _ms_neoPixels_on _sb_neoPixels_on _MiKe_circlePixels _ms_neoPixels_scale _ms_scrolling_stopped _ms_energyReading _ms_energySum _ms_aht20_on _ms_aht20_reading _ms_aht20_data _ms_MPU6050_on _ms_MPU6050_add
 
-  spec ' ' 'ms_display' 'm꞉s display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _' 'color color color color color color color color color color color color color color color color color color color color color color color color color'
-  spec ' ' 'ms_displayShape' 'm꞉s display #BR# _ #BR# with color _' 'microbitDisplay color' 15237440
-  spec ' ' 'ms_displayImage' 'm꞉s display image _ with color _' 'menu.led_imageMenu color num num' 'happy'
-  spec ' ' 'ms_clear_display' 'm꞉s clear display'
-  spec ' ' 'ms_setGlobalBrightnessScale' 'm꞉s scale brightness to _ %' 'num' 100
-  spec ' ' 'ms_plot' 'm꞉s plot x _ y _ with _' 'num num color' 3 3
-  spec ' ' 'ms_unplot' 'm꞉s unplot x _ y _' 'num num' 3 3
-  spec ' ' 'ms_displayCharacter' 'm꞉s display character _ with _' 'str color' 'A'
-  spec ' ' 'ms_scroll_text' 'm꞉s scroll text _ with color _ : pausing _ ms' 'str color num' 'micro:STEAMakers' nil 100
-  spec ' ' 'ms_stopScrollingText' 'm꞉s stop scrolling'
+  spec ' ' 'ms_display' 'ms display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _' 'color color color color color color color color color color color color color color color color color color color color color color color color color'
+  spec ' ' 'ms_displayShape' 'ms display #BR# _ #BR# with color _' 'microbitDisplay color' 15237440
+  spec ' ' 'ms_displayImage' 'ms display image _ with color _' 'menu.ms_led_imageMenu color num num' 'happy'
+  spec ' ' 'ms_clear_display' 'ms clear display'
+  spec ' ' 'ms_setGlobalBrightnessScale' 'ms scale brightness to _ %' 'num' 100
+  spec ' ' 'ms_plot' 'ms plot x _ y _ with _' 'num num color' 3 3
+  spec ' ' 'ms_unplot' 'ms unplot x _ y _' 'num num' 3 3
+  spec ' ' 'ms_displayCharacter' 'ms display character _ with _' 'str color' 'A'
+  spec ' ' 'ms_scroll_text' 'ms scroll text _ with color _ : pausing _ ms' 'str color num' 'micro:STEAMakers' nil 100
+  spec ' ' 'ms_stopScrollingText' 'ms stop scrolling'
   space
   spec ' ' 'ms_setup_audio' 'start micro꞉STEAMakers audio'
   space
-  spec 'r' 'ms_buttons' 'm꞉s button _ ?' 'menu.buttons' 'A'
-  spec 'r' 'ms_touching' 'm꞉s touching ?'
-  spec 'r' 'ms_light' 'm꞉s light %'
-  spec 'r' 'ms_sound' 'm꞉s sound %'
-  spec 'r' 'ms_temperature' 'm꞉s temperature ºC'
-  spec 'r' 'ms_humidity' 'm꞉s humidity %'
+  spec 'r' 'ms_buttons' 'ms button _ ?' 'menu.ms_buttons' 'A'
+  spec 'r' 'ms_touching' 'ms touching ?'
+  spec 'r' 'ms_light' 'ms light'
+  spec 'r' 'ms_sound' 'ms sound'
+  spec 'r' 'ms_temperature' 'ms temperature ºC'
+  spec 'r' 'ms_humidity' 'ms humidity %'
   space
-  spec 'r' 'ms_accel' 'm꞉s accel _ m/s2' 'menu.accel' 'x'
-  spec 'r' 'ms_gyro' 'm꞉s gyro _ deg/s' 'menu.accel' 'x'
-  spec 'r' 'ms_inclination' 'm꞉s inclination towards _ º' 'menu.inclination' 'down'
+  spec 'r' 'ms_accel' 'ms accel _ m/s2' 'menu.ms_accel' 'x'
+  spec 'r' 'ms_gyro' 'ms gyro _ deg/s' 'menu.ms_accel' 'x'
+  spec 'r' 'ms_inclination' 'ms inclination towards _ º' 'menu.ms_inclination' 'down'
   space
-  spec 'r' 'ms_energy' 'm꞉s energy _' 'menu.energy' 'mW'
-  spec ' ' 'ms_energyMeter' 'm꞉s _ energy meter' 'menu.energyMeter' 'ms;start'
-  spec 'r' 'ms_energyConsumption' 'm꞉s energy consumption (µWh)'
+  spec 'r' 'ms_energy' 'ms energy _' 'menu.ms_energy' 'mW'
+  spec ' ' 'ms_energyMeter' 'ms _ energy meter' 'menu.ms_energyMeter' 'ms;start'
+  spec 'r' 'ms_energyConsumption' 'ms energy consumption (µWh)'
   space
   spec ' ' '_ms_neoPixels_setup' '_ms_neoPixels_setup'
   spec ' ' '_ms_neoPixels_update' '_ms_neoPixels_update'
@@ -106,7 +106,7 @@ to '_ms_imageNames' {
 to '_ms_neoPixels_setup' {
   _ms_neoPixels = (newList 25 0)
   '[display:neoPixelSetPin]' 13 (booleanConstant false)
-  _ms_noePixels_scale = 100
+  _ms_neoPixels_scale = 100
   _ms_neoPixels_on = (booleanConstant true)
   if _sb_neoPixels_on {
     _sb_neoPixels_on = (booleanConstant false)
@@ -117,12 +117,12 @@ to '_ms_neoPixels_setup' {
 }
 
 to '_ms_neoPixels_update' {
-  if (100 == _ms_noePixels_scale) {
+  if (100 == _ms_neoPixels_scale) {
     '[display:neoPixelSend]' _ms_neoPixels
   } else {
     local 'currentPixels' (newList 25)
     for pix 25 {
-      atPut pix currentPixels ('[misc:hsvColor]' ('[misc:hue]' (at pix _ms_neoPixels)) ('[misc:saturation]' (at pix _ms_neoPixels)) ((('[misc:brightness]' (at pix _ms_neoPixels)) * _ms_noePixels_scale) / 100))
+      atPut pix currentPixels ('[misc:hsvColor]' ('[misc:hue]' (at pix _ms_neoPixels)) ('[misc:saturation]' (at pix _ms_neoPixels)) ((('[misc:brightness]' (at pix _ms_neoPixels)) * _ms_neoPixels_scale) / 100))
     }
     '[display:neoPixelSend]' currentPixels
   }
@@ -304,7 +304,7 @@ to ms_inclination op {
 }
 
 to ms_light {
-  return ('[misc:rescale]' (analogReadOp 39) 0 1023 0 100)
+  return (analogReadOp 39)
 }
 
 to ms_plot x y color {
@@ -353,17 +353,16 @@ to ms_scroll_text label color specificDelay {
 
 to ms_setGlobalBrightnessScale scale {
   if (not _ms_neoPixels_on) {'_ms_neoPixels_setup'}
-  _ms_noePixels_scale = scale
+  _ms_neoPixels_scale = scale
   '_ms_neoPixels_update'
 }
 
 to ms_setup_audio {
-  _tonePin = 33
-  _toneInitalized = (booleanConstant true)
+  'attach buzzer to pin' 33
 }
 
 to ms_sound {
-  return ('[misc:rescale]' (analogReadOp 35) 0 1023 0 100)
+  return (analogReadOp 35)
 }
 
 to ms_stopScrollingText {
