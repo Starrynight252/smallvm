@@ -1,10 +1,24 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-25 14:40+0200\n"
+"PO-Revision-Date: 2024-10-28 10:46+0000\n"
+"Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/microblocks/ide/cs/"
+">\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
+"X-Generator: Weblate 5.8.2-dev\n"
+
 # MicroBlocks translation file
 # Last updated: October 03 2024
-
 #########################
 # Blocks and categories #
 #########################
-
 msgid "cat;Output"
 msgstr "Výstup	"
 
@@ -42,13 +56,13 @@ msgid "board type"
 msgstr "Typ desky"
 
 msgid "milliseconds since _"
-msgstr ""
+msgstr "počet milisekund od _"
 
 msgid "end time _"
-msgstr ""
+msgstr "do _"
 
 msgid "microseconds since _"
-msgstr ""
+msgstr "počet mikrosekund od _"
 
 msgid "connected to IDE"
 msgstr "připojeno k IDE"
@@ -216,7 +230,7 @@ msgid "convert _ to _"
 msgstr "převést _ do _"
 
 msgid "if _ then _ else _"
-msgstr ""
+msgstr "když _ pak _ jinak _"
 
 msgid "boolean"
 msgstr "logika"
@@ -227,11 +241,8 @@ msgstr "číslo"
 msgid "string"
 msgstr "text"
 
-msgid "list"
-msgstr "seznam"
-
 msgid "byte array"
-msgstr ""
+msgstr "pole bajtů"
 
 msgid "cat;Advanced:"
 msgstr "Rozšířené bloky:"
@@ -249,7 +260,6 @@ msgid "cat;Variables"
 msgstr "Proměnné"
 
 # Buttons on top of "Variables" category
-
 msgid "Add a variable"
 msgstr "Přidej proměnnou"
 
@@ -257,7 +267,6 @@ msgid "Delete a variable"
 msgstr "Smaž proměnnou"
 
 # New variable dialog
-
 msgid "New variable name?"
 msgstr "JMéno nové proměnné?"
 
@@ -318,11 +327,8 @@ msgstr "do _"
 msgid "find _ in _"
 msgstr "najdi _ v _"
 
-msgid "starting at _"
-msgstr "začínající od _"
-
 msgid "join items of list _"
-msgstr "spoje prvky seznamu _"
+msgstr "spoj prvky seznamu _"
 
 msgid "separator _"
 msgstr "oddělovač _"
@@ -370,7 +376,6 @@ msgid "cat;Generic"
 msgstr "Obecné"
 
 # Buttons on top of "My Blocks" category
-
 msgid "Add a command block"
 msgstr "Přidej blok povelů"
 
@@ -378,7 +383,6 @@ msgid "Add a reporter block"
 msgstr "Přidej blok povelů s návratovou hodnotou"
 
 # Make a block dialog
-
 msgid "Enter function name:"
 msgstr "Zadej jméno funkce:"
 
@@ -407,13 +411,13 @@ msgid "spi receive"
 msgstr "přijmi z SPI"
 
 msgid "spi setup speed _"
-msgstr "SPI nastav rychlost"
+msgstr "SPI nastav rychlost _"
 
 msgid "mode _"
 msgstr "režim _"
 
 msgid "rpi channel _"
-msgstr ""
+msgstr "kanál RPI _"
 
 msgid "spi exchange bytes _"
 msgstr "SPI přenes bajty _"
@@ -431,19 +435,19 @@ msgid "serial read"
 msgstr "přeči ze seriového portu"
 
 msgid "serial write _"
-msgstr "do serivého portu zapiš _"
+msgstr "do seriového portu zapiš _"
 
 msgid "anIntegerStringListOrByteArray"
-msgstr ""
+msgstr "číslo/řetězec/pole bajtů"
 
 msgid "serial write _ starting at _"
-msgstr "zapiš do seriového portu _ od _"
+msgstr "do seriového portu zapiš _ od _"
 
 msgid "aStringListOrByteArray"
-msgstr ""
+msgstr "řetězec/pole bajtů"
 
 msgid "soft serial write byte _ pin _ baud _"
-msgstr ""
+msgstr "do SW seriového portu zapiš byte _ na pin _ rychlost _"
 
 msgid "print _"
 msgstr "tiskni _"
@@ -457,9 +461,7 @@ msgstr "ignoruj"
 ##############
 # Primitives #
 ##############
-
 # These are all mostly hidden from end users
-
 msgid "draw shape _ at x _ y _"
 msgstr "nakresli tvar _ na x _ y _"
 
@@ -495,9 +497,6 @@ msgstr "odešli rádiem číslo _"
 
 msgid "radio send string _"
 msgstr "odešli rádiem text _"
-
-msgid "Hello!"
-msgstr ""
 
 msgid "radio send pair _ = _"
 msgstr "odešli rádiem jméno _ hodnota _"
@@ -541,7 +540,6 @@ msgstr "deaktivuj radio"
 #############
 # Libraries #
 #############
-
 msgid "Basic Sensors"
 msgstr "Jednoduché Senzory"
 
@@ -571,7 +569,6 @@ msgstr "nastav rozsah akcelerace _ g = 100"
 
 ####
 # NeoPixel library
-
 msgid "NeoPixel"
 msgstr "NeoPixel"
 
@@ -596,12 +593,6 @@ msgstr "zjasni NeoPixel _ o _"
 msgid "brighten all NeoPixels by _"
 msgstr "zjasni všechny NeoPixely _ o _"
 
-msgid "color r _ g _ b _ (0-255)"
-msgstr "barva R _ G _ B _ (0-255)"
-
-msgid "random color"
-msgstr "náhodná barva"
-
 msgid "attach _ LED NeoPixel strip to pin _"
 msgstr "připoj pásek _ NeoPixel LED na Pin _"
 
@@ -616,7 +607,6 @@ msgstr "PIR na pinu _ zjištěn pohyb"
 
 ####
 # NeoPanel library
-
 msgid "NeoPanel"
 msgstr "NepoPixel panel"
 
@@ -633,17 +623,16 @@ msgid "NeoPanel fill row _ color _"
 msgstr "NeoPanel řádek _ barva _"
 
 msgid "NeoPanel fill rectangle x _ y _ width _ height _ color _"
-msgstr ""
+msgstr "NeoPanel vyplň obdélník na x _ y _ šířka _ výška _ barva _"
 
 msgid "NeoPanel draw text _ at x _ y _ color _"
-msgstr ""
+msgstr "NeoPanel zobraz text na x _ y _ barva _"
 
 msgid "NeoPanel draw BMP file _ at x _ y _"
-msgstr ""
+msgstr "NeoPanel zobraz BMP soubor na x _ y _"
 
 ####
 # Microphone library
-
 msgid "Microphone"
 msgstr "Mikrofon"
 
@@ -654,20 +643,19 @@ msgid "turn on microphone"
 msgstr "zapni mikrofon"
 
 msgid "loudness"
-msgstr "hlasitos"
+msgstr "hlasitost"
 
 msgid "clap count"
 msgstr "počet tesknutí"
 
 msgid "set clap threshold _"
-msgstr "nastav práh tlesknují _"
+msgstr "nastav práh tlesknutí _"
 
 msgid "estimate clap threshold"
 msgstr "odhadni práh tlesknutí"
 
 ####
 # Citilab ED1 board libraries
-
 msgid "ED1 Stepper Motor"
 msgstr ""
 
@@ -721,7 +709,6 @@ msgstr ""
 
 ####
 # BirdBrain Technologies libraries
-
 msgid "Hummingbird LED _ _ %"
 msgstr ""
 
@@ -841,13 +828,11 @@ msgstr ""
 
 ####
 # Ultrasound distance library
-
 msgid "distance (cm) trigger _ echo _"
 msgstr "vzdálenost (cm) trigger _ echo _"
 
 ####
 # Infrared remote library
-
 msgid "IR Remote"
 msgstr "IR Ovladač"
 
@@ -855,7 +840,7 @@ msgid "receive IR code"
 msgstr "přijmi IR kód"
 
 msgid "receive IR code from device _"
-msgstr "přijmi IR kód z zařízení _"
+msgstr "přijmi IR kód ze zařízení _"
 
 msgid "test IR"
 msgstr "test IR"
@@ -868,7 +853,6 @@ msgstr "IR odešli zařízení _ povel _"
 
 ####
 # Keyboard and Mouse library
-
 msgid "Keyboard and Mouse"
 msgstr "Keyboard and Mouse"
 
@@ -891,7 +875,7 @@ msgid "kbd;Shift"
 msgstr "Shift"
 
 msgid "kbd;Control"
-msgstr "Řízení"
+msgstr "Ctrl"
 
 msgid "kbd;Alt / ⌥"
 msgstr "Alt / ⌥"
@@ -900,7 +884,7 @@ msgid "kbd;Logo / ⌘"
 msgstr "Logo / ⌘"
 
 msgid "kbd;AltGr"
-msgstr ""
+msgstr "AltGr"
 
 msgid "kbd;enter"
 msgstr "enter"
@@ -915,13 +899,13 @@ msgid "kbd;backspace"
 msgstr "backspace"
 
 msgid "kbd;delete"
-msgstr "vymazat"
+msgstr "delete"
 
 msgid "kbd;insert"
 msgstr "insert"
 
 msgid "kbd;home"
-msgstr "domů"
+msgstr "home"
 
 msgid "kbd;end"
 msgstr "end"
@@ -977,7 +961,6 @@ msgstr "release mouse buttons"
 ####
 # Lists library
 # Extra utilities for list manipulation and access
-
 msgid "Lists"
 msgstr "Seznamy"
 
@@ -1021,7 +1004,7 @@ msgid "sort _"
 msgstr "setřiď _"
 
 msgid "unique _"
-msgstr ""
+msgstr "jedinečný _"
 
 msgid "shuffled _"
 msgstr "proházený _"
@@ -1038,19 +1021,17 @@ msgstr ""
 ####
 # Pseudorandomness
 # Creates pseudorandom numbers and lists of numbers given a particular seed
-
 msgid "Pseudorandomness"
-msgstr ""
+msgstr "Pseudonádodné"
 
 msgid "pseudorandom _ to _ with seed _"
-msgstr ""
+msgstr "pseudonáhodné číslo od _ do _ s klíčem"
 
 msgid "_ pseudorandom numbers _ to _ with seed _"
-msgstr ""
+msgstr "_ pseudonáhodná čísla od _ do _ s klíčem"
 
 ####
 # BLE Keyboard library
-
 msgid "BLE Keyboard"
 msgstr ""
 
@@ -1061,14 +1042,12 @@ msgstr ""
 # Radio comm library
 # Allows micro:bit boards to exchange messages
 # All of its blocks are primitive (see "Primitives" section)
-
 msgid "Radio"
 msgstr "Radio"
 
 ####
 # Text scrolling library
 # Scrolls text on 5x5 LED displays and simulated ones
-
 msgid "Scrolling"
 msgstr "Scrollen"
 
@@ -1089,7 +1068,6 @@ msgstr "zastav zobrazení"
 
 ####
 # Servo motor library
-
 msgid "Servo"
 msgstr "Servo"
 
@@ -1106,7 +1084,6 @@ msgstr "zastav Servo _"
 # 5x5 LED display library
 # Supports the micro:bit display, but also simulated 5x5 displays on boards
 # with differently sized LED arrays, NeoPixel arrays or TFT displays
-
 msgid "LED Display"
 msgstr "LED Displej"
 
@@ -1132,210 +1109,209 @@ msgid "display character _"
 msgstr "zobraz znak _"
 
 # Image names for the "display image" block
-
 msgid "heart"
-msgstr ""
+msgstr "srdce"
 
 msgid "small heart"
-msgstr ""
+msgstr "malé srdce"
 
 msgid "yes"
-msgstr ""
+msgstr "ano"
 
 msgid "no"
-msgstr ""
+msgstr "ne"
 
 msgid "happy"
-msgstr ""
+msgstr "šťastný"
 
 msgid "sad"
-msgstr ""
+msgstr "smutný"
 
 msgid "confused"
-msgstr ""
+msgstr "zmatený"
 
 msgid "angry"
-msgstr ""
+msgstr "rozzlobený"
 
 msgid "asleep"
-msgstr ""
+msgstr "ospalý"
 
 msgid "surprised"
-msgstr ""
+msgstr "překvapený"
 
 msgid "silly"
-msgstr ""
+msgstr "hloupý"
 
 msgid "fabulous"
-msgstr ""
+msgstr "úžasný"
 
 msgid "meh"
 msgstr ""
 
 msgid "t-shirt"
-msgstr ""
+msgstr "triko"
 
 msgid "roller skate"
-msgstr ""
+msgstr "kolečkové brusle"
 
 msgid "duck"
-msgstr ""
+msgstr "kachna"
 
 msgid "house"
-msgstr ""
+msgstr "dům"
 
 msgid "tortoise"
-msgstr ""
+msgstr "želva"
 
 msgid "butterfly"
-msgstr ""
+msgstr "motýl"
 
 msgid "stick figure"
 msgstr ""
 
 msgid "ghost"
-msgstr ""
+msgstr "duch"
 
 msgid "sword"
-msgstr ""
+msgstr "meč"
 
 msgid "giraffe"
-msgstr ""
+msgstr "žirafa"
 
 msgid "skull"
-msgstr ""
+msgstr "lebka"
 
 msgid "umbrella"
-msgstr ""
+msgstr "deštník"
 
 msgid "snake"
-msgstr ""
+msgstr "had"
 
 msgid "rabbit"
-msgstr ""
+msgstr "zajíc"
 
 msgid "cow"
-msgstr ""
+msgstr "kráva"
 
 msgid "quarter note"
-msgstr ""
+msgstr "čtvrťová nota"
 
 msgid "eight note"
-msgstr ""
+msgstr "osminková nota"
 
 msgid "pitchfork"
-msgstr ""
+msgstr "vidle"
 
 msgid "target"
-msgstr ""
+msgstr "cíl"
 
 msgid "triangle"
-msgstr ""
+msgstr "trojúhelník"
 
 msgid "left triangle"
-msgstr ""
+msgstr "levý trojúhelník"
 
 msgid "chess board"
-msgstr ""
+msgstr "šachovnice"
 
 msgid "diamond"
-msgstr ""
+msgstr "diamant"
 
 msgid "small diamond"
-msgstr ""
+msgstr "malý diamant"
 
 msgid "square"
-msgstr ""
+msgstr "čtverec"
 
 msgid "small square"
-msgstr ""
+msgstr "malý čtverec"
 
 msgid "scissors"
-msgstr ""
+msgstr "nůžky"
 
 ####
 # OLED Graphics library
-
 msgid "initialize i2c _ address(hex) _ reset pin# _ flip _"
-msgstr "aktivuj I2C _ adresa (hex) _ reset pin# _ otoč _"
+msgstr "aktivuj OLED I2C _ adresa (hex) _ reset pin# _ otoč _"
 
 msgid "initialize spi _ d/c pin# _ reset pin# _ flip _"
-msgstr "aktivuj SPI _ adresa (hex) _ reset pin# _ otoč _"
+msgstr "aktivuj OLED SPI _ adresa (hex) _ reset pin# _ otoč _"
 
 msgid "write _ at x _ y _ inverse _"
-msgstr "zapiš _ na x _ y _ inverze"
+msgstr "OLED napiš _ na x _ y _ inverze"
 
 msgid "show display buffer"
-msgstr "ukaž obraz z paměti displeje"
+msgstr "OLED ukaž obraz z paměti displeje"
 
 msgid "clear"
-msgstr "vymaž"
+msgstr "vymaž OLED"
 
 msgid "set contrast (1-4) _"
-msgstr "nastav kontrast (1-4) _"
+msgstr "nastav kontrast OLED (1-4) _"
 
 msgid "draw circle at x _ y _ radius _ erase _"
-msgstr "nakresli kružnici střed x _ y _ poloměr _ výmaz"
+msgstr "OLED nakresli kružnici střed x _ y _ poloměr _ výmaz"
 
 msgid "draw image _ at x _ y _"
-msgstr "nakresli obrázek na x _ y _ "
+msgstr "OLED nakresli obrázek na x _ y _"
 
 msgid "draw line from x _ y _ to x _ y _ erase _"
-msgstr "nakresli přímku z x _ y _ do x _ y _ "
+msgstr "OLED nakresli přímku z x _ y _ do x _ y _"
 
 msgid "draw rectangle x _ y _ w _ h _ erase _ rounding(3-15) _"
-msgstr "nakresli obdélník x _ y _ š _ d _ výmaz _ zaoblení (3-15) _"
+msgstr "OLED nakresli obdélník x _ y _ š _ d _ výmaz _ zaoblení (3-15) _"
 
 msgid "fill rectangle x _ y _ w _ h _ erase _"
-msgstr "vyplň obdélník x _ y _ š _ d _ výmaz _ "
+msgstr "OLED vyplň obdélník x _ y _ š _ d _ výmaz _"
 
 msgid "_flip display top _"
-msgstr "_překlop displej nahoře"
+msgstr "_překlop OLED displej nahoře"
 
 msgid "make image _"
 msgstr "vytvoř obrázek"
 
 msgid "set pixel x _ y _ erase _"
-msgstr "nastav bod x _ y _ výmaz _ "
+msgstr "OLED nastav bod x _ y _ výmaz _"
 
 msgid "set video _"
-msgstr "nastav video _"
+msgstr "OLED nastav video _"
 
 msgid "cursor location"
-msgstr "pozice kurzoru"
+msgstr "OLED pozice kurzoru"
 
 msgid "defer display updates"
-msgstr "odlož aktualizaci displeje"
+msgstr "OLED odlož aktualizaci displeje"
 
 ####
 # TFT display library
-
 msgid "clear TFT display "
 msgstr ""
 
 msgid "enable TFT _"
-msgstr "aktivuj TFT"
+msgstr "aktivuj TFT _"
 
 msgid "TFT width"
-msgstr "TFT šírka"
+msgstr "TFT šířka"
 
 msgid "TFT height"
 msgstr "TFT výška"
 
 msgid "set TFT pixel x _ y _ to _"
-msgstr "naastav TFT-Pixel x _ y _ na _"
+msgstr "nastav TFT-Pixel x _ y _ na _"
 
 msgid "draw line on TFT from x _ y _ to x _ y _ color _"
 msgstr "nakresli na TFT přímku z x _ y _ do x _ y _ barva _"
 
 msgid "draw vector x _ y _ angle _ length _ color _"
-msgstr ""
+msgstr "nakresli na TFT vektor z x _ y _ úhel _ délka _ barva _"
 
 msgid "draw rectangle on TFT at x _ y _ width _ height _ color _"
 msgstr "nakresli na TFT obdélník na x _ y _ šířka _ výška _ barva _"
 
 msgid "draw rounded rectangle on TFT at x _ y _ width _ height _ radius _ color _"
-msgstr "nakresli na TFT zaoblený obdélník na  x _ y _ _ šířka _ výška _ poloměr _ barva _"
+msgstr ""
+"nakresli na TFT zaoblený obdélník na x _ y _ _ šířka _ výška _ poloměr _ "
+"barva _"
 
 msgid "draw circle on TFT at x _ y _ radius _ color _"
 msgstr "nakresli na TFT kružnící se středem x _ y _ poloměr _ barva _"
@@ -1356,27 +1332,23 @@ msgid "scale _ wrap _"
 msgstr "měřítko _ zalomení _"
 
 msgid "draw text _ on TFT at x _ y _ color _"
-msgstr ""
+msgstr "nakresli na TFT text _ na x _ y _ barva _"
 
 msgid "scale _"
-msgstr ""
+msgstr "měřítko _"
 
 msgid "bg color _"
-msgstr ""
+msgstr "barva pozadí _"
 
 msgid "draw bitmap _ palette _ on TFT at x _ y _"
-msgstr ""
+msgstr "nakresli na TFT bitmapu _ na x _ y"
 
 msgid "set TFT backlight _ (0-10)"
-msgstr ""
-
-msgid "gray _ %"
 msgstr ""
 
 ####
 # BMP library
 # Can display BMP image files on a TFT display
-
 msgid "display BMP file _ at x _ y _"
 msgstr "zobraz BMP soubor _ na x _ y _"
 
@@ -1385,7 +1357,6 @@ msgstr "obrázek.bmp"
 
 ####
 # Color library
-
 msgid "Color Operators"
 msgstr ""
 
@@ -1430,7 +1401,6 @@ msgstr ""
 
 ####
 # Fractions library
-
 msgid "Fractions"
 msgstr "Zlomky"
 
@@ -1476,7 +1446,6 @@ msgstr "NSN"
 ####
 # Tone library
 # Generates music tones on buzzers
-
 msgid "Tone"
 msgstr "Tóny"
 
@@ -1537,61 +1506,57 @@ msgstr ""
 ####
 # Ringtone library
 # Can play Nokring-formatted music. Also known as RTTTL.
-
 msgid "Ringtone"
-msgstr ""
+msgstr "Vyzvánění"
 
 msgid "play ringtone _"
-msgstr ""
+msgstr "přehraj vyzvánění _"
 
 msgid "current song name"
-msgstr ""
+msgstr "název aktuální písně"
 
 ####
 # Pluck
 # Generate music with plucked-string resembling sounds
-
 msgid "Pluck"
-msgstr ""
+msgstr "Drknání na struny"
 
 msgid "pluck note _ octave _ for _ ms"
-msgstr ""
+msgstr "zadrnkej notu _ oktáva _ po _ ms"
 
 msgid "pluck MIDI key _ for _ msecs"
-msgstr ""
+msgstr "zadrnkej MIDI klávesu _ oktáva _ po _ ms"
 
 msgid "set pluck pin _"
-msgstr ""
+msgstr "nastav pin pro drknání"
 
 ####
 # WAV
 # Play WAV sound files
-
 msgid "play WAV file _"
-msgstr ""
+msgstr "přehrej WAV soubor _"
 
 msgid "filename"
-msgstr ""
+msgstr "soubor"
 
 ####
 # Rhythm
 # Send broadcasts -and call functions- according to a tempo and time signature.
 # Useful to create musical patterns
-
 msgid "Rhythm"
-msgstr ""
+msgstr "Rytmus"
 
 msgid "set tempo to _ bpm at _ / _ signature"
-msgstr ""
+msgstr "nastav tempo na _ bpm pro _ / _ tónt"
 
 msgid "set pattern to _ bars"
 msgstr ""
 
 msgid "current beat"
-msgstr ""
+msgstr "aktuální doba"
 
 msgid "current bar"
-msgstr ""
+msgstr "aktuální takt"
 
 msgid "wait until next _ duration"
 msgstr ""
@@ -1605,9 +1570,7 @@ msgstr ""
 ####
 # MIDI
 # Control MIDI devices from MicroBlocks
-
 # General MIDI drum instrument names
-
 msgid "Acoustic Bass Drum"
 msgstr ""
 
@@ -1750,7 +1713,6 @@ msgid "Open Triangle"
 msgstr ""
 
 # General MIDI instrument categories
-
 msgid "piano"
 msgstr ""
 
@@ -1800,7 +1762,6 @@ msgid "gm;SFX"
 msgstr ""
 
 # General MIDI drum sets
-
 msgid "standard"
 msgstr ""
 
@@ -1832,7 +1793,6 @@ msgid "CM-64/CM-32L"
 msgstr ""
 
 # General MIDI control changes
-
 msgid "bank select 1"
 msgstr ""
 
@@ -1900,7 +1860,6 @@ msgid "effect 2"
 msgstr ""
 
 # library blocks
-
 msgid "play MIDI note _ for _ ms on channel _ volume _"
 msgstr ""
 
@@ -1958,12 +1917,10 @@ msgstr ""
 ####
 # Scales & Chords
 # Abstractions for musical theory
-
 msgid "Scales & Chords"
 msgstr ""
 
 # scale names
-
 msgid "ionian"
 msgstr ""
 
@@ -1985,14 +1942,7 @@ msgstr ""
 msgid "locrian"
 msgstr ""
 
-msgid "major"
-msgstr ""
-
-msgid "minor"
-msgstr ""
-
 # chord types
-
 msgid "major"
 msgstr ""
 
@@ -2012,7 +1962,6 @@ msgid "Maj7"
 msgstr ""
 
 # sound destinations for arpeggiate block
-
 msgid "MIDI channel"
 msgstr ""
 
@@ -2020,7 +1969,6 @@ msgid "tone pin"
 msgstr ""
 
 # library blocks
-
 msgid "_ scale root _"
 msgstr ""
 
@@ -2060,7 +2008,6 @@ msgstr ""
 ####
 # Chiptune
 # Old-school sound generation on digital pins and DACs
-
 msgid "kick for _ ms on pin _"
 msgstr ""
 
@@ -2085,7 +2032,6 @@ msgstr ""
 ####
 # Square Wave Chords
 # Play chords on 3 digital pins
-
 msgid "Square Wave Chords"
 msgstr ""
 
@@ -2097,7 +2043,6 @@ msgstr ""
 
 ####
 # Turtle geometry library
-
 msgid "Turtle"
 msgstr "Želva"
 
@@ -2117,7 +2062,7 @@ msgid "pen down"
 msgstr "pero dolů"
 
 msgid "pen up"
-msgstr "zveni pero"
+msgstr "zvedni pero"
 
 msgid "set pen color to _"
 msgstr "nastav barvu pera na _"
@@ -2126,7 +2071,7 @@ msgid "set pen to random color"
 msgstr "nastav náhodnou barvu pera"
 
 msgid "fill display with _"
-msgstr "fülle Display mit _"
+msgstr "vyplň obrazovku _"
 
 msgid "go to x _ y _"
 msgstr "jdi na x _ y _"
@@ -2136,7 +2081,6 @@ msgstr "směr _"
 
 ####
 # File system library
-
 msgid "Files"
 msgstr "Soubory"
 
@@ -2147,13 +2091,13 @@ msgid "close file _"
 msgstr "zavři soubor _"
 
 msgid "delete file _"
-msgstr "smaž soubor "
+msgstr "smaž soubor"
 
 msgid "append line _ to file _"
 msgstr "přidej řádek _ do souboru _"
 
 msgid "append bytes _ to file _"
-msgstr "přidej bajty _ do souboru _ "
+msgstr "přidej bajty _ do souboru _"
 
 msgid "end of file _"
 msgstr "konec souboru _"
@@ -2168,10 +2112,10 @@ msgid "read into _ from file _"
 msgstr "načti do _ ze souboru"
 
 msgid "a ByteArray"
-msgstr ""
+msgstr "pole bajtů"
 
 msgid "starting at _"
-msgstr "začínající od _"
+msgstr "začínající na _"
 
 msgid "file names"
 msgstr "jménAa souborů"
@@ -2188,7 +2132,6 @@ msgstr "informace os systému souborů"
 ####
 # Strings
 # string (text) processing functions
-
 msgid "Strings"
 msgstr "Řetězce"
 
@@ -2199,7 +2142,7 @@ msgid "_ is lowercase"
 msgstr "_ je malé písmeno"
 
 msgid "_ is uppercase"
-msgstr "- je velké písmeno"
+msgstr "_ je velké písmeno"
 
 msgid "_ begins with _"
 msgstr "_ začíná textem _"
@@ -2250,7 +2193,7 @@ msgid "string from unicodes _"
 msgstr "řetězec z Unicode _"
 
 msgid "aList"
-msgstr "aList"
+msgstr "sezname"
 
 msgid "num2str _"
 msgstr "číslo->text _"
@@ -2260,7 +2203,6 @@ msgstr "text->číslo _"
 
 ####
 # WiFi library
-
 msgid "WiFi"
 msgstr "WiFi"
 
@@ -2277,7 +2219,7 @@ msgid "wifi create hotspot _ password _"
 msgstr "WiFi vytvoř hotspot _ heslo _"
 
 msgid "Network_Password"
-msgstr ""
+msgstr "Síťové heslo"
 
 msgid "IP address"
 msgstr "IP addresa"
@@ -2288,7 +2230,6 @@ msgstr "MAC adresa"
 ####
 # Motion library
 # Counts steps and detects motion via the internal accelerometer
-
 msgid "Motion"
 msgstr "Pohyb"
 
@@ -2309,7 +2250,6 @@ msgstr "nastav práh kroku _ (0-50)"
 
 ####
 # Button Events library
-
 msgid "Button Events"
 msgstr "Události tlačítek"
 
@@ -2324,7 +2264,6 @@ msgstr "stisknuto tlačítko _ "
 
 ####
 # Calliope board library
-
 msgid "Calliope set LED red _ green _ blue _"
 msgstr "Calliope setze LED rot _ grün _ blau _"
 
@@ -2336,7 +2275,6 @@ msgstr "Calliope Lautstärke"
 
 ####
 # Circuit Playground Express board library
-
 msgid "Circuit Playground set speaker _"
 msgstr "Circuit Playground setze Lautsprecher _"
 
@@ -2345,7 +2283,6 @@ msgstr "Circuit Playground Schiebeschalter"
 
 ####
 # DotStar LED library
-
 msgid "attach _ DotStar LEDs to data pin _ clock pin _"
 msgstr "schließe _ DotStar LEDs an Daten-Pin _ Uhr-Pin _ an"
 
@@ -2360,96 +2297,90 @@ msgstr "setze DotStar Helligkeit _"
 
 ####
 # BME280 environmental sensor
-
 msgid "bme280 connected"
-msgstr "bme280 verbunden"
+msgstr "bme280 připojen"
 
 msgid "bmp280 connected"
-msgstr "bmp280 verbunden"
+msgstr "bmp280 připojen"
 
 msgid "bmx280 temperature"
-msgstr "bmx280 Temperatur"
+msgstr "bmx280 teplota"
 
 msgid "bmx280 pressure"
-msgstr "bmx280 Luftdruck"
+msgstr "bmx280 tlak"
 
 msgid "bme280 humidity"
-msgstr "bme280 Luftfeuchtigkeit"
+msgstr "bme280 vlhkost"
 
 msgid "bmx280 set base altitude _ meters"
-msgstr ""
+msgstr "bmx280 nastav nadmořskou výšku"
 
 msgid "bmx280 altitude (cm)"
-msgstr ""
+msgstr "bmx280 nadmořská výška (cm)"
 
 msgid "bmx280 altitude (feet)"
-msgstr ""
+msgstr "bmx280 nadmořská výška (stopy)"
 
 ####
 # TCS34725 color sensor
-
 msgid "TCS34725 connected"
-msgstr "TCS34725 verbunden"
+msgstr "TCS34725 připojen"
 
 msgid "TCS34725 rgb"
 msgstr "TCS34725 RGB"
 
 msgid "color _ name"
-msgstr "Farbe _ Name"
+msgstr "barva _ jménu"
 
 ####
 # DHT11 environmental sensor
-
 msgid "temperature (Celsius) DHT11 pin _"
-msgstr "Temperatur (Celsius) DHT11 Pin _"
+msgstr "teplota (Celsius) DHT11 Pin _"
 
 msgid "humidity DHT11 pin _"
-msgstr "Luftfeuchtigkeit DHT11 Pin _"
+msgstr "vlhkost DHT11 Pin _"
 
 msgid "temperature (Celsius) DHT22 pin _"
-msgstr "Temperatur (Celsius) DHT22 Pin _"
+msgstr "teplota (Celsius) DHT22 Pin _"
 
 msgid "humidity DHT22 pin _"
-msgstr "Luftfeuchtigkeit DHT22 Pin _"
+msgstr "vlhkost DHT22 Pin _"
 
 ####
 # PN532 RFID reader
-
 msgid "read PN532 RFID"
-msgstr "lies PN532 RFID"
+msgstr "čti PN532 RFID"
 
 msgid "RFID _ = _"
 msgstr "RFID _ = _"
 
 msgid "get PN532 firmware version"
-msgstr "PN532 firmware version"
+msgstr "PN532 verze firmware"
 
 ####
 # Touch Screen
-
 msgid "Touch Screen"
-msgstr ""
+msgstr "Dotyková obrazovka"
 
 msgid "TFT touched"
-msgstr ""
+msgstr "TFT dotek"
 
 msgid "TFT touch X position"
-msgstr ""
+msgstr "TFT dotek X souřadnice"
 
 msgid "TFT touch Y position"
-msgstr ""
+msgstr "TFT dotek Y souřadnice"
 
 msgid "TFT touch pressure"
-msgstr ""
+msgstr "TFT tlak doteku"
 
 ####
 # HTTP Client
-
 msgid "HTTP client"
 msgstr "HTTP Client"
 
 msgid "_ data _ to http #SVG#colon-double-slash _"
-msgstr ""
+msgstr "_ data _ URL http #SVG#colon-double-slash _"
 
 msgid "MicroBlocks is fun"
 msgstr ""
@@ -2459,7 +2390,6 @@ msgstr ""
 
 ####
 # HTTP Server
-
 msgid "HTTP server"
 msgstr "HTTP Server"
 
@@ -2473,10 +2403,10 @@ msgid "respond _ to HTTP request"
 msgstr "odpověď _ na HTTP požadavek"
 
 msgid "with body _"
-msgstr "mit Body _"
+msgstr "s tělem _"
 
 msgid "Welcome to the MicroBlocks HTTP server"
-msgstr ""
+msgstr "Vítejte na HTTP serveru MicroBlocks"
 
 msgid "and headers _"
 msgstr "a záhlaví _"
@@ -2498,7 +2428,6 @@ msgstr "délka obsahu požadavku _"
 
 ####
 # WebSocket server
-
 msgid "WebSocket server"
 msgstr ""
 
@@ -2525,7 +2454,6 @@ msgstr ""
 
 ####
 # Web Things library
-
 msgid "Web Thing"
 msgstr "Web Thing"
 
@@ -2573,7 +2501,6 @@ msgstr "události JSON"
 
 ####
 # Citilab Fantàstic Robot
-
 msgid "turn fantàstic _ degrees"
 msgstr ""
 
@@ -2582,7 +2509,6 @@ msgstr ""
 
 ####
 # MiKe Robot library
-
 msgid "MiKe front obstacle (cm)"
 msgstr ""
 
@@ -2642,7 +2568,6 @@ msgstr ""
 
 ####
 # Shield:bit
-
 msgid "s꞉b LEDs off"
 msgstr ""
 
@@ -2690,7 +2615,6 @@ msgstr ""
 
 ####
 # micro:STEAMakers
-
 msgid "m꞉s display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
 msgstr ""
 
@@ -2766,7 +2690,6 @@ msgstr ""
 ####
 # DrawBot Library
 # A CoreXY plotter library that supports turtle geometry
-
 msgid "plotter move X _ Y _"
 msgstr ""
 
@@ -2796,7 +2719,6 @@ msgstr ""
 
 ####
 # Innova Didactic libraries
-
 msgid "red"
 msgstr ""
 
@@ -2934,7 +2856,6 @@ msgstr ""
 
 ####
 # ESP32 Smart Farm
-
 msgid "voltage (V)"
 msgstr ""
 
@@ -3009,7 +2930,6 @@ msgstr ""
 
 ####
 # ESP32 Smart Home
-
 msgid "Home fan _"
 msgstr ""
 
@@ -3060,7 +2980,6 @@ msgstr ""
 
 ####
 # MQTT
-
 msgid "MQTT connect to broker _"
 msgstr ""
 
@@ -3089,7 +3008,7 @@ msgid "MQTT pub topic _ payload _"
 msgstr ""
 
 msgid "Hello!"
-msgstr ""
+msgstr "AHOJ!"
 
 msgid "retain _ QoS _"
 msgstr ""
@@ -3120,7 +3039,6 @@ msgstr ""
 
 ####
 # UDP
-
 msgid "UDP start port _"
 msgstr ""
 
@@ -3144,7 +3062,6 @@ msgstr ""
 
 ####
 # WiFi Radio
-
 msgid "wifi send number _"
 msgstr ""
 
@@ -3168,7 +3085,6 @@ msgstr ""
 
 ####
 # Cutebot
-
 msgid "Cutebot"
 msgstr ""
 
@@ -3199,28 +3115,10 @@ msgstr ""
 msgid "Cutebot distance (cm)"
 msgstr ""
 
-msgid "cutebotlight;left"
-msgstr ""
-
-msgid "cutebotlight;right"
-msgstr ""
-
-msgid "cutebotlight;both"
-msgstr ""
-
 msgid "cutebotside;left"
 msgstr ""
 
 msgid "cutebotside;right"
-msgstr ""
-
-####
-# Cutebot Pro
-
-msgid "cutebotwheel;left"
-msgstr ""
-
-msgid "cutebotwheel;right"
 msgstr ""
 
 msgid "cutebotwheel;both"
@@ -3338,7 +3236,6 @@ msgid "CBPro version"
 msgstr ""
 
 # Wukong
-
 msgid "Wukong"
 msgstr ""
 
@@ -3365,7 +3262,6 @@ msgstr ""
 
 ####
 # Sphero-RVR
-
 msgid "wake"
 msgstr ""
 
@@ -3392,7 +3288,6 @@ msgstr ""
 
 ####
 # Joystick:bit
-
 msgid "button _ is pressed"
 msgstr ""
 
@@ -3404,7 +3299,6 @@ msgstr ""
 
 ####
 # NeZha
-
 msgid "NeZha"
 msgstr ""
 
@@ -3425,7 +3319,6 @@ msgstr ""
 
 ####
 # WuKong2040
-
 msgid "WuKong2040"
 msgstr ""
 
@@ -3452,7 +3345,6 @@ msgstr ""
 
 ####
 # Octopus
-
 msgid "Octopus"
 msgstr ""
 
@@ -3515,7 +3407,6 @@ msgstr ""
 
 ####
 # OctoStudio
-
 msgid "Octo beam to phones _"
 msgstr ""
 
@@ -3540,9 +3431,7 @@ msgstr ""
 ##################
 # MicroBlocks UI #
 ##################
-
 # buttons, error & info messages, dialog boxes, etc
-
 msgid "New"
 msgstr "Nový"
 
@@ -3562,7 +3451,7 @@ msgid "Plug in the board."
 msgstr "Připojte mikropočítač."
 
 msgid "Plug in the board and click the USB icon to connect."
-msgstr "Připoj mikropočítač a klikni na ikonu USB pro pčipjení"
+msgstr "Připoj mikropočítač a klikni na ikonu USB pro pčipjení."
 
 msgid "Reading project from board..."
 msgstr "Načítání projektu z mikropočítače..."
@@ -3587,7 +3476,7 @@ msgid "connect"
 msgstr "připojit"
 
 msgid "connect (BLE)"
-msgstr "připojit (BLE("
+msgstr "připojit (BLE)"
 
 msgid "open Boardie"
 msgstr "spustit Boardie"
@@ -3675,7 +3564,6 @@ msgid "Discard current project?"
 msgstr "Zahodit aktuální projekt?"
 
 # Scripting area right-click context menu
-
 msgid "set block size..."
 msgstr "nastavit velikost bloku..."
 
@@ -3773,13 +3661,13 @@ msgid "disable autoloading board libraries"
 msgstr "deaktivovat automatické načítání knihoven mikropočítače"
 
 msgid "compact code store"
-msgstr ""
+msgstr "minimalizovat uložený kód"
 
 msgid "autoload board libraries"
-msgstr ""
+msgstr "automatické načítání knihoven z mikropočítače"
 
 msgid "PlugShare when project empty"
-msgstr ""
+msgstr "PlugShare, když je projekt prázdný"
 
 msgid "hide implementation blocks"
 msgstr "skrýt implementační bloky"
@@ -4110,7 +3998,6 @@ msgid "Confirm"
 msgstr "Potvrdit"
 
 # Library folders
-
 msgid "LIBRARIES"
 msgstr ""
 
@@ -4121,13 +4008,13 @@ msgid "libfolder;AI"
 msgstr ""
 
 msgid "libfolder;Graphics and Displays"
-msgstr ""
+msgstr "Grafika a displeje"
 
 msgid "libfolder;Kits and Boards"
-msgstr ""
+msgstr "Stavebnice a desky"
 
 msgid "libfolder;Network"
-msgstr ""
+msgstr "Sítě"
 
 msgid "libfolder;Motors"
 msgstr ""
@@ -4136,10 +4023,10 @@ msgid "libfolder;Other"
 msgstr "Jiné"
 
 msgid "libfolder;Robots"
-msgstr ""
+msgstr "Roboti"
 
 msgid "libfolder;Sensing"
-msgstr ""
+msgstr "Senzory"
 
 msgid "libfolder;Sound"
 msgstr "Zvuk"
@@ -4151,21 +4038,20 @@ msgid "libfolder;WorkInProgress"
 msgstr ""
 
 # File picker and library dialogs
-
 msgid "New library name?"
-msgstr ""
+msgstr "Jméno nové knihovny?"
 
 msgid "show all block definitions"
-msgstr ""
+msgstr "zobraz všechny definice bloků"
 
 msgid "hide all block definitions"
-msgstr ""
+msgstr "skryj všechny definice bloků"
 
 msgid "export this library"
-msgstr ""
+msgstr "exportuj tuto knihovnu"
 
 msgid "delete library"
-msgstr ""
+msgstr "smaž knihovnu"
 
 msgid "Examples"
 msgstr "Příklady"
@@ -4174,7 +4060,7 @@ msgid "Desktop"
 msgstr "Plocha"
 
 msgid "Computer"
-msgstr "Počitač"
+msgstr "Počítač"
 
 msgid "Cloud"
 msgstr "Cloud"
@@ -4234,10 +4120,12 @@ msgid "If you are adding a library that's built into MicroBlocks, you can just e
 msgstr "Při přidání knihovny která je vestavěna v MicroBlocks lze zadat pouze její jméno"
 
 msgid "If your library is in the Libraries folder in your local MicroBlocks project folder, you need to prefix it with a slash (/)."
-msgstr "Pokud je tvá knihovna ve složce Libraries v lokální složce projektu Microblocks je třeba před názvem použít lomítko (/) "
+msgstr ""
+"Pokud je tvá knihovna ve složce Libraries v lokální složce projektu "
+"Microblocks je třeba před názvem použít lomítko (/)."
 
 msgid "If the library is hosted online, please input its full URL."
-msgstr "Pokud je knihovna hostována online, je třeba zadat celou URL adresu"
+msgstr "Pokud je knihovna hostována online, je třeba zadat celou URL adresu."
 
 msgid "Tag name?"
 msgstr "Klíčové slovo?"
@@ -4249,7 +4137,7 @@ msgid "Add Library"
 msgstr "Přidat Knihovnu"
 
 msgid "%1 seconds remaining"
-msgstr "%1 chybí sekundy"
+msgstr "%1 zbývající vteřiny"
 
 msgid "Decrease block size"
 msgstr "Zmenšit velikost bloku"
@@ -4263,7 +4151,6 @@ msgstr "Zvětšit velikost bloku"
 ############
 # Tips Bar #
 ############
-
 msgid "Button"
 msgstr "Tlačítko"
 
@@ -4271,19 +4158,19 @@ msgid "Boolean Input"
 msgstr "Zadání logické hodnoty"
 
 msgid "[l] toggle value, or drop a reporter into it."
-msgstr "[l] přepni hodnotu nebo sem hodnotu přetáhni"
+msgstr "[l] přepnutí hodnoty nebo přetažení hodnoty na pozici."
 
 msgid "Color Input"
 msgstr "Zadání barvy"
 
 msgid "[l] change the color, or drop a reporter into it."
-msgstr "[l] změň barvu nebo sem přetáhni hodnotu"
+msgstr "[l] změna barvy nebo přetažení hodnoty na pozici."
 
 msgid "Input"
 msgstr "Vstup"
 
 msgid "[l] edit its value, or drop a reporter into it."
-msgstr "[l] uprav hodnotu nebo sem hodnotu přetáhni"
+msgstr "[l] úprava hodnoty nebo přetažení hodnoty na pozici."
 
 msgid "Block Extension"
 msgstr "Rozšířené bloky"
@@ -4292,299 +4179,305 @@ msgid "[l] right arrow to show optional inputs, left arrow to hide."
 msgstr "[l] šipka doprava pro zobrazení volitelných parametrů, šipka doleva pro skrytí"
 
 msgid "Command Block"
-msgstr "Blok Příkazů"
-
-msgid "[l] to run, or drag to build scripts. [r] menu."
-msgstr ""
+msgstr "Příkazový blok"
 
 msgid "Hat Block"
-msgstr ""
+msgstr "Zahajovací blok"
 
 msgid "[l] to run, or drag to build scripts. [r] menu."
-msgstr ""
+msgstr "[l] spustit, přetáhnout pro tvorbu skriptu. [r] menu."
 
 msgid "Reporter Block"
-msgstr ""
+msgstr "Blok zprávy"
 
 msgid "[l] to see value, or drop into an input slot. [r] menu."
-msgstr ""
+msgstr "[l] zobrazit hodnotu, přetáhnout do místa pro vstup. [r] menu."
 
 msgid "Script"
-msgstr ""
+msgstr "Skript"
 
 msgid "[l] to run. [r] menu."
-msgstr ""
+msgstr "[l] spustit. [r] menu."
 
 msgid "Pane Divider"
-msgstr ""
+msgstr "Oddělovač panelů"
 
 msgid "Drag to change pane width."
-msgstr ""
+msgstr "Táhnout pro změnu šířky panelu."
 
 msgid "Library"
-msgstr ""
+msgstr "Knihovna"
 
 msgid "[l] to show the blocks in this library. [r] menu."
-msgstr ""
+msgstr "[l] zobrazení bloků v této knihovně. [r] menu."
 
 msgid "Block Category"
-msgstr ""
+msgstr "Kategorie bloků"
 
 msgid "[l] to show the blocks in this category."
-msgstr ""
+msgstr "[l] zobrazení bloků této kategorie."
 
 msgid "Palette"
-msgstr ""
+msgstr "Paleta"
 
 msgid "Drag blocks from here to build scripts. Drop scripts here to delete them."
 msgstr ""
+"Z tohoto panelu se vytahují bloky pro vytváření skriptu. Upuštěním v tomto "
+"panelu lze smazat skript/blok."
 
 msgid "Scripts Pane"
-msgstr ""
+msgstr "Panel skriptů"
 
 msgid "Drag blocks here to build scripts. [r] menu."
-msgstr ""
+msgstr "Do tohoto panelu se vkládají bloky pro vytváření skriptu. [r] menu."
 
 #################################
 # Block Descriptions for TipBar #
 #################################
-
 msgid "Turn the user LED on or off."
-msgstr ""
+msgstr "Zhasnutí/rozsvícení uživatelské LED na desce."
 
 msgid "Display a bubble showing the value."
-msgstr ""
+msgstr "Zobrazení bubliny s hodnotou."
 
 msgid "Graph the value."
-msgstr ""
+msgstr "Zápis hodnotu do grafu."
 
 msgid "Report the state of button A ( (-o) or (o-) )."
-msgstr ""
+msgstr "Vrátí stav tlačítka A ( (-o) or (o-) )."
 
 msgid "Report the state of button B ( (-o) or (o-) )."
-msgstr ""
+msgstr "Vrátí stav tlačítka B ( (-o) or (o-) )."
 
 msgid "Report the milliseconds since the timer was last reset."
-msgstr ""
+msgstr "Vrátí počet milisekund od posledního nulování časovače."
 
 msgid "Reset the timer."
-msgstr ""
+msgstr "Vynulování časovače."
 
 msgid "Report the seconds since power up."
-msgstr ""
+msgstr "Vrátí počet vteřin od zapnutí mikropočítače."
 
 msgid "Report the milliseconds since power up."
-msgstr ""
+msgstr "Vrátí počet milisekund od zapnutí mikropočítače."
 
 msgid "Report the microseconds since power up."
-msgstr ""
+msgstr "Vrátí počet mikrosekund od zapnutí mikropočítače."
 
 msgid "Report the board type."
-msgstr ""
+msgstr "Vrátí typ mikropočítače/desky."
 
 msgid "Reports firmware version loaded on the board."
-msgstr ""
+msgstr "Vrátí aktuální verzi firmware mikropočítače."
 
 msgid "Reports the three-letter BLE ID of the board if it supports BLE."
-msgstr ""
+msgstr "Vrátí 3-znakové BLE-ID pokud deska mikropočítače podporuje BLE."
 
 msgid "Reports (-o) if a BLE client is connected."
-msgstr ""
+msgstr "Vrátí (-o) pokud je připojen BLE klient."
 
 msgid "Report the milliseconds since the given start milliseconds. Handles clock wrap."
-msgstr ""
+msgstr "Vrátí počet milisekund od daného počátečního stavu."
 
 msgid "Report the microseconds since the given start microseconds. Handles clock wrap."
-msgstr ""
+msgstr "Vrátí počet mikrosekund od daného počátečního stavu."
 
 msgid "Reports (-o) if the board is connected to IDE."
-msgstr ""
+msgstr "Vrátí (-o) pokud je mikropočítač připojen k IDE."
 
 msgid "Report the electrical logic level on a digital pin ( (-o) or (o-) )."
-msgstr ""
+msgstr "Vrátí logickou hodnotu digitálního vstupu."
 
 msgid "Report a number proportional to the voltage on an analog pin (0 = ground, 1023 = supply voltage)."
 msgstr ""
+"Vrátí hodnotu odpovídající napětí na analogovém vstupu (0=GND, 1023=Ucc)."
 
 msgid "Turn a pin on or off ( (-o) or (o-) )."
-msgstr ""
+msgstr "Nastaví logickou hodnotu na výstupním pinu ( (-o) or (o-) )."
 
 msgid "Pulse width modulate (PWM) a pin with the given duty cycle (0 - 1023)."
-msgstr ""
+msgstr "Nastavení šířky PWM pulzu na výstupním pinu (0-1023)."
 
 msgid "Report number of analog pins on this device."
-msgstr ""
+msgstr "Vrátí počet analogových pinů mikropočítače/desky."
 
 msgid "Report number of digital pins on this device."
-msgstr ""
+msgstr "Vrátí počet digitálních pinů mikropočítače/desky."
 
 msgid "Report the value of a register (0-255) of an I2C device (0-127)."
-msgstr ""
+msgstr "Vrátí hodnotu registru (0-255) z I2C zařízení (adresa 0-127)."
 
 msgid "Set an I2C device and register to given value (0-255)."
-msgstr ""
+msgstr "Nastaví registr I2C zařízení na zadanou hodnotu (0-255)."
 
 msgid "Receive multiple bytes from an I2C device."
-msgstr ""
+msgstr "Příjem více bajtů z I2C zařízení."
 
 msgid "Send multiple bytes to an I2C device."
-msgstr ""
+msgstr "Odeslání více bajtů do I2C zařízení."
 
 msgid "Send a byte (0-255) to an SPI device."
-msgstr ""
+msgstr "Odeslání bajtu (0-255) do SPI zařízení."
 
 msgid "Read a byte from an SPI device while sending a zero byte. Report the byte received."
-msgstr ""
+msgstr "Vrátí přečtený bajt z SPI zařízení zatímco odešle bajt=0."
 
 msgid "Set the SPI clock speed, mode, channel (Raspberry Pi only), and bit order."
-msgstr ""
+msgstr "Nastaví rychlost hodin SPI, kanál (pouce RPI) a pořadí bitů."
 
 msgid "Send a byte array via SPI, replacing its contents with the bytes received."
-msgstr ""
+msgstr "Odeslání pole bajtů do SPI a nahrazení jejich obsahu přijatými bajty."
 
 msgid "Open the serial port at the given baud rate."
-msgstr ""
+msgstr "Otevření sériového portu s danou přenosovou rychlostí."
 
 msgid "Close the serial port."
-msgstr ""
+msgstr "Zavření sériového portu."
 
 msgid "Report data received from the serial port (a byte array)."
-msgstr ""
+msgstr "Vrátí data přijatá ze sériového portu (pole bajtů)."
 
 msgid "Send a byte array to the serial port."
-msgstr ""
+msgstr "Odeslání pole bajtů po sériovém portu."
 
 msgid "Send a byte array to the serial port, starting at the given byte."
-msgstr ""
+msgstr "Odeslání pole bajtů po sériovém portu počínaje daným bajtem."
 
 msgid "Write a byte to the pin at the specified baud rate."
-msgstr ""
+msgstr "Odeslání jednoho bajtu na výstup specifikovanou rychlostí (baud)."
 
 msgid "Run when the board powers up or when the IDE start button is clicked."
 msgstr ""
+"Úkol spuštěný po zapnutí napájení desky mikropočítače nebo při kliknutí na "
+"tlačítko start v pravém horním rohu."
 
 msgid "Run when buttons A, B, or A+B are pressed."
-msgstr ""
+msgstr "Úkol spuštěný při stisku tlačítka A, B nebo A+B."
 
 msgid "Repeat the enclosed blocks indefinitely."
-msgstr ""
+msgstr "Nekonečné opakování vnořených bloků."
 
 msgid "Repeat the enclosed blocks the given number of times."
-msgstr ""
+msgstr "Opakování vnořených bloků tolikrát kolikrát je uvedeno."
 
 msgid "Wait the given number of milliseconds."
-msgstr ""
+msgstr "Čekání po zadaný čas (v milisekundách)."
 
 msgid "Run the first set of blocks whose test condition is (-o) ."
-msgstr ""
+msgstr "Provede první skupinu bloků když je splněna podmínka (-o) ."
 
 msgid "Run when the condition becomes (-o) ."
-msgstr ""
+msgstr "Úkol běží při splnění podmínky (-o) ."
 
 msgid "Wait until the condition becomes (-o) ."
-msgstr ""
+msgstr "Čekání na splnění podmínky (-o) ."
 
 msgid "Return (report) the given value from a function or script."
-msgstr ""
+msgstr "Vrátí výstupní hodnotu z funkce nebo skriptu."
 
 msgid "Run when the given message is received as a broadcast."
-msgstr ""
+msgstr "Spuštění úkolu když je přijata zadaná zpráva."
 
 msgid "Broadcast the given message."
-msgstr ""
+msgstr "Rozeslání zadané zprávy."
 
 msgid "Do nothing. Used to add notes and documentation."
-msgstr ""
+msgstr "Prázdný příkaz. Nedělá nic, používá se pro poznámky a dokumentaci."
 
 msgid "Report a list containing the given range of numbers (with optional increment). Useful in \"for\" loops."
 msgstr ""
+"Vrátí seznam obsahující zadaný rozsah čísel. Užitečné pro počítané cykly. ("
+"\"for\")."
 
 msgid "Repeat the enclosed blocks with the variable set to the current iteration number or item."
 msgstr ""
+"Opakování vnořených bloků s s proměnnou nastavenou číslo aktuálního cyklu "
+"nebo položky seznamu."
 
 msgid "Repeat the enclosed blocks until the condition becomes (-o) ."
-msgstr ""
+msgstr "Opakování vnořených bloků tolikrát dokud není splněna podmínka."
 
 msgid "Stop this task."
-msgstr ""
+msgstr "Zastaví tento úkol."
 
 msgid "Stop all tasks except this one."
-msgstr ""
+msgstr "Zastaví všechny úkoly kromě aktuálního."
 
 msgid "Wait the given number of microseconds."
-msgstr ""
+msgstr "Čekání po zadaný čas (v mikrosekundách)."
 
 msgid "Report the last broadcast message received."
-msgstr ""
+msgstr "Vrátí poslední přijato zprávu systému."
 
 msgid "Report the given argument or defaultValue if the argument was not supplied by the caller."
 msgstr ""
 
 msgid "Call the function with the given name and optional parameter list."
-msgstr ""
+msgstr "Zavolá funkci daného jména s případnými parametry."
 
 msgid "Call the function with the given name and optional parameter list and report its return value."
 msgstr ""
+"Zavolá funkci daného jména s případnými parametry a vrátí návratovou hodnotu."
 
 msgid "Report the sum of the given numbers."
-msgstr ""
+msgstr "Vrátí součet zadaných čísel."
 
 msgid "Report the first number minus the second."
-msgstr ""
+msgstr "Vrátí rozdíl čísel."
 
 msgid "Report the product of the given numbers."
-msgstr ""
+msgstr "Vrátí součin čísel."
 
 msgid "Report the first number divided by the second."
-msgstr ""
+msgstr "Vrátí podíl čísel (celočíselný)."
 
 msgid "Report the remainder of dividing the first number by the second."
-msgstr ""
+msgstr "Vrátí zbytek po celočíselném dělení."
 
 msgid "Report the absolute value of the given number (always >= 0)."
-msgstr ""
+msgstr "Vátí absolutní hodnotu čísla (vždy >=0 )."
 
 msgid "Report the minimum of the values."
-msgstr ""
+msgstr "Vrátí nejmenší hodnotu."
 
 msgid "Report the maximum of the values."
-msgstr ""
+msgstr "Vrátí největší hodnotu."
 
 msgid "Report a randomly chosen number in the given range."
-msgstr ""
+msgstr "Vrátí náhodné číslo z rozsahu."
 
 msgid "Report (-o) if the first value is less than the second one."
-msgstr ""
+msgstr "Vrátí (-o) když je první hodnota menší než druhá."
 
 msgid "Report (-o) if the first value is less than or equal to the second one."
-msgstr ""
+msgstr "Vrátí (-o) když je první hodnota menší nebo stejná jako druhá."
 
 msgid "Report (-o) if the two values are equal."
-msgstr ""
+msgstr "Vrátí (-o) když jsou obě hodnoty stejné."
 
 msgid "Report (-o) if the two values are not equal."
-msgstr ""
+msgstr "Vrátí (-o) když jsou hodnoty odlišné."
 
 msgid "Report (-o) if the first value is greater than or equal to the second one."
-msgstr ""
+msgstr "Vrátí (-o) když je první hodnota větší nebo stejná jako druhá."
 
 msgid "Report (-o) if the first value is greater than the second one."
-msgstr ""
+msgstr "Vrátí (-o) když je první hodnota větší než druhá."
 
 msgid "Boolean constant ( (-o) or (o-) )."
-msgstr ""
+msgstr "Logická hodnota ( (-o) or (o-) )."
 
 msgid "Report the logical inverse of a Boolean ( (-o) or (o-) ) value."
-msgstr ""
+msgstr "Vrátí opak logické hodnoty ( (-o) or (o-) )."
 
 msgid "Report (-o) if both values are (-o)"
-msgstr ""
+msgstr "Vrátí (-o) pokud jsou obě hodnoty (-o)"
 
 msgid "Report (-o) if either value is (-o)"
-msgstr ""
+msgstr "Vrátí (-o) pokud je nějaká z hodnot (-o)"
 
 msgid "Report (-o) if first input is a value of the given data type."
-msgstr ""
+msgstr "Vrátí (-o) první údaj je daného typu."
 
 msgid "Convert a value to the given data type."
 msgstr ""
@@ -4597,83 +4490,100 @@ msgstr ""
 
 msgid "Report the numerical value of a hexadecimal string (range: -0x1FFFFFFF to 0x1FFFFFFF)"
 msgstr ""
+"Vrátí numerickou hodnotu jako hexadecimální řetězec (rozsah: -0x1FFFFFFF to "
+"0x1FFFFFFF)"
 
 msgid "Report bitwise AND of two numbers."
-msgstr ""
+msgstr "Vrátí bitové AND dvou čísel."
 
 msgid "Report bitwise OR of two numbers."
-msgstr ""
+msgstr "Vrátí bitové OR dvou čísel."
 
 msgid "Report bitwise XOR (exclusive OR) of two numbers."
-msgstr ""
+msgstr "Vrátí bitové XOR dvou čísel."
 
 msgid "Report bitwise inverse of the given number."
-msgstr ""
+msgstr "Vrátí bitovou inverzi čísla."
 
 msgid "Report the given number shifted left by the given number of bits."
-msgstr ""
+msgstr "Vrátí hodnotu čísla posunutou doleva o zadaný počet bitů."
 
 msgid "Report the given number shifted right by the given number of bits (arithmetic shift; sign is maintained)."
 msgstr ""
+"Vrátí hodnotu čísla posunutou doprava o zadaný počet bitů (aritmetický "
+"posun, znaménko zůstává zachováno)."
 
 msgid "Set a variable to the given value."
-msgstr ""
+msgstr "Nastaví proměnnou na danou hodnotu."
 
 msgid "Change a variable by the given amount."
-msgstr ""
+msgstr "Změní proměnnou o danou hodnotu."
 
 msgid "Create a variable local to the containing script with the given initial value."
 msgstr ""
+"Vytvoří lokální proměnnou aktuálního skriptu s danou počíteční hodnotou."
 
 msgid "Report the Nth item of a list, string, or byte array."
-msgstr ""
+msgstr "Vrátí n-tou položku seznamu, řetězce nebo pole bajtů."
 
 msgid "Report the number of items in a list, string, or byte array."
-msgstr ""
+msgstr "Vrátí počet položek (délku) seznamu, řetězce nebo pole bajtů."
 
 msgid "Join (concatenate) the given lists, strings, or byte arrays and report the result."
-msgstr ""
+msgstr "Spojí zadané seznamy, řetězce nebo pole bajtů a vrátí výsledek."
 
 msgid "Create and report a short list containing the given items. Length limited by available stack space."
 msgstr ""
+"Vytvoří a vrátí seznam obsahující dané položky. Délka je limitována "
+"dostupnou velikostí zásobníku."
 
 msgid "Add an item to the end of a list."
-msgstr ""
+msgstr "Přidá položku na konec seznamu."
 
 msgid "Replace the Nth item (or all items) of a list or byte array with the given value."
 msgstr ""
+"Nahradí N-tou položku seznamu/pole bajtů (případně všechny) danou hodnotou."
 
 msgid "Delete the Nth item (or all items) of a list."
-msgstr ""
+msgstr "Smaže N-tou položku seznamu (případně všechny)."
 
 msgid "Find and report the index of an item in a list or a substring within a string. Report -1 if not found."
 msgstr ""
+"Vyhledá a vrátí index položky v seznamu nebo podřetězce v textu. Pokud není "
+"položka nalezena vrátí -1."
 
 msgid "Report a copy from the given index through the end (or optional stop index) of the given list, string, or byte array."
 msgstr ""
+"Pro zadaný seznam/text/pole bajtů Vrátí kopii od daného indexu do konce ("
+"případně do zadaného koncového indexu."
 
 msgid "Split the given string with the given delimiter and report the result (a list of strings)."
 msgstr ""
+"Rozdělí text do seznamu řetězců podle zadaného oddělovače a vrátí tento "
+"seznam."
 
 msgid "Combine the items of a list into a string, optionally separated by a delimiter (e.g. comma)."
 msgstr ""
+"Spojí položky seznamu do řetězce, s použitím volitelného oddělovače položek."
 
 msgid "Report the Unicode value (\"code point\") of the Nth character of the given string."
-msgstr ""
+msgstr "Vrací Unicode N-tého znaku řetězce."
 
 msgid "Report a string containing the given Unicode value (\"code point\") or list of values."
-msgstr ""
+msgstr "Vrací řetězec obsahující zadanou hodnotu Unicode nebo seznamu hodnot."
 
 msgid "Report a new list of the given length filled with zero or the optional value."
 msgstr ""
+"Vrací nový seznam dané délky vyplněný nulami případně zadanou volitelnou "
+"hodnotou."
 
 msgid "Report a new byte array of the given length filled with zero or the optional value."
 msgstr ""
+"Vrací nové pole bajtů dané délky vyplněné nulami případně zadanou volitelnou "
+"hodnotou."
 
 msgid "Report a byte array containing the UTF-8 bytes of the given string."
-msgstr ""
+msgstr "Vrací pole bajtů obsahující UTF-8 hodnoty znaků zadaného řetězce."
 
 msgid "Report the number of words of memory available. Stop button frees up memory."
-msgstr ""
-
-
+msgstr "Vrací velikost dostupné paměti (words). Stop uvolňuje paměť."
