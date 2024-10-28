@@ -1,6 +1,6 @@
-module 'OLED Graphics' Output
+module 'OLED Graphics' 'cat;Output'
 author 'Turgut Guneysu'
-version 1 14 
+version 1 15 
 choices DispTypeMenu 'OLED_0.96in' 'OLED_2.42in' 
 choices OnOffMenu On Off 
 choices VideoMenu Inverse Normal 
@@ -22,6 +22,7 @@ Changes:
 - image draw bug fix
 - stack overflow fix
 - improve conversion ops, i2c io, rect fill, img processing, and buffer displays
+- reduce i2c buffer to 128 bytes
 '
 variables OLEDReady OLEDi2cAddr _GDBuffer _begCol _begRow _cDecTBL _comma _cTABLE _comMode _dcPin _delayGDUpd _displayType _endCol _endRow _eol _resetPin _textX _textY _dataPrefix _byteCount _imgData _imgWidth _imgHeight 
 
@@ -93,7 +94,7 @@ flip setting controls display hardware write direction:
   }
   '_initDisplayHW'
   if flip {
-    _OLEDflip true
+    '_OLEDflip' true
   }
   '_initLibrary'
   OLEDclear
@@ -131,7 +132,7 @@ flip setting controls display hardware write direction:
   '[sensors:spiSetup]' 10000000
   '_initDisplayHW'
   if flip {
-    _OLEDflip true
+    '_OLEDflip' true
   }
   '_initLibrary'
   OLEDclear
@@ -349,16 +350,6 @@ to OLEDfillRect x y w h erase {
   }
 }
 
-to _OLEDflip flip {
-  comment 'Flips the display initialization horizontally or vertically.
-Horizontal or vertical is based on the pin connector location.'
-  if flip {
-    '_sendCmd' 'A0,C0'
-  } else {
-    '_sendCmd' 'A1,C8'
-  }
-}
-
 to OLEDmakeImage spr# {
   comment 'Receives a spr# representing 5x5 image matrix.
 Converts it to a HOR array of 5 VERT bitmap numbers.
@@ -433,7 +424,7 @@ Any image on the display will be preserved when mode changes.'
 to OLEDshowGDBuffer {
   comment 'Copies contents of virtual _GDBuffer to display
 i2c:
-   in 61 byte chunks for speed.
+   in 126 byte chunks for speed.
    1 byte is used for the command 40
 spi:
    fastest is dump buffer
@@ -441,11 +432,11 @@ spi:
   '_initCheck'
   if (_comMode == 'i2c') {
     local 'idx' 0
-    repeat 4 {
-      '[sensors:i2cWrite]' OLEDi2cAddr ('[data:join]' _dataPrefix ('[data:copyFromTo]' _GDBuffer idx (idx + 254)))
-      idx += 255
+    repeat 8 {
+      '[sensors:i2cWrite]' OLEDi2cAddr ('[data:join]' _dataPrefix ('[data:copyFromTo]' _GDBuffer idx (idx + 126)))
+      idx += 127
     }
-    '[sensors:i2cWrite]' OLEDi2cAddr ('[data:join]' _dataPrefix ('[data:copyFromTo]' _GDBuffer idx (idx + 8)))
+    '[sensors:i2cWrite]' OLEDi2cAddr ('[data:join]' _dataPrefix ('[data:copyFromTo]' _GDBuffer idx (idx + 16)))
   } else {
     '_SPIWriteData'
     '[sensors:spiExchange]' ('[data:copyFromTo]' _GDBuffer 1)
@@ -533,6 +524,16 @@ and also by OLEDColMode block.'
   _endCol = 127
   _begRow = 0
   _endRow = 7
+}
+
+to '_OLEDflip' flip {
+  comment 'Flips the display initialization horizontally or vertically.
+Horizontal or vertical is based on the pin connector location.'
+  if flip {
+    '_sendCmd' 'A0,C0'
+  } else {
+    '_sendCmd' 'A1,C8'
+  }
 }
 
 to '_OLEDreset' pin {
@@ -632,10 +633,10 @@ to '_clearDisplay' {
   '_initCheck'
   '_OLEDcursorReset'
   if ('i2c' == _comMode) {
-    repeat 4 {
-      '[sensors:i2cWrite]' OLEDi2cAddr ('[data:join]' _dataPrefix ('[data:newByteArray]' 254 0))
+    repeat 8 {
+      '[sensors:i2cWrite]' OLEDi2cAddr ('[data:join]' _dataPrefix ('[data:newByteArray]' 126))
     }
-    '[sensors:i2cWrite]' OLEDi2cAddr ('[data:join]' _dataPrefix ('[data:newByteArray]' 8 0))
+    '[sensors:i2cWrite]' OLEDi2cAddr ('[data:join]' _dataPrefix ('[data:newByteArray]' 16))
   } else {
     '_SPIWriteData'
     '[sensors:spiExchange]' ('[data:newByteArray]' 1024)
