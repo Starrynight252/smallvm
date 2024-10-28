@@ -1,57 +1,95 @@
-module 'shield:bit' Output
+module ShieldBit 'cat;cat;Output'
 author 'Joan Guillén'
-version 1 2
-tags keyestudio micro:bit
-description 'Provides custom blocks for the shield:bit. It supports 4 DC motors, 2 stepper motors, 1 Buzzer/Audio_out, 1 potentiometer and 4 neopixel LEDs'
-variables _sb_pca9685_st_steps
-choices sb_motorDirections clockwise 'counter-clockwise'
-choices sb_motorTypes 'sb;all_motors' 'sb;servomotors' 'sb;DC/Stepper_motors'
-choices sb_stepperSteps turns degrees
-depends Color NeoPixel Tone
+version 1 2 
+depends Color NeoPixel Tone 
+tags keyestudio 'micro:bit' 
+choices sb_motorTypes 'sb;all_motors' 'sb;servomotors' 'sb;DC/Stepper_motors' 
+choices sb_stepperSteps turns degrees 
+choices sb_motorDirections clockwise 'counter-clockwise' 
+description 'Provides custom blocks for the shield:bit, which supports 4 DC motors, 2 stepper motors, speaker, headphone jack with volume control, and 4 NeoPixel LEDs.'
+variables _sb_pca9685_st_steps 
 
-	spec ' ' 'sb_LEDs_off' 'sb LEDs off'
-	spec ' ' 'sb_set_LEDs_to_color' 'sb set all LEDs to _' 'color'
-	spec ' ' 'sb_set_LED_to_color' 'sb set LED _ (1-4) to _' 'num color' 1
-	space
-	spec ' ' 'sb_set_audio_output' 'sb send audio to shield _' 'bool' true
-	space
-	spec ' ' 'sb_stop_motors' 'sb stop _' 'menu.sb_motorTypes' 'sb;all_motors'
-	space
-	spec ' ' 'sb_turn_180_servo' 'sb turn 180 servo S- _ (1-8) to angle _' 'num num' 1 90
-	spec ' ' 'sb_turn_360_servo' 'sb turn 360 servo S- _ (1-8) _ at _ %' 'num menu.sb_motorDirections num' 1 'clockwise' 50
-    space
-	spec ' ' 'sb_turn_DC_motor' 'sb turn DC M- _ (1-4) motor _ at _ %' 'num menu.sb_motorDirections num' 1 'clockwise' 50
-	spec ' ' 'sb_turn_stepper_motor' 'sb turn Stepper- _ (1-2) motor _ for _ _' 'num menu.sb_motorDirections num menu.sb_stepperSteps' 1 'clockwise' 1 'turns'
-	space
-	spec ' ' 'sb_set_PWM' 'sb set pin S- _ (1-8) to _ %' 'num num' 1 100
-	space
-    spec ' ' '_sb_neoPixels_init' '_sb_neoPixels_init'
-	space
-    spec ' ' '_sb_pca9685_init' '_sb_pca9685_init'
-	spec ' ' '_sb_pca9685_pwm' '_sb_pca9685_pwm pin _ from _ to _' 'num num num' 1 0 0
+  spec ' ' 'sb_LEDs_off' 'sb LEDs off'
+  spec ' ' 'sb_set_LEDs_to_color' 'sb set all LEDs to _' 'color'
+  spec ' ' 'sb_set_LED_to_color' 'sb set LED _ (1-4) to _' 'num color' 1
+  space
+  spec ' ' 'sb_set_audio_output' 'sb send audio to shield _' 'bool' true
+  space
+  spec ' ' 'sb_stop_motors' 'sb stop _' 'menu.sb_motorTypes' 'sb;all_motors'
+  space
+  spec ' ' 'sb_turn_180_servo' 'sb turn 180 servo S- _ (1-8) to angle _' 'num num' 1 90
+  spec ' ' 'sb_turn_360_servo' 'sb turn 360 servo S- _ (1-8) _ at _ %' 'num menu.sb_motorDirections num' 1 'clockwise' 50
+  space
+  spec ' ' 'sb_turn_DC_motor' 'sb turn DC M- _ (1-4) motor _ at _ %' 'num menu.sb_motorDirections num' 1 'clockwise' 50
+  spec ' ' 'sb_turn_stepper_motor' 'sb turn Stepper- _ (1-2) motor _ for _ _' 'num menu.sb_motorDirections num menu.sb_stepperSteps' 1 'clockwise' 1 'turns'
+  space
+  spec ' ' 'sb_set_PWM' 'sb set pin S- _ (1-8) to _ %' 'num num' 1 100
+  space
+  spec ' ' '_sb_neoPixels_init' '_sb_neoPixels_init'
+  space
+  spec ' ' '_sb_pca9685_init' '_sb_pca9685_init'
+  spec ' ' '_sb_pca9685_pwm' '_sb_pca9685_pwm pin _ from _ to _' 'num num num' 1 0 0
 
-//////
-//4 neopixel LEDs at pin 16
-//////
+to '_sb_neoPixels_init' {
+  comment 'Return if already initialized.'
+  if (_np_pixels != 0) {
+    return
+  }
+  if ((boardType) == 'ESP32') {
+    neoPixelAttach 4 5
+  } else {
+    neoPixelAttach 4 5
+  }
+}
+
+to '_sb_pca9685_init' {
+  comment 'Return if already initialized.'
+  if (_sb_pca9685_st_steps != 0) {
+    return
+  }
+  _sb_pca9685_st_steps = 512
+  i2cSet (hexToInt '40') 0 128
+  waitMillis 100
+  i2cSet (hexToInt '40') 0 16
+  local '_sb_pca9685_prescale' 129
+  i2cSet (hexToInt '40') (hexToInt 'FE') _sb_pca9685_prescale
+  i2cSet (hexToInt '40') 0 0
+  waitMillis 100
+  i2cSet (hexToInt '40') 0 160
+  for i 16 {
+    '_sb_pca9685_pwm' (i - 1) 0 0
+  }
+}
+
+to '_sb_pca9685_pwm' pin in out {
+  '[sensors:i2cWrite]' 64 ('[data:makeList]' (6 + (4 * pin)) (in & 255) ((in >> 8) & 255) (out & 255) ((out >> 8) & 255))
+}
 
 to sb_LEDs_off {
-  _sb_neoPixels_init
+  '_sb_neoPixels_init'
   clearNeoPixels
 }
 
-to sb_set_LEDs_to_color color {
-  _sb_neoPixels_init
-  neoPixelSetAllToColor color
-}
-
 to sb_set_LED_to_color i color {
-  _sb_neoPixels_init
+  '_sb_neoPixels_init'
   setNeoPixelColor i color
 }
 
-//////
-//Shield audio connection for micro:bit v2
-//////
+to sb_set_LEDs_to_color color {
+  '_sb_neoPixels_init'
+  neoPixelSetAllToColor color
+}
+
+to sb_set_PWM pin value {
+  '_sb_pca9685_init'
+  if (and (1 <= pin) (pin <= 8)) {
+    if (value < 0) {value = 0}
+    if (100 < value) {value = 100}
+    value = ((value * 4095) / 100)
+    '_sb_pca9685_pwm' (pin + 7) 0 value
+  }
+}
+
 to sb_set_audio_output useShield {
   if useShield {
     if ((boardType) == 'ESP32') {
@@ -69,12 +107,8 @@ to sb_set_audio_output useShield {
   _toneInitalized = (booleanConstant true)
 }
 
-//////
-//PCA9685 for servos, DC and Stepper motors
-//////
-
-to 'sb_stop_motors' type {
-  _sb_pca9685_init
+to sb_stop_motors type {
+  '_sb_pca9685_init'
   if (or (type == 'sb;DC/Steppers') (type == 'sb;all_motors')) {
     for i 8 {
       '_sb_pca9685_pwm' (i - 1) 0 0
@@ -87,12 +121,8 @@ to 'sb_stop_motors' type {
   }
 }
 
-//////
-//Servo motors S1 to S8
-//////
-
-to 'sb_turn_180_servo' s angle {
-  _sb_pca9685_init
+to sb_turn_180_servo s angle {
+  '_sb_pca9685_init'
   if (and (1 <= s) (s <= 8)) {
     if (angle < 0) {angle = 0}
     if (180 < angle) {angle = 180}
@@ -101,8 +131,8 @@ to 'sb_turn_180_servo' s angle {
   }
 }
 
-to 'sb_turn_360_servo' s direction speed {
-  _sb_pca9685_init
+to sb_turn_360_servo s direction speed {
+  '_sb_pca9685_init'
   if (and (1 <= s) (s <= 8)) {
     if (speed < 0) {speed = 0}
     if (100 < speed) {speed = 100}
@@ -115,12 +145,8 @@ to 'sb_turn_360_servo' s direction speed {
   }
 }
 
-//////
-//DC Motors M1 to M4 and Steppers 1 and 2
-//////
-
-to 'sb_turn_DC_motor' m direction speed {
-  _sb_pca9685_init
+to sb_turn_DC_motor m direction speed {
+  '_sb_pca9685_init'
   if (and (1 <= m) (m <= 4)) {
     if (speed < 0) {speed = 0}
     if (100 < speed) {speed = 100}
@@ -136,9 +162,11 @@ to 'sb_turn_DC_motor' m direction speed {
   }
 }
 
-to 'sb_turn_stepper_motor' stp direction steps unit {
-  _sb_pca9685_init
-  if (steps < 0) {steps = 0}
+to sb_turn_stepper_motor stp direction steps unit {
+  '_sb_pca9685_init'
+  if (steps < 0) {
+    steps = 0
+  }
   steps = (steps * ((1000 * _sb_pca9685_st_steps) / 50))
   if (unit == 'degrees') {
     steps = (steps / 360)
@@ -179,51 +207,3 @@ to 'sb_turn_stepper_motor' stp direction steps unit {
   }
 }
 
-//////
-//PWM servo pins
-//////
-
-to 'sb_set_PWM' pin value {
-  _sb_pca9685_init
-  if (and (1 <= pin) (pin <= 8)) {
-    if (value < 0) {value = 0}
-    if (100 < value) {value = 100}
-    value = ((value * 4095) / 100)
-    '_sb_pca9685_pwm' (pin + 7) 0 value
-  }
-}
-
-//////
-//Library blocks
-//////
-
-to '_sb_neoPixels_init' {
-  comment 'Return if already initialized.'
-  if (_np_pixels != 0) { return }
-  if ((boardType) == 'ESP32') {
-    neoPixelAttach 4 5
-  } else {
-    neoPixelAttach 4 5
-  }
-}
-
-to '_sb_pca9685_pwm' pin in out {
-  '[sensors:i2cWrite]' (64) ('[data:makeList]' (6 + (4 * pin)) (in & 255) ((in >> 8) & 255) (out & 255) ((out >> 8) & 255))
-}
-
-to '_sb_pca9685_init' {
-  comment 'Return if already initialized.'
-  if (_sb_pca9685_st_steps != 0) { return }
-  _sb_pca9685_st_steps = 512
-  i2cSet (hexToInt '40') 0 128
-  waitMillis 100
-  i2cSet (hexToInt '40') 0 16
-  local '_sb_pca9685_prescale' 129
-  i2cSet (hexToInt '40') (hexToInt 'FE') _sb_pca9685_prescale
-  i2cSet (hexToInt '40') 0 0
-  waitMillis 100
-  i2cSet (hexToInt '40') 0 160
-  for i 16 {
-    '_sb_pca9685_pwm' (i - 1) 0 0
-  }
-}
