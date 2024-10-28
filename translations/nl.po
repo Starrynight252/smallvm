@@ -1,10 +1,24 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-26 04:35+0200\n"
+"PO-Revision-Date: 2024-10-27 07:00+0000\n"
+"Last-Translator: Peter Mathijssen <pmathijssen@gmail.com>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/microblocks/ide/nl/"
+">\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.8.2-dev\n"
+
 # MicroBlocks translation file
 # Last updated: October 03 2024
-
 #########################
 # Blocks and categories #
 #########################
-
 msgid "cat;Output"
 msgstr "Output"
 
@@ -42,16 +56,16 @@ msgid "board type"
 msgstr "board type"
 
 msgid "milliseconds since _"
-msgstr ""
+msgstr "milliseconden sinds _"
 
 msgid "end time _"
-msgstr ""
+msgstr "eindtijd _"
 
 msgid "microseconds since _"
-msgstr ""
+msgstr "microseconden sinds _"
 
 msgid "connected to IDE"
-msgstr ""
+msgstr "verbonden met IDE"
 
 msgid "cat;Pins"
 msgstr "Pinnen"
@@ -66,10 +80,10 @@ msgid "pullup _"
 msgstr "pullup _"
 
 msgid "set digital pin _ to _"
-msgstr "maak digitale pin _  _"
+msgstr "maak digitale pin _ _"
 
 msgid "set pin _ to _"
-msgstr "maak pin _  _"
+msgstr "maak pin _ _"
 
 msgid "analog pins"
 msgstr "analoge pinnen"
@@ -93,7 +107,7 @@ msgid "repeat _ _"
 msgstr "herhaal _ _"
 
 msgid "wait _ millisecs"
-msgstr "wacht _ millisec."
+msgstr "wacht _ milliseconden"
 
 msgid "if _ _"
 msgstr "als _ _"
@@ -114,7 +128,7 @@ msgid "wait until _"
 msgstr "wacht tot _"
 
 msgid "wait _ microsecs"
-msgstr "wacht _ microsec."
+msgstr "wacht _ microseconden"
 
 msgid "return _"
 msgstr "terug _"
@@ -135,10 +149,10 @@ msgid "How this works..."
 msgstr "Hoe dit werkt..."
 
 msgid "range _ to _"
-msgstr ""
+msgstr "bereik _ tot _"
 
 msgid "by _"
-msgstr ""
+msgstr "met _"
 
 msgid "for _ in _ _"
 msgstr "voor _ in _ _"
@@ -159,10 +173,10 @@ msgid "last message"
 msgstr "laatste bericht"
 
 msgid "arg _ default _"
-msgstr ""
+msgstr "arg_standaard _"
 
 msgid "default"
-msgstr ""
+msgstr "standaard"
 
 msgid "call _"
 msgstr "roep _ aan"
@@ -213,10 +227,10 @@ msgid "_ is a _"
 msgstr "_ is een _"
 
 msgid "convert _ to _"
-msgstr ""
+msgstr "converteer _ naar _"
 
 msgid "if _ then _ else _"
-msgstr ""
+msgstr "als _ dan _ anders _"
 
 msgid "boolean"
 msgstr "booleaans"
@@ -227,14 +241,11 @@ msgstr "getal"
 msgid "string"
 msgstr "tekst"
 
-msgid "list"
-msgstr "lijst"
-
 msgid "byte array"
 msgstr "byte array"
 
 msgid "cat;Advanced:"
-msgstr "Gevorderd"
+msgstr "Gevorderd:"
 
 msgid "rescale _ from ( _ , _ ) to ( _ , _ )"
 msgstr "herschaal _ van ( _ , _ ) naar ( _ , _ )"
@@ -243,13 +254,12 @@ msgid "hex _"
 msgstr "hex _"
 
 msgid "sqrt _"
-msgstr ""
+msgstr "wortel _"
 
 msgid "cat;Variables"
 msgstr "Variabelen"
 
 # Buttons on top of "Variables" category
-
 msgid "Add a variable"
 msgstr "Voeg een variabele toe"
 
@@ -257,12 +267,11 @@ msgid "Delete a variable"
 msgstr "Verwijder een variabele"
 
 # New variable dialog
-
 msgid "New variable name?"
 msgstr "Nieuwe variabele naam?"
 
 msgid "set _ to _"
-msgstr "maak _  _"
+msgstr "maak _ _"
 
 msgid "change _ by _"
 msgstr "verander _ met _"
@@ -318,9 +327,6 @@ msgstr "naar _"
 msgid "find _ in _"
 msgstr "vind _ in _"
 
-msgid "starting at _"
-msgstr "start op _"
-
 msgid "join items of list _"
 msgstr "voeg items van lijst _ samen"
 
@@ -370,7 +376,6 @@ msgid "cat;Generic"
 msgstr "Algemeen"
 
 # Buttons on top of "My Blocks" category
-
 msgid "Add a command block"
 msgstr "Voeg een commando blok toe"
 
@@ -378,7 +383,6 @@ msgid "Add a reporter block"
 msgstr "Voeg een reporter blok toe"
 
 # Make a block dialog
-
 msgid "Enter function name:"
 msgstr "Geef functie naam:"
 
@@ -398,7 +402,7 @@ msgid "i2c device _ write list _"
 msgstr "i2c device _ schrijf lijst _"
 
 msgid "i2c device _ exists?"
-msgstr ""
+msgstr "i2c device _ bestaat?"
 
 msgid "spi send _"
 msgstr "spi zend _"
@@ -434,13 +438,13 @@ msgid "serial write _"
 msgstr "serieel schrijven _"
 
 msgid "anIntegerStringListOrByteArray"
-msgstr ""
+msgstr "eenIntegerTekenreeksLijstOfByteReeks"
 
 msgid "serial write _ starting at _"
 msgstr "serieel schrijven _ startend bij _"
 
 msgid "aStringListOrByteArray"
-msgstr ""
+msgstr "aTekenreeksLijstOfByteReeks"
 
 msgid "soft serial write byte _ pin _ baud _"
 msgstr "soft seriele schrijf byte _ pin _ baud _"
@@ -457,9 +461,7 @@ msgstr "negeer"
 ##############
 # Primitives #
 ##############
-
 # These are all mostly hidden from end users
-
 msgid "draw shape _ at x _ y _"
 msgstr "teken vorm _ op x _ y _"
 
@@ -495,9 +497,6 @@ msgstr "radio zend nummer _"
 
 msgid "radio send string _"
 msgstr "radio zend tekst _"
-
-msgid "Hello!"
-msgstr "Hallo!"
 
 msgid "radio send pair _ = _"
 msgstr "radio zend paar _ = _"
@@ -541,7 +540,6 @@ msgstr "zet radio uit"
 #############
 # Libraries #
 #############
-
 msgid "Basic Sensors"
 msgstr "Basis Sensoren"
 
@@ -571,7 +569,6 @@ msgstr "stel versnellingsbereik in _ g = 100"
 
 ####
 # NeoPixel library
-
 msgid "NeoPixel"
 msgstr "NeoPixel"
 
@@ -591,16 +588,10 @@ msgid "rotate NeoPixels by _"
 msgstr "draai NeoPixels met _"
 
 msgid "brighten NeoPixel _ by _"
-msgstr ""
+msgstr "maak NeoPixel _ helderder met _"
 
 msgid "brighten all NeoPixels by _"
-msgstr ""
-
-msgid "color r _ g _ b _ (0-255)"
-msgstr "kleur r _ g _ b _ (0-255)"
-
-msgid "random color"
-msgstr "willekeurige kleur"
+msgstr "maak all NeoPixels helderder met _"
 
 msgid "attach _ LED NeoPixel strip to pin _"
 msgstr "verbind _ LED NeoPixel strip aan pin _"
@@ -616,34 +607,32 @@ msgstr "PIR op pin _ detecteerde beweging"
 
 ####
 # NeoPanel library
-
 msgid "NeoPanel"
-msgstr ""
+msgstr "NeoPanel"
 
 msgid "attach NeoPixel panel width _ height _ at pin _"
-msgstr ""
+msgstr "verbind NeoPixel paneel breedte _ hoogte _ aan pin _"
 
 msgid "NeoPanel set x _ y _ color _"
-msgstr ""
+msgstr "NeoPanel zet x _ y _ kleur _"
 
 msgid "NeoPanel fill column _ color _"
-msgstr ""
+msgstr "NeoPanel vul kolom _ kleur _"
 
 msgid "NeoPanel fill row _ color _"
-msgstr ""
+msgstr "NeoPanel vul rij _ kleur _"
 
 msgid "NeoPanel fill rectangle x _ y _ width _ height _ color _"
-msgstr ""
+msgstr "NeoPanel vul rechthoek x _ y _ breedte _ hoogte _ kleur _"
 
 msgid "NeoPanel draw text _ at x _ y _ color _"
-msgstr ""
+msgstr "NeoPanel teken tekst _ op x _ y _ kleur _"
 
 msgid "NeoPanel draw BMP file _ at x _ y _"
-msgstr ""
+msgstr "NeoPanel teken BMP bestand _ op x _ y _"
 
 ####
 # Microphone library
-
 msgid "Microphone"
 msgstr "Microfoon"
 
@@ -667,7 +656,6 @@ msgstr "klap drempelwaarde schatten"
 
 ####
 # Citilab ED1 board libraries
-
 msgid "ED1 Stepper Motor"
 msgstr "ED1 Stappenmotor"
 
@@ -721,7 +709,6 @@ msgstr "maak capacitieve drempelwaarde _"
 
 ####
 # BirdBrain Technologies libraries
-
 msgid "Hummingbird LED _ _ %"
 msgstr "Hummingbird LED _ _ %"
 
@@ -841,13 +828,11 @@ msgstr "sterkte"
 
 ####
 # Ultrasound distance library
-
 msgid "distance (cm) trigger _ echo _"
 msgstr "afstand (cm) trigger _ echo _"
 
 ####
 # Infrared remote library
-
 msgid "IR Remote"
 msgstr "IR afstandsbediening"
 
@@ -868,87 +853,86 @@ msgstr "IR zend device _ command _"
 
 ####
 # Keyboard and Mouse library
-
 msgid "Keyboard and Mouse"
-msgstr ""
+msgstr "Toetsenbord en Muis"
 
 msgid "press key _"
-msgstr ""
+msgstr "druk toets _"
 
 msgid "while holding _"
-msgstr ""
+msgstr "terwijl je vasthoudt _"
 
 msgid "hold key _"
-msgstr ""
+msgstr "houd toets _ vast"
 
 msgid "release key _"
-msgstr ""
+msgstr "laat toets _ los"
 
 msgid "release all keys"
-msgstr ""
+msgstr "laat alle toetsen los"
 
 msgid "kbd;Shift"
-msgstr ""
+msgstr "Shift"
 
 msgid "kbd;Control"
 msgstr "Besturen"
 
 msgid "kbd;Alt / ⌥"
-msgstr ""
+msgstr "Alt / ⌥"
 
 msgid "kbd;Logo / ⌘"
-msgstr ""
+msgstr "Logo / ⌘"
 
 msgid "kbd;AltGr"
-msgstr ""
+msgstr "AltGr"
 
 msgid "kbd;enter"
-msgstr ""
+msgstr "enter"
 
 msgid "kbd;return"
-msgstr ""
+msgstr "return"
 
 msgid "kbd;tab"
-msgstr ""
+msgstr "tab"
 
 msgid "kbd;backspace"
-msgstr ""
+msgstr "backspace"
 
 msgid "kbd;delete"
 msgstr "verwijder"
 
 msgid "kbd;insert"
-msgstr ""
+msgstr "invoegen"
 
 msgid "kbd;home"
 msgstr "home"
 
 msgid "kbd;end"
-msgstr ""
+msgstr "end"
 
 msgid "kbd;PgUp"
-msgstr ""
+msgstr "PgUp"
 
 msgid "kbd;PgDown"
-msgstr ""
+msgstr "PgDown"
 
 msgid "kbd;CapsLock"
-msgstr ""
+msgstr "CapsLock"
 
 msgid "kbd;NumLock"
-msgstr ""
+msgstr "NumLock"
 
 msgid "kbd;ScrollLock"
-msgstr ""
+msgstr "ScrollLock"
 
 msgid "kbd;PrintScreen"
-msgstr ""
+msgstr "PrintScreen"
 
 msgid "kbd;ESC"
-msgstr ""
+msgstr "ESC"
 
 msgid "_ mouse click"
-msgstr ""
+msgstr "_ muis klik"
 
 msgid "mouse;left"
 msgstr "links"
@@ -957,80 +941,79 @@ msgid "mouse;right"
 msgstr "rechts"
 
 msgid "mouse;middle"
-msgstr ""
+msgstr "midden"
 
 msgid "mouse;both"
 msgstr "beide"
 
 msgid "move mouse pointer by _ , _"
-msgstr ""
+msgstr "verplaats muisaanwijzer met _ , _"
 
 msgid "scroll mouse by _"
-msgstr ""
+msgstr "scroll muis met _"
 
 msgid "hold _ mouse button"
-msgstr ""
+msgstr "houd muis knop _ ingedrukt"
 
 msgid "release mouse buttons"
-msgstr ""
+msgstr "laat muis knoppen los"
 
 ####
 # Lists library
 # Extra utilities for list manipulation and access
-
 msgid "Lists"
-msgstr ""
+msgstr "Lijsten"
 
 msgid "list _ contains _"
-msgstr ""
+msgstr "lijst _ bevat _"
 
 msgid "circular item _ of _"
 msgstr ""
 
 msgid "aListOrString"
-msgstr ""
+msgstr "eenLijstOfTekenreeks"
 
 msgid "map _ over _"
 msgstr ""
 
 msgid "aFunction"
-msgstr ""
+msgstr "eenFunctie"
 
 msgid "filter _ with _"
-msgstr ""
+msgstr "filter _ met _"
 
 msgid "pick _ from _"
-msgstr ""
+msgstr "kies _ van _"
 
 msgid "a few"
-msgstr ""
+msgstr "enkele"
 
 msgid "some"
-msgstr ""
+msgstr "sommige"
 
 msgid "most"
-msgstr ""
+msgstr "meeste"
 
 msgid "reverse _"
-msgstr ""
+msgstr "_ omkeren"
 
 msgid "shuffle _"
-msgstr ""
+msgstr "_ schudden"
 
 msgid "sort _"
-msgstr ""
+msgstr "sorteer _"
 
 msgid "unique _"
-msgstr ""
+msgstr "uniek _"
 
 msgid "shuffled _"
-msgstr ""
+msgstr "_ geschud"
 
 msgid "reversed _"
-msgstr ""
+msgstr "_ omgekeerd"
 
 msgid "sorted _"
-msgstr ""
+msgstr "_ gesorteerd"
 
 msgid "uniqued _"
 msgstr ""
@@ -1038,37 +1021,33 @@ msgstr ""
 ####
 # Pseudorandomness
 # Creates pseudorandom numbers and lists of numbers given a particular seed
-
 msgid "Pseudorandomness"
-msgstr ""
+msgstr "Pseudo-willekeur"
 
 msgid "pseudorandom _ to _ with seed _"
-msgstr ""
+msgstr "pseudowillekeurig _ tot _ met seed _"
 
 msgid "_ pseudorandom numbers _ to _ with seed _"
-msgstr ""
+msgstr "_ pseudowillekeurige nummers _ tot _ met seed _"
 
 ####
 # BLE Keyboard library
-
 msgid "BLE Keyboard"
-msgstr ""
+msgstr "BLE Toetsenbord"
 
 msgid "start BLE Keyboard"
-msgstr ""
+msgstr "start BLE Toetsenbord"
 
 ####
 # Radio comm library
 # Allows micro:bit boards to exchange messages
 # All of its blocks are primitive (see "Primitives" section)
-
 msgid "Radio"
 msgstr "Radio"
 
 ####
 # Text scrolling library
 # Scrolls text on 5x5 LED displays and simulated ones
-
 msgid "Scrolling"
 msgstr "Scrollen"
 
@@ -1089,12 +1068,11 @@ msgstr "stop met scrollen"
 
 ####
 # Servo motor library
-
 msgid "Servo"
 msgstr "Servo"
 
 msgid "set servo _ to _ degrees (-90 to 90)"
-msgstr "maak servo _  _ graden (-90 to 90)"
+msgstr "maak servo _ _ graden (-90 to 90)"
 
 msgid "set servo _ to speed _ (-100 to 100)"
 msgstr "maak servo _ snelheid _ (-100 to 100)"
@@ -1106,7 +1084,6 @@ msgstr "stop servo _"
 # 5x5 LED display library
 # Supports the micro:bit display, but also simulated 5x5 displays on boards
 # with differently sized LED arrays, NeoPixel arrays or TFT displays
-
 msgid "LED Display"
 msgstr "LED scherm"
 
@@ -1114,7 +1091,7 @@ msgid "display _"
 msgstr "scherm _"
 
 msgid "display image _"
-msgstr ""
+msgstr "laat afbeelding _ zien"
 
 msgid "clear display"
 msgstr "wis scherm"
@@ -1132,130 +1109,128 @@ msgid "display character _"
 msgstr "toon teken _"
 
 # Image names for the "display image" block
-
 msgid "heart"
-msgstr ""
+msgstr "hart"
 
 msgid "small heart"
-msgstr ""
+msgstr "klein hart"
 
 msgid "yes"
-msgstr ""
+msgstr "ja"
 
 msgid "no"
-msgstr ""
+msgstr "nee"
 
 msgid "happy"
-msgstr ""
+msgstr "blij"
 
 msgid "sad"
-msgstr ""
+msgstr "verdrietig"
 
 msgid "confused"
-msgstr ""
+msgstr "verward"
 
 msgid "angry"
-msgstr ""
+msgstr "boos"
 
 msgid "asleep"
-msgstr ""
+msgstr "slapend"
 
 msgid "surprised"
-msgstr ""
+msgstr "verrast"
 
 msgid "silly"
-msgstr ""
+msgstr "raar"
 
 msgid "fabulous"
-msgstr ""
+msgstr "geweldig"
 
 msgid "meh"
-msgstr ""
+msgstr "bleh"
 
 msgid "t-shirt"
-msgstr ""
+msgstr "t-shirt"
 
 msgid "roller skate"
-msgstr ""
+msgstr "rolschaats"
 
 msgid "duck"
-msgstr ""
+msgstr "eend"
 
 msgid "house"
-msgstr ""
+msgstr "huis"
 
 msgid "tortoise"
-msgstr ""
+msgstr "schildpad"
 
 msgid "butterfly"
-msgstr ""
+msgstr "vlinder"
 
 msgid "stick figure"
-msgstr ""
+msgstr "stokfiguur"
 
 msgid "ghost"
-msgstr ""
+msgstr "spook"
 
 msgid "sword"
-msgstr ""
+msgstr "zwaard"
 
 msgid "giraffe"
-msgstr ""
+msgstr "giraf"
 
 msgid "skull"
-msgstr ""
+msgstr "schedel"
 
 msgid "umbrella"
-msgstr ""
+msgstr "paraplu"
 
 msgid "snake"
-msgstr ""
+msgstr "slang"
 
 msgid "rabbit"
-msgstr ""
+msgstr "konijn"
 
 msgid "cow"
-msgstr ""
+msgstr "koe"
 
 msgid "quarter note"
-msgstr ""
+msgstr "kwart noot"
 
 msgid "eight note"
-msgstr ""
+msgstr "achtste noot"
 
 msgid "pitchfork"
-msgstr ""
+msgstr "hooivork"
 
 msgid "target"
-msgstr ""
+msgstr "doel"
 
 msgid "triangle"
-msgstr ""
+msgstr "driehoek"
 
 msgid "left triangle"
-msgstr ""
+msgstr "linker driehoek"
 
 msgid "chess board"
-msgstr ""
+msgstr "schaakbord"
 
 msgid "diamond"
-msgstr ""
+msgstr "diamant"
 
 msgid "small diamond"
-msgstr ""
+msgstr "kleine diamant"
 
 msgid "square"
-msgstr ""
+msgstr "vierkant"
 
 msgid "small square"
-msgstr ""
+msgstr "klein vierkant"
 
 msgid "scissors"
-msgstr ""
+msgstr "schaar"
 
 ####
 # OLED Graphics library
-
 msgid "initialize i2c _ address(hex) _ reset pin# _ flip _"
 msgstr ""
 
@@ -1263,55 +1238,54 @@ msgid "initialize spi _ d/c pin# _ reset pin# _ flip _"
 msgstr ""
 
 msgid "write _ at x _ y _ inverse _"
-msgstr ""
+msgstr "schrijf _ op x _ y _ omgekeerd _"
 
 msgid "show display buffer"
-msgstr ""
+msgstr "laat display buffer zien"
 
 msgid "clear"
-msgstr ""
+msgstr "wissen"
 
 msgid "set contrast (1-4) _"
-msgstr ""
+msgstr "zet contrast (1-4) _"
 
 msgid "draw circle at x _ y _ radius _ erase _"
-msgstr ""
+msgstr "teken cirkel op x _ y _ radius _ wissen _"
 
 msgid "draw image _ at x _ y _"
-msgstr ""
+msgstr "teken afbeelding _ op x _ y _"
 
 msgid "draw line from x _ y _ to x _ y _ erase _"
-msgstr ""
+msgstr "teken lijn van x _ y _ tot x _ y _ wissen _"
 
 msgid "draw rectangle x _ y _ w _ h _ erase _ rounding(3-15) _"
-msgstr ""
+msgstr "teken rechthoek x _ y _ b_ h _ wissen _ ronding(3-15) _"
 
 msgid "fill rectangle x _ y _ w _ h _ erase _"
-msgstr ""
+msgstr "vul rechthoek x _ y _ b _ h _ wissen _"
 
 msgid "_flip display top _"
 msgstr ""
 
 msgid "make image _"
-msgstr ""
+msgstr "maak afbeelding _"
 
 msgid "set pixel x _ y _ erase _"
-msgstr ""
+msgstr "zet pixel x _ y _ wissen _"
 
 msgid "set video _"
-msgstr ""
+msgstr "zet video _"
 
 msgid "cursor location"
-msgstr ""
+msgstr "cursor locatie"
 
 msgid "defer display updates"
-msgstr ""
+msgstr "uitstellen display updates"
 
 ####
 # TFT display library
-
 msgid "clear TFT display "
-msgstr ""
+msgstr "wis TFT scherm"
 
 msgid "enable TFT _"
 msgstr "activeer TFT _"
@@ -1329,7 +1303,7 @@ msgid "draw line on TFT from x _ y _ to x _ y _ color _"
 msgstr "teken lijn op TFT van x _ y _ naar x _ y _ kleur _"
 
 msgid "draw vector x _ y _ angle _ length _ color _"
-msgstr ""
+msgstr "teken vector x _ y _ hoek _ lengte _ kleur _"
 
 msgid "draw rectangle on TFT at x _ y _ width _ height _ color _"
 msgstr "teken rechthoek op TFT op x _ y _ breed _ hoog _ kleur _"
@@ -1356,27 +1330,23 @@ msgid "scale _ wrap _"
 msgstr "schaal _ wrap _"
 
 msgid "draw text _ on TFT at x _ y _ color _"
-msgstr ""
+msgstr "teken tekst _ op TFT op x _ y _ kleur _"
 
 msgid "scale _"
-msgstr ""
+msgstr "schaal _"
 
 msgid "bg color _"
-msgstr ""
+msgstr "achtergrondkleur _"
 
 msgid "draw bitmap _ palette _ on TFT at x _ y _"
 msgstr ""
 
 msgid "set TFT backlight _ (0-10)"
-msgstr ""
-
-msgid "gray _ %"
-msgstr ""
+msgstr "zet TFT achtergrondverlichting _ (0-10)"
 
 ####
 # BMP library
 # Can display BMP image files on a TFT display
-
 msgid "display BMP file _ at x _ y _"
 msgstr "laat BMP bestand _ zien op x _ y _"
 
@@ -1385,52 +1355,50 @@ msgstr "afbeelding.bmp"
 
 ####
 # Color library
-
 msgid "Color Operators"
-msgstr ""
+msgstr "Kleurbewerkingen"
 
 msgid "color r _ g _ b _ (0-255)"
 msgstr "kleur r _ g _ b _ (0-255)"
 
 msgid "gray _ %"
-msgstr ""
+msgstr "grijs _ %"
 
 msgid "random color"
 msgstr "willekeurige kleur"
 
 msgid "red _"
-msgstr ""
+msgstr "rood _"
 
 msgid "green _"
-msgstr ""
+msgstr "groen _"
 
 msgid "blue _"
-msgstr ""
+msgstr "blauw _"
 
 msgid "color hue _ (0-360) saturation _ % brightness _ %"
-msgstr ""
+msgstr "kleur tint _ (0-360) saturatie _ % helderheid _ %"
 
 msgid "hue _"
-msgstr ""
+msgstr "tint _"
 
 msgid "saturation _"
-msgstr ""
+msgstr "saturatie _"
 
 msgid "brightness _"
-msgstr ""
+msgstr "helderheid _"
 
 msgid "_ with hue _ (0-360)"
-msgstr ""
+msgstr "_ met tint _ (0-360)"
 
 msgid "_ with saturation _ %"
-msgstr ""
+msgstr "_ met saturatie _ %"
 
 msgid "_ with brightness _ %"
-msgstr ""
+msgstr "_ met helderheid _ %"
 
 ####
 # Fractions library
-
 msgid "Fractions"
 msgstr "Breuken"
 
@@ -1476,7 +1444,6 @@ msgstr "kgv _ _"
 ####
 # Tone library
 # Generates music tones on buzzers
-
 msgid "Tone"
 msgstr "Toon"
 
@@ -1484,7 +1451,7 @@ msgid "attach buzzer to pin _"
 msgstr "verbind buzzer aan pin _"
 
 msgid "play note _ octave _ for _ ms"
-msgstr "speel noot _ octaaf  _ gedurende _ ms"
+msgstr "speel noot _ octaaf _ gedurende _ ms"
 
 msgid "play frequency _ for _ ms"
 msgstr "speel frequentie _ gedurende _ ms"
@@ -1499,47 +1466,46 @@ msgid "stop tone"
 msgstr "stop toon"
 
 msgid "c"
-msgstr ""
+msgstr "c"
 
 msgid "c#"
-msgstr ""
+msgstr "c#"
 
 msgid "d"
-msgstr ""
+msgstr "d"
 
 msgid "d#"
-msgstr ""
+msgstr "d#"
 
 msgid "e"
-msgstr ""
+msgstr "e"
 
 msgid "f"
-msgstr ""
+msgstr "f"
 
 msgid "f#"
-msgstr ""
+msgstr "f#"
 
 msgid "g"
-msgstr ""
+msgstr "g"
 
 msgid "g#"
-msgstr ""
+msgstr "g#"
 
 msgid "a"
-msgstr ""
+msgstr "a"
 
 msgid "a#"
-msgstr ""
+msgstr "a#"
 
 msgid "b"
-msgstr ""
+msgstr "b"
 
 ####
 # Ringtone library
 # Can play Nokring-formatted music. Also known as RTTTL.
-
 msgid "Ringtone"
-msgstr "Ringtone"
+msgstr "Ringtoon"
 
 msgid "play ringtone _"
 msgstr "ringtone _ afspelen"
@@ -1550,7 +1516,6 @@ msgstr "huidig lied naam"
 ####
 # Pluck
 # Generate music with plucked-string resembling sounds
-
 msgid "Pluck"
 msgstr "Pluck"
 
@@ -1566,7 +1531,6 @@ msgstr "maak pluck pin _"
 ####
 # WAV
 # Play WAV sound files
-
 msgid "play WAV file _"
 msgstr "WAV bestand _ afspelen"
 
@@ -1577,9 +1541,8 @@ msgstr "bestandsnaam"
 # Rhythm
 # Send broadcasts -and call functions- according to a tempo and time signature.
 # Useful to create musical patterns
-
 msgid "Rhythm"
-msgstr ""
+msgstr "Ritme"
 
 msgid "set tempo to _ bpm at _ / _ signature"
 msgstr ""
@@ -1605,9 +1568,7 @@ msgstr ""
 ####
 # MIDI
 # Control MIDI devices from MicroBlocks
-
 # General MIDI drum instrument names
-
 msgid "Acoustic Bass Drum"
 msgstr ""
 
@@ -1750,7 +1711,6 @@ msgid "Open Triangle"
 msgstr ""
 
 # General MIDI instrument categories
-
 msgid "piano"
 msgstr ""
 
@@ -1800,7 +1760,6 @@ msgid "gm;SFX"
 msgstr ""
 
 # General MIDI drum sets
-
 msgid "standard"
 msgstr ""
 
@@ -1832,7 +1791,6 @@ msgid "CM-64/CM-32L"
 msgstr ""
 
 # General MIDI control changes
-
 msgid "bank select 1"
 msgstr ""
 
@@ -1900,7 +1858,6 @@ msgid "effect 2"
 msgstr ""
 
 # library blocks
-
 msgid "play MIDI note _ for _ ms on channel _ volume _"
 msgstr ""
 
@@ -1958,12 +1915,10 @@ msgstr ""
 ####
 # Scales & Chords
 # Abstractions for musical theory
-
 msgid "Scales & Chords"
 msgstr ""
 
 # scale names
-
 msgid "ionian"
 msgstr ""
 
@@ -1985,14 +1940,7 @@ msgstr ""
 msgid "locrian"
 msgstr ""
 
-msgid "major"
-msgstr ""
-
-msgid "minor"
-msgstr ""
-
 # chord types
-
 msgid "major"
 msgstr ""
 
@@ -2012,7 +1960,6 @@ msgid "Maj7"
 msgstr ""
 
 # sound destinations for arpeggiate block
-
 msgid "MIDI channel"
 msgstr ""
 
@@ -2020,7 +1967,6 @@ msgid "tone pin"
 msgstr ""
 
 # library blocks
-
 msgid "_ scale root _"
 msgstr ""
 
@@ -2060,7 +2006,6 @@ msgstr ""
 ####
 # Chiptune
 # Old-school sound generation on digital pins and DACs
-
 msgid "kick for _ ms on pin _"
 msgstr ""
 
@@ -2085,7 +2030,6 @@ msgstr ""
 ####
 # Square Wave Chords
 # Play chords on 3 digital pins
-
 msgid "Square Wave Chords"
 msgstr ""
 
@@ -2097,7 +2041,6 @@ msgstr ""
 
 ####
 # Turtle geometry library
-
 msgid "Turtle"
 msgstr "Turtle"
 
@@ -2136,7 +2079,6 @@ msgstr "wijs naar richting _"
 
 ####
 # File system library
-
 msgid "Files"
 msgstr "Bestanden"
 
@@ -2188,7 +2130,6 @@ msgstr "bestandssysteem info"
 ####
 # Strings
 # string (text) processing functions
-
 msgid "Strings"
 msgstr "Strings"
 
@@ -2260,7 +2201,6 @@ msgstr "str2num _"
 
 ####
 # WiFi library
-
 msgid "WiFi"
 msgstr "WiFi"
 
@@ -2288,7 +2228,6 @@ msgstr "MAC adres"
 ####
 # Motion library
 # Counts steps and detects motion via the internal accelerometer
-
 msgid "Motion"
 msgstr "Beweging"
 
@@ -2309,7 +2248,6 @@ msgstr "maak stappen drempel _ (0-50)"
 
 ####
 # Button Events library
-
 msgid "Button Events"
 msgstr "Knop Gebeurtenissen"
 
@@ -2324,7 +2262,6 @@ msgstr "knop _ ingedrukt"
 
 ####
 # Calliope board library
-
 msgid "Calliope set LED red _ green _ blue _"
 msgstr "Calliope maak LED op rood _ groen _ blauw _"
 
@@ -2336,7 +2273,6 @@ msgstr "Calliope volume"
 
 ####
 # Circuit Playground Express board library
-
 msgid "Circuit Playground set speaker _"
 msgstr "Circuit Playground maak luidspreker _"
 
@@ -2345,7 +2281,6 @@ msgstr "Circuit Playground schuifschakelaar"
 
 ####
 # DotStar LED library
-
 msgid "attach _ DotStar LEDs to data pin _ clock pin _"
 msgstr "verbind _ DotStar LEDs aan data pin _ klok pin _"
 
@@ -2360,7 +2295,6 @@ msgstr "maak DotStar helderheid _"
 
 ####
 # BME280 environmental sensor
-
 msgid "bme280 connected"
 msgstr "bme280 verbonden"
 
@@ -2377,17 +2311,16 @@ msgid "bme280 humidity"
 msgstr "bme280 vochtigheid"
 
 msgid "bmx280 set base altitude _ meters"
-msgstr ""
+msgstr "bmx280 zet basis hoogtemeter _ meter"
 
 msgid "bmx280 altitude (cm)"
-msgstr ""
+msgstr "bmx280 hoogte (cm)"
 
 msgid "bmx280 altitude (feet)"
-msgstr ""
+msgstr "bmx280 hoogte (voet)"
 
 ####
 # TCS34725 color sensor
-
 msgid "TCS34725 connected"
 msgstr "TCS34725 verbonden"
 
@@ -2399,7 +2332,6 @@ msgstr "kleur _ naam"
 
 ####
 # DHT11 environmental sensor
-
 msgid "temperature (Celsius) DHT11 pin _"
 msgstr "temperatuur (Celsius) DHT11 pin _"
 
@@ -2414,7 +2346,6 @@ msgstr "vochtigheid DHT22 pin _"
 
 ####
 # PN532 RFID reader
-
 msgid "read PN532 RFID"
 msgstr "lees PN532 RFID"
 
@@ -2426,7 +2357,6 @@ msgstr "lees PN532 firmware versie"
 
 ####
 # Touch Screen
-
 msgid "Touch Screen"
 msgstr "Touchscreen"
 
@@ -2444,7 +2374,6 @@ msgstr "TFT aanraak druk"
 
 ####
 # HTTP Client
-
 msgid "HTTP client"
 msgstr "HTTP-client"
 
@@ -2459,7 +2388,6 @@ msgstr "poort _"
 
 ####
 # HTTP Server
-
 msgid "HTTP server"
 msgstr "HTTP-server"
 
@@ -2498,7 +2426,6 @@ msgstr "inhoud lengte van verzoek _"
 
 ####
 # WebSocket server
-
 msgid "WebSocket server"
 msgstr "WebSocket server"
 
@@ -2525,7 +2452,6 @@ msgstr "Hallo, client!"
 
 ####
 # Web Things library
-
 msgid "Web Thing"
 msgstr "WebThing"
 
@@ -2573,16 +2499,14 @@ msgstr "gebeurtenissen"
 
 ####
 # Citilab Fantàstic Robot
-
 msgid "turn fantàstic _ degrees"
-msgstr ""
+msgstr "draai fantàstic _ graden"
 
 msgid "move fantàstic _ mm"
-msgstr ""
+msgstr "verplaats fantàstic _ mm"
 
 ####
 # MiKe Robot library
-
 msgid "MiKe front obstacle (cm)"
 msgstr "MiKe obstakel voor (cm)"
 
@@ -2642,7 +2566,6 @@ msgstr "MiKe digitale D8 naar _"
 
 ####
 # Shield:bit
-
 msgid "s꞉b LEDs off"
 msgstr ""
 
@@ -2683,14 +2606,13 @@ msgid "sb;all_motors"
 msgstr ""
 
 msgid "turns"
-msgstr ""
+msgstr "draaien"
 
 msgid "degrees"
-msgstr ""
+msgstr "graden"
 
 ####
 # micro:STEAMakers
-
 msgid "m꞉s display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
 msgstr ""
 
@@ -2725,22 +2647,22 @@ msgid "start micro꞉STEAMakers audio"
 msgstr ""
 
 msgid "m꞉s button _ ?"
-msgstr ""
+msgstr "m:s knop _ ?"
 
 msgid "m꞉s touching ?"
 msgstr ""
 
 msgid "m꞉s light %"
-msgstr ""
+msgstr "m:s licht %"
 
 msgid "m꞉s sound %"
-msgstr ""
+msgstr "m:s geluid %"
 
 msgid "m꞉s temperature ºC"
-msgstr ""
+msgstr "m:s temperatuur ºC"
 
 msgid "m꞉s humidity %"
-msgstr ""
+msgstr "m:s vochtigheid %"
 
 msgid "m꞉s inclination towards _ º"
 msgstr ""
@@ -2755,18 +2677,17 @@ msgid "m꞉s energy consumption (µWh)"
 msgstr ""
 
 msgid "ms;start"
-msgstr ""
+msgstr "start"
 
 msgid "ms;reset"
-msgstr ""
+msgstr "reset"
 
 msgid "ms;down"
-msgstr ""
+msgstr "omlaag"
 
 ####
 # DrawBot Library
 # A CoreXY plotter library that supports turtle geometry
-
 msgid "plotter move X _ Y _"
 msgstr "plotter verplaats X _ Y _"
 
@@ -2796,39 +2717,38 @@ msgstr "maak plotter snelheid naar _ %"
 
 ####
 # Innova Didactic libraries
-
 msgid "red"
-msgstr ""
+msgstr "rood"
 
 msgid "yellow"
-msgstr ""
+msgstr "geel"
 
 msgid "green"
-msgstr ""
+msgstr "groen"
 
 msgid "forward"
-msgstr ""
+msgstr "vooruit"
 
 msgid "backward"
-msgstr ""
+msgstr "achteruit"
 
 msgid "turn right"
-msgstr ""
+msgstr "draai rechts"
 
 msgid "turn left"
-msgstr ""
+msgstr "draai links"
 
 msgid "stop"
-msgstr ""
+msgstr "stop"
 
 msgid "right sensor"
-msgstr ""
+msgstr "rechter sensor"
 
 msgid "left sensor"
-msgstr ""
+msgstr "linker sensor"
 
 msgid "both sensors"
-msgstr ""
+msgstr "beide sensoren"
 
 msgid "TdR test buzzer"
 msgstr ""
@@ -2934,7 +2854,6 @@ msgstr ""
 
 ####
 # ESP32 Smart Farm
-
 msgid "voltage (V)"
 msgstr ""
 
@@ -2945,16 +2864,16 @@ msgid "power (mW)"
 msgstr ""
 
 msgid "open"
-msgstr ""
+msgstr "open"
 
 msgid "close"
-msgstr ""
+msgstr "sluiten"
 
 msgid "on"
-msgstr ""
+msgstr "aan"
 
 msgid "off"
-msgstr ""
+msgstr "uit"
 
 msgid "Farm fan _"
 msgstr ""
@@ -3009,7 +2928,6 @@ msgstr ""
 
 ####
 # ESP32 Smart Home
-
 msgid "Home fan _"
 msgstr ""
 
@@ -3060,7 +2978,6 @@ msgstr ""
 
 ####
 # MQTT
-
 msgid "MQTT connect to broker _"
 msgstr "MQTT verbinden met broker _"
 
@@ -3120,7 +3037,6 @@ msgstr "buffer groottes _"
 
 ####
 # UDP
-
 msgid "UDP start port _"
 msgstr "UDP start poort _"
 
@@ -3140,35 +3056,33 @@ msgid "UDP remote IP address"
 msgstr "UDP IP-adres op afstand"
 
 msgid "UDP remote port"
-msgstr "UDP IP-adres op afstand"
+msgstr "UDP poort op afstand"
 
 ####
 # WiFi Radio
-
 msgid "wifi send number _"
-msgstr ""
+msgstr "wifi zend nummer _"
 
 msgid "wifi send string _"
-msgstr ""
+msgstr "wifi zend tekenreeks _"
 
 msgid "wifi send pair _ = _"
-msgstr ""
+msgstr "wifi zend paar _ = _"
 
 msgid "wifi message received?"
-msgstr ""
+msgstr "wifi bericht ontvangen?"
 
 msgid "wifi last number"
-msgstr ""
+msgstr "wifi laatste nummer"
 
 msgid "wifi last string"
-msgstr ""
+msgstr "wifi laatste tekenreeks"
 
 msgid "wifi set group _ (0-255)"
-msgstr ""
+msgstr "wifi zet groep _ (0-255)"
 
 ####
 # Cutebot
-
 msgid "Cutebot"
 msgstr "Cutebot"
 
@@ -3199,28 +3113,10 @@ msgstr "Cutebot zie lijn op links _ rechts _"
 msgid "Cutebot distance (cm)"
 msgstr "Cutbot afstand (cm)"
 
-msgid "cutebotlight;left"
-msgstr "links"
-
-msgid "cutebotlight;right"
-msgstr "rechts"
-
-msgid "cutebotlight;both"
-msgstr "beide"
-
 msgid "cutebotside;left"
 msgstr "links"
 
 msgid "cutebotside;right"
-msgstr "rechts"
-
-####
-# Cutebot Pro
-
-msgid "cutebotwheel;left"
-msgstr "links"
-
-msgid "cutebotwheel;right"
 msgstr "rechts"
 
 msgid "cutebotwheel;both"
@@ -3242,31 +3138,31 @@ msgid "cutebotwheel;right"
 msgstr "rechts"
 
 msgid "45 degrees"
-msgstr ""
+msgstr "45 graden"
 
 msgid "90 degrees"
-msgstr ""
+msgstr "90 graden"
 
 msgid "135 degrees"
-msgstr ""
+msgstr "135 graden"
 
 msgid "180 degrees"
-msgstr ""
+msgstr "180 graden"
 
 msgid "cutebot;forward"
-msgstr ""
+msgstr "vooruit"
 
 msgid "cutebot;backward"
-msgstr ""
+msgstr "achteruit"
 
 msgid "180 degree"
-msgstr ""
+msgstr "180 graden"
 
 msgid "270 degree"
-msgstr ""
+msgstr "270 graden"
 
 msgid "360 degree"
-msgstr ""
+msgstr "360 graden"
 
 msgid "cutebotturn;left"
 msgstr "links"
@@ -3290,22 +3186,22 @@ msgid "CBPro stop wheel _"
 msgstr ""
 
 msgid "CBPro stop all"
-msgstr ""
+msgstr "CBPro stop alle"
 
 msgid "CBPro move _ (-255 to 255 cm)"
-msgstr ""
+msgstr "CBPro beweeg _ (-255 tot 255 cm)"
 
 msgid "CBPro turn _ degrees"
-msgstr ""
+msgstr "CBPro draai _ graden"
 
 msgid "CBPro set headlight _ to _"
-msgstr ""
+msgstr "CBPro zet koplamp _ naar _"
 
 msgid "CBPro set NeoPixel _ to _"
-msgstr ""
+msgstr "CBPro zet Neopixel _ naar _"
 
 msgid "CBPro distance (cm)"
-msgstr ""
+msgstr "CBPro afstand (cm)"
 
 msgid "CBPro tracking state is (L - - R) _ _ _ _"
 msgstr ""
@@ -3317,28 +3213,27 @@ msgid "CBPro tracking offset"
 msgstr ""
 
 msgid "CBPro IR code received?"
-msgstr ""
+msgstr "CBPro IR code ontvangen?"
 
 msgid "CBPro IR code"
-msgstr ""
+msgstr "CBPro IR code"
 
 msgid "CBPro set _ servo _ angle to _ deg"
 msgstr ""
 
 msgid "CBPro servo _ speed to _ (-100 to 100)"
-msgstr ""
+msgstr "CBPro servo _ snelheid naar _ (-100 tot 100)"
 
 msgid "CBPro set external motor power to _ (-100 to 100)"
 msgstr ""
 
 msgid "CBPro stop external motor"
-msgstr ""
+msgstr "CBPro stop externe motor"
 
 msgid "CBPro version"
-msgstr ""
+msgstr "CBPro versie"
 
 # Wukong
-
 msgid "Wukong"
 msgstr "Wukong"
 
@@ -3365,7 +3260,6 @@ msgstr "Wukong maak LED helderheid naar _"
 
 ####
 # Sphero-RVR
-
 msgid "wake"
 msgstr "wakker worden"
 
@@ -3392,7 +3286,6 @@ msgstr "maak alle LEDs op rood _ groen _ blauw _"
 
 ####
 # Joystick:bit
-
 msgid "button _ is pressed"
 msgstr "knop _ is ingedrukt"
 
@@ -3404,7 +3297,6 @@ msgstr "motor vibreert voor _ ms"
 
 ####
 # NeZha
-
 msgid "NeZha"
 msgstr "NeZha"
 
@@ -3425,7 +3317,6 @@ msgstr "NeZha maak continue rotatie servo _ snelheid naar _ %"
 
 ####
 # WuKong2040
-
 msgid "WuKong2040"
 msgstr ""
 
@@ -3445,16 +3336,15 @@ msgid "WuKong2040 stop motor _"
 msgstr ""
 
 msgid "WuKong2040 stop all motors"
-msgstr ""
+msgstr "WuKong2040 stop alle motors"
 
 msgid "WuKong2040 buzzer beep _ ms"
-msgstr ""
+msgstr "Wukong2040 buzzer beep _ ms"
 
 ####
 # Octopus
-
 msgid "Octopus"
-msgstr ""
+msgstr "Octopus"
 
 msgid "Octopus LED pin _ toggle to _"
 msgstr ""
@@ -3493,7 +3383,7 @@ msgid "Octopus OLED show _ at x _ y _"
 msgstr ""
 
 msgid "Octopus OLED clear"
-msgstr ""
+msgstr "Octopus OLED wissen"
 
 msgid "Octopus OLED draw pixel x _ y _"
 msgstr ""
@@ -3515,7 +3405,6 @@ msgstr ""
 
 ####
 # OctoStudio
-
 msgid "Octo beam to phones _"
 msgstr ""
 
@@ -3540,9 +3429,7 @@ msgstr ""
 ##################
 # MicroBlocks UI #
 ##################
-
 # buttons, error & info messages, dialog boxes, etc
-
 msgid "New"
 msgstr "Nieuw"
 
@@ -3559,7 +3446,7 @@ msgid "Information"
 msgstr "Informatie"
 
 msgid "Plug in the board."
-msgstr "Sluit het board aan"
+msgstr "Sluit het board aan."
 
 msgid "Plug in the board and click the USB icon to connect."
 msgstr "Sluit het board aan klik op het USB icoon om te verbinden."
@@ -3568,7 +3455,7 @@ msgid "Reading project from board..."
 msgstr "Project lezen van het bord..."
 
 msgid "Loading project..."
-msgstr "Project laden"
+msgstr "Project laden..."
 
 # %1 holds the name of the library
 msgid "Found a newer version of %1."
@@ -3587,7 +3474,7 @@ msgid "connect"
 msgstr "verbind"
 
 msgid "connect (BLE)"
-msgstr ""
+msgstr "verbind (BLE)"
 
 msgid "open Boardie"
 msgstr "open Boardie"
@@ -3599,7 +3486,7 @@ msgid "Serial port:"
 msgstr "Seriële poort:"
 
 msgid "Connect board and try again"
-msgstr ""
+msgstr "Verbind board en probeer opnieuw"
 
 msgid "other..."
 msgstr "ander..."
@@ -3651,13 +3538,14 @@ msgid "Try to Install MicroBlocks on the board?"
 msgstr "Proberen om MicroBlocks op het board te installeren?"
 
 msgid "The MicroBlocks in your board is not current"
-msgstr "De MicroBlocks op je board is niet actueel."
+msgstr "De MicroBlocks op je board is niet actueel"
 
 msgid "Try to update MicroBlocks on the board?"
 msgstr "Proberen om MicroBlocks op het board te updaten?"
 
 msgid "The firmware on the board is not compatible with this version of MicroBlocks."
 msgstr ""
+"De firmware op het board is niet compatibel met deze versie van MicroBlocks."
 
 msgid "MicroBlocks"
 msgstr "MicroBlocks"
@@ -3675,7 +3563,6 @@ msgid "Discard current project?"
 msgstr "Huidig project weggooien?"
 
 # Scripting area right-click context menu
-
 msgid "set block size..."
 msgstr "maak blokgrootte ..."
 
@@ -3731,10 +3618,10 @@ msgid "duplicate selection"
 msgstr ""
 
 msgid "drag selection"
-msgstr ""
+msgstr "sleep selectie"
 
 msgid "delete selection"
-msgstr ""
+msgstr "wis selectie"
 
 msgid "about..."
 msgstr "over..."
@@ -3797,13 +3684,13 @@ msgid "when plugging a board, automatically read its contents into the IDE if th
 msgstr "wanneer je een board verbindt, zet dan automatisch de inhoud in de IDE als het huidige project leeg is"
 
 msgid "make the IDE darker"
-msgstr ""
+msgstr "maak de IDE donker"
 
 msgid "erase flash and update firmware on ESP board"
 msgstr "flash wissen en firmware op ESP-bord updaten"
 
 msgid "install ESP firmware from URL"
-msgstr ""
+msgstr "ESP-firmware installeren vanaf URL"
 
 msgid "Use board type"
 msgstr "Gebruik board type"
@@ -3825,6 +3712,8 @@ msgstr "Je zult worden gevraagd om het firmware bestand op te slaan."
 
 msgid "If your micro:bit shows a sad face, save the firmware.hex file to your disk then drop it onto the MICROBIT drive."
 msgstr ""
+"Als er op uw micro:bit een verdrietig gezichtje staat, sla dan het firmware."
+"hex-bestand op uw schijf op en sleep het vervolgens naar de MICROBIT-schijf."
 
 msgid "Save the firmware file when prompted."
 msgstr "Sla het firmwarebestand op wanneer daarom wordt gevraagd."
@@ -3837,7 +3726,7 @@ msgid "Installing firmware..."
 msgstr "Installeer firmware..."
 
 msgid "Board not connected"
-msgstr ""
+msgstr "Board niet verbonden"
 
 msgid "Wiping board..."
 msgstr "Board wissen ..."
@@ -4110,7 +3999,6 @@ msgid "Confirm"
 msgstr "Bevestig"
 
 # Library folders
-
 msgid "LIBRARIES"
 msgstr "BIBLIOTHEKEN"
 
@@ -4130,7 +4018,7 @@ msgid "libfolder;Network"
 msgstr "Netwerk"
 
 msgid "libfolder;Motors"
-msgstr ""
+msgstr "Motors"
 
 msgid "libfolder;Other"
 msgstr "Ander"
@@ -4148,10 +4036,9 @@ msgid "libfolder;System"
 msgstr "Systeem"
 
 msgid "libfolder;WorkInProgress"
-msgstr ""
+msgstr "Werk in uitvoering"
 
 # File picker and library dialogs
-
 msgid "New library name?"
 msgstr "Naam nieuwe bibliotheek?"
 
@@ -4228,7 +4115,7 @@ msgid "built-in library"
 msgstr "ingebouwde bibliotheek"
 
 msgid "Dependency path, name or URL?"
-msgstr "Afhankelijkheid pad, naam, of URL"
+msgstr "Afhankelijkheid pad, naam, of URL?"
 
 msgid "If you are adding a library that's built into MicroBlocks, you can just enter its name."
 msgstr "Als je een bibliotheek toe wil voegen die ingebouwd is in MicroBlocks dan hoef je enkel de naam in te voeren."
@@ -4263,7 +4150,6 @@ msgstr "Maak de blokgrootte groter"
 ############
 # Tips Bar #
 ############
-
 msgid "Button"
 msgstr "Knop"
 
@@ -4293,9 +4179,6 @@ msgstr "[l] rechter pijl om extra inputs te laten zien, linker pijl of ze te ver
 
 msgid "Command Block"
 msgstr "Commando blok"
-
-msgid "[l] to run, or drag to build scripts. [r] menu."
-msgstr "[l] om uit te voeren of te slepen om scripts te bouwen. [r] menu."
 
 msgid "Hat Block"
 msgstr "Hat blok"
@@ -4348,7 +4231,6 @@ msgstr "Sleep blokken naar hier om scripts te maken. [r] menu."
 #################################
 # Block Descriptions for TipBar #
 #################################
-
 msgid "Turn the user LED on or off."
 msgstr "Zet de gebruikers LED aan of uit."
 
@@ -4383,22 +4265,27 @@ msgid "Report the board type."
 msgstr "Geef het board type."
 
 msgid "Reports firmware version loaded on the board."
-msgstr ""
+msgstr "Geeft aan welke firmwareversie op het board is geladen."
 
 msgid "Reports the three-letter BLE ID of the board if it supports BLE."
 msgstr ""
+"Geeft de drieletterige BLE-ID van het board door als het BLE ondersteunt."
 
 msgid "Reports (-o) if a BLE client is connected."
-msgstr ""
+msgstr "Geeft (-o) als een BLE-client is verbonden."
 
 msgid "Report the milliseconds since the given start milliseconds. Handles clock wrap."
 msgstr ""
+"Geef de milliseconden sinds de opgegeven startmilliseconden. Verwerkt "
+"klokomslag."
 
 msgid "Report the microseconds since the given start microseconds. Handles clock wrap."
 msgstr ""
+"Geef de microseconden sinds de gegeven startmicroseconden. Verwerkt "
+"klokomslag."
 
 msgid "Reports (-o) if the board is connected to IDE."
-msgstr ""
+msgstr "Geef (-o) als het board verbonden is met de IDE."
 
 msgid "Report the electrical logic level on a digital pin ( (-o) or (o-) )."
 msgstr "Geef het elektrische logische niveau op een digitale pin ( (-o) of (o-) )."
@@ -4416,7 +4303,7 @@ msgid "Report number of analog pins on this device."
 msgstr "Geef het aantal analoge pinnen op dit apparaat."
 
 msgid "Report number of digital pins on this device."
-msgstr "Geef het aantal digitale pinnen  op dit apparaat."
+msgstr "Geef het aantal digitale pinnen op dit apparaat."
 
 msgid "Report the value of a register (0-255) of an I2C device (0-127)."
 msgstr "Geef de waarde van een register (0-255) van een I2C-apparaat (0-127)."
@@ -4425,7 +4312,7 @@ msgid "Set an I2C device and register to given value (0-255)."
 msgstr "Maak een I2C-apparaat en -register een gegeven waarde (0-255)."
 
 msgid "Receive multiple bytes from an I2C device."
-msgstr "Ontvang meerdere bytes van een I2C apparaat"
+msgstr "Ontvang meerdere bytes van een I2C apparaat."
 
 msgid "Send multiple bytes to an I2C device."
 msgstr "Stuur meerdere bytes naar een I2C apparaat."
@@ -4449,7 +4336,7 @@ msgid "Close the serial port."
 msgstr "Sluit de seriële poort."
 
 msgid "Report data received from the serial port (a byte array)."
-msgstr "Geef de gegevens ontvangen van de seriële poort  (een byte-array)."
+msgstr "Geef de gegevens ontvangen van de seriële poort (een byte-array)."
 
 msgid "Send a byte array to the serial port."
 msgstr "Zend een byte-array naar de seriële poort."
@@ -4614,7 +4501,9 @@ msgid "Report the given number shifted left by the given number of bits."
 msgstr "Geef het gegeven getal links verschoven met het gegeven aantal bits."
 
 msgid "Report the given number shifted right by the given number of bits (arithmetic shift; sign is maintained)."
-msgstr "Geef het gegeven getal rechts verschoven met het gegeven aantal bits (rekenkundige verschuiving; teken blijft behouden)"
+msgstr ""
+"Geef het gegeven getal rechts verschoven met het gegeven aantal bits ("
+"rekenkundige verschuiving; teken blijft behouden)."
 
 msgid "Set a variable to the given value."
 msgstr "Geef een variabele de opgegeven waarde."
@@ -4675,5 +4564,3 @@ msgstr "Geef een byte-array met de UTF-8 bytes van de gegeven string."
 
 msgid "Report the number of words of memory available. Stop button frees up memory."
 msgstr "Geef het aantal beschikbare woorden geheugen aan. Stoptoets maakt geheugen vrij."
-
-
