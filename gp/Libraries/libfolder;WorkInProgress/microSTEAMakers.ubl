@@ -1,16 +1,16 @@
-module 'micro:STEAMakers'
+module microSTEAMakers
 author 'Joan Guillén'
-version 1 2
-depends Tone Color
-tags keyestudio steam
-choices ms_inclination down x y
-choices ms_led_imageMenu heart 'small heart' yes no happy sad confused angry asleep surprised silly fabulous meh 't-shirt' 'roller skate' duck house tortoise butterfly 'stick figure' ghost sword giraffe skull umbrella snake rabbit cow 'quarter note' 'eight note' pitchfork target triangle 'left triangle' 'chess board' diamond 'small diamond' square 'small square' scissors
-choices ms_buttons A B
-choices ms_accel x y z
-choices ms_energyMeter 'ms;start' 'ms;stop' 'ms;reset'
-choices ms_energy mA mV mW
-description 'Provides custom blocks for the micro:STEAMakers. It is an ESP32 board with WiFi, BLE, 5x5 RGB LED matrix, 2 buttons, touching area, light, sound, temperature and humidity sensors, six-axis acc/gyroscope, energy control and io pins and i2c extensions'
-variables _ms_neoPixels _ms_neoPixels_on _sb_neoPixels_on _MiKe_circlePixels _ms_neoPixels_scale _ms_scrolling_stopped _ms_energyReading _ms_energySum _ms_aht20_on _ms_aht20_reading _ms_aht20_data _ms_MPU6050_on _ms_MPU6050_add
+version 1 2 
+depends Tone Color 
+tags keyestudio steam 
+choices ms_led_imageMenu heart 'small heart' yes no happy sad confused angry asleep surprised silly fabulous meh 't-shirt' 'roller skate' duck house tortoise butterfly 'stick figure' ghost sword giraffe skull umbrella snake rabbit cow 'quarter note' 'eight note' pitchfork target triangle 'left triangle' 'chess board' diamond 'small diamond' square 'small square' scissors 
+choices ms_inclination down x y 
+choices ms_accel x y z 
+choices ms_buttons A B 
+choices ms_energy mA mV mW 
+choices ms_energyMeter 'ms;start' 'ms;stop' 'ms;reset' 
+description 'Provides custom blocks for the micro:STEAMakers, an ESP32 board with WiFi, BLE, 5x5 RGB LED matrix, 2 buttons, touch, light, sound, temperature and humidity sensors, six-axis accelerometer/gyroscope, energy control, and GPIO and I2C pins for additional extensions.'
+variables _ms_neoPixels _ms_neoPixels_on _sb_neoPixels_on _MiKe_circlePixels _ms_neoPixels_scale _ms_scrolling_stopped _ms_energyReading _ms_energySum _ms_aht20_on _ms_aht20_reading _ms_aht20_data _ms_MPU6050_on _ms_MPU6050_add 
 
   spec ' ' 'ms_display' 'ms display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _' 'color color color color color color color color color color color color color color color color color color color color color color color color color'
   spec ' ' 'ms_displayShape' 'ms display #BR# _ #BR# with color _' 'microbitDisplay color' 15237440
