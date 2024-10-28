@@ -640,7 +640,7 @@ msgstr "Radio sende Zeichenfolge _"
 
 #. Example string for blocks that send a message via some communication channel.
 msgid "Hello!"
-msgstr ""
+msgstr "Hallo!"
 
 #. Primitive block. Mostly hidden from end users.
 msgid "radio send pair _ = _"
