@@ -440,7 +440,7 @@ msgstr "new byte array _"
 msgid "as byte array _"
 msgstr "as byte array _"
 
-#. Example string. Tells the user this input accepts a byte list or a string
+#. Example string. Tells the user this input accepts a byte list or a string.
 msgid "aByteListOrString"
 msgstr "aByteListOrString"
 
