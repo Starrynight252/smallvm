@@ -1,13 +1,13 @@
-module ShieldBit 'cat;cat;Output'
+module ShieldBit 'cat;Output'
 author 'Joan Guillén'
-version 1 2 
-depends Color NeoPixel Tone 
+version 1 3 
+depends Color Tone 
 tags keyestudio 'micro:bit' 
 choices sb_motorTypes 'sb;all_motors' 'sb;servomotors' 'sb;DC/Stepper_motors' 
 choices sb_stepperSteps turns degrees 
 choices sb_motorDirections clockwise 'counter-clockwise' 
 description 'Provides custom blocks for the shield:bit, which supports 4 DC motors, 2 stepper motors, speaker, headphone jack with volume control, and 4 NeoPixel LEDs.'
-variables _sb_pca9685_st_steps 
+variables _sb_neoPixels _sb_pca9685_st_steps 
 
   spec ' ' 'sb_LEDs_off' 'sb LEDs off'
   spec ' ' 'sb_set_LEDs_to_color' 'sb set all LEDs to _' 'color'
@@ -26,20 +26,27 @@ variables _sb_pca9685_st_steps
   spec ' ' 'sb_set_PWM' 'sb set pin S- _ (1-8) to _ %' 'num num' 1 100
   space
   spec ' ' '_sb_neoPixels_init' '_sb_neoPixels_init'
+  spec ' ' '_sb_neoPixels_update' '_sb_neoPixels_update'
   space
   spec ' ' '_sb_pca9685_init' '_sb_pca9685_init'
   spec ' ' '_sb_pca9685_pwm' '_sb_pca9685_pwm pin _ from _ to _' 'num num num' 1 0 0
 
 to '_sb_neoPixels_init' {
-  comment 'Return if already initialized.'
-  if (_np_pixels != 0) {
-    return
+  comment 'Create NeoPixel list, if necessary.'
+  if (_sb_neoPixels == 0) {
+    _sb_neoPixels = (newList 4)
   }
+}
+
+to '_sb_neoPixels_update' {
+  comment 'Always set the NeoPixel pin.'
   if ((boardType) == 'ESP32') {
-    neoPixelAttach 4 5
+    '[display:neoPixelSetPin]' 5 (booleanConstant false)
   } else {
-    neoPixelAttach 4 5
+    '[display:neoPixelSetPin]' 16 (booleanConstant false)
   }
+  '[display:neoPixelSend]' _sb_neoPixels
+  waitMicros 300
 }
 
 to '_sb_pca9685_init' {
@@ -67,17 +74,20 @@ to '_sb_pca9685_pwm' pin in out {
 
 to sb_LEDs_off {
   '_sb_neoPixels_init'
-  clearNeoPixels
+  atPut 'all' _sb_neoPixels 0
+  '_sb_neoPixels_update'
 }
 
 to sb_set_LED_to_color i color {
   '_sb_neoPixels_init'
-  setNeoPixelColor i color
+  atPut i _sb_neoPixels color
+  '_sb_neoPixels_update'
 }
 
 to sb_set_LEDs_to_color color {
   '_sb_neoPixels_init'
-  neoPixelSetAllToColor color
+  atPut 'all' _sb_neoPixels color
+  '_sb_neoPixels_update'
 }
 
 to sb_set_PWM pin value {
