@@ -1850,52 +1850,52 @@ msgstr "start tone _ Hz"
 msgid "stop tone"
 msgstr "stop tone"
 
-#. Underscore musical note name
-msgid "c"
+#. Musical note name
+msgid "nt;c"
 msgstr "c"
 
-#. Underscore musical note name
-msgid "c#"
+#. Musical note name
+msgid "nt;c#"
 msgstr "c#"
 
-#. Underscore musical note name
-msgid "d"
+#. Musical note name
+msgid "nt;d"
 msgstr "d"
 
-#. Underscore musical note name
+#. Musical note name
 msgid "d#"
 msgstr "d#"
 
-#. Underscore musical note name
-msgid "e"
+#. Musical note name
+msgid "nt;e"
 msgstr "e"
 
-#. Underscore musical note name
-msgid "f"
+#. Musical note name
+msgid "nt;f"
 msgstr "f"
 
-#. Underscore musical note name
-msgid "f#"
+#. Musical note name
+msgid "nt;f#"
 msgstr "f#"
 
-#. Underscore musical note name
-msgid "g"
+#. Musical note name
+msgid "nt;g"
 msgstr "g"
 
-#. Underscore musical note name
-msgid "g#"
+#. Musical note name
+msgid "nt;g#"
 msgstr "g#"
 
-#. Underscore musical note name
-msgid "a"
+#. Musical note name
+msgid "nt;a"
 msgstr "a"
 
-#. Underscore musical note name
-msgid "a#"
+#. Musical note name
+msgid "nt;a#"
 msgstr "a#"
 
-#. Underscore musical note name
-msgid "b"
+#. Musical note name
+msgid "nt;b"
 msgstr "b"
 
 #. Ringtone library label
