@@ -1,12 +1,27 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-27 08:00+0200\n"
+"PO-Revision-Date: 2024-10-27 07:00+0000\n"
+"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/microblocks/ide/"
+"fr/>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.8.2-dev\n"
+
 # MicroBlocks translation file
 # Last updated: October 03 2024
-
 #########################
 # Blocks and categories #
 #########################
-
 msgid "cat;Output"
-msgstr ""
+msgstr "Sortie"
 
 msgid "set user LED _"
 msgstr "allumer la LED _"
@@ -18,7 +33,7 @@ msgid "graph _"
 msgstr ""
 
 msgid "cat;Input"
-msgstr ""
+msgstr "Entrée"
 
 msgid "button A"
 msgstr "bouton A"
@@ -227,14 +242,11 @@ msgstr ""
 msgid "string"
 msgstr ""
 
-msgid "list"
-msgstr ""
-
 msgid "byte array"
 msgstr ""
 
 msgid "cat;Advanced:"
-msgstr ""
+msgstr "Avancé :"
 
 msgid "rescale _ from ( _ , _ ) to ( _ , _ )"
 msgstr ""
@@ -246,10 +258,9 @@ msgid "sqrt _"
 msgstr ""
 
 msgid "cat;Variables"
-msgstr ""
+msgstr "Variables"
 
 # Buttons on top of "Variables" category
-
 msgid "Add a variable"
 msgstr ""
 
@@ -257,7 +268,6 @@ msgid "Delete a variable"
 msgstr ""
 
 # New variable dialog
-
 msgid "New variable name?"
 msgstr ""
 
@@ -277,16 +287,16 @@ msgid "list"
 msgstr ""
 
 msgid "cat"
-msgstr ""
+msgstr "chat"
 
 msgid "dog"
-msgstr ""
+msgstr "chien"
 
 msgid "bird"
-msgstr ""
+msgstr "oiseau"
 
 msgid "fish"
-msgstr ""
+msgstr "poisson"
 
 msgid "length of _"
 msgstr "longueur de _"
@@ -316,9 +326,6 @@ msgid "to _"
 msgstr ""
 
 msgid "find _ in _"
-msgstr ""
-
-msgid "starting at _"
 msgstr ""
 
 msgid "join items of list _"
@@ -370,7 +377,6 @@ msgid "cat;Generic"
 msgstr ""
 
 # Buttons on top of "My Blocks" category
-
 msgid "Add a command block"
 msgstr ""
 
@@ -378,7 +384,6 @@ msgid "Add a reporter block"
 msgstr ""
 
 # Make a block dialog
-
 msgid "Enter function name:"
 msgstr ""
 
@@ -457,9 +462,7 @@ msgstr "ignorer"
 ##############
 # Primitives #
 ##############
-
 # These are all mostly hidden from end users
-
 msgid "draw shape _ at x _ y _"
 msgstr "dessiner la forme _ à x _ y _"
 
@@ -494,9 +497,6 @@ msgid "radio send number _"
 msgstr ""
 
 msgid "radio send string _"
-msgstr ""
-
-msgid "Hello!"
 msgstr ""
 
 msgid "radio send pair _ = _"
@@ -541,7 +541,6 @@ msgstr ""
 #############
 # Libraries #
 #############
-
 msgid "Basic Sensors"
 msgstr ""
 
@@ -571,7 +570,6 @@ msgstr ""
 
 ####
 # NeoPixel library
-
 msgid "NeoPixel"
 msgstr ""
 
@@ -596,12 +594,6 @@ msgstr ""
 msgid "brighten all NeoPixels by _"
 msgstr ""
 
-msgid "color r _ g _ b _ (0-255)"
-msgstr ""
-
-msgid "random color"
-msgstr ""
-
 msgid "attach _ LED NeoPixel strip to pin _"
 msgstr ""
 
@@ -616,7 +608,6 @@ msgstr ""
 
 ####
 # NeoPanel library
-
 msgid "NeoPanel"
 msgstr ""
 
@@ -643,7 +634,6 @@ msgstr ""
 
 ####
 # Microphone library
-
 msgid "Microphone"
 msgstr ""
 
@@ -667,7 +657,6 @@ msgstr ""
 
 ####
 # Citilab ED1 board libraries
-
 msgid "ED1 Stepper Motor"
 msgstr ""
 
@@ -721,7 +710,6 @@ msgstr ""
 
 ####
 # BirdBrain Technologies libraries
-
 msgid "Hummingbird LED _ _ %"
 msgstr "Hummingbird LED _ _ %"
 
@@ -841,13 +829,11 @@ msgstr ""
 
 ####
 # Ultrasound distance library
-
 msgid "distance (cm) trigger _ echo _"
 msgstr ""
 
 ####
 # Infrared remote library
-
 msgid "IR Remote"
 msgstr ""
 
@@ -868,7 +854,6 @@ msgstr ""
 
 ####
 # Keyboard and Mouse library
-
 msgid "Keyboard and Mouse"
 msgstr ""
 
@@ -977,7 +962,6 @@ msgstr ""
 ####
 # Lists library
 # Extra utilities for list manipulation and access
-
 msgid "Lists"
 msgstr ""
 
@@ -1038,7 +1022,6 @@ msgstr ""
 ####
 # Pseudorandomness
 # Creates pseudorandom numbers and lists of numbers given a particular seed
-
 msgid "Pseudorandomness"
 msgstr ""
 
@@ -1050,7 +1033,6 @@ msgstr ""
 
 ####
 # BLE Keyboard library
-
 msgid "BLE Keyboard"
 msgstr ""
 
@@ -1061,14 +1043,12 @@ msgstr ""
 # Radio comm library
 # Allows micro:bit boards to exchange messages
 # All of its blocks are primitive (see "Primitives" section)
-
 msgid "Radio"
 msgstr ""
 
 ####
 # Text scrolling library
 # Scrolls text on 5x5 LED displays and simulated ones
-
 msgid "Scrolling"
 msgstr ""
 
@@ -1089,7 +1069,6 @@ msgstr ""
 
 ####
 # Servo motor library
-
 msgid "Servo"
 msgstr ""
 
@@ -1106,7 +1085,6 @@ msgstr ""
 # 5x5 LED display library
 # Supports the micro:bit display, but also simulated 5x5 displays on boards
 # with differently sized LED arrays, NeoPixel arrays or TFT displays
-
 msgid "LED Display"
 msgstr ""
 
@@ -1132,7 +1110,6 @@ msgid "display character _"
 msgstr ""
 
 # Image names for the "display image" block
-
 msgid "heart"
 msgstr ""
 
@@ -1255,7 +1232,6 @@ msgstr ""
 
 ####
 # OLED Graphics library
-
 msgid "initialize i2c _ address(hex) _ reset pin# _ flip _"
 msgstr ""
 
@@ -1309,7 +1285,6 @@ msgstr ""
 
 ####
 # TFT display library
-
 msgid "clear TFT display "
 msgstr ""
 
@@ -1370,13 +1345,9 @@ msgstr ""
 msgid "set TFT backlight _ (0-10)"
 msgstr ""
 
-msgid "gray _ %"
-msgstr ""
-
 ####
 # BMP library
 # Can display BMP image files on a TFT display
-
 msgid "display BMP file _ at x _ y _"
 msgstr ""
 
@@ -1385,7 +1356,6 @@ msgstr ""
 
 ####
 # Color library
-
 msgid "Color Operators"
 msgstr ""
 
@@ -1430,7 +1400,6 @@ msgstr ""
 
 ####
 # Fractions library
-
 msgid "Fractions"
 msgstr ""
 
@@ -1476,7 +1445,6 @@ msgstr ""
 ####
 # Tone library
 # Generates music tones on buzzers
-
 msgid "Tone"
 msgstr ""
 
@@ -1537,7 +1505,6 @@ msgstr ""
 ####
 # Ringtone library
 # Can play Nokring-formatted music. Also known as RTTTL.
-
 msgid "Ringtone"
 msgstr ""
 
@@ -1550,7 +1517,6 @@ msgstr ""
 ####
 # Pluck
 # Generate music with plucked-string resembling sounds
-
 msgid "Pluck"
 msgstr ""
 
@@ -1566,7 +1532,6 @@ msgstr ""
 ####
 # WAV
 # Play WAV sound files
-
 msgid "play WAV file _"
 msgstr ""
 
@@ -1577,7 +1542,6 @@ msgstr ""
 # Rhythm
 # Send broadcasts -and call functions- according to a tempo and time signature.
 # Useful to create musical patterns
-
 msgid "Rhythm"
 msgstr ""
 
@@ -1605,9 +1569,7 @@ msgstr ""
 ####
 # MIDI
 # Control MIDI devices from MicroBlocks
-
 # General MIDI drum instrument names
-
 msgid "Acoustic Bass Drum"
 msgstr ""
 
@@ -1750,7 +1712,6 @@ msgid "Open Triangle"
 msgstr ""
 
 # General MIDI instrument categories
-
 msgid "piano"
 msgstr ""
 
@@ -1800,7 +1761,6 @@ msgid "gm;SFX"
 msgstr ""
 
 # General MIDI drum sets
-
 msgid "standard"
 msgstr ""
 
@@ -1832,7 +1792,6 @@ msgid "CM-64/CM-32L"
 msgstr ""
 
 # General MIDI control changes
-
 msgid "bank select 1"
 msgstr ""
 
@@ -1900,7 +1859,6 @@ msgid "effect 2"
 msgstr ""
 
 # library blocks
-
 msgid "play MIDI note _ for _ ms on channel _ volume _"
 msgstr ""
 
@@ -1958,12 +1916,10 @@ msgstr ""
 ####
 # Scales & Chords
 # Abstractions for musical theory
-
 msgid "Scales & Chords"
 msgstr ""
 
 # scale names
-
 msgid "ionian"
 msgstr ""
 
@@ -1985,14 +1941,7 @@ msgstr ""
 msgid "locrian"
 msgstr ""
 
-msgid "major"
-msgstr ""
-
-msgid "minor"
-msgstr ""
-
 # chord types
-
 msgid "major"
 msgstr ""
 
@@ -2012,7 +1961,6 @@ msgid "Maj7"
 msgstr ""
 
 # sound destinations for arpeggiate block
-
 msgid "MIDI channel"
 msgstr ""
 
@@ -2020,7 +1968,6 @@ msgid "tone pin"
 msgstr ""
 
 # library blocks
-
 msgid "_ scale root _"
 msgstr ""
 
@@ -2060,7 +2007,6 @@ msgstr ""
 ####
 # Chiptune
 # Old-school sound generation on digital pins and DACs
-
 msgid "kick for _ ms on pin _"
 msgstr ""
 
@@ -2085,7 +2031,6 @@ msgstr ""
 ####
 # Square Wave Chords
 # Play chords on 3 digital pins
-
 msgid "Square Wave Chords"
 msgstr ""
 
@@ -2097,7 +2042,6 @@ msgstr ""
 
 ####
 # Turtle geometry library
-
 msgid "Turtle"
 msgstr ""
 
@@ -2136,7 +2080,6 @@ msgstr ""
 
 ####
 # File system library
-
 msgid "Files"
 msgstr ""
 
@@ -2188,7 +2131,6 @@ msgstr ""
 ####
 # Strings
 # string (text) processing functions
-
 msgid "Strings"
 msgstr ""
 
@@ -2260,7 +2202,6 @@ msgstr ""
 
 ####
 # WiFi library
-
 msgid "WiFi"
 msgstr ""
 
@@ -2288,7 +2229,6 @@ msgstr ""
 ####
 # Motion library
 # Counts steps and detects motion via the internal accelerometer
-
 msgid "Motion"
 msgstr ""
 
@@ -2309,7 +2249,6 @@ msgstr ""
 
 ####
 # Button Events library
-
 msgid "Button Events"
 msgstr ""
 
@@ -2324,7 +2263,6 @@ msgstr ""
 
 ####
 # Calliope board library
-
 msgid "Calliope set LED red _ green _ blue _"
 msgstr ""
 
@@ -2336,7 +2274,6 @@ msgstr ""
 
 ####
 # Circuit Playground Express board library
-
 msgid "Circuit Playground set speaker _"
 msgstr ""
 
@@ -2345,7 +2282,6 @@ msgstr ""
 
 ####
 # DotStar LED library
-
 msgid "attach _ DotStar LEDs to data pin _ clock pin _"
 msgstr ""
 
@@ -2360,7 +2296,6 @@ msgstr ""
 
 ####
 # BME280 environmental sensor
-
 msgid "bme280 connected"
 msgstr ""
 
@@ -2387,7 +2322,6 @@ msgstr ""
 
 ####
 # TCS34725 color sensor
-
 msgid "TCS34725 connected"
 msgstr ""
 
@@ -2399,7 +2333,6 @@ msgstr ""
 
 ####
 # DHT11 environmental sensor
-
 msgid "temperature (Celsius) DHT11 pin _"
 msgstr ""
 
@@ -2414,7 +2347,6 @@ msgstr ""
 
 ####
 # PN532 RFID reader
-
 msgid "read PN532 RFID"
 msgstr ""
 
@@ -2426,7 +2358,6 @@ msgstr ""
 
 ####
 # Touch Screen
-
 msgid "Touch Screen"
 msgstr ""
 
@@ -2444,7 +2375,6 @@ msgstr ""
 
 ####
 # HTTP Client
-
 msgid "HTTP client"
 msgstr ""
 
@@ -2459,7 +2389,6 @@ msgstr ""
 
 ####
 # HTTP Server
-
 msgid "HTTP server"
 msgstr ""
 
@@ -2498,7 +2427,6 @@ msgstr ""
 
 ####
 # WebSocket server
-
 msgid "WebSocket server"
 msgstr ""
 
@@ -2525,7 +2453,6 @@ msgstr ""
 
 ####
 # Web Things library
-
 msgid "Web Thing"
 msgstr ""
 
@@ -2573,7 +2500,6 @@ msgstr ""
 
 ####
 # Citilab Fantàstic Robot
-
 msgid "turn fantàstic _ degrees"
 msgstr ""
 
@@ -2582,7 +2508,6 @@ msgstr ""
 
 ####
 # MiKe Robot library
-
 msgid "MiKe front obstacle (cm)"
 msgstr ""
 
@@ -2642,7 +2567,6 @@ msgstr ""
 
 ####
 # Shield:bit
-
 msgid "s꞉b LEDs off"
 msgstr ""
 
@@ -2690,7 +2614,6 @@ msgstr ""
 
 ####
 # micro:STEAMakers
-
 msgid "m꞉s display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
 msgstr ""
 
@@ -2766,7 +2689,6 @@ msgstr ""
 ####
 # DrawBot Library
 # A CoreXY plotter library that supports turtle geometry
-
 msgid "plotter move X _ Y _"
 msgstr ""
 
@@ -2796,7 +2718,6 @@ msgstr ""
 
 ####
 # Innova Didactic libraries
-
 msgid "red"
 msgstr ""
 
@@ -2934,7 +2855,6 @@ msgstr ""
 
 ####
 # ESP32 Smart Farm
-
 msgid "voltage (V)"
 msgstr ""
 
@@ -3009,7 +2929,6 @@ msgstr ""
 
 ####
 # ESP32 Smart Home
-
 msgid "Home fan _"
 msgstr ""
 
@@ -3060,7 +2979,6 @@ msgstr ""
 
 ####
 # MQTT
-
 msgid "MQTT connect to broker _"
 msgstr ""
 
@@ -3120,7 +3038,6 @@ msgstr ""
 
 ####
 # UDP
-
 msgid "UDP start port _"
 msgstr ""
 
@@ -3144,7 +3061,6 @@ msgstr ""
 
 ####
 # WiFi Radio
-
 msgid "wifi send number _"
 msgstr ""
 
@@ -3168,7 +3084,6 @@ msgstr ""
 
 ####
 # Cutebot
-
 msgid "Cutebot"
 msgstr ""
 
@@ -3199,28 +3114,10 @@ msgstr ""
 msgid "Cutebot distance (cm)"
 msgstr ""
 
-msgid "cutebotlight;left"
-msgstr ""
-
-msgid "cutebotlight;right"
-msgstr ""
-
-msgid "cutebotlight;both"
-msgstr ""
-
 msgid "cutebotside;left"
 msgstr ""
 
 msgid "cutebotside;right"
-msgstr ""
-
-####
-# Cutebot Pro
-
-msgid "cutebotwheel;left"
-msgstr ""
-
-msgid "cutebotwheel;right"
 msgstr ""
 
 msgid "cutebotwheel;both"
@@ -3338,7 +3235,6 @@ msgid "CBPro version"
 msgstr ""
 
 # Wukong
-
 msgid "Wukong"
 msgstr ""
 
@@ -3365,7 +3261,6 @@ msgstr ""
 
 ####
 # Sphero-RVR
-
 msgid "wake"
 msgstr ""
 
@@ -3392,7 +3287,6 @@ msgstr ""
 
 ####
 # Joystick:bit
-
 msgid "button _ is pressed"
 msgstr ""
 
@@ -3404,7 +3298,6 @@ msgstr ""
 
 ####
 # NeZha
-
 msgid "NeZha"
 msgstr ""
 
@@ -3425,7 +3318,6 @@ msgstr ""
 
 ####
 # WuKong2040
-
 msgid "WuKong2040"
 msgstr ""
 
@@ -3452,7 +3344,6 @@ msgstr ""
 
 ####
 # Octopus
-
 msgid "Octopus"
 msgstr ""
 
@@ -3515,7 +3406,6 @@ msgstr ""
 
 ####
 # OctoStudio
-
 msgid "Octo beam to phones _"
 msgstr ""
 
@@ -3540,9 +3430,7 @@ msgstr ""
 ##################
 # MicroBlocks UI #
 ##################
-
 # buttons, error & info messages, dialog boxes, etc
-
 msgid "New"
 msgstr ""
 
@@ -3675,7 +3563,6 @@ msgid "Discard current project?"
 msgstr ""
 
 # Scripting area right-click context menu
-
 msgid "set block size..."
 msgstr ""
 
@@ -4110,7 +3997,6 @@ msgid "Confirm"
 msgstr ""
 
 # Library folders
-
 msgid "LIBRARIES"
 msgstr ""
 
@@ -4151,7 +4037,6 @@ msgid "libfolder;WorkInProgress"
 msgstr ""
 
 # File picker and library dialogs
-
 msgid "New library name?"
 msgstr ""
 
@@ -4263,7 +4148,6 @@ msgstr ""
 ############
 # Tips Bar #
 ############
-
 msgid "Button"
 msgstr ""
 
@@ -4292,9 +4176,6 @@ msgid "[l] right arrow to show optional inputs, left arrow to hide."
 msgstr ""
 
 msgid "Command Block"
-msgstr ""
-
-msgid "[l] to run, or drag to build scripts. [r] menu."
 msgstr ""
 
 msgid "Hat Block"
@@ -4348,7 +4229,6 @@ msgstr ""
 #################################
 # Block Descriptions for TipBar #
 #################################
-
 msgid "Turn the user LED on or off."
 msgstr ""
 
@@ -4675,5 +4555,3 @@ msgstr ""
 
 msgid "Report the number of words of memory available. Stop button frees up memory."
 msgstr ""
-
-
