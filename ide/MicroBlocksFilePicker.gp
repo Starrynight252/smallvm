@@ -202,22 +202,23 @@ method addShortcutButtons MicroBlocksFilePicker {
 	hidden = (array 'Cloud') // this can be used to hide selected shortcuts
 
 	showMicroBlocks = (and
-	(not (contains hidden 'MicroBlocks'))
-	('Browser' != (platform)))
-	showExamples = (and
-	(not (contains hidden 'Examples'))
-	(not forSaving)
-	(isClass extensions 'Array')
-	(contains extensions '.gpp'))
-	showLibraries = (and
-	(not (contains hidden 'Libraries'))
-	(not forSaving)
-	(isClass extensions 'Array')
-	(contains extensions '.ubl'))
-	showDesktop = (not (contains hidden 'Desktop'))
-	showDownloads = (and
-	(not (contains hidden 'Downloads'))
-	('Linux' != (platform)))
+		(not (contains hidden 'MicroBlocks'))
+		('Browser' != (platform)))
+		showExamples = (and
+		(not (contains hidden 'Examples'))
+		(not forSaving)
+		(isClass extensions 'Array')
+		(contains extensions '.gpp'))
+		showLibraries = (and
+		(not (contains hidden 'Libraries'))
+		(not forSaving)
+		(isClass extensions 'Array')
+		(contains extensions '.ubl'))
+		showDesktop = (not (contains hidden 'Desktop'))
+		showDownloads = (and
+		(not (contains hidden 'Downloads'))
+		('Linux' != (platform))
+	)
 	showComputer = (not (contains hidden 'Computer'))
 
 	buttonX = ((left morph) + (17 * scale))
@@ -426,10 +427,13 @@ method showFolder MicroBlocksFilePicker path isTop {
 
 method folderContents MicroBlocksFilePicker {
 	result = (list)
-	showExtension = (not (or
-		(contains extensions '.ubl')
-		(contains extensions '.ubp')
-		(contains extensions '.gpp'))
+	showExtension = (or
+		(isNil extensions)
+		(not (or
+			(contains extensions '.ubl')
+			(contains extensions '.ubp')
+			(contains extensions '.gpp'))
+		)
 	)
 	if useEmbeddedFS {
 		dirsAndFiles = (embeddedFilesAndDirs this (join currentDir '/'))
