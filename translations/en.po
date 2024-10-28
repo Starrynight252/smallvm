@@ -763,6 +763,14 @@ msgid "brighten all NeoPixels by _"
 msgstr "brighten all NeoPixels by _"
 
 #. NeoPixel library block
+msgid "shift NeoPixel _ color by _"
+msgstr "shift NeoPixel _ color by _"
+
+#. NeoPixel library block
+msgid "shift all NeoPixel colors by _"
+msgstr "shift all NeoPixel colors by _"
+
+#. NeoPixel library block
 msgid "attach _ LED NeoPixel strip to pin _"
 msgstr "attach _ LED NeoPixel strip to pin _"
 
@@ -4741,6 +4749,10 @@ msgstr "Select board type:"
 #. Firmware upload process information
 msgid "Uploading MicroBlocks to board..."
 msgstr "Uploading MicroBlocks to board..."
+
+#. Settings menu option
+msgid "dark mode"
+msgstr "dark mode"
 
 #. Settings menu option
 msgid "show advanced blocks"

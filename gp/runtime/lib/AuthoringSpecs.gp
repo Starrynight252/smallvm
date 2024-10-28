@@ -267,7 +267,7 @@ method englishDict AuthoringSpecs {
 		return englishDictionary
 }
 
-method setLanguage AuthoringSpecs langCode {
+method setLanguage AuthoringSpecs langCode justOnce {
 	translationData = (readEmbeddedFile (join 'translations/' langCode '.po'))
 	if (isNil translationData) {
 		// if not embedded file, try reading external file
@@ -278,8 +278,13 @@ method setLanguage AuthoringSpecs langCode {
 		translationData = (readFile (join '../translations/' langCode '.po'))
 	}
 	if (isNil translationData) {
-		language = 'English'
-		translationDictionary = nil
+		// fall back to English, but prevent infinite recursion if something has
+		// gone very wrong with translation files
+		if (justOnce != true) {
+			setLanguage this 'en' true
+		} else {
+			translationData = nil
+		}
 	} else {
 		language = (languageNameForCode this langCode)
 		installTranslation this translationData

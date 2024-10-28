@@ -1,10 +1,25 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-28 11:46+0200\n"
+"PO-Revision-Date: 2024-10-28 10:46+0000\n"
+"Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/microblocks/ide/zh_Hans/>\n"
+"Language: zh-chs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.8.2-dev\n"
+
 # MicroBlocks translation file
 # Last updated: October 03 2024
-
 #########################
 # Blocks and categories #
 #########################
-
 msgid "cat;Output"
 msgstr "输出"
 
@@ -227,9 +242,6 @@ msgstr "数字"
 msgid "string"
 msgstr "字符串"
 
-msgid "list"
-msgstr "列表"
-
 msgid "byte array"
 msgstr "字节数组"
 
@@ -249,7 +261,6 @@ msgid "cat;Variables"
 msgstr "变量"
 
 # Buttons on top of "Variables" category
-
 msgid "Add a variable"
 msgstr "新建一个变量"
 
@@ -257,7 +268,6 @@ msgid "Delete a variable"
 msgstr "删除一个变量"
 
 # New variable dialog
-
 msgid "New variable name?"
 msgstr "新变量的名字是？"
 
@@ -318,9 +328,6 @@ msgstr "到 _"
 msgid "find _ in _"
 msgstr "查找 _ 在 _ 中"
 
-msgid "starting at _"
-msgstr "开始于 _"
-
 msgid "join items of list _"
 msgstr "连接列表中的项目 _"
 
@@ -370,7 +377,6 @@ msgid "cat;Generic"
 msgstr "通用"
 
 # Buttons on top of "My Blocks" category
-
 msgid "Add a command block"
 msgstr "新建命令积木"
 
@@ -378,7 +384,6 @@ msgid "Add a reporter block"
 msgstr "新建报告积木"
 
 # Make a block dialog
-
 msgid "Enter function name:"
 msgstr "输入积木名称:"
 
@@ -457,9 +462,7 @@ msgstr "忽略"
 ##############
 # Primitives #
 ##############
-
 # These are all mostly hidden from end users
-
 msgid "draw shape _ at x _ y _"
 msgstr "绘制形状 _ 于 x _ y _"
 
@@ -495,9 +498,6 @@ msgstr "广播发送数字 _"
 
 msgid "radio send string _"
 msgstr "广播发送字符串 _"
-
-msgid "Hello!"
-msgstr "Hello!"
 
 msgid "radio send pair _ = _"
 msgstr "广播发送配对信息 _ = _"
@@ -541,7 +541,6 @@ msgstr "禁止广播"
 #############
 # Libraries #
 #############
-
 msgid "Basic Sensors"
 msgstr "基础传感器"
 
@@ -571,7 +570,6 @@ msgstr "设置加速度范围 _ g = 100"
 
 ####
 # NeoPixel library
-
 msgid "NeoPixel"
 msgstr "NeoPixel"
 
@@ -594,13 +592,7 @@ msgid "brighten NeoPixel _ by _"
 msgstr "NeoPixel _ 亮度增加 _"
 
 msgid "brighten all NeoPixels by _"
-msgstr "所有 NeoPixels 亮度增加 _"
-
-msgid "color r _ g _ b _ (0-255)"
-msgstr "颜色 R _ G _ B _ (0-255)"
-
-msgid "random color"
-msgstr "随机颜色"
+msgstr "将所有 NeoPixels 亮度增加 _"
 
 msgid "attach _ LED NeoPixel strip to pin _"
 msgstr "将 _ 个 LED NeoPixel 灯带 连接到引脚 _"
@@ -616,7 +608,6 @@ msgstr "位于引脚 _ 的人体红外传感器探测到运动"
 
 ####
 # NeoPanel library
-
 msgid "NeoPanel"
 msgstr "像素屏"
 
@@ -643,7 +634,6 @@ msgstr "像素屏绘制BMP图片 _ 于 x _ y _"
 
 ####
 # Microphone library
-
 msgid "Microphone"
 msgstr "麦克风"
 
@@ -667,7 +657,6 @@ msgstr "估计拍手阈值"
 
 ####
 # Citilab ED1 board libraries
-
 msgid "ED1 Stepper Motor"
 msgstr "ED1 步进电机"
 
@@ -721,7 +710,6 @@ msgstr "将电容门限值设为 _"
 
 ####
 # BirdBrain Technologies libraries
-
 msgid "Hummingbird LED _ _ %"
 msgstr "Hummingbird LED _ _ %"
 
@@ -841,13 +829,11 @@ msgstr "强度"
 
 ####
 # Ultrasound distance library
-
 msgid "distance (cm) trigger _ echo _"
 msgstr "距离 (cm) 触发 _ 回声 _"
 
 ####
 # Infrared remote library
-
 msgid "IR Remote"
 msgstr "红外线"
 
@@ -868,7 +854,6 @@ msgstr "红外发射 设备 _ 指令 _"
 
 ####
 # Keyboard and Mouse library
-
 msgid "Keyboard and Mouse"
 msgstr "键盘与鼠标"
 
@@ -977,7 +962,6 @@ msgstr "松开鼠标按键"
 ####
 # Lists library
 # Extra utilities for list manipulation and access
-
 msgid "Lists"
 msgstr "列表"
 
@@ -1038,7 +1022,6 @@ msgstr ""
 ####
 # Pseudorandomness
 # Creates pseudorandom numbers and lists of numbers given a particular seed
-
 msgid "Pseudorandomness"
 msgstr ""
 
@@ -1050,7 +1033,6 @@ msgstr ""
 
 ####
 # BLE Keyboard library
-
 msgid "BLE Keyboard"
 msgstr "蓝牙键盘"
 
@@ -1061,14 +1043,12 @@ msgstr "启动蓝牙键盘"
 # Radio comm library
 # Allows micro:bit boards to exchange messages
 # All of its blocks are primitive (see "Primitives" section)
-
 msgid "Radio"
 msgstr "广播"
 
 ####
 # Text scrolling library
 # Scrolls text on 5x5 LED displays and simulated ones
-
 msgid "Scrolling"
 msgstr "滚动显示"
 
@@ -1089,7 +1069,6 @@ msgstr "停止滚动"
 
 ####
 # Servo motor library
-
 msgid "Servo"
 msgstr "舵机"
 
@@ -1106,7 +1085,6 @@ msgstr "停止舵机 _"
 # 5x5 LED display library
 # Supports the micro:bit display, but also simulated 5x5 displays on boards
 # with differently sized LED arrays, NeoPixel arrays or TFT displays
-
 msgid "LED Display"
 msgstr "LED 显示"
 
@@ -1132,7 +1110,6 @@ msgid "display character _"
 msgstr "显示字符 _"
 
 # Image names for the "display image" block
-
 msgid "heart"
 msgstr "心"
 
@@ -1255,7 +1232,6 @@ msgstr "剪刀"
 
 ####
 # OLED Graphics library
-
 msgid "initialize i2c _ address(hex) _ reset pin# _ flip _"
 msgstr "初始化 i2c _ 地址(hex) _ 重置引脚# _ 翻转 _"
 
@@ -1309,7 +1285,6 @@ msgstr "推迟显示更新"
 
 ####
 # TFT display library
-
 msgid "clear TFT display "
 msgstr ""
 
@@ -1370,13 +1345,9 @@ msgstr "在TFT上制位图 _  调色板 _ 位置 x _ y _"
 msgid "set TFT backlight _ (0-10)"
 msgstr "设置TFT背光 _ (0-10)"
 
-msgid "gray _ %"
-msgstr "灰色 _ %"
-
 ####
 # BMP library
 # Can display BMP image files on a TFT display
-
 msgid "display BMP file _ at x _ y _"
 msgstr "显示 BMP 文件 _ 在 x _ y _"
 
@@ -1385,7 +1356,6 @@ msgstr "image.bmp"
 
 ####
 # Color library
-
 msgid "Color Operators"
 msgstr ""
 
@@ -1430,7 +1400,6 @@ msgstr ""
 
 ####
 # Fractions library
-
 msgid "Fractions"
 msgstr "分数"
 
@@ -1476,7 +1445,6 @@ msgstr "最小公倍数 _ _"
 ####
 # Tone library
 # Generates music tones on buzzers
-
 msgid "Tone"
 msgstr "音调"
 
@@ -1537,7 +1505,6 @@ msgstr ""
 ####
 # Ringtone library
 # Can play Nokring-formatted music. Also known as RTTTL.
-
 msgid "Ringtone"
 msgstr "铃声"
 
@@ -1550,7 +1517,6 @@ msgstr "当前歌曲名"
 ####
 # Pluck
 # Generate music with plucked-string resembling sounds
-
 msgid "Pluck"
 msgstr "Pluck"
 
@@ -1566,7 +1532,6 @@ msgstr "set pluck pin _"
 ####
 # WAV
 # Play WAV sound files
-
 msgid "play WAV file _"
 msgstr "播放 WAV 文件 _"
 
@@ -1577,7 +1542,6 @@ msgstr "文件名称"
 # Rhythm
 # Send broadcasts -and call functions- according to a tempo and time signature.
 # Useful to create musical patterns
-
 msgid "Rhythm"
 msgstr "节奏"
 
@@ -1605,9 +1569,7 @@ msgstr ""
 ####
 # MIDI
 # Control MIDI devices from MicroBlocks
-
 # General MIDI drum instrument names
-
 msgid "Acoustic Bass Drum"
 msgstr "原声低音鼓"
 
@@ -1750,7 +1712,6 @@ msgid "Open Triangle"
 msgstr ""
 
 # General MIDI instrument categories
-
 msgid "piano"
 msgstr ""
 
@@ -1800,7 +1761,6 @@ msgid "gm;SFX"
 msgstr ""
 
 # General MIDI drum sets
-
 msgid "standard"
 msgstr ""
 
@@ -1832,7 +1792,6 @@ msgid "CM-64/CM-32L"
 msgstr ""
 
 # General MIDI control changes
-
 msgid "bank select 1"
 msgstr ""
 
@@ -1900,7 +1859,6 @@ msgid "effect 2"
 msgstr "效果 2"
 
 # library blocks
-
 msgid "play MIDI note _ for _ ms on channel _ volume _"
 msgstr ""
 
@@ -1958,12 +1916,10 @@ msgstr ""
 ####
 # Scales & Chords
 # Abstractions for musical theory
-
 msgid "Scales & Chords"
 msgstr ""
 
 # scale names
-
 msgid "ionian"
 msgstr ""
 
@@ -1985,14 +1941,7 @@ msgstr ""
 msgid "locrian"
 msgstr ""
 
-msgid "major"
-msgstr ""
-
-msgid "minor"
-msgstr ""
-
 # chord types
-
 msgid "major"
 msgstr ""
 
@@ -2012,7 +1961,6 @@ msgid "Maj7"
 msgstr ""
 
 # sound destinations for arpeggiate block
-
 msgid "MIDI channel"
 msgstr ""
 
@@ -2020,7 +1968,6 @@ msgid "tone pin"
 msgstr ""
 
 # library blocks
-
 msgid "_ scale root _"
 msgstr ""
 
@@ -2060,7 +2007,6 @@ msgstr ""
 ####
 # Chiptune
 # Old-school sound generation on digital pins and DACs
-
 msgid "kick for _ ms on pin _"
 msgstr ""
 
@@ -2085,7 +2031,6 @@ msgstr ""
 ####
 # Square Wave Chords
 # Play chords on 3 digital pins
-
 msgid "Square Wave Chords"
 msgstr ""
 
@@ -2097,7 +2042,6 @@ msgstr ""
 
 ####
 # Turtle geometry library
-
 msgid "Turtle"
 msgstr "海龟"
 
@@ -2136,7 +2080,6 @@ msgstr "面向 _"
 
 ####
 # File system library
-
 msgid "Files"
 msgstr "文件"
 
@@ -2188,7 +2131,6 @@ msgstr "文件系统信息"
 ####
 # Strings
 # string (text) processing functions
-
 msgid "Strings"
 msgstr "字符串"
 
@@ -2260,7 +2202,6 @@ msgstr "字符串 _ 转为数字"
 
 ####
 # WiFi library
-
 msgid "WiFi"
 msgstr "WiFi"
 
@@ -2288,7 +2229,6 @@ msgstr "MAC 地址"
 ####
 # Motion library
 # Counts steps and detects motion via the internal accelerometer
-
 msgid "Motion"
 msgstr "运动"
 
@@ -2309,7 +2249,6 @@ msgstr "设置计步阈值 _ (0-50)"
 
 ####
 # Button Events library
-
 msgid "Button Events"
 msgstr "按键事件"
 
@@ -2324,7 +2263,6 @@ msgstr "按键 _ 被点击"
 
 ####
 # Calliope board library
-
 msgid "Calliope set LED red _ green _ blue _"
 msgstr "Calliope 设置 LED 红 _ 绿 _ 蓝 _"
 
@@ -2336,7 +2274,6 @@ msgstr "Calliope 响度"
 
 ####
 # Circuit Playground Express board library
-
 msgid "Circuit Playground set speaker _"
 msgstr "Circuit Playground 设置扬声器 _"
 
@@ -2345,7 +2282,6 @@ msgstr "Circuit Playground 滑动开关"
 
 ####
 # DotStar LED library
-
 msgid "attach _ DotStar LEDs to data pin _ clock pin _"
 msgstr "连接 _ DotStar LEDs 至数据引脚 _ 时钟引脚 _"
 
@@ -2360,7 +2296,6 @@ msgstr "设置 DotStar 亮度 _"
 
 ####
 # BME280 environmental sensor
-
 msgid "bme280 connected"
 msgstr "bme280 已连接"
 
@@ -2387,7 +2322,6 @@ msgstr "BMX280 高度（英尺）"
 
 ####
 # TCS34725 color sensor
-
 msgid "TCS34725 connected"
 msgstr "TCS34725 已连接"
 
@@ -2399,7 +2333,6 @@ msgstr "颜色 _ 名字"
 
 ####
 # DHT11 environmental sensor
-
 msgid "temperature (Celsius) DHT11 pin _"
 msgstr "温度 (Celsius) DHT11 引脚 _"
 
@@ -2414,7 +2347,6 @@ msgstr "湿度 DHT22 引脚 _"
 
 ####
 # PN532 RFID reader
-
 msgid "read PN532 RFID"
 msgstr "读取 PN532 RFID"
 
@@ -2426,7 +2358,6 @@ msgstr "PN532 固件版本"
 
 ####
 # Touch Screen
-
 msgid "Touch Screen"
 msgstr "触摸屏"
 
@@ -2444,7 +2375,6 @@ msgstr "TFT 点击力度"
 
 ####
 # HTTP Client
-
 msgid "HTTP client"
 msgstr "HTTP 客户端"
 
@@ -2459,7 +2389,6 @@ msgstr "端口 _"
 
 ####
 # HTTP Server
-
 msgid "HTTP server"
 msgstr "HTTP 服务器"
 
@@ -2498,7 +2427,6 @@ msgstr "请求内容长度 _"
 
 ####
 # WebSocket server
-
 msgid "WebSocket server"
 msgstr "WebSocket 服务器"
 
@@ -2525,7 +2453,6 @@ msgstr "Hello, Client!"
 
 ####
 # Web Things library
-
 msgid "Web Thing"
 msgstr "Web Thing"
 
@@ -2573,7 +2500,6 @@ msgstr "事件 JSON"
 
 ####
 # Citilab Fantàstic Robot
-
 msgid "turn fantàstic _ degrees"
 msgstr ""
 
@@ -2582,7 +2508,6 @@ msgstr ""
 
 ####
 # MiKe Robot library
-
 msgid "MiKe front obstacle (cm)"
 msgstr ""
 
@@ -2642,7 +2567,6 @@ msgstr ""
 
 ####
 # Shield:bit
-
 msgid "s꞉b LEDs off"
 msgstr ""
 
@@ -2690,7 +2614,6 @@ msgstr ""
 
 ####
 # micro:STEAMakers
-
 msgid "m꞉s display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
 msgstr ""
 
@@ -2766,7 +2689,6 @@ msgstr ""
 ####
 # DrawBot Library
 # A CoreXY plotter library that supports turtle geometry
-
 msgid "plotter move X _ Y _"
 msgstr ""
 
@@ -2796,7 +2718,6 @@ msgstr ""
 
 ####
 # Innova Didactic libraries
-
 msgid "red"
 msgstr ""
 
@@ -2934,7 +2855,6 @@ msgstr ""
 
 ####
 # ESP32 Smart Farm
-
 msgid "voltage (V)"
 msgstr ""
 
@@ -3009,7 +2929,6 @@ msgstr ""
 
 ####
 # ESP32 Smart Home
-
 msgid "Home fan _"
 msgstr ""
 
@@ -3060,7 +2979,6 @@ msgstr ""
 
 ####
 # MQTT
-
 msgid "MQTT connect to broker _"
 msgstr "连接到 MQTT 服务器 _"
 
@@ -3120,7 +3038,6 @@ msgstr "缓存大小 _"
 
 ####
 # UDP
-
 msgid "UDP start port _"
 msgstr "UDP 启动服务器 端口 _ "
 
@@ -3144,7 +3061,6 @@ msgstr "UDP 远程端口"
 
 ####
 # WiFi Radio
-
 msgid "wifi send number _"
 msgstr "wifi 广播发送数字 _"
 
@@ -3168,7 +3084,6 @@ msgstr "wifi 设置广播分组 _ (0-255)"
 
 ####
 # Cutebot
-
 msgid "Cutebot"
 msgstr "酷比特小车"
 
@@ -3199,28 +3114,10 @@ msgstr "酷比特 巡线传感器状态为 _ _"
 msgid "Cutebot distance (cm)"
 msgstr "酷比特 超声波返回距离值"
 
-msgid "cutebotlight;left"
-msgstr "左"
-
-msgid "cutebotlight;right"
-msgstr "右"
-
-msgid "cutebotlight;both"
-msgstr "全部"
-
 msgid "cutebotside;left"
 msgstr "左"
 
 msgid "cutebotside;right"
-msgstr "右"
-
-####
-# Cutebot Pro
-
-msgid "cutebotwheel;left"
-msgstr "左"
-
-msgid "cutebotwheel;right"
 msgstr "右"
 
 msgid "cutebotwheel;both"
@@ -3338,7 +3235,6 @@ msgid "CBPro version"
 msgstr ""
 
 # Wukong
-
 msgid "Wukong"
 msgstr "悟空扩展板"
 
@@ -3365,7 +3261,6 @@ msgstr "悟空 设置氛围灯亮度为 _"
 
 ####
 # Sphero-RVR
-
 msgid "wake"
 msgstr "唤醒"
 
@@ -3392,7 +3287,6 @@ msgstr "将所有 LED 设为 红色 _ 绿色 _ 蓝色 _"
 
 ####
 # Joystick:bit
-
 msgid "button _ is pressed"
 msgstr "按键 _ 被按下"
 
@@ -3404,7 +3298,6 @@ msgstr "震动 _ 毫秒"
 
 ####
 # NeZha
-
 msgid "NeZha"
 msgstr "哪吒扩展板"
 
@@ -3425,7 +3318,6 @@ msgstr "哪吒 设置 连续转动舵机 _ 速度为 _ %"
 
 ####
 # WuKong2040
-
 msgid "WuKong2040"
 msgstr "悟空2040"
 
@@ -3452,7 +3344,6 @@ msgstr "悟空2040 蜂鸣器鸣叫 _ 毫秒"
 
 ####
 # Octopus
-
 msgid "Octopus"
 msgstr "八爪鱼系列传感器"
 
@@ -3515,7 +3406,6 @@ msgstr "八爪鱼 OLED 填充圆形 x _ y _ 半径 _"
 
 ####
 # OctoStudio
-
 msgid "Octo beam to phones _"
 msgstr "Octo 给手机发信号 _"
 
@@ -3540,9 +3430,7 @@ msgstr ""
 ##################
 # MicroBlocks UI #
 ##################
-
 # buttons, error & info messages, dialog boxes, etc
-
 msgid "New"
 msgstr "新建"
 
@@ -3675,7 +3563,6 @@ msgid "Discard current project?"
 msgstr "放弃当前项目?"
 
 # Scripting area right-click context menu
-
 msgid "set block size..."
 msgstr "设置积木块大小"
 
@@ -3827,11 +3714,11 @@ msgid "If your micro:bit shows a sad face, save the firmware.hex file to your di
 msgstr "如果 micro:bit 显示一个悲伤的表情，请先将 firmware.hex 文件保存到电脑上，然后再将它拖放到 MICROBIT 驱动器上。"
 
 msgid "Save the firmware file when prompted."
-msgstr ""
+msgstr "出现提示时保存固件文件"
 
 # %1 holds the drive name
 msgid "Drag the firmware file you just saved to the %1 drive."
-msgstr ""
+msgstr "将刚刚保存的固件文件拖到%1驱动器"
 
 msgid "Installing firmware..."
 msgstr "正在安装固件..."
@@ -4110,7 +3997,6 @@ msgid "Confirm"
 msgstr "确认"
 
 # Library folders
-
 msgid "LIBRARIES"
 msgstr "积木库"
 
@@ -4130,7 +4016,7 @@ msgid "libfolder;Network"
 msgstr "网络"
 
 msgid "libfolder;Motors"
-msgstr ""
+msgstr "电机"
 
 msgid "libfolder;Other"
 msgstr "其他"
@@ -4148,10 +4034,9 @@ msgid "libfolder;System"
 msgstr "系统"
 
 msgid "libfolder;WorkInProgress"
-msgstr ""
+msgstr "正在开发中"
 
 # File picker and library dialogs
-
 msgid "New library name?"
 msgstr "积木库的名字?"
 
@@ -4263,7 +4148,6 @@ msgstr "放大积木"
 ############
 # Tips Bar #
 ############
-
 msgid "Button"
 msgstr "按键"
 
@@ -4293,9 +4177,6 @@ msgstr "[l] 点击右箭头添加额外的输入框，点击左箭头删除"
 
 msgid "Command Block"
 msgstr "指令类积木"
-
-msgid "[l] to run, or drag to build scripts. [r] menu."
-msgstr "[l] 点击运行，或用鼠标拖拽出来搭建脚本。 [r] 打开菜单"
 
 msgid "Hat Block"
 msgstr "帽子类积木"
@@ -4348,7 +4229,6 @@ msgstr "将积木拖拽到此处搭建脚本。 [r] 打开菜单"
 #################################
 # Block Descriptions for TipBar #
 #################################
-
 msgid "Turn the user LED on or off."
 msgstr "打开或关闭 LED 灯"
 
@@ -4676,4 +4556,10 @@ msgstr "报告一个字节数组，该数组包含输入字符串的 UTF-8 字�
 msgid "Report the number of words of memory available. Stop button frees up memory."
 msgstr "报告可用内存的字数。停止按钮释放内存"
 
+#. NeoPixel library block
+msgid "shift all NeoPixel colors by _"
+msgstr "将所有 NeoPixel 颜色移动 _"
 
+#. Settings menu option
+msgid "dark mode"
+msgstr "深色模式"
