@@ -1,9 +1,9 @@
 module 'Scales & Chords' Data
 author MicroBlocks
-version 2 3 
+version 2 4 
 depends MIDI Rhythm Tone 
 choices sound_dst 'MIDI channel' 'tone pin' 
-choices scales ionian dorian phrygian lydian mixolydian aeolian locrian 
+choices scales ionian dorian phrygian lydian mixolydian aeolian locrian chromatic tonal
 choices pentatonics major minor 
 choices chords major minor diminished 'major 7th' 'minor 7th' Maj7 
 description 'Lists of relative semitone intervals for all Western diatonic scales plus the major and minor pentatonic scales.
@@ -247,7 +247,7 @@ to scales_progression degrees root 'optional steps' {
 
 to scales_scale which root 'optional steps' {
   local 'steps' (argOrDefault 3 7)
-  return ('_scales intervals' (at ('[data:find]' which ('[data:makeList]' 'ionian' 'dorian' 'phrygian' 'lydian' 'mixolydian' 'aeolian' 'locrian')) ('[data:makeList]' ('[data:makeList]' 0 2 4 5 7 9 11) ('[data:makeList]' 0 2 3 5 7 9 10) ('[data:makeList]' 0 1 3 5 7 8 10) ('[data:makeList]' 0 2 4 6 7 9 11) ('[data:makeList]' 0 2 4 5 7 9 10) ('[data:makeList]' 0 2 3 5 7 8 10) ('[data:makeList]' 0 1 3 5 6 8 10))) root steps)
+  return ('_scales intervals' (at ('[data:find]' which ('[data:makeList]' 'ionian' 'dorian' 'phrygian' 'lydian' 'mixolydian' 'aeolian' 'locrian' 'chromatic' 'tonal')) ('[data:makeList]' ('[data:makeList]' 0 2 4 5 7 9 11) ('[data:makeList]' 0 2 3 5 7 9 10) ('[data:makeList]' 0 1 3 5 7 8 10) ('[data:makeList]' 0 2 4 6 7 9 11) ('[data:makeList]' 0 2 4 5 7 9 10) ('[data:makeList]' 0 2 3 5 7 8 10) ('[data:makeList]' 0 1 3 5 6 8 10) ('[data:range]' 0 11) ('[data:range]' 0 11 2))) root steps)
 }
 
 to scales_transposed 'note or chord' semitones {
