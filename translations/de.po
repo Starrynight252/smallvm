@@ -1,17 +1,16 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 16:43+0200\n"
-"PO-Revision-Date: 2024-10-28 15:43+0000\n"
-"Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
+"PO-Revision-Date: 2024-10-29 15:59+0000\n"
+"Last-Translator: jadga h <jadga.h@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/microblocks/ide/"
 "de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: ENCODING\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.8.2-dev\n"
 
@@ -3920,3 +3919,51 @@ msgid "Find and report the index of an item in a list or a substring within a st
 msgstr ""
 "Gib die Stelle des Elements in der Liste oder der Teilzeichenfolge in der "
 "Zeichenfolge zurück. Gibt -1 zurück, falls nichts gefunden."
+
+#. Cutebot Pro library block
+msgid "CBPro IR code"
+msgstr "CBPro IR Code"
+
+#. Cutebot Pro library block
+msgid "CBPro set _ servo _ angle to _ deg"
+msgstr "CBPro setze _ Servo _ Winkel auf _ Grad"
+
+#. Cutebot Pro library block
+msgid "CBPro stop all"
+msgstr "CBPro stoppe alles"
+
+#. Octostudio communication library block
+msgid "duration _ ms"
+msgstr "Dauer _ ms"
+
+#. Block in Input category
+msgid "milliseconds since _"
+msgstr "Millisekunden seit _"
+
+#. Block in Input category
+msgid "microseconds since _"
+msgstr "Microsekunden seit _"
+
+#. Cutebot Pro library block
+msgid "CBPro move _ (-255 to 255 cm)"
+msgstr "CBPro gehe _ (-255 bis 255 cm)"
+
+#. Cutebot Pro library block
+msgid "CBPro distance (cm)"
+msgstr "CBPro Entfernung (cm)"
+
+#. Cutebot Pro library block
+msgid "CBPro turn _ degrees"
+msgstr "CBPro drehe _ Grad"
+
+#. Cutebot Pro library block
+msgid "CBPro set headlight _ to _"
+msgstr "CBPro setze Vorderlicht _ auf _"
+
+#. Cutebot Pro library block
+msgid "CBPro IR code received?"
+msgstr "CBPro IR Code empfangen?"
+
+#. Cutebot Pro library block
+msgid "CBPro set NeoPixel _ to _"
+msgstr "CBPro setze NeoPixel _ auf _"
