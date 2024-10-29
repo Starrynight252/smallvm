@@ -1,17 +1,16 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-29 09:24+0200\n"
-"PO-Revision-Date: 2024-10-29 08:24+0000\n"
+"PO-Revision-Date: 2024-10-29 15:59+0000\n"
 "Last-Translator: Peter Mathijssen <pmathijssen@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/microblocks/ide/nl/"
 ">\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: ENCODING\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.8.2-dev\n"
 
@@ -141,7 +140,7 @@ msgstr "als _ _"
 
 #. Block in Control category
 msgid "if _ _ else _"
-msgstr "als _ dan _ anders _"
+msgstr "als _ _ anders _"
 
 #. Block in Control category
 msgid "else if _ _"
@@ -5448,7 +5447,7 @@ msgstr "Reset de timer."
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Report the seconds since power up."
-msgstr ""
+msgstr "Laat het aantal seconden zien sinds het opstarten."
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Report the milliseconds since power up."
@@ -5456,7 +5455,7 @@ msgstr "Laat het aantal milliseconden zien sinds het opstarten."
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Report the microseconds since power up."
-msgstr "Geef het aantal microseconden sinds het opstarten."
+msgstr "Laat het aantal microseconden zien sinds het opstarten."
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Report the board type."
@@ -5764,12 +5763,14 @@ msgstr "Geef (-o) als de eerste invoer een waarde is van het gegevenstype."
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Convert a value to the given data type."
-msgstr ""
+msgstr "Converteer een waarde naar het opgegeven gegevenstype."
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 #. The (-o) tag turns into an icon of a boolean input set to on, or true (green)
 msgid "If the condition is (-o) report the first alternative otherwise report the second alternative."
 msgstr ""
+"Als de voorwaarde (-o) is, rapporteer dan het eerste alternatief. Anders "
+"rapporteer je het tweede alternatief."
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Map a value in the \"from\" range to the corresponding value in the \"to\" range."
