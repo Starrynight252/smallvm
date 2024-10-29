@@ -1,3 +1,20 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-29 09:24+0200\n"
+"PO-Revision-Date: 2024-10-29 08:24+0000\n"
+"Last-Translator: Peter Mathijssen <pmathijssen@gmail.com>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/microblocks/ide/nl/"
+">\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.8.2-dev\n"
+
 #. "Output" blocks category label
 msgid "cat;Output"
 msgstr "Output"
@@ -4488,6 +4505,7 @@ msgstr "Proberen om MicroBlocks op het board te updaten?"
 #. MicroBlocks IDE information
 msgid "The firmware on the board is not compatible with this version of MicroBlocks."
 msgstr ""
+"De firmware op het board is niet compatibel met deze versie van MicroBlocks."
 
 #. MicroBlocks doesn't need a translation, does it?
 msgid "MicroBlocks"
@@ -4708,13 +4726,15 @@ msgstr "Je zult worden gevraagd om het firmware bestand op te slaan."
 #. MicroBlocks IDE information
 msgid "If your micro:bit shows a sad face, save the firmware.hex file to your disk then drop it onto the MICROBIT drive."
 msgstr ""
+"Als er op uw micro:bit een verdrietig gezichtje staat, sla dan het firmware."
+"hex-bestand op uw schijf op en sleep het vervolgens naar de MICROBIT-schijf."
 
 #. MicroBlocks IDE information
 msgid "Save the firmware file when prompted."
 msgstr "Sla het firmwarebestand op wanneer daarom wordt gevraagd."
 
-#. MicroBlocks IDE information
 # %1 holds the drive name
+#. MicroBlocks IDE information
 msgid "Drag the firmware file you just saved to the %1 drive."
 msgstr "Sleep het firmwarebestand dat u zojuist hebt opgeslagen naar de %1 schijf."
 
@@ -5449,6 +5469,7 @@ msgstr "Geeft aan welke firmwareversie op het board is geladen."
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Reports the three-letter BLE ID of the board if it supports BLE."
 msgstr ""
+"Geeft de drieletterige BLE-ID van het board door als het BLE ondersteunt."
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 #. The (-o) tag turns into an icon of a boolean input set to on, or true (green)
@@ -5458,10 +5479,14 @@ msgstr "Geeft (-o) als een BLE-client is verbonden."
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Report the milliseconds since the given start milliseconds. Handles clock wrap."
 msgstr ""
+"Geef de milliseconden sinds de opgegeven startmilliseconden. Verwerkt "
+"klokomslag."
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Report the microseconds since the given start microseconds. Handles clock wrap."
 msgstr ""
+"Geef de microseconden sinds de gegeven startmicroseconden. Verwerkt "
+"klokomslag."
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 #. The (-o) tag turns into an icon of a boolean input set to on, or true (green)
@@ -5777,6 +5802,8 @@ msgstr "Geef het gegeven getal links verschoven met het gegeven aantal bits."
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Report the given number shifted right by the given number of bits (arithmetic shift; sign is maintained)."
 msgstr ""
+"Geef het gegeven getal rechts verschoven met het gegeven aantal bits ("
+"rekenkundige verschuiving; teken blijft behouden)."
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Set a variable to the given value."
@@ -5857,4 +5884,3 @@ msgstr "Geef een byte-array met de UTF-8 bytes van de gegeven string."
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Report the number of words of memory available. Stop button frees up memory."
 msgstr "Geef het aantal beschikbare woorden geheugen aan. Stoptoets maakt geheugen vrij."
-
