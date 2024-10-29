@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 16:23+0200\n"
-"PO-Revision-Date: 2024-10-29 08:24+0000\n"
+"PO-Revision-Date: 2024-10-30 05:26+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/microblocks/ide/"
 "es/>\n"
@@ -5664,3 +5664,123 @@ msgstr "fracción _/_"
 #. NeoPixel library block
 msgid "shift NeoPixel _ color by _"
 msgstr "cambiar el color de NeoPixel _ por _"
+
+#. Cutebot Pro library block dropdown option
+msgid "360 degree"
+msgstr "360 grados"
+
+#. Cutebot Pro library block
+msgid "CBPro set NeoPixel _ to _"
+msgstr "CBRPro establece NeoPixel _ a _"
+
+#. Cutebot Pro library block dropdown option
+#. as in turn "left" on your axis
+msgid "cutebotturn;left-in-place"
+msgstr "girar a la izquierda"
+
+#. Cutebot Pro library block dropdown option
+msgid "180 degree"
+msgstr "180 grados"
+
+#. Cutebot Pro library block dropdown option
+msgid "270 degree"
+msgstr "270 grados"
+
+#. Cutebot Pro library block dropdown option
+msgid "135 degrees"
+msgstr "135 grados"
+
+#. MQTT library block
+msgid "testWill"
+msgstr "testWill"
+
+#. Chiptune library block
+msgid "hihat for _ ms on DAC pin _"
+msgstr "hihat para _ ms en el pin del DAC _"
+
+#. micro:STEAMakers library block
+msgid "m꞉s scroll text _ with color _ "
+msgstr "m:s texto de desplazamiento _ con color _ "
+
+#. OLED Graphics library block
+msgid "set pixel x _ y _ erase _"
+msgstr "establecer píxel x _ y _ borrar _"
+
+#. Chiptune library block
+msgid "laser for _ ms with frequency _ speed _ on pin _"
+msgstr "láser para _ ms con frecuencia _ velocidad _ en pin _"
+
+#. Chiptune library block
+msgid "kick for _ ms on pin _"
+msgstr "Kick para _ms en pin_"
+
+#. Cutebot Pro library block dropdown option
+msgid "45 degrees"
+msgstr "45 grados"
+
+#. Cutebot Pro library block dropdown option
+msgid "180 degrees"
+msgstr "180 grados"
+
+#. Cutebot Pro library block
+msgid "CBPro speed of _ wheel (cm/s)"
+msgstr "CBPro velocidad del _giro (cm/s)"
+
+#. Cutebot Pro library block
+msgid "CBPro stop all"
+msgstr "CBPro detiene todo"
+
+#. Cutebot Pro library block
+msgid "CBPro distance (cm)"
+msgstr "Distancia CBPro (cm)"
+
+#. Cutebot Pro library block dropdown option
+msgid "90 degrees"
+msgstr "90 grados"
+
+#. Cutebot Pro library block
+msgid "CBPro move _ (-255 to 255 cm)"
+msgstr "CBPro mover _ (-255 a 255 cm)"
+
+#. MQTT library block
+msgid "Last will!"
+msgstr "¡Última voluntad!"
+
+#. MQTT library block
+msgid "MQTT set will topic _ payload _"
+msgstr "El conjunto MQTT se referirá a _ carga útil _"
+
+#. MQTT library block
+msgid "buffer sizes _"
+msgstr "tamaños del buffer _"
+
+#. Chiptune library block
+msgid "noise for _ ms pitch shifted by _ on pin _"
+msgstr "ruido durante _ ms tono cambiado por _ en el pin _"
+
+#. Chiptune library block
+msgid "fade noise for _ ms pitch shifted by _ on DAC pin _"
+msgstr ""
+"ruido de atenuación para _ ms pitch desplazado por _ en el pin del DAC _"
+
+#. Chiptune library block
+msgid "snare for _ ms on DAC pin _"
+msgstr "capturar durante _ ms en el pin _ del DAC"
+
+#. Cutebot Pro library block dropdown option
+#. as in turn "right" on your axis
+msgid "cutebotturn;right-in-place"
+msgstr "girar a la derecha"
+
+#. Cutebot Pro library block
+msgid "CBPro set wheel speed left _ right _ (-60 to 60 cm/s)"
+msgstr ""
+"CBPro establece la velocidad de los giros izquierda_derecha_(-60 a 60 cm/s)"
+
+#. Cutebot Pro library block
+msgid "CBPro turn _ degrees"
+msgstr "CBPro gira _ grados"
+
+#. Cutebot Pro library block
+msgid "CBPro set headlight _ to _"
+msgstr "CBPro establece el radio _ en _"
