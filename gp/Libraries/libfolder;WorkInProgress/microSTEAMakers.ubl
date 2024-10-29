@@ -1,16 +1,16 @@
 module microSTEAMakers
 author 'Joan Guillén'
-version 1 3 
+version 1 4 
 depends Tone Color 
 tags keyestudio steam 
-choices ms_energyMeter 'ms;start' 'ms;stop' 'ms;reset' 
+choices ms_led_imageMenu heart 'small heart' yes no happy sad confused angry asleep surprised silly fabulous meh 't-shirt' 'roller skate' duck house tortoise butterfly 'stick figure' ghost sword giraffe skull umbrella snake rabbit cow 'quarter note' 'eight note' pitchfork target triangle 'left triangle' 'chess board' diamond 'small diamond' square 'small square' scissors 
 choices ms_inclination down x y 
 choices ms_accel x y z 
 choices ms_buttons A B 
 choices ms_energy mA mV mW 
-choices ms_led_imageMenu heart 'small heart' yes no happy sad confused angry asleep surprised silly fabulous meh 't-shirt' 'roller skate' duck house tortoise butterfly 'stick figure' ghost sword giraffe skull umbrella snake rabbit cow 'quarter note' 'eight note' pitchfork target triangle 'left triangle' 'chess board' diamond 'small diamond' square 'small square' scissors 
+choices ms_energyMeter 'ms;start' 'ms;stop' 'ms;reset' 
 description 'Provides custom blocks for the micro:STEAMakers, an ESP32 board with WiFi, BLE, 5x5 RGB LED matrix, 2 buttons, touch, light, sound, temperature and humidity sensors, six-axis accelerometer/gyroscope, energy control, and GPIO and I2C pins for additional extensions.'
-variables _ms_neoPixels _ms_neoPixels_on _sb_neoPixels_on _MiKe_circlePixels _ms_neoPixels_scale _ms_scrolling_stopped _ms_energyReading _ms_energySum _ms_aht20_on _ms_aht20_reading _ms_aht20_data _ms_MPU6050_on _ms_MPU6050_add 
+variables _ms_neoPixels _ms_neoPixels_scale _ms_scrolling_stopped _ms_energyReading _ms_energySum _ms_aht20_on _ms_aht20_reading _ms_aht20_data _ms_MPU6050_on _ms_MPU6050_add 
 
   spec ' ' 'ms_display' 'ms display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _' 'color color color color color color color color color color color color color color color color color color color color color color color color color'
   spec ' ' 'ms_displayShape' 'ms display #BR# _ #BR# with color _' 'microbitDisplay color' 15237440
@@ -104,31 +104,25 @@ to '_ms_imageNames' {
 }
 
 to '_ms_neoPixels_setup' {
-  _ms_neoPixels = (newList 25 0)
-  '[display:neoPixelSetPin]' 13 (booleanConstant false)
+  if (_ms_neoPixels == 0) {_ms_neoPixels = (newList 25 0)}
   _ms_neoPixels_scale = 100
-  _ms_neoPixels_on = (booleanConstant true)
-  if _sb_neoPixels_on {
-    _sb_neoPixels_on = (booleanConstant false)
-  }
-  if (_MiKe_circlePixels != 0) {
-    _MiKe_circlePixels = 0
-  }
 }
 
 to '_ms_neoPixels_update' {
-  comment 'Alway set the NeoPixel pin; may have been changed by another library."
-  ' [display:neoPixelSetPin]' 13 (booleanConstant false)
+  comment 'Alway set the NeoPixel pin; may have been changed by another library.'
+  '[display:neoPixelSetPin]' 13 false
   if (100 == _ms_neoPixels_scale) {
     '[display:neoPixelSend]' _ms_neoPixels
   } else {
     local 'currentPixels' (newList 25)
+    local 'adjustedScale' ('[misc:rescale]' _ms_neoPixels_scale 0 100 31 100)
+    adjustedScale = (maximum 0 (minimum adjustedScale 100))
     for pix 25 {
-      atPut pix currentPixels ('[misc:hsvColor]' ('[misc:hue]' (at pix _ms_neoPixels)) ('[misc:saturation]' (at pix _ms_neoPixels)) ((('[misc:brightness]' (at pix _ms_neoPixels)) * _ms_neoPixels_scale) / 100))
+      atPut pix currentPixels ('[misc:hsvColor]' ('[misc:hue]' (at pix _ms_neoPixels)) ('[misc:saturation]' (at pix _ms_neoPixels)) ((('[misc:brightness]' (at pix _ms_neoPixels)) * adjustedScale) / 100))
     }
     '[display:neoPixelSend]' currentPixels
   }
-  waitMicros 100
+  waitMicros 300
 }
 
 to ms_accel axis {
@@ -165,13 +159,13 @@ to ms_buttons but {
 }
 
 to ms_clear_display {
-  if (not _ms_neoPixels_on) {'_ms_neoPixels_setup'}
+  '_ms_neoPixels_setup'
   atPut 'all' _ms_neoPixels 0
   '_ms_neoPixels_update'
 }
 
 to ms_display c1 c2 c3 c4 c5 c6 c7 c8 c9 c10 c11 c12 c13 c14 c15 c16 c17 c18 c19 c20 c21 c22 c23 c24 c25 {
-  if (not _ms_neoPixels_on) {'_ms_neoPixels_setup'}
+  '_ms_neoPixels_setup'
   atPut 1 _ms_neoPixels c1
   atPut 2 _ms_neoPixels c2
   atPut 3 _ms_neoPixels c3
@@ -215,7 +209,7 @@ to ms_displayImage imgName color {
 }
 
 to ms_displayShape shape color {
-  if (not _ms_neoPixels_on) {'_ms_neoPixels_setup'}
+  '_ms_neoPixels_setup'
   local 'checker' 1
   for i 25 {
     if ((checker & shape) > 0) {
@@ -310,7 +304,7 @@ to ms_light {
 }
 
 to ms_plot x y color {
-  if (not _ms_neoPixels_on) {'_ms_neoPixels_setup'}
+  '_ms_neoPixels_setup'
   if (and (0 < x) (and (0 < y) (and (6 > x) (6 > y)))) {
     atPut (x + ((y - 1) * 5)) _ms_neoPixels color
     '_ms_neoPixels_update'
@@ -354,7 +348,7 @@ to ms_scroll_text label color specificDelay {
 }
 
 to ms_setGlobalBrightnessScale scale {
-  if (not _ms_neoPixels_on) {'_ms_neoPixels_setup'}
+  '_ms_neoPixels_setup'
   _ms_neoPixels_scale = scale
   '_ms_neoPixels_update'
 }
@@ -390,7 +384,7 @@ to ms_touching {
 }
 
 to ms_unplot x y {
-  if (not _ms_neoPixels_on) {'_ms_neoPixels_setup'}
+  '_ms_neoPixels_setup'
   if (and (0 < x) (and (0 < y) (and (6 > x) (6 > y)))) {
     atPut (x + ((y - 1) * 5)) _ms_neoPixels 0
     '_ms_neoPixels_update'
