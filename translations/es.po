@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 16:23+0200\n"
-"PO-Revision-Date: 2024-10-30 05:26+0000\n"
-"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"PO-Revision-Date: 2024-10-30 06:10+0000\n"
+"Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/microblocks/ide/"
 "es/>\n"
 "Language: es\n"
@@ -359,7 +359,7 @@ msgstr "Cutebot"
 
 #. Cutebot library block
 msgid "Cutebot set NeoPixel _ to _"
-msgstr "Pon el NeoPíxel _ del Cutebot a _"
+msgstr "pon el NeoPíxel _ del Cutebot a _"
 
 #. Sphero-RVR robot library block
 msgid "reset the yaw"
@@ -393,7 +393,7 @@ msgstr "pliega"
 #. Cutebot Pro library block dropdown option
 #. as in "right" side
 msgid "cutebotside;right"
-msgstr "derecho"
+msgstr "derecha"
 
 #. Block input right-click context menu option
 msgid "number/string"
@@ -402,7 +402,7 @@ msgstr "número/texto"
 #. Cutebot Pro library block dropdown option
 #. as in turn "right"
 msgid "cutebotturn;right"
-msgstr "derecho"
+msgstr "derecha"
 
 #. Library folder
 msgid "libfolder;AI"
@@ -457,7 +457,7 @@ msgstr "No"
 #. Cutebot Pro library block dropdown option
 #. as in "left" side
 msgid "cutebotside;left"
-msgstr "izquierdo"
+msgstr "izquierda"
 
 #. String in file picker and library dialogs
 msgid "Invalid URL"
@@ -1007,7 +1007,7 @@ msgstr "_ números pseudoaleatorios entre _ y _ con semilla _"
 
 #. WiFi Radio library block
 msgid "wifi last string"
-msgstr "wifi último texto"
+msgstr "último texto recibido por wifi"
 
 #. Web Things library block
 msgid "thing description JSON"
@@ -1079,7 +1079,7 @@ msgstr "Farm consumo eléctrico _"
 
 #. Cutebot library block
 msgid "Cutebot set headlight _ to _"
-msgstr "Pon el faro _ a _"
+msgstr "pon el faro _ a _"
 
 #. MIDI library block
 msgid "set MIDI note _ to _ on channel _ volume _"
@@ -1341,7 +1341,7 @@ msgstr "detén servo _"
 
 #. Cutebot library block
 msgid "Cutebot sees line on left _ right _"
-msgstr "El Cutebot ve la línea a su izquierda _ y su derecha _"
+msgstr "Cutebot ve línea a su izquierda _ y su derecha _"
 
 #. Citilab Fantàstic Robot library block
 msgid "move fantàstic _ mm"
@@ -1803,7 +1803,7 @@ msgstr "patín"
 
 #. Cutebot library block
 msgid "Cutebot set servo _ to speed _ (-100 to 100)"
-msgstr "Fija la velocidad del servo _ a _ (-100 a 100)"
+msgstr "fija la velocidad del servo _ a _ (-100 a 100)"
 
 #. Fractions library block
 msgid "numerator of fraction _"
@@ -1879,7 +1879,7 @@ msgstr "amarillo"
 
 #. WiFi Radio library block
 msgid "wifi last number"
-msgstr "wifi último número"
+msgstr "último número recibido por wifi"
 
 #. BirdBrain Technologies Finch Robot library block
 msgid "Backward"
@@ -1951,7 +1951,7 @@ msgstr "envía al dispositivo IR _ el comando _"
 
 #. OLED Graphics library block
 msgid "set video _"
-msgstr "configurar vídeo _"
+msgstr "configura vídeo a _"
 
 #. BME280 environmental sensor library block
 msgid "bmx280 altitude (feet)"
@@ -2191,7 +2191,7 @@ msgstr "Nombre_de_red"
 
 #. WiFi Radio library block
 msgid "wifi message received?"
-msgstr "wifi ¿mensaje recibido?"
+msgstr "¿mensaje wifi recibido?"
 
 #. BirdBrain Technologies Hummingbird kit library block
 msgid "humm;Distance (cm)"
@@ -2251,11 +2251,11 @@ msgstr "conecta"
 
 #. Elecfreaks Octopus sensor library block
 msgid "Octopus LED pin _ toggle to _"
-msgstr "Octopus pin LED _ cambiar a _"
+msgstr "cambia pin LED _ a _"
 
 #. Elecfreaks Octopus sensor library block
 msgid "Octopus value of water level (0~40mm) at pin _"
-msgstr "Octopus nivel de agua (0~40mm) en el pin _"
+msgstr "nivel de agua (0~40mm) en el pin _"
 
 #. Settings menu option
 msgid "Select board type:"
@@ -2297,15 +2297,15 @@ msgstr "exporta funciones como librería"
 
 #. Wukong robot library block
 msgid "Wukong set motor _ to _ (-100 to 100)"
-msgstr "Pon el motor _ a _ (-100 a 100)"
+msgstr "pon el motor _ a _ (-100 a 100)"
 
 #. Elecfreaks Octopus sensor library block
 msgid "Octopus LED pin _ brightness _ %"
-msgstr "Octopus pin LED _ brillo al _ %"
+msgstr "fija brillo de pin LED _ al _ %"
 
 #. Elecfreaks Octopus sensor library block
 msgid "Octopus OLED clear"
-msgstr "Octopus limpiar pantalla OLED"
+msgstr "limpia pantalla OLED"
 
 #. Process finished information
 msgid "Done!"
@@ -2339,7 +2339,7 @@ msgstr "detén todos los motores"
 #. Cutebot Pro library block dropdown option
 #. as in "both" wheels
 msgid "cutebotwheel;both"
-msgstr "ambos"
+msgstr "ambas"
 
 #. String in file picker and library dialogs
 #. as in "by Jane Doe", the author of this library
@@ -2426,7 +2426,7 @@ msgstr "elimina la definición del bloque..."
 
 #. Elecfreaks Octopus sensor library block
 msgid "Octopus value of light intensity (Lux) at pin _"
-msgstr "Octopus valor de la intensidad luminosa (Lux) en el pin _"
+msgstr "valor de la intensidad luminosa (Lux) en el pin _"
 
 #. Variable right-click context menu tooltip
 msgid "find scripts or block definitions where this variable is being read"
@@ -2440,7 +2440,7 @@ msgstr "etiqueta"
 #. Cutebot Pro library block dropdown option
 #. as in "left" wheel
 msgid "cutebotwheel;left"
-msgstr "izquierdo"
+msgstr "izquierda"
 
 #. About window info
 msgid "Created with GP"
@@ -2460,7 +2460,7 @@ msgstr "corta"
 
 #. Elecfreaks Octopus sensor library block
 msgid "Octopus sonar trig _ echo _ distance (cm)"
-msgstr "Octopus sensor de distancia (cm) trigger _ echo _"
+msgstr "sensor de distancia (cm) trigger _ echo _"
 
 #. Sphero-RVR robot library block
 msgid "sleep"
@@ -2617,7 +2617,7 @@ msgstr "abandona el tema de MQTT _"
 
 #. MQTT library block
 msgid "payload for MQTT event _"
-msgstr "contenido del evento MQTT"
+msgstr "contenido del evento MQTT _"
 
 #. MicroBlocks IDE information
 msgid "The MicroBlocks in your board is not current"
@@ -3130,7 +3130,7 @@ msgstr "puerto remoto de UDP"
 #. Cutebot Pro library block dropdown option
 #. as in "right" wheel
 msgid "cutebotwheel;right"
-msgstr "derecho"
+msgstr "derecha"
 
 #. Cutebot Pro library block dropdown option
 #. robot motion direction
@@ -3143,19 +3143,19 @@ msgstr "Wukong"
 
 #. Wukong robot library block
 msgid "Wukong stop motor _"
-msgstr "Detén el motor _"
+msgstr "detén el motor _"
 
 #. Wukong robot library block
 msgid "Wukong stop all"
-msgstr "Detén todos los motores"
+msgstr "detén todos los motores"
 
 #. Wukong robot library block
 msgid "Wukong set NeoPixels _ _ _ _"
-msgstr "Pon los NeoPíxeles del Wukong a _ _ _ _"
+msgstr "pon los NeoPíxeles del Wukong a _ _ _ _"
 
 #. Wukong robot library block
 msgid "Wukong set LED brightness to _"
-msgstr "Fija el brillo del LED a _"
+msgstr "fija el brillo del LED a _"
 
 #. Joystick:bit library block
 msgid "button _ is pressed"
@@ -3175,23 +3175,23 @@ msgstr "pon el motor de _ grados número _ a ángulo _"
 
 #. Elecfreaks Octopus sensor library block
 msgid "Octopus value of trimpot (0~1023) at pin _"
-msgstr "Octopus valor del potenciometro (0~1023) en el pin _"
+msgstr "valor del potenciómetro (0~1023) en el pin _"
 
 #. Elecfreaks Octopus sensor library block
 msgid "Octopus OLED show _ at x _ y _"
-msgstr "Octopus OLED muestra _ en las coordenadas x _ y _"
+msgstr "muestra _ en las coordenadas x _ y _ del OLED"
 
 #. Elecfreaks Octopus sensor library block
 msgid "Octopus OLED draw line from x _ y _ to x _ y _"
-msgstr "Octopus OLED dibuja una línea desde las coordenadas x _ y _ a x _ y _"
+msgstr "dibuja línea desde x _ y _ a x _ y _ en el OLED"
 
 #. Elecfreaks Octopus sensor library block
 msgid "Octopus OLED draw pixel x _ y _"
-msgstr "Octopus OLED pinta un píxel en las coordenades x _ y _"
+msgstr "pinta un píxel en x _ y _ en el OLED"
 
 #. Elecfreaks Octopus sensor library block
 msgid "Octopus OLED draw circle x _ y _ radius _"
-msgstr "Octopus OLED dibuja un círculo x _ y _ radio _"
+msgstr "dibuja un círculo en x _ y _ con radio _ en el OLED"
 
 #. MicroBlocks IDE information
 msgid "Use \"Connect\" button to connect to a MicroBlocks device."
@@ -3522,7 +3522,7 @@ msgstr "Home apaga Neopixels"
 
 #. Wukong robot library block
 msgid "Wukong set servo _ to speed _ (-100 to 100)"
-msgstr "Pon el servo _ a velocidad _ (-100 a 100)"
+msgstr "pon el servo _ a velocidad _ (-100 a 100)"
 
 #. In MicroBlocks IDE connection menu. Select "other..." serial port
 msgid "other..."
@@ -3693,7 +3693,7 @@ msgstr ""
 
 #. NeoPixel library block
 msgid "shift all NeoPixel colors by _"
-msgstr "cambia todos los colores de NeoPixel por _"
+msgstr "cambia todos los colores de los NeoPíxels por _"
 
 #. "Control" blocks category label
 msgid "cat;Control"
@@ -3811,7 +3811,7 @@ msgstr "Home pon _ _ _ _ en Neopixels"
 #. Cutebot Pro library block dropdown option
 #. as in turn "left"
 msgid "cutebotturn;left"
-msgstr "izquierdo"
+msgstr "izquierda"
 
 #. NeZha robot library label
 msgid "NeZha"
@@ -4907,7 +4907,7 @@ msgstr "MQTT conectado"
 
 #. MQTT library block
 msgid "MQTT disconnect"
-msgstr "MQTT desconectado"
+msgstr "desconecta MQTT"
 
 #. MQTT library block
 msgid "testTopic"
@@ -4915,7 +4915,7 @@ msgstr "temaDePrueba"
 
 #. MQTT library block
 msgid "topic for MQTT event _"
-msgstr "tema del evento MQTT"
+msgstr "tema del evento MQTT _"
 
 #. UDP library block
 msgid "UDP start port _"
@@ -4931,39 +4931,39 @@ msgstr "recibe paquete UDP"
 
 #. WiFi Radio library block
 msgid "wifi send number _"
-msgstr "wifi envia numero _"
+msgstr "envía numero _ por wifi"
 
 #. WiFi Radio library block
 msgid "wifi send string _"
-msgstr "wifi envia texto _"
+msgstr "envía texto _ por wifi"
 
 #. WiFi Radio library block
 msgid "wifi send pair _ = _"
-msgstr "wifi enviar par _ = _"
+msgstr "envía par _ = _ por wifi"
 
 #. WiFi Radio library block
 msgid "wifi set group _ (0-255)"
-msgstr "wifi establecer grupo _ (0-255)"
+msgstr "establece grupo wifi a _ (0-255)"
 
 #. Cutebot library block
 msgid "Cutebot set wheel left _ right _ (-100 to 100)"
-msgstr "Pon la rueda izquierda a _ y la derecha a _ (-100 a 100)"
+msgstr "pon la rueda izquierda a _ y la derecha a _ (-100 a 100)"
 
 #. Cutebot library block
 msgid "Cutebot stop wheels"
-msgstr "Detén las ruedas"
+msgstr "detén las ruedas"
 
 #. Cutebot library block
 msgid "Cutebot set servo _ to _ degrees (-90 to 90)"
-msgstr "Pon el servo a _ grados (-90 a 90)"
+msgstr "pon servo _ a _ grados (-90 a 90)"
 
 #. Cutebot library block
 msgid "Cutebot _ line sensor"
-msgstr "Valor del sensor de línea _"
+msgstr "valor del sensor de línea _"
 
 #. Cutebot library block
 msgid "Cutebot distance (cm)"
-msgstr "Distancia frontal (cm)"
+msgstr "distancia frontal (cm)"
 
 #. Cutebot Pro library block dropdown option
 #. as in "right" light
@@ -4972,7 +4972,7 @@ msgstr "derecho"
 
 #. Wukong robot library block
 msgid "Wukong set servo _ to _ degrees (-90 to 90)"
-msgstr "Pon el servo _ a _ grados (-90 a 90)"
+msgstr "pon el servo _ a _ grados (-90 a 90)"
 
 #. Sphero-RVR robot library block
 msgid "drive with speed _ and heading _"
@@ -4996,32 +4996,32 @@ msgstr "pon el servo de rotación contínua _ a velocidad _ %"
 
 #. Elecfreaks Octopus sensor library block
 msgid "Octopus 180° servo pin _ angle to _ ° (0~180)"
-msgstr "Octopus servo de 180° en pin _ ángulo a _ ° (0~180)"
+msgstr "fija servo de 180º en pin _ a ángulo _ ° (0~180)"
 
 #. Elecfreaks Octopus sensor library block
 msgid "Octopus value of DHT11 temperature (°C) at pin _"
-msgstr "Octopus temperatura (°C) del DHT11 en el pin _"
+msgstr "temperatura (°C) del DHT11 en el pin _"
 
 #. Elecfreaks Octopus sensor library block
 msgid "Octopus value of DHT11 humidity (0~100) at pin _"
-msgstr "Octopus humedad (0~100) del DHT11 en el pin _"
+msgstr "humedad (0~100) del DHT11 en el pin _"
 
 #. Elecfreaks Octopus sensor library block
 msgid "Octopus value of noise (dB) at pin _"
-msgstr "Octopus nivel de sonido (dB) en el pin _"
+msgstr "nivel de sonido (dB) en el pin _"
 
 #. Elecfreaks Octopus sensor library block
 msgid "Octopus OLED draw rectangle x _ y _ w _ h _ rounding _ (3~15)"
 msgstr ""
-"Octopus OLED dibuja un rectángulo x _ y _ ancho _ alto _ redondeado _ (3~15)"
+"dibuja rectángulo a x _ y _ ancho _ alto _ redondeado _ (3~15) en el OLED"
 
 #. Elecfreaks Octopus sensor library block
 msgid "Octopus OLED fill rectangle x _ y _ w _ h _"
-msgstr "Octopus OLED dibuja un rectángulo sólido x _ y _ ancho _ alto _"
+msgstr "pinta un rectángulo en x _ y _ ancho _ alto _ en el OLED"
 
 #. Elecfreaks Octopus sensor library block
 msgid "Octopus OLED fill circle x _ y _ radius _"
-msgstr "Octopus OLED dibuja un círculo sólido x _ y _ radio _"
+msgstr "pinta un círculo en x _ y _ con radio _ en el OLED"
 
 #. Octostudio communication library block
 msgid "Octo beam to phones _"
@@ -5559,7 +5559,7 @@ msgstr "escala _"
 
 #. TFT Display library block
 msgid "set TFT backlight _ (0-10)"
-msgstr "Establecer la retroiluminación TFT _ (0-10)"
+msgstr "fija luz de fondo a _ (0-10)"
 
 #. Color library block
 msgid "hue _"
@@ -5567,15 +5567,15 @@ msgstr "tono _"
 
 #. Block in Comm category
 msgid "i2c device _ exists?"
-msgstr "¿El dispositivo i2c _ existe?"
+msgstr "¿existe el dispositivo i2c _ ?"
 
 #. Block in Operators category
 msgid "sqrt _"
-msgstr "sqrt _"
+msgstr "raíz de _"
 
 #. Color library block
 msgid "color hue _ (0-360) saturation _ % brightness _ %"
-msgstr "tono de color _ (0-360) saturación _ % brillo _ %"
+msgstr "color con tono _ (0-360) saturación _ % brillo _ %"
 
 #. General MIDI instrument category
 msgid "gm;SFX"
@@ -5583,23 +5583,23 @@ msgstr "Efectos especiales"
 
 #. Color library block
 msgid "blue _"
-msgstr "azul _"
+msgstr "azul de _"
 
 #. OLED Graphics library block
 msgid "make image _"
-msgstr "hacer imagen _"
+msgstr "construye imagen _"
 
 #. Color library block
 msgid "saturation _"
-msgstr "saturación _"
+msgstr "saturación de _"
 
 #. Color library block
 msgid "green _"
-msgstr "verde _"
+msgstr "verde de _"
 
 #. Color library block
 msgid "red _"
-msgstr "rojo _"
+msgstr "rojo de _"
 
 #. Color library block
 msgid "_ with saturation _ %"
@@ -5607,11 +5607,11 @@ msgstr "_ con saturación _ %"
 
 #. Color library block
 msgid "brightness _"
-msgstr "brillo _"
+msgstr "brillo de _"
 
 #. TFT Display library block
 msgid "draw bitmap _ palette _ on TFT at x _ y _"
-msgstr "dibujar el mapa de bits _ paleta _ en TFT a x _ y _"
+msgstr "dibuja mapa de bits _ con paleta _ en x _ y _"
 
 #. TFT Display library block
 msgid "bg color _"
@@ -5623,15 +5623,15 @@ msgstr "Efectos especiales"
 
 #. Color library label
 msgid "Color Operators"
-msgstr "Edición de color"
+msgstr "Color"
 
 #. TFT display library block
 msgid "clear TFT display "
-msgstr "Pantalla TFT clara"
+msgstr "borra pantalla TFT"
 
 #. Color library block
 msgid "_ with hue _ (0-360)"
-msgstr "_ con matiz _ (0-360)"
+msgstr "_ con tono _ (0-360)"
 
 #. Block in Input category
 msgid "milliseconds since _"
@@ -5639,7 +5639,7 @@ msgstr "milisegundos desde _"
 
 #. Block in Input category
 msgid "end time _"
-msgstr "hora de finalización _"
+msgstr "hasta _"
 
 #. Color library block
 msgid "_ with brightness _ %"
@@ -5647,7 +5647,7 @@ msgstr "_ con brillo _ %"
 
 #. TFT Display library block
 msgid "draw text _ on TFT at x _ y _ color _"
-msgstr "dibujar el texto _ en TFT a x _ y _ color _"
+msgstr "escribe _ en x _ y _ con color _"
 
 #. TFT Display library and Color library block
 msgid "gray _ %"
@@ -5655,7 +5655,7 @@ msgstr "gris _ %"
 
 #. TFT Display library block
 msgid "draw vector x _ y _ angle _ length _ color _"
-msgstr "dibujar el vector x _ y _ ángulo _ longitud _ color _"
+msgstr "dibuja vector x _ y _ ángulo _ longitud _ color _"
 
 #. Fractions library block
 msgid "fract _ / _"
@@ -5663,7 +5663,7 @@ msgstr "fracción _/_"
 
 #. NeoPixel library block
 msgid "shift NeoPixel _ color by _"
-msgstr "cambiar el color de NeoPixel _ por _"
+msgstr "cambia el color del NeoPíxel _ por _"
 
 #. Cutebot Pro library block dropdown option
 msgid "360 degree"
@@ -5671,12 +5671,12 @@ msgstr "360 grados"
 
 #. Cutebot Pro library block
 msgid "CBPro set NeoPixel _ to _"
-msgstr "CBRPro establece NeoPixel _ a _"
+msgstr "fija NeoPíxel _ del CBPro a _"
 
 #. Cutebot Pro library block dropdown option
 #. as in turn "left" on your axis
 msgid "cutebotturn;left-in-place"
-msgstr "girar a la izquierda"
+msgstr "izquierda (sobre su eje)"
 
 #. Cutebot Pro library block dropdown option
 msgid "180 degree"
@@ -5692,27 +5692,27 @@ msgstr "135 grados"
 
 #. MQTT library block
 msgid "testWill"
-msgstr "testWill"
+msgstr "testamentoDePrueba"
 
 #. Chiptune library block
 msgid "hihat for _ ms on DAC pin _"
-msgstr "hihat para _ ms en el pin del DAC _"
+msgstr "toca plato durante _ ms en el pin DAC _"
 
 #. micro:STEAMakers library block
 msgid "m꞉s scroll text _ with color _ "
-msgstr "m:s texto de desplazamiento _ con color _ "
+msgstr "anima el texto _ con color _ "
 
 #. OLED Graphics library block
 msgid "set pixel x _ y _ erase _"
-msgstr "establecer píxel x _ y _ borrar _"
+msgstr "pon píxel x _ y _ borrado _"
 
 #. Chiptune library block
 msgid "laser for _ ms with frequency _ speed _ on pin _"
-msgstr "láser para _ ms con frecuencia _ velocidad _ en pin _"
+msgstr "láser durante _ ms con frecuencia _ velocidad _ en pin _"
 
 #. Chiptune library block
 msgid "kick for _ ms on pin _"
-msgstr "Kick para _ms en pin_"
+msgstr "bombo durante _ms en pin_"
 
 #. Cutebot Pro library block dropdown option
 msgid "45 degrees"
@@ -5724,15 +5724,15 @@ msgstr "180 grados"
 
 #. Cutebot Pro library block
 msgid "CBPro speed of _ wheel (cm/s)"
-msgstr "CBPro velocidad del _giro (cm/s)"
+msgstr "velocidad de la rueda _ (cm/s)"
 
 #. Cutebot Pro library block
 msgid "CBPro stop all"
-msgstr "CBPro detiene todo"
+msgstr "deténlo todo"
 
 #. Cutebot Pro library block
 msgid "CBPro distance (cm)"
-msgstr "Distancia CBPro (cm)"
+msgstr "distancia frontal (cm)"
 
 #. Cutebot Pro library block dropdown option
 msgid "90 degrees"
@@ -5740,7 +5740,7 @@ msgstr "90 grados"
 
 #. Cutebot Pro library block
 msgid "CBPro move _ (-255 to 255 cm)"
-msgstr "CBPro mover _ (-255 a 255 cm)"
+msgstr "mueve _ (-255 a 255 cm)"
 
 #. MQTT library block
 msgid "Last will!"
@@ -5748,7 +5748,7 @@ msgstr "¡Última voluntad!"
 
 #. MQTT library block
 msgid "MQTT set will topic _ payload _"
-msgstr "El conjunto MQTT se referirá a _ carga útil _"
+msgstr "fija el testamento de MQTT a tema _ contenido _"
 
 #. MQTT library block
 msgid "buffer sizes _"
@@ -5756,31 +5756,46 @@ msgstr "tamaños del buffer _"
 
 #. Chiptune library block
 msgid "noise for _ ms pitch shifted by _ on pin _"
-msgstr "ruido durante _ ms tono cambiado por _ en el pin _"
+msgstr "ruido durante _ ms con tono desplazado por _ en el pin _"
 
 #. Chiptune library block
 msgid "fade noise for _ ms pitch shifted by _ on DAC pin _"
-msgstr ""
-"ruido de atenuación para _ ms pitch desplazado por _ en el pin del DAC _"
+msgstr "atenúa ruido en _ ms con tono desplazado por _ en el pin DAC _"
 
 #. Chiptune library block
 msgid "snare for _ ms on DAC pin _"
-msgstr "capturar durante _ ms en el pin _ del DAC"
+msgstr "caja durante _ ms en el pin DAC _"
 
 #. Cutebot Pro library block dropdown option
 #. as in turn "right" on your axis
 msgid "cutebotturn;right-in-place"
-msgstr "girar a la derecha"
+msgstr "derecha (sobre su eje)"
 
 #. Cutebot Pro library block
 msgid "CBPro set wheel speed left _ right _ (-60 to 60 cm/s)"
 msgstr ""
-"CBPro establece la velocidad de los giros izquierda_derecha_(-60 a 60 cm/s)"
+"fija la velocidad de la rueda izquierda a _ y derecha a _ (-60 a 60 cm/s)"
 
 #. Cutebot Pro library block
 msgid "CBPro turn _ degrees"
-msgstr "CBPro gira _ grados"
+msgstr "gira _ grados"
 
 #. Cutebot Pro library block
 msgid "CBPro set headlight _ to _"
-msgstr "CBPro establece el radio _ en _"
+msgstr "pon el faro _ a _"
+
+#. Octostudio communication library block
+msgid "Octo last beam"
+msgstr "último mensaje Octo"
+
+#. Octostudio communication library block
+msgid "Octo beam received?"
+msgstr "¿mensaje Octo recibido?"
+
+#. Octostudio communication library block
+msgid "Octo set group _ (0-99)"
+msgstr "fija grupo de Octo a _ (0-99)"
+
+#. Cutebot Pro library block
+msgid "CBPro stop wheel _"
+msgstr "detén rueda _"
