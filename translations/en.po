@@ -5044,7 +5044,7 @@ msgstr "Language"
 
 #. Language menu item. Takes the user to documentation about adding a missing language
 msgid "Missing language?"
-msgstr ""
+msgstr "Missing language?"
 
 #. As in load a "Custom" language file
 msgid "Custom..."
