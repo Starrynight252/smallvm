@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 16:23+0200\n"
-"PO-Revision-Date: 2024-10-30 09:42+0000\n"
+"PO-Revision-Date: 2024-10-30 10:50+0000\n"
 "Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/microblocks/ide/"
 "es/>\n"
@@ -5696,7 +5696,7 @@ msgstr "testamentoDePrueba"
 
 #. Chiptune library block
 msgid "hihat for _ ms on DAC pin _"
-msgstr "toca plato durante _ ms en el pin DAC _"
+msgstr "plato durante _ ms en el pin DAC _"
 
 #. micro:STEAMakers library block
 msgid "m꞉s scroll text _ with color _ "
@@ -5812,3 +5812,95 @@ msgstr "modo avanzado"
 msgid "show advanced blocks, menu items and editor functionalities"
 msgstr ""
 "muestra bloques, opciones de menú y funcionalidades de edición avanzadas"
+
+#. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
+msgid "Reports firmware version loaded on the board."
+msgstr "Reporta la versión del firmware cargado en la placa."
+
+#. Library folder
+msgid "libfolder;Motors"
+msgstr "Motores"
+
+#. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
+msgid "Report the microseconds since the given start microseconds. Handles clock wrap."
+msgstr "Reporta los microsegundos desde el momento de inicio especificado."
+
+#. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
+msgid "Report the milliseconds since the given start milliseconds. Handles clock wrap."
+msgstr "Reporta los milisegundos desde el momento de inicio especificado."
+
+#. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
+msgid "Write a byte to the pin at the specified baud rate."
+msgstr "Envía un byte por el pin con la tasa de baudios especificada."
+
+#. Library folder
+msgid "libfolder;WorkInProgress"
+msgstr "En construcción"
+
+#. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
+msgid "Report the seconds since power up."
+msgstr "Reporta los segundos desde que se encendió la placa."
+
+#. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
+msgid "Reports the three-letter BLE ID of the board if it supports BLE."
+msgstr ""
+"Reporta el identificador BLE de tres caracteres de la placa, si soporta BLE."
+
+#. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
+msgid "Set the SPI clock speed, mode, channel (Raspberry Pi only), and bit order."
+msgstr ""
+"Ajusta la velocidad del reloj, modo, canal (solo para Raspberry Pi) y orden "
+"de bits del bus SPI."
+
+#. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
+msgid "Send a byte array to the serial port, starting at the given byte."
+msgstr ""
+"Envía una lista de bytes por el puerto serie, empezando por el byte "
+"especificado."
+
+#. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
+msgid "Run when the given message is received as a broadcast."
+msgstr "Ejecuta cuando se reciba el mensaje especificado."
+
+#. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
+msgid "Report the given argument or defaultValue if the argument was not supplied by the caller."
+msgstr ""
+"En una función, reporta el argumento indicado por el índice, o un valor por "
+"defecto si este argumento no se ha proporcionado."
+
+#. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
+msgid "Convert a value to the given data type."
+msgstr "Convierte un valor al tipo de datos especificado."
+
+#. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
+#. The (-o) tag turns into an icon of a boolean input set to on, or true (green)
+msgid "If the condition is (-o) report the first alternative otherwise report the second alternative."
+msgstr ""
+"Si la condición es (-o) reporta la primera alternativa, si no, reporta la "
+"segunda alternativa."
+
+#. Language menu item. Takes the user to documentation about adding a missing language
+msgid "Missing language?"
+msgstr "¿Falta un idioma?"
+
+#. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
+#. The (-o) tag turns into an icon of a boolean input set to on, or true (green)
+msgid "Reports (-o) if a BLE client is connected."
+msgstr "Reporta (-o) si hay un cliente BLE conectado."
+
+#. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
+#. The (-o) tag turns into an icon of a boolean input set to on, or true (green)
+msgid "Reports (-o) if the board is connected to IDE."
+msgstr "Reporta (-o) si la placa está conectada a la IDE."
+
+#. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
+msgid "Map a value in the \"from\" range to the corresponding value in the \"to\" range."
+msgstr ""
+"Transforma un número desde su rango original hasta su valor correspondiente "
+"en otro rango."
+
+#. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
+msgid "Report a list containing the given range of numbers (with optional increment). Useful in \"for\" loops."
+msgstr ""
+"Reporta una lista que contiene el rango de números definido (con incremento "
+"opcional). Útil en bucles \"por\"."
