@@ -1,3 +1,20 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-30 07:10+0200\n"
+"PO-Revision-Date: 2024-10-30 06:10+0000\n"
+"Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
+"Language-Team: Catalan <https://hosted.weblate.org/projects/microblocks/ide/"
+"ca/>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.8.2-dev\n"
+
 #. "Output" blocks category label
 msgid "cat;Output"
 msgstr "Sortida"
@@ -317,7 +334,7 @@ msgstr "hexadecimal _"
 
 #. Block in Operators category
 msgid "sqrt _"
-msgstr "arrel quadrada de _"
+msgstr "arrel de _"
 
 #. "Variables" blocks category label
 msgid "cat;Variables"
@@ -764,11 +781,11 @@ msgstr "il·luminar tots els NeoPíxels en _"
 
 #. NeoPixel library block
 msgid "shift NeoPixel _ color by _"
-msgstr ""
+msgstr "canvia el color del NeoPíxel _ en _"
 
 #. NeoPixel library block
 msgid "shift all NeoPixel colors by _"
-msgstr ""
+msgstr "canvia tots els colors dels NeoPíxels en _"
 
 #. NeoPixel library block
 msgid "attach _ LED NeoPixel strip to pin _"
@@ -1611,7 +1628,7 @@ msgstr "posa píxel x _ y _ esborrat _"
 
 #. OLED Graphics library block
 msgid "set video _"
-msgstr "configurar el vídeo _"
+msgstr "configura el vídeo a _"
 
 #. OLED Graphics library block
 msgid "cursor location"
@@ -3809,19 +3826,19 @@ msgstr "contingut de l'esdeveniment MQTT _"
 
 #. MQTT library block
 msgid "MQTT set will topic _ payload _"
-msgstr ""
+msgstr "posa el testament de MQTT a tema _ contingut _"
 
 #. MQTT library block
 msgid "testWill"
-msgstr ""
+msgstr "testamentDeProva"
 
 #. MQTT library block
 msgid "Last will!"
-msgstr ""
+msgstr "Última voluntat!"
 
 #. MQTT library block
 msgid "buffer sizes _"
-msgstr ""
+msgstr "mides del buffer _"
 
 #. UDP library block
 msgid "UDP start port _"
@@ -3961,19 +3978,19 @@ msgstr "ambdós"
 
 #. Cutebot Pro library block dropdown option
 msgid "45 degrees"
-msgstr ""
+msgstr "45 graus"
 
 #. Cutebot Pro library block dropdown option
 msgid "90 degrees"
-msgstr ""
+msgstr "90 graus"
 
 #. Cutebot Pro library block dropdown option
 msgid "135 degrees"
-msgstr ""
+msgstr "135 graus"
 
 #. Cutebot Pro library block dropdown option
 msgid "180 degrees"
-msgstr ""
+msgstr "180 graus"
 
 #. Cutebot Pro library block dropdown option
 #. robot motion direction
@@ -3987,15 +4004,15 @@ msgstr "enrera"
 
 #. Cutebot Pro library block dropdown option
 msgid "180 degree"
-msgstr ""
+msgstr "180 graus"
 
 #. Cutebot Pro library block dropdown option
 msgid "270 degree"
-msgstr ""
+msgstr "270 graus"
 
 #. Cutebot Pro library block dropdown option
 msgid "360 degree"
-msgstr ""
+msgstr "360 graus"
 
 #. Cutebot Pro library block dropdown option
 #. as in turn "left"
@@ -4713,8 +4730,8 @@ msgstr "Si la teva micro:bit mostra una cara trista, desa l'arxiu firmware.hex a
 msgid "Save the firmware file when prompted."
 msgstr "Desa l'arxiu de firmware quan se't demani."
 
-#. MicroBlocks IDE information
 # %1 holds the drive name
+#. MicroBlocks IDE information
 msgid "Drag the firmware file you just saved to the %1 drive."
 msgstr "Arrossega l'arxiu de firmware que acabes de desar a la unitat %1."
 
@@ -5857,4 +5874,3 @@ msgstr "Reporta una llista de bytes que contingui els bytes UTF-8 de la cadena d
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Report the number of words of memory available. Stop button frees up memory."
 msgstr "Reporta el número de paraules (grups de 32 bits, o 4 bytes) de memòria disponibles."
-
