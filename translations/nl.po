@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-29 09:24+0200\n"
-"PO-Revision-Date: 2024-10-29 15:59+0000\n"
+"PO-Revision-Date: 2024-10-30 09:42+0000\n"
 "Last-Translator: Peter Mathijssen <pmathijssen@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/microblocks/ide/nl/"
 ">\n"
@@ -780,11 +780,11 @@ msgstr "maak all NeoPixels helderder met _"
 
 #. NeoPixel library block
 msgid "shift NeoPixel _ color by _"
-msgstr ""
+msgstr "verschuif NeoPixel _ kleur met _"
 
 #. NeoPixel library block
 msgid "shift all NeoPixel colors by _"
-msgstr ""
+msgstr "verschuif alle NeoPixel kleuren met _"
 
 #. NeoPixel library block
 msgid "attach _ LED NeoPixel strip to pin _"
@@ -1711,7 +1711,7 @@ msgstr "achtergrondkleur _"
 
 #. TFT Display library block
 msgid "draw bitmap _ palette _ on TFT at x _ y _"
-msgstr ""
+msgstr "teken bitmap _ palet _ op TFT op x _ y _"
 
 #. TFT Display library block
 msgid "set TFT backlight _ (0-10)"
@@ -3235,55 +3235,55 @@ msgstr "MiKe digitale D8 naar _"
 
 #. Shield:bit library block
 msgid "s꞉b LEDs off"
-msgstr ""
+msgstr "s:b LEDs uit"
 
 #. Shield:bit library block
 msgid "s꞉b LEDs to _"
-msgstr ""
+msgstr "s:b LEDS naar _"
 
 #. Shield:bit library block
 msgid "s꞉b LED _ (1-4) to _"
-msgstr ""
+msgstr "s:b LED _ (1-4) naar _"
 
 #. Shield:bit library block
 msgid "s꞉b audio output to shield _"
-msgstr ""
+msgstr "s:b audio output naar shield _"
 
 #. Shield:bit library block
 msgid "s꞉b stop _"
-msgstr ""
+msgstr "s:b stop _"
 
 #. Shield:bit library block
 msgid "s꞉b turn 180 servo S- _ (1-8) to angle _"
-msgstr ""
+msgstr "s:b draai 180 servo S- _ (1-8) naar hoek _"
 
 #. Shield:bit library block
 msgid "s꞉b turn 360 servo S- _ (1-8) _ at _ %"
-msgstr ""
+msgstr "s:b draai 360 servo S- _ (1-8) _ naar _ %"
 
 #. Shield:bit library block
 msgid "s꞉b turn DC M- _ (1-4) motor _ at _ %"
-msgstr ""
+msgstr "s:b draai DC M- _ (1-4) moto _ naar _ %"
 
 #. Shield:bit library block
 msgid "s꞉b turn Stepper- _ (1-2) motor _ for _ _"
-msgstr ""
+msgstr "s:b draai Stepper- _ (1-2) motor _ voor _ _"
 
 #. Shield:bit library block
 msgid "s꞉b set pin S- _ (1-8) to _ %"
-msgstr ""
+msgstr "s:b zet pin S- _ (1-8) naar _ %"
 
 #. Shield:bit library motor type
 msgid "sb;DC/Stepper_motors"
-msgstr ""
+msgstr "DC/Stepper motors"
 
 #. Shield:bit library motor type
 msgid "sb;servomotors"
-msgstr ""
+msgstr "servo motoren"
 
 #. Shield:bit library motor type
 msgid "sb;all_motors"
-msgstr ""
+msgstr "all motoren"
 
 #. Shield:bit library motor movement type selection
 msgid "turns"
@@ -3297,47 +3297,49 @@ msgstr "graden"
 #. The #BR# tag must be kept intact. It translates to a new line
 msgid "m꞉s display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
 msgstr ""
+"m:s scherm #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# "
+"_ _ _ _ _"
 
 #. micro:STEAMakers library block
 #. The #BR# tag must be kept intact. It translates to a new line
 msgid "m꞉s display #BR# _ #BR# with color _"
-msgstr ""
+msgstr "m:s scherm #BR# _ #BR# met kleur _"
 
 #. micro:STEAMakers library block
 msgid "m꞉s display image _ with color _"
-msgstr ""
+msgstr "m:s laat afbeelding _ zien met kleur _"
 
 #. micro:STEAMakers library block
 msgid "m꞉s clear display"
-msgstr ""
+msgstr "m:s wis scherm"
 
 #. micro:STEAMakers library block
 msgid "m꞉s scale brightness to _ %"
-msgstr ""
+msgstr "m:s schaal helderheid naar _ %"
 
 #. micro:STEAMakers library block
 msgid "m꞉s plot x _ y _ with _"
-msgstr ""
+msgstr "m:s teken x _ y _ met _"
 
 #. micro:STEAMakers library block
 msgid "m꞉s unplot x _ y _"
-msgstr ""
+msgstr "m:s wis x _ y _"
 
 #. micro:STEAMakers library block
 msgid "m꞉s display character _ with _"
-msgstr ""
+msgstr "m:s toon teken _ met _"
 
 #. micro:STEAMakers library block
 msgid "m꞉s scroll text _ with color _ "
-msgstr ""
+msgstr "m:s scroll tekst _ met kleur _ "
 
 #. micro:STEAMakers library block
 msgid "m꞉s stop scrolling"
-msgstr ""
+msgstr "m:s stop met scrollen"
 
 #. micro:STEAMakers library block
 msgid "start micro꞉STEAMakers audio"
-msgstr ""
+msgstr "start micro:STEAMakers audio"
 
 #. micro:STEAMakers library block
 msgid "m꞉s button _ ?"
@@ -3345,7 +3347,7 @@ msgstr "m:s knop _ ?"
 
 #. micro:STEAMakers library block
 msgid "m꞉s touching ?"
-msgstr ""
+msgstr "m:s aanraken ?"
 
 #. micro:STEAMakers library block
 msgid "m꞉s light %"
@@ -3369,15 +3371,15 @@ msgstr ""
 
 #. micro:STEAMakers library block
 msgid "m꞉s energy _"
-msgstr ""
+msgstr "m:s energie _"
 
 #. micro:STEAMakers library block
 msgid "m꞉s _ energy meter"
-msgstr ""
+msgstr "m:s _ energiemeter"
 
 #. micro:STEAMakers library block
 msgid "m꞉s energy consumption (µWh)"
-msgstr ""
+msgstr "m:s energieverbruik (µWh)"
 
 #. micro:STEAMakers library block
 msgid "ms;start"
@@ -4211,7 +4213,7 @@ msgstr "NeZha maak continue rotatie servo _ snelheid naar _ %"
 
 #. WuKong2040 robot library label
 msgid "WuKong2040"
-msgstr ""
+msgstr "WuKong2040"
 
 #. WuKong2040 robot library block
 msgid "WuKong2040 rainbowLED _ color to _"
@@ -4624,11 +4626,11 @@ msgstr "update firmware op board"
 
 #. Settings menu option
 msgid "enable or disable BLE"
-msgstr ""
+msgstr "zet BLE aan of uit"
 
 #. config confirmation
 msgid "Allow the attached board to be connected via BLE?"
-msgstr ""
+msgstr "Toestaan dat het aangesloten bord wordt aangesloten via BLE?"
 
 #. Graph context menu option
 msgid "show data graph"
@@ -4704,7 +4706,7 @@ msgstr "Gebruik board type"
 
 #. Successful firmware installation confirmation window title
 msgid "Firmware Install"
-msgstr ""
+msgstr "Firmware installeren"
 
 #. Successful firmware installation confirmation window message
 msgid "Firmware Installed"
@@ -4771,7 +4773,7 @@ msgstr "MicroBlocks opladen naar board..."
 
 #. Settings menu option
 msgid "dark mode"
-msgstr ""
+msgstr "donkere modus"
 
 #. Settings menu option
 msgid "show advanced blocks"
@@ -5885,3 +5887,15 @@ msgstr "Geef een byte-array met de UTF-8 bytes van de gegeven string."
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Report the number of words of memory available. Stop button frees up memory."
 msgstr "Geef het aantal beschikbare woorden geheugen aan. Stoptoets maakt geheugen vrij."
+
+#. Language menu item. Takes the user to documentation about adding a missing language
+msgid "Missing language?"
+msgstr "Ontbrekende taal?"
+
+#. Settings menu tooltip
+msgid "show advanced blocks, menu items and editor functionalities"
+msgstr "toon geavanceerde blokken, menu-items en editorfuncties"
+
+#. Settings menu option
+msgid "advanced mode"
+msgstr "geavanceerde modus"
