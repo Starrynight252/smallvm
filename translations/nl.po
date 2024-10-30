@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-29 09:24+0200\n"
-"PO-Revision-Date: 2024-10-30 10:50+0000\n"
+"PO-Revision-Date: 2024-10-30 12:57+0000\n"
 "Last-Translator: Peter Mathijssen <pmathijssen@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/microblocks/ide/nl/"
 ">\n"
@@ -3475,55 +3475,55 @@ msgstr "beide sensoren"
 
 #. InnovaDidàctic TdR shield library block
 msgid "TdR test buzzer"
-msgstr ""
+msgstr "TdR test buzzer"
 
 #. InnovaDidàctic TdR shield library block
 msgid "TdR set blue LED _"
-msgstr ""
+msgstr "TdR zet blauwe LED _"
 
 #. InnovaDidàctic TdR shield library block
 msgid "TdR set red LED _"
-msgstr ""
+msgstr "TdR zet rode LED _"
 
 #. InnovaDidàctic TdR shield library block
 msgid "TdR set RGB LED _"
-msgstr ""
+msgstr "TdR zet RGB LED _"
 
 #. InnovaDidàctic TdR shield library block
 msgid "TdR clear RGB LED"
-msgstr ""
+msgstr "TdR wis RGB LED"
 
 #. InnovaDidàctic TdR shield library block
 msgid "TdR LM35 temperature ºC"
-msgstr ""
+msgstr "TdR LM35 temperatuur ºC"
 
 #. InnovaDidàctic TdR shield library block
 msgid "TdR DHT11 temperature ºC"
-msgstr ""
+msgstr "TdR DHT11 temperatuur ºC"
 
 #. InnovaDidàctic TdR shield library block
 msgid "TdR DHT11 humidity"
-msgstr ""
+msgstr "TdR DHT11 vochtigheid"
 
 #. InnovaDidàctic TdR shield library block
 msgid "TdR rotation"
-msgstr ""
+msgstr "TdR rotatie"
 
 #. InnovaDidàctic TdR shield library block
 msgid "TdR light level"
-msgstr ""
+msgstr "TdR lichtniveau"
 
 #. InnovaDidàctic TdR shield library block
 msgid "TdR button 1"
-msgstr ""
+msgstr "TdR knop 1"
 
 #. InnovaDidàctic TdR shield library block
 msgid "TdR button 2"
-msgstr ""
+msgstr "TdR knop 2"
 
 #. InnovaDidàctic TdR shield library block
 msgid "TdR receive IR code"
-msgstr ""
+msgstr "TdR ontvang IR code"
 
 #. InnovaDidàctic Imagina shield library block
 msgid "Imagina set _ led to _"
@@ -3639,71 +3639,71 @@ msgstr "uit"
 
 #. Keyestudio Smart Farm library block
 msgid "Farm fan _"
-msgstr ""
+msgstr "Farm ventilator _"
 
 #. Keyestudio Smart Farm library block
 msgid "start"
-msgstr ""
+msgstr "start"
 
 #. Keyestudio Smart Farm library block
 msgid "Farm display _ in line _"
-msgstr ""
+msgstr "Farm scherm _ in lijn _"
 
 #. Keyestudio Smart Farm library block
 msgid "Farm _ the trapdoor"
-msgstr ""
+msgstr "Farm _ de valdeur"
 
 #. Keyestudio Smart Farm library block
 msgid "Farm play _ octave _ for _ ms"
-msgstr ""
+msgstr "Farm speel _ octaaf _ voor _ ms"
 
 #. Keyestudio Smart Farm library block
 msgid "Farm set light _"
-msgstr ""
+msgstr "Farm zet licht _"
 
 #. Keyestudio Smart Farm library block
 msgid "Farm water pump _"
-msgstr ""
+msgstr "Farm waterpomp _"
 
 #. Keyestudio Smart Farm library block
 msgid "Farm temperature ºC"
-msgstr ""
+msgstr "Farm temperatuur ºC"
 
 #. Keyestudio Smart Farm library block
 msgid "Farm humidity"
-msgstr ""
+msgstr "Farm vochtigheid"
 
 #. Keyestudio Smart Farm library block
 msgid "Farm movement detected?"
-msgstr ""
+msgstr "Farm beweging waargenomen?"
 
 #. Keyestudio Smart Farm library block
 msgid "Farm button pressed?"
-msgstr ""
+msgstr "Farm knop ingedrukt?"
 
 #. Keyestudio Smart Farm library block
 msgid "Farm distance (cm)"
-msgstr ""
+msgstr "Farm afstand (cm)"
 
 #. Keyestudio Smart Farm library block
 msgid "Farm light level"
-msgstr ""
+msgstr "Farm lichtniveau"
 
 #. Keyestudio Smart Farm library block
 msgid "Farm water level"
-msgstr ""
+msgstr "Farm waterniveau"
 
 #. Keyestudio Smart Farm library block
 msgid "Farm soil moisture"
-msgstr ""
+msgstr "Farm bodemvochtigheid"
 
 #. Keyestudio Smart Farm library block
 msgid "Farm steam level"
-msgstr ""
+msgstr "Farm stoomniveau"
 
 #. Keyestudio Smart Farm library block
 msgid "Farm electric consumption _"
-msgstr ""
+msgstr "Farm elektriciteitsverbruik _"
 
 #. Keyestudio Smart Home library block
 msgid "Home fan _"
@@ -4037,15 +4037,15 @@ msgstr ""
 
 #. Cutebot Pro library block
 msgid "CBPro set wheel speed left _ right _ (-60 to 60 cm/s)"
-msgstr ""
+msgstr "CBPro zet wiel snelheid links _ rechts _ (-60 tot 60 cm/s)"
 
 #. Cutebot Pro library block
 msgid "CBPro speed of _ wheel (cm/s)"
-msgstr ""
+msgstr "CBPro snelheid van wiel _ (cm/s)"
 
 #. Cutebot Pro library block
 msgid "CBPro stop wheel _"
-msgstr ""
+msgstr "CBPRo stop wiel _"
 
 #. Cutebot Pro library block
 msgid "CBPro stop all"
