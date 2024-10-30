@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-30 07:10+0200\n"
-"PO-Revision-Date: 2024-10-30 09:42+0000\n"
+"PO-Revision-Date: 2024-10-30 10:50+0000\n"
 "Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/microblocks/ide/"
 "ca/>\n"
@@ -5469,7 +5469,7 @@ msgstr "Reporta l'identificador BLE de tres caràcters de la placa, si suporta B
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 #. The (-o) tag turns into an icon of a boolean input set to on, or true (green)
 msgid "Reports (-o) if a BLE client is connected."
-msgstr "Reporto (-o) if hi ha un client BLE connectat."
+msgstr "Reporta (-o) si hi ha un client BLE connectat."
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Report the milliseconds since the given start milliseconds. Handles clock wrap."
