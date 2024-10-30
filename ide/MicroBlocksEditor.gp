@@ -1165,14 +1165,14 @@ method gearMenu MicroBlocksEditor {
 	addItem menu 'update firmware on board' (action 'installVM' (smallRuntime) false false) // do not wipe flash, do not download VM from server
 	addLine menu
 	addItem menu 'dark mode' (action 'toggleDarkMode' this false) 'make the IDE darker' (newCheckmark this (darkModeEnabled this))
-	addItem menu 'show advanced blocks' 'toggleAdvancedBlocks' nil (newCheckmark this (devMode))
+	addItem menu 'advanced mode' 'toggleAdvancedMode' 'show advanced blocks, menu items and editor functionalities' (newCheckmark this (devMode))
 
 	if (devMode) {
 		addLine menu
 		addItem menu 'show implementation blocks' (action 'toggleShowHiddenBlocks' this) 'show blocks and variables that are internal to libraries (i.e. those whose name begins with underscore)' (newCheckmark this (showHiddenBlocksEnabled this))
 		addItem menu 'autoload board libraries' (action 'toggleBoardLibAutoLoad' this) nil (newCheckmark this (not (boardLibAutoLoadDisabled this)))
 // Does anyone ever enable 'PlugShare when project empty'?
-		addItem menu 'PlugShare when project empty' (action 'toggleAutoDecompile' this) 'when plugging a board, automatically read its contents into the IDE even if the current project is empty' (newCheckmark this (autoDecompileEnabled this))
+		addItem menu 'PlugShare when project empty' (action 'toggleAutoDecompile' this) 'when plugging a board, automatically read its contents into the IDE if the current project is empty' (newCheckmark this (autoDecompileEnabled this))
 		addLine menu
 		addItem menu 'install ESP firmware from URL' (action 'installESPFirmwareFromURL' (smallRuntime)) // wipe flash first, do not download VM from server
 		addItem menu 'erase flash and update firmware on ESP board' (action 'installVM' (smallRuntime) true false) // wipe flash first, do not download VM from server
@@ -1211,10 +1211,14 @@ method hasHelpEntryFor MicroBlocksEditor aBlock {
 	return (notNil (helpEntry tipBar (primName (expression aBlock))))
 }
 
-method openHelp MicroBlocksEditor aBlock {
-	entry = (helpEntry tipBar (primName (expression aBlock)))
-	if (isNil entry) { return }
-	helpPath = (at entry 2)
+method openHelp MicroBlocksEditor aBlockOrPath {
+	if (isClass aBlockOrPath 'String') {
+		helpPath = aBlockOrPath
+	} else {
+		entry = (helpEntry tipBar (primName (expression aBlock)))
+		if (isNil entry) { return }
+		helpPath = (at entry 2)
+	}
 	if (beginsWith helpPath '/') {
 		url = (join 'https://wiki.microblocks.fun' helpPath)
 	} else {
@@ -1298,23 +1302,17 @@ method showGraph MicroBlocksEditor {
 	addPart page graph
 }
 
-method toggleAdvancedBlocks MicroBlocksEditor {
+method toggleAdvancedMode MicroBlocksEditor {
 	if (devMode) {
-		hideAdvancedBlocks this
+		setAdvancedMode this false
 	} else {
-		showAdvancedBlocks this
+		setAdvancedMode this true
 	}
 }
 
-method showAdvancedBlocks MicroBlocksEditor {
-	setDevMode (global 'page') true
-	saveToUserPreferences this 'devMode' true
-	developerModeChanged this
-}
-
-method hideAdvancedBlocks MicroBlocksEditor {
-	setDevMode (global 'page') false
-	saveToUserPreferences this 'devMode' false
+method setAdvancedMode MicroBlocksEditor aBoolean {
+	setDevMode (global 'page') aBoolean
+	saveToUserPreferences this 'devMode' aBoolean
 	developerModeChanged this
 }
 
@@ -1362,6 +1360,10 @@ method languageMenu MicroBlocksEditor {
 			}
 		}
 	}
+
+	addLine menu
+	addItem menu (localized 'Missing language?') (action 'openHelp' this '/translating')
+
 	if (devMode) {
 		addLine menu
 		addItem menu 'Custom...' (action 'readCustomTranslationFile' this)

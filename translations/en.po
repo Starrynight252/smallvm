@@ -4755,16 +4755,16 @@ msgid "dark mode"
 msgstr "dark mode"
 
 #. Settings menu option
-msgid "show advanced blocks"
-msgstr "show advanced blocks"
+msgid "advanced mode"
+msgstr "advanced mode"
+
+#. Settings menu tooltip
+msgid "show advanced blocks, menu items and editor functionalities"
+msgstr "show advanced blocks, menu items and editor functionalities"
 
 #. Settings menu option
 msgid "export functions as library"
 msgstr "export functions as library"
-
-#. Settings menu option
-msgid "hide advanced blocks"
-msgstr "hide advanced blocks"
 
 #. Project menu option
 msgid "put file on board"
@@ -5041,6 +5041,10 @@ msgstr "Are you sure you want to remove this block definition?"
 #. Language menu tooltip
 msgid "Language"
 msgstr "Language"
+
+#. Language menu item. Takes the user to documentation about adding a missing language
+msgid "Missing language?"
+msgstr ""
 
 #. As in load a "Custom" language file
 msgid "Custom..."
