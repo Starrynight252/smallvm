@@ -1,17 +1,16 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-30 07:10+0200\n"
-"PO-Revision-Date: 2024-10-30 06:10+0000\n"
+"PO-Revision-Date: 2024-10-30 09:42+0000\n"
 "Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/microblocks/ide/"
 "ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: ENCODING\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.8.2-dev\n"
 
@@ -2553,31 +2552,31 @@ msgstr "rotació _ del cercle de quintes _ M _ m _ º"
 
 #. Chiptune library block
 msgid "kick for _ ms on pin _"
-msgstr ""
+msgstr "bombo durant _ ms al pin _"
 
 #. Chiptune library block
 msgid "tom for _ ms pitch shifted by _ on pin _"
-msgstr ""
+msgstr "tambor durant _ ms amb to desfasat en _ al pin _"
 
 #. Chiptune library block
 msgid "laser for _ ms with frequency _ speed _ on pin _"
-msgstr ""
+msgstr "làser durant _ ms amb freqüència _ i velocitat _ al pin _"
 
 #. Chiptune library block
 msgid "noise for _ ms pitch shifted by _ on pin _"
-msgstr ""
+msgstr "soroll durant _ ms amb to desfasat en _ al pin _"
 
 #. Chiptune library block
 msgid "fade noise for _ ms pitch shifted by _ on DAC pin _"
-msgstr ""
+msgstr "soroll atenuat durant _ ms amb to desfasat en _ al pin DAC _"
 
 #. Chiptune library block
 msgid "snare for _ ms on DAC pin _"
-msgstr ""
+msgstr "caixa durant _ ms al pin DAC _"
 
 #. Chiptune library block
 msgid "hihat for _ ms on DAC pin _"
-msgstr ""
+msgstr "plat durant _ ms al pin DAC _"
 
 #. Square Wave Chords library label
 msgid "Square Wave Chords"
@@ -3630,11 +3629,11 @@ msgstr "tanca"
 
 #. Keyestudio Smart Farm library block
 msgid "on"
-msgstr "obre"
+msgstr "encén"
 
 #. Keyestudio Smart Farm library block
 msgid "off"
-msgstr "tanca"
+msgstr "apaga"
 
 #. Keyestudio Smart Farm library block
 msgid "Farm fan _"
@@ -3910,7 +3909,7 @@ msgstr "Atura les rodes"
 
 #. Cutebot library block
 msgid "Cutebot set servo _ to _ degrees (-90 to 90)"
-msgstr "Posa el servo _ a _ graus (-90 a 90)"
+msgstr "posa el servo _ a _ graus (-90 a 90)"
 
 #. Cutebot library block
 msgid "Cutebot set servo _ to speed _ (-100 to 100)"
@@ -4027,88 +4026,88 @@ msgstr "dret"
 #. Cutebot Pro library block dropdown option
 #. as in turn "left" on your axis
 msgid "cutebotturn;left-in-place"
-msgstr ""
+msgstr "esquerra (sobre el seu eix)"
 
 #. Cutebot Pro library block dropdown option
 #. as in turn "right" on your axis
 msgid "cutebotturn;right-in-place"
-msgstr ""
+msgstr "dreta (sobre el seu eix)"
 
 #. Cutebot Pro library block
 msgid "CBPro set wheel speed left _ right _ (-60 to 60 cm/s)"
-msgstr ""
+msgstr "gira roda esquerra a _ i dreta a _ (-60 a 60 cm/s)"
 
 #. Cutebot Pro library block
 msgid "CBPro speed of _ wheel (cm/s)"
-msgstr ""
+msgstr "velocitat de la roda _ (cm/s)"
 
 #. Cutebot Pro library block
 msgid "CBPro stop wheel _"
-msgstr ""
+msgstr "atura roda _"
 
 #. Cutebot Pro library block
 msgid "CBPro stop all"
-msgstr ""
+msgstr "atura-ho tot"
 
 #. Cutebot Pro library block
 msgid "CBPro move _ (-255 to 255 cm)"
-msgstr ""
+msgstr "mou-te _ (-255 a 255 cm)"
 
 #. Cutebot Pro library block
 msgid "CBPro turn _ degrees"
-msgstr ""
+msgstr "gira _ graus"
 
 #. Cutebot Pro library block
 msgid "CBPro set headlight _ to _"
-msgstr ""
+msgstr "posa la llum _ a _"
 
 #. Cutebot Pro library block
 msgid "CBPro set NeoPixel _ to _"
-msgstr ""
+msgstr "posa el NeoPixel _ a _"
 
 #. Cutebot Pro library block
 msgid "CBPro distance (cm)"
-msgstr ""
+msgstr "distància frontal (cm)"
 
 #. Cutebot Pro library block
 msgid "CBPro tracking state is (L - - R) _ _ _ _"
-msgstr ""
+msgstr "l'estat del seguiment de línia és (E--D) _ _ _ _"
 
 #. Cutebot Pro library block
 msgid "CBPro tracking state"
-msgstr ""
+msgstr "estat del seguiment de línia"
 
 #. Cutebot Pro library block
 msgid "CBPro tracking offset"
-msgstr ""
+msgstr "desfasament del seguiment de línia"
 
 #. Cutebot Pro library block
 msgid "CBPro IR code received?"
-msgstr ""
+msgstr "codi IR rebut?"
 
 #. Cutebot Pro library block
 msgid "CBPro IR code"
-msgstr ""
+msgstr "codi IR"
 
 #. Cutebot Pro library block
 msgid "CBPro set _ servo _ angle to _ deg"
-msgstr ""
+msgstr "posa el servo de _ número _ a _ graus"
 
 #. Cutebot Pro library block
 msgid "CBPro servo _ speed to _ (-100 to 100)"
-msgstr ""
+msgstr "posa el servo _ a velocitat _ (-100 a 100)"
 
 #. Cutebot Pro library block
 msgid "CBPro set external motor power to _ (-100 to 100)"
-msgstr ""
+msgstr "fixa la potència del motor extern a _ (-100 a 100)"
 
 #. Cutebot Pro library block
 msgid "CBPro stop external motor"
-msgstr ""
+msgstr "atura motor extern"
 
 #. Cutebot Pro library block
 msgid "CBPro version"
-msgstr ""
+msgstr "versió del CBPro"
 
 #. Wukong robot library label
 msgid "Wukong"
@@ -4128,7 +4127,7 @@ msgstr "Atura tots els motors"
 
 #. Wukong robot library block
 msgid "Wukong set servo _ to _ degrees (-90 to 90)"
-msgstr "Posa el servo _ a _ graus (-90 a 90)"
+msgstr "posa el servo _ a _ graus (-90 a 90)"
 
 #. Wukong robot library block
 msgid "Wukong set servo _ to speed _ (-100 to 100)"
@@ -4212,39 +4211,39 @@ msgstr "posa el servo de rotació contínua _ a velocitat _ %"
 
 #. WuKong2040 robot library label
 msgid "WuKong2040"
-msgstr ""
+msgstr "WuKong2040"
 
 #. WuKong2040 robot library block
 msgid "WuKong2040 rainbowLED _ color to _"
-msgstr ""
+msgstr "posa LED multicolor _ a _"
 
 #. WuKong2040 robot library block
 msgid "WuKong2040 rainbowLED _ R _ G _ B _ (0~255)"
-msgstr ""
+msgstr "posa LED multicolor _ a vermell _ verd _ blau _ (0~255)"
 
 #. WuKong2040 robot library block
 msgid "WuKong2040 clear all rainbowLED"
-msgstr ""
+msgstr "apaga LEDs multicolor"
 
 #. WuKong2040 robot library block
 msgid "WuKong2040 motor _ speed to _ (-100~100)"
-msgstr ""
+msgstr "posa el motor _ a velocitat _ (-100~100)"
 
 #. WuKong2040 robot library block
 msgid "WuKong2040 stop motor _"
-msgstr ""
+msgstr "atura motor _"
 
 #. WuKong2040 robot library block
 msgid "WuKong2040 stop all motors"
-msgstr ""
+msgstr "atura tots els motors"
 
 #. WuKong2040 robot library block
 msgid "WuKong2040 buzzer beep _ ms"
-msgstr ""
+msgstr "toca el brunzidor durant _ ms"
 
 #. Elecfreaks Octopus sensor library label
 msgid "Octopus"
-msgstr ""
+msgstr "Octopus"
 
 #. Elecfreaks Octopus sensor library block
 msgid "Octopus LED pin _ toggle to _"
@@ -4332,15 +4331,15 @@ msgstr "durada _ ms"
 
 #. Octostudio communication library block
 msgid "Octo beam received?"
-msgstr ""
+msgstr "missatge Octo rebut?"
 
 #. Octostudio communication library block
 msgid "Octo last beam"
-msgstr ""
+msgstr "últim missatge Octo"
 
 #. Octostudio communication library block
 msgid "Octo set group _ (0-99)"
-msgstr ""
+msgstr "fixa grup Octo a _ (0-99)"
 
 #. Octostudio communication library block
 msgid "Octo receive beam"
@@ -4769,7 +4768,7 @@ msgstr "Instal·lant MicroBlocks a la placa..."
 
 #. Settings menu option
 msgid "dark mode"
-msgstr ""
+msgstr "mode fosc"
 
 #. Settings menu option
 msgid "show advanced blocks"
@@ -5121,7 +5120,7 @@ msgstr "Xarxa"
 
 #. Library folder
 msgid "libfolder;Motors"
-msgstr ""
+msgstr "Motors"
 
 #. Library folder
 msgid "libfolder;Other"
@@ -5145,7 +5144,7 @@ msgstr "Sistema"
 
 #. Library folder
 msgid "libfolder;WorkInProgress"
-msgstr ""
+msgstr "En construcció"
 
 #. String in file picker and library dialogs
 msgid "New library name?"
@@ -5623,6 +5622,8 @@ msgstr "No fa res. S'utilitza per afegir notes i documentació."
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Report a list containing the given range of numbers (with optional increment). Useful in \"for\" loops."
 msgstr ""
+"Reporta una llista que conté el rang de nombres definit (amb increment "
+"opcional). Útil en bucles \"per\"."
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Repeat the enclosed blocks with the variable set to the current iteration number or item."
@@ -5652,6 +5653,8 @@ msgstr "Reporta l'últim missatge emès i rebut."
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Report the given argument or defaultValue if the argument was not supplied by the caller."
 msgstr ""
+"Dins una funció, reporta l'argument indicat per l'índex, o un valor per "
+"defecte si aquest argument no s'ha proporcionat."
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Call the function with the given name and optional parameter list."
@@ -5766,6 +5769,8 @@ msgstr "Si la condició és (-o) reporta la primera alternativa, si no, reporta 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Map a value in the \"from\" range to the corresponding value in the \"to\" range."
 msgstr ""
+"Transforma un nombre des del seu rang original fins al seu valor "
+"corresponent en un altre rang."
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Report the numerical value of a hexadecimal string (range: -0x1FFFFFFF to 0x1FFFFFFF)"
@@ -5874,3 +5879,15 @@ msgstr "Reporta una llista de bytes que contingui els bytes UTF-8 de la cadena d
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Report the number of words of memory available. Stop button frees up memory."
 msgstr "Reporta el número de paraules (grups de 32 bits, o 4 bytes) de memòria disponibles."
+
+#. Settings menu option
+msgid "advanced mode"
+msgstr "mode avançat"
+
+#. Settings menu tooltip
+msgid "show advanced blocks, menu items and editor functionalities"
+msgstr "mostra blocs, opcions de menú i funcionalitats d'edició avançades"
+
+#. Language menu item. Takes the user to documentation about adding a missing language
+msgid "Missing language?"
+msgstr "Falta un idioma?"
