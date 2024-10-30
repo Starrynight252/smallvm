@@ -428,6 +428,14 @@ void hardwareInit() {
 	#define TOTAL_PINS (DIGITAL_PINS + ANALOG_PINS)
 	static const int analogPin[] = {A0, A1, A2, A3, A4, A5, A6};
 
+#elif defined(MAKERPORT) // must come before Zero
+
+	#define BOARD_TYPE "MakerPort V1"
+	#define DIGITAL_PINS 22
+	#define ANALOG_PINS 9
+	#define TOTAL_PINS 22
+	static const int analogPin[] = {0, 1, 2, 3, 4, 5, 6, 13, 14};
+
 #elif defined(MAKERPORT_V2) // must come before Zero
 
 	#define BOARD_TYPE "MakerPort V2"
@@ -438,19 +446,11 @@ void hardwareInit() {
 
 #elif defined(MAKERPORT_V3) // must come before Zero
 
-	#define BOARD_TYPE "MakerPort V3"
+	#define BOARD_TYPE "MakerPort"
 	#define DIGITAL_PINS 28
 	#define ANALOG_PINS 9
 	#define TOTAL_PINS 28
 	static const int analogPin[] = {0, 1, 2, 3, 4, 5, 6, 13, 15};
-
-#elif defined(MAKERPORT) // must come before Zero
-
-	#define BOARD_TYPE "MakerPort"
-	#define DIGITAL_PINS 22
-	#define ANALOG_PINS 9
-	#define TOTAL_PINS 22
-	static const int analogPin[] = {0, 1, 2, 3, 4, 5, 6, 13, 14};
 
 #elif defined(ADAFRUIT_METRO_M0_EXPRESS) // must come before Zero
 
