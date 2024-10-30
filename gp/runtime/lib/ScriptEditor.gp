@@ -389,9 +389,9 @@ method setBlockSize ScriptEditor {
 	currentPercent = ((global 'blockScale') * 100)
 	for percent (list 50 75 100 125 150 200 250) {
 			if (currentPercent == percent) {
-			..addItem menu (join '' percent '% ✓') percent
+				addItem menu (join '' percent '% ✓') percent
 			} else {
-			..addItem menu (join '' percent '%') percent
+				addItem menu (join '' percent '%') percent
 			}
 	}
 	popUpAtHand menu (global 'page')
