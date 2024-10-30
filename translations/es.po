@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 16:23+0200\n"
-"PO-Revision-Date: 2024-10-30 06:10+0000\n"
+"PO-Revision-Date: 2024-10-30 09:42+0000\n"
 "Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/microblocks/ide/"
 "es/>\n"
@@ -3576,7 +3576,7 @@ msgstr "Guarda el archivo de firmware cuando se te pida."
 
 #. Settings menu option
 msgid "dark mode"
-msgstr "Modo oscuro"
+msgstr "modo oscuro"
 
 #. String in file picker and library dialogs
 msgid "Could not fetch library."
@@ -5708,11 +5708,11 @@ msgstr "pon píxel x _ y _ borrado _"
 
 #. Chiptune library block
 msgid "laser for _ ms with frequency _ speed _ on pin _"
-msgstr "láser durante _ ms con frecuencia _ velocidad _ en pin _"
+msgstr "láser durante _ ms con frecuencia _ velocidad _ en el pin _"
 
 #. Chiptune library block
 msgid "kick for _ ms on pin _"
-msgstr "bombo durante _ms en pin_"
+msgstr "bombo durante _ ms en pin _"
 
 #. Cutebot Pro library block dropdown option
 msgid "45 degrees"
@@ -5799,3 +5799,16 @@ msgstr "fija grupo de Octo a _ (0-99)"
 #. Cutebot Pro library block
 msgid "CBPro stop wheel _"
 msgstr "detén rueda _"
+
+#. Chiptune library block
+msgid "tom for _ ms pitch shifted by _ on pin _"
+msgstr "tambor durante _ ms con tono desplazado por _ en el pin _"
+
+#. Settings menu option
+msgid "advanced mode"
+msgstr "modo avanzado"
+
+#. Settings menu tooltip
+msgid "show advanced blocks, menu items and editor functionalities"
+msgstr ""
+"muestra bloques, opciones de menú y funcionalidades de edición avanzadas"
