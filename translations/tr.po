@@ -1,17 +1,16 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 16:36+0200\n"
-"PO-Revision-Date: 2024-10-28 15:36+0000\n"
-"Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
+"PO-Revision-Date: 2024-11-01 13:12+0000\n"
+"Last-Translator: Murat Fahrettin Akgüller <mrtfhrttn@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/microblocks/ide/"
 "tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: ENCODING\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.8.2-dev\n"
 
@@ -2634,3 +2633,277 @@ msgid "Report a new byte array of the given length filled with zero or the optio
 msgstr ""
 "Sıfır veya isteğe bağlı değerle doldurulmuş, verilen uzunlukta yeni bir bayt "
 "dizisi bildirin."
+
+#. Variable right-click context menu
+msgid "find variable accessors"
+msgstr "değişkenin okuyucularını(erişimciler) bulun"
+
+#. String in file picker and library dialogs
+msgid "Add Library"
+msgstr "Kütüphane Ekle"
+
+#. Library folder
+msgid "libfolder;Motors"
+msgstr "Motorlar"
+
+#. Text right-click context menu option
+msgid "accept"
+msgstr "kabul et"
+
+#. Text right-click context menu option
+msgid "copy"
+msgstr "kopyala"
+
+#. Text right-click context menu option
+msgid "stop editing"
+msgstr "düzenlemeyi durdur"
+
+#. Variable right-click context menu tooltip
+msgid "find scripts or block definitions where this variable is being set or changed"
+msgstr ""
+"bu değişkene değer atayan veya değiştiren scriptleri veya blok tanımlarını "
+"bulun"
+
+#. Variable right-click context menu
+msgid "find variable modifiers"
+msgstr "değişkenin değiştiricilerini bulun"
+
+#. Block size button tooltip
+msgid "Restore block size to 100%"
+msgstr "Blokların boyutunu varsayılan seviyeye ayarla"
+
+#. Block size button tooltip
+msgid "Decrease block size"
+msgstr "Blokları küçült"
+
+#. File upload process information
+msgid "uploaded"
+msgstr "yüklenmiş"
+
+#. Block right-click context menu
+msgid "find uses of this block"
+msgstr "bu bloğu kullananları bulun"
+
+#. Block input right-click context menu option
+msgid "select all"
+msgstr "tümünü seç"
+
+#. Project menu option
+msgid "get file from board"
+msgstr "dosyayı board'dan al"
+
+#. Block right-click context menu tooltip
+msgid "copy these blocks to the clipboard as a URL"
+msgstr "bu blokları panoya URL biçiminde kopyala"
+
+#. Settings menu option
+msgid "install ESP firmware from URL"
+msgstr "URL'den ESP firmware kur"
+
+#. Graph context menu option
+msgid "export data to CSV file"
+msgstr "veriyi bir CSV dosyasına kaydet"
+
+#. Project menu option
+msgid "put file on board"
+msgstr "dosyayı board'a koy"
+
+#. MicroBlocks IDE information
+msgid "Connect USB cable while holding down the white BOOTSEL button before proceeding."
+msgstr ""
+"Devam etmeden önce beyaz BOOTSEL düğmesini basılı tutarken USB kablosunu "
+"bağlayın."
+
+#. Settings menu tooltip
+msgid "make the IDE darker"
+msgstr "ortamı karart"
+
+#. Successful firmware installation confirmation window title
+msgid "Firmware Install"
+msgstr "Firmware Kurulumu"
+
+#. MicroBlocks IDE information
+msgid "Reconnect to the board by clicking the \"Connect\" button (USB icon)."
+msgstr "\"Bağlan\" (USB simgesi) düğmesine tıklayarak board'a yeniden bağlanın."
+
+#. Successful firmware installation confirmation window message
+msgid "Firmware Installed"
+msgstr "Firmware Kuruldu"
+
+#. MicroBlocks IDE information
+msgid "Save the firmware file when prompted."
+msgstr "İstediğinizde firmware dosyasını kaydedin."
+
+#. MicroBlocks IDE information
+msgid "Board not connected"
+msgstr "Board bağlanmadı"
+
+#. Firmware installation process information
+msgid "Installing firmware..."
+msgstr "Firmware kuruluyor..."
+
+#. Graph context menu option
+msgid "clear graph"
+msgstr "grafiği temizle"
+
+#. Graph button tooltip
+msgid "Graph"
+msgstr "Grafik"
+
+#. Graph context menu option
+msgid "import data from CSV file"
+msgstr "CSV dosyasından içeri veri aktar"
+
+#. Variable right-click context menu tooltip
+msgid "find scripts or block definitions where this variable is being read"
+msgstr "değişkenin okunduğu scriptleri veya blok tanımlarını bulun"
+
+#. Block right-click context menu tooltip
+msgid "find scripts or block definitions using this block"
+msgstr "bu bloğu kullanan scriptleri veya blok tanımlarını bul"
+
+#. Block right-click context menu
+msgid "help"
+msgstr "yardım"
+
+#. Block right-click context menu tooltip
+msgid "show help for this block in a browser"
+msgstr "tarayıcıda yardım bağıntısını göster"
+
+#. Script right-click context menu
+msgid "save picture of script with result"
+msgstr "Script'in sonucuyla beraber fotoğrafını kaydet"
+
+#. Text right-click context menu option
+msgid "revert"
+msgstr "geri al"
+
+#. Text right-click context menu option
+msgid "paste"
+msgstr "yapıştır"
+
+#. Library folder
+msgid "libfolder;Sensing"
+msgstr "Algılama"
+
+#. MicroBlocks IDE information
+msgid "If your micro:bit shows a sad face, save the firmware.hex file to your disk then drop it onto the MICROBIT drive."
+msgstr ""
+"Micro:bit'iniz üzgün bir yüz gösteriyorsa firmware.hex dosyasını diskinize "
+"kaydedin ve ardından MICROBIT sürücüsüne atın."
+
+#. Graph context menu option
+msgid "copy graph data to clipboard"
+msgstr "grafik verisini panoya kopyala"
+
+#. File download process information
+msgid "downloaded"
+msgstr "indirilmiş"
+
+#. Script right-click context menu tooltip
+msgid "save a picture of these blocks and their result as a PNG file"
+msgstr "Bu blokların ve sonuçunun fotoğrafını PNG dosyası olarak kaydet."
+
+#. Block right-click context menu
+msgid "copy to clipboard as URL"
+msgstr "panoya URL olarak kopyala"
+
+#. Text right-click context menu option
+msgid "cut"
+msgstr "kes"
+
+#. Library folder
+msgid "libfolder;Kits and Boards"
+msgstr "Kitler ve Boardlar"
+
+#. Library folder
+msgid "libfolder;AI"
+msgstr "Yapay Zeka"
+
+#. Library folder
+msgid "libfolder;Graphics and Displays"
+msgstr "Grafikler ve Görüntüleme"
+
+#. Library folder
+msgid "libfolder;WorkInProgress"
+msgstr "Çalışma devam ediyor"
+
+#. Library folder
+msgid "libfolder;System"
+msgstr "Sistem"
+
+#. String in file picker and library dialogs
+msgid "If you are adding a library that's built into MicroBlocks, you can just enter its name."
+msgstr ""
+"MicroBlocks'da zaten bulununan bir kütüphaneyse, sadece ismini girmeniz "
+"yeterli."
+
+#. String in file picker and library dialogs
+msgid "If your library is in the Libraries folder in your local MicroBlocks project folder, you need to prefix it with a slash (/)."
+msgstr ""
+"Kütüphaneniz sizin yerel MicroBlocks projenizin klasöründeyse, önüne bir "
+"slash (/) ekleyin."
+
+#. String in file picker and library dialogs
+msgid "If the library is hosted online, please input its full URL."
+msgstr "Eğer online bir kütüphaneyse, lütfen URL'nin tamamını girin."
+
+#. String in file picker and library dialogs
+msgid "user library"
+msgstr "kullanıcı kütüphanesi"
+
+#. Settings menu option
+msgid "dark mode"
+msgstr "karanlık mod"
+
+#. MicroBlocks IDE information
+msgid "Drag the firmware file you just saved to the %1 drive."
+msgstr "Az önce kaydettiğiniz firmware dosyasunı %1 sürücüsüne sürükleyin."
+
+#. String in file picker and library dialogs
+msgid "New library name?"
+msgstr "Yeni kütüphane adı?"
+
+#. Library folder
+msgid "LIBRARIES"
+msgstr "KÜTÜPHANELER"
+
+#. Block size button tooltip
+msgid "Increase block size"
+msgstr "Blokları büyüt"
+
+#. Library label right click context menu option
+msgid "delete library"
+msgstr "kütüphaneyi sil"
+
+#. Scripting area right-click context menu
+msgid "hide all block definitions"
+msgstr "bütün blok tanımlamalarını gizle"
+
+#. Scripting area right-click context menu
+msgid "show all block definitions"
+msgstr "bütün blok tanımlamalarını göster"
+
+#. Library folder
+msgid "libfolder;Robots"
+msgstr "Robotlar"
+
+#. Library folder
+msgid "libfolder;Network"
+msgstr "Ağ"
+
+#. Settings menu tooltip
+msgid "show advanced blocks, menu items and editor functionalities"
+msgstr "gelişmiş blokları, menü öğelerini, ve editör işlevlerini göster"
+
+#. Library label right click context menu option
+msgid "export this library"
+msgstr "bu kütüphaneyi dışarı aktar"
+
+#. Settings menu option
+msgid "advanced mode"
+msgstr "gelişmiş mod"
+
+#. MicroBlocks IDE information
+msgid "You will be asked to save the firmware file."
+msgstr "Firmware dosyanızı kaydetmeniz istenecektir."
