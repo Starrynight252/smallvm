@@ -919,14 +919,16 @@ static void sendNeoPixelData(int val) { }
 
 #endif // NeoPixel Support
 
+static int neoPixelMax = 40;
+
 static inline int gamma(int val) {
 	// This function computes the n^2 gamma curve, where n is a brightness in the range 0.0..1.0,
-	// with the result scaled to the integer range 0..neoMax, but it uses only integer arithmetic.
+	// with the result scaled to the integer range 0..neoPixelMax, but it uses only integer arithmetic.
 	// The input is assumed to be an integer in the range 0..255, and what's computed is the
-	// neoMax * ((val / 255) ^ 3). Since (val / 255) has the range 0.0 and 1.0, ((val / 255) ^ 3)
-	// will also be in the range 0.0..1.0, and that is scaled to 0..neoMax.
-	// neoMax determines the max brightness (and power draw!) of each NeoPixel color channel,
-	// which is about (neoMax / 255) * 20 mA per color channel.
+	// neoPixelMax * ((val / 255) ^ 3). Since (val / 255) has the range 0.0 and 1.0, ((val / 255) ^ 3)
+	// will also be in the range 0.0..1.0, and that is scaled to 0..neoPixelMax.
+	// neoPixelMax determines the max brightness (and power draw!) of each NeoPixel color channel,
+	// which is about (neoPixelMax / 255) * 20 mA per color channel.
 
 	#if defined(ARDUINO_Mbits)
 	    // The Mbits power supply cannot supply enough current to run both
@@ -934,8 +936,7 @@ static inline int gamma(int val) {
 	    if (val > 175) val = 175; // limit brightness to avoid making WiFi fail
 	#endif
 
-	const int neoMax = 40;
-	const int divisor = (255 * 255) / neoMax;
+	const int divisor = (255 * 255) / neoPixelMax;
 	return ((val * val) / divisor) & 0xFF;
 }
 
@@ -981,6 +982,16 @@ OBJ primNeoPixelSetPin(int argCount, OBJ *args) {
 	int pinNum = isInt(args[0]) ? obj2int(args[0]) : -1; // -1 means "internal NeoPixel pin"
 	neoPixelBits = ((argCount > 1) && (trueObj == args[1])) ? 32 : 24;
 	initNeoPixelPin(mapDigitalPinNum(pinNum));
+	return falseObj;
+}
+
+OBJ primNeoPixelSetMaxBrightness(int argCount, OBJ *args) {
+	if ((argCount < 1) || !isInt(args[0])) return fail(needsIntegerError);
+
+	int maxBrightness = obj2int(args[0]);
+	if (maxBrightness < 10) maxBrightness = 10;
+	if (maxBrightness > 255) maxBrightness = 255;
+	neoPixelMax = maxBrightness;
 	return falseObj;
 }
 
@@ -1154,6 +1165,7 @@ static PrimEntry entries[] = {
 	{"mbEnableDisplay", primMBEnableDisplay},
 	{"neoPixelSend", primNeoPixelSend},
 	{"neoPixelSetPin", primNeoPixelSetPin},
+	{"neoPixelSetMaxBrightness", primNeoPixelSetMaxBrightness},
 };
 
 void addDisplayPrims() {
