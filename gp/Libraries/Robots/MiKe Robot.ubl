@@ -1,9 +1,9 @@
 module 'MiKe Robot' Output
 author 'Joan Guillén'
-version 1 2 
+version 1 3 
 tags keyestudio robot car 
 description 'Provides sensor, light and motion blocks for the Keyestudio micro:bit/micro:STEAMakers Mini Smart Robot Car v2.'
-variables _MiKe_circlePixels _sb_neoPixels_on _ms_neoPixels_on _MiKe_i2c_on 
+variables _MiKe_circlePixels _MiKe_i2c_on 
 choices directions clockwise 'counter-clockwise'
 choices sideMenu Right Left
 choices robotDirections Forward Backward Right Left
@@ -263,17 +263,13 @@ to 'MiKe turn motor' motor direction {
 
 to '_MiKe_circlePixels_ensureInitialized' {
   if (_MiKe_circlePixels == 0) {
-    if _sb_neoPixels_on {_sb_neoPixels_on = false}
-    if _ms_neoPixels_on {_ms_neoPixels_on = false}
     _MiKe_circlePixels = (newList 18)
-    atPut 'all' _MiKe_circlePixels 0
-    local 'neoPixelPin' 5
-    if ((boardType) == 'ESP32') { neoPixelPin = 0 }
-    '[display:neoPixelSetPin]' neoPixelPin false
   }
 }
 
 to '_MiKe_circlePixels_update' {
+  local 'neoPixelPin' (ifExpression ((boardType) == 'ESP32') 0 5)
+  '[display:neoPixelSetPin]' neoPixelPin false
   '[display:neoPixelSend]' _MiKe_circlePixels
   waitMicros 100
 }
