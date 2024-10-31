@@ -8,7 +8,7 @@ Sends commands to MP3 player using software serial via any digital pin on any bo
 
 To use the "mp3 play ... until done" block, connect TX of MP3 player to a second pin and set that pin as the optional "rx pin" in the "mp3 initialize" block .
 '
-variables _mp3UseChecksum _mp3Pin _mp3RxPin 
+variables _mp3UseChecksum _mp3Pin _mp3RxPin _mp3Status 
 
   spec ' ' 'mp3_initialize' 'mp3 initialize _ pin _ : rx pin _' 'menu.mp3PlayerType num num' 'MakerPort' 20 21
   spec ' ' 'mp3_setVolume' 'mp3 set volume _ (0-30)' 'num' 20
