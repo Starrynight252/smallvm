@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 11:46+0200\n"
-"PO-Revision-Date: 2024-10-28 15:36+0000\n"
-"Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
+"PO-Revision-Date: 2024-11-01 13:12+0000\n"
+"Last-Translator: wwj718 <wuwenjie718@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/microblocks/ide/zh_Hans/>\n"
 "Language: zh-chs\n"
@@ -4427,3 +4427,11 @@ msgstr "报告一个新的字节数组，其长度为输入值，数组元素为
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Report a byte array containing the UTF-8 bytes of the given string."
 msgstr "报告一个字节数组，该数组包含输入字符串的 UTF-8 字节"
+
+#. NeoPixel library block
+msgid "shift NeoPixel _ color by _"
+msgstr "将 NeoPixel _ 颜色移动 _"
+
+#. Settings menu option
+msgid "advanced mode"
+msgstr "高级模式"
