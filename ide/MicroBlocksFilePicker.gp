@@ -107,7 +107,7 @@ method initialize MicroBlocksFilePicker anAction defaultPath extensionList saveF
 	answer = ''
 
 	folderTranslationPrefix = ''
-	if (contains extensions '.ubl') {
+	if (and (not saveFlag) (contains extensions '.ubl')) {
 		folderTranslationPrefix = 'libfolder;'
 	}
 
