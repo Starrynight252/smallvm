@@ -143,7 +143,7 @@ void hardwareInit() {
 		int yellow = 14864128;
 		setAllNeoPixels(-1, 3, yellow);
 	#endif
-	#if defined(ARDUINO_Mbits) || defined(ARDUINO_M5Atom_Matrix_ESP32)
+	#if defined(ARDUINO_Mbits) || defined(ARDUINO_M5Atom_Matrix_ESP32) || defined(STEAMaker)
 		mbDisplayColor = (190 << 16); // red (not full brightness)
 	#endif
 }
@@ -657,7 +657,7 @@ void hardwareInit() {
 	static const char digitalPin[22] = {
 		26, 32, 25, 13, 27, 36, 5, 12, 4, 34,
 		14, 39, 15, 18, 19, 23, 2, 255, 255, 21,
-		22, 33}; // edge connector pins 17 & 18 are not used
+		22, 33}; // edge connector pins 17 & 18 are not used (255)
 	#define DEFAULT_TONE_PIN 21
 	static const char reservedPin[TOTAL_PINS] = {
 		0, 1, 0, 1, 0, 1, 1, 1, 1, 0,
@@ -707,6 +707,32 @@ void hardwareInit() {
 		1, 1, 0, 0, 0, 0, 0, 0, 0, 0,
 		1, 1, 1, 0, 1, 0, 0, 0, 1, 1,
 		1, 1, 0, 0, 0, 0, 0, 1, 1, 0};
+
+#elif defined(STEAMaker)
+	#define BOARD_TYPE "micro:STEAMaker"
+	#define PIN_BUTTON_A 0
+	#define PIN_BUTTON_B 17
+	#define DIGITAL_PINS 25
+	#define ANALOG_PINS 16
+	#define TOTAL_PINS 40
+	#define USE_DIGITAL_PIN_MAP true
+	static const int analogPin[] = {};
+	static const char digitalPin[25] = {
+		12, 14, 32, 13, 27, 0, 2, 25, 4, 16,
+		26, 17, 15, 18, 19, 23, 5, 255, 255, 22,
+		21, 33, 35, 36, 39}; // edge connector pins 17 & 18 are not used (255 in map)
+	#define DEFAULT_TONE_PIN 33
+	static const char reservedPin[TOTAL_PINS] = {
+		0, 1, 0, 1, 0, 0, 1, 1, 1, 1,
+		1, 1, 0, 0, 0, 0, 0, 0, 0, 0,
+		1, 0, 0, 0, 1, 0, 0, 0, 1, 1,
+		1, 1, 0, 0, 0, 0, 0, 1, 1, 0};
+	// Pins not on edge connector
+	// Buzzer - 33
+	// Currently unused - 34
+	// Microphone - 35
+	// Current - 36
+	// LDR - 39
 
 #elif defined(ESP32_S2)
 	#define BOARD_TYPE "ESP32-S2"
@@ -1086,7 +1112,7 @@ OBJ primAnalogRead(int argCount, OBJ *args) {
 		}
 	#endif
 	#ifdef ARDUINO_ARCH_ESP32
-		#ifdef ARDUINO_Mbits
+		#if defined(ARDUINO_Mbits) || defined(STEAMaker)
 			if ((0 <= pinNum) && (pinNum <= 20) && (pinNum != 17) && (pinNum != 18)) {
 				pinNum = digitalPin[pinNum]; // map edge connector pin number to ESP32 pin number
 			}
@@ -1172,7 +1198,7 @@ void primAnalogWrite(OBJ *args) {
 				pinNum = ed1DigitalPinMap[pinNum - 1];
 			}
 		#endif
-		#ifdef ARDUINO_Mbits
+		#if defined(ARDUINO_Mbits) || defined(STEAMaker)
 			if ((0 <= pinNum) && (pinNum <= 20) && (pinNum != 17) && (pinNum != 18)) {
 				pinNum = digitalPin[pinNum]; // map edge connector pin number to ESP32 pin number
 			}
