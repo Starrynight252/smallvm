@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 16:36+0200\n"
-"PO-Revision-Date: 2024-11-01 13:16+0000\n"
+"PO-Revision-Date: 2024-11-01 13:39+0000\n"
 "Last-Translator: Turgut Guneysu <tguneysu@msn.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/microblocks/ide/"
 "tr/>\n"
@@ -44,7 +44,7 @@ msgstr "balık"
 
 #. Block in Comm category
 msgid "serial write _ starting at _"
-msgstr "seri yaz _  bayt _ başlayarak"
+msgstr "seri yaz _ , _ bayttan başlayarak"
 
 #. Example string. Tells the user this input accepts a string list or a byte array
 msgid "aStringListOrByteArray"
@@ -133,7 +133,7 @@ msgstr "yönergeleri göster"
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 #. The (-o) tag turns into an icon of a boolean input set to on, or true (green)
 msgid "Report (-o) if either value is (-o)"
-msgstr "Herhangi bir değer (-o) ise (-o) rapor edin."
+msgstr "Herhangi bir değer (-o) ise (-o) raporla"
 
 #. Tooltip in "Start" button. Top right of IDE.
 msgid "Start"
@@ -267,7 +267,7 @@ msgstr "radyo güç ayarla (0-7) _"
 
 #. Block in Operators category
 msgid "rescale _ from ( _ , _ ) to ( _ , _ )"
-msgstr "yeniden ölçeklendir _  bundan ( _ , _ ) buna ( _ , _ )"
+msgstr "yeniden ölçeklendir _ bundan ( _ , _ ) buna ( _ , _ )"
 
 #. Block in Comm category
 msgid "i2c device _ exists?"
@@ -388,7 +388,7 @@ msgstr "Değişken ekle"
 
 #. Make a block dialog
 msgid "Enter function name:"
-msgstr "İşlev adını gir"
+msgstr "İşlev adını gir:"
 
 #. Block in Comm category
 msgid "rpi channel _"
@@ -832,7 +832,7 @@ msgstr "ED1 Butonları"
 
 #. Citilab ED1 Stepper Motor library block
 msgid "move motor _ angle _ °"
-msgstr "_ motorunu  _ ° döndür"
+msgstr "_ motorunu _ ° döndür"
 
 #. TCS34725 color sensor library block
 msgid "TCS34725 connected"
@@ -1095,7 +1095,7 @@ msgstr "İnformasyon"
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Create a variable local to the containing script with the given initial value."
 msgstr ""
-"Verilen başlangıç değeriyle yerel bir değişkeni içerilen komut dosyasında  "
+"Verilen başlangıç değeriyle yerel bir değişkeni içerilen komut dosyasında "
 "oluşturun."
 
 #. In MicroBlocks IDE project menu
@@ -1129,7 +1129,7 @@ msgstr "Dosya sunucuda bulunamadı."
 #. Tip Bar label or text (at the bottom of the IDE, gives info on the currently hovered element)
 #. The [l] tag turns into an icon of a mouse with the left button pressed
 msgid "[l] to show the blocks in this category."
-msgstr "[l] bu kategorideki blokları gösterç"
+msgstr "[l] bu kategorideki blokları göster."
 
 #. MicroBlocks IDE message
 msgid "Reading project from board..."
@@ -1632,7 +1632,7 @@ msgstr "numara özellik _ ad _ min _ max _ @Tip _"
 
 #. MicroBlocks IDE message
 msgid "Plug in the board."
-msgstr "Kartı bağla"
+msgstr "Kartı bağla."
 
 #. MicroBlocks IDE information
 msgid "Use \"Connect\" button to connect to a MicroBlocks device."
@@ -1690,7 +1690,7 @@ msgstr ""
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Set an I2C device and register to given value (0-255)."
-msgstr "I2C cihazını  ve sayacını verilen değere (0-255) ayarlayın."
+msgstr "I2C cihazını ve sayacını verilen değere (0-255) ayarlayın."
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Broadcast the given message."
@@ -1771,7 +1771,7 @@ msgstr "NeoPixel _ rengini _ kaydır"
 
 #. NeoPixel library block
 msgid "shift all NeoPixel colors by _"
-msgstr "tüm NeoPixel  renklerini _ kaydır"
+msgstr "tüm NeoPixel renklerini _ kaydır"
 
 #. NeoPanel library label
 msgid "NeoPanel"
@@ -1842,7 +1842,7 @@ msgstr "TFT üçgen x _ y _ , x _ y _ , x _ y _ renk _"
 
 #. File System library block
 msgid "append line _ to file _"
-msgstr "_ satırı  _ dosyasına ekle"
+msgstr "_ satırı _ dosyasına ekle"
 
 #. File System library block
 msgid "append bytes _ to file _"
@@ -2386,7 +2386,7 @@ msgstr "tarafından"
 
 #. String in file picker and library dialogs
 msgid "Dependency path, name or URL?"
-msgstr "Bağımlılık yol, ad veya URl'si"
+msgstr "Bağımlılık yol, ad veya URL'si ?"
 
 #. Tip Bar label or text (at the bottom of the IDE, gives info on the currently hovered element)
 msgid "Boolean Input"
@@ -2579,7 +2579,7 @@ msgstr "İki değer eşit değilse (-o) rapor edin ."
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 #. The (-o) tag turns into an icon of a boolean input set to on, or true (green)
 msgid "Report (-o) if both values are (-o)"
-msgstr "Her iki değer de (-o) ise (-o) rapor edin."
+msgstr "Her iki değer de (-o) ise (-o) raporla"
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Report bitwise OR of two numbers."
@@ -2802,7 +2802,7 @@ msgstr "indirilmiş"
 
 #. Script right-click context menu tooltip
 msgid "save a picture of these blocks and their result as a PNG file"
-msgstr "Bu blokların ve sonuçunun fotoğrafını PNG dosyası olarak kaydet."
+msgstr "Bu blokların ve sonucunun fotoğrafını PNG dosyası olarak kaydet"
 
 #. Block right-click context menu
 msgid "copy to clipboard as URL"
