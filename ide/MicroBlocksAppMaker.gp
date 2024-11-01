@@ -67,7 +67,7 @@ method addFolderToEmbeddedFS MicroBlocksAppMaker srcFolder dstFolder zip {
 				(not (contains dirs fn))
 				(not (beginsWith fn '.'))) {
 			data = (readFile (join srcFolder '/' fn) true)
-			addFile zip (destinationPath this dstFolder fn) data true
+			addFile zip (join dstFolder '/' fn) data true
 		}
 	}
 	for fn dirs {
@@ -75,22 +75,6 @@ method addFolderToEmbeddedFS MicroBlocksAppMaker srcFolder dstFolder zip {
 			addFolderToEmbeddedFS this (join srcFolder '/' fn) (join dstFolder '/' fn) zip
 		}
 	}
-}
-
-method destinationPath MicroBlocksAppMaker dstFolder fileName {
-	if (beginsWith dstFolder 'Libraries') {
-		pathParts = (splitWith dstFolder '/')
-		for i (count pathParts) {
-			if (i > 1) {
-				part = (at pathParts i)
-				if (not (beginsWith part 'libfolder;')) {
-					atPut pathParts i (join 'libfolder;' part)
-				}
-			}
-		}
-		dstFolder = (joinStrings pathParts '/')
-	}
-	return (join dstFolder '/' fileName)
 }
 
 method writeExeFile MicroBlocksAppMaker srcAppPath embeddedFS dstPath {

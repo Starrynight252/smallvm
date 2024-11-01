@@ -2,7 +2,7 @@
 // Dialog box for specifying files for opening or saving in MicroBlocks.
 // Note: Replaces the GP FilePicker in the MicroBlocks IDE.
 
-defineClass MicroBlocksFilePicker morph window folderReadout listPane parentButton newFolderButton nameLabel nameField cancelButton okayButton topDir currentDir useEmbeddedFS action forSaving extensions isDone answer onFileSelect onFolderSelect cloudAction
+defineClass MicroBlocksFilePicker morph window folderReadout listPane parentButton newFolderButton nameLabel nameField cancelButton okayButton topDir currentDir useEmbeddedFS action forSaving extensions isDone answer onFileSelect onFolderSelect cloudAction folderTranslationPrefix
 
 to microBlocksFileToWrite defaultPath extensionList {
 	// Ask the user to enter a file name and location for writing. If provided, defaultPath is
@@ -105,6 +105,11 @@ method initialize MicroBlocksFilePicker anAction defaultPath extensionList saveF
 	topDir = ''
 	isDone = false
 	answer = ''
+
+	folderTranslationPrefix = ''
+	if (contains extensions '.ubl') {
+		folderTranslationPrefix = 'libfolder;'
+	}
 
 	lbox = (listBox (array) nil (action 'fileOrFolderSelected' this) clr)
 	onDoubleClick lbox (action 'fileOrFolderDoubleClicked' this)
@@ -416,13 +421,17 @@ method parentFolder MicroBlocksFilePicker {
 method showFolder MicroBlocksFilePicker path isTop {
 	currentDir = path
 	if isTop { topDir = path }
-	setText folderReadout (localized (filePart path))
+	setText folderReadout (localizeDir this (filePart path))
 	updateParentAndNewFolderButtons this
 	setCollection (contents listPane) (folderContents this)
 	changeScrollOffset listPane -100000 -100000 // scroll to top-left
 	if (notNil onFolderSelect) {
 		call onFolderSelect (join path)
 	}
+}
+
+method localizeDir MicroBlocksFilePicker folderName {
+	return (localized (join folderTranslationPrefix folderName))
 }
 
 method folderContents MicroBlocksFilePicker {
@@ -445,7 +454,7 @@ method folderContents MicroBlocksFilePicker {
 	}
 	for dir (sorted dirList 'caseInsensitiveSort') {
 		if (not (beginsWith dir '.')) {
-			add result (array (join '[ ] ' (localized dir)) (join '[ ] ' dir))
+			add result (array (join '[ ] ' (localizeDir this dir)) (join '[ ] ' dir))
 		}
 	}
 	for fn (sorted fileList 'caseInsensitiveSort') {
