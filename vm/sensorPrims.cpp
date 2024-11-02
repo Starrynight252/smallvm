@@ -1052,7 +1052,7 @@ static int readTemperature() {
 	return val;
 }
 
-#elif defined(ARDUINO_Mbits)
+#elif defined(ARDUINO_Mbits) || defined(STEAMaker)
 
 #define MPU6050 0x69
 #define MPU6050_ACCEL_XOUT_H 59
@@ -1107,6 +1107,10 @@ static void setAccelRange(int range) {
 #define TMP75_TEMP_REG 0
 
 static int readTemperature() {
+	#if defined(STEAMaker)
+		return 0;
+	#endif
+
 	if (!wireStarted) startWire();
 	if (!wireStarted) return 0;
 
@@ -2005,7 +2009,7 @@ int readAnalogMicrophone() {
 	#if defined(ARDUINO_CITILAB_ED1)
 		int pin = 36; // Pin A0 on ED1
 		return (analogRead(pin) >> 2);
-	#elif defined(ARDUINO_Mbits)
+	#elif defined(ARDUINO_Mbits) || defined(STEAMaker)
 		int pin = 35;
 		return (analogRead(pin) >> 2);
 	#endif

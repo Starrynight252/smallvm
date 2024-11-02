@@ -727,12 +727,15 @@ void hardwareInit() {
 		1, 1, 0, 0, 0, 0, 0, 0, 0, 0,
 		1, 0, 0, 0, 1, 0, 0, 0, 1, 1,
 		1, 1, 0, 0, 0, 0, 0, 1, 1, 0};
-	// Pins not on edge connector
-	// Buzzer - 33
-	// Currently unused - 34
-	// Microphone - 35
-	// Current - 36
-	// LDR - 39
+	// analog inputs (ESP32=edge pin): 12=0, 14=1, 32=2, 13=3, 27=4, 0=5, 2=6, 25=7, 4=8, 26=10, 15=12
+	// UART: edge connector pins 9 (RX) and 11 (TX)
+	//
+	// Pins not on edge connector:
+	// Buzzer - 21 (was 33)
+	// Microphone - 22 (was 35)
+	// Current - 23 (was 36)
+	// LDR - 24 (was 39)
+	// Unused - 34
 
 #elif defined(ESP32_S2)
 	#define BOARD_TYPE "ESP32-S2"
