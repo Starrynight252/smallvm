@@ -721,7 +721,7 @@ void hardwareInit() {
 		12, 14, 32, 13, 27, 0, 2, 25, 4, 16,
 		26, 17, 15, 18, 19, 23, 5, 255, 255, 22,
 		21, 33, 35, 36, 39}; // edge connector pins 17 & 18 are not used (255 in map)
-	#define DEFAULT_TONE_PIN 33
+	#define DEFAULT_TONE_PIN 21
 	static const char reservedPin[TOTAL_PINS] = {
 		0, 1, 0, 1, 0, 0, 1, 1, 1, 1,
 		1, 1, 0, 0, 0, 0, 0, 0, 0, 0,
