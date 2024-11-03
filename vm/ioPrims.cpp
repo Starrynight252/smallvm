@@ -709,7 +709,7 @@ void hardwareInit() {
 		1, 1, 0, 0, 0, 0, 0, 1, 1, 0};
 
 #elif defined(STEAMaker)
-	#define BOARD_TYPE "micro:STEAMaker"
+	#define BOARD_TYPE "micro:STEAMakers"
 	#define PIN_BUTTON_A 0
 	#define PIN_BUTTON_B 17
 	#define DIGITAL_PINS 25
