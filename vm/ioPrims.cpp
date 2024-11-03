@@ -1116,7 +1116,7 @@ OBJ primAnalogRead(int argCount, OBJ *args) {
 	#endif
 	#ifdef ARDUINO_ARCH_ESP32
 		#if defined(ARDUINO_Mbits) || defined(STEAMaker)
-			if ((0 <= pinNum) && (pinNum <= 20) && (pinNum != 17) && (pinNum != 18)) {
+			if ((0 <= pinNum) && (pinNum < DIGITAL_PINS) && (pinNum != 17) && (pinNum != 18)) {
 				pinNum = digitalPin[pinNum]; // map edge connector pin number to ESP32 pin number
 			}
 		#endif
@@ -1202,7 +1202,7 @@ void primAnalogWrite(OBJ *args) {
 			}
 		#endif
 		#if defined(ARDUINO_Mbits) || defined(STEAMaker)
-			if ((0 <= pinNum) && (pinNum <= 20) && (pinNum != 17) && (pinNum != 18)) {
+			if ((0 <= pinNum) && (pinNum < DIGITAL_PINS) && (pinNum != 17) && (pinNum != 18)) {
 				pinNum = digitalPin[pinNum]; // map edge connector pin number to ESP32 pin number
 			}
 		#endif
