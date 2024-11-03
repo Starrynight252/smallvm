@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 16:36+0200\n"
-"PO-Revision-Date: 2024-11-01 13:39+0000\n"
-"Last-Translator: Turgut Guneysu <tguneysu@msn.com>\n"
+"PO-Revision-Date: 2024-11-03 21:17+0000\n"
+"Last-Translator: Murat Fahrettin Akgüller <mrtfhrttn@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/microblocks/ide/"
 "tr/>\n"
 "Language: tr\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8.2-dev\n"
+"X-Generator: Weblate 5.8.2\n"
 
 #. Block in Output category
 msgid "set user LED _"
@@ -2907,3 +2907,215 @@ msgstr "gelişmiş mod"
 #. MicroBlocks IDE information
 msgid "You will be asked to save the firmware file."
 msgstr "Firmware dosyanızı kaydetmeniz istenecektir."
+
+#. Image name for the "display image" block
+msgid "small diamond"
+msgstr "küçük elmas"
+
+#. Image name for the "display image" block
+msgid "square"
+msgstr "kare"
+
+#. Image name for the "display image" block
+msgid "angry"
+msgstr "kızgın"
+
+#. Image name for the "display image" block
+msgid "pitchfork"
+msgstr "dirgen"
+
+#. Image name for the "display image" block
+msgid "quarter note"
+msgstr "çeyrek nota"
+
+#. Image name for the "display image" block
+msgid "eight note"
+msgstr "sekizlik nota"
+
+#. Image name for the "display image" block
+msgid "skull"
+msgstr "kafatası"
+
+#. Image name for the "display image" block
+msgid "t-shirt"
+msgstr "t-shirt"
+
+#. Image name for the "display image" block
+msgid "confused"
+msgstr "düşünceli"
+
+#. Image name for the "display image" block
+msgid "surprised"
+msgstr "şaşırmış"
+
+#. Image name for the "display image" block
+msgid "small heart"
+msgstr "küçük kalp"
+
+#. Image name for the "display image" block
+msgid "cow"
+msgstr "inek"
+
+#. Image name for the "display image" block
+msgid "silly"
+msgstr "şapşal"
+
+#. Image name for the "display image" block
+msgid "butterfly"
+msgstr "kelebek"
+
+#. Image name for the "display image" block
+msgid "no"
+msgstr "hayır"
+
+#. OLED Graphics library block
+msgid "clear"
+msgstr "temizle"
+
+#. Image name for the "display image" block
+msgid "heart"
+msgstr "kalp"
+
+#. Image name for the "display image" block
+msgid "stick figure"
+msgstr "çubuk adam"
+
+#. Image name for the "display image" block
+msgid "rabbit"
+msgstr "tavşan"
+
+#. Image name for the "display image" block
+msgid "yes"
+msgstr "evet"
+
+#. Image name for the "display image" block
+msgid "tortoise"
+msgstr "kaplumbağa"
+
+#. OLED Graphics library block
+msgid "show display buffer"
+msgstr "ekran arabelleğini göster"
+
+#. Image name for the "display image" block
+msgid "diamond"
+msgstr "elmas"
+
+#. OLED Graphics library block
+msgid "set contrast (1-4) _"
+msgstr "kontrastı ayarla(1-4) _"
+
+#. Image name for the "display image" block
+msgid "sad"
+msgstr "üzgün"
+
+#. Image name for the "display image" block
+msgid "duck"
+msgstr "ördek"
+
+#. Image name for the "display image" block
+msgid "scissors"
+msgstr "makas"
+
+#. Image name for the "display image" block
+msgid "roller skate"
+msgstr "paten"
+
+#. OLED Graphics library block
+msgid "set pixel x _ y _ erase _"
+msgstr "pikseli ayarla x _ y _ konumundaki sil _"
+
+#. Image name for the "display image" block
+msgid "triangle"
+msgstr "üçgen"
+
+#. Image name for the "display image" block
+msgid "ghost"
+msgstr "hayalet"
+
+#. OLED Graphics library block
+msgid "initialize spi _ d/c pin# _ reset pin# _ flip _"
+msgstr "spi başlat _ d/c pini# _ reset pini# _ döndür _"
+
+#. Image name for the "display image" block
+msgid "snake"
+msgstr "yılan"
+
+#. Image name for the "display image" block
+msgid "fabulous"
+msgstr "harika"
+
+#. Image name for the "display image" block
+msgid "chess board"
+msgstr "satranç tahtası"
+
+#. Image name for the "display image" block
+msgid "umbrella"
+msgstr "şemsiye"
+
+#. OLED Graphics library block
+msgid "initialize i2c _ address(hex) _ reset pin# _ flip _"
+msgstr "i2c başlat _ adresi(hex) _ reset pini# _ döndür _"
+
+#. Image name for the "display image" block
+msgid "house"
+msgstr "ev"
+
+#. OLED Graphics library block
+msgid "draw rectangle x _ y _ w _ h _ erase _ rounding(3-15) _"
+msgstr "dikdörtgen çiz x _ y _ konumuna g _ y _ sil _ yuvarlaklaştırma(3-15) _"
+
+#. OLED Graphics library block
+msgid "draw circle at x _ y _ radius _ erase _"
+msgstr "çember çiz x _ y _ konumuna yarıçapı _ sil _"
+
+#. OLED Graphics library block
+msgid "make image _"
+msgstr "görsel oluştur _"
+
+#. Image name for the "display image" block
+msgid "happy"
+msgstr "mutlu"
+
+#. OLED Graphics library block
+msgid "fill rectangle x _ y _ w _ h _ erase _"
+msgstr "içi dolu dikdörtgen çiz x _ y _ g _ h _ sil _"
+
+#. Image name for the "display image" block
+msgid "left triangle"
+msgstr "dik üçgen"
+
+#. Image name for the "display image" block
+msgid "asleep"
+msgstr "uykucu"
+
+#. OLED Graphics library block
+msgid "draw line from x _ y _ to x _ y _ erase _"
+msgstr "çizgi çiz x _ y _ konumundan x _ y _ konumuna sil _"
+
+#. Image name for the "display image" block
+msgid "meh"
+msgstr "meh"
+
+#. Image name for the "display image" block
+msgid "sword"
+msgstr "kılıç"
+
+#. Image name for the "display image" block
+msgid "giraffe"
+msgstr "zürafa"
+
+#. Image name for the "display image" block
+msgid "target"
+msgstr "hedef"
+
+#. Image name for the "display image" block
+msgid "small square"
+msgstr "küçük kare"
+
+#. OLED Graphics library block
+msgid "write _ at x _ y _ inverse _"
+msgstr "yaz _ x _ y _ konumuna ters çevir _"
+
+#. OLED Graphics library block
+msgid "draw image _ at x _ y _"
+msgstr "görsel _ çiz x _ y _ konumuna"
