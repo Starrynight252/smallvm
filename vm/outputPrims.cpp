@@ -974,7 +974,7 @@ OBJ primNeoPixelSend(int argCount, OBJ *args) {
 		}
 		sendNeoPixelData(val);
 	}
-
+	taskSleep(1); // NeoPixels latch time
 	return falseObj;
 }
 
@@ -1057,6 +1057,7 @@ void turnOffInternalNeoPixels() {
 			sendNeoPixelData(isOn ? pixelValue : 0);
 		}
 		neoPixelPinMask = oldPinMask; // restore the old NeoPixel pin
+		delay(1); // NeoPixels latch time
 	}
 
 #endif

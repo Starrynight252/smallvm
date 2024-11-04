@@ -1430,6 +1430,7 @@ void primSetUserLED(OBJ *args) {
 		#if defined(M5STAMP) || defined(ARDUINO_M5Atom_Lite_ESP32)
 			int color = (output == HIGH) ? 255 : 0; // blue when on
 			setAllNeoPixels(PIN_LED, 1, color);
+			taskSleep(1);
 		#else
 			digitalWrite(PIN_LED, (PinStatus) output);
 		#endif
