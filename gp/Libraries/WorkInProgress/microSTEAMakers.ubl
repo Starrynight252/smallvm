@@ -22,7 +22,7 @@ variables _ms_neoPixels _ms_neoPixels_scale _ms_scrolling_stopped _ms_energyRead
   spec ' ' 'ms_scroll_text' 'ms scroll text _ with color _ : pausing _ ms' 'str color num' 'micro:STEAMakers' nil 100
   spec ' ' 'ms_stopScrollingText' 'ms stop scrolling'
   space
-  spec ' ' 'ms_setup_audio' 'use microSTEAMakers speaker _' 'bool' false
+  spec ' ' 'ms_setup_audio' 'start micro꞉STEAMakers audio'
   space
   spec 'r' 'ms_touching' 'ms touching ?'
   spec 'r' 'ms_light' 'ms light'
@@ -343,13 +343,8 @@ to ms_setGlobalBrightnessScale scale {
   '_ms_neoPixels_update'
 }
 
-to ms_setup_audio useSpeaker {
-  if useSpeaker {
-    'attach buzzer to pin' 21
-  } else {
-    comment 'Use micro:bit V2 speaker'
-    'attach buzzer to pin' -1
-  }
+to ms_setup_audio {
+  'attach buzzer to pin' 21
 }
 
 to ms_sound {
