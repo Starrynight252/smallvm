@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 16:36+0200\n"
-"PO-Revision-Date: 2024-11-03 21:17+0000\n"
+"PO-Revision-Date: 2024-11-06 09:18+0000\n"
 "Last-Translator: Murat Fahrettin Akgüller <mrtfhrttn@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/microblocks/ide/"
 "tr/>\n"
@@ -3119,3 +3119,15 @@ msgstr "yaz _ x _ y _ konumuna ters çevir _"
 #. OLED Graphics library block
 msgid "draw image _ at x _ y _"
 msgstr "görsel _ çiz x _ y _ konumuna"
+
+#. Example string. Tells the user this input accepts a list or a string
+msgid "aListOrString"
+msgstr "birListeVeyaDizi"
+
+#. Lists library block
+msgid "circular item _ of _"
+msgstr "dairesel öğe _ liste/dizi _"
+
+#. Sphero-RVR robot library block
+msgid "set all LEDs to red _ green _ blue _"
+msgstr "tüm LEDleri kırmızı _ yeşil _ mavi _ ayarla"
