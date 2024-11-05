@@ -431,6 +431,7 @@ method showFolder MicroBlocksFilePicker path isTop {
 }
 
 method localizeDir MicroBlocksFilePicker folderName {
+	if (beginsWith currentDir '/') { return folderName }
 	return (localized (join folderTranslationPrefix folderName))
 }
 
