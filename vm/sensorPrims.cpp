@@ -1054,8 +1054,9 @@ static int readTemperature() {
 
 #elif defined(ARDUINO_Mbits) || defined(STEAMaker)
 
-#define MPU6050 0x69
-#ifdef STEAMaker
+#if defined(ARDUINO_Mbits)
+	#define MPU6050 0x69
+#elif defined(STEAMaker)
 	#define MPU6050 0x68
 #endif
 
@@ -1107,12 +1108,59 @@ static void setAccelRange(int range) {
 	writeI2CReg(MPU6050, 0x1C, (range << 3));
 }
 
+#define AHT20_ADDR 0x38
+
+int aht20_initialized = false;
+
+static int aht20_temperature(); // forware reference
+
+static void aht20_init() {
+	if (aht20_initialized) return;
+
+	// Send initialization commmand
+	Wire.beginTransmission(AHT20_ADDR);
+	Wire.write(0xBE);
+	Wire.write(0x08);
+	Wire.write(0x00);
+	Wire.endTransmission();
+
+	delay(10); // initialization time
+	aht20_initialized = true;
+
+	aht20_temperature(); // get initial reading
+}
+
+static int aht20_temperature() {
+	if (!wireStarted) startWire();
+	if (!wireStarted) return 0;
+	aht20_init();
+
+	// get the data from the last reading
+	uint8 data[6];
+	int readCount = sizeof(data);
+	Wire.requestFrom(AHT20_ADDR, readCount);
+	for (int i = 0; i < readCount; i++) {
+		data[i] = Wire.available() ? Wire.read() : 255; // 255 if no data available
+	}
+
+	// send a new read command so data will be ready on the next call
+	Wire.beginTransmission(AHT20_ADDR);
+	Wire.write(0xAC);
+	Wire.write(0x33);
+	Wire.write(0x00);
+	Wire.endTransmission();
+	taskSleep(75);
+
+	int raw = ((data[4] & 15) << 16) | (data[5] << 8) | data[6];
+	return ((raw * 200) / 1048576) - 50;
+}
+
 #define TMP75_ADDR 0x48
 #define TMP75_TEMP_REG 0
 
 static int readTemperature() {
 	#if defined(STEAMaker)
-		return 0;
+		return aht20_temperature();
 	#endif
 
 	if (!wireStarted) startWire();
