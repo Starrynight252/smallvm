@@ -1055,6 +1055,10 @@ static int readTemperature() {
 #elif defined(ARDUINO_Mbits) || defined(STEAMaker)
 
 #define MPU6050 0x69
+#ifdef STEAMaker
+	#define MPU6050 0x68
+#endif
+
 #define MPU6050_ACCEL_XOUT_H 59
 #define MPU6050_PWR_MGMT_1 107
 
