@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 16:23+0200\n"
-"PO-Revision-Date: 2024-10-30 10:50+0000\n"
+"PO-Revision-Date: 2024-11-05 08:34+0000\n"
 "Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/microblocks/ide/"
 "es/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8.2-dev\n"
+"X-Generator: Weblate 5.8.2\n"
 
 #. Block part type, while making a new block
 msgid "input"
@@ -5904,3 +5904,96 @@ msgid "Report a list containing the given range of numbers (with optional increm
 msgstr ""
 "Reporta una lista que contiene el rango de números definido (con incremento "
 "opcional). Útil en bucles \"por\"."
+
+#. Cutebot Pro library block
+msgid "CBPro set _ servo _ angle to _ deg"
+msgstr "fija servo de _ número _ a _ grados"
+
+#. WuKong2040 robot library block
+msgid "WuKong2040 clear all rainbowLED"
+msgstr "apaga LEDs multicolor"
+
+#. Cutebot Pro library block
+msgid "CBPro IR code received?"
+msgstr "¿código IR recibido?"
+
+#. MicroBlocks IDE information
+msgid "The firmware on the board is not compatible with this version of MicroBlocks."
+msgstr ""
+"El firmware de esta placa no es compatible con esta versión de MicroBlocks."
+
+#. Elecfreaks Octopus sensor library label
+msgid "Octopus"
+msgstr "Octopus"
+
+#. Settings menu option
+msgid "autoload board libraries"
+msgstr "auto-carga librarías de placa"
+
+#. WuKong2040 robot library block
+msgid "WuKong2040 stop all motors"
+msgstr "detén todos los motores"
+
+#. Cutebot Pro library block
+msgid "CBPro stop external motor"
+msgstr "detén motor externo"
+
+#. Cutebot Pro library block
+msgid "CBPro version"
+msgstr "versión del CBPro"
+
+#. WuKong2040 robot library block
+msgid "WuKong2040 rainbowLED _ R _ G _ B _ (0~255)"
+msgstr "pon LED multicolor _ a rojo _ verde _ azul _ (0~255)"
+
+#. WuKong2040 robot library label
+msgid "WuKong2040"
+msgstr "WuKong2040"
+
+#. Settings menu option
+msgid "PlugShare when project empty"
+msgstr "auto-PlugShare en proyectos vacíos"
+
+#. Cutebot Pro library block
+msgid "CBPro tracking state"
+msgstr "estado del seguimiento de línea"
+
+#. Cutebot Pro library block
+msgid "CBPro set external motor power to _ (-100 to 100)"
+msgstr "fija la potencia del motor externo a _ (-100 a 100)"
+
+#. Cutebot Pro library block
+msgid "CBPro servo _ speed to _ (-100 to 100)"
+msgstr "pon servo _ a velocidad _ (-100 a 100)"
+
+#. Cutebot Pro library block
+msgid "CBPro tracking state is (L - - R) _ _ _ _"
+msgstr "el estado del seguimiento de línea es (I--D) _ _ _ _"
+
+#. Cutebot Pro library block
+msgid "CBPro tracking offset"
+msgstr "desfase del seguimiento de línea"
+
+#. Cutebot Pro library block
+msgid "CBPro IR code"
+msgstr "código IR"
+
+#. WuKong2040 robot library block
+msgid "WuKong2040 motor _ speed to _ (-100~100)"
+msgstr "pon el motor _ a velocidad _ (-100~100)"
+
+#. WuKong2040 robot library block
+msgid "WuKong2040 stop motor _"
+msgstr "detén el motor _"
+
+#. WuKong2040 robot library block
+msgid "WuKong2040 buzzer beep _ ms"
+msgstr "pita durante _ ms"
+
+#. WuKong2040 robot library block
+msgid "WuKong2040 rainbowLED _ color to _"
+msgstr "pon LED multicolor _ a _"
+
+#. Settings menu tooltip
+msgid "make the IDE darker"
+msgstr "oscurece la IDE"
