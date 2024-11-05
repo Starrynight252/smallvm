@@ -463,6 +463,8 @@ static OBJ primLightLevel(int argCount, OBJ *args) {
 	#elif defined(DATABOT)
 		const char *msg = "Use 'Light & Gesture' library on Databot.";
 		return newStringFromBytes(msg, strlen(msg));
+	#elif defined(STEAMaker)
+		lightLevel = analogRead(39) * 1000 / 4095; // range 0-1000, like Citilab
 	#else
 		lightReadingRequested = true;
 	#endif
