@@ -318,6 +318,14 @@ method needsTranslation AuthoringSpecs spec {
 }
 
 method installTranslation AuthoringSpecs translationData langName {
+	translationDictionary = (dictionary)
+	updateTranslation this translationData
+	if (notNil langName) { language = langName }
+}
+
+method updateTranslation AuthoringSpecs translationData {
+	// Append the given translationData to the current language
+	//
 	// Translation data is string consisting of three-line entries:
 	//	msgid "original string"
 	//	msgstr "translated string"
@@ -325,7 +333,6 @@ method installTranslation AuthoringSpecs translationData langName {
 	//	...
 	// Lines starting with # are treated as comments
 
-	translationDictionary = (dictionary)
 	lines = (toList (lines translationData))
 	while ((count lines) >= 2) {
 		from = (removeFirst lines)
@@ -341,7 +348,6 @@ method installTranslation AuthoringSpecs translationData langName {
 			atPut translationDictionary (parseGetText this from true) (parseGetText this to false)
 		}
 	}
-	if (notNil langName) { language = langName }
 }
 
 method parseGetText AuthoringSpecs aString isSource {

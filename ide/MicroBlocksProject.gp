@@ -461,7 +461,7 @@ method equal MicroBlocksProject proj {
 
 // MicroBlocksModule Class
 
-defineClass MicroBlocksModule moduleName moduleCategory dependencies version author description tags path variableNames blockList functions scripts blockSpecs choices
+defineClass MicroBlocksModule moduleName moduleCategory dependencies version author description tags path variableNames blockList functions scripts blockSpecs choices translationSources
 
 to newMicroBlocksModule modName {
 	return (initialize (new 'MicroBlocksModule') modName)
@@ -481,6 +481,7 @@ method initialize MicroBlocksModule name {
 	blockSpecs = (dictionary)
 	functions = (array)
 	scripts = (array)
+	translationSources = (dictionary)
 	return this
 }
 
@@ -1167,4 +1168,18 @@ method functionsEqual MicroBlocksModule f1 f2 {
 	if ((cmdList f1) != (cmdList f1)) { return false }
 	if ((module f1) != (module f1)) { return false }
 	return true
+}
+
+// localization
+
+method setTranslations MicroBlocksModule translationsDict {
+	translationSources = translationsDict
+}
+
+method getTranslationSources MicroBlocksModule langCode {
+	return (at translationSources langCode)
+}
+
+method hasTranslationFor MicroBlocksModule langCode {
+	return (contains (keys translationSources) langCode)
 }

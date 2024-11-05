@@ -1304,6 +1304,29 @@ method importEmbeddedLibrary MicroBlocksScripter libName {
 	}
 }
 
+method importLocalizedLibraryFromFile MicroBlocksScripter fileName {
+	zip = (read (new 'ZipFile') (readFile fileName true))
+	translations = (dictionary)
+	libName = ''
+	for fileName (fileNames zip) {
+		data = (toString (extractFile zip fileName))
+		if (endsWith fileName '.ubl') {
+			importLibraryFromFile this fileName data
+		} (endsWith fileName '.po') {
+			langCode = (withoutExtension fileName)
+			if (langCode == (languageCode (authoringSpecs))) {
+				updateTranslation (authoringSpecs) data
+			}
+			atPut translations langCode data
+		} else {
+			print 'Library contains unrecognized file format:' fileName
+		}
+	}
+	libName = (withoutExtension (filePart fileName))
+	library = (libraryNamed mbProject libName)
+	setTranslations library translations
+}
+
 method importLibraryFromFile MicroBlocksScripter fileName data updateLastLibFolder {
 	// Import a library with the given file path. If data is not nil, it came from
 	// a browser upload or file drop. Use it rather than attempting to read the file.

@@ -1374,6 +1374,12 @@ method languageMenu MicroBlocksEditor {
 method setLanguage MicroBlocksEditor langCode {
 	saveToUserPreferences this 'locale' langCode
 	setLanguage (authoringSpecs) langCode
+	// localizable user libraries
+	for lib (values (libraries (project this))) {
+		if (hasTranslationFor lib langCode) {
+			updateTranslation (authoringSpecs) (getTranslationSources lib langCode)
+		}
+	}
 	languageChanged this
 }
 
