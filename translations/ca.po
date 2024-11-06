@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-30 07:10+0200\n"
-"PO-Revision-Date: 2024-11-05 08:57+0000\n"
+"PO-Revision-Date: 2024-11-06 13:53+0000\n"
 "Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/microblocks/ide/"
 "ca/>\n"
@@ -5891,3 +5891,19 @@ msgstr "mostra blocs, opcions de menú i funcionalitats d'edició avançades"
 #. Language menu item. Takes the user to documentation about adding a missing language
 msgid "Missing language?"
 msgstr "Falta un idioma?"
+
+#. Block in Input category
+msgid "BLE id"
+msgstr "identificador BLE"
+
+#. Block in Input category
+msgid "BLE connected"
+msgstr "connectat via BLE"
+
+#. Block in Input category
+msgid "seconds"
+msgstr "segons"
+
+#. Block in Input category
+msgid "version"
+msgstr "versió"
