@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 16:23+0200\n"
-"PO-Revision-Date: 2024-11-05 12:40+0000\n"
-"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"PO-Revision-Date: 2024-11-06 10:00+0000\n"
+"Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/microblocks/ide/"
 "es/>\n"
 "Language: es\n"
@@ -1498,7 +1498,7 @@ msgstr "con contenido _"
 
 #. Keyestudio Smart Farm library block
 msgid "on"
-msgstr "encender"
+msgstr "enciende"
 
 #. MIDI library block
 msgid "stop all notes on channel _"
@@ -1715,7 +1715,7 @@ msgstr "MiKe Robot ir _ a _ %"
 
 #. BirdBrain Technologies Finch Robot library block
 msgid "Finch Turn _ _ ° at _ %"
-msgstr "Gira hacia la _ _ ° a velocidad _ %"
+msgstr "gira hacia la _ _ ° a velocidad _ %"
 
 #. Scales & Chords library block
 msgid "arpeggiate _ in order _ duration _ and volume _ on _ _"
@@ -3802,7 +3802,7 @@ msgstr "Imagina IR envía al dispositivo _ el valor _"
 
 #. Keyestudio Smart Farm library block
 msgid "off"
-msgstr "apagar"
+msgstr "cierra"
 
 #. Keyestudio Smart Home library block
 msgid "Home set NeoPixels _ _ _ _"
@@ -4164,7 +4164,7 @@ msgstr "mueve motor _ _ vueltas completas"
 
 #. BirdBrain Technologies Finch Robot library block
 msgid "Finch Move _ _ cm at _ %"
-msgstr "Mueve hacia _ _ cm a velocidad _ %"
+msgstr "mueve hacia _ _ cm a velocidad _ %"
 
 #. BirdBrain Technologies Finch Robot library block
 msgid "Finch Stop"
@@ -4184,7 +4184,7 @@ msgstr "reinicializa los contadores de vueltas"
 
 #. BirdBrain Technologies Finch Robot library block
 msgid "Finch Battery"
-msgstr "Nivel de batería"
+msgstr "nivel de batería"
 
 #. BirdBrain Technologies Finch Robot library block
 msgid "Forward"
