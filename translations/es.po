@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 16:23+0200\n"
-"PO-Revision-Date: 2024-11-06 10:00+0000\n"
+"PO-Revision-Date: 2024-11-06 13:53+0000\n"
 "Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/microblocks/ide/"
 "es/>\n"
@@ -5997,3 +5997,19 @@ msgstr "pon LED multicolor _ a _"
 #. Settings menu tooltip
 msgid "make the IDE darker"
 msgstr "oscurece la IDE"
+
+#. Block in Input category
+msgid "BLE id"
+msgstr "identificador BLE"
+
+#. Block in Input category
+msgid "BLE connected"
+msgstr "conectado por BLE"
+
+#. Block in Input category
+msgid "seconds"
+msgstr "segundos"
+
+#. Block in Input category
+msgid "version"
+msgstr "versión"
