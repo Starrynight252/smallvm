@@ -1112,12 +1112,12 @@ static void setAccelRange(int range) {
 
 int aht20_initialized = false;
 
-static int aht20_temperature(); // forware reference
+static int aht20_temperature(); // forward reference
 
 static void aht20_init() {
 	if (aht20_initialized) return;
 
-	// Send initialization commmand
+	// Send initialization commands
 	Wire.beginTransmission(AHT20_ADDR);
 	Wire.write(0xBE);
 	Wire.write(0x08);
@@ -1151,7 +1151,7 @@ static int aht20_temperature() {
 	Wire.endTransmission();
 	taskSleep(75);
 
-	int raw = ((data[4] & 15) << 16) | (data[5] << 8) | data[6];
+	int raw = ((data[3] & 15) << 16) | (data[4] << 8) | data[5];
 	return ((raw * 200) / 1048576) - 50;
 }
 
