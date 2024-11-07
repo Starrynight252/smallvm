@@ -1069,11 +1069,10 @@ static void mpu6050readData() {
 	if (!accelStarted) {
 		if (!wireStarted) startWire();
 		if (!wireStarted) return;
-
-		writeI2CReg(MPU6050, MPU6050_PWR_MGMT_1, 1); // use x-gyro clock
-		delay(1);
 		accelStarted = true;
 	}
+
+	writeI2CReg(MPU6050, MPU6050_PWR_MGMT_1, 1); // use x-gyro clock
 
 	// Request accelerometer data
 	Wire.beginTransmission(MPU6050);
@@ -1091,7 +1090,6 @@ static void mpu6050readData() {
 
 static int readAcceleration(int registerID) {
 	mpu6050readData();
-
 	int val = 0;
 	if (1 == registerID) val = fix16bitSign((mpuData[2] << 8) | mpuData[3]); // x-axis
 	if (3 == registerID) val = -fix16bitSign((mpuData[0] << 8) | mpuData[1]); // y-axis
