@@ -3261,7 +3261,10 @@ method installESPFirmwareFromURL SmallRuntime {
 	}
 	url = (trim (freshPrompt (global 'page') 'ESP32 firmware URL?' defaultURL))
 	if ('' == url) { return }
+	flashESPFirmwareFromURL this boardName url
+}
 
+method flashESPFirmwareFromURL SmallRuntime boardName url {
 	if ('Browser' == (platform)) {
 		disconnected = true
 		flasherPort = port
@@ -3272,6 +3275,29 @@ method installESPFirmwareFromURL SmallRuntime {
 	}
 	flasher = (newFlasher boardName portName false false)
 	installFromURL flasher flasherPort url
+}
+
+method installESPFirmwareFromRepo SmallRuntime {
+	setCursor 'wait'
+	if (isPilot (findMicroBlocksEditor)) {
+		version = 'pilot'
+	} else {
+		version = ideVersion
+	}
+	menu = (menu 'Select firmware:' this)
+	html = (basicHTTPGet 'microblocks.fun' (join '/downloads/' version '/vm/'))
+	for line (lines html) {
+		if (beginsWith line '<a href="vm_') {
+			binIndex = (findSubstring '.bin' line)
+			if (binIndex > 0) { // it is an ESP firmware
+				boardName = (substring line 13 (binIndex - 1))
+				url = (join 'http://microblocks.fun/downloads/' version '/vm/vm_' boardName '.bin')
+				addItem menu boardName (action 'flashESPFirmwareFromURL' this boardName url)
+			}
+		}
+	}
+	setCursor 'normal'
+	popUpAtHand menu (global 'page')
 }
 
 // Install ESP firmware from file

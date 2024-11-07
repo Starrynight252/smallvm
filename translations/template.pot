@@ -4697,6 +4697,10 @@ msgstr ""
 msgid "install ESP firmware from URL"
 msgstr ""
 
+#. Settings menu option
+msgid "install ESP firmware from microblocks.fun"
+msgstr ""
+
 #. Firmware install board type confirmation. As in "Use board type micro:bit?"
 msgid "Use board type"
 msgstr ""
