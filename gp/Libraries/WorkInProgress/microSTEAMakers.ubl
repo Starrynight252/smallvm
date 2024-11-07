@@ -18,7 +18,6 @@ variables _ms_neoPixels _ms_neoPixels_scale _ms_scrolling_stopped _ms_energyRead
   spec ' ' 'ms_plot' 'ms plot x _ y _ with _' 'num num color' 3 3
   spec ' ' 'ms_unplot' 'ms unplot x _ y _' 'num num' 3 3
   space
-  space
   spec 'r' 'ms_touching' 'ms touching ?'
   spec 'r' 'ms_light' 'ms light'
   spec 'r' 'ms_sound' 'ms sound'
