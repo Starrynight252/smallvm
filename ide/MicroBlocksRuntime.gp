@@ -83,7 +83,9 @@ method chunkTypeFor SmallRuntime aBlockOrFunction {
 	error 'Unexpected argument to chunkTypeFor'
 }
 
-method chunkBytesFor SmallRuntime aBlockOrFunction {
+method compiledBytesFor SmallRuntime aBlockOrFunction {
+    // Compile the given block or function and return a list of code bytes.
+
 	if (isClass aBlockOrFunction 'String') { // look up function by name
 		aBlockOrFunction = (functionNamed (project scripter) aBlockOrFunction)
 		if (isNil aBlockOrFunction) { return (list) } // unknown function
@@ -102,6 +104,16 @@ method chunkBytesFor SmallRuntime aBlockOrFunction {
 			error 'Instruction must be an Array or String:' item
 		}
 	}
+	return bytes
+}
+
+method chunkBytesFor SmallRuntime aBlockOrFunction {
+    bytes = (compiledBytesFor this aBlockOrFunction)
+    // handle script too large
+    if ((count bytes) > 1000) {
+        // Replace compiled code with a stub that just reports a "Script too large" error.
+        bytes = (compiledBytesFor this (block 'command' (color 255 0 0) '[misc:scriptTooLarge]'))
+    }
 	return bytes
 }
 
@@ -196,9 +208,12 @@ method addWithLineNum SmallRuntime aList instruction items {
 method showCompiledBytes SmallRuntime aBlock {
 	// Display the instruction bytes for the given stack.
 
-	bytes = (chunkBytesFor this (topBlock aBlock))
+	bytes = (compiledBytesFor this (topBlock aBlock))
 	result = (list)
 	add result (join '[' (count bytes) ' bytes]' (newline))
+	if ((count bytes) > 1000) {
+	    add result (join '*** Script too large; over 1000 bytes! ***' (newline) (newline))
+	}
 	for i (count bytes) {
 		add result (toString (at bytes i))
 		if (0 == (i % 2)) {
