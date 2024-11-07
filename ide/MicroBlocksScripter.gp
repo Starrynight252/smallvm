@@ -41,6 +41,7 @@ method initialize MicroBlocksScripter aProjectEditor {
 	categoryPane = (newBox (newMorph) (transparent) 0 0 false false)
 	categoryFrame = (scrollFrame categoryPane (transparent) false 0 0)
 	setVerticalScrollOnly categoryFrame true
+	setHideWhenNotScrolling categoryFrame true
 	setAutoScroll categoryFrame false
 	addPart morph (morph categoryFrame)
 	makeLibraryHeader this
@@ -77,6 +78,7 @@ method initialize MicroBlocksScripter aProjectEditor {
 	setFramePadding (alignment blocksPane) (10 * scale) (10 * scale)
 	blocksFrame = (scrollFrame blocksPane (transparent) false (4 * scale) (4 * scale))
 	setVerticalScrollOnly blocksFrame true
+	setHideWhenNotScrolling blocksFrame true
 	setAutoScroll blocksFrame false
 	setExtent (morph blocksFrame) (260 * scale) (100 * scale)
 	setMinExtent (morph blocksFrame) (90 * scale) (60 * scale)
@@ -87,6 +89,7 @@ method initialize MicroBlocksScripter aProjectEditor {
 
 	scriptsPane = (newScriptEditor 10 10 nil)
 	scriptsFrame = (scrollFrame scriptsPane (transparent) false (4 * scale) (4 * scale))
+	setHideWhenNotScrolling scriptsFrame true
 	addPart morph (morph scriptsFrame)
 
 	// add resizers last so they are in front
