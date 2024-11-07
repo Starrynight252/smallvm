@@ -702,7 +702,8 @@ method instructionsForCmd SmallCompiler cmd {
 	} ('for' == op) {
 		return (instructionsForForLoop this args)
 	} ('exitLoop' == op) {
-		add result (array 'exitLoop' 0)
+		// exitLoop is always two words (like longJmp)
+		add result (array 'exitLoop' nil)
 		add result (array 'placeholder' 0)
 	} (and ('digitalWriteOp' == op) (isClass (first args) 'Integer') (isClass (last args) 'Boolean')) {
 		pinNum = ((first args) & 255)
@@ -824,12 +825,16 @@ method instructionsForForLoop SmallCompiler args {
 	return result
 }
 
-method fixLoopExits SmallCompiler sequence {
-	seqLength = (count sequence)
+method fixLoopExits SmallCompiler loopBody {
+	// Make any uninitialized exitLoop instructions jump to the end of this loop body.
+	// Note: Ignore any exitLoop instructions in nested loops within loopBody.
+	// Those will already be initialized (i.e. they will have non-nil offsets).
+	seqLength = (count loopBody)
 	for i seqLength {
-		entry = (at sequence i)
-		if ('exitLoop' == (first entry)) {
-			atPut entry 2 ((seqLength - i) - 1)
+		instruction = (at loopBody i)
+		if (and ('exitLoop' == (first instruction)) (isNil (at instruction 2))) {
+			// uninitialized exitLoop instruction; make it jump to the end of loopBody
+			atPut instruction 2 ((seqLength - i) - 1)
 		}
 	}
 }
@@ -1235,6 +1240,9 @@ method addBytesForInstructionTo SmallCompiler instr bytes {
 		if ('longJmp' == op) {
 			// replace longJmp with jmp opcode but use two words regardless of offset
 			atPut bytes (count bytes) (at opcodes 'jmp')
+		}
+		if (and ('exitLoop' == op) (isNil arg)) {
+			arg = 0 // make exitLoop block outside of a loop jump by zero (i.e. a no-op)
 		}
 		add bytes 0 // zero arg byte
 		// append 16-bit signed offset from instruction pointer (little endian)
