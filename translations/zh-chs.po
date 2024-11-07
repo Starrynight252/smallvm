@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 11:46+0200\n"
-"PO-Revision-Date: 2024-11-01 13:12+0000\n"
+"PO-Revision-Date: 2024-11-07 11:38+0000\n"
 "Last-Translator: wwj718 <wuwenjie718@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/microblocks/ide/zh_Hans/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.8.2-dev\n"
+"X-Generator: Weblate 5.8.2\n"
 
 #. Block in Control category
 msgid "by _"
@@ -4435,3 +4435,15 @@ msgstr "将 NeoPixel _ 颜色移动 _"
 #. Settings menu option
 msgid "advanced mode"
 msgstr "高级模式"
+
+#. Block in Input category
+msgid "version"
+msgstr "版本"
+
+#. Block in Input category
+msgid "BLE connected"
+msgstr "BLE 已连接"
+
+#. Block in Input category
+msgid "seconds"
+msgstr "秒"

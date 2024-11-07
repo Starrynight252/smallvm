@@ -39,7 +39,7 @@ method initialize MicroBlocksScripter aProjectEditor {
 	saveNeeded = false
 
 	categoryPane = (newBox (newMorph) (transparent) 0 0 false false)
-	categoryFrame = (scrollFrame categoryPane (transparent) false (4 * scale) (4 * scale))
+	categoryFrame = (scrollFrame categoryPane (transparent) false 0 0)
 	setVerticalScrollOnly categoryFrame true
 	setAutoScroll categoryFrame false
 	addPart morph (morph categoryFrame)
@@ -396,7 +396,9 @@ method fixLayout MicroBlocksScripter {
 }
 
 method fixCategoryPaneExtent MicroBlocksScripter {
-	setExtent (morph categoryPane) (width (morph libSelector)) ((bottom (morph libSelector)) - (top (morph spacer)))
+	scrollToY categoryFrame 0
+	// 54 is the height of the gradient (30) plus the height of a category button (24)
+	setExtent (morph categoryPane) (width (morph libSelector)) (((bottom (morph libSelector)) - (top (morph spacer))) + (54 * (global 'scale')))
 }
 
 method updateTrashcanPosition MicroBlocksScripter {

@@ -1071,6 +1071,7 @@ method pageResized MicroBlocksEditor {
 	scale = (global 'scale')
 	page = (global 'page')
 	fixLayout this
+	fixLayout scripter
 	if ('Win' == (platform)) {
 		// workaround for a Windows graphics issue: when resizing a window it seems to clear
 		// some or all textures. this forces them to be updated from the underlying bitmap.
