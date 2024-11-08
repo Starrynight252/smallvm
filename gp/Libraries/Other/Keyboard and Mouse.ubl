@@ -1,4 +1,4 @@
-module 'Keyboard and Mouse' 'cat;Comm'
+module 'Keyboard and Mouse' 'Comm'
 author MicroBlocks
 version 1 8 
 choices keyModifiers 'kbd;Shift' 'kbd;Control' 'kbd;Alt / ⌥' 'kbd;Logo / ⌘' 'kbd;AltGr' 

@@ -1,4 +1,4 @@
-module NeoPixel 'cat;Output'
+module NeoPixel 'Output'
 author MicroBlocks
 version 1 10 
 description 'Control NeoPixel (WS2812) RGB LED strips and rings.
