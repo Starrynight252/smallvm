@@ -870,7 +870,7 @@ method justReceivedDrop MicroBlocksEditor aHandler {
 method isPilot MicroBlocksEditor { return (true == isPilot) }
 
 method checkLatestVersion MicroBlocksEditor {
-	latestVersion = (fetchLatestVersionNumber this) // fetch version, even in browser, to log useage
+	latestVersion = (fetchLatestVersionNumber this) // fetch version, even in browser, to log usage
 	if ('Browser' == (platform)) {
 		// skip version check in browser/Chromebook but set isPilot based on URL
 		isPilot = (notNil (findSubstring 'run-pilot' (browserURL)))
@@ -887,7 +887,7 @@ method checkLatestVersion MicroBlocksEditor {
 	for i (count latestVersion) {
 		latest = (toInteger (at latestVersion i))
 		current = (toInteger (at currentVersion i))
-		isPilot = (current > latest)
+		isPilot = (or (isPilot this) (current > latest))
 		if isPilot {
 			// we're running a pilot release, lets check the latest one
 			latestVersion = (fetchLatestPilotVersionNumber this)
@@ -899,6 +899,7 @@ method checkLatestVersion MicroBlocksEditor {
 		} (current > latest) {
 			// if this subpart of the current version number is > latest, don't check following parts
 			// (e.g. 2.0.0 is later than 1.9.9)
+			// additionally, we've just found out we're on a pilot release
 			return
 		}
 	}
