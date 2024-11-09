@@ -386,6 +386,7 @@ method startDragScroll ScrollFrame aHand {
 method handMoveFocus ScrollFrame aHand {
 	dx = ((x aHand) - dragOriginX)
 	dy = ((y aHand) - dragOriginY)
+	if verticalScrollOnly { dx = 0 }
 	setScrollOffset this (baseX - dx) (baseY - dy)
 	isScrolling this
 }
