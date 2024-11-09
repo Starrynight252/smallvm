@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-29 09:24+0200\n"
-"PO-Revision-Date: 2024-11-06 22:40+0000\n"
+"PO-Revision-Date: 2024-11-10 12:00+0000\n"
 "Last-Translator: Peter Mathijssen <pmathijssen@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/microblocks/ide/nl/"
 ">\n"
@@ -5915,3 +5915,7 @@ msgstr "BLE id"
 #. Block in Input category
 msgid "BLE connected"
 msgstr "BLE verbonden"
+
+#. Settings menu option
+msgid "install ESP firmware from microblocks.fun"
+msgstr "Installeer ESP firmware van microblocks.fun"
