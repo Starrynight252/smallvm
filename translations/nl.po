@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-29 09:24+0200\n"
-"PO-Revision-Date: 2024-11-10 12:00+0000\n"
+"PO-Revision-Date: 2024-11-13 06:00+0000\n"
 "Last-Translator: Peter Mathijssen <pmathijssen@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/microblocks/ide/nl/"
 ">\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8.2\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #. "Output" blocks category label
 msgid "cat;Output"
@@ -5917,5 +5917,6 @@ msgid "BLE connected"
 msgstr "BLE verbonden"
 
 #. Settings menu option
+#, fuzzy
 msgid "install ESP firmware from microblocks.fun"
 msgstr "Installeer ESP firmware van microblocks.fun"
