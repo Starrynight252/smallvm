@@ -1,19 +1,18 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-30 06:26+0200\n"
-"PO-Revision-Date: 2024-10-30 05:26+0000\n"
+"PO-Revision-Date: 2024-11-12 09:00+0000\n"
 "Last-Translator: Miroslav Klimoš <miraklim@centrum.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/microblocks/ide/cs/"
 ">\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: ENCODING\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.8.2-dev\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
+"X-Generator: Weblate 5.8.2\n"
 
 #. "Output" blocks category label
 msgid "cat;Output"
@@ -1093,27 +1092,27 @@ msgstr "IR odešli zařízení _ povel _"
 
 #. Keyboard and Mouse library label
 msgid "Keyboard and Mouse"
-msgstr "Keyboard and Mouse"
+msgstr "Klávesnice a myš"
 
 #. Keyboard and Mouse library block
 msgid "press key _"
-msgstr ""
+msgstr "stiskni klávesu _"
 
 #. Keyboard and Mouse library block
 msgid "while holding _"
-msgstr ""
+msgstr "dokud stisknuto _"
 
 #. Keyboard and Mouse library block
 msgid "hold key _"
-msgstr "hold key _"
+msgstr "podrž klávesu _"
 
 #. Keyboard and Mouse library block
 msgid "release key _"
-msgstr "release key _"
+msgstr "uvolni klávesu _"
 
 #. Keyboard and Mouse library block
 msgid "release all keys"
-msgstr "release all keys"
+msgstr "uvolni všechny klávesy"
 
 #. Key name (as in computer keyboard key)
 msgid "kbd;Shift"
@@ -1201,11 +1200,11 @@ msgstr "_ mouse click"
 
 #. Mouse button name (as in computer mouse button)
 msgid "mouse;left"
-msgstr ""
+msgstr "levé"
 
 #. Mouse button name (as in computer mouse button)
 msgid "mouse;right"
-msgstr ""
+msgstr "pravé"
 
 #. Mouse button name (as in computer mouse button)
 msgid "mouse;middle"
@@ -1213,11 +1212,11 @@ msgstr "middle"
 
 #. Mouse button name (as in computer mouse button)
 msgid "mouse;both"
-msgstr ""
+msgstr "obě"
 
 #. Keyboard and Mouse library block
 msgid "move mouse pointer by _ , _"
-msgstr "move mouse pointer by _ , _"
+msgstr "posuň ukazatel myši o _ , _"
 
 #. Keyboard and Mouse library block
 msgid "scroll mouse by _"
@@ -1225,11 +1224,11 @@ msgstr "scroll mouse by _"
 
 #. Keyboard and Mouse library block
 msgid "hold _ mouse button"
-msgstr "hold _ mouse button"
+msgstr "podrž _ tlačítko myši"
 
 #. Keyboard and Mouse library block
 msgid "release mouse buttons"
-msgstr "release mouse buttons"
+msgstr "uvolni tlačítka myši"
 
 #. Lists library label
 #. Extra utilities for list manipulation and access
@@ -1242,7 +1241,7 @@ msgstr "seznam _ obsahuje _"
 
 #. Lists library block
 msgid "circular item _ of _"
-msgstr ""
+msgstr "cyklická položka _ z _"
 
 #. Example string. Tells the user this input accepts a list or a string
 msgid "aListOrString"
@@ -1323,11 +1322,12 @@ msgstr "_ pseudonáhodná čísla od _ do _ s klíčem"
 
 #. BLE Keyboard library label
 msgid "BLE Keyboard"
-msgstr ""
+msgstr "BLE klávesnice"
 
 #. BLE Keyboard library block
+#, fuzzy
 msgid "start BLE Keyboard"
-msgstr ""
+msgstr "spustit BLE klávesnici"
 
 #. Radio comm library label
 #. Allows micro:bit boards to exchange messages
@@ -1600,11 +1600,11 @@ msgstr "OLED nakresli kružnici střed x _ y _ poloměr _ výmaz"
 
 #. OLED Graphics library block
 msgid "draw image _ at x _ y _"
-msgstr "OLED nakresli obrázek na x _ y _"
+msgstr "OLED nakresli obrázek _ na x _ y _"
 
 #. OLED Graphics library block
 msgid "draw line from x _ y _ to x _ y _ erase _"
-msgstr "OLED nakresli přímku z x _ y _ do x _ y _"
+msgstr "OLED nakresli přímku z bodu x _ y _ do x _ y _ výmaz _"
 
 #. OLED Graphics library block
 msgid "draw rectangle x _ y _ w _ h _ erase _ rounding(3-15) _"
@@ -1616,11 +1616,11 @@ msgstr "OLED vyplň obdélník x _ y _ š _ d _ výmaz _"
 
 #. OLED Graphics library block
 msgid "_flip display top _"
-msgstr "_překlop OLED displej nahoře"
+msgstr "_ překlop OLED displej nahoře _"
 
 #. OLED Graphics library block
 msgid "make image _"
-msgstr "vytvoř obrázek"
+msgstr "vytvoř obrázek _"
 
 #. OLED Graphics library block
 msgid "set pixel x _ y _ erase _"
@@ -2776,7 +2776,7 @@ msgstr "unicodes _"
 
 #. Example string. Tells the user this input accepts a string
 msgid "aString"
-msgstr "aString"
+msgstr "řetězec"
 
 #. Strings library block
 msgid "string from unicodes _"
@@ -3006,11 +3006,11 @@ msgstr "_ data _ URL http #SVG#colon-double-slash _"
 
 #. HTTP Client library example data to send to a server
 msgid "MicroBlocks is fun"
-msgstr ""
+msgstr "Microblocks je fajn"
 
 #. HTTP Client library block
 msgid "port _"
-msgstr ""
+msgstr "port  _"
 
 #. HTTP Server library label
 msgid "HTTP server"
@@ -3062,7 +3062,7 @@ msgstr "délka obsahu požadavku _"
 
 #. WebSocket server library label
 msgid "WebSocket server"
-msgstr ""
+msgstr "WebSocket server"
 
 #. WebSocket Server library block
 msgid "start WebSocket server"
@@ -3090,7 +3090,7 @@ msgstr "odešli _ WebSocket klientu _"
 
 #. WebSocket Server library example data to send to a client
 msgid "Hello, Client!"
-msgstr ""
+msgstr "Ahoj kliente!"
 
 #. Web Things library label
 msgid "Web Thing"
@@ -3456,23 +3456,23 @@ msgstr ""
 
 #. Generic robot turn block
 msgid "turn left"
-msgstr ""
+msgstr "zatoč vlevo"
 
 #. Generic stop block
 msgid "stop"
-msgstr ""
+msgstr "zastav"
 
 #. Generic robot "both sensors" input for a ( read ( right sensor ) ) block
 msgid "right sensor"
-msgstr ""
+msgstr "pravý senzor"
 
 #. Generic robot "both sensors" input for a ( read ( left sensor ) ) block
 msgid "left sensor"
-msgstr ""
+msgstr "levý senzor"
 
 #. Generic robot "both sensors" input for a ( read ( both sensors ) ) block
 msgid "both sensors"
-msgstr ""
+msgstr "oba senzory"
 
 #. InnovaDidàctic TdR shield library block
 msgid "TdR test buzzer"
@@ -5920,3 +5920,31 @@ msgstr "Vrací pole bajtů obsahující UTF-8 hodnoty znaků zadaného řetězce
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
 msgid "Report the number of words of memory available. Stop button frees up memory."
 msgstr "Vrací velikost dostupné paměti (words). Stop uvolňuje paměť."
+
+#. Block in Input category
+msgid "version"
+msgstr "verze"
+
+#. Block in Input category
+msgid "BLE connected"
+msgstr "BLE připojeno"
+
+#. Block in Input category
+msgid "BLE id"
+msgstr "BLE id"
+
+#. Block in Input category
+msgid "seconds"
+msgstr "vteřiny"
+
+#. Settings menu option
+msgid "advanced mode"
+msgstr "pokročilý režim"
+
+#. Settings menu tooltip
+msgid "show advanced blocks, menu items and editor functionalities"
+msgstr "zobrazit pokročilé bloky, položky menu a funkce editoru"
+
+#. Language menu item. Takes the user to documentation about adding a missing language
+msgid "Missing language?"
+msgstr "Chybí jazyk?"
