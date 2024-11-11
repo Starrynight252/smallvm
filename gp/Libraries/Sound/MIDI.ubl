@@ -1,9 +1,9 @@
 module MIDI Output
 author MicroBlocks
-version 1 13 
+version 1 14 
 choices druminst 'Acoustic Bass Drum' 'Bass Drum 1' 'Side Stick' 'Acoustic Snare' 'Hand Clap' 'Electric Snare' 'Low Floor Tom' 'Closed Hi-Hat' 'High Floor Tom' 'Pedal Hi-Hat' 'Low Tom' 'Open Hi-Hat' 'Low-Mid Tom' 'Hi-Mid Tom' 'Crash Cymbal 1' 'High Tom' 'Ride Cymbal 1' 'Chinese Cymbal' 'Ride Bell' Tambourine 'Splash Cymbal' Cowbell 'Crash Cymbal 2' Vibraslap 'Ride Cymbal 2' 'Hi Bongo' 'Low Bongo' 'Mute Hi Conga' 'Open Hi Conga' 'Low Conga' 'High Timbale' 'Low Timbale' 'High Agogo' 'Low Agogo' Cabasa Maracas 'Short Whistle' 'Long Whistle' 'Short Guiro' 'Long Guiro' Claves 'Hi Wood Block' 'Low Wood Block' 'Mute Cuica' 'Open Cuica' 'Mute Triangle' 'Open Triangle' 
 choices _midiPin USB 
-choices instrument piano 'chromatic percussion' organ guitar bass strings ensemble brass reed pipe 'synth lead' 'synth pad' 'synth SFX' ethnic percussive 'gm;SFX'
+choices instrument piano 'chromatic percussion' organ guitar bass strings ensemble brass reed pipe 'synth lead' 'synth pad' 'synth SFX' ethnic percussive 'gm;SFX' 
 choices sfx 'guitar fret noise' 'guitar cut noise' 'string slap' 'flute key click' seashore rain thunder wind stream bubble bird dog horse 'telephone 1' 'telephone 2' 'door creaking' door scratch windchime helicopter 'car engine' 'car stop' 'car pass' 'car crash' siren train 'jet plane' starship 'burst noise' applause laughing screaming punch 'heart beat' footstep 'gun shot' 'machine gun' 'laser gun' explosion 
 choices drumkits standard room power electronic 'TR-808' jazz brush orchestra 'drumkit;SFX' 'CM-64/CM-32L' 
 choices controls 'bank select 1' 'bank select 2' modulation 'portamento time' volume pan expression hold portamento sostenuto soft resonance 'release time' 'attack time' cutoff 'decay time' 'vibrato rate' 'vibrato depth' 'vibrato delay' 'portamento control' 'effect 1' 'effect 2' 
@@ -51,7 +51,6 @@ variables _MIDI_initialized _MIDI_pin _MIDI_drums
   spec ' ' '_MIDI_NRPN' '_set MIDI NRPN MSB _ LSB _ on channel _ to _' 'auto auto auto auto auto auto' 1 33 1 100
   spec ' ' '_MIDI_Roland_control' '_set Roland control _ to _ on channel _' 'auto auto auto' 72 64 1
   space
-  spec 'r' '_trimmedLowercase' '_trimmedLowercase _' 'str' 'A. b C...'
 
 to 'MIDI_change MIDI control' control channel value {
   local 'controlChangeCmd' 11
@@ -102,6 +101,12 @@ to 'MIDI_play MIDI note' 'midi note' duration channel volume {
   }
 }
 
+to 'MIDI_raw select MIDI instrument' 'instrument number' channel variation {
+  local 'programChangeCmd' 12
+  'MIDI_change MIDI control' 'bank select 1' channel variation
+  '_MIDI command' programChangeCmd channel (v 'instrument number')
+}
+
 to 'MIDI_select MIDI drum kit' drumkit {
   local 'programChangeCmd' 12
   '_MIDI command' programChangeCmd 10 ((at ('[data:find]' drumkit ('[data:split]' 'standard,room,power,electronic,TR-808,jazz,brush,orchestra,drumkit;SFX,CM-64/CM-32L' ',')) ('[data:split]' '1,9,17,25,26,33,41,49,57,128' ',')) - 1)
@@ -110,13 +115,7 @@ to 'MIDI_select MIDI drum kit' drumkit {
 to 'MIDI_select MIDI instrument' 'instrument type' 'instrument number' channel variation {
   local 'programChangeCmd' 12
   'MIDI_change MIDI control' 'bank select 1' channel variation
-  '_MIDI command' programChangeCmd channel (MIDI_instrument (v 'instrument type') (v 'instrument number'))
-}
-
-to 'MIDI_raw select MIDI instrument' 'instrument number' channel variation {
-  local 'programChangeCmd' 12
-  'MIDI_change MIDI control' 'bank select 1' channel variation
-  '_MIDI command' programChangeCmd channel (v 'instrument number')
+  '_MIDI command' programChangeCmd channel ((MIDI_instrument (v 'instrument type') (v 'instrument number')) - 1)
 }
 
 to 'MIDI_send MIDI continue playing' {
@@ -255,20 +254,5 @@ to '_MIDI_Roland_control' control value channel {
   } (control == 75) {
     '_MIDI_NRPN' 1 100 channel value
   }
-}
-
-to '_trimmedLowercase' s {
-  comment 'Return a copy of the given string without whitespace
-or periods and all lowercase.'
-  local 'result' (newList (size s))
-  '[data:delete]' 'all' result
-  for i (size s) {
-    local 'ch' ('[data:unicodeAt]' i s)
-    if (and (ch > 32) (ch != 46)) {
-      if (and (65 <= ch) (ch <= 90)) {ch = (ch + 32)}
-      '[data:addLast]' ch result
-    }
-  }
-  return ('[data:unicodeString]' result)
 }
 
