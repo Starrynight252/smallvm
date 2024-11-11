@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 16:23+0200\n"
-"PO-Revision-Date: 2024-11-06 13:53+0000\n"
+"PO-Revision-Date: 2024-11-12 09:00+0000\n"
 "Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/microblocks/ide/"
 "es/>\n"
@@ -5123,7 +5123,7 @@ msgstr "compacta el código almacenado"
 
 #. Settings menu option
 msgid "install ESP firmware from URL"
-msgstr "instalar firmwre ESP desde la URL"
+msgstr "instalar firmware ESP desde una URL"
 
 #. MicroBlocks IDE information
 msgid "Drag the firmware file you just saved to the %1 drive."
@@ -6013,3 +6013,7 @@ msgstr "segundos"
 #. Block in Input category
 msgid "version"
 msgstr "versión"
+
+#. Settings menu option
+msgid "install ESP firmware from microblocks.fun"
+msgstr "instalar firmware ESP desde microblocks.fun"
