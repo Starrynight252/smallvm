@@ -812,9 +812,9 @@ void hardwareInit() {
 
 #elif defined(ESP32_C3)
 	#define BOARD_TYPE "ESP32-C3"
-	#define DIGITAL_PINS 20
-	#define ANALOG_PINS 6
-	#define TOTAL_PINS 20
+	#define DIGITAL_PINS 22
+	#define ANALOG_PINS 6 // pins 0-5, but pin 5 uses ADC2 may be less reliable
+	#define TOTAL_PINS 22
 	static const int analogPin[] = {};
 	#ifdef LED_BUILTIN
 		#define PIN_LED LED_BUILTIN
@@ -828,9 +828,19 @@ void hardwareInit() {
 			#define PIN_BUTTON_A 0
 		#endif
 	#endif
-	static const char reservedPin[TOTAL_PINS] = {
-		0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-		0, 1, 1, 1, 1, 1, 1, 1, 0, 0};
+	#if defined(ARDUINO_USB_MODE)
+		// USB is used to communicate with IDE, so pins 20, 21 are available
+		static const char reservedPin[TOTAL_PINS] = {
+			0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+			0, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+			0, 0};
+	#else
+		// pins 20, 21 are used for IDE serial connection
+		static const char reservedPin[TOTAL_PINS] = {
+			0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+			0, 1, 1, 1, 1, 1, 1, 1, 0, 0,
+			1, 1};
+	#endif
 
 #elif defined(ARDUINO_ARCH_ESP32)
 	#ifdef ARDUINO_IOT_BUS
