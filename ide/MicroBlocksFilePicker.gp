@@ -107,8 +107,10 @@ method initialize MicroBlocksFilePicker anAction defaultPath extensionList saveF
 	answer = ''
 
 	folderTranslationPrefix = ''
-	if (and (not saveFlag) (notNil extensions) (contains extensions '.ubl')) {
-		folderTranslationPrefix = 'libfolder;'
+	if (and (not saveFlag) (notNil extensions)) {
+		if (or (contains extensions '.ubl') (contains extensions '.ubp')) {
+			folderTranslationPrefix = 'libfolder;'
+		}
 	}
 
 	lbox = (listBox (array) nil (action 'fileOrFolderSelected' this) clr)
