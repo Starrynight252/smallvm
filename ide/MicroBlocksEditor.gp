@@ -1218,7 +1218,7 @@ method openHelp MicroBlocksEditor aBlockOrPath {
 	if (isClass aBlockOrPath 'String') {
 		helpPath = aBlockOrPath
 	} else {
-		entry = (helpEntry tipBar (primName (expression aBlock)))
+		entry = (helpEntry tipBar (primName (expression aBlockOrPath)))
 		if (isNil entry) { return }
 		helpPath = (at entry 2)
 	}
