@@ -432,15 +432,9 @@ method fixResizerLayout MicroBlocksScripter {
 	setExtent (morph blocksResizer) resizerWidth (height morph)
 }
 
-method hideScrollbars MicroBlocksScripter {
-	hideSliders blocksFrame
-	hideSliders scriptsFrame
-	updateTrashcanPosition this
-}
-
-method showScrollbars MicroBlocksScripter {
-	showSliders blocksFrame
-	showSliders scriptsFrame
+method fixScrollbars MicroBlocksScripter {
+	fixSliderLayout blocksFrame
+	fixSliderLayout scriptsFrame
 	updateTrashcanPosition this
 }
 

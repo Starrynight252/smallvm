@@ -44,27 +44,18 @@ method handLeave PaneResizer aHand {
 	changed morph
 }
 
-method clicked PaneResizer {
-	setResizeCursor this
-	return true
-}
-
-method rightClicked PaneResizer { return true }
-
 method handDownOn PaneResizer aHand {
+	handEnter this aHand
 	focusOn aHand this
 	offsetX = ((x aHand) - (left morph))
 	offsetY = ((y aHand) - (top morph))
-
-	scripter = (ownerThatIsA morph 'MicroBlocksScripter')
-	if (notNil scripter) { hideScrollbars (handler scripter) }
-	setResizeCursor this
 	return true
 }
 
 method handUpOn PaneResizer aHand {
+	handLeave this aHand
 	scripter = (ownerThatIsA morph 'MicroBlocksScripter')
-	if (notNil scripter) { showScrollbars (handler scripter) }
+	if (notNil scripter) { fixScrollbars (handler scripter) }
 	return true
 }
 
