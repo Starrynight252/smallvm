@@ -173,8 +173,8 @@ method toStringBase16 LargeInteger {
 	result = (newArray ((byteCount data) * 2))
 	for i (byteCount data) {
 		byte = (byteAt data i)
-		atPut result ((i * 2) - 1) (at digits ((truncate (byte / 16)) + 1))
-		atPut result (i * 2)       (at digits ((byte % 16) + 1))
+		atPut result ((i * 2) - 1)	(at digits ((truncate (byte / 16)) + 1))
+		atPut result (i * 2)		(at digits ((byte % 16) + 1))
 	}
 	return (joinStringArray result)
 }

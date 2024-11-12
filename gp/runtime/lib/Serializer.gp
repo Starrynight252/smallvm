@@ -23,7 +23,7 @@
 //	prefix string
 //	class table (className, class field names)
 //	object table (classIndex, indexable field count or nil, field values)
-//    OR an immediate value
+//		OR an immediate value
 //	postfix string
 //
 // The prefix and postfix strings are human-readable and designed to allow

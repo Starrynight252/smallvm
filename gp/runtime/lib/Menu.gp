@@ -256,7 +256,7 @@ method buildMorph Menu page yPos {
 method focus Menu {
 	page = (page morph)
 //  if (notNil fallbackFocus) {
-//    stopEditing (keyboard page)
+//		stopEditing (keyboard page)
 //  }
 //  selectFirstItem this // xxx
 	focusOn (keyboard page) this

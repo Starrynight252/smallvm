@@ -52,14 +52,14 @@ method write Serializer2 rootObj ignoring {
 	gc
 
 	root = rootObj
-	clusters = (dictionary)       // {class -> {object -> fields}}
-	objects = (dictionary)        // {object -> objectID}
-	classIDs = (dictionary)       // {class -> classID}
-	classes = (list)              // [class]
-	fieldsForClass = (dictionary) // {class -> fields}
-	modules = (dictionary)        // {module-instance -> module-code-static-hash}
-	moduleCode = (dictionary)     // {module-code-static-hash -> serialized code}
-	moduleIDs = (dictionary)      // {module-instance -> moduleID}
+	clusters = (dictionary)			// {class -> {object -> fields}}
+	objects = (dictionary)			// {object -> objectID}
+	classIDs = (dictionary)			// {class -> classID}
+	classes = (list)				// [class]
+	fieldsForClass = (dictionary)	// {class -> fields}
+	modules = (dictionary)			// {module-instance -> module-code-static-hash}
+	moduleCode = (dictionary)		// {module-code-static-hash -> serialized code}
+	moduleIDs = (dictionary)		// {module-instance -> moduleID}
 
 	topHash = (codeHash (topLevelModule))
 
@@ -348,8 +348,8 @@ method readPostfix Serializer2 {
 }
 
 method readModuleTable Serializer2 {
-	modulesArray = (readNext this) // [module-static-hash] indexed by id; may have duplicates for multiple instances
-	modules = (dictionary)         // {module index -> module instance}
+	modulesArray = (readNext this)	// [module-static-hash] indexed by id; may have duplicates for multiple instances
+	modules = (dictionary)			// {module index -> module instance}
 	for i (count modulesArray) {
 		m = (loadModuleFromString (initialize (new 'Module')) (at moduleCode (at modulesArray i)))
 		atPut modules i m

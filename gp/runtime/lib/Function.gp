@@ -261,13 +261,13 @@ to collectLocals2 cmdOrReporter cls result defs used strBuffer {
 	if ((count argList) > 0) {
 		varName = (first argList)
 		if ('=' == primName) {
-//      if (varName != 'this') { add result varName }
+//		if (varName != 'this') { add result varName }
 			add defs varName
 		} ('+=' == primName) {
-//      if (varName != 'this') { add result varName }
+//		if (varName != 'this') { add result varName }
 			if (isNil (at defs varName)) { add strBuffer (join 'variable ' varName ' used before initialized') }
 		} ('for' == primName) {
-//      if (varName != 'this') { add result varName }
+//		if (varName != 'this') { add result varName }
 			if (notNil (at defs varName)) { add strBuffer (join 'variable ' varName ' used in nested for loops') }
 			add defs varName
 		} ('v' == primName) {
