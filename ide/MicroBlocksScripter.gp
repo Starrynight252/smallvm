@@ -390,8 +390,8 @@ method fixLayout MicroBlocksScripter {
 	fixResizerLayout this
 	fixLibraryHeaderLayout this
 	updateLibraryButton this
-	updateSliders blocksFrame
-	updateSliders scriptsFrame
+	fixSliderLayout blocksFrame
+	fixSliderLayout scriptsFrame
 	updateTrashcanPosition this
 
 	// rounded corner at bottom left of palette
