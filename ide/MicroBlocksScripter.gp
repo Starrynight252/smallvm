@@ -419,7 +419,7 @@ method updateTrashcanPosition MicroBlocksScripter {
 }
 
 method fixResizerLayout MicroBlocksScripter {
-	resizerWidth = (10 * (global 'scale'))
+	resizerWidth = (15 * (global 'scale'))
 
 	// categories pane resizer
 	setLeft (morph catResizer) (right (morph categorySelector))
