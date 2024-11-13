@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 16:23+0200\n"
-"PO-Revision-Date: 2024-11-12 09:00+0000\n"
+"PO-Revision-Date: 2024-11-13 06:00+0000\n"
 "Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/microblocks/ide/"
 "es/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8.2\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #. Block part type, while making a new block
 msgid "input"
@@ -6017,3 +6017,35 @@ msgstr "versión"
 #. Settings menu option
 msgid "install ESP firmware from microblocks.fun"
 msgstr "instalar firmware ESP desde microblocks.fun"
+
+#. Examples folder
+msgid "folder;Web of Things"
+msgstr "Web of Things"
+
+#. Examples folder
+msgid "folder;CPX"
+msgstr "CPX"
+
+#. Examples folder
+msgid "folder;microbit and Calliope"
+msgstr "microbit y Calliope"
+
+#. Examples folder
+msgid "folder; by board"
+msgstr " por placa"
+
+#. Examples folder
+msgid "folder;Art"
+msgstr "Arte"
+
+#. Examples folder
+msgid "folder;Games"
+msgstr "Juegos"
+
+#. Examples folder
+msgid "folder;Music"
+msgstr "Música"
+
+#. Examples folder
+msgid "folder;Citilab ED1 and M5Stack"
+msgstr "Citilab ED1 y M5Stack"
