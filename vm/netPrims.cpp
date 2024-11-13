@@ -528,7 +528,7 @@ static int lastRemotePort = -1;
 
 static OBJ primUDPStart(int argCount, OBJ *args) {
 	if (NO_WIFI()) return fail(noWiFi);
-	if (!isConnectedToWiFi()) return falseObj;
+	if (!isConnectedToWiFi()) return fail(wifiNotConnected);
 
 	if (argCount < 1) return fail(notEnoughArguments);
 	int port = evalInt(args[0]);
