@@ -83,10 +83,9 @@ method handUpOn Trigger aHand {
 	if (notNil hint) {removeHint (page aHand)}
 	removeSchedulesFor (global 'page') 'showHint' morph
 	doOneCycle (page aHand)
-	trigger this
 	normal this
+	trigger this
 	return true
-	return false
 }
 
 method clicked Trigger {
