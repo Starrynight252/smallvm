@@ -398,10 +398,12 @@ method processMove Hand {
 	}
 	for oldM oldMorphs {if (and (acceptsEvents oldM) (not (contains currentMorphs oldM))) {handLeave (handler oldM) this}}
 
-	if (and (isMobile this) isDown hasMoved (isNil (grabbedObject this)) (notNil lastTouchTime)) {
+	allowDragScroll = (isMobile this)
+	if (and allowDragScroll isDown hasMoved (isNil (grabbedObject this)) (notNil lastTouchTime)) {
 		// on mobile devices drag-scroll the enclosing ScrollFrame, if any
 		scrollFrameM = (ownerThatIsA (morph (currentObject this)) 'ScrollFrame')
 		if (notNil scrollFrameM) { // drag-scroll the enclosing ScrollFrame
+			cancelSelection // cancel block selection
 			startDragScroll (handler scrollFrameM) this
 			lastTouched = nil
 			lastTouchTime = nil
