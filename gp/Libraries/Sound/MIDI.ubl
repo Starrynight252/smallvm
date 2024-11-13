@@ -1,6 +1,6 @@
 module MIDI Output
 author MicroBlocks
-version 1 14 
+version 1 2 
 choices druminst 'Acoustic Bass Drum' 'Bass Drum 1' 'Side Stick' 'Acoustic Snare' 'Hand Clap' 'Electric Snare' 'Low Floor Tom' 'Closed Hi-Hat' 'High Floor Tom' 'Pedal Hi-Hat' 'Low Tom' 'Open Hi-Hat' 'Low-Mid Tom' 'Hi-Mid Tom' 'Crash Cymbal 1' 'High Tom' 'Ride Cymbal 1' 'Chinese Cymbal' 'Ride Bell' Tambourine 'Splash Cymbal' Cowbell 'Crash Cymbal 2' Vibraslap 'Ride Cymbal 2' 'Hi Bongo' 'Low Bongo' 'Mute Hi Conga' 'Open Hi Conga' 'Low Conga' 'High Timbale' 'Low Timbale' 'High Agogo' 'Low Agogo' Cabasa Maracas 'Short Whistle' 'Long Whistle' 'Short Guiro' 'Long Guiro' Claves 'Hi Wood Block' 'Low Wood Block' 'Mute Cuica' 'Open Cuica' 'Mute Triangle' 'Open Triangle' 
 choices _midiPin USB 
 choices instrument piano 'chromatic percussion' organ guitar bass strings ensemble brass reed pipe 'synth lead' 'synth pad' 'synth SFX' ethnic percussive 'gm;SFX' 
@@ -41,6 +41,8 @@ variables _MIDI_initialized _MIDI_pin _MIDI_drums
   spec ' ' 'MIDI_send MIDI start playing' 'send MIDI start playing'
   spec ' ' 'MIDI_send MIDI stop playing' 'send MIDI stop playing'
   spec ' ' 'MIDI_send MIDI continue playing' 'send MIDI continue playing'
+  spec ' ' 'MIDI_start MIDI clock' 'start MIDI clock'
+  spec ' ' 'MIDI_stop MIDI clock' 'stop MIDI clock'
   space
   spec ' ' 'MIDI_set MIDI pin' 'set MIDI signal to pin _' 'auto._midiPin' 8
   space
@@ -50,7 +52,9 @@ variables _MIDI_initialized _MIDI_pin _MIDI_drums
   spec ' ' '_MIDI send bytes' '_MIDI send bytes _' 'auto' ''
   spec ' ' '_MIDI_NRPN' '_set MIDI NRPN MSB _ LSB _ on channel _ to _' 'auto auto auto auto auto auto' 1 33 1 100
   spec ' ' '_MIDI_Roland_control' '_set Roland control _ to _ on channel _' 'auto auto auto' 72 64 1
+  spec ' ' '_MIDI clock loop' '_MIDI clock loop'
   space
+  spec 'r' '_trimmedLowercase' '_trimmedLowercase _' 'str' 'A. b C...'
 
 to 'MIDI_change MIDI control' control channel value {
   local 'controlChangeCmd' 11
@@ -178,6 +182,16 @@ to 'MIDI_stop all notes in channel' channel {
   }
 }
 
+to '_MIDI clock loop' {
+  repeatUntil (_MIDI_clock_on != (booleanConstant true)) {
+    'rhy wait until beat' (('rhy_current beat') + 1)
+    repeat 24 {
+      'rhy_wait until next' (('rhy_quarter duration') / 24)
+      '_MIDI send bytes' 248
+    }
+  }
+}
+
 to '_MIDI command' cmd channel arg1 arg2 {
   '_MIDI init'
   local 'cmdByte' ((cmd << 4) | ((channel - 1) & 15))
@@ -254,5 +268,15 @@ to '_MIDI_Roland_control' control value channel {
   } (control == 75) {
     '_MIDI_NRPN' 1 100 channel value
   }
+}
+
+to 'MIDI_start MIDI clock' {
+  if (_rhy_beat_duration == 0) {'rhy_set tempo' 250 4 4}
+  _MIDI_clock_on = (booleanConstant true)
+  sendBroadcast '_MIDI clock loop'
+}
+
+to 'MIDI_stop MIDI clock' {
+  _MIDI_clock_on = (booleanConstant false)
 }
 
