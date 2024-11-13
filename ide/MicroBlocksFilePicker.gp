@@ -352,10 +352,6 @@ method setComputer MicroBlocksFilePicker {
 	if ('Browser' == (platform)) {
 		isDone = true
 		removeFromOwner morph
-		repeat 10 { // hack: need several cycles to remove MicroBlocksFilePicker when file is double-clicked
-			doOneCycle (global 'page')
-			waitMSecs 10 // refresh screen
-		}
 		ext = ''
 		if (notNil extensions) { ext = (first extensions) }
 		if (beginsWith ext '.') { ext = (substring ext 2) }
