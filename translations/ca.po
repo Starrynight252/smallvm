@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-30 07:10+0200\n"
-"PO-Revision-Date: 2024-11-12 09:00+0000\n"
+"PO-Revision-Date: 2024-11-13 06:00+0000\n"
 "Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/microblocks/ide/"
 "ca/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8.2\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #. "Output" blocks category label
 msgid "cat;Output"
@@ -5911,3 +5911,35 @@ msgstr "versió"
 #. Settings menu option
 msgid "install ESP firmware from microblocks.fun"
 msgstr "instal·la firmware ESP des de microblocks.fun"
+
+#. Examples folder
+msgid "folder;Music"
+msgstr "Música"
+
+#. Examples folder
+msgid "folder;Games"
+msgstr "Jocs"
+
+#. Examples folder
+msgid "folder; by board"
+msgstr " per placa"
+
+#. Examples folder
+msgid "folder;Art"
+msgstr "Art"
+
+#. Examples folder
+msgid "folder;Web of Things"
+msgstr "Web of Things"
+
+#. Examples folder
+msgid "folder;Citilab ED1 and M5Stack"
+msgstr "Citilab ED1 i M5Stack"
+
+#. Examples folder
+msgid "folder;CPX"
+msgstr "CPX"
+
+#. Examples folder
+msgid "folder;microbit and Calliope"
+msgstr "microbit i Calliope"
