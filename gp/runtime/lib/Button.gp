@@ -87,14 +87,14 @@ method makeCostume Button label color minWidth minHeight fontName fontSize fontC
 
 method handDownOn Button aHand {
 	handEnter this aHand
-	if (notNil clickAction) {
-		call clickAction this
-	}
 	return true
 }
 
 method handUpOn Button aHand {
 	handLeave this aHand
+	if (notNil clickAction) {
+		call clickAction this
+	}
 	return true
 }
 
@@ -103,9 +103,6 @@ method handEnter Button aHand {
 	if (notNil onCostume) {
 		setCostume morph onCostume
 	}
-//   if (notNil hint) {
-// 	addSchedule (global 'page') (schedule (action 'showTooltip' morph hint) 500)
-//   }
 }
 
 method handLeave Button aHand {
@@ -115,6 +112,4 @@ method handLeave Button aHand {
 	// solution is to re-trigger handEnter on the new morph under the hand.
 	handEnter (objectAt aHand) aHand
 	setOn this isOn
-//   if (notNil hint) {removeTooltip (page aHand)}
-//   removeSchedulesFor (global 'page') 'showTooltip' morph
 }
