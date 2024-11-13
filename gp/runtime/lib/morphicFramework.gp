@@ -462,9 +462,13 @@ method processUp Hand {
 	current = (objectAt this)
 	trg = current
 	while (not (and (acceptsEvents trg) (handUpOn trg this))) {trg = (parentHandler (morph trg))}
-	if (current === lastTouched) {
+	if (and (notNil current) (current === lastTouched)) {
 		trg = current
-		while (or (not (acceptsEvents trg)) (false == (clicked trg this))) {trg = (parentHandler (morph trg))}
+		while (and
+			(notNil trg)
+			(or (not (acceptsEvents trg)) (false == (clicked trg this)))) {
+				trg = (parentHandler (morph trg))
+		}
 		if (and (notNil lastClicked) (current === lastClicked)) {
 			if ((msecs lastClickTime) < 500) {
 				trg = current
