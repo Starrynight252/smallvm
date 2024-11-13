@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-30 07:10+0200\n"
-"PO-Revision-Date: 2024-11-06 13:53+0000\n"
+"PO-Revision-Date: 2024-11-12 09:00+0000\n"
 "Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/microblocks/ide/"
 "ca/>\n"
@@ -4695,7 +4695,7 @@ msgstr "esborra i reparticiona el firmware en placa ESP"
 
 #. Settings menu option
 msgid "install ESP firmware from URL"
-msgstr "instal·lar firmware ESP des de l'URL"
+msgstr "instal·la firmware ESP des de l'URL"
 
 #. Firmware install board type confirmation. As in "Use board type micro:bit?"
 msgid "Use board type"
@@ -5907,3 +5907,7 @@ msgstr "segons"
 #. Block in Input category
 msgid "version"
 msgstr "versió"
+
+#. Settings menu option
+msgid "install ESP firmware from microblocks.fun"
+msgstr "instal·la firmware ESP des de microblocks.fun"
