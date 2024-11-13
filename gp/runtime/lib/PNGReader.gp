@@ -50,7 +50,7 @@ method readFrom PNGReader d {
 		processNextChunk this
 	}
 	if ((count unknownChunks) > 0) {
-//    print 'unknownChunks' unknownChunks
+//		print 'unknownChunks' unknownChunks
 	}
 	if (interlaceMethod == 0) {
 		processNonInterlaced this allDataChunk
@@ -123,9 +123,9 @@ method processIHDRChunk PNGReader chunk {
 	bitsPerChannel = (nextUInt8 s)
 	colorType = (nextUInt8 s)
 
-	compression     = (nextUInt8 s)
+	compression = (nextUInt8 s)
 	if (compression != 0) {error 'unsupported compression scheme'}
-	filterMethod    = (nextUInt8 s)
+	filterMethod = (nextUInt8 s)
 	if (filterMethod != 0) {error 'unsupported compression scheme'}
 	interlaceMethod = (nextUInt8 s)
 

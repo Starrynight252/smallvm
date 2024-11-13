@@ -76,6 +76,16 @@ method showSliders ScrollFrame {
 	updateSliders this
 }
 
+method fixSliderLayout ScrollFrame {
+	b = (bounds morph)
+	hw = (height (morph hSlider))
+	vw = (width (morph vSlider))
+	fastSetPosition (morph vSlider) ((right b) - vw) (top b)
+	setHeight (bounds (morph vSlider)) ((height b) - hw)
+	fastSetPosition (morph hSlider) (left b) ((bottom b) - hw)
+	setWidth (bounds (morph hSlider)) ((width b) - vw)
+}
+
 method updateSliders ScrollFrame doNotAdjustContents {
 	if (true != doNotAdjustContents) { adjustContents this }
 	if noSliders {

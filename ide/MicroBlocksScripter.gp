@@ -390,8 +390,8 @@ method fixLayout MicroBlocksScripter {
 	fixResizerLayout this
 	fixLibraryHeaderLayout this
 	updateLibraryButton this
-	updateSliders blocksFrame
-	updateSliders scriptsFrame
+	fixSliderLayout blocksFrame
+	fixSliderLayout scriptsFrame
 	updateTrashcanPosition this
 
 	// rounded corner at bottom left of palette
@@ -419,7 +419,7 @@ method updateTrashcanPosition MicroBlocksScripter {
 }
 
 method fixResizerLayout MicroBlocksScripter {
-	resizerWidth = (10 * (global 'scale'))
+	resizerWidth = (15 * (global 'scale'))
 
 	// categories pane resizer
 	setLeft (morph catResizer) (right (morph categorySelector))
@@ -432,15 +432,9 @@ method fixResizerLayout MicroBlocksScripter {
 	setExtent (morph blocksResizer) resizerWidth (height morph)
 }
 
-method hideScrollbars MicroBlocksScripter {
-	hideSliders blocksFrame
-	hideSliders scriptsFrame
-	updateTrashcanPosition this
-}
-
-method showScrollbars MicroBlocksScripter {
-	showSliders blocksFrame
-	showSliders scriptsFrame
+method fixScrollbars MicroBlocksScripter {
+	fixSliderLayout blocksFrame
+	fixSliderLayout scriptsFrame
 	updateTrashcanPosition this
 }
 

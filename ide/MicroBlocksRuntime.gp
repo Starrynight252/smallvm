@@ -84,7 +84,7 @@ method chunkTypeFor SmallRuntime aBlockOrFunction {
 }
 
 method compiledBytesFor SmallRuntime aBlockOrFunction {
-    // Compile the given block or function and return a list of code bytes.
+	// Compile the given block or function and return a list of code bytes.
 
 	if (isClass aBlockOrFunction 'String') { // look up function by name
 		aBlockOrFunction = (functionNamed (project scripter) aBlockOrFunction)
@@ -108,12 +108,12 @@ method compiledBytesFor SmallRuntime aBlockOrFunction {
 }
 
 method chunkBytesFor SmallRuntime aBlockOrFunction {
-    bytes = (compiledBytesFor this aBlockOrFunction)
-    // handle script too large
-    if ((count bytes) > 1000) {
-        // Replace compiled code with a stub that just reports a "Script too large" error.
-        bytes = (compiledBytesFor this (block 'command' (color 255 0 0) '[misc:scriptTooLarge]'))
-    }
+	bytes = (compiledBytesFor this aBlockOrFunction)
+	// handle script too large
+	if ((count bytes) > 1000) {
+		// Replace compiled code with a stub that just reports a "Script too large" error.
+		bytes = (compiledBytesFor this (block 'command' (color 255 0 0) '[misc:scriptTooLarge]'))
+	}
 	return bytes
 }
 
@@ -212,7 +212,7 @@ method showCompiledBytes SmallRuntime aBlock {
 	result = (list)
 	add result (join '[' (count bytes) ' bytes]' (newline))
 	if ((count bytes) > 1000) {
-	    add result (join '*** Script too large; over 1000 bytes! ***' (newline) (newline))
+		add result (join '*** Script too large; over 1000 bytes! ***' (newline) (newline))
 	}
 	for i (count bytes) {
 		add result (toString (at bytes i))
@@ -2075,6 +2075,7 @@ method errorString SmallRuntime errID {
 #define badColorPalette			52	// Needs a color palette: a list of positive 24-bit integers representing RGB values
 #define encoderNotStarted		53	// Encoder not started; pin may not support interrupts
 #define scriptTooLarge			54	// Script too large
+#define udpPortNotOpen			55	// UDP port not open
 '
 	for line (lines defsFromHeaderFile) {
 		words = (words line)

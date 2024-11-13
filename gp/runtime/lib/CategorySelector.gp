@@ -106,7 +106,8 @@ method itemHeight CategorySelector {
 method handEnter CategorySelector aHand { setCursor 'pointer' }
 method handLeave CategorySelector aHand { setCursor 'default' }
 
-method handDownOn CategorySelector aHand {
+method clicked CategorySelector {
+	aHand = (hand (global 'page'))
 	i = (truncate (((y aHand) - (top morph)) / ((itemHeight this) + ((global 'scale') * 5))))
 	if (and (i >= 0) (i < (count items))) {
 		selectedIndex = (i + 1)
@@ -118,6 +119,7 @@ method handDownOn CategorySelector aHand {
 }
 
 method step CategorySelector {
+	if (isMobile) { return }
 	hand = (hand (global 'page'))
 	if (isBusy hand) { return }
 	handX = (x hand)

@@ -378,7 +378,7 @@ method initialize MicroBlocksHelp {
 		(array 'pid_constrainValue' '/extension_libraries/pid#constrain-value' 'Limit the range of a value, typically a drive signal.')
 		(array 'pid_applySign' '/extension_libraries/pid#apply-sign-to-value' 'Apply the sign of one value to another value.')
 
-        // XRP
+		// XRP
 		(array 'xrp_driveAtSpeed' '/extension_libraries/xrp#drive-at-speed' 'Drive the robot at a specified speed (mm/sec).')
 		(array 'xrp_driveDistance' '/extension_libraries/xrp#drive-distance' 'Drive the robot a specified distance (mm) at a specified speed (mm/sec).')
 		(array 'xrp_stopWheels' '/extension_libraries/xrp#stop-both-wheels' 'Stop both wheels.')

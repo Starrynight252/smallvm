@@ -104,7 +104,7 @@ method installFromData MicroBlocksFlasher serialPortID fileNameOrURL data {
 
 	if (notNil (findSubstring 'databot2.0_' fileNameOrURL)) { setAllInOneBinary espTool true }
 
-    // install the downloaded firmware
+	// install the downloaded firmware
 	spinner = (newSpinner (action 'espToolStatus' this) (action 'espToolDone' this))
 	setTask spinner (launch
 		(global 'page')

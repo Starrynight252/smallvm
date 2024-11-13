@@ -206,6 +206,7 @@ extern int extraByteDelay;
 #define badColorPalette			52	// Needs a color palette: a list of positive 24-bit integers representing RGB values
 #define encoderNotStarted		53	// Encoder not started; pin may not support interrupts
 #define scriptTooLarge			54	// Script too large
+#define udpPortNotOpen			55	// UDP port not open
 #define sleepSignal				255	// Not a real error; used to make current task sleep
 
 // Runtime Operations

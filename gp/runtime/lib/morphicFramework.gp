@@ -398,10 +398,12 @@ method processMove Hand {
 	}
 	for oldM oldMorphs {if (and (acceptsEvents oldM) (not (contains currentMorphs oldM))) {handLeave (handler oldM) this}}
 
-	if (and (isMobile this) isDown hasMoved (isNil (grabbedObject this)) (notNil lastTouchTime)) {
+	allowDragScroll = (or (isMobile this) (not (shiftKeyDown (keyboard (global 'page')))))
+	if (and allowDragScroll isDown hasMoved (isNil (grabbedObject this)) (notNil lastTouchTime)) {
 		// on mobile devices drag-scroll the enclosing ScrollFrame, if any
 		scrollFrameM = (ownerThatIsA (morph (currentObject this)) 'ScrollFrame')
 		if (notNil scrollFrameM) { // drag-scroll the enclosing ScrollFrame
+			cancelSelection // cancel block selection
 			startDragScroll (handler scrollFrameM) this
 			lastTouched = nil
 			lastTouchTime = nil
@@ -933,21 +935,8 @@ method doOneCycle Page {
 	stepSchedules this
 	wakeUpDisplayTasks taskMaster
 	stepTasks taskMaster 75
-	// ToDo: revisit drawing links and foreground
-//   if isChanged {
-//     step soundMixer
-//     clearBuffer color
-//     draw morph nil 0 0 1 1 nil
-//     draw (morph hand)
-//     drawLinks this
-//     drawForeground this
-//     step soundMixer
-//     flipBuffer
-//     isChanged = false
-//   }
 	if (or redrawAll (notEmpty damages)) { fixDamages this }
 
-	step soundMixer
 	// sleep for any extra time, but always sleep a little to ensure that
 	// we get events (and to return control to the browser)
 	sleepTime = (max 1 (15 - (msecs t)))
