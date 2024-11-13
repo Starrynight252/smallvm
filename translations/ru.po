@@ -1534,7 +1534,7 @@ msgid "Cancel"
 msgstr "Отмена"
 
 #. Library folder
-msgid "libfolder;Other"
+msgid "folder;Other"
 msgstr "Прочее"
 
 #. Project source folder
@@ -2202,11 +2202,11 @@ msgid "Confirm"
 msgstr "Подтвердить"
 
 #. Library folder
-msgid "libfolder;Libraries"
+msgid "folder;Libraries"
 msgstr "Библиотеки"
 
 #. Library folder
-msgid "libfolder;Sound"
+msgid "folder;Sound"
 msgstr "Звук"
 
 #. Project source folder

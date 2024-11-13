@@ -682,7 +682,7 @@ msgid "Confirm"
 msgstr "أكد"
 
 #. Library folder
-msgid "libfolder;Libraries"
+msgid "folder;Libraries"
 msgstr "المكتبات"
 
 #. String in file picker and library dialogs

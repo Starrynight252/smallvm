@@ -405,11 +405,11 @@ msgid "cutebotturn;right"
 msgstr "derecha"
 
 #. Library folder
-msgid "libfolder;AI"
+msgid "folder;AI"
 msgstr "Inteligencia Artificial"
 
 #. Library folder
-msgid "libfolder;Sound"
+msgid "folder;Sound"
 msgstr "Sonido"
 
 #. Variable right-click context menu
@@ -496,7 +496,7 @@ msgid "Cloud"
 msgstr "Nube"
 
 #. Library folder
-msgid "libfolder;Other"
+msgid "folder;Other"
 msgstr "Otro"
 
 #. Octostudio communication library block
@@ -2367,7 +2367,7 @@ msgid "about..."
 msgstr "sobre..."
 
 #. Library folder
-msgid "libfolder;System"
+msgid "folder;System"
 msgstr "Sistema"
 
 #. NeZha robot library block
@@ -2413,7 +2413,7 @@ msgid "Plug in the board and click the USB icon to connect."
 msgstr "Conecta la placa y haz clic en el icono USB para conectar."
 
 #. Library folder
-msgid "libfolder;Kits and Boards"
+msgid "folder;Kits and Boards"
 msgstr "Kits y placas"
 
 #. Sphero-RVR robot library block
@@ -2668,11 +2668,11 @@ msgid "script;delete"
 msgstr "elimina"
 
 #. Library folder
-msgid "libfolder;Graphics and Displays"
+msgid "folder;Graphics and Displays"
 msgstr "Gráficos y pantallas"
 
 #. Library folder
-msgid "libfolder;Robots"
+msgid "folder;Robots"
 msgstr "Robots"
 
 #. String in file picker and library dialogs
@@ -3899,7 +3899,7 @@ msgid "Confirm"
 msgstr "Confirmación"
 
 #. Library folder
-msgid "libfolder;Sensing"
+msgid "folder;Sensing"
 msgstr "Sensores"
 
 #. Scripting area right-click context menu
@@ -5236,11 +5236,11 @@ msgid "export this library"
 msgstr "exporta esta librería"
 
 #. Library folder
-msgid "libfolder;Libraries"
+msgid "folder;Libraries"
 msgstr "Librerías"
 
 #. Library folder
-msgid "libfolder;Network"
+msgid "folder;Network"
 msgstr "Red"
 
 #. String in file picker and library dialogs
@@ -5818,7 +5818,7 @@ msgid "Reports firmware version loaded on the board."
 msgstr "Reporta la versión del firmware cargado en la placa."
 
 #. Library folder
-msgid "libfolder;Motors"
+msgid "folder;Motors"
 msgstr "Motores"
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
@@ -5834,7 +5834,7 @@ msgid "Write a byte to the pin at the specified baud rate."
 msgstr "Envía un byte por el pin con la tasa de baudios especificada."
 
 #. Library folder
-msgid "libfolder;WorkInProgress"
+msgid "folder;WorkInProgress"
 msgstr "En construcción"
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)

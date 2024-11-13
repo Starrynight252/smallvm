@@ -375,7 +375,7 @@ msgid "script;delete"
 msgstr "elimina"
 
 #. Library folder
-msgid "libfolder;Libraries"
+msgid "folder;Libraries"
 msgstr "Bibliotecas"
 
 #. Block right-click context menu tooltip
@@ -1432,7 +1432,7 @@ msgid "define"
 msgstr "define"
 
 #. Library folder
-msgid "libfolder;Sound"
+msgid "folder;Sound"
 msgstr "Som"
 
 #. Project source folder
@@ -1513,7 +1513,7 @@ msgid "delete block definition..."
 msgstr "apaga a definição do bloco..."
 
 #. Library folder
-msgid "libfolder;Other"
+msgid "folder;Other"
 msgstr "Outro"
 
 #. Project source folder

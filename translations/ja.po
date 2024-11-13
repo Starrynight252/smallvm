@@ -1716,15 +1716,15 @@ msgid "Desktop"
 msgstr "デスクトップ"
 
 #. Library folder
-msgid "libfolder;Libraries"
+msgid "folder;Libraries"
 msgstr "ライブラリ"
 
 #. Library folder
-msgid "libfolder;Other"
+msgid "folder;Other"
 msgstr "その他"
 
 #. Library folder
-msgid "libfolder;Sound"
+msgid "folder;Sound"
 msgstr "音量"
 
 #. String in file picker and library dialogs

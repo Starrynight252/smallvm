@@ -1487,15 +1487,15 @@ msgid "hide block definition"
 msgstr "oculta a definição deste bloco"
 
 #. Library folder
-msgid "libfolder;Other"
+msgid "folder;Other"
 msgstr "Outro"
 
 #. Library folder
-msgid "libfolder;Sound"
+msgid "folder;Sound"
 msgstr "Som"
 
 #. Library folder
-msgid "libfolder;Libraries"
+msgid "folder;Libraries"
 msgstr "Bibliotecas"
 
 #. Project source folder

@@ -225,7 +225,7 @@ msgid "show advanced blocks"
 msgstr "yetakchi bloklarni ko'rsatish"
 
 #. Library folder
-msgid "libfolder;Other"
+msgid "folder;Other"
 msgstr "Boshqalar"
 
 #. String in file picker and library dialogs
@@ -1636,11 +1636,11 @@ msgid "No"
 msgstr "Yo'q"
 
 #. Library folder
-msgid "libfolder;Libraries"
+msgid "folder;Libraries"
 msgstr "Kutubxonalar"
 
 #. Library folder
-msgid "libfolder;Sound"
+msgid "folder;Sound"
 msgstr "Ovoz"
 
 #. Project source folder

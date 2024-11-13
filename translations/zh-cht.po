@@ -190,7 +190,7 @@ msgid "export this library"
 msgstr "導出這個庫"
 
 #. Library folder
-msgid "libfolder;Libraries"
+msgid "folder;Libraries"
 msgstr "積木庫"
 
 #. In information window title
@@ -263,7 +263,7 @@ msgid "Save"
 msgstr "保存"
 
 #. Library folder
-msgid "libfolder;Sensing"
+msgid "folder;Sensing"
 msgstr "偵測"
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
@@ -336,7 +336,7 @@ msgid "string only"
 msgstr "僅字符串"
 
 #. Library folder
-msgid "libfolder;Kits and Boards"
+msgid "folder;Kits and Boards"
 msgstr "套件與擴展板"
 
 #. Project source
@@ -348,7 +348,7 @@ msgid "Report the sum of the given numbers."
 msgstr "報告輸入的數字總和"
 
 #. Library folder
-msgid "libfolder;Other"
+msgid "folder;Other"
 msgstr "其他"
 
 #. In MicroBlocks IDE project menu
@@ -364,7 +364,7 @@ msgid "Set a variable to the given value."
 msgstr "將變數設為輸入的數值"
 
 #. Library folder
-msgid "libfolder;Sound"
+msgid "folder;Sound"
 msgstr "聲音"
 
 #. Variable right-click context menu
@@ -2834,15 +2834,15 @@ msgid "OK"
 msgstr "確定"
 
 #. Library folder
-msgid "libfolder;AI"
+msgid "folder;AI"
 msgstr "人工智能"
 
 #. Library folder
-msgid "libfolder;Graphics and Displays"
+msgid "folder;Graphics and Displays"
 msgstr "圖形與顯示"
 
 #. Library folder
-msgid "libfolder;Network"
+msgid "folder;Network"
 msgstr "網絡"
 
 #. Project source folder
@@ -3906,11 +3906,11 @@ msgid "Confirm"
 msgstr "確認"
 
 #. Library folder
-msgid "libfolder;Robots"
+msgid "folder;Robots"
 msgstr "機器人"
 
 #. Library folder
-msgid "libfolder;System"
+msgid "folder;System"
 msgstr "系統"
 
 #. Scripting area right-click context menu

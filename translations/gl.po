@@ -993,15 +993,15 @@ msgid "Confirm"
 msgstr "Confirmar"
 
 #. Library folder
-msgid "libfolder;Libraries"
+msgid "folder;Libraries"
 msgstr "Bibliotecas"
 
 #. Library folder
-msgid "libfolder;Other"
+msgid "folder;Other"
 msgstr "Outros"
 
 #. Library folder
-msgid "libfolder;Sound"
+msgid "folder;Sound"
 msgstr "Son"
 
 #. String in file picker and library dialogs

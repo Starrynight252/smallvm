@@ -5104,51 +5104,51 @@ msgid "LIBRARIES"
 msgstr "BIBLIOTHEKEN"
 
 #. Library folder
-msgid "libfolder;Libraries"
+msgid "folder;Libraries"
 msgstr "Bibliotheken"
 
 #. Library folder
-msgid "libfolder;AI"
+msgid "folder;AI"
 msgstr "AI"
 
 #. Library folder
-msgid "libfolder;Graphics and Displays"
+msgid "folder;Graphics and Displays"
 msgstr "Graphics en schermen"
 
 #. Library folder
-msgid "libfolder;Kits and Boards"
+msgid "folder;Kits and Boards"
 msgstr "Kits en Boards"
 
 #. Library folder
-msgid "libfolder;Network"
+msgid "folder;Network"
 msgstr "Netwerk"
 
 #. Library folder
-msgid "libfolder;Motors"
+msgid "folder;Motors"
 msgstr "Motors"
 
 #. Library folder
-msgid "libfolder;Other"
+msgid "folder;Other"
 msgstr "Ander"
 
 #. Library folder
-msgid "libfolder;Robots"
+msgid "folder;Robots"
 msgstr "Robots"
 
 #. Library folder
-msgid "libfolder;Sensing"
+msgid "folder;Sensing"
 msgstr "Sensoren"
 
 #. Library folder
-msgid "libfolder;Sound"
+msgid "folder;Sound"
 msgstr "Geluid"
 
 #. Library folder
-msgid "libfolder;System"
+msgid "folder;System"
 msgstr "Systeem"
 
 #. Library folder
-msgid "libfolder;WorkInProgress"
+msgid "folder;WorkInProgress"
 msgstr "Werk in uitvoering"
 
 #. String in file picker and library dialogs

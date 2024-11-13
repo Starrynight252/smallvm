@@ -226,7 +226,7 @@ msgid "Data Graph"
 msgstr "Daten-Graph"
 
 #. Library folder
-msgid "libfolder;Libraries"
+msgid "folder;Libraries"
 msgstr "Module"
 
 #. Firmware installation process information
@@ -777,7 +777,7 @@ msgid "pen down"
 msgstr "Stift runter"
 
 #. Library folder
-msgid "libfolder;Graphics and Displays"
+msgid "folder;Graphics and Displays"
 msgstr "Displays und Anzeigen"
 
 #. Lists library label
@@ -1860,7 +1860,7 @@ msgid "Stop"
 msgstr "Stop"
 
 #. Library folder
-msgid "libfolder;AI"
+msgid "folder;AI"
 msgstr "KI"
 
 #. Block right-click context menu
@@ -1938,7 +1938,7 @@ msgid "Created with GP"
 msgstr "Mit GP erstellt"
 
 #. Library folder
-msgid "libfolder;Sensing"
+msgid "folder;Sensing"
 msgstr "Sensoren"
 
 #. Tip Bar text for a block (at the bottom of the IDE, gives info on the currently hovered block or input)
@@ -2541,23 +2541,23 @@ msgid "Ok"
 msgstr "Ok"
 
 #. Library folder
-msgid "libfolder;Network"
+msgid "folder;Network"
 msgstr "Netzwerk"
 
 #. Library folder
-msgid "libfolder;Other"
+msgid "folder;Other"
 msgstr "Sonstige"
 
 #. Library folder
-msgid "libfolder;Robots"
+msgid "folder;Robots"
 msgstr "Roboter"
 
 #. Library folder
-msgid "libfolder;Sound"
+msgid "folder;Sound"
 msgstr "Klang"
 
 #. Library folder
-msgid "libfolder;System"
+msgid "folder;System"
 msgstr "System"
 
 #. String in file picker and library dialogs
@@ -2675,7 +2675,7 @@ msgid "LIBRARIES"
 msgstr "MODULE"
 
 #. Library folder
-msgid "libfolder;Kits and Boards"
+msgid "folder;Kits and Boards"
 msgstr "Kits und Boards"
 
 #. String in file picker and library dialogs

@@ -4699,7 +4699,7 @@ msgstr "install ESP firmware from URL"
 
 #. Settings menu option
 msgid "install ESP firmware from microblocks.fun"
-msgstr ""
+msgstr "install ESP firmware from microblocks.fun"
 
 #. Firmware install board type confirmation. As in "Use board type micro:bit?"
 msgid "Use board type"
@@ -5102,56 +5102,88 @@ msgstr "Okay"
 msgid "Confirm"
 msgstr "Confirm"
 
+#. Examples folder
+msgid "folder; by board"
+msgstr " by board"
+
+#. Examples folder
+msgid "folder;Art"
+msgstr "Art"
+
+#. Examples folder
+msgid "folder;Games"
+msgstr "Games"
+
+#. Examples folder
+msgid "folder;Music"
+msgstr "Music"
+
+#. Examples folder
+msgid "folder;Web of Things"
+msgstr "Web of Things"
+
+#. Examples folder
+msgid "folder;CPX"
+msgstr "CPX"
+
+#. Examples folder
+msgid "folder;microbit and Calliope"
+msgstr "microbit and Calliope"
+
+#. Examples folder
+msgid "folder;Citilab ED1 and M5Stack"
+msgstr "Citilab ED1 and M5Stack"
+
 #. Library folder
 msgid "LIBRARIES"
 msgstr "LIBRARIES"
 
 #. Library folder
-msgid "libfolder;Libraries"
+msgid "folder;Libraries"
 msgstr "Libraries"
 
 #. Library folder
-msgid "libfolder;AI"
+msgid "folder;AI"
 msgstr "AI"
 
 #. Library folder
-msgid "libfolder;Graphics and Displays"
+msgid "folder;Graphics and Displays"
 msgstr "Graphics and Displays"
 
 #. Library folder
-msgid "libfolder;Kits and Boards"
+msgid "folder;Kits and Boards"
 msgstr "Kits and Boards"
 
 #. Library folder
-msgid "libfolder;Network"
+msgid "folder;Network"
 msgstr "Network"
 
 #. Library folder
-msgid "libfolder;Motors"
+msgid "folder;Motors"
 msgstr "Motors"
 
 #. Library folder
-msgid "libfolder;Other"
+msgid "folder;Other"
 msgstr "Other"
 
 #. Library folder
-msgid "libfolder;Robots"
+msgid "folder;Robots"
 msgstr "Robots"
 
 #. Library folder
-msgid "libfolder;Sensing"
+msgid "folder;Sensing"
 msgstr "Sensing"
 
 #. Library folder
-msgid "libfolder;Sound"
+msgid "folder;Sound"
 msgstr "Sound"
 
 #. Library folder
-msgid "libfolder;System"
+msgid "folder;System"
 msgstr "System"
 
 #. Library folder
-msgid "libfolder;WorkInProgress"
+msgid "folder;WorkInProgress"
 msgstr "Work in Progress"
 
 #. String in file picker and library dialogs

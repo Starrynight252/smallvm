@@ -183,7 +183,7 @@ msgid "export this library"
 msgstr "导出这个库"
 
 #. Library folder
-msgid "libfolder;Libraries"
+msgid "folder;Libraries"
 msgstr "积木库"
 
 #. Board wiping process information
@@ -1913,7 +1913,7 @@ msgid "string or number"
 msgstr "字符串或数字"
 
 #. Library folder
-msgid "libfolder;AI"
+msgid "folder;AI"
 msgstr "人工智能"
 
 #. Project source folder
@@ -2320,11 +2320,11 @@ msgid "save picture of script with result"
 msgstr "保存带结果的脚本图片"
 
 #. Library folder
-msgid "libfolder;Network"
+msgid "folder;Network"
 msgstr "网络"
 
 #. Library folder
-msgid "libfolder;System"
+msgid "folder;System"
 msgstr "系统"
 
 #. the %1 tag should be kept intact. Seconds remaining for a process to finish.
@@ -2405,7 +2405,7 @@ msgid "dark mode"
 msgstr "深色模式"
 
 #. Library folder
-msgid "libfolder;Motors"
+msgid "folder;Motors"
 msgstr "电机"
 
 #. MicroBlocks IDE information
@@ -2775,19 +2775,19 @@ msgid "LIBRARIES"
 msgstr "积木库"
 
 #. Library folder
-msgid "libfolder;Graphics and Displays"
+msgid "folder;Graphics and Displays"
 msgstr "图形与显示"
 
 #. Library folder
-msgid "libfolder;Kits and Boards"
+msgid "folder;Kits and Boards"
 msgstr "套件与扩展板"
 
 #. Library folder
-msgid "libfolder;Other"
+msgid "folder;Other"
 msgstr "其他"
 
 #. Library folder
-msgid "libfolder;Robots"
+msgid "folder;Robots"
 msgstr "机器人"
 
 #. String in file picker and library dialogs
@@ -4091,15 +4091,15 @@ msgid "Cancel"
 msgstr "取消"
 
 #. Library folder
-msgid "libfolder;Sensing"
+msgid "folder;Sensing"
 msgstr "侦测"
 
 #. Library folder
-msgid "libfolder;Sound"
+msgid "folder;Sound"
 msgstr "声音"
 
 #. Library folder
-msgid "libfolder;WorkInProgress"
+msgid "folder;WorkInProgress"
 msgstr "正在开发中"
 
 #. Scripting area right-click context menu

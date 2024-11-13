@@ -1154,7 +1154,7 @@ msgid "Custom..."
 msgstr "Özel..."
 
 #. Library folder
-msgid "libfolder;Other"
+msgid "folder;Other"
 msgstr "Diğer"
 
 #. Tip Bar label or text (at the bottom of the IDE, gives info on the currently hovered element)
@@ -1647,11 +1647,11 @@ msgid "Language"
 msgstr "Dil"
 
 #. Library folder
-msgid "libfolder;Libraries"
+msgid "folder;Libraries"
 msgstr "Kütüphaneler"
 
 #. Library folder
-msgid "libfolder;Sound"
+msgid "folder;Sound"
 msgstr "Ses"
 
 #. String in file picker and library dialogs
@@ -2643,7 +2643,7 @@ msgid "Add Library"
 msgstr "Kütüphane Ekle"
 
 #. Library folder
-msgid "libfolder;Motors"
+msgid "folder;Motors"
 msgstr "Motorlar"
 
 #. Text right-click context menu option
@@ -2783,7 +2783,7 @@ msgid "paste"
 msgstr "yapıştır"
 
 #. Library folder
-msgid "libfolder;Sensing"
+msgid "folder;Sensing"
 msgstr "Algılama"
 
 #. MicroBlocks IDE information
@@ -2813,23 +2813,23 @@ msgid "cut"
 msgstr "kes"
 
 #. Library folder
-msgid "libfolder;Kits and Boards"
+msgid "folder;Kits and Boards"
 msgstr "Kitler ve Boardlar"
 
 #. Library folder
-msgid "libfolder;AI"
+msgid "folder;AI"
 msgstr "Yapay Zeka"
 
 #. Library folder
-msgid "libfolder;Graphics and Displays"
+msgid "folder;Graphics and Displays"
 msgstr "Grafikler ve Görüntüleme"
 
 #. Library folder
-msgid "libfolder;WorkInProgress"
+msgid "folder;WorkInProgress"
 msgstr "Çalışma devam ediyor"
 
 #. Library folder
-msgid "libfolder;System"
+msgid "folder;System"
 msgstr "Sistem"
 
 #. String in file picker and library dialogs
@@ -2885,11 +2885,11 @@ msgid "show all block definitions"
 msgstr "bütün blok tanımlamalarını göster"
 
 #. Library folder
-msgid "libfolder;Robots"
+msgid "folder;Robots"
 msgstr "Robotlar"
 
 #. Library folder
-msgid "libfolder;Network"
+msgid "folder;Network"
 msgstr "Ağ"
 
 #. Settings menu tooltip

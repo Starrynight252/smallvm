@@ -1225,7 +1225,7 @@ msgid "Cancel"
 msgstr "Ακύρωση"
 
 #. Library folder
-msgid "libfolder;Sound"
+msgid "folder;Sound"
 msgstr "Ήχος"
 
 #. String in file picker and library dialogs
@@ -1684,11 +1684,11 @@ msgid "copy script"
 msgstr "αντιγραφή κειμένου"
 
 #. Library folder
-msgid "libfolder;Libraries"
+msgid "folder;Libraries"
 msgstr "Βιβλιοθήκες"
 
 #. Library folder
-msgid "libfolder;Other"
+msgid "folder;Other"
 msgstr "Άλλα"
 
 #. Project source folder
