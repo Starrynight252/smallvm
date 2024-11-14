@@ -3295,93 +3295,97 @@ msgstr "degrees"
 
 #. micro:STEAMakers library block
 #. The #BR# tag must be kept intact. It translates to a new line
-msgid "m꞉s display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
-msgstr "m꞉s display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
+msgid "ms display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
+msgstr "ms display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
 
 #. micro:STEAMakers library block
 #. The #BR# tag must be kept intact. It translates to a new line
-msgid "m꞉s display #BR# _ #BR# with color _"
-msgstr "m꞉s display #BR# _ #BR# with color _"
+msgid "ms display #BR# _ #BR# with color _"
+msgstr "ms display #BR# _ #BR# with color _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s display image _ with color _"
-msgstr "m꞉s display image _ with color _"
+msgid "ms display image _ with color _"
+msgstr "ms display image _ with color _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s clear display"
-msgstr "m꞉s clear display"
+msgid "ms clear display"
+msgstr "ms clear display"
 
 #. micro:STEAMakers library block
-msgid "m꞉s scale brightness to _ %"
-msgstr "m꞉s scale brightness to _ %"
+msgid "ms scale brightness to _ %"
+msgstr "ms scale brightness to _ %"
 
 #. micro:STEAMakers library block
-msgid "m꞉s plot x _ y _ with _"
-msgstr "m꞉s plot x _ y _ with _"
+msgid "ms plot x _ y _ with _"
+msgstr "ms plot x _ y _ with _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s unplot x _ y _"
-msgstr "m꞉s unplot x _ y _"
+msgid "ms unplot x _ y _"
+msgstr "ms unplot x _ y _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s display character _ with _"
-msgstr "m꞉s display character _ with _"
+msgid "ms display character _ with _"
+msgstr "ms display character _ with _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s scroll text _ with color _ "
-msgstr "m꞉s scroll text _ with color _ "
+msgid "ms scroll text _ with color _ "
+msgstr "ms scroll text _ with color _ "
 
 #. micro:STEAMakers library block
-msgid "m꞉s stop scrolling"
-msgstr "m꞉s stop scrolling"
+msgid "ms stop scrolling"
+msgstr "ms stop scrolling"
 
 #. micro:STEAMakers library block
 msgid "start micro꞉STEAMakers audio"
 msgstr "start micro꞉STEAMakers audio"
 
 #. micro:STEAMakers library block
-msgid "m꞉s button _ ?"
-msgstr "m꞉s button _ ?"
+msgid "ms button _ ?"
+msgstr "ms button _ ?"
 
 #. micro:STEAMakers library block
-msgid "m꞉s touching ?"
-msgstr "m꞉s touching ?"
+msgid "ms touching ?"
+msgstr "ms touching ?"
 
 #. micro:STEAMakers library block
-msgid "m꞉s light %"
-msgstr "m꞉s light %"
+msgid "ms light %"
+msgstr "ms light %"
 
 #. micro:STEAMakers library block
-msgid "m꞉s sound %"
-msgstr "m꞉s sound %"
+msgid "ms sound %"
+msgstr "ms sound %"
 
 #. micro:STEAMakers library block
-msgid "m꞉s temperature ºC"
-msgstr "m꞉s temperature ºC"
+msgid "ms temperature ºC"
+msgstr "ms temperature ºC"
 
 #. micro:STEAMakers library block
-msgid "m꞉s humidity %"
-msgstr "m꞉s humidity %"
+msgid "ms humidity %"
+msgstr "ms humidity %"
 
 #. micro:STEAMakers library block
-msgid "m꞉s inclination towards _ º"
-msgstr "m꞉s inclination towards _ º"
+msgid "ms inclination towards _ º"
+msgstr "ms inclination towards _ º"
 
 #. micro:STEAMakers library block
-msgid "m꞉s energy _"
-msgstr "m꞉s energy _"
+msgid "ms energy _"
+msgstr "ms energy _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s _ energy meter"
-msgstr "m꞉s _ energy meter"
+msgid "ms _ energy meter"
+msgstr "ms _ energy meter"
 
 #. micro:STEAMakers library block
-msgid "m꞉s energy consumption (µWh)"
-msgstr "m꞉s energy consumption (µWh)"
+msgid "ms energy consumption (µWh)"
+msgstr "ms energy consumption (µWh)"
 
 #. micro:STEAMakers library block
 msgid "ms;start"
 msgstr "start"
+
+#. micro:STEAMakers library block
+msgid "ms;stop"
+msgstr "stop"
 
 #. micro:STEAMakers library block
 msgid "ms;reset"

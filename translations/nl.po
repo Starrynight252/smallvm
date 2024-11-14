@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-29 09:24+0200\n"
-"PO-Revision-Date: 2024-11-10 12:00+0000\n"
+"PO-Revision-Date: 2024-11-13 06:00+0000\n"
 "Last-Translator: Peter Mathijssen <pmathijssen@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/microblocks/ide/nl/"
 ">\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8.2\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #. "Output" blocks category label
 msgid "cat;Output"
@@ -3295,46 +3295,46 @@ msgstr "graden"
 
 #. micro:STEAMakers library block
 #. The #BR# tag must be kept intact. It translates to a new line
-msgid "m꞉s display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
+msgid "ms display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
 msgstr ""
 "m:s scherm #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# "
 "_ _ _ _ _"
 
 #. micro:STEAMakers library block
 #. The #BR# tag must be kept intact. It translates to a new line
-msgid "m꞉s display #BR# _ #BR# with color _"
+msgid "ms display #BR# _ #BR# with color _"
 msgstr "m:s scherm #BR# _ #BR# met kleur _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s display image _ with color _"
+msgid "ms display image _ with color _"
 msgstr "m:s laat afbeelding _ zien met kleur _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s clear display"
+msgid "ms clear display"
 msgstr "m:s wis scherm"
 
 #. micro:STEAMakers library block
-msgid "m꞉s scale brightness to _ %"
+msgid "ms scale brightness to _ %"
 msgstr "m:s schaal helderheid naar _ %"
 
 #. micro:STEAMakers library block
-msgid "m꞉s plot x _ y _ with _"
+msgid "ms plot x _ y _ with _"
 msgstr "m:s teken x _ y _ met _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s unplot x _ y _"
+msgid "ms unplot x _ y _"
 msgstr "m:s wis x _ y _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s display character _ with _"
+msgid "ms display character _ with _"
 msgstr "m:s toon teken _ met _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s scroll text _ with color _ "
+msgid "ms scroll text _ with color _ "
 msgstr "m:s scroll tekst _ met kleur _ "
 
 #. micro:STEAMakers library block
-msgid "m꞉s stop scrolling"
+msgid "ms stop scrolling"
 msgstr "m:s stop met scrollen"
 
 #. micro:STEAMakers library block
@@ -3342,43 +3342,43 @@ msgid "start micro꞉STEAMakers audio"
 msgstr "start micro:STEAMakers audio"
 
 #. micro:STEAMakers library block
-msgid "m꞉s button _ ?"
+msgid "ms button _ ?"
 msgstr "m:s knop _ ?"
 
 #. micro:STEAMakers library block
-msgid "m꞉s touching ?"
+msgid "ms touching ?"
 msgstr "m:s aanraken ?"
 
 #. micro:STEAMakers library block
-msgid "m꞉s light %"
+msgid "ms light %"
 msgstr "m:s licht %"
 
 #. micro:STEAMakers library block
-msgid "m꞉s sound %"
+msgid "ms sound %"
 msgstr "m:s geluid %"
 
 #. micro:STEAMakers library block
-msgid "m꞉s temperature ºC"
+msgid "ms temperature ºC"
 msgstr "m:s temperatuur ºC"
 
 #. micro:STEAMakers library block
-msgid "m꞉s humidity %"
+msgid "ms humidity %"
 msgstr "m:s vochtigheid %"
 
 #. micro:STEAMakers library block
-msgid "m꞉s inclination towards _ º"
+msgid "ms inclination towards _ º"
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "m꞉s energy _"
+msgid "ms energy _"
 msgstr "m:s energie _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s _ energy meter"
+msgid "ms _ energy meter"
 msgstr "m:s _ energiemeter"
 
 #. micro:STEAMakers library block
-msgid "m꞉s energy consumption (µWh)"
+msgid "ms energy consumption (µWh)"
 msgstr "m:s energieverbruik (µWh)"
 
 #. micro:STEAMakers library block
@@ -5917,5 +5917,6 @@ msgid "BLE connected"
 msgstr "BLE verbonden"
 
 #. Settings menu option
+#, fuzzy
 msgid "install ESP firmware from microblocks.fun"
 msgstr "Installeer ESP firmware van microblocks.fun"

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 16:23+0200\n"
-"PO-Revision-Date: 2024-11-12 09:00+0000\n"
+"PO-Revision-Date: 2024-11-14 09:37+0000\n"
 "Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/microblocks/ide/"
 "es/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8.2\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #. Block part type, while making a new block
 msgid "input"
@@ -330,8 +330,8 @@ msgid "degrees"
 msgstr "grados"
 
 #. micro:STEAMakers library block
-msgid "m꞉s temperature ºC"
-msgstr "m꞉s temperatura ºC"
+msgid "ms temperature ºC"
+msgstr "ms temperatura ºC"
 
 #. InnovaDidàctic TdR shield library block
 msgid "TdR rotation"
@@ -1014,8 +1014,8 @@ msgid "thing description JSON"
 msgstr "JSON de la cosa"
 
 #. micro:STEAMakers library block
-msgid "m꞉s scale brightness to _ %"
-msgstr "m꞉s escala el brillo al _ %"
+msgid "ms scale brightness to _ %"
+msgstr "ms escala el brillo al _ %"
 
 #. Lists library block
 msgid "map _ over _"
@@ -1070,8 +1070,8 @@ msgid "ionian"
 msgstr "jónica"
 
 #. micro:STEAMakers library block
-msgid "m꞉s plot x _ y _ with _"
-msgstr "m꞉s enciende x _ y _ con _"
+msgid "ms plot x _ y _ with _"
+msgstr "ms enciende x _ y _ con _"
 
 #. Keyestudio Smart Farm library block
 msgid "Farm electric consumption _"
@@ -1630,8 +1630,8 @@ msgid "MiKe _ obstacle ?"
 msgstr "MiKe obstáculo _ ?"
 
 #. micro:STEAMakers library block
-msgid "m꞉s humidity %"
-msgstr "m꞉s humedad %"
+msgid "ms humidity %"
+msgstr "ms humedad %"
 
 #. Example string for ( (prefix) begins with (pre) )
 msgid "prefix"
@@ -2568,8 +2568,8 @@ msgid "ms;start"
 msgstr "arranca"
 
 #. micro:STEAMakers library block
-msgid "m꞉s sound %"
-msgstr "m꞉s sonido %"
+msgid "ms sound %"
+msgstr "ms sonido %"
 
 #. InnovaDidàctic TdR shield library block
 msgid "TdR set red LED _"
@@ -3073,19 +3073,19 @@ msgstr "s꞉b pon el pin S- _ (1-8) a _ %"
 
 #. micro:STEAMakers library block
 #. The #BR# tag must be kept intact. It translates to a new line
-msgid "m꞉s display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
+msgid "ms display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
 msgstr ""
-"m꞉s pantalla #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR#"
+"ms pantalla #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR#"
 " _ _ _ _ _"
 
 #. micro:STEAMakers library block
 #. The #BR# tag must be kept intact. It translates to a new line
-msgid "m꞉s display #BR# _ #BR# with color _"
-msgstr "m꞉s pantalla #BR# _ #BR# con el color _"
+msgid "ms display #BR# _ #BR# with color _"
+msgstr "ms pantalla #BR# _ #BR# con el color _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s display image _ with color _"
-msgstr "m꞉s muestra la imagen _ con el color _"
+msgid "ms display image _ with color _"
+msgstr "ms muestra la imagen _ con el color _"
 
 #. micro:STEAMakers library block
 msgid "ms;reset"
@@ -3485,8 +3485,8 @@ msgid "register event _ type _"
 msgstr "registra el evento _ de tipo _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s light %"
-msgstr "m꞉s luz %"
+msgid "ms light %"
+msgstr "ms luz %"
 
 #. DrawBot Library block
 msgid "plotter move _ steps"
@@ -3777,16 +3777,16 @@ msgid "content length of request _"
 msgstr "tamaño del contenido de la petición _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s unplot x _ y _"
-msgstr "m꞉s apaga x _ y _"
+msgid "ms unplot x _ y _"
+msgstr "ms apaga x _ y _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s display character _ with _"
-msgstr "m꞉s muestra el carácter _ con _"
+msgid "ms display character _ with _"
+msgstr "ms muestra el carácter _ con _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s touching ?"
-msgstr "m꞉s táctil ?"
+msgid "ms touching ?"
+msgstr "ms táctil ?"
 
 #. InnovaDidàctic Imagina shield library block
 msgid "Imagina analog reading A1"
@@ -4702,40 +4702,40 @@ msgid "sb;all_motors"
 msgstr "todos los motores"
 
 #. micro:STEAMakers library block
-msgid "m꞉s clear display"
-msgstr "m꞉s limpia la pantalla"
+msgid "ms clear display"
+msgstr "ms limpia la pantalla"
 
 #. micro:STEAMakers library block
-msgid "m꞉s stop scrolling"
-msgstr "m꞉s detén la animación"
+msgid "ms stop scrolling"
+msgstr "ms detén la animación"
 
 #. micro:STEAMakers library block
 msgid "start micro꞉STEAMakers audio"
 msgstr "inicia el audio de micro꞉STEAMakers"
 
 #. micro:STEAMakers library block
-msgid "m꞉s button _ ?"
-msgstr "m꞉s botón _ ?"
+msgid "ms button _ ?"
+msgstr "ms botón _ ?"
 
 #. micro:STEAMakers library block
-msgid "m꞉s inclination towards _ º"
-msgstr "m꞉s inclinación hacia _ º"
+msgid "ms inclination towards _ º"
+msgstr "ms inclinación hacia _ º"
 
 #. DrawBot Library block
 msgid "plotter point in direction _"
 msgstr "fija rumbo del plotter a _ °"
 
 #. micro:STEAMakers library block
-msgid "m꞉s energy _"
-msgstr "m꞉s energía _"
+msgid "ms energy _"
+msgstr "ms energía _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s _ energy meter"
-msgstr "m꞉s _ la medida de energia"
+msgid "ms _ energy meter"
+msgstr "ms _ la medida de energia"
 
 #. micro:STEAMakers library block
-msgid "m꞉s energy consumption (µWh)"
-msgstr "m꞉s consumo energético (µWh)"
+msgid "ms energy consumption (µWh)"
+msgstr "ms consumo energético (µWh)"
 
 #. micro:STEAMakers library block
 msgid "ms;down"
@@ -5699,7 +5699,7 @@ msgid "hihat for _ ms on DAC pin _"
 msgstr "plato durante _ ms en el pin DAC _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s scroll text _ with color _ "
+msgid "ms scroll text _ with color _ "
 msgstr "anima el texto _ con color _ "
 
 #. OLED Graphics library block
@@ -6017,3 +6017,39 @@ msgstr "versión"
 #. Settings menu option
 msgid "install ESP firmware from microblocks.fun"
 msgstr "instalar firmware ESP desde microblocks.fun"
+
+#. Examples folder
+msgid "folder;Web of Things"
+msgstr "Web of Things"
+
+#. Examples folder
+msgid "folder;CPX"
+msgstr "CPX"
+
+#. Examples folder
+msgid "folder;microbit and Calliope"
+msgstr "microbit y Calliope"
+
+#. Examples folder
+msgid "folder; by board"
+msgstr " por placa"
+
+#. Examples folder
+msgid "folder;Art"
+msgstr "Arte"
+
+#. Examples folder
+msgid "folder;Games"
+msgstr "Juegos"
+
+#. Examples folder
+msgid "folder;Music"
+msgstr "Música"
+
+#. Examples folder
+msgid "folder;Citilab ED1 and M5Stack"
+msgstr "Citilab ED1 y M5Stack"
+
+#. micro:STEAMakers library block
+msgid "ms;stop"
+msgstr "detén"
