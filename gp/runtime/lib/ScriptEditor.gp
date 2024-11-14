@@ -43,8 +43,7 @@ method handDownOn ScriptEditor aHand {
 			}
 		}
 		if (isClass (objectAt aHand) 'ScriptEditor') {
-			// start selection if shift is pressed; otherwise, drag-scroll
-			if (shiftKeyDown (keyboard (global 'page'))) {
+			if (not (isMobile)) {
 				startSelecting scripter aHand
 			}
 		}

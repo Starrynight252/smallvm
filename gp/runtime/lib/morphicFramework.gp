@@ -398,7 +398,7 @@ method processMove Hand {
 	}
 	for oldM oldMorphs {if (and (acceptsEvents oldM) (not (contains currentMorphs oldM))) {handLeave (handler oldM) this}}
 
-	allowDragScroll = (or (isMobile this) (not (shiftKeyDown (keyboard (global 'page')))))
+	allowDragScroll = (isMobile this)
 	if (and allowDragScroll isDown hasMoved (isNil (grabbedObject this)) (notNil lastTouchTime)) {
 		// on mobile devices drag-scroll the enclosing ScrollFrame, if any
 		scrollFrameM = (ownerThatIsA (morph (currentObject this)) 'ScrollFrame')
