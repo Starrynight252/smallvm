@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 16:23+0200\n"
-"PO-Revision-Date: 2024-11-13 06:00+0000\n"
+"PO-Revision-Date: 2024-11-14 09:37+0000\n"
 "Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/microblocks/ide/"
 "es/>\n"
@@ -6049,3 +6049,7 @@ msgstr "Música"
 #. Examples folder
 msgid "folder;Citilab ED1 and M5Stack"
 msgstr "Citilab ED1 y M5Stack"
+
+#. micro:STEAMakers library block
+msgid "ms;stop"
+msgstr "detén"
