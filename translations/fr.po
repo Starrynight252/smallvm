@@ -3296,44 +3296,44 @@ msgstr ""
 
 #. micro:STEAMakers library block
 #. The #BR# tag must be kept intact. It translates to a new line
-msgid "m꞉s display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
+msgid "ms display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
 msgstr ""
 
 #. micro:STEAMakers library block
 #. The #BR# tag must be kept intact. It translates to a new line
-msgid "m꞉s display #BR# _ #BR# with color _"
+msgid "ms display #BR# _ #BR# with color _"
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "m꞉s display image _ with color _"
+msgid "ms display image _ with color _"
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "m꞉s clear display"
+msgid "ms clear display"
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "m꞉s scale brightness to _ %"
+msgid "ms scale brightness to _ %"
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "m꞉s plot x _ y _ with _"
+msgid "ms plot x _ y _ with _"
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "m꞉s unplot x _ y _"
+msgid "ms unplot x _ y _"
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "m꞉s display character _ with _"
+msgid "ms display character _ with _"
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "m꞉s scroll text _ with color _ "
+msgid "ms scroll text _ with color _ "
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "m꞉s stop scrolling"
+msgid "ms stop scrolling"
 msgstr ""
 
 #. micro:STEAMakers library block
@@ -3341,43 +3341,43 @@ msgid "start micro꞉STEAMakers audio"
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "m꞉s button _ ?"
+msgid "ms button _ ?"
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "m꞉s touching ?"
+msgid "ms touching ?"
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "m꞉s light %"
+msgid "ms light %"
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "m꞉s sound %"
+msgid "ms sound %"
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "m꞉s temperature ºC"
+msgid "ms temperature ºC"
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "m꞉s humidity %"
+msgid "ms humidity %"
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "m꞉s inclination towards _ º"
+msgid "ms inclination towards _ º"
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "m꞉s energy _"
+msgid "ms energy _"
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "m꞉s _ energy meter"
+msgid "ms _ energy meter"
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "m꞉s energy consumption (µWh)"
+msgid "ms energy consumption (µWh)"
 msgstr ""
 
 #. micro:STEAMakers library block

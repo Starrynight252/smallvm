@@ -3295,89 +3295,89 @@ msgstr "graus"
 
 #. micro:STEAMakers library block
 #. The #BR# tag must be kept intact. It translates to a new line
-msgid "m꞉s display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
-msgstr "m꞉s mostra #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
+msgid "ms display #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
+msgstr "ms mostra #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _ #BR# _ _ _ _ _"
 
 #. micro:STEAMakers library block
 #. The #BR# tag must be kept intact. It translates to a new line
-msgid "m꞉s display #BR# _ #BR# with color _"
-msgstr "m꞉s mostra #BR# _ #BR# amb el color _"
+msgid "ms display #BR# _ #BR# with color _"
+msgstr "ms mostra #BR# _ #BR# amb el color _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s display image _ with color _"
-msgstr "m꞉s mostra la imatge _ amb el color _"
+msgid "ms display image _ with color _"
+msgstr "ms mostra la imatge _ amb el color _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s clear display"
-msgstr "m꞉s esborra la pantalla"
+msgid "ms clear display"
+msgstr "ms esborra la pantalla"
 
 #. micro:STEAMakers library block
-msgid "m꞉s scale brightness to _ %"
-msgstr "m꞉s escala la brillantor al _ %"
+msgid "ms scale brightness to _ %"
+msgstr "ms escala la brillantor al _ %"
 
 #. micro:STEAMakers library block
-msgid "m꞉s plot x _ y _ with _"
-msgstr "m꞉s encén x _ y _ amb _"
+msgid "ms plot x _ y _ with _"
+msgstr "ms encén x _ y _ amb _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s unplot x _ y _"
-msgstr "m꞉s apaga x _ y _"
+msgid "ms unplot x _ y _"
+msgstr "ms apaga x _ y _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s display character _ with _"
-msgstr "m꞉s mostra el caràcter _ amb _"
+msgid "ms display character _ with _"
+msgstr "ms mostra el caràcter _ amb _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s scroll text _ with color _ "
-msgstr "m꞉s anima el text _ amb el color _ "
+msgid "ms scroll text _ with color _ "
+msgstr "ms anima el text _ amb el color _ "
 
 #. micro:STEAMakers library block
-msgid "m꞉s stop scrolling"
-msgstr "m꞉s atura l'animació"
+msgid "ms stop scrolling"
+msgstr "ms atura l'animació"
 
 #. micro:STEAMakers library block
 msgid "start micro꞉STEAMakers audio"
 msgstr "inicia l'audio amb m꞉STEAMakers"
 
 #. micro:STEAMakers library block
-msgid "m꞉s button _ ?"
-msgstr "m꞉s botó _ ?"
+msgid "ms button _ ?"
+msgstr "ms botó _ ?"
 
 #. micro:STEAMakers library block
-msgid "m꞉s touching ?"
-msgstr "m꞉s tàctil ?"
+msgid "ms touching ?"
+msgstr "ms tàctil ?"
 
 #. micro:STEAMakers library block
-msgid "m꞉s light %"
-msgstr "m꞉s llum %"
+msgid "ms light %"
+msgstr "ms llum %"
 
 #. micro:STEAMakers library block
-msgid "m꞉s sound %"
-msgstr "m꞉s so %"
+msgid "ms sound %"
+msgstr "ms so %"
 
 #. micro:STEAMakers library block
-msgid "m꞉s temperature ºC"
-msgstr "m꞉s temperatura ºC"
+msgid "ms temperature ºC"
+msgstr "ms temperatura ºC"
 
 #. micro:STEAMakers library block
-msgid "m꞉s humidity %"
-msgstr "m꞉s humitat %"
+msgid "ms humidity %"
+msgstr "ms humitat %"
 
 #. micro:STEAMakers library block
-msgid "m꞉s inclination towards _ º"
-msgstr "m꞉s inclinació cap a _ º"
+msgid "ms inclination towards _ º"
+msgstr "ms inclinació cap a _ º"
 
 #. micro:STEAMakers library block
-msgid "m꞉s energy _"
-msgstr "m꞉s energia _"
+msgid "ms energy _"
+msgstr "ms energia _"
 
 #. micro:STEAMakers library block
-msgid "m꞉s _ energy meter"
-msgstr "m꞉s _ la mesura d'energia"
+msgid "ms _ energy meter"
+msgstr "ms _ la mesura d'energia"
 
 #. micro:STEAMakers library block
-msgid "m꞉s energy consumption (µWh)"
-msgstr "m꞉s consum energètic (µWh)"
+msgid "ms energy consumption (µWh)"
+msgstr "ms consum energètic (µWh)"
 
 #. micro:STEAMakers library block
 msgid "ms;start"
