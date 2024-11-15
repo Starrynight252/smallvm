@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 16:43+0200\n"
-"PO-Revision-Date: 2024-11-15 14:13+0000\n"
+"PO-Revision-Date: 2024-11-16 15:00+0000\n"
 "Last-Translator: Ralf Krause <ralf.krause@moodleschule.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/microblocks/ide/"
 "de/>\n"
@@ -1060,7 +1060,7 @@ msgstr "setze Muster auf _ Takte"
 
 #. 5x5 LED Display library block
 msgid "display character _"
-msgstr "zeige Buchstaben _"
+msgstr "zeige Zeichen _"
 
 #. WiFi library block
 msgid "wifi connect to _ password _"
