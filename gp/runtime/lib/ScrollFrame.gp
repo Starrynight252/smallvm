@@ -318,7 +318,8 @@ method rightClicked ScrollFrame {
 // Scrolling with scrollwheel and keys
 
 method swipe ScrollFrame x y {
-	changeScrollOffset this (0 - x) (0 - y)
+	if ('Linux' != (platform)) { x = (0 - x) } // invert x on MacOS and Windows
+	changeScrollOffset this x (0 - y)
 	return true
 }
 
