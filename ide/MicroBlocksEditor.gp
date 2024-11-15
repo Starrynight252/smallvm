@@ -982,6 +982,8 @@ method applyUserPreferences MicroBlocksEditor {
 		setLanguage this (at prefs 'locale')
 	} (isChineseWebapp this) {
 		setLanguage this 'zh_chs'
+	} else {
+		setLanguage this 'en'
 	}
 	if (notNil (at prefs 'boardLibAutoLoadDisabled')) {
 		boardLibAutoLoadDisabled = (at prefs 'boardLibAutoLoadDisabled')
