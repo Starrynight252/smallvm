@@ -87,14 +87,28 @@ method makeCostume Button label color minWidth minHeight fontName fontSize fontC
 
 method handDownOn Button aHand {
 	handEnter this aHand
+	focusOn aHand this
 	return true
 }
 
-method handUpOn Button aHand {
-	handLeave this aHand
-	if (notNil clickAction) {
-		call clickAction this
+method handMoveFocus Button aHand {
+	// Show feedback while dragging after hand initially went down on this button.
+
+	if (containsPoint (bounds morph) (x aHand) (y aHand)) {
+		if (notNil onCostume) { setCostume morph onCostume }
+	} else {
+		if (notNil offCostume) { setCostume morph offCostume }
 	}
+}
+
+method handUpOn Button aHand {
+	if (and
+		(notNil clickAction)
+		(containsPoint (bounds morph) (x aHand) (y aHand))) {
+			call clickAction this
+	}
+	setCursor 'default'
+	setOn this isOn
 	return true
 }
 
