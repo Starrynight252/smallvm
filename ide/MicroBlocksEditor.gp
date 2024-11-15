@@ -38,7 +38,12 @@ method setLastScriptPicFolder MicroBlocksEditor dir { lastScriptPicFolder = dir 
 
 to openMicroBlocksEditor devMode {
 	if (isNil devMode) { devMode = false }
-	page = (newPage 1000 600)
+	if ('Browser' == (platform)) {
+	    browserSize = (browserSize)
+	    page = (newPage (first browserSize) (last browserSize))
+	} else {
+    	page = (newPage 1000 600)
+	}
 	setDevMode page devMode
 	toggleMorphicMenu (hand page) (contains (commandLine) '--allowMorphMenu')
 	setGlobal 'page' page
@@ -49,7 +54,6 @@ to openMicroBlocksEditor devMode {
 	redrawAll (global 'page')
 	readVersionFile (smallRuntime)
 	applyUserPreferences editor
-	pageResized editor
 	developerModeChanged editor
 	if ('Browser' == (platform)) {
 		// attempt to extra project or scripts from URL; does nothing if absent
@@ -1074,7 +1078,6 @@ method pageResized MicroBlocksEditor {
 	scale = (global 'scale')
 	page = (global 'page')
 	fixLayout this
-	fixLayout scripter
 	if ('Win' == (platform)) {
 		// workaround for a Windows graphics issue: when resizing a window it seems to clear
 		// some or all textures. this forces them to be updated from the underlying bitmap.

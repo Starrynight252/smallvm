@@ -390,9 +390,7 @@ method fixLayout MicroBlocksScripter {
 	fixResizerLayout this
 	fixLibraryHeaderLayout this
 	updateLibraryButton this
-	fixSliderLayout blocksFrame
-	fixSliderLayout scriptsFrame
-	updateTrashcanPosition this
+	fixScrollbars this
 
 	// rounded corner at bottom left of palette
 	setPosition cornerIcon ((left (morph blocksFrame)) - (2 * scale)) ((bottom (morph blocksFrame)) - (8 * scale))
