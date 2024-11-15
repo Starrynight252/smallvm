@@ -137,10 +137,6 @@ static void initialize() {
 #define TOUCH_MOVE		10
 #define WINDOW_SHOWN	11
 
-// position of last touchmove event used for the touchup event
-int lastTouchX = 0;
-int lastTouchY = 0;
-
 static void codePointToUTF8(int unicode, char *utf8) {
 	// Write the UTF8 encoding of the given Unicode character into utf8, followed by
 	// a zero terminator byte. utf8 should have room for up to four bytes.
@@ -278,15 +274,6 @@ OBJ getEvent() {
 			if (TOUCH_MOVE == evtType) evtType = type_mousemove;
 			else if (TOUCH_DOWN == evtType) evtType = type_mousedown;
 			else evtType = type_mouseup;
-
-			// use last known position for touchup event
-			if (evtType == type_mouseup) {
-				evt[1] = lastTouchX;
-				evt[2] = lastTouchY;
-			} else {
-				lastTouchX = evt[1];
-				lastTouchY = evt[2];
-			}
 			dictAtPut(dict, key(_type), key(evtType));
 			dictAtPut(dict, key(_x), int2obj(evt[1]));
 			dictAtPut(dict, key(_y), int2obj(evt[2]));

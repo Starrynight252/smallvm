@@ -293,25 +293,43 @@ function initGPEventHandlers() {
 		evt.preventDefault();
 	}
 	canvas.ontouchstart = function(evt) {
-		var touch = evt.touches[evt.touches.length - 1];
+		var touch = false;
+		for (var i = 0; i < evt.touches.length; i++) { // only use touch with id 0
+			if (evt.touches[i].identifier == 0) touch = evt.touches[i];
+		}
 		if (touch) {
-			var button = (evt.touches.length == 2) ? 3 : 0;
+			// Note: Attempt to us two-finger touch to generate right-click did not work well.
+			// Instead, always report touch events with left button (button 0).
+			var button = 0; // (evt.touches.length == 2) ? 3 : 0;
 			var p = localPoint(touch.clientX, touch.clientY);
 			GP.events.push([TOUCH_DOWN, p[0], p[1], button]);
 		}
-		evt.preventDefault();
-	}
-	canvas.ontouchend = function(evt) {
-		GP.events.push([TOUCH_UP, 0, 0, 0]);
-		evt.preventDefault();
+		if (evt.cancelable) evt.preventDefault(); // suppress error message
 	}
 	canvas.ontouchmove = function(evt) {
-		var touch = evt.touches[evt.touches.length - 1];
+		var touch = false;
+		for (var i = 0; i < evt.touches.length; i++) { // only use touch with id 0
+			if (evt.touches[i].identifier == 0) touch = evt.touches[i];
+		}
 		if (touch) {
 			var p = localPoint(touch.clientX, touch.clientY);
 			GP.events.push([TOUCH_MOVE, p[0], p[1], 0]);
 		}
-		evt.preventDefault();
+		if (evt.cancelable) evt.preventDefault();
+	}
+	canvas.ontouchend = function(evt) {
+		var touch = false;
+		for (var i = 0; i < evt.changedTouches.length; i++) { // only use touch with id 0
+			if (evt.changedTouches[i].identifier == 0) touch = evt.changedTouches[i];
+		}
+		if (touch) {
+			var p = localPoint(touch.clientX, touch.clientY);
+			GP.events.push([TOUCH_UP, p[0], p[1], 0]);
+		}
+		if (evt.cancelable) evt.preventDefault(); // suppress error message
+	}
+	canvas.ontouchcancel = function(evt) {
+		canvas.ontouchend(evt);
 	}
 	window.onfocus = function(evt) {
 	  GP.events.push([WINDOW_SHOWN]);
