@@ -696,6 +696,7 @@ method checkForBrowserResize MicroBlocksEditor {
 	if (scale != oldScale) {
 		for m (allMorphs pageM) { scaleChanged (handler m) }
 	}
+	fixLayout this
 }
 
 method putNextDroppedFileOnBoard MicroBlocksEditor {
