@@ -166,7 +166,7 @@ function initGPEventHandlers() {
 			y = 2 * y;
 			yOffset = 2 * yOffset;
 		}
-		return [offset, y - yOffset];
+		return [x, y - yOffset];
 	}
 	function modifierBits(evt) {
 		var modifiers = ( // SDL modifier flags (for left-side versions of those keys)
