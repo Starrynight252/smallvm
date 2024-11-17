@@ -1,19 +1,18 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 16:36+0200\n"
-"PO-Revision-Date: 2024-10-28 15:36+0000\n"
-"Last-Translator: Gilles Mateu\n"
+"PO-Revision-Date: 2024-11-18 07:54+0000\n"
+"Last-Translator: Daniel DA <dj.danyboy@wp.eu>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/microblocks/ide/"
 "fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: ENCODING\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8.2-dev\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #. "Output" blocks category label
 msgid "cat;Output"
@@ -29,7 +28,7 @@ msgstr "dire _"
 
 #. Block in Output category
 msgid "graph _"
-msgstr ""
+msgstr "graphique _"
 
 #. "Input" blocks category label
 msgid "cat;Input"
@@ -45,11 +44,11 @@ msgstr "bouton B"
 
 #. Block in Input category
 msgid "timer"
-msgstr ""
+msgstr "minuteur"
 
 #. Block in Input category
 msgid "reset timer"
-msgstr ""
+msgstr "réinitialisation du minuteur"
 
 #. Block in Input category
 msgid "microseconds"
@@ -61,11 +60,11 @@ msgstr "millisecondes"
 
 #. Block in Input category
 msgid "board type"
-msgstr ""
+msgstr "type de carte"
 
 #. Block in Input category
 msgid "milliseconds since _"
-msgstr ""
+msgstr "millisecondes depuis _"
 
 #. Block in Input category
 msgid "end time _"
@@ -73,15 +72,15 @@ msgstr ""
 
 #. Block in Input category
 msgid "microseconds since _"
-msgstr ""
+msgstr "microsecondes depuis _"
 
 #. Block in Input category
 msgid "connected to IDE"
-msgstr ""
+msgstr "connecté à l'IDE"
 
 #. "Pins" blocks category label
 msgid "cat;Pins"
-msgstr ""
+msgstr "Broches"
 
 #. Block in Pins category
 msgid "read digital pin _"
@@ -185,11 +184,11 @@ msgstr "commentaire _"
 
 #. Example content for the comment block
 msgid "How this works..."
-msgstr ""
+msgstr "Comment ça marche..."
 
 #. Block in Control category
 msgid "range _ to _"
-msgstr ""
+msgstr "nombre de _ à _"
 
 #. Block in Control category
 msgid "by _"
@@ -209,7 +208,7 @@ msgstr "arrêter cette tâche"
 
 #. Block in Control category
 msgid "stop other tasks"
-msgstr ""
+msgstr "arrêter les autres taches"
 
 #. Block in Control category
 msgid "stop all"
@@ -217,35 +216,35 @@ msgstr "stopper tout"
 
 #. Block in Control category
 msgid "last message"
-msgstr ""
+msgstr "dernier message"
 
 #. Block in Control category
 msgid "arg _ default _"
-msgstr ""
+msgstr "arguments _, valeur par défaut _"
 
 #. Example default value for the ( arg _ default _ ) block
 msgid "default"
-msgstr ""
+msgstr "défaut"
 
 #. Block in Control category
 msgid "call _"
-msgstr ""
+msgstr "appel _"
 
 #. Example value for ( call _ ) block
 msgid "function name"
-msgstr ""
+msgstr "nom de la fonction"
 
 #. Example string. Tells the user this input accepts a list of parameters.
 msgid "parameter list"
-msgstr ""
+msgstr "liste des paramètres"
 
 #. Block in Control category
 msgid "with _"
-msgstr ""
+msgstr "avec _"
 
 #. "Operators" blocks category label
 msgid "cat;Operators"
-msgstr ""
+msgstr "Opérateurs"
 
 #. Block in Operators category
 msgid "_ mod _"
@@ -289,36 +288,36 @@ msgstr "ou _"
 
 #. Block in Operators category
 msgid "_ is a _"
-msgstr ""
+msgstr "_ est un _"
 
 #. Block in Operators category
 msgid "convert _ to _"
-msgstr ""
+msgstr "convertis _ à _"
 
 #. Block in Operators category
 msgid "if _ then _ else _"
-msgstr ""
+msgstr "si _ alors _ sinon _"
 
 #. Name of data type, as in the dropdown menu in the ( (123) is a ( number v ) ) block
 msgid "boolean"
-msgstr ""
+msgstr "booléen"
 
 #. Name of data type, as in the dropdown menu in the ( (123) is a ( number v ) ) block
 msgid "number"
-msgstr ""
+msgstr "nombre"
 
 #. Name of data type, as in the dropdown menu in the ( (123) is a ( number v ) ) block
 msgid "string"
-msgstr ""
+msgstr "chaîne de caractères"
 
 #. Name of data type, as in the dropdown menu in the ( (123) is a ( number v ) ) block
 #. Also label of ( list < > ) block in Data category
 msgid "list"
-msgstr ""
+msgstr "liste"
 
 #. Name of data type, as in the dropdown menu in the ( (123) is a ( number v ) ) block
 msgid "byte array"
-msgstr ""
+msgstr "tableau d'octet"
 
 #. "Advanced" label for advanced blocks in the palette
 msgid "cat;Advanced:"
@@ -334,7 +333,7 @@ msgstr "hexadécimal _"
 
 #. Block in Operators category
 msgid "sqrt _"
-msgstr ""
+msgstr "racine carrée _"
 
 #. "Variables" blocks category label
 msgid "cat;Variables"
@@ -342,15 +341,15 @@ msgstr "Variables"
 
 #. Button on top of "Variables" category
 msgid "Add a variable"
-msgstr ""
+msgstr "Ajout une variable"
 
 #. Button on top of "Variables" category
 msgid "Delete a variable"
-msgstr ""
+msgstr "Supprime une variable"
 
 #. New variable dialog
 msgid "New variable name?"
-msgstr ""
+msgstr "Nouveau nom de variable ?"
 
 #. Block in Variables category
 msgid "set _ to _"
@@ -366,7 +365,7 @@ msgstr ""
 
 #. "Data" blocks category label
 msgid "cat;Data"
-msgstr ""
+msgstr "Donnée"
 
 #. Example value for the ( list < > ) block
 msgid "cat"
@@ -390,27 +389,27 @@ msgstr "longueur de _"
 
 #. Block in Data category
 msgid "item _ of _"
-msgstr ""
+msgstr "élément _ de _"
 
 #. Block in Data category
 msgid "replace item _ of list _ with _"
-msgstr ""
+msgstr "remplace l'élément _ de la liste _ avec _"
 
 #. Block in Data category
 msgid "delete item _ of list _"
-msgstr ""
+msgstr "supprime l'élément _ de la liste _"
 
 #. Block in Data category
 msgid "add _ to list _"
-msgstr ""
+msgstr "ajoute _ à la liste _"
 
 #. Block in Data category
 msgid "join _ _"
-msgstr ""
+msgstr "joindre _ et _"
 
 #. Block in Data category
 msgid "copy _ from _"
-msgstr ""
+msgstr "copie _ de _"
 
 #. Example value for the ( copy (smiles) from 2 > ) block, which will become "miles" when run.
 #. You could think of a word that still has meaning when you remove its first character in your language.
@@ -423,11 +422,11 @@ msgstr ""
 
 #. Block in Data category
 msgid "find _ in _"
-msgstr ""
+msgstr "cherche _ dans _"
 
 #. Block in Data category
 msgid "starting at _"
-msgstr ""
+msgstr "commence à _"
 
 #. Block in Data category
 msgid "join items of list _"
@@ -435,15 +434,15 @@ msgstr ""
 
 #. Block in Data category
 msgid "separator _"
-msgstr ""
+msgstr "séparateur _"
 
 #. Block in Data category
 msgid "unicode _ of _"
-msgstr ""
+msgstr "unicode _ de _"
 
 #. Block in Data category
 msgid "string from unicode _"
-msgstr ""
+msgstr "chaîne à partir de l'unicode _"
 
 #. Block in Data category
 msgid "new list length _"
@@ -749,47 +748,47 @@ msgstr ""
 
 #. NeoPixel library label
 msgid "NeoPixel"
-msgstr ""
+msgstr "NeoPixel"
 
 #. NeoPixel library block
 msgid "set NeoPixels _ _ _ _ _ _ _ _ _ _"
-msgstr ""
+msgstr "mettre NeoPixels _ _ _ _ _ _ _ _ _ _"
 
 #. NeoPixel library block
 msgid "clear NeoPixels"
-msgstr ""
+msgstr "effacer les NeoPixels"
 
 #. NeoPixel library block
 msgid "set NeoPixel _ color _"
-msgstr ""
+msgstr "mettre NeoPixel _ color _"
 
 #. NeoPixel library block
 msgid "set all NeoPixels color _"
-msgstr ""
+msgstr "mettre tous les NeoPixels à la couleur _"
 
 #. NeoPixel library block
 msgid "rotate NeoPixels by _"
-msgstr ""
+msgstr "tourner les NeoPixels de _"
 
 #. NeoPixel library block
 msgid "brighten NeoPixel _ by _"
-msgstr ""
+msgstr "éclaircir le NeoPixel _ de _"
 
 #. NeoPixel library block
 msgid "brighten all NeoPixels by _"
-msgstr ""
+msgstr "éclaircir tous les NeoPixels par _"
 
 #. NeoPixel library block
 msgid "shift NeoPixel _ color by _"
-msgstr ""
+msgstr "décaler la couleur _ du NeoPixel par  _"
 
 #. NeoPixel library block
 msgid "shift all NeoPixel colors by _"
-msgstr ""
+msgstr "décaler toutes les couleurs du NeoPixel par _"
 
 #. NeoPixel library block
 msgid "attach _ LED NeoPixel strip to pin _"
-msgstr ""
+msgstr "attacher _ LEDs de la bande NeoPixel  au pin _"
 
 #. NeoPixel library block
 msgid "has white _"
@@ -810,6 +809,7 @@ msgstr ""
 #. NeoPanel library block
 msgid "attach NeoPixel panel width _ height _ at pin _"
 msgstr ""
+"attacher un panneau NeoPixel de _ leds de large et _ leds de hauteur au pin _"
 
 #. NeoPanel library block
 msgid "NeoPanel set x _ y _ color _"
@@ -841,11 +841,11 @@ msgstr ""
 
 #. Microphone library block
 msgid "microphone"
-msgstr ""
+msgstr "micro"
 
 #. Microphone library block
 msgid "turn on microphone"
-msgstr ""
+msgstr "allumer le micro"
 
 #. Microphone library block
 msgid "loudness"
@@ -889,19 +889,19 @@ msgstr ""
 
 #. Citilab ED1 Stepper Motor library block
 msgid "clockwise"
-msgstr ""
+msgstr "sens horaire"
 
 #. Citilab ED1 Stepper Motor library block
 msgid "counter-clockwise"
-msgstr ""
+msgstr "sens anti-horaire"
 
 #. Citilab ED1 Buttons library label
 msgid "ED1 Buttons"
-msgstr ""
+msgstr "Boutons ED1"
 
 #. Citilab ED1 Buttons library block
 msgid "capacitive sensor _"
-msgstr ""
+msgstr "capteur capacitif _"
 
 #. Citilab ED1 Buttons library block
 msgid "set capacitive threshold to _"
@@ -933,7 +933,7 @@ msgstr "Hummingbird Batterie (mV)"
 
 #. BirdBrain Technologies Hummingbird kit library block
 msgid "humm;Light"
-msgstr "LumiËre"
+msgstr "Lumière"
 
 #. BirdBrain Technologies Hummingbird kit library block
 msgid "humm;Distance (cm)"
@@ -4730,8 +4730,8 @@ msgstr ""
 msgid "Save the firmware file when prompted."
 msgstr ""
 
-#. MicroBlocks IDE information
 # %1 holds the drive name
+#. MicroBlocks IDE information
 msgid "Drag the firmware file you just saved to the %1 drive."
 msgstr ""
 
@@ -5875,3 +5875,14 @@ msgstr ""
 msgid "Report the number of words of memory available. Stop button frees up memory."
 msgstr ""
 
+#. Block in Input category
+msgid "seconds"
+msgstr "secondes"
+
+#. Block in Input category
+msgid "BLE id"
+msgstr "id Bluetooth"
+
+#. Block in Input category
+msgid "BLE connected"
+msgstr "Buetooth connecté"
