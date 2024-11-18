@@ -3234,44 +3234,44 @@ msgid "MiKe digital D8 to _"
 msgstr "Mike fixa l'actuador D8 a _"
 
 #. Shield:bit library block
-msgid "s꞉b LEDs off"
-msgstr "s꞉b apaga els LED"
+msgid "sb LEDs off"
+msgstr "sb apaga els LED"
 
 #. Shield:bit library block
-msgid "s꞉b LEDs to _"
-msgstr "s꞉b LEDs a _"
+msgid "sb set all LEDs to _"
+msgstr "sb posa tots els LEDs a _"
 
 #. Shield:bit library block
-msgid "s꞉b LED _ (1-4) to _"
-msgstr "s꞉b LED _ (1-4) a _"
+msgid "sb set LED _ (1-4) to _"
+msgstr "sb posa el LED _ (1-4) a _"
 
 #. Shield:bit library block
-msgid "s꞉b audio output to shield _"
-msgstr "s꞉b sortida d'audio per la shield:bit _"
+msgid "sb send audio to shield _"
+msgstr "sb envia l'audio per la shieldBit _"
 
 #. Shield:bit library block
-msgid "s꞉b stop _"
-msgstr "s꞉b atura _"
+msgid "sb stop _"
+msgstr "sb atura _"
 
 #. Shield:bit library block
-msgid "s꞉b turn 180 servo S- _ (1-8) to angle _"
-msgstr "s꞉b gira el servo 180 S- _ (1-8) a l'angle _"
+msgid "sb turn 180 servo S- _ (1-8) to angle _"
+msgstr "sb gira el servo 180 S- _ (1-8) a l'angle _"
 
 #. Shield:bit library block
-msgid "s꞉b turn 360 servo S- _ (1-8) _ at _ %"
-msgstr "s꞉b gira el servo 360 S- _ (1-8) _ a _ %"
+msgid "sb turn 360 servo S- _ (1-8) _ at _ %"
+msgstr "sb gira el servo 360 S- _ (1-8) _ a _ %"
 
 #. Shield:bit library block
-msgid "s꞉b turn DC M- _ (1-4) motor _ at _ %"
-msgstr "s꞉b gira el motor CC M- _ (1-4) _ a _ %"
+msgid "sb turn DC M- _ (1-4) motor _ at _ %"
+msgstr "sb gira el motor CC M- _ (1-4) _ a _ %"
 
 #. Shield:bit library block
-msgid "s꞉b turn Stepper- _ (1-2) motor _ for _ _"
-msgstr "s꞉b gira el motor PaP- _ (1-2) _ per _ _"
+msgid "sb turn Stepper- _ (1-2) motor _ for _ _"
+msgstr "sb gira el motor PaP- _ (1-2) _ per _ _"
 
 #. Shield:bit library block
-msgid "s꞉b set pin S- _ (1-8) to _ %"
-msgstr "s꞉b posa el pin S- _ (1-8) a _ %"
+msgid "sb set pin S- _ (1-8) to _ %"
+msgstr "sb posa el pin S- _ (1-8) a _ %"
 
 #. Shield:bit library motor type
 msgid "sb;DC/Stepper_motors"
@@ -3348,12 +3348,12 @@ msgid "ms touching ?"
 msgstr "ms tàctil ?"
 
 #. micro:STEAMakers library block
-msgid "ms light %"
-msgstr "ms llum %"
+msgid "ms light"
+msgstr "ms llum"
 
 #. micro:STEAMakers library block
-msgid "ms sound %"
-msgstr "ms so %"
+msgid "ms sound"
+msgstr "ms so"
 
 #. micro:STEAMakers library block
 msgid "ms temperature ºC"
