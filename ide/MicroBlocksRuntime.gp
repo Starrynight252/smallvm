@@ -1326,8 +1326,8 @@ method installBoardSpecificBlocks SmallRuntime {
 	} ('micro:STEAMakers' == boardType) {
 		importEmbeddedLibrary scripter 'Basic Sensors'
 		importEmbeddedLibrary scripter 'LED Display'
-		importEmbeddedLibrary scripter 'microSTEAMakers'
 		importEmbeddedLibrary scripter 'HTTP client'
+		importEmbeddedLibrary scripter 'microSTEAMakers'
 	}
 }
 
