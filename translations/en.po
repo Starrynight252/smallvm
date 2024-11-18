@@ -5167,6 +5167,10 @@ msgid "Confirm"
 msgstr "Confirm"
 
 #. Examples folder
+msgid "folder;Examples"
+msgstr "Examples"
+
+#. Examples folder
 msgid "folder; by board"
 msgstr " by board"
 
