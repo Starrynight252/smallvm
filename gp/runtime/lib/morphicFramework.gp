@@ -1260,11 +1260,9 @@ method showMenu Page aMenu x y {
 	keepWithin (morph aMenu) (insetBy (bounds morph) 10)
 	if ((top (morph aMenu)) < (y hand)) {
 		if (x < (half (width morph))) {
-print 'moved right'
 			setLeft (morph aMenu) x
 		} else {
-print 'moved left'
-			setRight (morph aMenu) x
+			setRight (morph aMenu) (x - 1)
 		}
 	}
 
