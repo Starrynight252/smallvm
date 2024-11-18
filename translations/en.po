@@ -1879,7 +1879,7 @@ msgid "nt;d"
 msgstr "d"
 
 #. Musical note name
-msgid "d#"
+msgid "nt;d#"
 msgstr "d#"
 
 #. Musical note name
