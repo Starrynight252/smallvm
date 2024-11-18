@@ -1091,9 +1091,15 @@ static void mpu6050readData() {
 static int readAcceleration(int registerID) {
 	mpu6050readData();
 	int val = 0;
-	if (1 == registerID) val = fix16bitSign((mpuData[2] << 8) | mpuData[3]); // x-axis
-	if (3 == registerID) val = -fix16bitSign((mpuData[0] << 8) | mpuData[1]); // y-axis
-	if (5 == registerID) val = -fix16bitSign((mpuData[4] << 8) | mpuData[5]); // z-axis
+	#if defined(STEAMaker)
+		if (1 == registerID) val = -fix16bitSign((mpuData[2] << 8) | mpuData[3]); // x-axis
+		if (3 == registerID) val = fix16bitSign((mpuData[0] << 8) | mpuData[1]); // y-axis
+		if (5 == registerID) val = -fix16bitSign((mpuData[4] << 8) | mpuData[5]); // z-axis
+	#else
+		if (1 == registerID) val = fix16bitSign((mpuData[2] << 8) | mpuData[3]); // x-axis
+		if (3 == registerID) val = -fix16bitSign((mpuData[0] << 8) | mpuData[1]); // y-axis
+		if (5 == registerID) val = -fix16bitSign((mpuData[4] << 8) | mpuData[5]); // z-axis
+	#endif
 
 	return (100 * val) >> 14;
 }
