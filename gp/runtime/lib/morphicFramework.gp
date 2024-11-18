@@ -430,6 +430,10 @@ method processDown Hand button {
 	closeUnclickedMenu page currentObj
 	lastTouched = nil
 	lastTouchTime = nil
+	if (notNil (grabbedObject this)) {
+		grab this (grabbedObject this) // re-grab...
+		return
+	}
 	if (or (button == 3) (commandKeyDown (keyboard page))) {
 		processRightClicked this currentObj
 		return
@@ -1248,12 +1252,22 @@ method stopTasksFor Page rcvr { stopTasksFor taskMaster rcvr }
 // menu
 
 method showMenu Page aMenu x y {
-	if (isNil x) {x = (half ((width morph) - (width (morph aMenu))))}
-	if (isNil y) {y = (half ((height morph) - (height (morph aMenu))))}
-	if (notNil activeMenu) {destroy (morph activeMenu)}
+	if (isNil x) { x = (x hand) }
+	if (isNil y) { y = (y hand) }
+	if (notNil activeMenu) { destroy (morph activeMenu) }
 	removeTooltip this
 	setPosition (morph aMenu) x y
-	keepWithin (morph aMenu) (insetBy (bounds morph) 50)
+	keepWithin (morph aMenu) (insetBy (bounds morph) 10)
+	if ((top (morph aMenu)) < (y hand)) {
+		if (x < (half (width morph))) {
+print 'moved right'
+			setLeft (morph aMenu) x
+		} else {
+print 'moved left'
+			setRight (morph aMenu) x
+		}
+	}
+
 	addPart morph (morph aMenu)
 	activeMenu = aMenu
 }

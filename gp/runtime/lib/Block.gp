@@ -622,7 +622,7 @@ method aboutToBeGrabbed Block {
 				addPart (morph owner) (morph dup)
 			}
 		}
-		setPosition morph ((x hand) - inset) ((y hand) - inset)
+		setPosition morph -100 -100 // force copy to be grabbed by top-left corner
 	}
 
 	// extract block with shift + grab
