@@ -171,7 +171,7 @@ method clicked BlockDefinition {
 
 method rightClicked BlockDefinition aHand {
 	if (isNil (ownerThatIsA morph 'Block')) {return false}
-	contextMenu this
+	popUp (contextMenu this) (global 'page')
 	return true
 }
 
@@ -188,8 +188,7 @@ method typesMenu BlockDefinition {
 method contextMenu BlockDefinition {
 	selection = (selection (scripter (findProjectEditor)))
 	if (and (notNil selection) (notEmpty selection)) {
-		popUp (contextMenu selection) (global 'page') // (left morph) (bottom morph)
-		return
+		return (contextMenu selection true)
 	}
 
 	menu = (menu nil this)
@@ -207,7 +206,7 @@ method contextMenu BlockDefinition {
 	}
 	addLine menu
 	addItem menu 'delete block definition...' 'deleteBlockDefinition'
-	popUp menu (global 'page') (left morph) (bottom morph)
+	return menu
 }
 
 method exportAsImage BlockDefinition {
@@ -600,7 +599,7 @@ method addLabelText BlockSectionDefinition aString {
 		aString = '#BR#'
 	}
 	txt = (labelText this aString)
-	if (not (isClass txt 'SVGImage')) { 
+	if (not (isClass txt 'SVGImage')) {
 		setEditRule txt 'line'
 	}
 	addPart morph (morph txt)

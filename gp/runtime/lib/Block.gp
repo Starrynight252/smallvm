@@ -991,7 +991,7 @@ method contextMenu Block {
 	scripter = (scripter pe)
 	selection = (selection scripter)
 	if (and (notNil selection) (notEmpty selection)) {
-		return (contextMenu selection)
+		return (contextMenu selection false)
 	}
 
 	isInPalette = ('template' == (grabRule morph))

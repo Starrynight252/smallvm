@@ -154,16 +154,22 @@ method containsBlocks MicroBlocksSelection {
 
 // actions
 
-method contextMenu MicroBlocksSelection {
+method contextMenu MicroBlocksSelection isBlockDefinition {
 	menu = (menu nil this)
-	addItem menu 'run selected' 'startProcesses'
-	addItem menu 'stop selected' 'stopProcesses'
-	addItem menu 'toggle selected' 'toggleProcesses'
-	addLine menu
-	addItem menu 'duplicate selection' 'duplicateBlocks'
-	addItem menu 'drag selection' 'dragBlocks'
-	addLine menu
-	addItem menu 'delete selection' 'deleteBlocks'
+	if (isNil isBlockDefinition) { isBlockDefinition = false }
+	if isBlockDefinition {
+		addItem menu 'drag selection' 'dragBlocks'
+		addItem menu 'hide block definition' 'hideBlockDefinitions'
+	} else {
+		addItem menu 'run selected' 'startProcesses'
+		addItem menu 'stop selected' 'stopProcesses'
+		addItem menu 'toggle selected' 'toggleProcesses'
+		addLine menu
+		addItem menu 'duplicate selection' 'duplicateBlocks'
+		addItem menu 'drag selection' 'dragBlocks'
+		addLine menu
+		addItem menu 'delete selection' 'deleteBlocks'
+	}
 	return menu
 }
 
@@ -220,6 +226,16 @@ method dragBlocks MicroBlocksSelection {
 	} else {
 		contents = (initialize (new 'MicroBlocksSelectionContents') blocks false scripter)
 		grab (hand (global 'page')) contents
+	}
+}
+
+method hideBlockDefinitions MicroBlocksSelection {
+	cancelSelection
+	pe = (findProjectEditor)
+	if (isNil pe) { return }
+	for b blocks {
+		proto = (editedPrototype b)
+		if (notNil proto) { hideDefinition (scripter pe) (functionName (function proto)) }
 	}
 }
 
