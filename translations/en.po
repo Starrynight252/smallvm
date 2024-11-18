@@ -3907,6 +3907,58 @@ msgstr "wifi last string"
 msgid "wifi set group _ (0-255)"
 msgstr "wifi set group _ (0-255)"
 
+#. BLE Radio library block
+msgid "ble send number _"
+msgstr "ble send number _"
+
+#. BLE Radio library block
+msgid "ble send string _"
+msgstr "ble send string _"
+
+#. BLE Radio library block
+msgid "ble send pair _ = _"
+msgstr "ble send pair _ = _"
+
+#. BLE Radio library block
+msgid "ble message received?"
+msgstr "ble message received?"
+
+#. BLE Radio library block
+msgid "ble last number"
+msgstr "ble last number"
+
+#. BLE Radio library block
+msgid "ble last string"
+msgstr "ble last string"
+
+#. BLE Radio library block
+msgid "ble set group _ (0-255)"
+msgstr "ble set group _ (0-255)"
+
+#. BLE Scanner library block
+msgid "scan received"
+msgstr "scan received"
+
+#. BLE Scanner library block
+msgid "RSSI"
+msgstr "RSSI"
+
+#. BLE Scanner library block
+msgid "address"
+msgstr "address"
+
+#. BLE Scanner library block
+msgid "address type"
+msgstr "address type"
+
+#. BLE Scanner library block
+msgid "device name"
+msgstr "device name"
+
+#. BLE Scanner library block
+msgid "hasType _"
+msgstr "hasType _"
+
 #. Cutebot library label
 msgid "Cutebot"
 msgstr "Cutebot"
