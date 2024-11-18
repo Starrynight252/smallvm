@@ -3234,43 +3234,43 @@ msgid "MiKe digital D8 to _"
 msgstr ""
 
 #. Shield:bit library block
-msgid "s꞉b LEDs off"
+msgid "sb LEDs off"
 msgstr ""
 
 #. Shield:bit library block
-msgid "s꞉b LEDs to _"
+msgid "sb set all LEDs to _"
 msgstr ""
 
 #. Shield:bit library block
-msgid "s꞉b LED _ (1-4) to _"
+msgid "sb set LED _ (1-4) to _"
 msgstr ""
 
 #. Shield:bit library block
-msgid "s꞉b audio output to shield _"
+msgid "sb send audio to shield _"
 msgstr ""
 
 #. Shield:bit library block
-msgid "s꞉b stop _"
+msgid "sb stop _"
 msgstr ""
 
 #. Shield:bit library block
-msgid "s꞉b turn 180 servo S- _ (1-8) to angle _"
+msgid "sb turn 180 servo S- _ (1-8) to angle _"
 msgstr ""
 
 #. Shield:bit library block
-msgid "s꞉b turn 360 servo S- _ (1-8) _ at _ %"
+msgid "sb turn 360 servo S- _ (1-8) _ at _ %"
 msgstr ""
 
 #. Shield:bit library block
-msgid "s꞉b turn DC M- _ (1-4) motor _ at _ %"
+msgid "sb turn DC M- _ (1-4) motor _ at _ %"
 msgstr ""
 
 #. Shield:bit library block
-msgid "s꞉b turn Stepper- _ (1-2) motor _ for _ _"
+msgid "sb turn Stepper- _ (1-2) motor _ for _ _"
 msgstr ""
 
 #. Shield:bit library block
-msgid "s꞉b set pin S- _ (1-8) to _ %"
+msgid "sb set pin S- _ (1-8) to _ %"
 msgstr ""
 
 #. Shield:bit library motor type
@@ -3348,11 +3348,11 @@ msgid "ms touching ?"
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "ms light %"
+msgid "ms light"
 msgstr ""
 
 #. micro:STEAMakers library block
-msgid "ms sound %"
+msgid "ms sound"
 msgstr ""
 
 #. micro:STEAMakers library block
