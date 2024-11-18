@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-30 07:10+0200\n"
-"PO-Revision-Date: 2024-11-14 09:37+0000\n"
+"PO-Revision-Date: 2024-11-18 11:26+0000\n"
 "Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/microblocks/ide/"
 "ca/>\n"
@@ -5947,3 +5947,63 @@ msgstr "microbit i Calliope"
 #. micro:STEAMakers library block
 msgid "ms;stop"
 msgstr "atura"
+
+#. Block in Control category
+msgid "exit loop"
+msgstr "surt del bucle"
+
+#. WiFi library block
+msgid "allow WiFi while using BLE _"
+msgstr "permet l'ús de la WiFi mentre BLE és actiu _"
+
+#. BLE Radio library block
+msgid "ble send pair _ = _"
+msgstr "envia parella _ = _ per BLE"
+
+#. BLE Radio library block
+msgid "ble message received?"
+msgstr "missatge BLE rebut?"
+
+#. BLE Radio library block
+msgid "ble last number"
+msgstr "últim nombre rebut per BLE"
+
+#. BLE Radio library block
+msgid "ble set group _ (0-255)"
+msgstr "fixa grup de BLE a _ (0-255)"
+
+#. BLE Scanner library block
+msgid "device name"
+msgstr "nom del dispositiu"
+
+#. BLE Scanner library block
+msgid "hasType _"
+msgstr "té tipus _"
+
+#. BLE Radio library block
+msgid "ble send number _"
+msgstr "envia nombre _ per BLE"
+
+#. BLE Radio library block
+msgid "ble last string"
+msgstr "últim text rebut per BLE"
+
+#. BLE Scanner library block
+msgid "scan received"
+msgstr "escaneig rebut"
+
+#. BLE Scanner library block
+msgid "address"
+msgstr "adreça"
+
+#. BLE Radio library block
+msgid "ble send string _"
+msgstr "envia text _ per BLE"
+
+#. BLE Scanner library block
+msgid "RSSI"
+msgstr "RSSI"
+
+#. BLE Scanner library block
+msgid "address type"
+msgstr "tipus d'adreça"
