@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-28 16:23+0200\n"
-"PO-Revision-Date: 2024-11-14 09:37+0000\n"
+"PO-Revision-Date: 2024-11-18 11:26+0000\n"
 "Last-Translator: Bernat Romagosa <bernat@romagosa.work>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/microblocks/ide/"
 "es/>\n"
@@ -6053,3 +6053,63 @@ msgstr "Citilab ED1 y M5Stack"
 #. micro:STEAMakers library block
 msgid "ms;stop"
 msgstr "detén"
+
+#. BLE Radio library block
+msgid "ble message received?"
+msgstr "¿mensaje BLE recibido?"
+
+#. BLE Radio library block
+msgid "ble last string"
+msgstr "último texto recibido por BLE"
+
+#. BLE Radio library block
+msgid "ble set group _ (0-255)"
+msgstr "fija el grupo de BLE a _ (0-255)"
+
+#. BLE Scanner library block
+msgid "address type"
+msgstr "tipo de dirección"
+
+#. BLE Scanner library block
+msgid "device name"
+msgstr "nombre del dispositivo"
+
+#. BLE Scanner library block
+msgid "hasType _"
+msgstr "tiene tipo _"
+
+#. Block in Control category
+msgid "exit loop"
+msgstr "sal del bucle"
+
+#. WiFi library block
+msgid "allow WiFi while using BLE _"
+msgstr "permite el uso de la WiFi mientras BLE esté activo _"
+
+#. BLE Radio library block
+msgid "ble send number _"
+msgstr "envía número _ por BLE"
+
+#. BLE Radio library block
+msgid "ble send string _"
+msgstr "envía texto _ por BLE"
+
+#. BLE Radio library block
+msgid "ble send pair _ = _"
+msgstr "envía par _ = _ por BLE"
+
+#. BLE Radio library block
+msgid "ble last number"
+msgstr "último número recibido por BLE"
+
+#. BLE Scanner library block
+msgid "scan received"
+msgstr "escaneo recibido"
+
+#. BLE Scanner library block
+msgid "RSSI"
+msgstr "RSSI"
+
+#. BLE Scanner library block
+msgid "address"
+msgstr "dirección"
