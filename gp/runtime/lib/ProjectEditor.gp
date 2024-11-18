@@ -486,7 +486,7 @@ method checkForBrowserResize ProjectEditor {
 	openWindow w h
 	pageM = (morph (global 'page'))
 	setExtent pageM w h
-	for each (parts pageM) { pageResized (handler each) w h this }
+	for each (parts pageM) { pageResized (handler each) }
 }
 
 method processBrowserMessages ProjectEditor {

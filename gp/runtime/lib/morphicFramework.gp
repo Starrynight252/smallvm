@@ -1121,14 +1121,14 @@ method processWindowEvent Page evt {
 		flipBuffer
 		setPosition morph 0 0
 		setExtent morph w h
-		for each (parts morph) { pageResized (handler each) w h this }
+		for each (parts morph) { pageResized (handler each) }
 		if (scale != oldScale) {
 			for m (allMorphs morph) { scaleChanged (handler m) }
 		}
 	} (isOneOf id 1 3 8 9) {
 		redrawAll this
 		changed morph
-		for each (parts morph) {pageResized (handler each) w h this}
+		for each (parts morph) { pageResized (handler each) }
 	}
 }
 
@@ -1141,7 +1141,7 @@ method setWindowSize Page w h {
 	setPosition morph 0 0
 	setExtent morph (w * scale) (h * scale)
 	for m (parts morph) {
-		pageResized (handler m) w h this
+		pageResized (handler m)
 	}
 }
 
