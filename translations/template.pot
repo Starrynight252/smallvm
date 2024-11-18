@@ -222,6 +222,10 @@ msgstr ""
 msgid "arg _ default _"
 msgstr ""
 
+#. Block in Control category
+msgid "exit loop"
+msgstr ""
+
 #. Example default value for the ( arg _ default _ ) block
 msgid "default"
 msgstr ""
@@ -2821,6 +2825,10 @@ msgstr ""
 
 #. WiFi library block
 msgid "MAC address"
+msgstr ""
+
+#. WiFi library block
+msgid "allow WiFi while using BLE _"
 msgstr ""
 
 #. Motion library label

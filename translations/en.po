@@ -222,6 +222,10 @@ msgstr "last message"
 msgid "arg _ default _"
 msgstr "arg _ default _"
 
+#. Block in Control category
+msgid "exit loop"
+msgstr "exit loop"
+
 #. Example default value for the ( arg _ default _ ) block
 msgid "default"
 msgstr "default"
@@ -2822,6 +2826,10 @@ msgstr "IP address"
 #. WiFi library block
 msgid "MAC address"
 msgstr "MAC address"
+
+#. WiFi library block
+msgid "allow WiFi while using BLE _"
+msgstr "allow WiFi while using BLE _"
 
 #. Motion library label
 #. Counts steps and detects motion via the internal accelerometer
