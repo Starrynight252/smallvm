@@ -96,6 +96,7 @@ method initialize MicroBlocksFilePicker anAction defaultPath extensionList saveF
 	}
 	window = (window title)
 	morph = (morph window)
+	if (isMobile) { hide (morph (getField window 'resizer')) } // difficult to use on mobile
 	setHandler morph this
 	setClipping morph true
 	clr = (gray 250)
@@ -129,8 +130,11 @@ method initialize MicroBlocksFilePicker anAction defaultPath extensionList saveF
 	okayButton = (textButton this 0 0 okayLabel 'okay' true) // default
 	cancelButton = (textButton this 0 0 'Cancel' (action 'destroy' morph))
 
-	setMinExtent morph (520 * scale) (465 * scale)
-	setExtent morph (520 * scale) (465 * scale)
+	page = (global 'page')
+	minW = (min (520 * scale) (round (0.9 * (width page))))
+	minH = (min (465 * scale) (round (0.8 * (height page))))
+	setMinExtent morph minW minH
+	setExtent morph minW minH
 
 	if forSaving {
 		defaultPath = (directoryPart defaultPath)
