@@ -859,7 +859,7 @@ method open Page tryRetina title {
 	setExtent morph (at winSize 3) (at winSize 4) // actual extent
 	if ((at winSize 3) > (at winSize 1)) {
 		ratio = ((at winSize 3) / (at winSize 1))
-		if (2 == ratio) {
+		if (ratio > 1) {
 			setGlobal 'scale' 2 // retina display
 		} else {
 			// revert to non-retina mode if scale != 2 (some iPhones have non-integer scales)
@@ -1101,6 +1101,8 @@ method updateScale Page {
 	} else {
 		setGlobal 'scale' 1 // non-retina display
 	}
+	// Increase scale on mobile devices to make the UI controls easier to use with finger tip.
+	if (isMobile) { setGlobal 'scale' ((global 'scale') + 1) }
 }
 
 method processWindowEvent Page evt {
