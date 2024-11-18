@@ -675,14 +675,16 @@ method clicked MicroBlocksEditor aHand {
 method checkForBrowserResize MicroBlocksEditor {
 	winSize = (windowSize)
 	browserSize = (browserSize)
-	dx = (abs ((at winSize 1) - (at browserSize 1)))
-	dy = (abs ((at winSize 2) - (at browserSize 2)))
+	browserW = (at browserSize 1)
+	browserH = (at browserSize 2)
+	dx = (abs ((at winSize 1) - browserW))
+	dy = (abs ((at winSize 2) - browserH))
 	if (and (dx <= 1) (dy <= 1)) {
 		// At the smallest browser zoom levels, sizes can differ by one pixel
 		return // no change
 	}
 
-	openWindow w h true
+	openWindow browserW browserH true
 	oldScale = (global 'scale')
 	page = (global 'page')
 	updateScale page
