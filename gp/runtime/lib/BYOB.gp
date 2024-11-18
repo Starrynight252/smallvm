@@ -186,6 +186,12 @@ method typesMenu BlockDefinition {
 // MicroBlocks context menu
 
 method contextMenu BlockDefinition {
+	selection = (selection (scripter (findProjectEditor)))
+	if (and (notNil selection) (notEmpty selection)) {
+		popUp (contextMenu selection) (global 'page') // (left morph) (bottom morph)
+		return
+	}
+
 	menu = (menu nil this)
 	addItem menu 'hide block definition' 'hideDefinition'
 	addLine menu
