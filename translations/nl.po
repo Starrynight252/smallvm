@@ -1879,7 +1879,7 @@ msgid "nt;d"
 msgstr "d"
 
 #. Musical note name
-msgid "d#"
+msgid "nt;d#"
 msgstr "d#"
 
 #. Musical note name
@@ -3234,44 +3234,44 @@ msgid "MiKe digital D8 to _"
 msgstr "MiKe digitale D8 naar _"
 
 #. Shield:bit library block
-msgid "s꞉b LEDs off"
-msgstr "s:b LEDs uit"
+msgid "sb LEDs off"
+msgstr "sb LEDs uit"
 
 #. Shield:bit library block
-msgid "s꞉b LEDs to _"
-msgstr "s:b LEDS naar _"
+msgid "sb set all LEDs to _"
+msgstr "sb LEDS naar _"
 
 #. Shield:bit library block
-msgid "s꞉b LED _ (1-4) to _"
-msgstr "s:b LED _ (1-4) naar _"
+msgid "sb set LED _ (1-4) to _"
+msgstr "sb LED _ (1-4) naar _"
 
 #. Shield:bit library block
-msgid "s꞉b audio output to shield _"
-msgstr "s:b audio output naar shield _"
+msgid "sb send audio to shield _"
+msgstr "sb audio output naar shield _"
 
 #. Shield:bit library block
-msgid "s꞉b stop _"
-msgstr "s:b stop _"
+msgid "sb stop _"
+msgstr "sb stop _"
 
 #. Shield:bit library block
-msgid "s꞉b turn 180 servo S- _ (1-8) to angle _"
-msgstr "s:b draai 180 servo S- _ (1-8) naar hoek _"
+msgid "sb turn 180 servo S- _ (1-8) to angle _"
+msgstr "sb draai 180 servo S- _ (1-8) naar hoek _"
 
 #. Shield:bit library block
-msgid "s꞉b turn 360 servo S- _ (1-8) _ at _ %"
-msgstr "s:b draai 360 servo S- _ (1-8) _ naar _ %"
+msgid "sb turn 360 servo S- _ (1-8) _ at _ %"
+msgstr "sb draai 360 servo S- _ (1-8) _ naar _ %"
 
 #. Shield:bit library block
-msgid "s꞉b turn DC M- _ (1-4) motor _ at _ %"
-msgstr "s:b draai DC M- _ (1-4) moto _ naar _ %"
+msgid "sb turn DC M- _ (1-4) motor _ at _ %"
+msgstr "sb draai DC M- _ (1-4) moto _ naar _ %"
 
 #. Shield:bit library block
-msgid "s꞉b turn Stepper- _ (1-2) motor _ for _ _"
-msgstr "s:b draai Stepper- _ (1-2) motor _ voor _ _"
+msgid "sb turn Stepper- _ (1-2) motor _ for _ _"
+msgstr "sb draai Stepper- _ (1-2) motor _ voor _ _"
 
 #. Shield:bit library block
-msgid "s꞉b set pin S- _ (1-8) to _ %"
-msgstr "s:b zet pin S- _ (1-8) naar _ %"
+msgid "sb set pin S- _ (1-8) to _ %"
+msgstr "sb zet pin S- _ (1-8) naar _ %"
 
 #. Shield:bit library motor type
 msgid "sb;DC/Stepper_motors"
@@ -3350,12 +3350,12 @@ msgid "ms touching ?"
 msgstr "m:s aanraken ?"
 
 #. micro:STEAMakers library block
-msgid "ms light %"
-msgstr "m:s licht %"
+msgid "ms light"
+msgstr "m:s licht"
 
 #. micro:STEAMakers library block
-msgid "ms sound %"
-msgstr "m:s geluid %"
+msgid "ms sound"
+msgstr "m:s geluid"
 
 #. micro:STEAMakers library block
 msgid "ms temperature ºC"

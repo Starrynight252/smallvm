@@ -322,8 +322,8 @@ msgid "events JSON"
 msgstr "JSON de los eventos"
 
 #. Shield:bit library block
-msgid "s꞉b LEDs off"
-msgstr "s꞉b apaga los LED"
+msgid "sb LEDs off"
+msgstr "sb apaga los LED"
 
 #. Shield:bit library motor movement type selection
 msgid "degrees"
@@ -1846,8 +1846,8 @@ msgid "Chinese Cymbal"
 msgstr "Plato chino"
 
 #. Shield:bit library block
-msgid "s꞉b stop _"
-msgstr "s꞉b para _"
+msgid "sb stop _"
+msgstr "sb para _"
 
 #. Microphone library block
 msgid "set clap threshold _"
@@ -1938,7 +1938,7 @@ msgid "Vibraslap"
 msgstr "Vibraslap"
 
 #. Musical note name
-msgid "d#"
+msgid "nt;d#"
 msgstr "re#"
 
 #. Block size option
@@ -2026,8 +2026,8 @@ msgid "humm;Sound"
 msgstr "Sonido"
 
 #. Shield:bit library block
-msgid "s꞉b LEDs to _"
-msgstr "s꞉b LEDs a _"
+msgid "sb set all LEDs to _"
+msgstr "sb fija todos los LEDs a _"
 
 #. Image name for the "display image" block
 msgid "meh"
@@ -2568,8 +2568,8 @@ msgid "ms;start"
 msgstr "arranca"
 
 #. micro:STEAMakers library block
-msgid "ms sound %"
-msgstr "ms sonido %"
+msgid "ms sound"
+msgstr "ms sonido"
 
 #. InnovaDidàctic TdR shield library block
 msgid "TdR set red LED _"
@@ -3068,8 +3068,8 @@ msgid "MiKe digital D8 to _"
 msgstr "Mike fija actuador D8 a _"
 
 #. Shield:bit library block
-msgid "s꞉b set pin S- _ (1-8) to _ %"
-msgstr "s꞉b pon el pin S- _ (1-8) a _ %"
+msgid "sb set pin S- _ (1-8) to _ %"
+msgstr "sb pon el pin S- _ (1-8) a _ %"
 
 #. micro:STEAMakers library block
 #. The #BR# tag must be kept intact. It translates to a new line
@@ -3485,8 +3485,8 @@ msgid "register event _ type _"
 msgstr "registra el evento _ de tipo _"
 
 #. micro:STEAMakers library block
-msgid "ms light %"
-msgstr "ms luz %"
+msgid "ms light"
+msgstr "ms luz"
 
 #. DrawBot Library block
 msgid "plotter move _ steps"
@@ -4670,28 +4670,28 @@ msgid "MiKe rotate lights by _"
 msgstr "MiKe gira luces en _"
 
 #. Shield:bit library block
-msgid "s꞉b LED _ (1-4) to _"
-msgstr "s꞉b LED _ (1-4) a _"
+msgid "sb set LED _ (1-4) to _"
+msgstr "sb pon el LED _ (1-4) a _"
 
 #. Shield:bit library block
-msgid "s꞉b audio output to shield _"
-msgstr "s꞉b salida de audio por la shield:bit _"
+msgid "sb send audio to shield _"
+msgstr "sb envia el audio por la shieldBit _"
 
 #. Shield:bit library block
-msgid "s꞉b turn 180 servo S- _ (1-8) to angle _"
-msgstr "s꞉b gira el servo 180 S- _ (1-8) al ángulo _"
+msgid "sb turn 180 servo S- _ (1-8) to angle _"
+msgstr "sb gira el servo 180 S- _ (1-8) al ángulo _"
 
 #. Shield:bit library block
-msgid "s꞉b turn 360 servo S- _ (1-8) _ at _ %"
-msgstr "s꞉b gira el servo 360 S- _ (1-8) _ a _ %"
+msgid "sb turn 360 servo S- _ (1-8) _ at _ %"
+msgstr "sb gira el servo 360 S- _ (1-8) _ a _ %"
 
 #. Shield:bit library block
-msgid "s꞉b turn DC M- _ (1-4) motor _ at _ %"
-msgstr "s꞉b gira el motor CC M- _ (1-4) _ a _ %"
+msgid "sb turn DC M- _ (1-4) motor _ at _ %"
+msgstr "sb gira el motor CC M- _ (1-4) _ a _ %"
 
 #. Shield:bit library block
-msgid "s꞉b turn Stepper- _ (1-2) motor _ for _ _"
-msgstr "s꞉b gira el motor PaP- _ (1-2) _ per _ _"
+msgid "sb turn Stepper- _ (1-2) motor _ for _ _"
+msgstr "sb gira el motor PaP- _ (1-2) _ per _ _"
 
 #. Shield:bit library motor type
 msgid "sb;DC/Stepper_motors"

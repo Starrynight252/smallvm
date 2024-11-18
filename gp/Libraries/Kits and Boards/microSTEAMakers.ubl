@@ -4,7 +4,7 @@ version 1 6
 depends Tone Color 
 tags keyestudio steam 
 choices ms_energyMeter 'ms;start' 'ms;stop' 'ms;reset' 
-choices ms_inclination down x y 
+choices ms_inclination 'ms;down' 'x' 'y' 
 choices ms_accel x y z 
 choices ms_energy mA mV mW 
 choices ms_led_imageMenu heart 'small heart' yes no happy sad confused angry asleep surprised silly fabulous meh 't-shirt' 'roller skate' duck house tortoise butterfly 'stick figure' ghost sword giraffe skull umbrella snake rabbit cow 'quarter note' 'eight note' pitchfork target triangle 'left triangle' 'chess board' diamond 'small diamond' square 'small square' scissors 
@@ -26,7 +26,7 @@ variables _ms_neoPixels _ms_neoPixels_scale _ms_scrolling_stopped _ms_energyRead
   space
   spec 'r' 'ms_accel' 'ms accel _ m/s2' 'menu.ms_accel' 'x'
   spec 'r' 'ms_gyro' 'ms gyro _ deg/s' 'menu.ms_accel' 'x'
-  spec 'r' 'ms_inclination' 'ms inclination towards _ º' 'menu.ms_inclination' 'down'
+  spec 'r' 'ms_inclination' 'ms inclination towards _ º' 'menu.ms_inclination' 'ms;down'
   space
   spec 'r' 'ms_energy' 'ms energy _' 'menu.ms_energy' 'mW'
   spec ' ' 'ms_energyMeter' 'ms _ energy meter' 'menu.ms_energyMeter' 'ms;start'

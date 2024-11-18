@@ -540,7 +540,7 @@ method addBlocksForCategory MicroBlocksScripter cat {
 method addAdvancedBlocksForCategory MicroBlocksScripter cat {
 	advancedSpecs = (specsFor (authoringSpecs) (join cat '-Advanced'))
 	if (and (devMode) (not (isEmpty advancedSpecs))) {
-		addSectionLabel this (localized 'Advanced:')
+		addSectionLabel this (localized 'cat;Advanced:')
 		addBlocksForSpecs this advancedSpecs
 	}
 }
@@ -566,7 +566,7 @@ method addBlocksForLibrary MicroBlocksScripter libName {
 			// add some vertical space
 			nextY += (20 * (global 'scale'))
 		} (and ('advanced' == op) (devMode)) {
-			addSectionLabel this (localized 'Advanced:')
+			addSectionLabel this (localized 'cat;Advanced:')
 		} (and ('advanced' == op) (not (devMode))) {
 			// stop here if next blocks are advanced and we're not in devMode
 			return
