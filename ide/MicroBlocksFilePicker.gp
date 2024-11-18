@@ -711,7 +711,7 @@ zFGXqw1RFHu8g5RgTUUUA8/sveoB/ljik3XbSLJMYlLfOZI7EApH2oFIIwIKgKL23ePuwcavrYoIXAI4
 WdH5+92dyonfK73JagkYAWScrDjN4oVzsFjibm15B/B3TS3PvfAWDocT4HMBSAIqgOEpKUmsLljBjOxH
 sFr7/p6+HhoamigqLuOT9Zupq7ODp+dP9D4fC5yhDxxjDdN1Bhhzs0hmoADPv78a+oCTwb4agGJgZUdb
 AfgXKCaphJhXjRgAAAAASUVORK5CYII='
-	if (2 == (global 'scale')) { data = dataRetina }
+	if ((global 'scale') > 1) { data = dataRetina }
 	return (readFrom (new 'PNGReader') (base64Decode data))
 }
 
@@ -786,7 +786,7 @@ irnoI+/+gQ9f5MCHL8oOxl8UCgUbNz2CWjPemz2BIckAjdaAUqkMeR5QrdaSND2dtXn3kpp+Y1A0JRmQ
 m7eN3LxtQQlgshEABzApWd3JYkRbHQLQAFBecWrSAgo1FmuV52u9EkgBcqzl1WzZvIGIiPDJiywE2C62
 8PNfPMXlnl6A1zwvI1YAM+PjY3ns0ftZuyab2JjoSQ002HR1X6KgsIQX/v46nZ3d4O753hUd84DTTIGl
 rCHaTgNzR5ukA3bgfkG6ewoEGeytCzgCPMqIV4P/B7Gu5sILeBMvAAAAAElFTkSuQmCC'
-	if (2 == (global 'scale')) { data = dataRetina }
+	if ((global 'scale') > 1) { data = dataRetina }
 	return (readFrom (new 'PNGReader') (base64Decode data))
 }
 
@@ -819,7 +819,7 @@ kBaQRgUgLSCNCkBaQBoVgLSANCoAaQFpVADSAtKoAKQFpFEBSAtIowKQFpBGBSAtII0KQFpAGhWAtIA0
 KgBpAWlUANIC0oQAVgCrLXBfd/c2bnO1hgCfAPoHhsSE/E3fy0Fn+VELpAL5/QNDVB7Zj16v+33nCuDL
 2DjHT5xmenoG4KoGMAIDQEp8vJGGumr2Fe3GYIgWFfU2FssUnV3dXGq+xsSEGRxn/jbn/mxgmAB4jdVP
 YxjI+jGkCKAOx7+/LAEg6e1hAbqA2sW5AvANHNVzCuI7b40AAAAASUVORK5CYII='
-	if (2 == (global 'scale')) { data = dataRetina }
+	if ((global 'scale') > 1) { data = dataRetina }
 	return (readFrom (new 'PNGReader') (base64Decode data))
 }
 
@@ -902,7 +902,7 @@ IAfsgFyqzcfhEASBlLXZJKftoONGf7Z3QoykFSHDMaitdhlQD1BqqgwaAQBBkKHRxqLRxga18QDGknL3
 x7oQIA5YU1JaQdb2TURGRgSVTLDRcK2Jn/3ieTo6LQBvu19GNAHTdDotzzz9OBnpKWgnaL5TooFG+42b
 nDqt57X979PWdgNcPX+gnn8ecJG7oJQ1SMdFYO5wkZTAHlwvSN+4C0gG+mgHzgBPM+jV4P8CMZNSfiX/
 tJIAAAAASUVORK5CYII='
-	if (2 == (global 'scale')) { data = dataRetina }
+	if ((global 'scale') > 1) { data = dataRetina }
 	return (readFrom (new 'PNGReader') (base64Decode data))
 }
 
@@ -980,7 +980,7 @@ sIhYZPKxWaG3a63BoTP5w3N7cFA6WVw3HAvY3ez9J0C3Am6NzzCG+NkAY01grCEFugCjW/r/gH66dknp
 uThQWnZhzAjZG8Ul5b2PNTLEuz5zS0rPs3b1UlxcnMeOmR1w9doPPPjQVlrEWyrvSgAPoAyY6OXlweOP
 biRhYTwe7kPbybnV0dR8neycAnbs+jeNjc0gtnzj5YQIxEtPY36U1U6hAvFmqgmcgM2IN0ibbwGSox2a
 EC9ZP0q/q8H/Awj8JV/kA4nHAAAAAElFTkSuQmCC'
-	if (2 == (global 'scale')) { data = dataRetina }
+	if ((global 'scale') > 1) { data = dataRetina }
 	return (readFrom (new 'PNGReader') (base64Decode data))
 }
 
@@ -1047,7 +1047,7 @@ SSFIqUKCd+YINmz03O3g5o3LXL70reOLmLtgNYuWviKqLKeWxS/VVVB6eLdjKXu0CVVHsXjZj0mdKmyL
 H8AMYLaM3ePu7mZYXc0+QDNAdU39qAXkbc6eqxtKNkmBWCCzuqae51YtRakce4sd7uSmvo31P/0FXV3d
 AH+VAGFADRCj0YTx+uYCFuVkoFKNzpq/pzCZOik/Vsm77xXS3m4Ee8ufPvQ8FbjIGDjG6qXrIpDyfZHk
 wGbs//4yjYEg3X2ZgGPApvt1BeBfy0VRnxa1jVQAAAAASUVORK5CYII='
-	if (2 == (global 'scale')) { data = dataRetina }
+	if ((global 'scale') > 1) { data = dataRetina }
 	return (readFrom (new 'PNGReader') (base64Decode data))
 }
 
@@ -1110,6 +1110,6 @@ WHLnerYwHxQOh4PXXt/Cth37wPWk2/eBNjGx/H2QazPwA4DEhCnkWbLQ66Rfno+HgcFBqj6u5XKzZ+G4
 CVg3yimyogZexfWgplLPO471ugX8DD8nFqke/YsFVgCpgEGimL4yAJwH9gLtY/QNECBAgAfK/wB5A4H5
 TI/+pAAAAABJRU5ErkJggg=
 ='
-	if (2 == (global 'scale')) { data = dataRetina }
+	if ((global 'scale') > 1) { data = dataRetina }
 	return (readFrom (new 'PNGReader') (base64Decode data))
 }
