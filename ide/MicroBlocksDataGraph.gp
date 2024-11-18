@@ -47,7 +47,8 @@ method addZoomButtons MicroBlocksDataGraph {
 
 method fixZoomButtonsLayout MicroBlocksDataGraph {
 	scale = (global 'scale')
-	right = ((right morph) - (13 * scale))
+	right = ((right morph) - (15 * scale))
+	if (isMobile) { right += -25 }
 	bottom = ((bottom morph) - (12 * scale))
 	for button zoomButtons {
 		right = (right - ((width (morph button)) + (10 * scale)))
@@ -265,6 +266,8 @@ method contextMenu MicroBlocksDataGraph {
 	menu = (menu 'Graph' this)
 	addItem menu 'clear graph' 'clearGraph'
 	addLine menu
+	addItem menu 'increase range' 'decreaseGraphScale'
+	addItem menu 'decrease range' 'increaseGraphScale'
 	if zeroAtBottom {
 		addItem menu 'zero in middle' 'toggleZeroAtBottom'
 	} else {

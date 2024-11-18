@@ -228,6 +228,7 @@ to rotationHandle target {
 method drawResizeCostumes Grip {
 	scale = (global 'scale')
 	size = (scale * 15)
+	if (isMobile) { size = (30 * scale) }
 	nbm = (newBitmap size size)
 	hbm = (newBitmap size size)
 	drawResizer (newShapeMaker nbm) 0 0 size size orientation false
