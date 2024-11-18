@@ -294,10 +294,10 @@ function initGPEventHandlers() {
 		evt.preventDefault();
 	}
 	canvas.ontouchstart = function(evt) {
-		var touch = evt.touches[evt.touches.length - 1];
+		var touch = evt.touches[0];
 		if (touch) {
 			// var button = (evt.touches.length == 2) ? 3 : 0; // did not work
-			// Attempt to use two-finger touch for right button fail; always use left button.
+			// Attempt to use two-finger touch for right button failed; always use left button.
 			var button = 0;
 			var p = localPoint(touch.clientX, touch.clientY, 10);
 			GP.events.push([TOUCH_DOWN, p[0], p[1], button]);
@@ -305,7 +305,7 @@ function initGPEventHandlers() {
 		evt.preventDefault();
 	}
 	canvas.ontouchmove = function(evt) {
-		var touch = evt.touches[evt.touches.length - 1];
+		var touch = evt.touches[0];
 		if (touch) {
 			var p = localPoint(touch.clientX, touch.clientY, 10);
 			GP.events.push([TOUCH_MOVE, p[0], p[1], 0]);
@@ -313,7 +313,7 @@ function initGPEventHandlers() {
 		evt.preventDefault();
 	}
 	canvas.ontouchend = function(evt) {
-		var touch = evt.changedTouches[evt.changedTouches.length - 1];
+		var touch = evt.changedTouches[0];
 		if (touch) {
 			var p = localPoint(touch.clientX, touch.clientY, 10);
 			GP.events.push([TOUCH_UP, p[0], p[1], 0]);
@@ -321,7 +321,7 @@ function initGPEventHandlers() {
 		evt.preventDefault();
 	}
 	canvas.ontouchcancel = function(evt) {
-		canvas.ontouchend(evt);
+		GP.events.push([TOUCH_UP, 200, 200, 0]); // push a dummy touch_up event
 	}
 	window.onfocus = function(evt) {
 	  GP.events.push([WINDOW_SHOWN]);
