@@ -1103,7 +1103,7 @@ method updateScale Page {
 		setGlobal 'scale' 1 // non-retina display
 	}
 	// Increase scale on mobile devices to make the UI controls easier to use with finger tip.
-	if (isMobile) { setGlobal 'scale' ((global 'scale') + 1) }
+//	if (isMobile) { setGlobal 'scale' ((global 'scale') + 1) }
 }
 
 method processWindowEvent Page evt {
