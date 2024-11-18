@@ -432,7 +432,7 @@ method fixResizerLayout MicroBlocksScripter {
 
 method fixScrollbars MicroBlocksScripter {
 	fixSliderLayout blocksFrame
-	fixSliderLayout scriptsFrame
+	updateSliders scriptsFrame // shows sliders but also adjust contents extent
 	updateTrashcanPosition this
 }
 
