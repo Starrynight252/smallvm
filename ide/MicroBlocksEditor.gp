@@ -673,27 +673,25 @@ method clicked MicroBlocksEditor aHand {
 // browser support
 
 method checkForBrowserResize MicroBlocksEditor {
-	browserSize = (browserSize)
-	w = (first browserSize)
-	h = (last browserSize)
 	winSize = (windowSize)
-
-	dx = (abs ((at winSize 1) - w))
-	dy = (abs ((at winSize 2) - h))
+	browserSize = (browserSize)
+	dx = (abs ((at winSize 1) - (at browserSize 1)))
+	dy = (abs ((at winSize 2) - (at browserSize 2)))
 	if (and (dx <= 1) (dy <= 1)) {
 		// At the smallest browser zoom levels, sizes can differ by one pixel
 		return // no change
 	}
 
 	openWindow w h true
-	page = (global 'page')
 	oldScale = (global 'scale')
+	page = (global 'page')
 	updateScale page
-	scale = (global 'scale')
 	pageM = (morph page)
-	setExtent pageM (w * scale) (h * scale)
-	for each (parts pageM) { pageResized (handler each) w h this }
-	if (scale != oldScale) {
+	winSize = (windowSize)
+	setExtent pageM (at winSize 3) (at winSize 4)
+
+	for each (parts pageM) { pageResized (handler each) }
+	if ((global 'scale') != oldScale) {
 		for m (allMorphs pageM) { scaleChanged (handler m) }
 	}
 	fixLayout this
