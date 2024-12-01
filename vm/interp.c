@@ -601,6 +601,25 @@ static void runTask(Task *task) {
 		&&callCustomReporter_op,
 		&&callCommandPrimitive_op,
 		&&callReporterPrimitive_op,
+		#if defined(ICBRICKS)	
+		&&OpenIICPort_op,
+		&&GetEncoderData_op,
+		&&GetGestures_op,
+		&&GetDistance_op,
+		&&GyroscopeAxis_op,
+		&&GyroscopeOrientation_op,
+		&&SetControllerLED_op,
+		&&GetKeyPressStatus_op,
+		&&ICBricksPlayingNotes_op,
+		&&SetNotesVolume_op,
+		//&&CheckLockAndStop,
+		&&I2cLed_op,
+		&&readServoInfo,
+		&&WaitForServoCompletion_op,
+		&&WaitForDualServoCompletion_op,
+		&&ServoMotorControl_op,
+		&&GetControllerVersion_op,
+		#endif
 	};
 
 	// Restore task state
@@ -609,6 +628,78 @@ static void runTask(Task *task) {
 	fp = task->stack + task->fp;
 
 	DISPATCH();
+
+	#if defined(ICBRICKS)
+	OpenIICPort_op:
+	 	*(sp - arg) = primsOpenIICPort(arg, sp - arg);
+	 	POP_ARGS_REPORTER();
+		DISPATCH();
+	GetEncoderData_op:
+		*(sp - arg) = primsGetEncoderData(arg, sp - arg);
+	 	POP_ARGS_REPORTER();
+		DISPATCH();
+	GetGestures_op:
+		*(sp - arg) = primsGetGestures(arg, sp - arg);
+		POP_ARGS_REPORTER();
+		DISPATCH();
+	GetDistance_op:
+		*(sp - arg) = primsVL53L0_Continue(arg, sp - arg);
+		POP_ARGS_REPORTER();
+		DISPATCH();
+	GyroscopeAxis_op:
+		*(sp - arg) = primsGyroscopeAxis(arg, sp - arg);
+		POP_ARGS_REPORTER();
+		DISPATCH();
+	GyroscopeOrientation_op:
+		*(sp - arg) = primsGyroscopeOrientation(arg, sp - arg);
+		POP_ARGS_REPORTER();
+		DISPATCH();
+	SetControllerLED_op:
+		*(sp - arg) = primsSetControllerLED(arg, sp - arg);
+		POP_ARGS_REPORTER();
+		DISPATCH();
+	GetKeyPressStatus_op:
+		*(sp - arg) = primsGetKeyPressStatus(arg, sp - arg);
+		POP_ARGS_REPORTER();
+		DISPATCH();
+	ICBricksPlayingNotes_op:
+		*(sp - arg) = primsPlayingNotes(arg, sp - arg);
+		POP_ARGS_REPORTER();
+		DISPATCH();
+	SetNotesVolume_op:
+		*(sp - arg) = primsNotesVolume(arg, sp - arg);
+		POP_ARGS_REPORTER();
+		DISPATCH();
+	ServoMotorControl_op:
+		*(sp - arg) = primsServoMotorControl(arg, sp - arg);
+		POP_ARGS_REPORTER();
+		DISPATCH();
+	I2cLed_op:
+		*(sp - arg) = primsI2cLed(arg, sp - arg);
+		POP_ARGS_REPORTER();
+		DISPATCH();
+	WaitForServoCompletion_op:
+		*(sp - arg) =primsWaitForServoCompletion(arg, sp - arg);
+		POP_ARGS_REPORTER();
+		DISPATCH();
+	WaitForDualServoCompletion_op:
+		*(sp - arg) =primsWaitForDualServoCompletion(arg, sp - arg);
+		POP_ARGS_REPORTER();
+		DISPATCH();
+	readServoInfo:
+		*(sp - arg) = primsreadServoInfo(arg, sp - arg);
+		POP_ARGS_REPORTER();
+		DISPATCH();
+	GetControllerVersion_op:
+		*(sp - arg) = primsGetControllerVersion(arg, sp - arg);
+		POP_ARGS_REPORTER();
+		DISPATCH();
+	#elif defined(ICMega)
+		GetUltrasonicDistance:
+		*(sp - arg) = primsGetUltrasonicDistance(arg, sp - arg);
+	 	POP_ARGS_REPORTER();
+		DISPATCH();
+	#endif
 
 	error:
 		// sleepSignal is not a actual error; it just suspends the current task
@@ -875,6 +966,10 @@ static void runTask(Task *task) {
 		}
 		DISPATCH();
 	initLocals_op:
+		#if defined(ICBRICKS)
+		//processMessage();
+			checkGpScriptExecutionLock();  //检查Gp脚本执行锁
+		#endif
 		// Reserve stack space for 'arg' locals initialized to zero
 		STACK_CHECK(arg);
 		while (arg-- > 0) *sp++ = zeroObj;

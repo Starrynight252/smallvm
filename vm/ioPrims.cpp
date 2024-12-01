@@ -1079,7 +1079,22 @@ void hardwareInit() {
 	static const char reservedPin[TOTAL_PINS] = {
 		0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 		0, 1, 1, 1, 1, 1, 1, 1, 0, 0};
+#elif defined(ICBRICKS)   //注意 bricks 基于esp32 所以一定要放在esp32之前！
+	#include "ICBricks\ICBricks.h"
+	#define BOARD_TYPE ICBRICKS_BOARD_TYPE
+	
+	#define DIGITAL_PINS 40
+	#define ANALOG_PINS 16
+	#define TOTAL_PINS 40
+	static const int analogPin[] = {};
+	#ifdef LED_BUILTIN
+		#define PIN_LED LED_BUILTIN
+	#else
+		#define PIN_LED 2
+	#endif
 
+	#define PIN_BUTTON_A ICBRICKS_KEY_2
+	#define PIN_BUTTON_B ICBRICKS_KEY_0
 #elif defined(CONFIG_IDF_TARGET_ESP32S3)
 	#define BOARD_TYPE "ESP32-S3"
 	#define DIGITAL_PINS 49
@@ -1773,6 +1788,22 @@ void primSetUserLED(OBJ *args) {
 		defined(ARDUINO_M5STACK_Core2) || defined(TTGO_DISPLAY) || defined(M5_CARDPUTER) || \
 		defined(FUTURE_LITE) || defined(COCUBE) || defined(XESGAME)
 			tftSetHugePixel(3, 1, (trueObj == args[0]));
+	#elif defined(ICBRICKS)
+		#include "ICBricks\ICBricks.h"
+		
+		if (trueObj == args[0]) 
+		{
+			SetPowerControlLED(true);
+		}
+		else if(falseObj == args[0]) 
+		{
+			SetPowerControlLED(false);
+			for (int i = 0; i < 4; i++)
+			{
+				SetLEDColor(i,0,0,0);
+			}
+			RefreshLEDColor(); // 刷新LED
+		}
 	#else
 		if (PIN_LED < 0) return; // board does not have a user LED
 		if (PIN_LED < TOTAL_PINS) {

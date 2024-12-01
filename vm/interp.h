@@ -384,6 +384,88 @@ void BLE_UART_Send(uint8 *data, int byteCount);
 
 void getMACAddress(uint8 *sixBytes);
 
+
+
+/*********************提供给外部通用接口***********************/
+#if defined(ICBRICKS) || defined(ICMega)
+// 函数定义在：vm\sensorPrims.cpp 
+/* provided for external use, to enable IIC
+* 提供给外部使用，开启 iic
+*/ 
+void enableI2CCommunication();
+void ForceOne_EnableI2CCommunication();
+
+extern int BLE_connected_to_IDE;
+extern int USB_connected_to_IDE;
+
+#endif
+
+#if defined(ICBRICKS)
+// /*固件控制退出任务/gp脚本的接口·
+// *函数定义在：vm\interp.c
+// */
+// void StopRunTask_ICBricks();
+
+//IC Bricks
+/*恢复主控器
+* 作用：
+* 1.扫描iic，并且关闭所有端口上输出设备
+* 2.恢复主控器电量对led的控制权(除了中间led)
+*/
+void RestoreMasterController();
+
+/*检查Gp脚本执行锁
+*调用该函数会直到，函数内部条件触发;
+* 执行 do{..}while(true) 直到循环被触发break;
+*
+*/
+void checkGpScriptExecutionLock();
+/*退出脚本程序
+ * 返回：
+ * 0 不进行任何操作。
+ * 1 退出程序
+ */
+uint8_t terminateGpScriptExecution();
+
+// 打开IIC端口，作用让总线开关切换芯片把IIC总线切换到指定端口
+OBJ primsOpenIICPort(int argCount, OBJ *args);
+OBJ primsGetEncoderData(int argCount, OBJ *args);
+OBJ primsGetGestures(int argCount, OBJ *args);
+OBJ primsVL53L0_Continue(int argCount, OBJ *args);
+// 获取获取陀螺仪轴
+OBJ primsGyroscopeAxis(int argCount, OBJ *args);
+// 获取陀螺仪方向
+OBJ primsGyroscopeOrientation(int argCount, OBJ *args);
+ // 设置主控器led
+OBJ primsSetControllerLED(int argCount, OBJ *args);
+ ///获取按键状态 并且播放按键声音
+OBJ primsGetKeyPressStatus(int argCount, OBJ *args);
+// 播放音符
+OBJ primsPlayingNotes(int argCount, OBJ *args);
+//设置音量大小
+OBJ primsNotesVolume(int argCount, OBJ *args);
+
+//iicled
+OBJ primsI2cLed(int argCount, OBJ *args);
+// 伺服电机-返回角度/速度....
+OBJ primsreadServoInfo(int argCount, OBJ *args);
+//伺服电机控制
+OBJ primsServoMotorControl(int argCount, OBJ *args);
+
+// 伺服电机等待执行完成
+OBJ primsWaitForServoCompletion(int argCount, OBJ *args);
+// 直到 双伺服电机执行完毕
+OBJ primsWaitForDualServoCompletion(int argCount, OBJ *args);
+
+//获取主控器版本
+OBJ primsGetControllerVersion(int argCount, OBJ *args);
+
+#elif  defined(ICMega)
+// 获取超声波距离
+OBJ primsGetUltrasonicDistance(int argCount, OBJ *args);
+
+#endif
+
 // Primitive Sets
 
 // These primitive set indices are compiled into primitive calls, so their order cannot change.
@@ -405,6 +487,9 @@ typedef enum {
 	CameraPrims,
 	OneWirePrims,
 	EncoderPrims,
+	#if defined(ICBRICKS)
+	ICBricksPrims,
+	#endif
 	PrimitiveSetCount
 } PrimitiveSetIndex;
 
@@ -424,6 +509,13 @@ void addHIDPrims();
 void addCameraPrims();
 void addOneWirePrims();
 void addEncoderPrims();
+
+#if defined(ICBRICKS)
+void addICBricksPrims();
+
+#elif defined(ICMega)
+void addICMegaPrims();
+#endif
 
 // Named Primitive Support
 

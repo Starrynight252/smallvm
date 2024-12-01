@@ -129,6 +129,25 @@ static void startWire() {
 	wireStarted = true;
 }
 
+#if defined(ICBRICKS) || defined(ICMega)
+/* provided for external use, to enable IIC
+ * 提供给外部使用，开启 iic
+ */
+void enableI2CCommunication()
+{
+	if (!wireStarted)
+		startWire();
+}
+
+/* provided for external use, to enable IIC
+ * 提供给外部使用，开启 iic
+ * 强行打开
+ */
+void ForceOne_EnableI2CCommunication()
+{
+	startWire();
+}
+#endif
 int readI2CReg(int deviceID, int reg) {
 	if (!wireStarted) startWire();
 	if (!wireStarted) return -100; // could not start I2C; missing pullup resistors?

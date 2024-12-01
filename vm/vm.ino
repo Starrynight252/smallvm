@@ -8,9 +8,19 @@
 #include "interp.h"
 #include "persist.h"
 
-void setup() {
-#ifdef ARDUINO_NRF52_PRIMO
-	sd_softdevice_disable();
+#if defined(ICBRICKS)
+#include "ICBricks\ICBricks.h"
+#endif
+
+void setup()
+{
+#if defined(ICBRICKS)
+  	// 将esp32设置为其支持的最大频率240Mhz
+  	//setCpuFrequencyMhz(240);
+	ICBricks_Initializ();
+
+	// 等到开机
+	ICBricks_WaitForPowerState(true);
 #endif
 	memInit();
 	primsInit();

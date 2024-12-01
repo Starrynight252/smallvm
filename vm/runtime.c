@@ -179,6 +179,11 @@ void primsInit() {
 	addHIDPrims();
 	addOneWirePrims();
 	addCameraPrims();
+	#if defined(ICBRICKS)
+		addICBricksPrims();			
+	#elif defined(ICMega)
+		addICMegaPrims();
+	#endif
 	addEncoderPrims();
 }
 
@@ -497,8 +502,15 @@ static void softReset(int clearMemoryFlag) {
 	stopAllTasks();
 	resumeCodeFileUpdates();
 
-	OBJ off = falseObj;
-	if (!useTFT) primSetUserLED(&off);
+	#if defined(ICBRICKS)
+		// 恢复主控器
+		RestoreMasterController();
+		OBJ on = trueObj;
+		if (!useTFT) primSetUserLED(&on);
+	#else
+		OBJ off = falseObj;
+		if (!useTFT) primSetUserLED(&off);
+	#endif
 	#if defined(OLED_128_64)
 		if (!useTFT) tftInit();
 	#endif
