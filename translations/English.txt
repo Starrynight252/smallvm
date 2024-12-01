@@ -4009,3 +4009,171 @@ Report a byte array containing the UTF-8 bytes of the given string.
 
 Report the number of words of memory available. Stop button frees up memory.
 Report the number of words of memory available. Stop button frees up memory.
+
+
+####
+# ICBricks Select parameter
+
+正转
+Clockwise Rotation
+
+反转
+Counterclockwise Rotation
+
+停止
+Stop
+
+顺时针转动
+Clockwise Rotation
+
+逆时针转动
+Counterclockwise Rotation
+
+按下
+Press
+
+前进
+Forward
+
+后退
+Backward
+
+左转
+Left
+
+右转
+Right
+
+圈
+Circle
+
+度
+Degrees
+
+秒
+Seconds
+
+
+###
+# ICBricks library
+
+ICBricks 主控器
+ICBricks Controller
+
+_映射端口 _
+_MapPort _
+
+_打开IIC端口 _
+_Open the IIC Port _
+
+主控器固件版本
+Controller Firmware Version
+
+主控器 _ 按键被按压
+Controller _ Button pressed
+
+_ 不播放声音 
+_ Does not play sound.
+
+设置主控器灯为 _
+Set the controller light to _
+
+恢复主控器灯-开启电量控制
+Reset Main Controller Light - Enable Power Control
+
+
+
+
+####
+# ICBricks Actuator
+
+ICBricks 执行器
+ICBricks Actuator
+
+端⼝ _ 触摸LED设置为 _
+Port _ touch LED set to _
+
+_伺服电机-根据协议来控制 _ 端口 _ _ _
+_Servo Motor - Control according to protocol _ Port _ _ _
+
+_伺服电机兼容协议来控制 _ 端口 _ _ _
+_Servo Motor Compatible protocol to control _ Port _ _ _
+
+端⼝ _ 电机以 _ (0~255)速度 _ 运⾏
+Port _ motor runs at _ (0~255) speed _
+
+端⼝ _ 电机停止
+Port _ motor stop
+
+端⼝ _ 电机以 _ (0~255)速度 _ 运⾏ _ (0~360) _ 
+Port _ motor runs at _ (0~255) speed _ _ (0~360) _ 
+
+
+端⼝ _ 电机设置当前位置为0点
+Port _ motor sets current position to zero
+
+端⼝ _ 电机以 _ (0~255)速度运⾏⾄ _ (0~360)度 
+Port _ motor runs at _ (0~255) speed to _ (0~360) degrees
+
+将双电机设置为 _ 和 _ 
+Set dual motors to _ and _
+
+双电机停止
+Dual motors stop
+
+双电机以 _ (0~255)速度 _
+Dual motors run at _ (0~255) speed _
+
+双电机以 _ (0~255)速度 _ _ (0~360) _
+Dual motors run at _ (0~255) speed _ _ (0~360)_
+
+_ 不等待执行完毕 
+_ Do not wait for completion.
+
+_端⼝ _ 伺服电机返回列表
+Port _ servo motor returns to list
+
+端⼝ _ 伺服电机返回角度
+Port _ servo motor returns angle
+
+端⼝ _ 伺服电机返回速度
+Port _ servo motor returns speed
+
+_直到端口 _ 伺服电机执行完毕
+_Until port _ servo motor completes execution
+
+_直到双伺服电机执行完毕
+_Until dual servo motors complete execution
+
+####
+# ICBricks Input sensor library
+
+ICBricks 传感器
+ICBricks Sensor
+
+读取端⼝ _ 距离(cm)
+Read port _ distance(cm)
+
+端⼝ _ 距离 _ _ (cm)
+Port _ distance _ _ (cm)
+
+端⼝ _ 声⾳
+Port _ sound
+
+端⼝ _ 声⾳ _ _ 
+Port _ sound _ _
+
+读取端⼝ _ _ 倾斜⾓度
+Read port _ _ tilt angle
+
+端⼝ _ 检测向 _ 倾斜
+Port _ detect tilt towards _
+
+端⼝ _ 检测向 _ ⼿势
+Port _ detect gesture direction _
+
+读取端⼝ _ 编码器
+Read _ port Encoder
+
+端⼝ _ 编码器 _ 
+Port _ Encoder _ 

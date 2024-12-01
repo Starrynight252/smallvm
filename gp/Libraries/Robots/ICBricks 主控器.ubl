@@ -1,0 +1,108 @@
+module 'ICBricks 主控器'
+author ICROBOT
+version 1 0 
+choices icbricksRotationMotor '正转' '反转' '停止' 
+choices icbricksLogicalOperators '>' '<' 
+choices icbricksEncoder '顺时针转动' '逆时针转动' '按下' 
+choices icbricksMainControlButton ' ↑ ' ' ↓ ' ' ← ' ' → ' 
+choices icbricksCoordinates ' X ' ' Y ' 
+choices icbricksPort ' 1 ' ' 2 ' ' 3 ' ' 4 ' ' 5 ' ' 6 ' ' 7 ' ' 8 ' 
+choices icbricksRotationDualMotor '前进' '后退' '左转' '右转' 
+choices icbricksRotationBasicNote C D E F G A B C2 
+choices icbricksRotationMotorComm '圈' '度' '秒' 
+description 'ICBricks 主控器库。
+  作用：
+  添加对 ICBricks 的主控器支持。
+  使用执行器、传感器，请手动分别添加：
+  Robots/ICBricks 执行器、ICBricks 传感器'
+
+  spec 'r' '_映射端口' '_映射端口 _' 'auto' 1
+  spec ' ' '_打开IIC端口' '_打开IIC端口 _' 'auto' 10
+  spec 'r' '主控器固件版本' '主控器固件版本'
+  space
+  spec 'r' '主控器按键被按压' '主控器 _ 按键被按压: _ 不播放声音 ' 'menu.icbricksMainControlButton bool' ' ↑ ' true
+  space
+  spec ' ' '设置主控器灯为' '设置主控器灯为 _' 'color'
+  spec ' ' '恢复主控器灯' '恢复主控器灯-开启电量控制'
+  space
+
+to '_打开IIC端口' port {
+  if ((boardType) == 'ICBricks2.0') {
+    port = ('_映射端口' port)
+    if (port < 8) {
+      callCustomCommand '[ICBricks:OpenIICPort]' ('[data:makeList]' port)
+    }
+  }
+}
+
+to '_映射端口' port {
+  if (not (isType port 'number')) {port = ('[data:convertType]' port 'number')}
+  if (port == 2) {
+    port = 0
+  } (port == 4) {
+    port = 1
+  } (port == 6) {
+    port = 2
+  } (port == 8) {
+    port = 3
+  } (port == 7) {
+    port = 4
+  } (port == 5) {
+    port = 5
+  } (port == 3) {
+    port = 6
+  } (port == 1) {
+    port = 7
+  }
+  return port
+}
+
+to '主控器key按键被按压' key {
+  local 'var' ('[data:makeList]' 0)
+  if (key == ' ↑ ') {
+    atPut 1 var 14
+  } (key == ' ↓ ') {
+    atPut 1 var 26
+  } (key == ' ← ') {
+    atPut 1 var 27
+  } (key == ' → ') {
+    atPut 1 var 18
+  }
+  return (callCustomReporter '[ICBricks:GetKeyPressStatus]' var)
+}
+
+to '主控器固件版本' {
+  return (callCustomReporter '[ICBricks:GetControllerVersion]' ('[data:makeList]' 0))
+}
+
+to '主控器按键被按压' key control {
+  local 'var' ('[data:makeList]' 0 1)
+  if (key == ' ← ') {
+    atPut 1 var 27
+  } (key == ' → ') {
+    atPut 1 var 18
+  } (key == ' ↑ ') {
+    atPut 1 var 14
+  } (key == ' ↓ ') {
+    atPut 1 var 26
+  }
+  if (control == (booleanConstant true)) {
+    atPut 2 var 0
+  }
+  return (callCustomReporter '[ICBricks:GetKeyPressStatus]' var)
+}
+
+to '恢复主控器灯' {
+  local 'datas' ('[data:makeList]' 0 0 0 0)
+  callCustomCommand '[ICBricks:setControllerLED]' datas
+}
+
+to '设置主控器灯为' foo {
+  local 'datas' ('[data:makeList]')
+  '[data:addLast]' 1 datas
+  '[data:addLast]' ((foo >> 16) & (hexToInt 'ff')) datas
+  '[data:addLast]' ((foo >> 8) & (hexToInt 'ff')) datas
+  '[data:addLast]' (foo & (hexToInt 'ff')) datas
+  callCustomCommand '[ICBricks:setControllerLED]' datas
+}
+

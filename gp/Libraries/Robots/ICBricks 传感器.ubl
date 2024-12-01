@@ -1,0 +1,151 @@
+module 'ICBricks 传感器' Input
+author ICROBOT
+version 1 0 
+depends 'Robots/ICBricks 主控器'
+description 'ICBricks 附属库。
+  作用：
+  添加对 ICBricks 的传感器支持。'
+variables '_编码器按键上一次状态' '_编码器上一次旋转' _ICBricksM1port _ICBricksM2port 
+
+  spec 'r' '返回距离传感器' '读取端⼝ _ 距离(cm)' 'menu.icbricksPort' 1
+  spec 'r' '距离传感器' '端⼝ _ 距离 _ _ (cm)' 'menu.icbricksPort menu.icbricksLogicalOperators num' '1' '>' 100
+  space
+  spec 'r' '返回声音传感器' '端⼝ _ 声⾳' 'menu.icbricksPort' '1'
+  spec 'r' '声音传感器' '端⼝ _ 声⾳ _ _ ' 'menu.icbricksPort menu.icbricksLogicalOperators num' '1' '>' 100
+  space
+  spec 'r' '倾斜返回方向轴' '读取端⼝ _ _ 倾斜⾓度' 'menu.icbricksPort menu.icbricksCoordinates' 1 ' X '
+  spec 'r' '检测向倾斜' '端⼝ _ 检测向 _ 倾斜' 'menu.icbricksPort menu.icbricksMainControlButton' 1 ' ↑ '
+  space
+  spec 'r' '检测⼿势' '端⼝ _ 检测向 _ ⼿势' 'menu.icbricksPort menu.icbricksMainControlButton' 1 ' ↑ '
+  space
+  spec 'r' '获取编码器的值' '读取端⼝ _ 编码器' 'menu.icbricksPort' 1
+  spec 'r' '获取编码器的方向' '端⼝ _ 编码器 _ ' 'menu.icbricksPort menu.icbricksEncoder' 1 '顺时针转动'
+
+to '倾斜返回方向轴' port comm {
+  waitMillis 1
+  local 'mods' 0
+  local 'var' ('[data:makeList]' ('_映射端口' port) (hexToInt '68') 0)
+  '_打开IIC端口' port
+  if (comm == ' X ') {
+    mods = 1
+  } (comm == ' Y ') {
+    mods = 2
+  }
+  atPut 'last' var mods
+  return (callCustomReporter '[ICBricks:GyroscopeAxis]' var)
+}
+
+to '声音传感器' port operators number {
+  waitMillis 1
+  local 'var' ('返回声音传感器' port)
+  if (operators == '>') {
+    if (var > number) {return (booleanConstant true)}
+  } (operators == '<') {
+    if (var < number) {return (booleanConstant true)}
+  } (operators == '==') {
+    if (var == number) {return (booleanConstant true)}
+  }
+  return (booleanConstant false)
+}
+
+to '检测⼿势' port comm {
+  waitMillis 1
+  local 'gestures' 0
+  local 'var' ('[data:makeList]' ('_映射端口' port) 57)
+  '_打开IIC端口' port
+  if else {
+    gestures = (callCustomReporter '[ICBricks:GetGestures]' var)
+    if (and (comm == ' ← ') (gestures == 1)) {
+      return (booleanConstant true)
+    } (and (comm == ' → ') (gestures == 2)) {
+      return (booleanConstant true)
+    } (and (comm == ' ↑ ') (gestures == 3)) {
+      return (booleanConstant true)
+    } (and (comm == ' ↓ ') (gestures == 4)) {
+      return (booleanConstant true)
+    }
+  }
+  return (booleanConstant false)
+}
+
+to '检测向倾斜' port comm {
+  waitMillis 1
+  local 'mods' 0
+  local 'var' ('[data:makeList]' ('_映射端口' port) (hexToInt '68') 0)
+  '_打开IIC端口' port
+  if (comm == ' ← ') {
+    mods = 1
+  } (comm == ' → ') {
+    mods = 2
+  } (comm == ' ↑ ') {
+    mods = 3
+  } (comm == ' ↓ ') {
+    mods = 4
+  } (comm == '--') {
+    mods = 0
+  }
+  atPut 'last' var mods
+  return (callCustomReporter '[ICBricks:GyroscopeOrientation]' var)
+}
+
+to '获取编码器的值' port mods {
+  waitMillis 1
+  local 'var' (booleanConstant false)
+  local 'rotation' 0
+  local 'datas' ('[data:makeList]' ('_映射端口' port) (hexToInt '36') 5)
+  '_打开IIC端口' port
+  return (callCustomReporter '[ICBricks:GetEncoderData]' datas)
+}
+
+to '获取编码器的方向' port mods {
+  local 'datas' ('[data:makeList]' ('_映射端口' port) (hexToInt '36') 5)
+  '_打开IIC端口' port
+  if (mods == '按下') {
+    atPut 'last' datas 1
+    return ('[data:convertType]' (callCustomReporter '[ICBricks:GetEncoderData]' datas) 'boolean')
+  } else {
+    atPut 'last' datas 0
+    if (and (mods == '逆时针转动') (1 == (callCustomReporter '[ICBricks:GetEncoderData]' datas))) {
+      return (booleanConstant true)
+    } (and (mods == '顺时针转动') ((callCustomReporter '[ICBricks:GetEncoderData]' datas) == 2)) {
+      return (booleanConstant true)
+    }
+  }
+  return (booleanConstant false)
+}
+
+to '距离传感器' port operators number {
+  waitMillis 1
+  local 'boolt' (booleanConstant false)
+  local 'var' ('返回距离传感器' port)
+  if (operators == '>') {
+    if (var > number) {boolt = (booleanConstant true)}
+  } (operators == '<') {
+    if (var < number) {boolt = (booleanConstant true)}
+  } (operators == '==') {
+    if (var == number) {boolt = (booleanConstant true)}
+  }
+  return boolt
+}
+
+to '返回声音传感器' port {
+  waitMillis 1
+  local 'arrd' ('[data:makeList]' 0 0 0)
+  local 'var' 68
+  '_打开IIC端口' port
+  if ('[sensors:i2cExists]' (hexToInt '48')) {
+    if (not (isType counte 'number')) {counte = ('[data:convertType]' counte 'number')}
+    '[sensors:i2cWrite]' (hexToInt '48') var
+    '[sensors:i2cRead]' (hexToInt '48') arrd
+    return (at 1 arrd)
+  }
+  return 0
+}
+
+to '返回距离传感器' port {
+  waitMillis 1
+  local 'var' ('[data:makeList]' ('_映射端口' port) 41)
+  '_打开IIC端口' port
+  return ((callCustomReporter '[ICBricks:GetDistance]' var) / 10)
+}
+

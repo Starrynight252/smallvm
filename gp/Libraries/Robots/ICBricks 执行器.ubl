@@ -1,0 +1,369 @@
+module 'ICBricks 执行器' Output
+author ICROBOT
+version 1 0 
+depends 'Robots/ICBricks 主控器'
+description  'ICBricks 附属库。
+  作用：
+  添加对 ICBricks 的执行器支持。'
+variables _ICBricksM1port _ICBricksM2port 
+
+  spec ' ' '设置LED' '端⼝ _ 触摸LED设置为 _' 'menu.icbricksPort color' 1
+  space
+  spec ' ' '_伺服电机-根据协议来控制' '_伺服电机-根据协议来控制 _ 端口 _ _ _' 'num num num num' 10 10 10 10
+  spec ' ' '伺服电机兼容协议来控制' '_伺服电机兼容协议来控制 _ 端口 _ _ _' 'num num num num' 10 10 10 10
+  spec ' ' '电机普通转' '端⼝ _ 电机以 _ (0~255)速度 _ 运⾏' 'menu.icbricksPort num menu.icbricksRotationMotor' 1 50 '正转'
+  spec ' ' '电机停止' '端⼝ _ 电机停止' 'menu.icbricksPort' 1
+  space
+  spec ' ' '电机伺服转' '端⼝ _ 电机以 _ (0~255)速度 _ 运⾏ _ (0~360) _ : _ 不等待执行完毕 ' 'menu.icbricksPort num menu.icbricksRotationMotor num menu.icbricksRotationMotorComm bool' 1 50 '正转' 0 '圈' true
+  space
+  spec ' ' '电机复位' '端⼝ _ 电机设置当前位置为0点' 'menu.icbricksPort' 1
+  spec ' ' '电机舵机转' '端⼝ _ 电机以 _ (0~255)速度运⾏⾄ _ (0~360)度 : _ 不等待执行完毕 ' 'menu.icbricksPort num num bool' 1 50 0 true
+  space
+  spec ' ' '双电机初始' '将双电机设置为 _ 和 _ ' 'menu.icbricksPort menu.icbricksPort' 1 2
+  spec ' ' '双电机停止' '双电机停止'
+  spec ' ' '双电机普通转' '双电机以 _ (0~255)速度 _' 'num menu.icbricksRotationDualMotor' 50 '前进'
+  spec ' ' '双电机伺服转' '双电机以 _ (0~255)速度 _ _ (0~360) _: _ 不等待执行完毕 ' 'num menu.icbricksRotationDualMotor num menu.icbricksRotationMotorComm bool' 50 '前进' 0 '圈' true
+  space
+  spec 'r' '_伺服电机返回列表' '_端⼝ _ 伺服电机返回列表' 'menu.icbricksPort' 1
+  spec 'r' '伺服电机返回角度' '端⼝ _ 伺服电机返回角度' 'menu.icbricksPort' 1
+  spec 'r' '伺服电机返回速度' '端⼝ _ 伺服电机返回速度' 'menu.icbricksPort' 1
+  space
+  spec ' ' '_直到端口伺服电机执行完毕' '_直到端口 _ 伺服电机执行完毕' 'menu.icbricksPort' 1
+  spec ' ' '_直到双伺服电机执行完毕' '_直到双伺服电机执行完毕'
+
+to '_伺服电机-根据协议来控制' port reg speed times {
+  local 'datas' ('[data:makeList]' ('_映射端口' port) reg speed times)
+  if ((boardType) == 'ICBricks2.0') {
+    callCustomCommand '[ICBricks:ServoMotorControl]' datas
+  } else {
+    '伺服电机兼容协议来控制' port reg speed times
+  }
+}
+
+to '_伺服电机返回列表' port {
+  local 'var' ('[data:makeList]' 0 0 0 0 0 0)
+  '_打开IIC端口' port
+  local 'datas' 0
+  if ('[sensors:i2cExists]' (hexToInt '50')) {
+    '[sensors:i2cRead]' (hexToInt '50') var
+    datas = (((at 2 var) << 8) | (at 3 var))
+    if (((datas >> 15) & 1) == 1) {
+      datas = (datas ^ (1 << 15))
+      datas = (0 - (32768 - datas))
+    }
+    atPut 2 var datas
+    atPut 3 var (((at 4 var) << 8) | (at 5 var))
+    atPut 4 var (at 'last' var)
+    '[data:delete]' 5 var
+  }
+  return var
+}
+
+to '_直到双伺服电机执行完毕' {
+  '_打开IIC端口' _ICBricksM1port
+  if ('[sensors:i2cExists]' (hexToInt '50')) {
+    forever {
+      '_打开IIC端口' _ICBricksM1port
+      var = ('_伺服电机返回列表' _ICBricksM1port)
+      if (and datas (and ((at 3 var) == 0) ((at 4 var) == 11))) {
+        return 0
+      }
+      if (or (not ('[sensors:i2cExists]' (hexToInt '50'))) ((at 4 var) == 10)) {
+        '双电机停止'
+        return 0
+      }
+      if ((at 4 var) != 11) {
+        datas = (booleanConstant true)
+      }
+      '_打开IIC端口' _ICBricksM2port
+      if (not ('[sensors:i2cExists]' (hexToInt '50'))) {
+        '双电机停止'
+        return 0
+      }
+    }
+  } else {
+    '双电机停止'
+  }
+}
+
+to '_直到端口伺服电机执行完毕' port {
+  local 'datas' (booleanConstant false)
+  local 'var' ('_伺服电机返回列表' port)
+  '_打开IIC端口' port
+  if ('[sensors:i2cExists]' (hexToInt '50')) {
+    forever {
+      '_打开IIC端口' port
+      var = ('_伺服电机返回列表' port)
+      if (or (not ('[sensors:i2cExists]' (hexToInt '50'))) (and datas (and ((at 3 var) == 0) ((at 4 var) == 11)))) {
+        return 0
+      }
+      if ((at 4 var) == 10) {
+        '电机停止' port
+        return 0
+      }
+      if ((at 4 var) != 11) {
+        datas = (booleanConstant true)
+      }
+    }
+  }
+}
+
+to '伺服电机兼容协议来控制' port reg speed times {
+  local 'datas' ('[data:makeList]' ('_映射端口' port) reg speed times)
+  '[data:delete]' 'all' datas
+  if ('[sensors:i2cExists]' (hexToInt '50')) {
+    if (speed < 0) {speed = (speed & 255)}
+    '[data:addLast]' reg datas
+    '[data:addLast]' speed datas
+    if (times == 0) {
+      '[data:addLast]' (hexToInt '0') datas
+      '[data:addLast]' (hexToInt '0') datas
+    } else {
+      '[data:addLast]' ((times >> 8) & (hexToInt 'ff')) datas
+      '[data:addLast]' (times & (hexToInt 'ff')) datas
+    }
+    port = ('[data:convertType]' port 'number')
+    if (port == 1) {
+      '[sensors:i2cWrite]' (hexToInt '51') datas
+    } (port == 2) {
+      '[sensors:i2cWrite]' (hexToInt '52') datas
+    } (port == 3) {
+      '[sensors:i2cWrite]' (hexToInt '53') datas
+    } (port == 4) {
+      '[sensors:i2cWrite]' (hexToInt '54') datas
+    } else {
+      '[sensors:i2cWrite]' (hexToInt '50') datas
+    }
+  }
+}
+
+to '伺服电机返回角度' port {
+  if ((boardType) == 'ICBricks2.0') {
+    local 'var' ('[data:makeList]' ('_映射端口' port) 1)
+    '_打开IIC端口' port
+    return (callCustomReporter '[ICBricks:readServoInfo]' var)
+  } else {
+    local 'datas' 0
+    local 'var' ('[data:makeList]' 0 0 0 0 0 0)
+    '_打开IIC端口' port
+    if ('[sensors:i2cExists]' (hexToInt '50')) {
+      '[sensors:i2cRead]' (hexToInt '50') var
+      datas = (((at 2 var) << 8) | (at 3 var))
+      if (((datas >> 15) & 1) == 1) {
+        datas = (datas ^ (1 << 15))
+        datas = (0 - (32768 - datas))
+      }
+    }
+    return datas
+  }
+}
+
+to '伺服电机返回速度' port {
+  if ((boardType) == 'ICBricks2.0') {
+    local 'var' ('[data:makeList]' ('_映射端口' port) 0)
+    '_打开IIC端口' port
+    return (callCustomReporter '[ICBricks:readServoInfo]' var)
+  } else {
+    local 'datas' 0
+    local 'var' ('[data:makeList]' 0 0 0 0 0 0)
+    '_打开IIC端口' port
+    if ('[sensors:i2cExists]' (hexToInt '50')) {
+      '[sensors:i2cRead]' (hexToInt '50') var
+      datas = (((at 2 var) << 8) | (at 3 var))
+      if (((datas >> 15) & 1) == 1) {
+        datas = (datas ^ (1 << 15))
+        datas = (0 - (32768 - datas))
+      }
+    }
+    return datas
+  }
+}
+
+to '双电机伺服转' speed mods angle comm start {
+  local 'datas' (booleanConstant false)
+  local 'var' ('[data:makeList]' 0 0 0 0 0 0)
+  local 'directionM1' '正转'
+  local 'directionM2' '正转'
+  if (or (_ICBricksM1port == _ICBricksM2port) (or (_ICBricksM1port == 0) (_ICBricksM2port == 0))) {
+    _ICBricksM1port = 1
+    _ICBricksM2port = 2
+  }
+  if (mods == '前进') {
+    directionM1 = '反转'
+    directionM2 = '正转'
+  } (mods == '后退') {
+    directionM1 = '正转'
+    directionM2 = '反转'
+  } (mods == '左转') {
+    directionM1 = '正转'
+    directionM2 = '正转'
+  } (mods == '右转') {
+    directionM1 = '反转'
+    directionM2 = '反转'
+  }
+  '_打开IIC端口' _ICBricksM1port
+  if (not ('[sensors:i2cExists]' (hexToInt '50'))) {
+    return 0
+  }
+  '_打开IIC端口' _ICBricksM2port
+  if (not ('[sensors:i2cExists]' (hexToInt '50'))) {
+    return 0
+  }
+  '电机伺服转' _ICBricksM1port speed directionM1 angle comm true
+  '电机伺服转' _ICBricksM2port speed directionM2 angle comm true
+  if (and (start != (booleanConstant true)) (speed != 0)) {
+    if (and (comm == '度') (and (angle >= -10) (angle <= 10))) {return 0}
+    '_直到双伺服电机执行完毕'
+  }
+}
+
+to '双电机停止' {
+  '_打开IIC端口' _ICBricksM1port
+  if ('[sensors:i2cExists]' (hexToInt '50')) {
+    '_伺服电机-根据协议来控制' _ICBricksM1port 1 0
+  }
+  '_打开IIC端口' _ICBricksM2port
+  if ('[sensors:i2cExists]' (hexToInt '50')) {
+    '_伺服电机-根据协议来控制' _ICBricksM2port 1 0
+  }
+}
+
+to '双电机初始' portm1 portm2 {
+  _ICBricksM1port = portm1
+  _ICBricksM2port = portm2
+}
+
+to '双电机普通转' speed mods {
+  local 'seepm2' 0
+  speed = (ifExpression (speed <= 255) speed 255)
+  if (or (('[data:convertType]' _ICBricksM1port 'number') == ('[data:convertType]' _ICBricksM2port 'number')) (or (_ICBricksM1port == 0) (_ICBricksM2port == 0))) {
+    _ICBricksM1port = 1
+    _ICBricksM2port = 2
+  }
+  seepm2 = ('[misc:rescale]' (absoluteValue speed) 0 255 0 50)
+  speed = ('[misc:rescale]' (absoluteValue speed) 0 255 0 50)
+  if (mods == '前进') {
+    speed = (0 - speed)
+  } (mods == '后退') {
+    seepm2 = (0 - speed)
+  } (mods == '右转') {
+    seepm2 = (0 - speed)
+    speed = (0 - speed)
+  } (mods == '左转') {
+    speed = speed
+    seepm2 = speed
+  }
+  '_打开IIC端口' _ICBricksM1port
+  if (not ('[sensors:i2cExists]' (hexToInt '50'))) {
+    return 0
+  }
+  '_打开IIC端口' _ICBricksM2port
+  if (not ('[sensors:i2cExists]' (hexToInt '50'))) {
+    return 0
+  }
+  '_伺服电机-根据协议来控制' _ICBricksM1port 1 speed
+  '_伺服电机-根据协议来控制' _ICBricksM2port 1 seepm2
+}
+
+to '电机伺服转' port speed motor angle comm blocking {
+  '_打开IIC端口' port
+  speed = (ifExpression ((absoluteValue speed) <= 255) ('[misc:rescale]' (absoluteValue speed) 0 255 0 50) 50)
+  if (comm == '圈') {
+    angle = (ifExpression (angle <= 88) (angle * 360) 32000)
+  } (comm == '度') {
+    angle = (ifExpression (angle <= 32000) angle 32000)
+  }
+  if (motor == '停止') {
+    speed = 0
+  } (motor == '反转') {
+    speed = (0 - speed)
+    if (comm == '度') {
+      angle = (0 - angle)
+    } (comm == '圈') {
+      angle = (0 - angle)
+    }
+  }
+  if (comm == '圈') {
+    '_伺服电机-根据协议来控制' port 4 speed angle
+  } (comm == '度') {
+    '_伺服电机-根据协议来控制' port 4 speed angle
+  } (comm == '秒') {
+    angle = (ifExpression (angle <= 65530) angle 65530)
+    '_伺服电机-根据协议来控制' port 2 speed (angle * 9)
+  }
+  if (and (blocking != (booleanConstant true)) (speed != 0)) {
+    if (and (comm == '度') (and (angle >= -10) (angle <= 10))) {return 0}
+    '_直到端口伺服电机执行完毕' port
+  }
+}
+
+to '电机停止' port {
+  '_伺服电机-根据协议来控制' port 1 0 0
+}
+
+to '电机复位' port {
+  '_打开IIC端口' port
+  '_伺服电机-根据协议来控制' port (hexToInt '70') 0 0
+  waitMillis 80
+}
+
+to '电机普通转' port speed motor {
+  speed = (ifExpression ((absoluteValue speed) <= 255) speed 255)
+  if (motor == '停止') {
+    speed = 0
+    '_伺服电机-根据协议来控制' port 1 speed
+    return 0
+  }
+  if (speed != 0) {
+    speed = ('[misc:rescale]' (absoluteValue speed) 0 255 0 50)
+    if (motor == '反转') {
+      speed = (0 - speed)
+    }
+  }
+  '_伺服电机-根据协议来控制' port 1 speed
+}
+
+to '电机舵机转' port speed angle blocking {
+  '_打开IIC端口' port
+  local 'temporary' 0
+  speed = (ifExpression ((absoluteValue speed) <= 255) ('[misc:rescale]' (absoluteValue speed) 0 255 0 50) 50)
+  angle = (ifExpression (angle <= 32000) angle 32000)
+  '_伺服电机-根据协议来控制' port 3 speed angle
+  if (blocking != (booleanConstant true)) {
+    var = ('_伺服电机返回列表' port)
+    temporary = ((at 2 var) - angle)
+    if (not (and (temporary >= -10) (temporary <= 10))) {
+      '_直到端口伺服电机执行完毕' port
+    }
+  }
+}
+
+to '设置LED' port foo {
+  local 'var' 0
+  local 'datas' ('[data:makeList]')
+  '_打开IIC端口' port
+  if ((boardType) == 'ICBricks2.0') {
+    '[data:addLast]' ('_映射端口' port) datas
+    '[data:addLast]' ((foo >> 16) & (hexToInt 'ff')) datas
+    '[data:addLast]' ((foo >> 8) & (hexToInt 'ff')) datas
+    '[data:addLast]' (foo & (hexToInt 'ff')) datas
+    callCustomCommand '[ICBricks:I2cLed]' datas
+  } else {
+    if ('[sensors:i2cExists]' (hexToInt '40')) {
+      var = ((foo & (hexToInt 'ff')) + ((foo >> 8) & (hexToInt 'ff')))
+      var = (var + ((foo >> 16) & (hexToInt 'ff')))
+      if (var > 0) {
+        '[data:addLast]' (hexToInt '0') datas
+      } else {
+        '[data:addLast]' (hexToInt '0') datas
+      }
+      '[data:addLast]' (hexToInt '0') datas
+      '[data:addLast]' (hexToInt '1') datas
+      '[data:addLast]' ((foo >> 16) & (hexToInt 'ff')) datas
+      '[data:addLast]' ((foo >> 8) & (hexToInt 'ff')) datas
+      '[data:addLast]' (foo & (hexToInt 'ff')) datas
+      '[sensors:i2cWrite]' (hexToInt '40') datas
+    }
+  }
+}
+
