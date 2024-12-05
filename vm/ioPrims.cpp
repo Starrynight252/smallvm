@@ -1095,6 +1095,12 @@ void hardwareInit() {
 
 	#define PIN_BUTTON_A ICBRICKS_KEY_2
 	#define PIN_BUTTON_B ICBRICKS_KEY_0
+	static const char reservedPin[TOTAL_PINS] = {
+	0, 1, 0, 1, 0, 0, 1, 1, 1, 1,
+	1, 1, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 0, 0, 0, 1, 0, 0, 0, 1, 1,
+	1, 1, 0, 0, 0, 0, 0, 1, 1, 0};
+
 #elif defined(CONFIG_IDF_TARGET_ESP32S3)
 	#define BOARD_TYPE "ESP32-S3"
 	#define DIGITAL_PINS 49

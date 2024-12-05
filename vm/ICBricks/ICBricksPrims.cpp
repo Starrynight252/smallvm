@@ -31,7 +31,7 @@ void checkGpScriptExecutionLock()
     do
     {
         ets_delay_us(10);
-
+        
         // GpScriptControlState 该变量请勿在其他任务修改(写)，只可以访问(读)！
         if (GpScriptControlState == 0x01) //|| (ideConnected() || Serial.available()))
         {
